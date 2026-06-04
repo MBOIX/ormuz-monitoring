@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructures energetiques Europe — Crise du detroit d'Ormuz (3 juin 2026 / J95)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="styles_common.css">
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #1a2129;
+    --border: #2a3540;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --accent: #58a6ff;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
+
+  /* Override pour topbar : ajustement hauteurs */
+  #app { display: grid; grid-template-columns: 360px 1fr; height: calc(100vh - 42px); }
+  #map { height: calc(100vh - 42px) !important; }
+
+  #sidebar {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 16px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #sidebar h1 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  #sidebar .subtitle {
+    color: var(--text-dim);
+    font-size: 11.5px;
+    margin-bottom: 18px;
+  }
+
+  .section {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+  .section h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 10px 0;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .stat { background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border); }
+  .stat .v { font-size: 18px; font-weight: 600; color: var(--text); }
+  .stat .l { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .filter-row {
+    display: flex;
+    align-items: center;
+    padding: 5px 4px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    transition: background 0.12s;
+  }
+  .filter-row:hover { background: rgba(255,255,255,0.04); }
+  .filter-row input { margin-right: 9px; cursor: pointer; }
+  .filter-row .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    margin-right: 8px; flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.4);
+  }
+  .filter-row .label { flex: 1; }
+  .filter-row .count {
+    color: var(--text-dim); font-size: 11px;
+    background: rgba(255,255,255,0.05);
+    padding: 1px 7px; border-radius: 10px; font-weight: 500;
+  }
+
+  .actions { display: flex; gap: 6px; margin-bottom: 8px; }
+  .btn {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11.5px;
+    transition: all 0.12s;
+  }
+  .btn:hover { background: rgba(255,255,255,0.08); border-color: var(--accent); }
+
+  #map { width: 100%; height: 100vh; background: #06080a; }
+
+  .leaflet-popup-content-wrapper {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.45);
+  }
+  .leaflet-popup-tip { background: var(--panel); }
+  .leaflet-popup-content { margin: 12px 14px; font-size: 12.5px; line-height: 1.5; max-width: 360px; }
+  .popup-header { margin-bottom: 8px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .popup-header .status-pill, .popup-header .fill-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .popup-header .fill-pill { background: #34495e; }
+  .popup-name { font-size: 14px; font-weight: 600; margin: 0 0 4px 0; color: var(--text); }
+  .popup-meta { color: var(--text-dim); font-size: 11px; margin-bottom: 8px; }
+  .popup-note { background: rgba(255,255,255,0.03); padding: 7px 9px; border-radius: 5px; font-size: 12px; margin-bottom: 8px; border-left: 3px solid var(--accent); white-space: pre-wrap; }
+  .popup-grid { display: grid; grid-template-columns: 105px 1fr; gap: 4px 10px; margin-bottom: 8px; font-size: 11.5px; }
+  .popup-grid .k { color: var(--text-dim); }
+  .popup-sources .src { color: var(--accent); font-size: 11px; display: block; margin-top: 2px; word-break: break-all; }
+  .popup-sources .k { font-size: 11px; color: var(--text-dim); margin-bottom: 2px; }
+  .popup-fill-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  .popup-fill-bar > div { height: 100%; transition: width 0.3s; }
+
+  .pipeline-label {
+    background: rgba(15, 20, 25, 0.85);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+
+  .infra-marker {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+  }
+  .infra-icon-wrap {
+    width: 26px;
+    height: 26px;
+    background: rgba(15, 20, 25, 0.92);
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.12s, transform 0.12s;
+    position: relative;
+  }
+  .infra-icon-wrap svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .infra-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #0b1117;
+    margin-top: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  .infra-marker:hover .infra-icon-wrap {
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+  }
+  /* Anneau de remplissage pour UGS/GNL/depots */
+  .infra-fill-ring {
+    position: absolute;
+    top: -3px; left: -3px;
+    width: 26px; height: 26px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+
+  .filter-row .type-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    opacity: 0.85;
+    display: inline-block;
+  }
+  .filter-row .type-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #loader {
+    position: absolute; top: 50%; left: calc(50% + 180px); transform: translate(-50%, -50%);
+    color: var(--text-dim); font-size: 14px; z-index: 9999;
+  }
+
+  .map-legend {
+    background: rgba(15, 20, 25, 0.92);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    line-height: 1.6;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+    max-width: 220px;
+  }
+  .map-legend .legend-title { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 6px; margin-top: 6px; }
+  .map-legend .legend-title:first-child { margin-top: 0; }
+  .map-legend .legend-row { display: flex; align-items: center; gap: 7px; margin-bottom: 2px; }
+  .map-legend .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.4); }
+
+  @media (max-width: 700px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
+    #sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+    #map { height: 50vh; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="brand">Crise du detroit d'Ormuz<span class="crisis"> — 3 juin 2026 (J95)</span></div>
+  <a href="index.html">Accueil</a>
+  <a href="carte_infrastructures.html">Carte zone Ormuz</a>
+  <a href="carte_infrastructures_europe.html" class="active">Carte Europe</a>
+  <a href="dependances_ormuz_pays.html">Dependances UE (energie)</a>
+  <a href="dependances_ressources_critiques.html">Ressources critiques</a>
+  <a href="stocks_pays_ue.html">Stocks UE</a>
+  <a href="synthese_france.html">Synthèse imprimable</a>
+</nav>
+
+<div id="app">
+  <aside id="sidebar">
+    <h1>Infrastructures energetiques Europe</h1>
+    <div class="subtitle">Crise du detroit d'Ormuz · 3 juin 2026 (J95)</div>
+
+    <div class="section">
+      <h2>Apercu</h2>
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="section">
+      <h2>Statut operationnel</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-status">Tout cocher</button>
+        <button class="btn" data-action="clear-all-status">Tout decocher</button>
+      </div>
+      <div id="filters-status"></div>
+    </div>
+
+    <div class="section">
+      <h2>Type d'infrastructure</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-type">Tout cocher</button>
+        <button class="btn" data-action="clear-all-type">Tout decocher</button>
+      </div>
+      <div id="filters-type"></div>
+    </div>
+
+    <div class="section">
+      <h2>Niveau de remplissage (UGS / GNL / depots)</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-fill">Tout cocher</button>
+        <button class="btn" data-action="clear-all-fill">Tout decocher</button>
+      </div>
+      <div id="filters-fill"></div>
+    </div>
+
+    <div class="section">
+      <h2>Pays</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-country">Tout cocher</button>
+        <button class="btn" data-action="clear-all-country">Tout decocher</button>
+      </div>
+      <div id="filters-country"></div>
+    </div>
+
+    <div class="section">
+      <h2>Notes</h2>
+      <p style="margin: 0 0 6px 0; color: var(--text-dim); font-size: 11.5px;">
+        Cliquer sur un marqueur pour voir capacite, niveau de stock, sources et date de mise a jour.
+      </p>
+      <p style="margin: 0; color: var(--text-dim); font-size: 11.5px;" id="footer-note"></p>
+    </div>
+  </aside>
+
+  <div id="map"></div>
+  <div id="loader">Chargement de la carte…</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+// =======================================================================
+// Dataset Europe — compile au 3 juin 2026 (J95)
+// 53 raffineries + 17 depots strategiques + 12 ports + 33 UGS gaz +
+// 29 terminaux GNL + 16 pipelines = 160 entrees
+// Sources : SAGESS, EBV, COVA, ASEVA, CORES, OCSIT, Carbura, APMS, IEA,
+// AGSI+, ALSI, GIE, ENTSOG, Bruegel, GEM, Wikipedia, operateurs
+// Voir sources_infrastructures_europe.md
+// =======================================================================
+var DATA = {
+  infrastructures: [
+    // ============ RAFFINERIES — FRANCE ============
+    { id:"fr_raf_donges", name:"Raffinerie de Donges", country:"France", type:"raffinerie", lat:47.31, lon:-2.07, operator:"TotalEnergies", capacity:"231 kb/j (11 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Cracking refinery ; port Nantes-Saint-Nazaire ; production maximale pour soutenir l'approvisionnement national.", sources:["totalenergies.com","wikipedia.org/wiki/Raffinerie_de_Donges","fuelseurope.eu"] },
+    { id:"fr_raf_gonfreville", name:"Raffinerie de Normandie / Gonfreville-l'Orcher", country:"France", type:"raffinerie", lat:49.49, lon:0.27, operator:"TotalEnergies", capacity:"253 kb/j (12 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grand site francais (~20 % capacite FR) ; production SAF coprocessing depuis 2024 ; running a plein regime depuis avril 2026.", sources:["totalenergies.com","euronews.com 27-04-2026"] },
+    { id:"fr_raf_feyzin", name:"Raffinerie de Feyzin", country:"France", type:"raffinerie", lat:45.67, lon:4.85, operator:"TotalEnergies", capacity:"119 kb/j (5,6 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Auvergne-Rhone-Alpes ; complexe petrochimique integre ; alimentee par SPSE depuis Fos.", sources:["totalenergies.com","gem.wiki"] },
+    { id:"fr_raf_gravenchon", name:"Raffinerie de Port-Jerome-Gravenchon", country:"France", type:"raffinerie", lat:49.47, lon:0.51, operator:"North Atlantic Energies (ex-ExxonMobil)", capacity:"244 kb/j (12 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Vente Esso bouclee nov-2025 ; seul site restant du groupe NAE en France apres cession Fos.", sources:["spglobal.com 28-11-2025","ogj.com","connaissancedesenergies.org"] },
+    { id:"fr_raf_fos", name:"Raffinerie de Fos-sur-Mer (Rhone Energies)", country:"France", type:"raffinerie", lat:43.43, lon:4.94, operator:"Rhone Energies (Trafigura + Entara)", capacity:"133 kb/j (6,6 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Ex-Esso SAF, cedee a consortium Trafigura-Entara ; PACA ; pivot Mediterranee.", sources:["ogj.com","connaissancedesenergies.org"] },
+    { id:"fr_raf_lavera", name:"Raffinerie de Lavera (Martigues)", country:"France", type:"raffinerie", lat:43.39, lon:4.99, operator:"Petroineos (Ineos + PetroChina)", capacity:"210 kb/j (9,9 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grande raffinerie Sud-France ; integree petrochimie Ineos ; PetroChina partenaire mais site stable.", sources:["petroineos.com","wikipedia.org"] },
+    { id:"fr_raf_lamede", name:"Bioraffinerie de La Mede", country:"France", type:"raffinerie", lat:43.41, lon:5.10, operator:"TotalEnergies", capacity:"500 kt/an HVO+SAF (~10 kb/j eq.)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"BIOCARBURANTS — Diesel renouvelable HVO ; ne soulage pas le marche diesel fossile mais reduit le besoin d'import.", sources:["totalenergies.com","wikipedia.org/wiki/Raffinerie_de_Provence"] },
+    { id:"fr_raf_grandpuits", name:"Plateforme Grandpuits (biocarburants + depot)", country:"France", type:"raffinerie", lat:48.59, lon:3.06, operator:"TotalEnergies", capacity:"400 kt/an feedstock (SAF + plastiques)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Raffinage fossile arrete 2021 ; reconversion biocarburants/SAF ; depot SAGESS toujours actif sur le site.", sources:["totalenergies.com","grandpuits.totalenergies.fr"] },
+
+    // ============ RAFFINERIES — ALLEMAGNE ============
+    { id:"de_raf_karlsruhe", name:"MiRO Karlsruhe", country:"Allemagne", type:"raffinerie", lat:49.05, lon:8.32, operator:"Shell/Phillips66/Eni/Rosneft Dt (tutelle BNetzA)", capacity:"310 kb/j (14,9 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grande raffinerie d'Allemagne ; tutelle federale sur participation Rosneft prolongee ; alimentee par TAL+SPSE.", sources:["miro-ka.de","wikipedia.org"] },
+    { id:"de_raf_gelsenkirchen", name:"Gelsenkirchen (Ruhr Oel)", country:"Allemagne", type:"raffinerie", lat:51.55, lon:6.97, operator:"BP (en cession)", capacity:"160 kb/j (reduit depuis 254 kb/j fin 2025)", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"5 unites fermees fin 2025 ; capacite cible 8 Mt/an (vs 12 Mt antieurs) ; vente recherchee par BP.", sources:["argusmedia.com","bloomberg.com"] },
+    { id:"de_raf_leuna", name:"Leuna (Spergau)", country:"Allemagne", type:"raffinerie", lat:51.28, lon:11.99, operator:"TotalEnergies", capacity:"240 kb/j (12 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"3eme allemande ; alimentee par pipeline MVL depuis Rostock ; partenariat H2 vert RWE.", sources:["totalenergies.com","gem.wiki"] },
+    { id:"de_raf_schwedt", name:"PCK Schwedt", country:"Allemagne", type:"raffinerie", lat:53.09, lon:14.23, operator:"PCK Raffinerie (Rosneft 54 % tutelle BNetzA + Shell + Eni)", capacity:"230 kb/j (11,6 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"VULNERABILITE — alimentation historique Druzhba ; mix actuel Rostock 70 %, Gdansk 15 %, Druzhba Kazakh 15 % ; interruption Kazakh annoncee 1er mai 2026.", sources:["pck.de","hydrocarbonprocessing.com 07-2024","pravda-usa 27-04-2026 (a recouper)"] },
+    { id:"de_raf_bayernoil", name:"Bayernoil (Vohburg/Neustadt)", country:"Allemagne", type:"raffinerie", lat:48.78, lon:11.62, operator:"BP / Varo Energy / Rosneft Dt", capacity:"215 kb/j (10,3 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Site Ingolstadt ferme ; alimente par pipeline TAL depuis Trieste.", sources:["argusmedia.com","wikipedia.org"] },
+    { id:"de_raf_burghausen", name:"Burghausen", country:"Allemagne", type:"raffinerie", lat:48.16, lon:12.83, operator:"OMV Deutschland", capacity:"78 kb/j (3,8 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Coking refinery, Baviere ; orientee distillats moyens + petrochimie.", sources:["omv.com","gem.wiki"] },
+    { id:"de_raf_heide", name:"Raffinerie de Heide", country:"Allemagne", type:"raffinerie", lat:54.05, lon:9.05, operator:"Klesch Group", capacity:"90 kb/j (4,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus septentrionale d'Allemagne ; projet electrolyseur 300 MW prevu fin 2025 ; arbitrage Klesch vs Allemagne en cours.", sources:["heiderefinery.com","spglobal.com"] },
+    { id:"de_raf_holborn", name:"Holborn Hamburg", country:"Allemagne", type:"raffinerie", lat:53.49, lon:9.95, operator:"Oilinvest / Tamoil", capacity:"105 kb/j (4,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Future unite bio HVO+SAF 220 kt/an annoncee pour 2027 (475 MEUR).", sources:["holborn.de","topsoe.com"] },
+    { id:"de_raf_lingen", name:"Lingen (Emsland)", country:"Allemagne", type:"raffinerie", lat:52.51, lon:7.31, operator:"BP Europa SE", capacity:"95 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Alimente par pipeline NWO depuis Wilhelmshaven ; non concerne par cession Gelsenkirchen.", sources:["bp.com","argusmedia.com"] },
+    { id:"de_raf_godorf", name:"Shell Rheinland — Godorf", country:"Allemagne", type:"raffinerie", lat:50.85, lon:6.99, operator:"Shell Deutschland", capacity:"~190 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Site Godorf continue le crude processing apres fermeture distillation Wesseling (mars 2025).", sources:["shell.com","offshore-technology.com"] },
+    { id:"de_raf_wesseling", name:"Shell Rheinland — Wesseling (en conversion)", country:"Allemagne", type:"raffinerie", lat:50.83, lon:6.97, operator:"Shell Deutschland", capacity:"0 kb/j crude (etait 137 kb/j) ; future unite base oils 300 kt/an", reserve_type:"commercial", last_update:"2026-05", status:"paused", status_note:"Distillation crude arretee mars 2025 ; conversion en production base oils Groupe III (lubrifiants).", sources:["shell.com","ogj.com"] },
+
+    // ============ RAFFINERIES — PAYS-BAS ============
+    { id:"nl_raf_pernis", name:"Shell Pernis (Energy & Chemicals Park Rotterdam)", country:"Pays-Bas", type:"raffinerie", lat:51.88, lon:4.39, operator:"Shell Nederland", capacity:"404 kb/j (20 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"PLUS GRANDE RAFFINERIE D'EUROPE ; biofuels facility 820 kt/an HVO+SAF en production ; redemarrage CDU avr-2026 apres incident.", sources:["shell.com","hydrocarbonprocessing.com 04-2026"] },
+    { id:"nl_raf_botlek", name:"ExxonMobil Rotterdam (Botlek)", country:"Pays-Bas", type:"raffinerie", lat:51.89, lon:4.30, operator:"ExxonMobil", capacity:"191 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Production base stocks Groupe II en cours d'extension.", sources:["exxonmobil.com","chemanalyst.com"] },
+    { id:"nl_raf_zeeland", name:"Zeeland Refinery (Vlissingen)", country:"Pays-Bas", type:"raffinerie", lat:51.43, lon:3.69, operator:"TotalEnergies (operateur fev-2026) + Lukoil 45 %", capacity:"180 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"TotalEnergies a repris l'operation en fev-2026 sans racheter la part Lukoil ; hydrocracker 80 kb/j parmi les plus gros d'Europe.", sources:["hydrocarbonprocessing.com 02-2026","totalenergies.com"] },
+    { id:"nl_raf_bp_europoort", name:"BP Europoort (Rotterdam)", country:"Pays-Bas", type:"raffinerie", lat:51.95, lon:4.10, operator:"BP Nederland", capacity:"400 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grande raffinerie europeenne de BP.", sources:["bp.com","portofrotterdam.com"] },
+    { id:"nl_raf_gunvor", name:"Gunvor Energy Rotterdam (ex-Kuwait Petroleum)", country:"Pays-Bas", type:"raffinerie", lat:51.94, lon:4.13, operator:"Gunvor Group", capacity:"~120 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Stockage 1,5 Mm3 ; futur projet SAF 350 kt/an avec Varo Energy.", sources:["gunvorgroup.com"] },
+
+    // ============ RAFFINERIES — BELGIQUE ============
+    { id:"be_raf_total_antwerp", name:"TotalEnergies Antwerp", country:"Belgique", type:"raffinerie", lat:51.28, lon:4.31, operator:"TotalEnergies", capacity:"338 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"3eme raffinerie d'Europe ; integree petrochimie + HDPE ; SAF coprocessing 50 kt/an depuis 2025.", sources:["totalenergies.com"] },
+    { id:"be_raf_exxon_antwerp", name:"ExxonMobil Antwerp", country:"Belgique", type:"raffinerie", lat:51.29, lon:4.30, operator:"ExxonMobil P&C", capacity:"320 kb/j (350-370 post-coker)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Nouvelle unite delayed coker 2018 ; orientation cleaner transportation fuels NW Europe.", sources:["exxonmobil.com","nsenergybusiness.com"] },
+    { id:"be_raf_gunvor", name:"Gunvor Antwerp (ex-Petroplus)", country:"Belgique", type:"raffinerie", lat:51.27, lon:4.30, operator:"Gunvor Group", capacity:"107 kb/j (4,4 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Hydroskimming, FCC ; stockage 1,2 Mm3.", sources:["gunvorgroup.com"] },
+    { id:"be_raf_atpc", name:"ATPC Antwerp (Vitol)", country:"Belgique", type:"raffinerie", lat:51.26, lon:4.32, operator:"Vitol / ATPC", capacity:"~35 kb/j (specialty + GO HDS)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Specialty refining bitumes 875 kt/an + GO hydrotreater.", sources:["vitol.com"] },
+
+    // ============ RAFFINERIES — UK ============
+    { id:"uk_raf_fawley", name:"Fawley", country:"Royaume-Uni", type:"raffinerie", lat:50.83, lon:-1.34, operator:"ExxonMobil", capacity:"270 kb/j (15 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"20 % capacite UK ; expansion Fast (hydrotreater diesel + H2 plant) operationnelle 1er trim 2025.", sources:["exxonmobil.co.uk","bloomberg.com 04-2024"] },
+    { id:"uk_raf_pembroke", name:"Pembroke", country:"Royaume-Uni", type:"raffinerie", lat:51.69, lon:-5.04, operator:"Valero Energy", capacity:"270 kb/j (10,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"NCI 10,1 ; post-fermeture Grangemouth et crise Lindsey, devient critique pour le sud-UK.", sources:["valero.com","parliament.uk CDP-2025-0235"] },
+    { id:"uk_raf_stanlow", name:"Stanlow", country:"Royaume-Uni", type:"raffinerie", lat:53.28, lon:-2.85, operator:"EET Fuels (ex-Essar Oil UK)", capacity:"240 kb/j (12 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"2eme UK ; 1/6 du gasoil UK ; CHP H2-ready prevu 2027 ; 1,2 Md USD decarbonation.", sources:["eetfuels.com","thechemicalengineer.com"] },
+    { id:"uk_raf_humber", name:"Humber (Immingham)", country:"Royaume-Uni", type:"raffinerie", lat:53.64, lon:-0.21, operator:"Phillips 66 (+ Lindsey depuis avr-2026)", capacity:"221 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Seule raffinerie coking du UK ; rachat Lindsey acte 28-04-2026 (integration en cours).", sources:["phillips66.com","rigzone.com 28-04-2026"] },
+    { id:"uk_raf_lindsey", name:"Lindsey (North Killingholme)", country:"Royaume-Uni", type:"raffinerie", lat:53.66, lon:-0.27, operator:"Phillips 66 (depuis avr-2026)", capacity:"96-113 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"Insolvabilite Prax juin 2025 ; rachat Phillips 66 jan-2026, finalisation avr-2026 ; alimente Heathrow (jet).", sources:["rigzone.com 28-04-2026","k2-partners.com"] },
+    { id:"uk_raf_grangemouth", name:"Grangemouth (ex-raffinerie)", country:"Royaume-Uni", type:"raffinerie", lat:56.02, lon:-3.71, operator:"Petroineos", capacity:"0 kb/j crude (etait 150 kb/j) ; transforme en terminal import", reserve_type:"commercial", last_update:"2026-05", status:"paused", status_note:"Crude processing arrete fin avr-2025 ; conversion en terminal import (50 MGBP) ; Projet Willow HVO/SAF.", sources:["ogj.com","spglobal.com 29-04-2025"] },
+
+    // ============ RAFFINERIES — ITALIE ============
+    { id:"it_raf_sarroch", name:"Sarroch (Sarlux)", country:"Italie", type:"raffinerie", lat:39.07, lon:9.05, operator:"Saras SpA (Sarlux)", capacity:"300 kb/j (15 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"20 % capacite italienne ; IGCC 575 MW integre (47 % electricite Sardaigne 2024) ; processeur tiers de bruts complexes.", sources:["sarlux.saras.it"] },
+    { id:"it_raf_priolo", name:"ISAB Priolo Gargallo", country:"Italie", type:"raffinerie", lat:37.16, lon:15.18, operator:"Goi Energy (cession Ludoil en cours)", capacity:"320 kb/j (15 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"Sicile ; 1/5 capacite italienne ; ex-Lukoil ; FORTE EXPOSITION GOLFE (vulnerable Ormuz).", sources:["ilsole24ore.com","startmag.it"] },
+    { id:"it_raf_sannazzaro", name:"Sannazzaro de' Burgondi", country:"Italie", type:"raffinerie", lat:45.10, lon:8.91, operator:"Eni", capacity:"180 kb/j (10 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Triangle industriel Torino-Milano-Genova ; raccordee terminal Genova ; conversion partielle biorefinery prevue 2028.", sources:["eni.com","ogj.com 02-2026"] },
+    { id:"it_raf_taranto", name:"Raffinerie de Tarente", country:"Italie", type:"raffinerie", lat:40.49, lon:17.21, operator:"Eni", capacity:"120 kb/j (5,8 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Connectee pipeline aux champs Val d'Agri (Basilicata) ; SAF coprocessing UCO depuis 2022.", sources:["eni.com"] },
+    { id:"it_raf_milazzo", name:"Milazzo", country:"Italie", type:"raffinerie", lat:38.21, lon:15.27, operator:"Raffineria di Milazzo (Eni 50 % / Kuwait Petroleum 50 %)", capacity:"200 kb/j (10 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"Sicile nord ; FORTE EXPOSITION GOLFE via Kuwait Petroleum (vulnerable Ormuz, frappes raffinerie Mina Al-Ahmadi).", sources:["energy-oil-gas.com"] },
+    { id:"it_raf_falconara", name:"Falconara Marittima", country:"Italie", type:"raffinerie", lat:43.62, lon:13.40, operator:"API Group (Gruppo API/IP)", capacity:"85 kb/j (3,9 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"Pres port d'Ancona ; bruts majoritairement Moyen-Orient — exposition Ormuz.", sources:["ip.gruppoapi.com"] },
+    { id:"it_raf_livorno", name:"Livorno (en conversion bio)", country:"Italie", type:"raffinerie", lat:43.59, lon:10.30, operator:"Eni", capacity:"105 kb/j historique fossile, conversion 500 kt/an HVO", reserve_type:"commercial", last_update:"2026-05", status:"paused", status_note:"BIOCARBURANTS — EIB 500 MEUR pour conversion ; achevement prevu 2026.", sources:["eib.org 2025-296","enerdata.net"] },
+
+    // ============ RAFFINERIES — ESPAGNE ============
+    { id:"es_raf_algeciras", name:"Algeciras / San Roque", country:"Espagne", type:"raffinerie", lat:36.18, lon:-5.39, operator:"Moeve (ex-Cepsa)", capacity:"240 kb/j (12 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grande raffinerie peninsule iberique ; terminal portuaire 9 berths jusqu'a 350 kDWT ; storage 2,2 Mm3 ; point d'entree Mediterranee/Atlantique majeur.", sources:["moeveglobal.com"] },
+    { id:"es_raf_cartagena", name:"Cartagena", country:"Espagne", type:"raffinerie", lat:37.58, lon:-0.96, operator:"Repsol", capacity:"220 kb/j (11 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Conversion 76 % ; biofuels plant 250 kt/an operationnelle 2024 (1ere peninsule iberique 100 % renouvelable).", sources:["repsol.com"] },
+    { id:"es_raf_petronor", name:"Petronor (Bilbao-Muskiz)", country:"Espagne", type:"raffinerie", lat:43.36, lon:-3.12, operator:"Repsol (85,98 %) + Kutxabank", capacity:"220 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Pays basque ; NCI 8,67 ; 2 electrolyseurs 100 MW (H2 vert 15 kt/an).", sources:["repsol.com"] },
+    { id:"es_raf_huelva", name:"La Rabida (Huelva)", country:"Espagne", type:"raffinerie", lat:37.20, lon:-6.93, operator:"Moeve (ex-Cepsa)", capacity:"190 kb/j (9,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Andalousie ; production biocarburants 2G UCO en parallele.", sources:["moeveglobal.com"] },
+    { id:"es_raf_tarragona", name:"Tarragona", country:"Espagne", type:"raffinerie", lat:41.10, lon:1.16, operator:"Repsol", capacity:"186 kb/j (9 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Catalogne ; 3eme site Repsol.", sources:["repsol.com"] },
+    { id:"es_raf_puertollano", name:"Puertollano", country:"Espagne", type:"raffinerie", lat:38.69, lon:-4.10, operator:"Repsol", capacity:"150 kb/j (7,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Castille-La-Mancha ; high conversion (FCC + hydrocracker).", sources:["repsol.com"] },
+    { id:"es_raf_coruna", name:"A Coruna (Bens)", country:"Espagne", type:"raffinerie", lat:43.34, lon:-8.45, operator:"Repsol", capacity:"120 kb/j (5,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Galice ; 5,5 km port A Coruna.", sources:["gem.wiki"] },
+    { id:"es_raf_castellon", name:"Castellon", country:"Espagne", type:"raffinerie", lat:39.97, lon:0.03, operator:"BP Oil Castellon", capacity:"110 kb/j (6 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Valence ; projet H2 vert 25 MW BP+Iberdrola operationnel 2026.", sources:["bp.com","offshore-technology.com"] },
+
+    // ============ RAFFINERIES — PORTUGAL, POLOGNE, SUISSE ============
+    { id:"pt_raf_sines", name:"Raffinerie de Sines", country:"Portugal", type:"raffinerie", lat:37.94, lon:-8.84, operator:"Galp Energia", capacity:"225 kb/j (10,9 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Seule raffinerie active du Portugal ; H2 vert + biocarburants en investissement (430 MEUR EIB 2025) ; redemarree avr-2025 apres maintenance.", sources:["galp.com","eib.org 2025-107"] },
+    { id:"pl_raf_plock", name:"Plock", country:"Pologne", type:"raffinerie", lat:52.58, lon:19.71, operator:"PKN Orlen", capacity:"276 kb/j (16,3 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grande raffinerie d'Europe centrale ; NCI 9,5 ; Olefins III complex demarre 2025.", sources:["plrf.pl","ogj.com"] },
+    { id:"pl_raf_gdansk", name:"Gdansk", country:"Pologne", type:"raffinerie", lat:54.36, lon:18.71, operator:"ORLEN (70 %) + Saudi Aramco (30 %)", capacity:"210 kb/j (10,5 Mt/an)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Ex-Grupa Lotos ; partenariat Aramco strategique ; securise approvisionnement saoudien.", sources:["aramco.com","orlen.pl"] },
+    { id:"ch_raf_cressier", name:"Raffinerie de Cressier", country:"Suisse", type:"raffinerie", lat:47.05, lon:7.04, operator:"Varo Energy", capacity:"68 kb/j", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Seule raffinerie active de Suisse ; alimentee par pipeline SAPPRO depuis Fos/Lavera.", sources:["varoenergy.com"] },
+
+    // ============ DEPOTS STRATEGIQUES & TERMINAUX D'IMPORT ============
+    { id:"fr_dep_geosel", name:"Geosel Manosque (cavites salines petrole)", country:"France", type:"depot-strategique", lat:43.83, lon:5.83, operator:"Geosel (EDF Invest + Ardian + TotalEnergies)", capacity:"9,2 Mm3 (30 cavites salines)", stock_pct:84, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Epicentre strategique francais : ~40 % des stocks SAGESS. Tirage partiel pour quota IEA + soutien marche francais.", sources:["geosel.fr","aquitaineonline.com","gomet.net"] },
+    { id:"fr_dep_dpf_fos", name:"Depots Petroliers de Fos (DPF)", country:"France", type:"depot-strategique", lat:43.43, lon:4.86, operator:"DPF SA", capacity:"830 km3 (40 bacs)", stock_pct:75, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Terminal mediterraneen majeur ; raccorde SPSE et pipeline ODL.", sources:["dpf.fr","stockistes-usi.fr"] },
+    { id:"fr_dep_cim_lh", name:"CIM Le Havre + Terminal Antifer", country:"France", type:"depot-strategique", lat:49.48, lon:0.13, operator:"CIM-CCMP (groupe Noven)", capacity:"5,0 Mm3 (3 brut + 1,8 raffine) + Antifer 640 km3", stock_pct:80, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Accueil VLCC/ULCC ; pipeline 26 km vers Le Havre ; connexion aux raffineries Gonfreville et Port-Jerome.", sources:["cim-ccmp.com","haropaport.com"] },
+    { id:"fr_dep_dpl_lyon", name:"Depot Petrolier de Lyon (Port Edouard Herriot)", country:"France", type:"depot-strategique", lat:45.71, lon:4.83, operator:"DPL consortium", capacity:"Site SEVESO seuil haut", stock_pct:70, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Raccorde pipeline SPMR Mediterranee-Rhone ; distribution Rhone-Alpes.", sources:["euro-petrole.com","georisques.gouv.fr"] },
+    { id:"fr_dep_sfdm_metz", name:"SFDM reseau ODC (Donges-Metz)", country:"France", type:"depot-strategique", lat:49.12, lon:6.18, operator:"SFDM", capacity:"870 km3 (pipeline 700 km)", stock_pct:75, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Pipeline Donges -> Vatry -> Saint-Baussant -> Metz ; depots intermediaires alimentant l'Est.", sources:["stockistes-usi.fr"] },
+    { id:"de_dep_etzel", name:"Cavites STORAG Etzel (petrole)", country:"Allemagne", type:"depot-strategique", lat:53.42, lon:7.92, operator:"STORAG ETZEL GmbH", capacity:"10 Mm3 (24 cavites salines)", stock_pct:80, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Dome salin connecte au terminal NWO Wilhelmshaven ; largement utilise par EBV ; tirage partiel quota IEA (~22 Mb).", sources:["storag-etzel.de","ekb-storage.de","ebv-oil.org"] },
+    { id:"de_dep_rustringen", name:"Site EBV Wilhelmshaven-Rustringen", country:"Allemagne", type:"depot-strategique", lat:53.55, lon:8.07, operator:"EBV", capacity:"35 cavites (9 strategiques)", stock_pct:82, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Cavites salines de la reserve federale EBV ; pres terminal NWO.", sources:["ebv-oil.org"] },
+    { id:"de_dep_sottorf", name:"Site EBV Sottorf (pres Hambourg)", country:"Allemagne", type:"depot-strategique", lat:53.36, lon:9.78, operator:"EBV", capacity:"9 cavites strategiques", stock_pct:82, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Site EBV Schleswig-Holstein.", sources:["ebv-oil.org"] },
+    { id:"de_dep_heide_ebv", name:"Site EBV Heide (cavites salines)", country:"Allemagne", type:"depot-strategique", lat:54.20, lon:9.10, operator:"EBV", capacity:"9 cavites strategiques", stock_pct:82, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Cavites strategiques proches raffinerie Heide GmbH.", sources:["ebv-oil.org"] },
+    { id:"de_dep_lesum", name:"Site EBV Bremen-Lesum", country:"Allemagne", type:"depot-strategique", lat:53.17, lon:8.69, operator:"EBV", capacity:"5 cavites strategiques", stock_pct:82, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Cavites EBV.", sources:["ebv-oil.org"] },
+    { id:"nl_dep_cova", name:"Stockage COVA Rotterdam (terminaux)", country:"Pays-Bas", type:"depot-strategique", lat:51.96, lon:4.13, operator:"COVA (via Vopak, Koole, Botlek)", capacity:"~4,1 Mt produits", stock_pct:85, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Diesel/essence stockes aux Pays-Bas ; partiellement deportes vers DE et BE via accords bilateraux.", sources:["cova.nl"] },
+    { id:"be_dep_aseva", name:"ASEVA Anvers (terminaux portuaires)", country:"Belgique", type:"depot-strategique", lat:51.30, lon:4.30, operator:"ASEVA (ex-APETRA)", capacity:"~3,3 Mt produits", stock_pct:85, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"~60 % stocks ASEVA en FR/DE/NL via accords bilateraux ; 40 % en Belgique.", sources:["aseva.be","iea.org/articles/belgium-oil-security-policy"] },
+    { id:"uk_dep_buncefield", name:"Buncefield (Hertfordshire Oil Storage)", country:"Royaume-Uni", type:"depot-strategique", lat:51.77, lon:-0.42, operator:"HOSL (BP/Total JV)", capacity:"Terminal UKOP majeur", stock_pct:75, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Capacite reduite depuis incendie 2005, reconstruit partiellement.", sources:["en.wikipedia.org/wiki/Buncefield_oil_depot"] },
+    { id:"uk_dep_kingsbury", name:"Kingsbury Oil Terminal", country:"Royaume-Uni", type:"depot-strategique", lat:52.57, lon:-1.69, operator:"Consortium BP/Shell/Valero/Essar/Total", capacity:"~7,5 Mt/an transit", stock_pct:78, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Terminal central UKOP ; Warwickshire.", sources:["en.wikipedia.org/wiki/UK_oil_pipeline_network"] },
+    { id:"it_dep_augusta", name:"Tank farm d'Augusta (Sicile)", country:"Italie", type:"depot-strategique", lat:37.20, lon:15.22, operator:"Sonatrach Raffineria Italiana", capacity:"3,0 Mm3 (~275 reservoirs)", stock_pct:72, reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Un des 4 ports brut italiens accueillant des 300k DWT.", sources:["europetro.com"] },
+    { id:"lu_dep_mertert", name:"Depot Tanklux Mertert", country:"Luxembourg", type:"depot-strategique", lat:49.70, lon:6.47, operator:"Tanklux + APMS", capacity:"~70-90 km3 (extension 90 km3 suspendue)", stock_pct:70, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Faiblesse structurelle : LU sous-stocke (capacite totale 196 km3 vs objectif 420 km3) ; dependance critique aux depots SFDM/Metz et Anvers.", sources:["lessentiel.lu","paperjam.lu","europarl.europa.eu E-002226/2016"] },
+    { id:"ch_dep_carbura", name:"Stocks Carbura (reparti Suisse alemanique)", country:"Suisse", type:"depot-strategique", lat:47.42, lon:8.55, operator:"Carbura (sous tutelle FONES)", capacity:"~3,5 Mt produits", stock_pct:90, reserve_type:"strategic", last_update:"2026-05", status:"operational", status_note:"Stocks intacts (Suisse non-AIE, n'a pas participe au release 11 mars) ; kerosene STRUCTURELLEMENT SOUS LE MINIMUM avant la crise.", sources:["carbura.ch","iea.org/articles/Switzerland-s-legislation-on-oil-security","swissinfo.ch"] },
+
+    // ============ PORTS PETROLIERS ============
+    { id:"port_rotterdam", name:"Port de Rotterdam (complexe petrolier)", country:"Pays-Bas", type:"port-petrolier", lat:51.95, lon:4.14, operator:"Port of Rotterdam Authority", capacity:"97,8 Mt brut 2024 ; total port 436 Mt", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"PREMIER PORT PETROLIER D'EUROPE ; 5 raffineries dans le complexe ; hub ARA.", sources:["portofrotterdam.com"] },
+    { id:"port_antwerp", name:"Port d'Anvers-Bruges", country:"Belgique", type:"port-petrolier", lat:51.32, lon:4.32, operator:"Port of Antwerp-Bruges NV", capacity:"278 Mt total 2024 (-2,3 % YoY ; liquid bulk -5,8 %)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Diesel -22,3 % en 2024 ; chimie +14,8 % ; hub ARA.", sources:["portofantwerpbruges.com"] },
+    { id:"port_le_havre", name:"Le Havre + Antifer (HAROPA)", country:"France", type:"port-petrolier", lat:49.66, lon:0.16, operator:"HAROPA Port + CIM-CCMP", capacity:"~40 Mt produits petroliers/an ; vessels jusqu'a 500 kDWT", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"2eme port petrolier France ; ~20 % imports francais ; pipeline 42'' 26 km vers Le Havre + souterrain vers Port-Jerome.", sources:["haropaport.com","cim-ccmp.com"] },
+    { id:"port_marseille_fos", name:"Marseille-Fos + Lavera", country:"France", type:"port-petrolier", lat:43.40, lon:4.92, operator:"GPMM (Grand Port Maritime de Marseille)", capacity:"70,5 Mt total 2024 ; liquid bulk 44,3 Mt", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"1er port francais ; complexe Lavera-Fos ~15 Mt/an traites ; depart pipelines SPSE et ODL.", sources:["marseille-port.fr"] },
+    { id:"port_trieste", name:"Trieste (SIOT/TAL terminal)", country:"Italie", type:"port-petrolier", lat:45.65, lon:13.78, operator:"SIOT-TAL", capacity:"~40 Mt/an crude unloaded", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"TERMINAL PETROLIER LE PLUS ACTIF DE MEDITERRANEE ; ~500 navires/an ; depart pipeline TAL vers Ingolstadt puis MERO vers Tchequie ; alimente Bayernoil et raffineries Sud-Allemagne.", sources:["tal-oil.com","omv.com"] },
+    { id:"port_hamburg", name:"Hamburg (terminaux liquid bulk)", country:"Allemagne", type:"port-petrolier", lat:53.54, lon:9.97, operator:"Hamburg Port Authority + Oiltanking/Evos/Tradebe", capacity:"~7 Mt liquid bulk Oiltanking ; storage 2,2 Mm3 liquides + 3,6 Mm3 raffines", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Alimente raffinerie Holborn (Hamburg) ; transit produits raffines Est-Allemagne.", sources:["hafen-hamburg.de"] },
+    { id:"port_wilhelmshaven", name:"Wilhelmshaven (NWO)", country:"Allemagne", type:"port-petrolier", lat:53.61, lon:8.15, operator:"NWO (Nord-West Oelleitung)", capacity:"~40 Mt/an ; storage NWO 10,57 Mb (35 tanks)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"SEUL PORT EN EAUX PROFONDES D'ALLEMAGNE ; pipeline NWO alimente Gelsenkirchen, Lingen (BP), Godorf (Shell) ; complement Rostock-Schwedt.", sources:["nwowhv.de"] },
+    { id:"port_genoa", name:"Genes (Multedo / Porto Petroli)", country:"Italie", type:"port-petrolier", lat:44.42, lon:8.85, operator:"Porto Petroli SpA / AdSP Mar Ligure Occidentale", capacity:"~15 Mt/an produits petroliers", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Alimente raffineries Nord-Italie ; total ports Genes 64,5 Mt 2024 (+1,2 %).", sources:["portsofgenoa.com"] },
+    { id:"port_algeciras", name:"Algeciras (Bahia, terminal Moeve)", country:"Espagne", type:"port-petrolier", lat:36.15, lon:-5.42, operator:"Moeve + APBA", capacity:"9 berths jusqu'a 350 kDWT ; storage 2,2 Mm3 (0,9 brut + 1,3 produits)", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Hub bunkering 0,5 % VLSFO ; detroit de Gibraltar ; alimente raffinerie Gibraltar-San Roque.", sources:["apba.es","atexdelvalle.com"] },
+    { id:"port_sines", name:"Sines (TGLS)", country:"Portugal", type:"port-petrolier", lat:37.95, lon:-8.87, operator:"APS Sines / Galp", capacity:"17 Mt/an ; 6 jetees ; jusqu'a 350 kDWT ; tirant 28 m", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"1er port deepwater Portugal ; relie direct raffinerie Sines ; ouverture toute annee VLCC.", sources:["en.wikipedia.org/wiki/Port_of_Sines","galp.com"] },
+    { id:"port_constanta", name:"Constanta (Oil Terminal SA)", country:"Roumanie", type:"port-petrolier", lat:44.17, lon:28.65, operator:"Oil Terminal SA + Midia", capacity:"24 Mt/an unloading + 10 Mt/an loading", reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grand port petrolier Mer Noire UE ; route alternative pour bruts caspiens/Azerbaidjan en contexte Ormuz.", sources:["portofconstantza.com"] },
+    { id:"port_gdansk", name:"Gdansk (Naftoport)", country:"Pologne", type:"port-petrolier", lat:54.41, lon:18.70, operator:"Naftoport / Port of Gdansk Authority", capacity:"36,6 Mt crude 2024 ; expansion vers 49 Mt/an", reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"SEUL TERMINAL PETROLIER MARITIME POLOGNE ; OPERANT A CAPACITE MAXIMALE depuis 2023 ; pivot maritime pour PCK Schwedt apres reduction Druzhba ; pas de marge supplementaire.", sources:["portgdansk.pl","naftoport.pl","ceenergynews.com"] },
+
+    // ============ UGS GAZ — FRANCE ============
+    { id:"fr_ugs_chemery", name:"Chemery / Soings-en-Sologne", country:"France", type:"ugs-gaz", lat:47.32, lon:1.55, operator:"Storengy (Engie)", capacity:"33 TWh working volume (~3,0 bcm)", stock_pct:36, storage_geol:"aquifere (1085 m)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Le plus grand UGS aquifere d'Europe ; remplissage en retard sur la norme saisonniere (55 % attendus).", sources:["storengy.com","loir-et-cher.gouv.fr","agsi.gie.eu"] },
+    { id:"fr_ugs_etrez", name:"Etrez (cavites salines)", country:"France", type:"ugs-gaz", lat:46.30, lon:5.20, operator:"Storengy", capacity:"9 TWh (~0,8 bcm)", stock_pct:35, storage_geol:"caverne saline", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"4 cavernes salines (Etrez/Hauterives/Tersanne/Manosque = 12 TWh combines).", sources:["storengy.com"] },
+    { id:"fr_ugs_gournay", name:"Gournay-sur-Aronde", country:"France", type:"ugs-gaz", lat:49.49, lon:2.71, operator:"Storengy", capacity:"8 TWh", stock_pct:35, storage_geol:"aquifere", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Picardie.", sources:["storengy.com"] },
+    { id:"fr_ugs_beynes", name:"Beynes", country:"France", type:"ugs-gaz", lat:48.86, lon:1.87, operator:"Storengy", capacity:"5 TWh", stock_pct:35, storage_geol:"aquifere", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Pilote stockage H2 cavite saline en parallele.", sources:["storengy.com"] },
+    { id:"fr_ugs_st_clair", name:"Saint-Clair-sur-Epte", country:"France", type:"ugs-gaz", lat:49.21, lon:1.69, operator:"Storengy", capacity:"6 TWh", stock_pct:35, storage_geol:"aquifere", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Vallee de l'Epte.", sources:["storengy.com"] },
+    { id:"fr_ugs_cerville", name:"Cerville / Trois-Fontaines", country:"France", type:"ugs-gaz", lat:48.71, lon:6.30, operator:"Storengy", capacity:"7 TWh (2 080 Mm3 STP)", stock_pct:35, storage_geol:"aquifere (Lorraine)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Redemarre post-renovation.", sources:["storengy.com"] },
+    { id:"fr_ugs_lussagnet", name:"Lussagnet + Izaute (couples)", country:"France", type:"ugs-gaz", lat:43.71, lon:-0.10, operator:"Terega", capacity:"33 TWh (~2,9 bcm)", stock_pct:45, storage_geol:"aquifere (Bassin Aquitain)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"26 % capacite francaise ; le mieux rempli.", sources:["terega.fr"] },
+    { id:"fr_ugs_manosque", name:"Manosque (Geomethane, cavites salines)", country:"France", type:"ugs-gaz", lat:43.83, lon:5.78, operator:"Geomethane (Storengy/Geostock)", capacity:"3 TWh (~274 Mm3 utile)", stock_pct:40, storage_geol:"caverne saline (9 cavites)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Soutirage 600 000 m3/h, equivalent conso hivernale PACA.", sources:["geosel.fr","dreal-paca.gouv.fr"] },
+
+    // ============ UGS GAZ — ALLEMAGNE ============
+    { id:"de_ugs_rehden", name:"Rehden", country:"Allemagne", type:"ugs-gaz", lat:52.65, lon:8.49, operator:"SEFE (ex-Gazprom Germania, etatise)", capacity:"4,2 bcm working (~46 TWh)", stock_pct:28, storage_geol:"gisement de gaz epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Plus grand UGS d'Europe occidentale ; sous-rempli, risque hivernal 2026-2027 si Ormuz prolonge.", sources:["macromicro.me","europeangashub.com","agsi.gie.eu"] },
+    { id:"de_ugs_jemgum", name:"Jemgum", country:"Allemagne", type:"ugs-gaz", lat:53.30, lon:7.40, operator:"EWE Gasspeicher / Astora", capacity:"0,84 bcm working (~9 TWh)", stock_pct:28, storage_geol:"caverne saline", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Frise orientale.", sources:["ewe.com"] },
+    { id:"de_ugs_etzel_gas", name:"Etzel (UGS gaz)", country:"Allemagne", type:"ugs-gaz", lat:53.39, lon:7.71, operator:"Storag Etzel + multi-utilisateurs", capacity:"~1,0 bcm working (~11 TWh)", stock_pct:28, storage_geol:"caverne saline (75 cavites gaz+petrole)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Meme complexe que cavites petrole EBV Etzel.", sources:["storag-etzel.de"] },
+    { id:"de_ugs_bernburg", name:"Bernburg", country:"Allemagne", type:"ugs-gaz", lat:51.79, lon:11.74, operator:"VNG Gasspeicher", capacity:"1,2 bcm working (~13 TWh)", stock_pct:28, storage_geol:"caverne saline", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Saxe-Anhalt.", sources:["vng.de"] },
+    { id:"de_ugs_reckrod", name:"Reckrod", country:"Allemagne", type:"ugs-gaz", lat:50.74, lon:9.80, operator:"GUD/Storengy Deutschland", capacity:"0,5 bcm", stock_pct:28, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Hesse.", sources:["gie.eu"] },
+    { id:"de_ugs_bierwang", name:"Bierwang", country:"Allemagne", type:"ugs-gaz", lat:48.05, lon:12.45, operator:"Uniper Energy Storage", capacity:"1,4 bcm working (~15 TWh)", stock_pct:28, storage_geol:"gisement epuise (Baviere)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Pres frontiere autrichienne.", sources:["uniper.energy"] },
+    { id:"at_ugs_haidach", name:"Haidach (transfrontalier D/A)", country:"Autriche", type:"ugs-gaz", lat:47.86, lon:12.80, operator:"Astora/RAG/GSA", capacity:"2,9 bcm working (~33 TWh)", stock_pct:43, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Reconnecte au reseau allemand depuis 2022 (auparavant seulement AT).", sources:["rag-austria.at","agsi.gie.eu"] },
+
+    // ============ UGS GAZ — PAYS-BAS ============
+    { id:"nl_ugs_bergermeer", name:"Bergermeer", country:"Pays-Bas", type:"ugs-gaz", lat:52.65, lon:4.71, operator:"TAQA Energy", capacity:"4,1 bcm working (~45 TWh)", stock_pct:40, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Plus grand UGS commercial de NL ; auctions UE.", sources:["gasstoragebergermeer.com","agsi.gie.eu"] },
+    { id:"nl_ugs_norg", name:"Norg (Langelo)", country:"Pays-Bas", type:"ugs-gaz", lat:53.07, lon:6.46, operator:"NAM/Gasunie/EBN", capacity:"7,0 bcm working (gaz L-gas)", stock_pct:45, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Strategiquement critique post-fermeture Groningen (oct 2023).", sources:["gasunie.nl"] },
+    { id:"nl_ugs_grijpskerk", name:"Grijpskerk (converti L->H-gas)", country:"Pays-Bas", type:"ugs-gaz", lat:53.27, lon:6.31, operator:"NAM/Gasunie", capacity:"2,5 bcm working", stock_pct:40, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Conversion L->H-gas 2024.", sources:["gasunie.nl"] },
+
+    // ============ UGS GAZ — ITALIE ============
+    { id:"it_ugs_minerbio", name:"Minerbio", country:"Italie", type:"ugs-gaz", lat:44.62, lon:11.50, operator:"Stogit (Snam)", capacity:"5,3 bcm working (~58 TWh)", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Plus grand UGS d'Italie ; coeur du systeme Stogit Emilia-Romagna.", sources:["snam.it","agsi.gie.eu"] },
+    { id:"it_ugs_cortemaggiore", name:"Cortemaggiore", country:"Italie", type:"ugs-gaz", lat:44.99, lon:9.93, operator:"Stogit (Snam)", capacity:"1,5 bcm working", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Plaisance.", sources:["snam.it"] },
+    { id:"it_ugs_sergnano", name:"Sergnano", country:"Italie", type:"ugs-gaz", lat:45.51, lon:9.71, operator:"Stogit (Snam)", capacity:"1,5 bcm working", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Cremonese.", sources:["snam.it"] },
+    { id:"it_ugs_settala", name:"Settala", country:"Italie", type:"ugs-gaz", lat:45.43, lon:9.40, operator:"Stogit (Snam)", capacity:"1,1 bcm working", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Milanais.", sources:["snam.it"] },
+    { id:"it_ugs_brugherio", name:"Brugherio", country:"Italie", type:"ugs-gaz", lat:45.55, lon:9.30, operator:"Stogit (Snam)", capacity:"1,1 bcm working", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Province Monza.", sources:["snam.it"] },
+    { id:"it_ugs_bordolano", name:"Bordolano / Cugno-le-Macine", country:"Italie", type:"ugs-gaz", lat:45.30, lon:9.92, operator:"Stogit + Geogastock (Edison)", capacity:"1,2 bcm cumules", stock_pct:54, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Provinces Cremone/Basilicate.", sources:["snam.it","edison.it"] },
+
+    // ============ UGS GAZ — ESPAGNE ============
+    { id:"es_ugs_yela", name:"Yela", country:"Espagne", type:"ugs-gaz", lat:40.78, lon:-2.81, operator:"Enagas", capacity:"10 TWh working (~1 bcm)", stock_pct:66, storage_geol:"aquifere", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Guadalajara.", sources:["enagas.es","agsi.gie.eu"] },
+    { id:"es_ugs_gaviota", name:"Gaviota (offshore)", country:"Espagne", type:"ugs-gaz", lat:43.49, lon:-2.65, operator:"Enagas", capacity:"2,7 bcm working (~30 TWh)", stock_pct:66, storage_geol:"gisement epuise offshore", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Biscaye ; principal UGS espagnol.", sources:["enagas.es"] },
+    { id:"es_ugs_serrablo", name:"Serrablo", country:"Espagne", type:"ugs-gaz", lat:42.42, lon:-0.38, operator:"Enagas", capacity:"1,1 bcm working", stock_pct:66, storage_geol:"gisement epuise (Huesca)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Aragon.", sources:["enagas.es"] },
+    { id:"es_ugs_marismas", name:"Marismas (Poseidon)", country:"Espagne", type:"ugs-gaz", lat:37.10, lon:-6.42, operator:"Naturgy", capacity:"0,6 bcm working", stock_pct:66, storage_geol:"gisement epuise", reserve_type:"strategic+commercial", last_update:"2026-05", status:"operational", status_note:"Huelva.", sources:["spglobal.com"] },
+
+    // ============ UGS GAZ — UK, BE ============
+    { id:"uk_ugs_rough", name:"Rough (offshore Mer du Nord)", country:"Royaume-Uni", type:"ugs-gaz", lat:53.82, lon:0.84, operator:"Centrica Storage", capacity:"54 bcf (~1,5 bcm working)", stock_pct:30, storage_geol:"gisement epuise offshore", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Reouvert 2022, double 2023-2024 ; opere ~20 % de l'ancienne capacite d'avant 2017.", sources:["centrica.com"] },
+    { id:"uk_ugs_aldbrough", name:"Aldbrough (cavites salines)", country:"Royaume-Uni", type:"ugs-gaz", lat:53.83, lon:-0.13, operator:"SSE Thermal + Equinor", capacity:"0,33 bcm working (9 cavites)", stock_pct:32, storage_geol:"caverne saline", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Yorkshire est.", sources:["ssethermal.com"] },
+    { id:"uk_ugs_holford", name:"Holford (cavites salines)", country:"Royaume-Uni", type:"ugs-gaz", lat:53.27, lon:-2.51, operator:"Uniper", capacity:"0,2 bcm working", stock_pct:32, storage_geol:"caverne saline (Cheshire)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Cheshire.", sources:["uniper.energy"] },
+    { id:"uk_ugs_stublach", name:"Stublach", country:"Royaume-Uni", type:"ugs-gaz", lat:53.27, lon:-2.49, operator:"Storengy UK", capacity:"0,4 bcm (400 Mm3)", stock_pct:32, storage_geol:"caverne saline", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Cheshire ; pres Holford.", sources:["storengy.co.uk"] },
+    { id:"be_ugs_loenhout", name:"Loenhout", country:"Belgique", type:"ugs-gaz", lat:51.41, lon:4.75, operator:"Fluxys Belgium", capacity:"0,77 bcm working (7,6 TWh ferme)", stock_pct:40, storage_geol:"aquifere (H-gas)", reserve_type:"strategic+commercial", last_update:"2026-05", status:"reduced", status_note:"Seul UGS de Belgique ; soutirage 7,25 GWh/h.", sources:["fluxys.com"] },
+
+    // ============ TERMINAUX GNL — FRANCE ============
+    { id:"fr_lng_dunkerque", name:"Dunkerque LNG", country:"France", type:"terminal-gnl", lat:51.03, lon:2.20, operator:"Dunkerque LNG (Fluxys 60 %)", capacity:"13 bcm/an regaz", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Connecte FR+BE ; tirage hiver prolonge.", sources:["dunkerquelng.com","alsi.gie.eu"] },
+    { id:"fr_lng_montoir", name:"Montoir-de-Bretagne", country:"France", type:"terminal-gnl", lat:47.31, lon:-2.16, operator:"Elengy (Engie/GRTgaz)", capacity:"10 bcm/an regaz", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Construit 1980 ; redemarrage des projets de capacite addit.", sources:["elengy.com"] },
+    { id:"fr_lng_fos_cavaou", name:"Fos-Cavaou", country:"France", type:"terminal-gnl", lat:43.39, lon:4.85, operator:"Elengy + TotalEnergies", capacity:"8,25 bcm/an regaz (30 TWh)", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Booke 100 % 2025-2040.", sources:["giignl.org","elengy.com"] },
+    { id:"fr_lng_fos_tonkin", name:"Fos-Tonkin", country:"France", type:"terminal-gnl", lat:43.41, lon:4.86, operator:"Elengy", capacity:"3 bcm/an regaz", stock_pct:60, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Ancien terminal, navires de plus petite taille ; date arret prevue repoussee par crise.", sources:["elengy.com"] },
+
+    // ============ TERMINAUX GNL — ALLEMAGNE ============
+    { id:"de_lng_wilhelmshaven_1", name:"Wilhelmshaven 1 (FSRU Hoegh Esperanza)", country:"Allemagne", type:"terminal-gnl", lat:53.59, lon:8.16, operator:"Uniper", capacity:"7,5 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Sature crise Ormuz.", sources:["uniper.energy","det-deutschland.com"] },
+    { id:"de_lng_wilhelmshaven_2", name:"Wilhelmshaven 2 (DET Excelsior)", country:"Allemagne", type:"terminal-gnl", lat:53.60, lon:8.17, operator:"Deutsche Energy Terminal", capacity:"4,6 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"FSRU operationnelle 2024.", sources:["det-deutschland.com"] },
+    { id:"de_lng_brunsbuettel", name:"Brunsbuettel (FSRU Hoegh Gannet)", country:"Allemagne", type:"terminal-gnl", lat:53.89, lon:9.13, operator:"RWE / DET", capacity:"5 bcm/an (3,7 effectif)", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Hub nord-allemand.", sources:["det-deutschland.com"] },
+    { id:"de_lng_mukran", name:"Mukran (Rugen, FSRU Neptune)", country:"Allemagne", type:"terminal-gnl", lat:54.49, lon:13.59, operator:"Deutsche ReGas", capacity:"7,5 bcm/an (15 capacite initiale 2 FSRU)", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 09/2024 ; un FSRU charte resiliee.", sources:["lngprime.com","deutsche-regas.de"] },
+    { id:"de_lng_stade", name:"Stade (FSRU + onshore en construction)", country:"Allemagne", type:"terminal-gnl", lat:53.65, lon:9.50, operator:"DET + HEH", capacity:"13,3 bcm/an objectif onshore 2027", stock_pct:55, reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"FSRU partielle ; terminal terrestre en construction.", sources:["heh.de"] },
+
+    // ============ TERMINAUX GNL — PAYS-BAS, BELGIQUE ============
+    { id:"nl_lng_gate", name:"Gate Terminal Rotterdam", country:"Pays-Bas", type:"terminal-gnl", lat:51.96, lon:4.06, operator:"Gasunie + Vopak", capacity:"~16 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Tres soutenu, hub ARA.", sources:["gateterminal.com","alsi.gie.eu"] },
+    { id:"nl_lng_eemshaven", name:"Eemshaven (EemsEnergyTerminal, 2 FSRU)", country:"Pays-Bas", type:"terminal-gnl", lat:53.46, lon:6.83, operator:"Gasunie/Vopak", capacity:"~8 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 2022.", sources:["gasunie.nl"] },
+    { id:"be_lng_zeebrugge", name:"Zeebrugge", country:"Belgique", type:"terminal-gnl", lat:51.34, lon:3.18, operator:"Fluxys LNG", capacity:"9 bcm/an + hub re-export", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plateforme transbordement (hub re-export ; GNL russe interdit en transit UE).", sources:["fluxys.com"] },
+
+    // ============ TERMINAUX GNL — UK ============
+    { id:"uk_lng_grain", name:"Isle of Grain", country:"Royaume-Uni", type:"terminal-gnl", lat:51.45, lon:0.70, operator:"National Grid Grain LNG", capacity:"21,7 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Plus grand terminal d'Europe ; QatarEnergy 7,2 Mt/an avant force majeure.", sources:["lngjournal.com"] },
+    { id:"uk_lng_southhook", name:"South Hook (Milford Haven)", country:"Royaume-Uni", type:"terminal-gnl", lat:51.71, lon:-5.07, operator:"QatarEnergy + ExxonMobil + TotalEnergies", capacity:"21 bcm/an", stock_pct:35, reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"IMPACT DIRECT FORCE MAJEURE QatarEnergy Ras Laffan ; sous-utilise depuis mars 2026.", sources:["gem.wiki"] },
+    { id:"uk_lng_dragon", name:"Dragon LNG (Milford Haven)", country:"Royaume-Uni", type:"terminal-gnl", lat:51.71, lon:-5.05, operator:"Shell + Petronas (VTTI 50 %)", capacity:"9,3 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel.", sources:["lngprime.com"] },
+
+    // ============ TERMINAUX GNL — ITALIE ============
+    { id:"it_lng_adriatic", name:"Adriatic LNG (Rovigo)", country:"Italie", type:"terminal-gnl", lat:45.02, lon:12.55, operator:"ExxonMobil/QatarEnergy/Snam-VTTI", capacity:"9 bcm/an (expansion 10,4 approuvee)", stock_pct:55, reserve_type:"commercial", last_update:"2026-05", status:"reduced", status_note:"Offshore GBS ; impact partiel force majeure Qatar.", sources:["adriaticlng.it"] },
+    { id:"it_lng_panigaglia", name:"Panigaglia (La Spezia)", country:"Italie", type:"terminal-gnl", lat:44.10, lon:9.83, operator:"GNL Italia (Snam)", capacity:"3,5 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 1971.", sources:["snam.it"] },
+    { id:"it_lng_olt", name:"OLT Offshore Toscana", country:"Italie", type:"terminal-gnl", lat:43.50, lon:10.00, operator:"Snam + Igneo + Golar", capacity:"3,75 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"FSRU off Livorno.", sources:["lngjournal.com"] },
+    { id:"it_lng_piombino", name:"Piombino (FSRU Golar Tundra)", country:"Italie", type:"terminal-gnl", lat:42.94, lon:10.55, operator:"Snam FSRU Italia", capacity:"5 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 2023.", sources:["snam.it"] },
+    { id:"it_lng_ravenna", name:"Ravenna (FSRU BW Singapore)", country:"Italie", type:"terminal-gnl", lat:44.40, lon:12.50, operator:"Snam", capacity:"5 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 2025.", sources:["lngprime.com"] },
+
+    // ============ TERMINAUX GNL — ESPAGNE ============
+    { id:"es_lng_barcelona", name:"Barcelone", country:"Espagne", type:"terminal-gnl", lat:41.34, lon:2.16, operator:"Enagas", capacity:"~17 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"+ utilisation crise.", sources:["enagas.es","ieefa.org"] },
+    { id:"es_lng_sagunto", name:"Sagunto (Saggas)", country:"Espagne", type:"terminal-gnl", lat:39.65, lon:-0.21, operator:"Saggas (Enagas 40 %)", capacity:"8,75 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Valence.", sources:["enagas.es"] },
+    { id:"es_lng_cartagena", name:"Cartagena GNL", country:"Espagne", type:"terminal-gnl", lat:37.58, lon:-0.99, operator:"Enagas", capacity:"11,8 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Murcie.", sources:["enagas.es"] },
+    { id:"es_lng_huelva", name:"Huelva GNL", country:"Espagne", type:"terminal-gnl", lat:37.20, lon:-6.93, operator:"Enagas", capacity:"11,8 bcm/an", stock_pct:70, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Andalousie.", sources:["enagas.es","gem.wiki"] },
+    { id:"es_lng_bilbao", name:"Bilbao (BBG Zierbena)", country:"Espagne", type:"terminal-gnl", lat:43.34, lon:-3.10, operator:"BBG (Enagas/EVE/Repsol)", capacity:"8,8 bcm/an", stock_pct:67, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"67 % utilisation moyenne.", sources:["gem.wiki"] },
+    { id:"es_lng_mugardos", name:"Mugardos (Reganosa)", country:"Espagne", type:"terminal-gnl", lat:43.46, lon:-8.25, operator:"Reganosa", capacity:"3,6 bcm/an", stock_pct:63, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Galice.", sources:["reganosa.com"] },
+
+    // ============ TERMINAUX GNL — PORTUGAL, POLOGNE, CROATIE ============
+    { id:"pt_lng_sines", name:"Sines GNL", country:"Portugal", type:"terminal-gnl", lat:37.94, lon:-8.83, operator:"REN Atlantico", capacity:"7,9 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Hub entree iberique ; dependance crise Ormuz.", sources:["ren.pt"] },
+    { id:"pl_lng_swinoujscie", name:"Swinoujscie (Lech Kaczynski)", country:"Pologne", type:"terminal-gnl", lat:53.91, lon:14.27, operator:"Gaz-System", capacity:"8,3 bcm/an", stock_pct:65, reserve_type:"commercial", last_update:"2026-05", status:"operational", status_note:"Operationnel depuis 2016 ; expansion en cours.", sources:["gaz-system.pl"] },
+    { id:"hr_lng_krk", name:"Krk FSRU (LNG Hrvatska)", country:"Croatie", type:"terminal-gnl", lat:45.21, lon:14.55, operator:"LNG Hrvatska", capacity:"6,1 bcm/an (double en 2025)", stock_pct:65, reserve_type:"commercial", last_update:"2025-11", status:"operational", status_note:"Backup regional crucial pour Hongrie/Slovenie/Autriche.", sources:["lng.hr","ceenergynews.com"] }
+  ],
+
+  key_pipelines: [
+    // ============ PIPELINES PETROLE ============
+    { id:"pipe_tal", name:"TAL — Transalpine (Trieste->Ingolstadt)", country:"Italie/Autriche/Allemagne", pipeline_type:"petrole-brut", origin:[45.65,13.78], destination:[48.78,11.42], operator:"TAL Group (OMV/Shell/Eni)", capacity:"850 kb/j post TAL-PLUS 04/2025 (~42 Mt/an)", status:"operational", status_note:"Beneficie de la sortie Druzhba Tchequie ; alimente Bayernoil + Schwedt indirect.", sources:["tal-oil.com"] },
+    { id:"pipe_mero", name:"MERO / IKL (Ingolstadt-Litvinov)", country:"Allemagne/Tchequie", pipeline_type:"petrole-brut", origin:[48.78,11.61], destination:[50.32,14.27], operator:"MERO CR", capacity:"200 kb/j (10 Mt/an)", status:"operational", status_note:"Sature, principal substitut Druzhba pour la Tchequie.", sources:["mero.cz"] },
+    { id:"pipe_spse", name:"SPSE — Oleoduc Sud-Europeen (Fos->Karlsruhe)", country:"France/Suisse/Allemagne", pipeline_type:"petrole-brut", origin:[43.40,4.86], destination:[49.01,8.40], operator:"Societe du Pipeline Sud-Europeen", capacity:"21 Mt/an (~420 kb/j)", status:"operational", status_note:"Alimente Feyzin/Cressier/Reichstett/Karlsruhe.", sources:["spse.fr"] },
+    { id:"pipe_druzhba_sud", name:"Druzhba — branche Sud (UA->SK/HU/CZ)", country:"Russie/Ukraine/Slovaquie/Hongrie", pipeline_type:"petrole-brut", origin:[50.50,24.50], destination:[48.65,22.00], operator:"Transneft / Ukrtransnafta / MOL", capacity:"~250 kb/j", status:"operational", status_note:"Restaure 23 avril 2026 apres reparation post-frappe Brody (27 janvier 2026) ; Tchequie sevree volontairement, Hongrie+Slovaquie dependantes.", sources:["wikipedia.org/wiki/2026_Druzhba_dispute"] },
+    { id:"pipe_druzhba_nord", name:"Druzhba — branche Nord (BY->PL/DE)", country:"Russie/Belarus/Pologne/Allemagne", pipeline_type:"petrole-brut", origin:[55.50,28.00], destination:[52.40,14.43], operator:"Transneft / PERN", capacity:"1,2 Mb/j (theorique)", status:"paused", status_note:"Pologne et Allemagne sevres ; flux residuel idle (sanctions effectives).", sources:["wikipedia.org/wiki/Druzhba_pipeline"] },
+    { id:"pipe_rrp", name:"Rotterdam-Rhein Pipeline (RRP)", country:"Pays-Bas/Allemagne", pipeline_type:"petrole-brut", origin:[51.93,4.10], destination:[50.85,7.10], operator:"Shell/BP/Exxon/Total", capacity:"~30 Mt/an", status:"operational", status_note:"Substitut Russie pour raffineries Rhein/Koln.", sources:["shell.com"] },
+    { id:"pipe_nwo", name:"NWO Pipeline (Wilhelmshaven-Hambourg)", country:"Allemagne", pipeline_type:"petrole-brut", origin:[53.59,8.16], destination:[54.00,9.10], operator:"Nord-West Oelleitung", capacity:"~22 Mt/an", status:"operational", status_note:"Critique pour raffinerie Heide.", sources:["nwowhv.de"] },
+    { id:"pipe_ceps", name:"Reseau CEPS / ODL / ONM (NATO/France)", country:"France/multi-NATO", pipeline_type:"produits", origin:[43.40,4.86], destination:[50.10,5.30], operator:"NATO Pipeline System / SNOI (FR)", capacity:"n/d (classifie)", status:"operational", status_note:"Active crise OTAN (deploiement Liban + Mediterranee) ; ODL Languedoc + ONM Mediterranee + CEPS Centre-Europe.", sources:["nato.int"] },
+    // ============ PIPELINES GAZ ============
+    { id:"pipe_ns1", name:"Nord Stream 1", country:"Russie/Allemagne", pipeline_type:"gaz-naturel", origin:[60.07,28.65], destination:[54.13,13.66], operator:"Nord Stream AG (Gazprom 51 %)", capacity:"55 bcm/an (theorique)", status:"destroyed", status_note:"3 lignes sur 4 sabotees 26/09/2022 ; sanctions UE 18/07/2025 bannissent usage direct/indirect.", sources:["atlanticcouncil.org"] },
+    { id:"pipe_ns2", name:"Nord Stream 2", country:"Russie/Allemagne", pipeline_type:"gaz-naturel", origin:[60.07,28.65], destination:[54.13,13.66], operator:"Nord Stream 2 AG", capacity:"55 bcm/an (theorique)", status:"destroyed", status_note:"Endommage sabotage 09/2022, jamais certifie.", sources:["cleanenergywire.org"] },
+    { id:"pipe_yamal", name:"Yamal-Europe", country:"Russie/Belarus/Pologne/Allemagne", pipeline_type:"gaz-naturel", origin:[67.05,76.50], destination:[52.10,14.50], operator:"EuRoPol Gaz / Gazprom", capacity:"33 bcm/an", status:"paused", status_note:"Idle depuis mai 2022 (sanctions PL + cancellation accord intergouvernemental).", sources:["oxfordenergy.org"] },
+    { id:"pipe_turkstream", name:"TurkStream (ligne 2 vers UE)", country:"Russie/Turquie/Bulgarie", pipeline_type:"gaz-naturel", origin:[43.10,38.10], destination:[42.80,23.00], operator:"Gazprom + Botas", capacity:"31,5 bcm/an total (15,75 pour UE)", status:"operational", status_note:"Seule route gaziere russe restante vers UE ; vulnerable aux attaques drones Mer Noire.", sources:["wikipedia.org/wiki/TurkStream"] },
+    { id:"pipe_tap", name:"TAP — Trans-Adriatique (AZ->IT)", country:"Azerbaidjan/Grece/Albanie/Italie", pipeline_type:"gaz-naturel", origin:[40.85,26.05], destination:[40.27,18.35], operator:"TAP AG (BP, SOCAR, Snam, Fluxys)", capacity:"11,2 bcm/an effectif post-expansion stage 1 (1er janv 2026)", status:"operational", status_note:"A pleine capacite — beneficie de la demande post-Ormuz ; expansion +1,2 bcm/an active.", sources:["tap-ag.com","rigzone.com 01-2026"] },
+    { id:"pipe_transmed", name:"Transmed / Enrico Mattei (DZ->TN->IT)", country:"Algerie/Tunisie/Italie", pipeline_type:"gaz-naturel", origin:[31.50,9.50], destination:[40.50,14.50], operator:"Sonatrach + Eni (Sergaz, TMPC)", capacity:"33,5 bcm/an (~21 bcm reels 2024)", status:"operational", status_note:"Saturation crise Ormuz attendue ; sous-utilisation historique se resorbe.", sources:["wikipedia.org/wiki/Trans-Mediterranean_Pipeline"] },
+    { id:"pipe_medgaz", name:"Medgaz (DZ->ES)", country:"Algerie/Espagne", pipeline_type:"gaz-naturel", origin:[35.69,-0.78], destination:[36.83,-2.41], operator:"Medgaz SA (Sonatrach 51 %, Naturgy 49 %)", capacity:"10,5 bcm/an (~9,4 reels)", status:"operational", status_note:"Sature (Maghreb-Europe via Maroc ferme depuis 2021).", sources:["wikipedia.org/wiki/Medgaz"] },
+    { id:"pipe_baltic", name:"Baltic Pipe (NO->PL via DK)", country:"Norvege/Danemark/Pologne", pipeline_type:"gaz-naturel", origin:[56.30,3.20], destination:[54.45,14.27], operator:"Energinet + Gaz-System", capacity:"10 bcm/an (NO->PL) + 3 bcm/an (PL->DK)", status:"operational", status_note:"Pleine charge depuis 12/2022.", sources:["gaz-system.pl"] }
+  ]
+};
+
+var STATUS_META = {
+  operational: { color: "#2ecc71", label: "Operationnel" },
+  reduced:     { color: "#f1c40f", label: "Production reduite / sous-rempli" },
+  paused:      { color: "#e67e22", label: "En pause / planifie" },
+  shutin:      { color: "#d35400", label: "Mis a l'arret" },
+  damaged:     { color: "#e74c3c", label: "Endommage" },
+  destroyed:   { color: "#922b21", label: "Detruit" },
+  unknown:     { color: "#7f8c8d", label: "Inconnu" }
+};
+
+var TYPE_META = {
+  "raffinerie":         { label: "Raffinerie" },
+  "depot-strategique":  { label: "Depot strategique" },
+  "port-petrolier":     { label: "Port petrolier" },
+  "ugs-gaz":            { label: "Stockage gaz souterrain (UGS)" },
+  "terminal-gnl":       { label: "Terminal GNL" },
+  "pipeline":           { label: "Pipeline" }
+};
+
+var FILL_BANDS = [
+  { id: "high",   label: ">= 70 % (haut)",      color: "#2ecc71", min: 70, max: 101 },
+  { id: "mid",    label: "50-70 % (moyen)",     color: "#f1c40f", min: 50, max: 70  },
+  { id: "low",    label: "30-50 % (bas)",       color: "#e67e22", min: 30, max: 50  },
+  { id: "vlow",   label: "< 30 % (critique)",   color: "#e74c3c", min: 0,  max: 30  },
+  { id: "na",     label: "Non applicable",      color: "#7f8c8d", min: -1, max: 0   }
+];
+
+// === SVG ICONS par type d'infrastructure ===
+var ICONS = {
+  // 3 tours de distillation
+  "raffinerie": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21h18"/><rect x="3.5" y="11" width="4" height="10"/><rect x="10" y="6.5" width="4" height="14.5"/><rect x="16.5" y="13" width="4" height="8"/><circle cx="5.5" cy="9" r="1.2" fill="white"/><circle cx="12" cy="4.5" r="1.2" fill="white"/><circle cx="18.5" cy="11" r="1.2" fill="white"/></svg>',
+  // Cuve cylindrique avec bouclier (depot strategique)
+  "depot-strategique": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="9" cy="6" rx="5" ry="1.6"/><path d="M4 6v12c0 0.9 2.2 1.6 5 1.6s5-0.7 5-1.6V6"/><path d="M4 11c0 0.9 2.2 1.6 5 1.6s5-0.7 5-1.6"/><path d="M17 8 L21 8 L21 14 C 21 17, 19 19, 17 19.5 C 15 19, 13 17, 13 14 L13 8 Z" fill="rgba(255,255,255,0.15)"/></svg>',
+  // Ancre + cuves (port petrolier)
+  "port-petrolier": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="5" r="1.8"/><path d="M12 7 L12 18"/><path d="M9 11 L15 11"/><path d="M5 15 C 5 18, 8 20, 12 20 C 16 20, 19 18, 19 15"/><path d="M3 15 L5 15 M19 15 L21 15"/></svg>',
+  // Sphere stockage souterrain (UGS gaz)
+  "ugs-gaz": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M3 8 L21 8" stroke-dasharray="2 1.5"/><path d="M5 8 C 5 13, 7 18, 12 19 C 17 18, 19 13, 19 8" fill="rgba(255,255,255,0.12)"/><path d="M9 12 L9 16 M12 11 L12 17 M15 12 L15 16"/></svg>',
+  // Sphere Moss (cargo GNL)
+  "terminal-gnl": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="11" r="7"/><path d="M5 11 L19 11"/><path d="M7.5 7 C 9 5, 15 5, 16.5 7"/><path d="M8 21h8"/><line x1="10" y1="18" x2="10" y2="21"/><line x1="14" y1="18" x2="14" y2="21"/></svg>',
+  // Tuyau avec coude
+  "pipeline": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L8 12 L8 7 L16 7 L16 17 L22 17"/><circle cx="8" cy="7" r="1.3" fill="white"/><circle cx="16" cy="17" r="1.3" fill="white"/></svg>',
+  // Fallback
+  "_default": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><circle cx="12" cy="12" r="7"/><path d="M9.5 9.5 a 2.5 2.5 0 1 1 3.5 2.3 c -1 0.5 -1 1.2 -1 2.2 M12 17 v 0.5" stroke-linecap="round"/></svg>'
+};
+
+function svgToNode(svgStr) {
+  if (!svgStr) return null;
+  var parsed = new DOMParser().parseFromString(svgStr, "image/svg+xml");
+  var node = parsed.documentElement;
+  if (node && node.nodeName && node.nodeName.toLowerCase() === "svg") {
+    return document.importNode(node, true);
+  }
+  return null;
+}
+
+function el(tag, attrs, children) {
+  var node = document.createElement(tag);
+  if (attrs) {
+    for (var k in attrs) {
+      if (k === "style" && typeof attrs[k] === "object") {
+        for (var s in attrs[k]) node.style[s] = attrs[k][s];
+      } else if (k === "class") {
+        node.className = attrs[k];
+      } else if (k === "dataset") {
+        for (var d in attrs[k]) node.dataset[d] = attrs[k][d];
+      } else {
+        node.setAttribute(k, attrs[k]);
+      }
+    }
+  }
+  if (children) {
+    if (typeof children === "string") {
+      node.appendChild(document.createTextNode(children));
+    } else if (Array.isArray(children)) {
+      children.forEach(function(c) {
+        if (c == null) return;
+        if (typeof c === "string") node.appendChild(document.createTextNode(c));
+        else node.appendChild(c);
+      });
+    } else {
+      node.appendChild(children);
+    }
+  }
+  return node;
+}
+
+// Helpers fill bands
+function fillBandFor(pct) {
+  if (pct == null || isNaN(pct)) return "na";
+  for (var i = 0; i < FILL_BANDS.length; i++) {
+    var b = FILL_BANDS[i];
+    if (b.id === "na") continue;
+    if (pct >= b.min && pct < b.max) return b.id;
+  }
+  return "na";
+}
+function fillColorFor(pct) {
+  var bandId = fillBandFor(pct);
+  for (var i = 0; i < FILL_BANDS.length; i++) {
+    if (FILL_BANDS[i].id === bandId) return FILL_BANDS[i].color;
+  }
+  return "#7f8c8d";
+}
+
+// ─── Init carte ───
+var map = L.map("map", {
+  center: [50.5, 8.0],
+  zoom: 5,
+  minZoom: 3,
+  maxZoom: 11,
+  zoomControl: true,
+  worldCopyJump: false
+});
+
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  attribution: "© OpenStreetMap © CARTO",
+  subdomains: "abcd",
+  maxZoom: 19
+}).addTo(map);
+
+// ─── Etat filtres ───
+var activeStatus = new Set(Object.keys(STATUS_META));
+var activeTypes  = new Set(Object.keys(TYPE_META));
+var activeFills  = new Set(FILL_BANDS.map(function(b){ return b.id; }));
+var activeCountries = new Set();
+DATA.infrastructures.forEach(function(i) { activeCountries.add(i.country); });
+DATA.key_pipelines.forEach(function(p) { activeCountries.add(p.country); });
+
+var siteMarkers = [];
+var pipelineLines = [];
+
+// ─── Popups ───
+function buildPopupNode(site, isPipeline) {
+  var meta = STATUS_META[site.status] || STATUS_META.unknown;
+  var typeLabel = isPipeline ? "Pipeline" : (TYPE_META[site.type] ? TYPE_META[site.type].label : site.type);
+
+  var container = el("div");
+
+  var header = el("div", { class: "popup-header" });
+  header.appendChild(el("span", { class: "status-pill", style: { background: meta.color } }, meta.label));
+  if (!isPipeline && site.stock_pct != null) {
+    var fc = fillColorFor(site.stock_pct);
+    header.appendChild(el("span", { class: "fill-pill", style: { background: fc } }, "Stock " + site.stock_pct + " %"));
+  }
+  container.appendChild(header);
+
+  container.appendChild(el("h3", { class: "popup-name" }, site.name));
+  container.appendChild(el("div", { class: "popup-meta" }, site.country + " · " + typeLabel));
+
+  var grid = el("div", { class: "popup-grid" });
+  function addRow(k, v) {
+    grid.appendChild(el("div", { class: "k" }, k));
+    grid.appendChild(el("div", null, v == null || v === "" ? "—" : v));
+  }
+  addRow("Operateur", site.operator);
+  addRow("Capacite", site.capacity);
+  if (isPipeline) {
+    addRow("Trace", site.origin[0].toFixed(2) + ", " + site.origin[1].toFixed(2) + " -> " + site.destination[0].toFixed(2) + ", " + site.destination[1].toFixed(2));
+    if (site.pipeline_type) addRow("Type fluide", site.pipeline_type);
+  } else {
+    addRow("Coord.", site.lat.toFixed(2) + ", " + site.lon.toFixed(2));
+    if (site.storage_geol) addRow("Geologie", site.storage_geol);
+    if (site.reserve_type) addRow("Type reserve", site.reserve_type);
+    if (site.stock_pct != null) {
+      var bar = el("div", { class: "popup-fill-bar" });
+      var fill = el("div", { style: { width: site.stock_pct + "%", background: fillColorFor(site.stock_pct) } });
+      bar.appendChild(fill);
+      grid.appendChild(el("div", { class: "k" }, "Remplissage"));
+      grid.appendChild(bar);
+    }
+  }
+  if (site.last_update) addRow("MAJ", site.last_update);
+  container.appendChild(grid);
+
+  if (site.status_note) {
+    container.appendChild(el("div", { class: "popup-note" }, site.status_note));
+  }
+
+  var srcs = el("div", { class: "popup-sources" });
+  srcs.appendChild(el("div", { class: "k" }, "Sources principales"));
+  (site.sources || []).forEach(function(s) {
+    srcs.appendChild(el("div", { class: "src" }, s));
+  });
+  if (!site.sources || !site.sources.length) {
+    srcs.appendChild(el("span", { style: { color: "var(--text-dim)" } }, "—"));
+  }
+  container.appendChild(srcs);
+
+  return container;
+}
+
+function createInfraIcon(type, statusColor, fillColor, hasFill) {
+  var wrapper = document.createElement("div");
+  wrapper.className = "infra-marker";
+
+  var iconBox = document.createElement("div");
+  iconBox.className = "infra-icon-wrap";
+
+  // Anneau de couleur fill autour de l'icone si applicable
+  if (hasFill && fillColor) {
+    iconBox.style.boxShadow = "0 0 0 2px " + fillColor + ", 0 2px 5px rgba(0,0,0,0.55)";
+  }
+
+  var svgNode = svgToNode(ICONS[type] || ICONS._default);
+  if (svgNode) iconBox.appendChild(svgNode);
+
+  var dot = document.createElement("div");
+  dot.className = "infra-dot";
+  dot.style.background = statusColor;
+
+  wrapper.appendChild(iconBox);
+  wrapper.appendChild(dot);
+
+  return L.divIcon({
+    html: wrapper,
+    className: "",
+    iconSize: [30, 40],
+    iconAnchor: [15, 35],
+    popupAnchor: [0, -34]
+  });
+}
+
+// ─── Markers sites ───
+DATA.infrastructures.forEach(function(site) {
+  var meta = STATUS_META[site.status] || STATUS_META.unknown;
+  var hasFill = (site.stock_pct != null);
+  var fillC = hasFill ? fillColorFor(site.stock_pct) : null;
+  var icon = createInfraIcon(site.type, meta.color, fillC, hasFill);
+  var marker = L.marker([site.lat, site.lon], { icon: icon, riseOnHover: true });
+  marker.bindPopup(buildPopupNode(site, false), { maxWidth: 380 });
+  marker.addTo(map);
+  siteMarkers.push({ marker: marker, data: site });
+});
+
+// ─── Pipelines ───
+DATA.key_pipelines.forEach(function(p) {
+  var meta = STATUS_META[p.status] || STATUS_META.unknown;
+  var poly = L.polyline([p.origin, p.destination], {
+    color: meta.color,
+    weight: 4,
+    opacity: 0.85,
+    dashArray: (p.status === "paused" || p.status === "destroyed") ? "8 6" : null
+  });
+  poly.bindPopup(buildPopupNode(p, true), { maxWidth: 380 });
+  poly.bindTooltip(p.name, { className: "pipeline-label", direction: "center", sticky: true });
+  poly.addTo(map);
+  pipelineLines.push({ polyline: poly, data: p });
+});
+
+// ─── Comptage ───
+function countByStatus(status) {
+  var s = DATA.infrastructures.filter(function(i) { return i.status === status; }).length;
+  var p = DATA.key_pipelines.filter(function(pi) { return pi.status === status; }).length;
+  return s + p;
+}
+function countByType(type) {
+  if (type === "pipeline") return DATA.key_pipelines.length;
+  return DATA.infrastructures.filter(function(i) { return i.type === type; }).length;
+}
+function countByFill(bandId) {
+  return DATA.infrastructures.filter(function(i) { return fillBandFor(i.stock_pct) === bandId; }).length;
+}
+function countByCountry(country) {
+  return DATA.infrastructures.filter(function(i) { return i.country === country; }).length
+       + DATA.key_pipelines.filter(function(p) { return p.country === country; }).length;
+}
+
+// ─── Render stats ───
+function renderStats() {
+  var container = document.getElementById("stats");
+  while (container.firstChild) container.removeChild(container.firstChild);
+
+  var total   = DATA.infrastructures.length + DATA.key_pipelines.length;
+  var damaged = countByStatus("damaged") + countByStatus("destroyed");
+  var shutin  = countByStatus("shutin") + countByStatus("paused");
+  var reduced = countByStatus("reduced");
+  var ok      = countByStatus("operational");
+
+  function statCard(value, label, color, span2) {
+    var attrs = { class: "stat" };
+    if (span2) attrs.style = { gridColumn: "span 2" };
+    var card = el("div", attrs);
+    var v = el("div", { class: "v" }, String(value));
+    if (color) v.style.color = color;
+    card.appendChild(v);
+    card.appendChild(el("div", { class: "l" }, label));
+    return card;
+  }
+
+  container.appendChild(statCard(total, "Total sites + pipelines"));
+  container.appendChild(statCard(reduced, "Production reduite / sous-rempli", "#f1c40f"));
+  container.appendChild(statCard(ok, "Operationnels", "#2ecc71"));
+  container.appendChild(statCard(shutin + damaged, "Arret / pause / endommage", "#e67e22"));
+}
+
+// ─── Render filters ───
+function buildFilterRow(filter, key, label, count, dotColor, svgStr) {
+  var row = el("label", { class: "filter-row", dataset: { filter: filter, key: key } });
+  var input = el("input", { type: "checkbox" });
+  input.checked = true;
+  row.appendChild(input);
+  if (dotColor) {
+    var dot = el("span", { class: "dot" });
+    dot.style.background = dotColor;
+    row.appendChild(dot);
+  }
+  if (svgStr) {
+    var iconWrap = el("span", { class: "type-icon" });
+    var svgNode = svgToNode(svgStr);
+    if (svgNode) iconWrap.appendChild(svgNode);
+    row.appendChild(iconWrap);
+  }
+  row.appendChild(el("span", { class: "label" }, label));
+  row.appendChild(el("span", { class: "count" }, String(count)));
+  return row;
+}
+
+function renderFilters() {
+  var sc = document.getElementById("filters-status");
+  while (sc.firstChild) sc.removeChild(sc.firstChild);
+  Object.keys(STATUS_META).forEach(function(s) {
+    var n = countByStatus(s);
+    if (n === 0 && s === "unknown") return;
+    sc.appendChild(buildFilterRow("status", s, STATUS_META[s].label, n, STATUS_META[s].color));
+  });
+
+  var tc = document.getElementById("filters-type");
+  while (tc.firstChild) tc.removeChild(tc.firstChild);
+  Object.keys(TYPE_META).forEach(function(t) {
+    tc.appendChild(buildFilterRow("type", t, TYPE_META[t].label, countByType(t), null, ICONS[t]));
+  });
+
+  var fc = document.getElementById("filters-fill");
+  while (fc.firstChild) fc.removeChild(fc.firstChild);
+  FILL_BANDS.forEach(function(b) {
+    fc.appendChild(buildFilterRow("fill", b.id, b.label, countByFill(b.id), b.color));
+  });
+
+  var cc = document.getElementById("filters-country");
+  while (cc.firstChild) cc.removeChild(cc.firstChild);
+  var countries = Array.from(activeCountries).sort();
+  countries.forEach(function(c) {
+    cc.appendChild(buildFilterRow("country", c, c, countByCountry(c), null));
+  });
+}
+
+renderStats();
+renderFilters();
+
+document.getElementById("footer-note").textContent = "Voir sources_infrastructures_europe.md et infrastructures_europe.md pour le detail des sources et la methodologie.";
+
+// ─── Filter events ───
+document.querySelectorAll(".filter-row").forEach(function(row) {
+  row.addEventListener("change", function() {
+    var filter = row.dataset.filter;
+    var key = row.dataset.key;
+    var checked = row.querySelector("input").checked;
+    if (filter === "status") {
+      if (checked) activeStatus.add(key); else activeStatus.delete(key);
+    } else if (filter === "type") {
+      if (checked) activeTypes.add(key); else activeTypes.delete(key);
+    } else if (filter === "fill") {
+      if (checked) activeFills.add(key); else activeFills.delete(key);
+    } else if (filter === "country") {
+      if (checked) activeCountries.add(key); else activeCountries.delete(key);
+    }
+    applyFilters();
+  });
+});
+
+document.querySelectorAll("[data-action]").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var action = btn.dataset.action;
+    var sel, setRef;
+    if (action.indexOf("status") !== -1) { sel = "[data-filter='status']"; setRef = activeStatus; }
+    else if (action.indexOf("type") !== -1) { sel = "[data-filter='type']"; setRef = activeTypes; }
+    else if (action.indexOf("fill") !== -1) { sel = "[data-filter='fill']"; setRef = activeFills; }
+    else if (action.indexOf("country") !== -1) { sel = "[data-filter='country']"; setRef = activeCountries; }
+    else return;
+    var setAll = action.indexOf("select") === 0;
+    document.querySelectorAll(sel).forEach(function(row) {
+      row.querySelector("input").checked = setAll;
+      var k = row.dataset.key;
+      if (setAll) setRef.add(k); else setRef.delete(k);
+    });
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  siteMarkers.forEach(function(item) {
+    var show = activeStatus.has(item.data.status)
+            && activeTypes.has(item.data.type)
+            && activeCountries.has(item.data.country)
+            && activeFills.has(fillBandFor(item.data.stock_pct));
+    if (show) {
+      if (!map.hasLayer(item.marker)) item.marker.addTo(map);
+    } else {
+      if (map.hasLayer(item.marker)) map.removeLayer(item.marker);
+    }
+  });
+
+  pipelineLines.forEach(function(item) {
+    var show = activeStatus.has(item.data.status)
+            && activeTypes.has("pipeline")
+            && activeCountries.has(item.data.country);
+    if (show) {
+      if (!map.hasLayer(item.polyline)) item.polyline.addTo(map);
+    } else {
+      if (map.hasLayer(item.polyline)) map.removeLayer(item.polyline);
+    }
+  });
+}
+
+// ─── Legende ───
+var mapLegend = L.control({ position: "bottomright" });
+mapLegend.onAdd = function() {
+  var div = el("div", { class: "map-legend" });
+  div.appendChild(el("div", { class: "legend-title" }, "Statut"));
+  Object.keys(STATUS_META).forEach(function(s) {
+    if (countByStatus(s) === 0 && s === "unknown") return;
+    var meta = STATUS_META[s];
+    var row = el("div", { class: "legend-row" });
+    var dot = el("span", { class: "legend-dot" });
+    dot.style.background = meta.color;
+    row.appendChild(dot);
+    row.appendChild(el("span", null, meta.label));
+    div.appendChild(row);
+  });
+  div.appendChild(el("div", { class: "legend-title" }, "Anneau = remplissage"));
+  FILL_BANDS.forEach(function(b) {
+    if (b.id === "na") return;
+    var row = el("div", { class: "legend-row" });
+    var dot = el("span", { class: "legend-dot" });
+    dot.style.background = b.color;
+    row.appendChild(dot);
+    row.appendChild(el("span", null, b.label));
+    div.appendChild(row);
+  });
+  return div;
+};
+mapLegend.addTo(map);
+
+setTimeout(function() {
+  var l = document.getElementById("loader");
+  if (l) l.style.display = "none";
+}, 250);
+
+// Bounds Europe — France et voisins majeurs
+map.fitBounds([[35, -15], [62, 30]], { padding: [20, 20], maxZoom: 6 });
+</script>
+
+</body>
+</html>

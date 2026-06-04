@@ -1,0 +1,194 @@
+# Scénario A — Optimiste
+## « Le MOU avorté, sursaut diplomatique tardif »
+### Probabilité estimée : 10-15 % (au 3 juin 2026, J95) — REPLI POST-SUSPENSION IRAN
+
+---
+
+## Mise à jour J95 (3 juin 2026)
+
+**Probabilité abaissée de 12-18 % à 10-15 % (−2 pts).** Le déclencheur central est la **suspension par l'Iran de tous les pourparlers indirects le 1er juin** (motif : « crimes continus » d'Israël au Liban), assortie d'une annonce de vouloir viser la **fermeture complète d'Ormuz** et d'**étendre le blocus à Bab el-Mandeb** — le contraire d'une trajectoire A. Le scénario A « pur » est désormais quasi exclu ; seul subsiste un A « hybride » (cessez-le-feu prolongé + reopening partiel sans deal nucléaire complet) glissant vers B+.
+
+**Signaux contradictoires maintenant A à flot (pas à zéro)** :
+- **Trump (ABC News)** : un accord rouvrir Ormuz + prolonger le cessez-le-feu est atteignable « dans la semaine ».
+- **Source régionale (CNN)** : négociations « de retour sur les rails » quelques heures après la suspension iranienne — la rupture du 1er juin a la signature d'une posture de négociation, pas d'une rupture définitive.
+- **Brouillon MOU connu (sources US)** : trafic Ormuz sans restriction ; retrait des mines par l'Iran sous 30 jours ; levée proportionnelle du blocus naval US ; waivers de sanctions permettant à l'Iran de vendre son pétrole. **Mais** Trump demande des amendements (HEU + Ormuz) et la Maison Blanche dénie toujours le brouillon iranien — le sticking point HEU reste létal.
+- **Liban (1er juin)** : cessez-le-feu Israël-Hezbollah sous proposition US (Israël s'engage à ne pas viser Dahiyeh, Hezbollah à ne pas attaquer Israël) — élément pro-A, **mais** Israël pousse au-delà du Litani (Al Jazeera 1er juin), ce qui alimente précisément le motif iranien de suspension.
+
+**Marchés (3 juin)** : Brent futures **96,89 $/b (+0,93 %), 3e séance de hausse**, prime de risque géopolitique tendant vers 98 $ — **mais −15,3 % sur 1 mois** (pic 112,93 $ le 19 mai). Le reflux mensuel reste l'élément le plus compatible avec A ; la reprise haussière post-suspension le contredit.
+
+---
+
+## Évolution de la probabilité
+
+| Date | Jour | Probabilité | Événement déclencheur |
+|---|---|---|---|
+| 15 mars | J15 | 20-25 % | Estimation initiale |
+| 29 mars | J29 | 5-10 % | Entrée en guerre des Houthis, péage iranien institutionnalisé |
+| 7 avril | J38 | 10-15 % | Ultimatum Trump, mais négociations Islamabad en cours |
+| 10 avril | J41 | 20-30 % | Cessez-le-feu du 8 avril, Vance à Islamabad |
+| 12 avril | J43 | 15-20 % | Échec du 1er round, blocus naval US |
+| 14 avril | J45 | 15-25 % | Initiative Macron-Starmer, mais tensions persistantes |
+| 16 avril | J47 | 25-35 % | « Percée nucléaire » rapportée, prolongation cessez-le-feu, Munir à Téhéran |
+| 23 avril | J54 | 10-15 % | 2ème round annulé, CGRI attaque 3 navires, « shoot and kill » |
+| 8 mai | J69 | 15-22 % | MOU « one-page memo » en discussion (Axios), Trump dit « great progress », pause Project Freedom, prolongation cessez-le-feu Liban de 3 semaines |
+| 14 mai | J75 | 8-12 % | Rejet public Trump : Iran offre « garbage » (10-11 mai), cessez-le-feu « sous assistance respiratoire, 1 % chance de survie » ; ultimatum Ghalibaf, menace Rezaei d'enrichissement 90 % ; sommet Trump-Xi à Pékin (14-15 mai) sans percée Hormuz ; 3 incidents maritimes en 6 jours dont 1er naufrage commercial (Haji Ali, 13 mai) ; Project Freedom toujours suspendu mais sans relance |
+| 17 mai | J78 | 7-10 % | Recul léger : la déclaration conjointe Trump-Xi (15 mai) ouvre un signal historique ; possible levée sanctions secondaires Chine évoquée. MAIS la proposition nucléaire Trump du 16 mai est REJETÉE EN BLOC par Khamenei. SEUL signal A positif : canal pakistanais réactivé (Naqvi à Téhéran 17 mai) |
+| 22 mai | J83 | 8-12 % | Rebond léger (+1-2 pts) : Naqvi V2 à Téhéran avec Vahidi/CGRI, Brent -4 % hebdo, OAT-Bund 69 bps, Lecornu absorbe (1,2 Md€). PLAFOND : décret Mojtaba HEU + Al Jazeera 18/05 « médiation pakistanaise atteint ses limites » |
+| 27 mai | J88 | 14-22 % | REBOND MAJEUR (+6-10 pts) sur narratif Doha + Trump 23/05 |
+| 28 mai | J89 | 12-18 % | REPLI POST-DÉMENTI (-2 pts) : White House (27/05) qualifie le brouillon MOU iranien de « complete fabrication ». Rubio : « a few more days ». Aucun accord signé. Le sticking point HEU (décret Mojtaba 21/05) reste létal. Iran TV acte que même si signé, le reopening Hormuz prend ≥ 30 jours. Scénario A « pur » improbable ; A « hybride » glisse vers B+ |
+| **3 juin** | **J95** | **10-15 %** | **REPLI POST-SUSPENSION (-2 pts) : l'Iran SUSPEND le 1er juin tous les pourparlers indirects (motif « crimes continus » d'Israël au Liban) et annonce viser la fermeture COMPLÈTE d'Ormuz + extension du blocus à Bab el-Mandeb. Le scénario A « pur » est désormais quasi exclu. SEULS contrepoids : Trump (ABC News) dit un accord atteignable « dans la semaine » ; source régionale CNN parle de négociations « de retour sur les rails » quelques heures après la suspension. Brent futures 96,89 $ (+0,93 %, 3e hausse, prime géopolitique vers 98 $) MAIS −15,3 % sur 1 mois. Falaise des stocks signalée par Exxon (cargaisons physiques vers 150-160 $ « dans les prochaines semaines »). EAU sorties de l'OPEP. A « hybride » (cessez-le-feu prolongé + reopening partiel) reste l'unique voie résiduelle** |
+
+---
+
+## Hypothèse centrale
+
+Malgré le **décret Mojtaba Khamenei du 21 mai** (interdiction d'export d'uranium enrichi — verrouillage frontal de la demande US « remove HEU »), le rejet en bloc par Khamenei (16 mai) de la proposition nucléaire Trump et l'impasse structurelle entre la ligne US « zéro enrichissement » et le plan iranien « 14 points » désormais formalisé, la **mécanique diplomatique souterraine** continue de fonctionner sous une intensité inédite (Naqvi V1+V2 en 7 jours). Le scénario A suppose qu'au cours des 4 prochaines semaines, **un sursaut tardif** débouche sur un accord-cadre, sous quatre mécanismes possibles :
+
+1. **Effet Cuba 1962** : un incident maritime majeur sans pertes US (par exemple un second naufrage commercial, ou un destroyer US touché mais sans mort) force les deux camps à une négociation accélérée pour éviter la collision létale finale. Le rythme actuel de **8 jours de silence opérationnel maritime** (depuis Hui Chuan 14 mai) rend cet effet moins probable à court terme.
+
+2. **Pression chinoise discrète post-Pékin** : la déclaration conjointe Trump-Xi du 15 mai (« Ormuz doit rester ouvert », « Iran ne peut jamais avoir l'arme nucléaire ») et l'offre de médiation chinoise pourraient se traduire par une pression discrète sur Téhéran, particulièrement si Trump acte la levée des sanctions secondaires Chine évoquée le 15 mai. La Chine ne presserait pas publiquement l'Iran mais pourrait conditionner ses livraisons / paiements / route Yiwu-Xi'an à un assouplissement iranien sur l'enrichissement.
+
+3. **Geste unilatéral Trump** : Trump suspend partiellement le blocus naval comme geste de bonne volonté, ou **acte effectivement la levée des sanctions secondaires Chine**. Possible dans les 6 semaines précédant les midterms (novembre 2026) si les prix à la pompe US menacent l'agenda politique. Le SPR US tombé à **365,1 mb (semaine du 22 mai, -9,1 mb)** sur un programme total de 172 mb (prochain point EIA le 3 juin) ajoute une pression directe vers cette option.
+
+4. **Canal pakistanais ultra-intensifié** : Naqvi a effectué **deux visites à Téhéran en 7 jours** (17 + ~20 mai), rencontrant cette fois le **chef du CGRI Vahidi**. Si Sharif arrache un memo iranien compatible avec un compromis (plafond bas + vérification AIEA renforcée + sanctions allégées + rétention domestique HEU compatible avec le décret Mojtaba), le canal pakistanais peut redevenir le vecteur de l'accord. **Memo de retour attendu sous 5-10 jours** (donc 25 mai - 1er juin).
+
+L'accord-cadre déclencherait alors :
+1. La fin formelle de la guerre dans la région
+2. Une période de **30 jours de négociations** sur l'accord détaillé
+3. La **réouverture progressive du détroit d'Ormuz** (déminage UK/France/Pakistan/Chine, durée 2-4 mois — Rystad : « weeks, possibly months »)
+4. Un **moratoire de 15-20 ans** sur l'enrichissement d'uranium iranien (compromis vs zéro)
+5. La **levée des sanctions américaines** et le déblocage des fonds iraniens gelés
+6. Un cadre de **sécurité maritime** dans le détroit (cogestion)
+7. La **pérennisation de la trêve libanaise** (3ème round Washington débouche)
+
+---
+
+## Pourquoi la probabilité rebondit légèrement (7-10 % → 8-12 %)
+
+Cinq nouveaux signaux **positifs** dominent désormais les signaux négatifs entre 17 et 22 mai :
+
+1. **Naqvi enchaîne 2 visites à Téhéran en 7 jours** (17 + ~20 mai), rencontre cette fois le **chef du CGRI Vahidi** — intensité diplomatique pakistanaise inédite, comparable au pic Islamabad d'avril. Sharif réinvestit complètement le rôle de médiateur exclusif US-Iran.
+
+2. **Détente des marchés sans précédent depuis le 28 février** : **Brent gain hebdo -4 %** (de 112,93 $ pic 19 mai à 104,52 $ clôture 22 mai), **TTF gaz -3,48 % à 47,69 €/MWh**, **OAT-Bund stabilisé 69 bps** (sous moyenne 1Y de 71,8 bps). Les opérateurs tarifent désormais le statu quo plutôt que la rupture.
+
+3. **Marco Rubio (State Dept)** parle de « signes encourageants » concernant un possible deal avec l'Iran, indiquant des éléments tangibles dans les pourparlers.
+
+4. **Lecornu absorbe le choc social** : 1,2 Md€ d'aides ciblées renforcées le 21 mai (doublement aide grands rouleurs, prime employeur 300 → 600 €/an). Le pathway fiscal-social français est amorti — la France ne tombera pas en C par le canal social à court terme.
+
+5. **8 jours de silence opérationnel maritime** depuis Hui Chuan (14 mai) = plus longue séquence sans incident depuis le début de la crise. Discipline tactique mutuelle de plus en plus visible.
+
+**Mais le plafond reste serré** (signaux négatifs qui maintiennent A à 8-12 % et pas plus) :
+
+1. **Décret Mojtaba Khamenei 21 mai** : interdit l'export d'uranium enrichi hors d'Iran. Premier acte législatif majeur du **nouveau Guide suprême** (fils d'Ali, succession confirmée). **Verrouillage frontal de la demande US « remove HEU »**, neutralisation directe de l'offre Poutine du 9 mai. Le « plan 14 points » iranien devient une posture institutionnelle, plus une proposition.
+
+2. **Al Jazeera (18 mai)** titre « Pakistan mediation faces limits » ; Nation (21 mai) parle de US et Iran « se lançant des menaces de guerre ». Le canal pakistanais joue désormais le rôle de soupape tactique, pas de levier de compromis nucléaire.
+
+3. **L'écart structurel** entre la ligne US (« zéro enrichissement + remove HEU ») et le plan iranien 14 points + décret Mojtaba reste **irréconciliable** dans la fenêtre courte. Un compromis nécessite désormais un revirement institutionnel iranien que Mojtaba n'a aucun intérêt à concéder.
+
+4. **Trump n'a pas encore acté** la levée des sanctions secondaires Chine évoquée le 15 mai — décision toujours en suspens.
+
+5. **INSEE 22 mai** : climat emploi à 91,7 (-3 pts, plus bas depuis Covid) signale une dégradation économique tangible qui complique la lecture optimiste.
+
+---
+
+## Conditions nécessaires (toutes doivent être réunies pour A)
+
+1. **Un canal officiel s'ouvre dans les 4 semaines** (mi-juin) : annonce d'un round formel à Doha, Mascate, Genève, Vienne ou **Islamabad bis** (post-Naqvi 17 mai) — pas seulement des consultations bilatérales.
+
+2. **L'Iran fait une concession publique** sur l'enrichissement — pour l'instant impossible dans le cadre rigide « zéro vs 14 points », nécessiterait un changement de posture iranien post-rejet Khamenei.
+
+3. **Trump fait un geste tangible** : **acte la levée des sanctions secondaires Chine** évoquée le 15 mai, suspension partielle du blocus naval, ou libération de fonds gelés modérée.
+
+4. **Les volets sécurité (29 mai Pentagone) et politique (2-3 juin State Dept) Israël-Liban** débouchent sur un cadre durable avec halte effective des frappes IDF.
+
+5. **Pas d'incident létal maritime** dans les 30 prochains jours (compteur reparti depuis Haji Ali 13 mai — silence opérationnel relatif 15-17 mai bon signe).
+
+6. **Compromis nucléaire viable** : moratoire 15-20 ans avec enrichissement civil limité, vérification AIEA renforcée. Hypothèse à reconstruire après le rejet Khamenei du 16 mai.
+
+7. **Le déminage d'Ormuz progresse** : l'Iran perd la trace de certaines mines (NYT, Wikipedia) — même avec la bonne volonté, la réouverture technique prendra des semaines/mois.
+
+8. **Les Houthis sont contenus** (silence depuis le déclenchement de la guerre — fragilité analytique car non expliqué).
+
+9. **La Chine matérialise sa médiation** au-delà de l'offre symbolique du 15 mai (engagement chiffré, calendrier, sanctions discrètes).
+
+---
+
+## Trajectoire pétrole
+
+| Période | Brent futures | Dated Brent (spot) |
+|---|---|---|
+| Juin 2026 (négociation à reconstruire post-suspension 1er juin) | 95-100 $ (volatil) | 105-120 $ (prime maintenue) |
+| Juin-Juillet (accord-cadre signé) | 85-95 $ → chute de 10-15 $ à l'annonce | 95-105 $ (décrue lente) |
+| T3 2026 (déminage en cours) | 80-90 $ | 85-95 $ |
+| T4 2026 (réouverture progressive) | 75-85 $ | 80-90 $ |
+| 2027 | 65-78 $ (normalisation EIA STEO : 2027 = 76 $ baseline) | Convergence avec futures |
+
+Référence : Brent futures **96,89 $/b au 3 juin (+0,93 %, 3e séance de hausse)** sur prime de risque post-suspension iranienne, tendant vers 98 $ ; mais **−15,3 % sur 1 mois** (pic 112,93 $ le 19 mai), **+49,4 % en glissement annuel**, toujours **~+70 % vs pré-crise (~57 $ fin 2025)**. WTI ~93-94 $. Le 2 juin ~95 $ après +4,2 % le 1er juin (réaction à la suspension). **Risque haussier majeur même en A** : Exxon (Neil Chapman, 28 mai) anticipe des cargaisons physiques Brent à **150-160 $/b** lorsque les stocks toucheront leurs plus-bas absolus « dans les prochaines semaines » — même un scénario A pourrait subir un pic spot transitoire avant la décrue.
+
+---
+
+## Trajectoire France
+
+| Indicateur | Valeur estimée | Comparaison |
+|---|---|---|
+| **Gazole moyen** | 2,00-2,15 €/l (juin-juillet), puis décrue vers 1,85-1,90 €/l (automne) | Récent : **~1,95-2,15 €/L** ; **remise 20 c/L expire FIN JUIN** (risque de rebond mécanique au 1er juillet) |
+| **SP95-E10 moyen** | 1,90-2,05 €/l, puis décrue vers 1,80 €/l | Récent : **SP95-E10 ~1,95 €/L** |
+| **Inflation annuelle 2026** | 2,0-2,4 % | **Mai 2026 : +2,4 % YoY (INSEE provisoire, vs +2,2 % en avril)** — accélération tirée par l'énergie (surtout le gaz) |
+| **Croissance PIB 2026** | +0,7 à +1,0 % | Bercy/BdF/FMI baseline : 0,9 % |
+| **Chômage fin 2026** | ~7,8-8,2 % | Stable vs avant-guerre |
+| **Surcoût annuel ménage (3 pers.)** | 250-400 € | En carburant + alimentation, atténué par aides Lecornu (1,2 Md€ ; plateforme grands rouleurs 100 €/véh ouverte le 27 mai) ; vigilance expiration remise 20 c/L fin juin |
+| **Spread OAT-Bund** | Stabilisation 50-65 bps | Actuel **~67-70 bps** (Bund 10a 2,95 % le 2 juin) — sur trajectoire favorable |
+| **Coût budgétaire État** | 3-7 Md€ | Aides ciblées : GNR agri 15 c, pêche 30-35 c, BTP 20 c, **grands rouleurs 100 €/véh** (plateforme ouverte le 27 mai), **prime employeur 600 €/an**, +20 c/L permanent à domicile ; pas de bouclier généralisé ; **1,2 Md€ engagés** ; FNSEA-JA suspendue |
+
+---
+
+## Impact sur la vie quotidienne des Français
+
+- **Le plein de 40 L de gazole** passerait de ~78-86 € (début juin) à ~78-82 € en été, puis ~72 € à l'automne. Surcoût vs pré-guerre : 5-10 € par plein. **Point d'attention : la remise 20 c/L expire fin juin** — sans accord, un rebond mécanique de ~8 €/plein interviendrait au 1er juillet.
+- **Alimentation** : hausse contenue à 3-5 % sur les produits de base. Effet retardé sur récoltes 2027 (engrais urée +80 % depuis février, >850 $/t).
+- **Pas de pénurie systémique** : les ruptures d'essence se résorbent en 4-6 semaines ; le diesel se stabilise.
+- **Gaz résidentiel** : pression persistante (IPC mai tiré par l'énergie, surtout le gaz). TTF **47,69 €/MWh au 2 juin (+32,2 % YoY)** ; le stockage gaz UE n'est rempli qu'à **38 %** — la reconstitution avant l'hiver (cible 90 % au 1er nov) reste le point de vigilance même en A. QatarEnergy maintient force majeure sur 17 % de sa liquéfaction.
+- **Emploi** : faillites transport se stabilisent (600+ déjà perdus). Reprise tourisme et automobile.
+- **Climat des affaires INSEE** : remontée depuis 93,6 (mai 2026) vers 98-102 d'ici fin 2026. Climat emploi 91,7 remonte vers 95-100.
+- **Vacances été 2026** : reflux du chiffre Elabe (63 % de Français renonçant) vers 35-45 % avec normalisation des prix.
+- **Psychologie** : soulagement, mais méfiance durable. Accélération de l'intérêt VE et panneaux solaires.
+
+---
+
+## Conséquences stratégiques pour la France
+
+- La France émerge **diplomatiquement renforcée** : l'initiative Macron-Starmer (51 pays, 17 avril) + l'**initiative française à l'ONU** (Macron 12 mai, projet résolution CSNU « mission neutre et pacifique » de sécurisation d'Ormuz co-portée avec Londres) + l'engagement français au Liban (poursuivi même après FINUL fin 2027) ont démontré une capacité d'action européenne. Position délicate côté US (cf. critique Washington Times 13 mai) mais en cohérence avec la posture chinoise post-sommet 15 mai.
+- Le coût humain (3 soldats tués) pèse sur le débat FINUL mais est absorbé politiquement si la paix tient. **Aucune nouvelle perte française depuis le 22 avril (J54) — séquence de 30 jours acquise au 22 mai**.
+- La crise **accélère la transition énergétique** : nucléaire français valorisé, investissements renouvelables et VE dopés.
+- Le déficit public est contenu (3-7 Md€ d'aides). **Spread OAT-Bund** se normalise. Note souveraine S&P/Fitch (A+) et Moody's (Aa3 perspective négative) préservées.
+- L'affaire du **CMA CGM San Antonio** (5 mai, 8 marins **philippins** blessés, **pavillon maltais** — rectification J69) reste un point de tension diplomatique : la France poussera pour un cadre maritime renforcé.
+
+---
+
+## Signaux à surveiller (qui rendraient ce scénario plus probable)
+
+- ✅ Annonce officielle d'un round formel à Doha/Mascate/Genève/Vienne/Islamabad bis dans les 4 semaines
+- ✅ **Retour positif des visites Naqvi V1+V2** (17 + ~20 mai) : memo iranien revisité, transmis à Trump via Sharif (attendu 25 mai - 1er juin)
+- ✅ Iran propose un plafond d'enrichissement bas (compromis entre « zéro » US et « 14 points » iranien) compatible avec rétention domestique HEU (décret Mojtaba 21 mai)
+- ✅ **Trump acte la levée des sanctions secondaires Chine** évoquée 15 mai (décision attendue ~30 mai - 3 juin)
+- ✅ Chine matérialise sa médiation au-delà de l'offre du 15 mai (engagement chiffré ou calendrier)
+- ✅ Aucun incident létal dans le détroit dans les 30 prochains jours (**compteur acquis : 8 jours au 22 mai depuis Hui Chuan 14 mai**)
+- ✅ Volets sécurité (29 mai) et politique (2-3 juin) Israël-Liban débouchent sur halte effective des frappes IDF
+- ✅ Le Brent passe sous 95 $ futures durablement (déjà à 104,52 $ le 22 mai, trajectoire encourageante)
+- ✅ Le déminage progresse (>20 mines neutralisées sans incident)
+- ✅ Spread OAT-Bund se stabilise sous 65 bps (vs 69 au 22 mai)
+- ✅ Libération de l'équipage du Hui Chuan ou statut éclairci
+
+## Signaux d'invalidation (qui tueraient ce scénario)
+
+- ❌ Incident mortel maritime (escalade Haji Ali avec pertes humaines US/EU)
+- ❌ Iran déclare formellement la fermeture totale d'Ormuz ou enrichit publiquement à 90 % (matérialisation décret Mojtaba 21 mai + menace Rezaei 12 mai)
+- ❌ Trump ordonne des frappes sur centrales/ponts iraniens en rétorsion au décret Mojtaba
+- ❌ Rupture du cessez-le-feu Liban prolongé +45j avant 29 juin
+- ❌ La Chine renonce explicitement à sa médiation (recul de la position du 15 mai)
+- ❌ Le Brent dépasse durablement 115 $ en futures (point de non-retour psychologique — pic 112,93 $ du 19 mai a été retesté sans dépassement)
+- ❌ Échec des volets sécurité (29 mai) ou politique (2-3 juin) Israël-Liban
+- ❌ Bilan élevé manif Gilets Jaunes 23 mai + convergence FNSEA 26 mai avec mot d'ordre carburant = mouvement national paralysant
+- ❌ Spread OAT-Bund rebondit > 85 bps avec dégradation Moody's
+- ❌ Escalade Pékin-Téhéran sur Hui Chuan (procédure judiciaire iranienne sans libération équipage)
+- ❌ Memo Naqvi V2 négatif transmis Sharif → Trump (rupture canal pakistanais effective)

@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synthèse France — Ormuz : ressources, stocks, inertie (3 juin 2026 / J95)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ====================================================================
+   SYNTHÈSE FRANCE — ORMUZ
+   Infographie éditoriale 3 pages A4, impression-ready.
+   Inspiration : Le Monde grand format / Pour la Science / Courrier International.
+   ==================================================================== */
+
+:root {
+  --paper:        #F4EFE5;   /* crème / papier journal */
+  --paper-warm:   #EEE5D2;
+  --paper-deep:   #E5DAC2;
+  --ink:          #1A1612;   /* encre noire chaude */
+  --ink-soft:     #4A453E;
+  --ink-faint:    #8B8378;
+  --ink-ghost:    #B6AC9C;
+  --rule:         #C9C0AE;
+  --rule-soft:    #D8D0BF;
+  --accent:       #A4341F;   /* rouille pétrole */
+  --accent-deep:  #6E2114;
+  --indigo:       #25384E;   /* encre bleue */
+  --indigo-soft:  #5A6A7E;
+  --ochre:        #B68233;
+  --ok:           #4A7A3A;
+
+  /* Type stacks */
+  --serif-display: "Fraunces", "Cormorant Garamond", "Times New Roman", serif;
+  --serif-body:    "Newsreader", "Source Serif Pro", Georgia, serif;
+  --mono:          "JetBrains Mono", "SF Mono", "Menlo", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2b2722;
+  color: var(--ink);
+  font-family: var(--serif-body);
+  font-size: 9.4pt;
+  line-height: 1.42;
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================
+   FORMAT A4 + IMPRESSION
+   ============================ */
+.sheet {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 11mm 13mm 10mm;
+  margin: 14mm auto;
+  background: var(--paper);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(180,160,120,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse at 88% 92%, rgba(160,120,90,0.04) 0%, transparent 55%);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.45);
+  position: relative;
+  overflow: hidden;
+  color: var(--ink);
+}
+
+/* Noise / grain subtil */
+.sheet::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    repeating-radial-gradient(circle at 20% 30%, rgba(0,0,0,0.012) 0, rgba(0,0,0,0.012) 1px, transparent 1px, transparent 4px),
+    repeating-radial-gradient(circle at 70% 80%, rgba(0,0,0,0.01) 0, rgba(0,0,0,0.01) 1px, transparent 1px, transparent 5px);
+  pointer-events: none;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.sheet > * { position: relative; z-index: 2; }
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html, body { background: white; }
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+    background-color: #FFFCF6;
+  }
+  .sheet:last-child { page-break-after: auto; }
+}
+
+/* ============================
+   MASTHEAD — PAGE 1
+   ============================ */
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: end;
+  padding-bottom: 6px;
+  border-bottom: 3px double var(--ink);
+  margin-bottom: 8px;
+}
+.masthead .signature {
+  font-family: var(--mono);
+  font-size: 7.4pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.masthead .signature .accent {
+  color: var(--accent);
+  font-weight: 600;
+}
+.masthead .logo {
+  font-family: var(--serif-display);
+  font-size: 16pt;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  text-align: center;
+  line-height: 1;
+}
+.masthead .logo .pipe {
+  color: var(--accent);
+  font-weight: 600;
+  font-style: normal;
+}
+.masthead .dateline {
+  font-family: var(--mono);
+  font-size: 7.4pt;
+  text-align: right;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.kicker {
+  font-family: var(--mono);
+  font-size: 7pt;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 11px 0 4px;
+}
+
+h1.headline {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 38pt;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-variation-settings: "SOFT" 30, "opsz" 144;
+}
+h1.headline em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.standfirst {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 10.5pt;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  max-width: 165mm;
+  margin: 0 0 12px;
+  padding-left: 10px;
+  border-left: 2px solid var(--accent);
+}
+
+/* ============================
+   BANDEAU DE CHIFFRES-CLÉS
+   ============================ */
+.keynums {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  margin: 4px 0 10px;
+}
+.keynum {
+  padding: 8px 8px 7px;
+  border-right: 1px solid var(--rule);
+  text-align: left;
+}
+.keynum:last-child { border-right: none; }
+.keynum .label {
+  font-family: var(--mono);
+  font-size: 6.4pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 3px;
+}
+.keynum .value {
+  font-family: var(--serif-display);
+  font-size: 20pt;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  font-variation-settings: "SOFT" 50;
+}
+.keynum .value .unit {
+  font-size: 9pt;
+  color: var(--ink-soft);
+  font-weight: 400;
+  margin-left: 1px;
+}
+.keynum .delta {
+  font-family: var(--mono);
+  font-size: 6.6pt;
+  color: var(--accent);
+  margin-top: 2px;
+}
+.keynum .delta.calm { color: var(--ink-faint); }
+
+/* ============================
+   COLONNAGE & STRUCTURE
+   ============================ */
+.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; }
+.cols-12 { display: grid; grid-template-columns: repeat(12, 1fr); gap: 5mm; }
+
+h2.section {
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 14pt;
+  line-height: 1.02;
+  color: var(--ink);
+  margin: 12px 0 4px;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 4px;
+}
+h2.section .num {
+  font-family: var(--mono);
+  font-size: 7.6pt;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+h2.section .stretch {
+  flex: 1;
+  height: 1px;
+  background: transparent;
+}
+
+h3.subsection {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 10.5pt;
+  margin: 6px 0 4px;
+  color: var(--ink);
+}
+
+p { margin: 4px 0 6px; text-align: justify; hyphens: auto; }
+p.lead { font-size: 9.6pt; }
+
+.lead-cap::first-letter {
+  font-family: var(--serif-display);
+  font-weight: 700;
+  float: left;
+  font-size: 36pt;
+  line-height: 0.85;
+  padding: 4px 6px 0 0;
+  color: var(--accent);
+}
+
+/* ============================
+   SCHÉMAS & FIGURES
+   ============================ */
+.figure {
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  padding: 8px 10px 10px;
+  margin: 6px 0;
+  position: relative;
+}
+.figure .figlabel {
+  font-family: var(--mono);
+  font-size: 6.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.figure .figtitle {
+  font-family: var(--serif-display);
+  font-size: 10pt;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.figure .figcap {
+  font-family: var(--serif-body);
+  font-size: 7.5pt;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+/* Schéma flux Ormuz */
+.flow-ormuz {
+  display: grid;
+  grid-template-columns: 70px 1fr 80px;
+  gap: 0;
+  align-items: center;
+  padding: 10px 0 6px;
+}
+.flow-node {
+  text-align: center;
+  font-family: var(--serif-display);
+}
+.flow-node .big {
+  font-size: 18pt;
+  font-weight: 600;
+  display: block;
+  line-height: 1;
+}
+.flow-node .lbl {
+  font-family: var(--mono);
+  font-size: 6.4pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+.flow-arrow {
+  position: relative;
+  height: 36px;
+}
+.flow-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  right: 18px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 4px, transparent 4px 8px);
+}
+.flow-arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 6px;
+  border: 6px solid transparent;
+  border-left: 10px solid var(--ink);
+  border-right: 0;
+}
+.flow-arrow .pct {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 10pt;
+  color: var(--accent);
+  background: var(--paper-warm);
+  padding: 0 6px;
+}
+.flow-arrow .sublbl {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 6.2pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* Barres horizontales (stock / remplissage) */
+.bar-row {
+  display: grid;
+  grid-template-columns: 95px 1fr 50px;
+  gap: 6px;
+  align-items: center;
+  font-size: 8.4pt;
+  margin: 3px 0;
+}
+.bar-row .blbl { color: var(--ink); }
+.bar-row .bar {
+  height: 7px;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  position: relative;
+}
+.bar-row .bar > i {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+.bar-row .bar.danger > i { background: var(--accent); }
+.bar-row .bar.warn > i { background: var(--ochre); }
+.bar-row .bar.ok > i { background: var(--ok); }
+.bar-row .bar > .threshold {
+  position: absolute;
+  top: -3px; bottom: -3px;
+  width: 1.5px;
+  background: var(--indigo);
+}
+.bar-row .bnum {
+  font-family: var(--mono);
+  font-size: 7.4pt;
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ============================
+   GRILLE RESSOURCES CRITIQUES
+   ============================ */
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin: 6px 0;
+}
+.res-cell {
+  border: 1px solid var(--rule);
+  padding: 6px 7px 5px;
+  background: var(--paper-warm);
+  position: relative;
+}
+.res-cell::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--ink-faint);
+}
+.res-cell.lvl-3::after { background: var(--accent); }
+.res-cell.lvl-2::after { background: var(--ochre); }
+.res-cell.lvl-1::after { background: var(--ink-faint); }
+.res-cell .rname {
+  font-family: var(--serif-display);
+  font-size: 9.5pt;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+}
+.res-cell .rpct {
+  font-family: var(--mono);
+  font-size: 7pt;
+  color: var(--accent);
+  margin-top: 3px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.res-cell .ruse {
+  font-family: var(--serif-body);
+  font-size: 7.4pt;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.25;
+  margin-top: 2px;
+}
+
+/* ============================
+   CALENDRIER PÉNURIES
+   ============================ */
+.cal {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt;
+  margin: 4px 0;
+}
+.cal th {
+  font-family: var(--mono);
+  font-size: 6.6pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  text-align: left;
+  padding: 4px 4px;
+  border-bottom: 1.5px solid var(--ink);
+  font-weight: 600;
+}
+.cal th.num, .cal td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.cal td {
+  padding: 4px 4px;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+.cal tr:last-child td { border-bottom: none; }
+.cal .prod {
+  font-family: var(--serif-body);
+  font-weight: 600;
+  color: var(--ink);
+}
+.cal .date {
+  font-family: var(--mono);
+  font-size: 7.4pt;
+  font-weight: 600;
+  color: var(--accent);
+}
+.cal .trj {
+  font-family: var(--mono);
+  font-size: 7.4pt;
+  letter-spacing: 0.06em;
+}
+.cal .trj .a { color: var(--ink-faint); }
+.cal .trj .b { color: var(--ochre); }
+.cal .trj .c { color: var(--accent); }
+.cal .trj .d { color: var(--accent-deep); font-weight: 600; }
+
+/* ============================
+   PARAGRAPHE INERTIE — PAGE 3
+   ============================ */
+.inertia {
+  border-top: 1.5px solid var(--ink);
+  padding-top: 10px;
+  margin-top: 14px;
+  page-break-inside: avoid;
+}
+.inertia .ititle {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 12pt;
+  margin: 0 0 4px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.inertia .ititle .ord {
+  font-family: var(--mono);
+  font-size: 9.6pt;
+  color: var(--accent);
+  font-weight: 700;
+}
+.inertia .istand {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 9pt;
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+.inertia .ibody {
+  font-size: 8.8pt;
+}
+
+/* Diagramme stations / "ligne de métro" temporelle */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin: 6px 0 4px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 3%;
+  right: 3%;
+  height: 2px;
+  background: var(--ink);
+  z-index: 0;
+}
+.tl-stop {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 0;
+}
+.tl-stop .dot {
+  display: block;
+  margin: 4px auto 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--paper-warm);
+  border: 2px solid var(--ink);
+  position: relative;
+}
+.tl-stop.now .dot { background: var(--accent); border-color: var(--accent); }
+.tl-stop.ok .dot { background: var(--ok); border-color: var(--ok); }
+.tl-stop .num {
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--paper);
+  font-family: var(--mono);
+  font-size: 6pt;
+  font-weight: 700;
+  color: var(--ink);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink);
+}
+.tl-stop .lbl {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 6.2pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  line-height: 1.15;
+}
+.tl-stop .dur {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 7.6pt;
+  color: var(--accent);
+}
+
+/* Anciens chiffres en grande capitale */
+.bignum {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 32pt;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  display: block;
+}
+.bignum + .biglbl {
+  font-family: var(--mono);
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+/* ============================
+   PIED DE PAGE
+   ============================ */
+.pgfooter {
+  position: absolute;
+  bottom: 7mm;
+  left: 13mm;
+  right: 13mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--ink);
+  padding-top: 4px;
+  font-family: var(--mono);
+  font-size: 6.6pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.pgfooter .pnum {
+  color: var(--accent);
+  font-weight: 700;
+}
+.pgfooter .center { color: var(--ink-faint); font-style: italic; font-family: var(--serif-body); text-transform: none; letter-spacing: 0; font-size: 7.4pt;}
+
+/* Aside / encart d'aération */
+.aside {
+  border: 1.5px solid var(--ink);
+  padding: 8px 10px;
+  margin: 6px 0;
+  background: transparent;
+}
+.aside .alabel {
+  font-family: var(--mono);
+  font-size: 6.6pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.aside p { margin: 2px 0; font-size: 8.4pt; }
+
+/* Pull quote */
+.pull {
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 13pt;
+  line-height: 1.2;
+  color: var(--ink);
+  padding: 6px 14px 6px 18px;
+  margin: 8px 0;
+  border-left: 3px solid var(--accent);
+  position: relative;
+}
+.pull::before {
+  content: "«";
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  font-size: 22pt;
+  color: var(--accent);
+  font-style: normal;
+  line-height: 1;
+}
+
+/* Visibilité écran : navigation rapide */
+.screen-only {
+  max-width: 210mm;
+  margin: 20px auto -10px;
+  padding: 10px 20px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #d8cfb8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.screen-only a {
+  color: #f1c97f;
+  margin: 0 8px;
+  text-decoration: none;
+  border-bottom: 1px dashed #f1c97f;
+}
+@media print { .screen-only { display: none; } }
+
+/* Petites utilités */
+.txt-accent { color: var(--accent); }
+.txt-indigo { color: var(--indigo); }
+.italic { font-style: italic; }
+.small { font-size: 7.6pt; }
+.mono { font-family: var(--mono); }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* Mini diagrammes "tanker / raffinerie" iconographie SVG */
+.glyph {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  color: var(--accent);
+}
+
+/* ============================
+   PAGE 2 — Layout mixte
+   ============================ */
+.split-7-5 { display: grid; grid-template-columns: 7fr 5fr; gap: 6mm; }
+.split-5-7 { display: grid; grid-template-columns: 5fr 7fr; gap: 6mm; }
+
+/* Tableau cascade */
+.cascade {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt;
+  margin: 4px 0;
+}
+.cascade th {
+  font-family: var(--mono);
+  font-size: 6.4pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 3px 4px;
+  border-bottom: 1.5px solid var(--ink);
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+.cascade td {
+  padding: 4px 4px;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+  line-height: 1.3;
+}
+.cascade .src {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.cascade .arrow {
+  font-family: var(--mono);
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+/* Roue cyclique inertie - illustration */
+.cycle-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 4px 0;
+  text-align: center;
+}
+.cm-phase {
+  border: 1px solid var(--rule);
+  padding: 5px 4px;
+  background: var(--paper);
+}
+.cm-phase .pn {
+  font-family: var(--mono);
+  font-size: 6.2pt;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+.cm-phase .pt {
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 9pt;
+  color: var(--ink);
+  display: block;
+}
+.cm-phase .pd {
+  font-family: var(--mono);
+  font-size: 7pt;
+  color: var(--accent);
+  margin-top: 2px;
+}
+</style>
+</head>
+<body>
+
+<nav class="screen-only">
+  Édition imprimable A4 · <a href="index.html">← Centre de pilotage</a> · <a href="javascript:window.print()">Imprimer</a> · 3 feuillets
+</nav>
+
+<!-- ======================================================
+     PAGE 1 — L'ÉNERGIE
+     ====================================================== -->
+<article class="sheet">
+
+  <header class="masthead">
+    <div class="signature"><span class="accent">●</span>&nbsp; Dossier&nbsp;OSINT&nbsp;/&nbsp;Impact&nbsp;France</div>
+    <div class="logo">Le Détroit <span class="pipe">|</span> <em>chronique d'une crise</em></div>
+    <div class="dateline">Mer. 3 juin 2026 &nbsp;·&nbsp; J95</div>
+  </header>
+
+  <div class="kicker">Édition spéciale · Synthèse en trois feuillets · à diffuser</div>
+  <h1 class="headline">Quand un détroit&nbsp;de <em>50&nbsp;km</em><br>retient la France</h1>
+  <p class="standfirst">Depuis le 28&nbsp;février 2026, la fermeture du détroit d'Ormuz — par où transitait 20&nbsp;% du pétrole et du GNL mondiaux — pèse sur la pompe, le frigo, l'hôpital et l'usine&nbsp;française. Ce document fait l'état des stocks et des dépendances&nbsp;: ce qui tient, ce qui plie, ce qui mettra des mois à se réparer.</p>
+
+  <!-- BANDEAU CHIFFRES CLÉS -->
+  <div class="keynums">
+    <div class="keynum">
+      <div class="label">Brent — clôture</div>
+      <div class="value">96,89<span class="unit">$/b</span></div>
+      <div class="delta">+70&nbsp;% vs pré-crise · +49&nbsp;% sur un an</div>
+    </div>
+    <div class="keynum">
+      <div class="label">Gazole France</div>
+      <div class="value">~2,05<span class="unit">€/L</span></div>
+      <div class="delta">fourchette 1,95-2,15 · record 2,19 le 31 mars</div>
+    </div>
+    <div class="keynum">
+      <div class="label">Stations en rupture (essence)</div>
+      <div class="value">22,5<span class="unit">%</span></div>
+      <div class="delta">gazole 2,8 % · stable</div>
+    </div>
+    <div class="keynum">
+      <div class="label">Consommation carburant mai</div>
+      <div class="value">−30<span class="unit">%</span></div>
+      <div class="delta">vs mai 2025 (Lecornu)</div>
+    </div>
+    <div class="keynum">
+      <div class="label">Inflation France · mai</div>
+      <div class="value">+2,4<span class="unit">%</span></div>
+      <div class="delta calm">sur un an · INSEE (énergie/gaz)</div>
+    </div>
+  </div>
+
+  <h2 class="section"><span class="num">I.</span> Le pétrole — la France tient debout, sans triomphalisme <span class="stretch"></span></h2>
+
+  <div class="cols-2">
+    <div>
+      <p class="lead lead-cap"><strong>La France importe</strong> en année normale environ 50&nbsp;millions de tonnes de pétrole brut. Une part remarquablement modeste — moins de 5&nbsp;% — transite directement par Ormuz&nbsp;; l'essentiel arrive d'Arabie via la mer Rouge, de Norvège, du Kazakhstan, des États-Unis ou du Nigeria. Mais le prix, lui, est mondial&nbsp;: dès que le détroit se ferme, chaque litre vendu en France coûte plus cher, partout, immédiatement.</p>
+
+      <p>Au 3&nbsp;juin, <strong>les flux par Ormuz tournent toujours à 5&nbsp;% de la normale</strong>. La pénurie réelle pèse sur le marché physique (Dated Brent en prime ; Exxon alerte sur des cargaisons à 150-160&nbsp;$ sous 2-3&nbsp;semaines), pas encore sur la machine industrielle française&nbsp;: les huit raffineries du pays (Gonfreville, Donges, Feyzin, Port-Jérôme, Fos, Lavéra, plus deux bio à La&nbsp;Mède et Grandpuits) tournent à pleine capacité depuis mars.</p>
+
+      <p>Les <strong>stocks stratégiques nationaux</strong> (gérés par la SAGESS, principalement enfouis dans les cavités salines de Manosque) couvrent encore <strong>85 à 90&nbsp;jours</strong> de consommation. La France a engagé 14,5&nbsp;millions de barils sur son quota AIE&nbsp;: à peine 15&nbsp;% de la réserve mobilisable. Le ministre des Finances refuse, à ce stade, tout tirage au-delà de cette tranche.</p>
+    </div>
+
+    <div>
+      <div class="figure">
+        <div class="figlabel">Schéma 1 · Flux et substituts</div>
+        <div class="figtitle">D'où vient le pétrole consommé en France</div>
+        <div class="flow-ormuz">
+          <div class="flow-node">
+            <span class="big">20<span style="font-size:11pt">%</span></span>
+            <span class="lbl">Pétrole mondial<br>via Ormuz</span>
+          </div>
+          <div class="flow-arrow">
+            <div class="pct">~5 %</div>
+            <div class="sublbl">Imports FR directs</div>
+          </div>
+          <div class="flow-node">
+            <span class="big">France</span>
+            <span class="lbl">~1 060 kb/j<br>raffiné</span>
+          </div>
+        </div>
+        <div class="figcap">La France n'est pas directement exposée à Ormuz — son risque est <em>indirect</em>, par le prix mondial du Brent et par l'effet de domino sur les voisins (Italie 35-40&nbsp;%, Allemagne via dépôts).</div>
+      </div>
+
+      <h3 class="subsection">Stocks stratégiques — réservoir national</h3>
+      <div class="bar-row">
+        <span class="blbl">Pétrole brut</span>
+        <span class="bar"><i style="width:85%"></i><span class="threshold" style="left:90%"></span></span>
+        <span class="bnum">85 j</span>
+      </div>
+      <div class="bar-row">
+        <span class="blbl">Produits raffinés</span>
+        <span class="bar"><i style="width:88%"></i><span class="threshold" style="left:90%"></span></span>
+        <span class="bnum">88 j</span>
+      </div>
+      <div class="bar-row">
+        <span class="blbl">Géosel · Manosque</span>
+        <span class="bar ok"><i style="width:84%"></i></span>
+        <span class="bnum">84 %</span>
+      </div>
+      <p class="small italic" style="margin-top:4px; color:var(--ink-soft)">Seuil réglementaire AIE&nbsp;: 90&nbsp;jours <span class="mono" style="color:var(--indigo)">▎</span> · Géosel concentre ≈40&nbsp;% des stocks SAGESS</p>
+    </div>
+  </div>
+
+  <h2 class="section"><span class="num">II.</span> Le gaz — le danger n'est pas aujourd'hui, c'est <em style="font-style:italic">novembre</em> <span class="stretch"></span></h2>
+
+  <div class="cols-2">
+    <div>
+      <p>L'hiver 2025-2026 a vidé les réservoirs. Pour repartir sereinement à l'automne, l'Union européenne doit refaire le plein — <strong>cible réglementaire&nbsp;: 90&nbsp;% de remplissage au 1<sup>er</sup>&nbsp;novembre 2026</strong>. Mais elle n'y arrive pas. Au 2&nbsp;juin, le stockage européen affichait 38&nbsp;% (le 5&nbsp;ans dirait 55&nbsp;% à cette date). La France, environ 38&nbsp;%.</p>
+
+      <p>La cause&nbsp;: la <em>force majeure</em> déclarée par QatarEnergy (Qatar = 17&nbsp;% du GNL mondial), la perte définitive du FSRU du Havre (jugement de Rouen, octobre 2025) qui a amputé la France de 10&nbsp;% de sa capacité de regazéification, et un prix TTF qui flotte à 47-48&nbsp;€/MWh (47,69&nbsp;€/MWh le 2&nbsp;juin) — <em>il faudrait remplir vite, mais à prix d'or</em>.</p>
+
+      <p>Si Ormuz reste fermé jusqu'à l'automne, le TTF pourrait franchir 80&nbsp;€/MWh à l'hiver — soit <strong>+150 à 200&nbsp;€ par foyer chauffé au gaz, en sus du tarif réglementé déjà relevé de +15,4&nbsp;% au 1<sup>er</sup>&nbsp;mai</strong>.</p>
+
+      <div class="aside">
+        <div class="alabel">À retenir</div>
+        <p>Le pétrole, c'est le <strong>prix immédiat</strong>. Le gaz, c'est la <strong>facture différée</strong>, encaissée à l'hiver. Les deux compteurs tournent en silence depuis 95 jours.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="figure">
+        <div class="figlabel">Schéma 2 · Stockage gaz</div>
+        <div class="figtitle">Remplissage des réserves souterraines (UGS) au 2 juin</div>
+        <div class="bar-row">
+          <span class="blbl">Espagne</span>
+          <span class="bar ok"><i style="width:66%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">66 %</span>
+        </div>
+        <div class="bar-row">
+          <span class="blbl">Italie</span>
+          <span class="bar warn"><i style="width:54%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">54 %</span>
+        </div>
+        <div class="bar-row">
+          <span class="blbl">Autriche</span>
+          <span class="bar warn"><i style="width:42%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">42 %</span>
+        </div>
+        <div class="bar-row">
+          <span class="blbl"><strong>France</strong></span>
+          <span class="bar warn"><i style="width:38%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">38 %</span>
+        </div>
+        <div class="bar-row">
+          <span class="blbl">UE agrégée</span>
+          <span class="bar warn"><i style="width:38%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">38 %</span>
+        </div>
+        <div class="bar-row">
+          <span class="blbl">Allemagne</span>
+          <span class="bar danger"><i style="width:28%"></i><span class="threshold" style="left:90%"></span></span>
+          <span class="bnum">28 %</span>
+        </div>
+        <div class="figcap"><span class="mono txt-indigo">▎</span> Cible réglementaire 90 % au 1<sup>er</sup> novembre. Au rythme actuel d'injection (60 % du besoin), <strong>cible inatteignable</strong>. France et Allemagne en double risque.</div>
+      </div>
+
+      <div style="display:flex; gap:8px; align-items:center; margin-top:6px;">
+        <div style="flex:1">
+          <span class="bignum">−10<span style="font-size:18pt">%</span></span>
+          <span class="biglbl">Capacité de regaz&nbsp;France</span>
+          <p class="small" style="margin:2px 0 0; color:var(--ink-soft)">FSRU Le Havre retiré · oct.&nbsp;2025</p>
+        </div>
+        <div style="flex:1">
+          <span class="bignum">47,69<span style="font-size:18pt">€/MWh</span></span>
+          <span class="biglbl">TTF gaz · 2 juin</span>
+          <p class="small" style="margin:2px 0 0; color:var(--ink-soft)">×2 vs moyenne 10&nbsp;ans</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section"><span class="num">III.</span> À la pompe — pourquoi cela tient, et pourquoi ce n'est pas une victoire <span class="stretch"></span></h2>
+
+  <div class="cols-2">
+    <div>
+      <p>Le système français n'est pas en rupture parce qu'il <strong>consomme moins</strong>. Sondage Elabe du 13&nbsp;mai&nbsp;: <strong>63&nbsp;% des Français renoncent à leurs vacances d'été</strong> à cause du carburant. Lecornu, 12&nbsp;mai&nbsp;: la consommation de carburant a chuté de <strong>30&nbsp;% sur les dix premiers jours de mai</strong>. C'est ce que les économistes appellent, en anglais, la <em>demand destruction</em>&nbsp;: le marché s'équilibre par renoncement, pas par abondance.</p>
+
+      <p>Cet équilibre fragile a un revers fiscal&nbsp;: −30&nbsp;% de carburant vendu, c'est −300&nbsp;M€ de TICPE en dix jours pour l'État, qui peine à financer un bouclier carburant universel et bascule sur des aides ciblées (<strong>plan Lecornu de 1,2&nbsp;Md€</strong>) — qu'une partie des transporteurs <em>(FNTR)</em> juge inaccessibles sur le terrain. La <strong>remise de 20&nbsp;centimes/litre expire fin juin</strong>&nbsp;: sans prolongation, le prix affiché à la pompe bondira mécaniquement à l'été.</p>
+    </div>
+
+    <div>
+      <p class="pull">L'équilibre tient parce que les Français consomment moins, pas parce que les approvisionnements sont sains.</p>
+
+      <div class="cols-3" style="gap:4mm; margin-top:6px">
+        <div>
+          <span class="bignum" style="font-size:24pt">63<span style="font-size:14pt">%</span></span>
+          <span class="biglbl">Renoncent aux vacances</span>
+        </div>
+        <div>
+          <span class="bignum" style="font-size:24pt">2,8<span style="font-size:14pt">%</span></span>
+          <span class="biglbl">Stations rupture gazole</span>
+        </div>
+        <div>
+          <span class="bignum" style="font-size:24pt">3</span>
+          <span class="biglbl">Militaires FR tués au Liban</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pgfooter">
+    <span><span class="pnum">PAGE 1 / 3</span> &nbsp;·&nbsp; L'ÉNERGIE</span>
+    <span class="center">Données recoupées : IEA OMR · EIA STEO · AGSI+ · INSEE · CPDP · DGEC</span>
+    <span>SUITE&nbsp;→&nbsp; ressources critiques</span>
+  </footer>
+</article>
+
+
+<!-- ======================================================
+     PAGE 2 — AU-DELÀ DU CARBURANT
+     ====================================================== -->
+<article class="sheet">
+
+  <header class="masthead">
+    <div class="signature"><span class="accent">●</span>&nbsp; Suite — Feuillet&nbsp;II/III</div>
+    <div class="logo">Le Détroit <span class="pipe">|</span> <em>au-delà du carburant</em></div>
+    <div class="dateline">Mer. 3 juin 2026 &nbsp;·&nbsp; J95</div>
+  </header>
+
+  <div class="kicker">Chapitre&nbsp;deux · Ce qu'Ormuz traverse aussi · matière, médicament, moisson</div>
+  <h1 class="headline" style="font-size:30pt">L'<em>angle mort</em> de la crise&nbsp;: hélium, urée, aluminium</h1>
+  <p class="standfirst">Le débat public se polarise sur le prix à la pompe. Mais Ormuz n'est pas qu'un robinet à pétrole — c'est le point de passage de douze matières premières silencieuses dont dépend l'hôpital, le champ, l'usine, l'emballage. La France n'est pas en première ligne sur toutes&nbsp;; elle l'est sur six.</p>
+
+  <h2 class="section"><span class="num">IV.</span> Douze matières premières que personne ne voit passer <span class="stretch"></span></h2>
+
+  <div class="res-grid">
+    <div class="res-cell lvl-3">
+      <div class="rname">Hélium</div>
+      <div class="rpct">33 % via Qatar · +70-100 %</div>
+      <div class="ruse">IRM, scanners, semi-conducteurs (lithographie EUV). Pas de substitut court terme.</div>
+    </div>
+    <div class="res-cell lvl-3">
+      <div class="rname">Urée</div>
+      <div class="rpct">43 % seaborne · +47 %</div>
+      <div class="ruse">Engrais azoté : blé, maïs, élevage. Récolte 2026 menacée.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Ammoniac</div>
+      <div class="rpct">29 % · +30-40 %</div>
+      <div class="ruse">Engrais composés, chimie, AdBlue camions.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Soufre</div>
+      <div class="rpct">44 % seaborne · +25-40 %</div>
+      <div class="ruse">Acide sulfurique → phosphates → NPK, mines.</div>
+    </div>
+
+    <div class="res-cell lvl-3">
+      <div class="rname">GPL</div>
+      <div class="rpct">20 % · +64 % propane</div>
+      <div class="ruse">Cuisson rurale (Bretagne, Provence), taxis bouteilles 13 kg.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Aluminium</div>
+      <div class="rpct">8 % CCG · +25-35 %</div>
+      <div class="ruse">Automobile (Stellantis), bâtiment, emballage, EV.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Méthanol</div>
+      <div class="rpct">56 % exports · +30 %</div>
+      <div class="ruse">Formaldéhyde, MTBE, biodiesel, détergents.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Naphta</div>
+      <div class="rpct">54 % Asie · +20-30 %</div>
+      <div class="ruse">Vapocraquage → plastiques de base.</div>
+    </div>
+
+    <div class="res-cell lvl-3">
+      <div class="rname">PE / PP</div>
+      <div class="rpct">SABIC + Borouge · ×2 LDPE</div>
+      <div class="ruse">Emballage alimentaire, médical, automobile.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">MEG</div>
+      <div class="rpct">~40 % capacité · +25 %</div>
+      <div class="ruse">Bouteilles PET, fibre polyester, antigel.</div>
+    </div>
+    <div class="res-cell lvl-2">
+      <div class="rname">Bases GTL</div>
+      <div class="rpct">90 % monde · allocations</div>
+      <div class="ruse">Lubrifiants moteur haut de gamme.</div>
+    </div>
+    <div class="res-cell lvl-3">
+      <div class="rname">VAM</div>
+      <div class="rpct">30 % saudi · €3000/t record</div>
+      <div class="ruse">Film EVA solaire, colles bois, ameublement.</div>
+    </div>
+  </div>
+  <p class="small italic" style="color:var(--ink-soft); margin-top:2px">Source&nbsp;: <span class="mono">app/dependances_ressources_critiques.html</span>. Bande gauche rouge&nbsp;= exposition France&nbsp;élevée ou substitution impossible à court terme.</p>
+
+  <div class="split-7-5" style="margin-top:8px">
+    <div>
+      <h2 class="section" style="margin-top:8px"><span class="num">V.</span> Comment cela arrive dans la vie quotidienne <span class="stretch"></span></h2>
+      <table class="cascade">
+        <thead>
+          <tr>
+            <th>Matière</th><th>Cascade</th><th>Effet français</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="src">Urée + ammoniac</td>
+            <td class="arrow">→</td>
+            <td>Engrais +30-47&nbsp;% · récolte 2026 (juin-juillet) de moindre qualité protéique — répercussion <strong>pain, semoule, biscuiterie</strong> dès mi-juillet.</td>
+          </tr>
+          <tr>
+            <td class="src">Hélium</td>
+            <td class="arrow">→</td>
+            <td>IRM des hôpitaux français en risque d'allocation. Industrie semi-conducteurs (Crolles, Grenoble) et CEA exposés.</td>
+          </tr>
+          <tr>
+            <td class="src">GPL</td>
+            <td class="arrow">→</td>
+            <td>Cuisson rurale (~1,5 M de foyers en bouteille 13 kg). Prix bouteille en hausse, ruptures locales possibles.</td>
+          </tr>
+          <tr>
+            <td class="src">Aluminium</td>
+            <td class="arrow">→</td>
+            <td>Renchérissement véhicules neufs (Stellantis), conserves alimentaires, canettes, ferraille recyclée tendue.</td>
+          </tr>
+          <tr>
+            <td class="src">Méthanol + VAM</td>
+            <td class="arrow">→</td>
+            <td>Détergents, peintures, ameublement (colles bois). Effet diffus mais persistant sur tout le rayon bricolage/maison.</td>
+          </tr>
+          <tr>
+            <td class="src">PE / PP / MEG</td>
+            <td class="arrow">→</td>
+            <td>Emballage plastique alimentaire +20-30 % ; bouteilles d'eau plus chères ; matériel médical (poches, seringues) sous allocation.</td>
+          </tr>
+          <tr>
+            <td class="src">Bases GTL</td>
+            <td class="arrow">→</td>
+            <td>Lubrifiants haut de gamme (huiles synthétiques 5W30, transmissions auto) en allocation chez Total et Castrol.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="section" style="margin-top:8px"><span class="num">VI.</span> Le calendrier — ce qui bascule, quand <span class="stretch"></span></h2>
+      <p class="small" style="margin-top:0">Sous scénario central (enlisement, probabilité 58-66&nbsp;%). Dates butoirs d'achat optimal&nbsp;; trajectoire S19→S30 (mai→fin juillet 2026).</p>
+      <table class="cal">
+        <thead>
+          <tr><th>Produit</th><th>Butoir</th><th>Trajectoire</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="prod">Gazole B7</td><td class="date">31 mai</td><td class="trj"><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span> &nbsp;fin juillet 🔴</td></tr>
+          <tr><td class="prod">Fioul domestique</td><td class="date">15 juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Pétrole lampant</td><td class="date">24 mai</td><td class="trj"><span class="b">●</span><span class="d">●</span><span class="d">●</span><span class="d">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Café torréfié</td><td class="date">1<sup>er</sup> juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="c">●</span></td></tr>
+          <tr><td class="prod">Viande bovine</td><td class="date">25 mai</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="c">●</span></td></tr>
+          <tr><td class="prod">Huile tournesol</td><td class="date">14 juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Riz basmati</td><td class="date">14 juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Paracétamol pédia.</td><td class="date">14 juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Antihypertenseurs (sartans)</td><td class="date">14 juin</td><td class="trj"><span class="b">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Fruits exotiques</td><td class="date">24 mai</td><td class="trj"><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+          <tr><td class="prod">Power banks · piles</td><td class="date">30 juin</td><td class="trj"><span class="a">●</span><span class="a">●</span><span class="b">●</span><span class="c">●</span><span class="c">●</span></td></tr>
+          <tr><td class="prod">AdBlue (DEF)</td><td class="date">15 juin</td><td class="trj"><span class="b">●</span><span class="c">●</span><span class="c">●</span><span class="c">●</span><span class="d">●</span></td></tr>
+        </tbody>
+      </table>
+      <p class="small italic" style="color:var(--ink-soft); margin-top:2px">Légende&nbsp;: <span class="mono"><span style="color:var(--ink-faint)">●</span> nominal</span> · <span class="mono"><span style="color:var(--ochre)">●</span> hausse 10-30&nbsp;%</span> · <span class="mono"><span style="color:var(--accent)">●</span> rationnement</span> · <span class="mono"><span style="color:var(--accent-deep);font-weight:600">●</span> inaccessible</span>. Chaque puce = une période ~2&nbsp;semaines (mai → fin juillet).</p>
+    </div>
+  </div>
+
+  <h2 class="section" style="margin-top:8px"><span class="num">VII.</span> Impact dans le frigo, la voiture, le radiateur, l'emploi <span class="stretch"></span></h2>
+  <div class="cols-2">
+    <div>
+      <h3 class="subsection">Alimentaire</h3>
+      <p>L'inflation alimentaire publiée par l'INSEE est encore basse (+1,2&nbsp;% sur un an en avril), mais le mécanisme est connu&nbsp;: après un choc pétrolier majeur, l'inflation des produits frais et transformés met <strong>3 à 6 mois</strong> pour se manifester (engrais, transport, emballage, énergie de la chaîne du froid). Pic attendu&nbsp;: <strong>juillet-août 2026, +4 à +6&nbsp;% en glissement annuel</strong>. Le panier moyen d'un ménage de quatre&nbsp;: +50 à +90&nbsp;€ par mois.</p>
+
+      <h3 class="subsection">Transport</h3>
+      <p>1&nbsp;200 à 1&nbsp;800 faillites projetées dans les PME du transport routier sur l'année. La FNTR alerte que les aides annoncées ne sont, dans les faits, pas accessibles. Pour le particulier&nbsp;: un plein de 40&nbsp;L coûte aujourd'hui ~86&nbsp;€ contre ~65&nbsp;€ en 2024.</p>
+    </div>
+    <div>
+      <h3 class="subsection">Chauffage</h3>
+      <p>Le tarif réglementé du gaz a déjà été relevé de <strong>+15,4&nbsp;%</strong> au 1<sup>er</sup>&nbsp;mai. Si le détroit reste fermé jusqu'à l'automne, la facture annuelle d'un foyer chauffé au gaz augmenterait de <strong>+150 à +350&nbsp;€</strong>. Le fioul (4 millions de foyers, surtout rural) subit déjà une hausse comparable&nbsp;; les ménages qui peuvent encore remplir leur cuve avant le 15&nbsp;juin économiseront 500 à 1 200&nbsp;€ sur l'année.</p>
+
+      <h3 class="subsection">Emploi · Macro</h3>
+      <p>Croissance France 2026 révisée à <strong>+0,9&nbsp;%</strong> (Bercy/BdF/FMI). En scénario d'escalade, récession (−1 à −0,3&nbsp;%) et chômage 9-10,5&nbsp;%. Le spread OAT-Bund — thermomètre du coût de la dette française — s'est replié à 70&nbsp;bps&nbsp;; la dégradation Moody's reste latente.</p>
+    </div>
+  </div>
+
+  <footer class="pgfooter">
+    <span><span class="pnum">PAGE 2 / 3</span> &nbsp;·&nbsp; AU-DELÀ DU CARBURANT</span>
+    <span class="center">Sources : EU Critical Raw Materials Act · Eurostat · FranceAgriMer · ANSM</span>
+    <span>SUITE&nbsp;→&nbsp; pourquoi ça ne redémarre pas</span>
+  </footer>
+</article>
+
+
+<!-- ======================================================
+     PAGE 3 — L'INERTIE
+     ====================================================== -->
+<article class="sheet">
+
+  <header class="masthead">
+    <div class="signature"><span class="accent">●</span>&nbsp; Dernier feuillet · III/III</div>
+    <div class="logo">Le Détroit <span class="pipe">|</span> <em>l'inertie des choses</em></div>
+    <div class="dateline">Mer. 3 juin 2026 &nbsp;·&nbsp; J95</div>
+  </header>
+
+  <div class="kicker">La question qui change tout · pourquoi un déblocage n'efface pas la crise</div>
+  <h1 class="headline" style="font-size:32pt">Couper, c'est <em>vite</em>.<br>Rallumer, c'est <em>long</em>.</h1>
+  <p class="standfirst">L'imaginaire collectif associe une crise pétrolière à un robinet&nbsp;: ouvert ou fermé. La réalité industrielle est tout autre. Un système énergétique est fait de milliers de pièces lourdes, lentes, contractuelles, humaines&nbsp;: un tanker, une raffinerie, un pipeline, un champ d'extraction. Chacune, à l'arrêt, déclenche une chaîne de procédures coûteuses&nbsp;; chacune, au redémarrage, en réclame une autre, plus longue encore. Voici, en quatre exemples, <strong>pourquoi un accord diplomatique signé demain ne ferait pas baisser le prix à la pompe avant des mois</strong>.</p>
+
+  <!-- ========== INERTIE 1 — TANKER ========== -->
+  <section class="inertia">
+    <h3 class="ititle"><span class="ord">N° 1 ·</span> Le <em>tanker</em> plein, à l'ancre depuis sept semaines</h3>
+    <p class="istand">Un VLCC chargé de 2 millions de barils, immobilisé dans le Golfe sous menace iranienne. Ce qu'il subit, jour après jour&nbsp;; ce qu'il faudra refaire, dans l'ordre.</p>
+    <p class="ibody">Quand l'ordre d'attente tombe, l'équipage met en route la <em>cold ironing procedure</em>&nbsp;: arrêt progressif du moteur principal, maintien des auxiliaires (groupes électrogènes pour la cargaison, pompes d'inertage, radars). La cargaison reste «&nbsp;vivante&nbsp;»&nbsp;: le pétrole brut s'évapore légèrement, l'azote inerte les ciels de cuve pour éviter l'explosion, la coque est constamment surveillée pour la corrosion saline. Sur sept semaines, une partie de l'équipage doit être <strong>relevée à terre</strong> (visas Oman/Djibouti, transfert par <em>crew boat</em>), les vivres et l'eau douce sont réapprovisionnés trois ou quatre fois, l'assurance maritime — couverture <em>war risk</em> souscrite à 1-2&nbsp;% de la valeur de la coque <em>par voyage</em> — est renégociée toutes les sept à dix jours. Coût d'immobilisation&nbsp;: 60&nbsp;000 à 90&nbsp;000&nbsp;USD par jour, hors prime de guerre.</p>
+    <p class="ibody">Le jour où le détroit rouvre, <strong>rien ne repart en 24&nbsp;heures</strong>. Il faut&nbsp;: renouveler le contrat d'affrètement (le précédent a expiré pendant l'attente — clauses <em>force majeure</em> à clore), trouver un acheteur (le destinataire initial a souvent racheté ailleurs), obtenir une <strong>nouvelle police d'assurance non-guerre</strong>, faire venir un équipage complet par avion (15 à 30 marins, visas du nouveau port de déchargement), recharger 1&nbsp;500 tonnes de soutes (bunker fuel), réinspecter la salle des machines après long arrêt à chaud, faire valider la coque par la société de classification (<em>Bureau Veritas</em>, <em>DNV</em>), obtenir un créneau d'accostage dans un port saturé. <strong>Délai cumulé&nbsp;: 3 à 6 semaines</strong> avant qu'un litre n'arrive en raffinerie. Au 20&nbsp;mai, ≈1&nbsp;550 navires sont dans cette situation.</p>
+
+    <div class="timeline">
+      <div class="tl-stop ok"><span class="num">1</span><span class="dot"></span><span class="lbl">Cold ironing</span><span class="dur">≈ 48 h</span></div>
+      <div class="tl-stop ok"><span class="num">2</span><span class="dot"></span><span class="lbl">Relève équipage<br>vivres · eau</span><span class="dur">cycle 14 j</span></div>
+      <div class="tl-stop now"><span class="num">3</span><span class="dot"></span><span class="lbl">Attente · prime<br>de guerre 1-2 %</span><span class="dur">7 sem. à ce jour</span></div>
+      <div class="tl-stop"><span class="num">4</span><span class="dot"></span><span class="lbl">Renégociation<br>affrètement</span><span class="dur">5-10 j</span></div>
+      <div class="tl-stop"><span class="num">5</span><span class="dot"></span><span class="lbl">Réassurance<br>non-war</span><span class="dur">3-7 j</span></div>
+      <div class="tl-stop"><span class="num">6</span><span class="dot"></span><span class="lbl">Nouvel équipage<br>+ bunker</span><span class="dur">7-14 j</span></div>
+      <div class="tl-stop"><span class="num">7</span><span class="dot"></span><span class="lbl">Créneau port<br>+ déchargement</span><span class="dur">14-21 j</span></div>
+    </div>
+  </section>
+
+  <!-- ========== INERTIE 2 — RAFFINERIE ========== -->
+  <section class="inertia">
+    <h3 class="ititle"><span class="ord">N° 2 ·</span> La <em>raffinerie</em> arrêtée — la pire des installations à éteindre</h3>
+    <p class="istand">Pourquoi une raffinerie ne se redémarre pas comme une chaudière domestique&nbsp;: c'est un seul système chimique continu de 100 hectares.</p>
+    <p class="ibody">Un site comme Gonfreville-l'Orcher (253&nbsp;kb/j) est un assemblage de colonnes de distillation, de reformeurs catalytiques, d'unités d'hydrocraquage et de craquage catalytique fluide (FCC) qui fonctionnent à 350-550&nbsp;°C sous haute pression, en flux continu, 24/7. <strong>L'arrêt programmé dure 7 à 14 jours</strong>&nbsp;: purge des unités au gaz inerte, refroidissement contrôlé (un refroidissement trop rapide fissure les aciers), évacuation des catalyseurs précieux, mise à plat des colonnes, sécurisation des stockages intermédiaires. Si l'arrêt est subi (pénurie brut, sinistre), le risque de dégâts est démultiplié&nbsp;: cokéfaction des catalyseurs (perte définitive jusqu'à 30&nbsp;% d'activité), corrosion sous calorifuge, fragilisation de soudures.</p>
+    <p class="ibody">Au redémarrage, l'<em>turnaround</em> standard prend <strong>21 à 60 jours</strong> selon la durée d'arrêt&nbsp;: inspection métallurgique de chaque tronçon (rayons X, ultrasons), recharge des catalyseurs neufs (200 à 500&nbsp;t pour un reformeur, livraison sur commande d'Asie en 8-12 semaines), tests d'étanchéité, montée en température échelonnée (1&nbsp;à 2&nbsp;°C/min sur 5 jours), certification des nouvelles spécifications carburant (SP95-E10 norme EN&nbsp;228, gazole EN&nbsp;590), requalification environnementale par la DREAL. Et il faut <strong>réapprovisionner</strong> en brut compatible — chaque raffinerie est calibrée pour quelques bruts spécifiques (Arabian Light, Bonny Light, Urals, CPC Blend). Changer de brut = recalibrer toute la chaîne. <strong>Délai à pleine capacité&nbsp;: 6 à 12 semaines après le feu vert</strong>.</p>
+
+    <div class="cycle-mini">
+      <div class="cm-phase"><div class="pn">Arrêt</div><span class="pt">Purge · refroidissement · sécurisation</span><div class="pd">7 à 14 jours</div></div>
+      <div class="cm-phase"><div class="pn">Mise au silence</div><span class="pt">Maintenance préventive · catalyseurs déchargés · risques chimiques</span><div class="pd">durée variable</div></div>
+      <div class="cm-phase"><div class="pn">Redémarrage</div><span class="pt">Inspection · recharge catalyseurs · montée en température · requalification</span><div class="pd">6 à 12 semaines</div></div>
+    </div>
+  </section>
+
+  <!-- ========== INERTIE 3 — PIPELINE ========== -->
+  <section class="inertia">
+    <h3 class="ititle"><span class="ord">N° 3 ·</span> Le <em>pipeline</em> au repos — l'huile fige, le métal souffre</h3>
+    <p class="istand">Quand un oléoduc ou un gazoduc s'arrête, le contenu lui-même devient un problème.</p>
+    <p class="ibody">Le SPSE (Fos → Karlsruhe, 420&nbsp;kb/j) ou le TAL (Trieste → Ingolstadt, 850&nbsp;kb/j) sont des tubes d'un mètre de diamètre sur 700 à 800&nbsp;km, où le pétrole brut circule à 1-2&nbsp;m/s, maintenu chaud par friction et par stations de pompage tous les 80-100&nbsp;km. À l'arrêt, le brut <strong>refroidit, se sépare, et les paraffines (cires) se déposent sur la paroi interne</strong>. En quelques semaines, le diamètre utile diminue de 5 à 15&nbsp;%. Sur le gaz, la condensation forme des <em>hydrates</em> (glaces solides) qui bouchent les vannes. La protection cathodique (courant continu contre la corrosion) doit être maintenue en permanence&nbsp;: la couper un mois = devoir réinspecter 700&nbsp;km par <em>pig</em> intelligent.</p>
+    <p class="ibody">Pour redémarrer, on doit passer plusieurs <em>pigs</em> mécaniques — racleurs qui parcourent la ligne pour gratter les paraffines (15 à 30&nbsp;jours pour 800&nbsp;km), puis un <em>pig</em> de mesure (corrosion, géométrie), recertifier chaque tronçon avec la DGEC ou son équivalent allemand, remettre en route les stations de pompage (test des pompes électriques 5-15&nbsp;MW chacune, vérification des automates), reremplir la ligne (un pipeline de 800&nbsp;km contient environ 500&nbsp;000 barils — il faut donc <strong>injecter 500&nbsp;000 barils <em>avant</em> que le premier baril ne ressorte à l'autre bout</strong>). En cas d'incident ayant endommagé une section, la fabrication et la pose d'un tronçon de remplacement (tubes haute pression, soudures certifiées, tests hydrostatiques) prennent <strong>3 à 9 mois</strong>.</p>
+  </section>
+
+  <!-- ========== INERTIE 4 — CHAMP D'EXTRACTION ========== -->
+  <section class="inertia">
+    <h3 class="ititle"><span class="ord">N° 4 ·</span> Le <em>champ d'extraction</em> à l'arrêt — la blessure géologique</h3>
+    <p class="istand">Un puits qu'on bouche n'est pas un robinet qu'on rouvre&nbsp;: la roche-réservoir, elle, ne pardonne pas toujours.</p>
+    <p class="ibody">Un champ pétrolier comme Ghawar, Burgan ou Kirkuk produit grâce à une pression de réservoir entretenue artificiellement&nbsp;: on injecte de l'eau ou du gaz sous haute pression pour pousser le brut vers les puits producteurs. Si l'on ferme l'ensemble (<em>shut-in</em>) en urgence, la pression se rééquilibre — c'est la partie facile. Mais les puits eux-mêmes subissent des phénomènes parasites&nbsp;: dépôts d'asphaltènes dans les tubings, précipitation de sels (<em>scaling</em>), envahissement par l'eau de formation, voire <strong>dommages permanents à la perméabilité de la roche</strong> si l'arrêt dure plus de 6 mois. Des puits parmi les plus anciens, fermés en urgence, peuvent perdre 10 à 30&nbsp;% de leur productivité à vie.</p>
+    <p class="ibody">Au redémarrage, il n'y a pas de bouton commun&nbsp;: chaque puits est traité individuellement par une équipe d'intervention (<em>workover</em>) — descente de coiled tubing, acidification de la formation, remise en service progressive sur plusieurs jours par puits. Un champ de 1&nbsp;000 puits remis en service à raison de 30-50 puits/semaine demande <strong>5 à 8 mois pour retrouver son plateau de production</strong>. À cela s'ajoutent les infrastructures de surface&nbsp;: séparateurs eau/huile/gaz, stations de traitement, terminaux d'export — toutes immobilisées en parallèle, toutes à requalifier. <strong>C'est pourquoi l'EIA et l'AIE chiffrent à <em>juin au plus tôt</em> une éventuelle reprise lente des flux Hormuz, même en cas d'accord diplomatique signé demain</strong>.</p>
+    <p class="ibody" style="margin-top:6px"><em>Et l'on n'a pas même parlé des champs gaziers et des trains de liquéfaction GNL — où le redémarrage d'un seul train (10 millions de tonnes/an) demande six à neuf mois et requiert un personnel ultra-spécialisé, dont une partie a déjà quitté le Qatar.</em></p>
+  </section>
+
+  <footer class="pgfooter">
+    <span><span class="pnum">PAGE 3 / 3</span> &nbsp;·&nbsp; L'INERTIE DES CHOSES</span>
+    <span class="center">Document de synthèse — Crise du détroit d'Ormuz · Édition J95 · OSINT&nbsp;Ormuz</span>
+    <span>FIN&nbsp;·&nbsp; à diffuser librement</span>
+  </footer>
+</article>
+
+</body>
+</html>

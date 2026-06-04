@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructures energetiques — Crise du detroit d'Ormuz (3 juin 2026 / J95)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="styles_common.css">
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #1a2129;
+    --border: #2a3540;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --accent: #58a6ff;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
+
+  /* Override pour topbar : ajustement hauteurs */
+  #app { display: grid; grid-template-columns: 340px 1fr; height: calc(100vh - 42px); }
+  #map { height: calc(100vh - 42px) !important; }
+
+  #sidebar {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 16px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #sidebar h1 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  #sidebar .subtitle {
+    color: var(--text-dim);
+    font-size: 11.5px;
+    margin-bottom: 18px;
+  }
+
+  .section {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+  .section h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 10px 0;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .stat { background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border); }
+  .stat .v { font-size: 18px; font-weight: 600; color: var(--text); }
+  .stat .l { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .filter-row {
+    display: flex;
+    align-items: center;
+    padding: 5px 4px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    transition: background 0.12s;
+  }
+  .filter-row:hover { background: rgba(255,255,255,0.04); }
+  .filter-row input { margin-right: 9px; cursor: pointer; }
+  .filter-row .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    margin-right: 8px; flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.4);
+  }
+  .filter-row .label { flex: 1; }
+  .filter-row .count {
+    color: var(--text-dim); font-size: 11px;
+    background: rgba(255,255,255,0.05);
+    padding: 1px 7px; border-radius: 10px; font-weight: 500;
+  }
+
+  .actions { display: flex; gap: 6px; margin-bottom: 8px; }
+  .btn {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11.5px;
+    transition: all 0.12s;
+  }
+  .btn:hover { background: rgba(255,255,255,0.08); border-color: var(--accent); }
+
+  #map { width: 100%; height: 100vh; background: #06080a; }
+
+  .leaflet-popup-content-wrapper {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.45);
+  }
+  .leaflet-popup-tip { background: var(--panel); }
+  .leaflet-popup-content { margin: 12px 14px; font-size: 12.5px; line-height: 1.5; max-width: 340px; }
+  .popup-header { margin-bottom: 8px; }
+  .popup-header .status-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .popup-name { font-size: 14px; font-weight: 600; margin: 0 0 4px 0; color: var(--text); }
+  .popup-meta { color: var(--text-dim); font-size: 11px; margin-bottom: 8px; }
+  .popup-note { background: rgba(255,255,255,0.03); padding: 7px 9px; border-radius: 5px; font-size: 12px; margin-bottom: 8px; border-left: 3px solid var(--accent); white-space: pre-wrap; }
+  .popup-grid { display: grid; grid-template-columns: 80px 1fr; gap: 4px 10px; margin-bottom: 8px; font-size: 11.5px; }
+  .popup-grid .k { color: var(--text-dim); }
+  .popup-sources .src { color: var(--accent); font-size: 11px; display: block; margin-top: 2px; word-break: break-all; }
+  .popup-sources .k { font-size: 11px; color: var(--text-dim); margin-bottom: 2px; }
+
+  .pipeline-label {
+    background: rgba(15, 20, 25, 0.85);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+
+  /* === Marker icons (SVG par type + point couleur statut) === */
+  .infra-marker {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+  }
+  .infra-icon-wrap {
+    width: 26px;
+    height: 26px;
+    background: rgba(15, 20, 25, 0.92);
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.12s, transform 0.12s;
+  }
+  .infra-icon-wrap svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .infra-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #0b1117;
+    margin-top: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  .infra-marker:hover .infra-icon-wrap {
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+  }
+
+  /* Type icon dans le sidebar */
+  .filter-row .type-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    opacity: 0.85;
+    display: inline-block;
+  }
+  .filter-row .type-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #loader {
+    position: absolute; top: 50%; left: calc(50% + 170px); transform: translate(-50%, -50%);
+    color: var(--text-dim); font-size: 14px; z-index: 9999;
+  }
+
+  .map-legend {
+    background: rgba(15, 20, 25, 0.92);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    line-height: 1.6;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+  }
+  .map-legend .legend-title { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 6px; }
+  .map-legend .legend-row { display: flex; align-items: center; gap: 7px; margin-bottom: 2px; }
+  .map-legend .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.4); }
+
+  code-tag {
+    background: rgba(255,255,255,0.06);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+  }
+
+  @media (max-width: 700px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
+    #sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+    #map { height: 50vh; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="brand">Crise du detroit d'Ormuz<span class="crisis"> — 3 juin 2026 (J95)</span></div>
+  <a href="index.html">Accueil</a>
+  <a href="carte_infrastructures.html" class="active">Carte zone Ormuz</a>
+  <a href="carte_infrastructures_europe.html">Carte Europe</a>
+  <a href="dependances_ormuz_pays.html">Dependances UE (energie)</a>
+  <a href="dependances_ressources_critiques.html">Ressources critiques</a>
+  <a href="stocks_pays_ue.html">Stocks UE</a>
+  <a href="synthese_france.html">Synthèse imprimable</a>
+</nav>
+
+<div id="app">
+  <aside id="sidebar">
+    <h1>Infrastructures energetiques</h1>
+    <div class="subtitle">Crise du detroit d'Ormuz · 3 juin 2026 (J95)</div>
+
+    <div class="section">
+      <h2>Apercu</h2>
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="section">
+      <h2>Statut operationnel</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-status">Tout cocher</button>
+        <button class="btn" data-action="clear-all-status">Tout decocher</button>
+      </div>
+      <div id="filters-status"></div>
+    </div>
+
+    <div class="section">
+      <h2>Type d'infrastructure</h2>
+      <div class="actions">
+        <button class="btn" data-action="select-all-type">Tout cocher</button>
+        <button class="btn" data-action="clear-all-type">Tout decocher</button>
+      </div>
+      <div id="filters-type"></div>
+    </div>
+
+    <div class="section">
+      <h2>Pays</h2>
+      <div id="filters-country"></div>
+    </div>
+
+    <div class="section">
+      <h2>Notes</h2>
+      <p style="margin: 0 0 6px 0; color: var(--text-dim); font-size: 11.5px;">
+        Cliquer sur un marqueur pour voir les details, capacites, sources.
+      </p>
+      <p style="margin: 0; color: var(--text-dim); font-size: 11.5px;" id="footer-note"></p>
+    </div>
+  </aside>
+
+  <div id="map"></div>
+  <div id="loader">Chargement de la carte…</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+// Dataset complet — 54 sites + 7 pipelines, compile au 3 juin 2026 (J95)
+// Sources : Bloomberg, Reuters, Al Jazeera, IEA, EIA, Argus, GEM, Wikipedia
+// Voir sources_infrastructures.md pour la liste complete
+var DATA = {
+  infrastructures: [
+    { id:"kharg_island_terminal", name:"Kharg Island Oil Terminal", country:"Iran", type:"terminal-export", lat:29.24, lon:50.32, operator:"NIOC / NITC", capacity:"5,0 mb/j nominal (90 % exports Iran)", status:"shutin", status_note:"Blocus naval US depuis 13 avril 2026. Satellites Bloomberg 8-11 mai : zero tanker, 1er arret prolonge depuis le debut. Stockage sature a ~74 % (20 avril). Deversement signale 6-8 mai (17 sq mi).", sources:["bloomberg.com — Kharg first prolonged halt","bloomberg.com — jetties empty satellite","fortune.com — Iran storage tank tops"] },
+    { id:"abadan_refinery", name:"Raffinerie d'Abadan", country:"Iran", type:"raffinerie", lat:30.34, lon:48.30, operator:"NIORDC", capacity:"0,40 mb/j", status:"damaged", status_note:"Frappes israeliennes mars 2026 ; incendie majeur visible depuis Bassorah ; partiellement operationnel (ministre petrole, avril). Mode 'standby'.", sources:["en.964media.com","ncr-iran.org","Wikipedia — Abadan Refinery"] },
+    { id:"isfahan_refinery", name:"Raffinerie d'Isfahan", country:"Iran", type:"raffinerie", lat:32.62, lon:51.66, operator:"NIORDC", capacity:"0,375 mb/j", status:"reduced", status_note:"Station de regulation gaz et batiment administratif touches par frappes ; raffinerie active.", sources:["geopoliticsunplugged.substack.com","hrw.org — March attacks"] },
+    { id:"tehran_refinery", name:"Raffinerie de Teheran (Shahid Rey)", country:"Iran", type:"raffinerie", lat:35.55, lon:51.43, operator:"NIORDC", capacity:"0,225 mb/j", status:"operational", status_note:"Hors zone frappes ; alimentation maintenue depuis champs sud-ouest.", sources:["iranetrade.com"] },
+    { id:"tabriz_refinery", name:"Raffinerie de Tabriz", country:"Iran", type:"raffinerie", lat:38.10, lon:46.30, operator:"NIORDC", capacity:"0,115 mb/j", status:"operational", status_note:"Site nord, hors portee frappes principales.", sources:["iranetrade.com"] },
+    { id:"bandar_abbas_refinery", name:"Raffinerie de Bandar Abbas (Shahid Rajaee)", country:"Iran", type:"raffinerie", lat:27.20, lon:56.36, operator:"NIORDC", capacity:"0,35 mb/j", status:"damaged", status_note:"Frappes US 7 mai 2026 ('unspecified target Bandar Abbas') ; dock Shahid Rajaee touche 1er mars ; export paralyse par blocus.", sources:["cnn.com — US strikes 7 May","twz.com — Iranian island port"] },
+    { id:"persian_gulf_star_refinery", name:"Persian Gulf Star Refinery (PGSCR)", country:"Iran", type:"raffinerie", lat:27.13, lon:56.07, operator:"Persian Gulf Star Oil Co.", capacity:"0,42 mb/j condensat -> 42 ML/j essence (45 % conso Iran)", status:"operational", status_note:"Declaree 'in safe condition' (abdimedia) ; cle pour approvisionnement interieur essence.", sources:["abdimedia.net","offshore-technology.com"] },
+    { id:"shazand_refinery", name:"Raffinerie de Shazand (Arak)", country:"Iran", type:"raffinerie", lat:33.93, lon:49.40, operator:"NIORDC", capacity:"0,25 mb/j", status:"operational", status_note:"Interieur du pays, non frappee.", sources:["iranetrade.com"] },
+    { id:"lavan_refinery", name:"Raffinerie de l'ile de Lavan", country:"Iran", type:"raffinerie", lat:26.81, lon:53.31, operator:"NIORDC", capacity:"0,055 mb/j", status:"damaged", status_note:"Frappe emiratie secrete 8 avril 2026 (revelee WSJ 11 mai) ; incendie majeur, capacite offline 'pour des mois'.", sources:["i24news.tv — UAE secret strike","cryptobriefing.com"] },
+    { id:"sirri_island_terminal", name:"Terminal de l'ile de Sirri", country:"Iran", type:"terminal-export", lat:25.90, lon:54.53, operator:"NIOC", capacity:"0,20 mb/j export", status:"damaged", status_note:"Explosions imagerie ESA 10 avril 2026 ; activite reduite.", sources:["turkiyetoday.com","newsweek.com — satellite Iran oil island"] },
+    { id:"south_pars_gas_field", name:"Champ gazier South Pars (Phases 1-24)", country:"Iran", type:"champ-gaz", lat:27.40, lon:52.60, operator:"POGC / NIOC", capacity:"~700 mcm/j (70 % gaz Iran)", status:"damaged", status_note:"Frappe israelienne 18 mars 2026 ; 4+ sections endommagees, 2 raffineries gaz (100 mcm/j) a l'arret ; ~12 % production gaz Iran touchee.", sources:["Wikipedia — 2026 South Pars field attack","bloomberg.com — South Pars strikes","mecouncil.org"] },
+    { id:"asaluyeh_petrochemical", name:"Hub petrochimique d'Asaluyeh (South Pars onshore)", country:"Iran", type:"petrochimie", lat:27.47, lon:52.61, operator:"NPC", capacity:"~25 % exports petrochimiques Iran", status:"damaged", status_note:"Frappes israeliennes 18 mars + debut avril ; stockage, raffineries gaz detruits ; production largement arretee.", sources:["jpost.com — Iran news","iranintl.com"] },
+    { id:"mahshahr_petrochemical", name:"Mahshahr Petrochemical Zone (Bandar Imam)", country:"Iran", type:"petrochimie", lat:30.55, lon:49.20, operator:"NPC / Bandar Imam Petrochemical Co.", capacity:"~50 % output petrochimique Iran", status:"damaged", status_note:"Frappes IDF avril 2026 sur Fajr 1 et Fajr 2 (utilites alimentant 50+ usines) ; halte production nationale plastiques/LPG.", sources:["thenationalnews.com — petrochem strikes","matzav.com","iranintl.com"] },
+    { id:"bushehr_nuclear", name:"Centrale nucleaire de Bushehr", country:"Iran", type:"centrale-electrique", lat:28.83, lon:50.89, operator:"AEOI / Rosatom", capacity:"1 GW", status:"damaged", status_note:"Batiment auxiliaire touche 4 avril 2026 a 350 m du reacteur (AIEA) ; reacteur epargne ; 1 mort.", sources:["aljazeera.com — IAEA Bushehr","world-nuclear-news.org"] },
+    { id:"qeshm_bahman_port", name:"Port de Qeshm (Bahman)", country:"Iran", type:"terminal-export", lat:26.95, lon:56.27, operator:"Ports & Maritime Org. Iran", capacity:"Hub logistique CGRI ; bunkering", status:"damaged", status_note:"Frappes US 7 mai 2026 (sites de lancement, C2, ISR) ; zone commerciale du quai Bahman touchee (FARS).", sources:["criticalthreats.org","cnn.com — US strikes Iran 7 May"] },
+
+    { id:"ras_tanura_refinery", name:"Raffinerie & Terminal de Ras Tanura", country:"Saudi Arabia", type:"raffinerie", lat:26.65, lon:50.16, operator:"Saudi Aramco", capacity:"0,55 mb/j raffinerie + 6,5 mb/j export terminal", status:"reduced", status_note:"Shutdown 2 mars 2026 apres debris drone ; redemarrage 13-18 mars ; flux export pivote vers Yanbu ; activite reduite.", sources:["worldoil.com — Ras Tanura back online","Wikipedia — Ras Tanura","bloomberg.com — Ras Tanura shutdown"] },
+    { id:"abqaiq_processing", name:"Centre de traitement d'Abqaiq", country:"Saudi Arabia", type:"station-traitement", lat:25.94, lon:49.67, operator:"Saudi Aramco", capacity:"~7 mb/j traitement (60 % brut saoudien)", status:"operational", status_note:"Coeur du systeme Aramco ; noeud du East-West Pipeline ; operationnel. Production Arabie 6,768 mb/j en mai (+bas depuis 1990).", sources:["Wikipedia — East-West Pipeline","longyield.substack.com"] },
+    { id:"yanbu_terminal", name:"Terminal de Yanbu South (Mer Rouge)", country:"Saudi Arabia", type:"terminal-export", lat:24.09, lon:38.06, operator:"Saudi Aramco", capacity:"~6 mb/j (sature)", status:"operational", status_note:"Hub d'export contournement Ormuz ; sature ; charges Arab Light redirigees par Aramco.", sources:["houseofsaud.com","discoveryalert.com.au"] },
+    { id:"ghawar_field", name:"Champ petrolier de Ghawar", country:"Saudi Arabia", type:"champ-petrole", lat:25.43, lon:49.62, operator:"Saudi Aramco", capacity:"~3,8 mb/j", status:"operational", status_note:"Production maintenue ; principal contributeur aux 6,77 mb/j Aramco mai 2026.", sources:["farmonaut.com","eia.gov — Saudi Arabia profile"] },
+    { id:"safaniya_field", name:"Champ petrolier de Safaniya (offshore)", country:"Saudi Arabia", type:"champ-petrole", lat:28.00, lon:49.50, operator:"Saudi Aramco", capacity:"~1,3 mb/j (plus grand champ offshore mondial)", status:"operational", status_note:"Plateforme a proximite immediate de la frontiere maritime iranienne ; aucun incident reporte.", sources:["Wikipedia — Safaniya"] },
+    { id:"khurais_field", name:"Champ petrolier de Khurais", country:"Saudi Arabia", type:"champ-petrole", lat:25.10, lon:48.10, operator:"Saudi Aramco", capacity:"~1,5 mb/j", status:"operational", status_note:"Aucun incident reporte ; production normale.", sources:["farmonaut.com"] },
+    { id:"manifa_field", name:"Champ petrolier de Manifa (offshore)", country:"Saudi Arabia", type:"champ-petrole", lat:27.70, lon:49.80, operator:"Saudi Aramco", capacity:"~0,9 mb/j", status:"operational", status_note:"Capacite restauree a ~0,3 mb/j en avril 2026 apres dommages, revenu a pleine capacite depuis.", sources:["farmonaut.com"] },
+    { id:"shaybah_field", name:"Champ petrolier de Shaybah (Empty Quarter)", country:"Saudi Arabia", type:"champ-petrole", lat:22.50, lon:53.95, operator:"Saudi Aramco", capacity:"1,0 mb/j + 25 tcf gaz", status:"operational", status_note:"Drones interceptes en route mars 2026 ; operations halted ponctuellement 9 avril.", sources:["bloomberg.com — drones Shaybah","aljazeera.com — Saudi halted activities"] },
+    { id:"yanbu_pumping_station_9", name:"Station de pompage #9 East-West (proche Yanbu)", country:"Saudi Arabia", type:"station-pompage", lat:25.30, lon:41.50, operator:"Saudi Aramco", capacity:"Station relais sur Petroline (7 mb/j)", status:"operational", status_note:"Drone CGRI 8 avril 2026 a reduit debit de 0,7 mb/j ; restauration full capacity 12 avril.", sources:["aljazeera.com — pipeline back to full capacity","bloomberg.com — East-West pipeline hit"] },
+    { id:"jubail_sabic_petchem", name:"Complexe petrochimique de Jubail (SABIC / Sadara)", country:"Saudi Arabia", type:"petrochimie", lat:27.01, lon:49.66, operator:"SABIC / Aramco-Dow / ExxonMobil", capacity:"Plus grand hub petrochimique Moyen-Orient", status:"damaged", status_note:"Frappe CGRI 7 avril 2026 (7 missiles balistiques + drones) ; incendie SABIC ; Sadara deja arretee ; evacuations.", sources:["al-monitor.com","jpost.com","energynews.pro"] },
+
+    { id:"fujairah_oil_terminal", name:"Terminal de Fujairah & stockage VTTI", country:"UAE", type:"terminal-export", lat:25.20, lon:56.36, operator:"Port of Fujairah / VTTI / Vopak / ADNOC", capacity:"Sortie ADCOP 1,5-1,8 mb/j + bunkering hub mondial", status:"damaged", status_note:"Frappe drone Iran 4 mai 2026 (3 Indiens blesses, large fire) sur Fujairah Petroleum Industries Zone (VTTI) ; Hui Chuan saisi 14 mai a 38 nm NE.", sources:["bloomberg.com — VTTI Fujairah","aljazeera.com — UAE strikes 4 May","aljazeera.com — significance Fujairah"] },
+    { id:"habshan_field", name:"Champ petrolier & complexe Habshan", country:"UAE", type:"champ-petrole", lat:23.85, lon:53.65, operator:"ADNOC Onshore", capacity:"~1,5 mb/j (origine ADCOP)", status:"operational", status_note:"Alimentation pleine du pipeline Habshan-Fujairah sature a 1,5 mb/j.", sources:["Wikipedia — Habshan-Fujairah pipeline","gem.wiki"] },
+    { id:"upper_zakum_field", name:"Champ petrolier d'Upper Zakum (offshore)", country:"UAE", type:"champ-petrole", lat:24.83, lon:53.60, operator:"ADNOC Offshore / ExxonMobil / INPEX", capacity:"~1,0 mb/j (objectif 1,2 mb/j)", status:"reduced", status_note:"Production reduite ; tankers entraves par fermeture de facto d'Ormuz.", sources:["Wikipedia — Upper Zakum","adnoc.ae"] },
+    { id:"lower_zakum_field", name:"Champ petrolier de Lower Zakum", country:"UAE", type:"champ-petrole", lat:24.80, lon:53.30, operator:"ADNOC Offshore", capacity:"~0,45 mb/j", status:"reduced", status_note:"Meme contexte qu'Upper Zakum ; exports via Das Island / Jebel Dhanna entraves.", sources:["adnoc.ae"] },
+    { id:"das_island_terminal", name:"Terminal petrolier & GNL de Das Island", country:"UAE", type:"terminal-gnl", lat:25.15, lon:52.88, operator:"ADNOC / ADNOC LNG", capacity:"Brut + 5,8 MMtpa GNL", status:"reduced", status_note:"Exports brut/GNL via Hormuz, fortement entraves par primes assurance et fermeture de facto.", sources:["adnoc.ae","cyprusshippingnews.com"] },
+    { id:"ruwais_refinery", name:"Complexe de raffinage de Ruwais", country:"UAE", type:"raffinerie", lat:24.10, lon:52.73, operator:"ADNOC Refining", capacity:"0,92 mb/j (plus grand complexe UAE)", status:"operational", status_note:"Aucun incident reporte ; sert le marche interieur et l'export de produits.", sources:["adnoc.ae"] },
+
+    { id:"ras_laffan_lng", name:"Complexe GNL de Ras Laffan (Trains 1-14)", country:"Qatar", type:"terminal-gnl", lat:25.91, lon:51.55, operator:"QatarEnergy / Qatargas", capacity:"77 MMtpa nominal (20 % GNL mondial)", status:"damaged", status_note:"Frappe missile iranien 18 mars 2026 : Trains 4 et 6 (Sud, 12,8 MMtpa, 17 % capacite) write-off. QatarEnergy en FORCE MAJEURE : -17 % de la liquefaction GNL ; reparation estimee 3-5 ans (impact direct sur l'helium co-produit). Coupe ~1/5 du GNL mondial via Ormuz.", sources:["bloomberg.com — Ras Laffan damage","thenationalnews.com — months for full ops","qatarenergy.qa"] },
+    { id:"north_field_qatar", name:"North Field Gas (part qatarie de South Pars)", country:"Qatar", type:"champ-gaz", lat:26.20, lon:51.80, operator:"QatarEnergy", capacity:"Source ~80 % gaz mondial Qatar", status:"reduced", status_note:"Travaux d'expansion North Field East (32 MMtpa) suspendus ; retards >1 an probables.", sources:["naturalgasintel.com","aljazeera.com — Ras Laffan significance"] },
+    { id:"dukhan_field", name:"Champ de Dukhan (petrole & gaz)", country:"Qatar", type:"champ-petrole", lat:25.42, lon:50.78, operator:"QatarEnergy", capacity:"~0,335 mb/j brut", status:"operational", status_note:"Plus grand champ petrolier Qatar ; production EOR maintenue ; pipeline vers Mesaieed.", sources:["Wikipedia — Dukhan","gem.wiki — Dukhan Qatar"] },
+    { id:"mesaieed_industrial", name:"Mesaieed Industrial City (raffinage + petchem)", country:"Qatar", type:"petrochimie", lat:24.99, lon:51.55, operator:"QatarEnergy / QAPCO", capacity:"0,29 mb/j raffinage + complexe petchem", status:"reduced", status_note:"Attaques sur facilites QatarEnergy debut mars 2026 ; arret GNL associe.", sources:["aljazeera.com — QatarEnergy halts production"] },
+
+    { id:"bapco_sitra", name:"Raffinerie BAPCO Sitra (Ma'ameer)", country:"Bahrain", type:"raffinerie", lat:26.16, lon:50.62, operator:"Bapco Energies", capacity:"0,405 mb/j", status:"damaged", status_note:"Frappe drone iranien 9 mars 2026 ; force majeure declaree ; 2eme attaque sur le complexe depuis 28 fevrier ; ravitaillement domestique securise.", sources:["argusmedia.com — BAPCO force majeure","aljazeera.com — BAPCO attack","euronews.com"] },
+    { id:"awali_field", name:"Champ petrolier d'Awali", country:"Bahrain", type:"champ-petrole", lat:26.09, lon:50.55, operator:"Bapco Upstream / Tatweer Petroleum", capacity:"~0,2 mb/j", status:"reduced", status_note:"Production maintenue mais raffinerie Sitra associee en force majeure.", sources:["Wikipedia — Awali"] },
+
+    { id:"mina_al_ahmadi_refinery", name:"Raffinerie de Mina Al-Ahmadi (KNPC)", country:"Kuwait", type:"raffinerie", lat:29.07, lon:48.13, operator:"Kuwait National Petroleum Co. (KNPC)", capacity:"0,466 mb/j", status:"damaged", status_note:"3 frappes drone CGRI en 2 semaines (avril 2026) ; production Koweit chutee 3 mb/j -> 0,5 mb/j post-frappes ; restauration estimee 3-4 mois.", sources:["aljazeera.com — Kuwait desalination refinery","argusmedia.com — Mina Al-Ahmadi","Wikipedia — 2026 Iranian strikes on Kuwait"] },
+    { id:"shuaiba_refinery", name:"Raffinerie de Shuaiba (Mina Abdullah)", country:"Kuwait", type:"raffinerie", lat:29.05, lon:48.13, operator:"KNPC", capacity:"0,454 mb/j", status:"reduced", status_note:"Output Koweit global a 0,5 mb/j post-frappes avril.", sources:["thenationalnews.com — Kuwait Petroleum HQ"] },
+    { id:"burgan_field", name:"Champ petrolier de Burgan", country:"Kuwait", type:"champ-petrole", lat:28.95, lon:47.97, operator:"Kuwait Oil Company (KOC)", capacity:"~1,7 mb/j", status:"reduced", status_note:"Production reduite par exportation entravee Ormuz + ciblage repete de Mina Al-Ahmadi en aval.", sources:["Wikipedia — Burgan Field"] },
+    { id:"wafra_field", name:"Champ petrolier de Wafra (Zone Neutre)", country:"Kuwait", type:"champ-petrole", lat:28.59, lon:47.93, operator:"Wafra Joint Ops (KGOC / Chevron)", capacity:"~0,25 mb/j", status:"reduced", status_note:"Exports bloques par fermeture de facto Ormuz.", sources:["gem.wiki — Wafra"] },
+    { id:"mubarak_al_kabeer_port", name:"Port Mubarak Al-Kabeer (ile de Bubiyan)", country:"Kuwait", type:"terminal-export", lat:29.85, lon:48.20, operator:"Kuwait Ports Authority / Belt & Road CN", capacity:"Port 4,1 Md$ ; ouverture prevue fin 2026", status:"operational", status_note:"Raid CGRI 1er mai 2026 (revele 12 mai) : tentative d'infiltration dejouee, 1 soldat KW blesse, 4 captures ; port chinois cible politique forte.", sources:["Wikipedia — 2026 Bubiyan Island raid","aljazeera.com — Kuwait foils IRGC","thenationalnews.com — Why Bubiyan"] },
+
+    { id:"rumaila_field", name:"Champ petrolier de Rumaila", country:"Iraq", type:"champ-petrole", lat:30.50, lon:47.41, operator:"Basra Oil Co. / BP / PetroChina", capacity:"~1,5 mb/j (pre-crise)", status:"reduced", status_note:"Production reduite de 0,7 mb/j depuis 3 mars 2026 ; stockages satures, fermeture de facto Ormuz.", sources:["bloomberg.com — Iraq shutting Rumaila","Wikipedia — Rumaila"] },
+    { id:"west_qurna_2", name:"Champ petrolier de West Qurna 2", country:"Iraq", type:"champ-petrole", lat:30.99, lon:47.43, operator:"Lukoil / Basra Oil Co.", capacity:"~0,48 mb/j (pre-crise)", status:"reduced", status_note:"Reduction de 0,45 mb/j depuis mars 2026.", sources:["investing.com — Iraq oil output"] },
+    { id:"majnoon_field", name:"Champ petrolier de Majnoon", country:"Iraq", type:"champ-petrole", lat:31.05, lon:47.65, operator:"Basra Oil Co.", capacity:"~0,24 mb/j", status:"reduced", status_note:"Production reduite avec ensemble champs sud Iraq.", sources:["Wikipedia — Majnoon"] },
+    { id:"kirkuk_field", name:"Champ petrolier de Kirkuk", country:"Iraq", type:"champ-petrole", lat:35.46, lon:44.39, operator:"North Oil Company", capacity:"~0,4 mb/j", status:"reduced", status_note:"Suspension precautionnelle ; partiellement exporte via Kirkuk-Ceyhan.", sources:["english.aawsat.com — Iraq production cut"] },
+    { id:"basra_oil_terminal", name:"Terminal d'Al Basrah (ABOT)", country:"Iraq", type:"terminal-export", lat:29.69, lon:48.81, operator:"Basra Oil Co.", capacity:"~1,6 mb/j", status:"shutin", status_note:"Export halted ; SPM SOMO Terminal aussi a l'arret selon Inchcape mai 2026 ; tankers AIS coinces avant Ormuz.", sources:["Wikipedia — Al Basrah Oil Terminal","iss-shipping.com","meed.com — Basra suspends"] },
+    { id:"khor_al_amaya", name:"Terminal de Khor al-Amaya", country:"Iraq", type:"terminal-export", lat:29.78, lon:48.81, operator:"Basra Oil Co.", capacity:"~1,2 mb/j (en rehabilitation)", status:"shutin", status_note:"Pause depuis attaque iranienne 12 mars 2026 sur tankers de transport ; reprises avril partielles.", sources:["grokipedia.com","alhurra.com"] },
+
+    { id:"mina_al_fahal_refinery", name:"Raffinerie de Mina Al Fahal", country:"Oman", type:"raffinerie", lat:23.62, lon:58.51, operator:"OQ Refineries", capacity:"0,106 mb/j", status:"operational", status_note:"Mer d'Oman, hors Hormuz strict ; activite normale.", sources:["meed.com — Oman refining","Wikipedia — OQ"] },
+    { id:"sohar_refinery", name:"Raffinerie & Port industriel de Sohar", country:"Oman", type:"raffinerie", lat:24.51, lon:56.61, operator:"OQ Refineries / Sohar Port", capacity:"0,198 mb/j raffinerie", status:"operational", status_note:"Hub strategique Mer d'Oman, hors Hormuz.", sources:["meed.com — Oman refining"] },
+    { id:"duqm_refinery", name:"Raffinerie de Duqm (OQ8)", country:"Oman", type:"raffinerie", lat:19.65, lon:57.71, operator:"OQ8 (OQ + Kuwait Petroleum)", capacity:"0,23 mb/j", status:"operational", status_note:"Mer d'Arabie, position strategique pour clients chinois ; EBITDA 2025 confirme.", sources:["omanobserver.om","omanet.om"] },
+
+    { id:"aden_refinery", name:"Raffinerie d'Aden", country:"Yemen", type:"raffinerie", lat:12.78, lon:44.99, operator:"Aden Refinery Company", capacity:"0,15 mb/j (nominal, largement inactif)", status:"paused", status_note:"Fermee depuis 2015 ; gouvernement yemenite a approuve reouverture en zone franche ; pas redemarree.", sources:["yemenmonitor.com"] },
+    { id:"marib_refinery", name:"Raffinerie & Champ de Marib", country:"Yemen", type:"raffinerie", lat:15.46, lon:45.32, operator:"Safer Exploration & Production", capacity:"~0,01 mb/j (tres reduit)", status:"reduced", status_note:"Endommagee et sous capacite depuis guerre civile ; pipeline Marib-Ras Isa hors service.", sources:["Wikipedia — Marib-Ras Isa pipeline","farmonaut.com"] },
+    { id:"ras_isa_terminal", name:"Terminal de Ras Isa / FSO Safer", country:"Yemen", type:"terminal-export", lat:15.12, lon:42.62, operator:"Safer / controle Houthi", capacity:"Historique 0,4 mb/j (inactif)", status:"destroyed", status_note:"Port petrolier detruit par frappes US 17 avril 2025 ; inactif.", sources:["Wikipedia — Marib-Ras Isa pipeline"] }
+  ],
+
+  key_pipelines: [
+    { id:"east_west_petroline_saudi", name:"East-West Crude Oil Pipeline (Petroline)", country:"Saudi Arabia", origin:[25.94,49.67], destination:[24.09,38.06], operator:"Saudi Aramco", capacity:"7 mb/j max", status:"operational", status_note:"Bypass Ormuz unique de cette capacite ; restaure a 7 mb/j depuis 12 avril 2026 apres frappe drone IRGC 8 avril (-0,7 mb/j temporaire) ; cible repetee potentielle.", sources:["aljazeera.com — Saudi pipeline back to full","Wikipedia — East-West pipeline","houseofsaud.com"] },
+    { id:"adcop_habshan_fujairah", name:"Pipeline ADCOP (Habshan-Fujairah)", country:"UAE", origin:[23.85,53.65], destination:[25.20,56.36], operator:"ADNOC", capacity:"1,8 mb/j max (1,5 mb/j utilise)", status:"operational", status_note:"Bypass Ormuz sature a 1,5 mb/j ; sortie Fujairah touchee par drone 4 mai mais pipeline intact.", sources:["Wikipedia — Habshan-Fujairah","gem.wiki","cnbc.com — pipelines"] },
+    { id:"kirkuk_ceyhan_pipeline", name:"Pipeline Kirkuk-Ceyhan (Iraq-Turkey)", country:"Iraq", origin:[35.46,44.39], destination:[36.85,35.80], operator:"BOTAS / Iraq SOMO", capacity:"1,6 mb/j nominal (200-250 kb/j actuel)", status:"reduced", status_note:"Rouvert mars 2026 ; transporte 200-250 kb/j seulement ; rendement bride par litige Bagdad-Erbil et capacite degradee.", sources:["thenationalnews.com — Kirkuk-Ceyhan","Wikipedia — Kirkuk-Ceyhan"] },
+    { id:"sumed_pipeline", name:"Pipeline SUMED (Suez-Mediterranee)", country:"Egypt", origin:[29.85,32.50], destination:[31.00,31.20], operator:"Arab Petroleum Pipelines Co.", capacity:"2,5 mb/j (utilise)", status:"operational", status_note:"Flux a pleine capacite, +150 % vs fevrier ; complete Yanbu pour acheminer brut saoudien vers Mediterranee.", sources:["egyptindependent.com","pipeline-journal.net","Wikipedia — SUMED"] },
+    { id:"basra_haditha_pipeline", name:"Pipeline Basra-Haditha (planifie)", country:"Iraq", origin:[30.50,47.78], destination:[34.13,42.37], operator:"Iraq Ministry of Oil", capacity:"Planifie 2,25 mb/j", status:"paused", status_note:"Travaux annonces 1er mai 2026 ; pipeline futur, pas operationnel.", sources:["thenationalnews.com — Basra-Haditha"] },
+    { id:"mina_al_fahal_sohar_pipeline", name:"Pipeline Mina Al Fahal-Sohar (produits)", country:"Oman", origin:[23.62,58.51], destination:[24.51,56.61], operator:"OQ", capacity:"280 km produits raffines", status:"operational", status_note:"Aucun incident reporte.", sources:["gem.wiki — Mina Al Fahal-Sohar"] },
+    { id:"marib_ras_isa_pipeline", name:"Pipeline Marib-Ras Isa", country:"Yemen", origin:[15.46,45.32], destination:[15.12,42.62], operator:"Safer / controle Houthi", capacity:"Nominal 0,4 mb/j (inactif)", status:"destroyed", status_note:"Hors service depuis la guerre civile ; terminal Ras Isa detruit avril 2025.", sources:["Wikipedia — Marib-Ras Isa pipeline"] }
+  ]
+};
+
+var STATUS_META = {
+  operational: { color: "#2ecc71", label: "Operationnel" },
+  reduced:     { color: "#f1c40f", label: "Production reduite" },
+  paused:      { color: "#e67e22", label: "En pause / planifie" },
+  shutin:      { color: "#d35400", label: "Mis a l'arret" },
+  damaged:     { color: "#e74c3c", label: "Endommage" },
+  destroyed:   { color: "#922b21", label: "Detruit" },
+  unknown:     { color: "#7f8c8d", label: "Inconnu" }
+};
+
+var TYPE_META = {
+  "champ-petrole":      { label: "Champ petrolier" },
+  "champ-gaz":          { label: "Champ gazier" },
+  "raffinerie":         { label: "Raffinerie" },
+  "terminal-export":    { label: "Terminal d'export petrolier" },
+  "terminal-gnl":       { label: "Terminal GNL" },
+  "petrochimie":        { label: "Site petrochimique" },
+  "station-pompage":    { label: "Station de pompage" },
+  "station-traitement": { label: "Station de traitement" },
+  "centrale-electrique":{ label: "Centrale electrique" },
+  "pipeline":           { label: "Pipeline" }
+};
+
+// === SVG ICONS par type d'infrastructure ===
+// Tous monochromes blancs, viewBox 0 0 24 24, conçus pour lisibilité a 16-26px.
+var ICONS = {
+  // Derrick / chevalet de pompage stylise
+  "champ-petrole": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21L12 3L20 21"/><path d="M3 21h18"/><path d="M7.5 14h9"/><path d="M9 9h6"/></svg>',
+  // Flamme (gaz brule en torchere)
+  "champ-gaz": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"><path d="M12 2.5 C 10 7, 6.5 9, 6.5 13.5 A 5.5 5.5 0 0 0 17.5 13.5 C 17.5 11, 15.5 9, 14.2 7.5 C 13.5 9, 12.5 9.5, 12.3 7.5 C 12.1 5.5, 12 4, 12 2.5 Z"/></svg>',
+  // 3 tours de distillation
+  "raffinerie": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21h18"/><rect x="3.5" y="11" width="4" height="10"/><rect x="10" y="6.5" width="4" height="14.5"/><rect x="16.5" y="13" width="4" height="8"/><circle cx="5.5" cy="9" r="1.2" fill="white"/><circle cx="12" cy="4.5" r="1.2" fill="white"/><circle cx="18.5" cy="11" r="1.2" fill="white"/></svg>',
+  // Tanker / navire de transport
+  "terminal-export": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13 L21 13 L19 18 L5 18 Z" fill="white" fill-opacity="0.18"/><rect x="8" y="7" width="8" height="6"/><line x1="12" y1="3" x2="12" y2="7"/><path d="M2 19 C 5 21, 9 21, 12 19 C 15 21, 19 21, 22 19"/></svg>',
+  // Sphere Moss (cargo GNL)
+  "terminal-gnl": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="11" r="7"/><path d="M5 11 L19 11"/><path d="M7.5 7 C 9 5, 15 5, 16.5 7"/><path d="M8 21h8"/><line x1="10" y1="18" x2="10" y2="21"/><line x1="14" y1="18" x2="14" y2="21"/></svg>',
+  // Hexagone (benzene) — petrochimie
+  "petrochimie": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 L20 7.5 L20 16.5 L12 21 L4 16.5 L4 7.5 Z"/><circle cx="12" cy="12" r="3.5"/></svg>',
+  // Pompe (rectangle arrondi + fleche de flux)
+  "station-pompage": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M3 12h3 M18 12h3"/><circle cx="12" cy="12" r="2.5"/><path d="M10 10l3 2-3 2"/></svg>',
+  // Separateur horizontal (vessel)
+  "station-traitement": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="3.5" y="9" width="17" height="8" rx="3" ry="3"/><line x1="3.5" y1="13" x2="20.5" y2="13" stroke-dasharray="1.5 1.5"/><line x1="12" y1="6" x2="12" y2="9"/><line x1="7" y1="17" x2="7" y2="20"/><line x1="17" y1="17" x2="17" y2="20"/></svg>',
+  // Eclair (electricite)
+  "centrale-electrique": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0.8" stroke-linejoin="round"><path d="M14 2 L4 13.5 L11 13.5 L9 22 L20 10.5 L13 10.5 L14 2 Z"/></svg>',
+  // Tuyau avec coude (pour filtres uniquement, pipelines = polylines)
+  "pipeline": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L8 12 L8 7 L16 7 L16 17 L22 17"/><circle cx="8" cy="7" r="1.3" fill="white"/><circle cx="16" cy="17" r="1.3" fill="white"/></svg>',
+  // Fallback inconnu
+  "_default": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><circle cx="12" cy="12" r="7"/><path d="M9.5 9.5 a 2.5 2.5 0 1 1 3.5 2.3 c -1 0.5 -1 1.2 -1 2.2 M12 17 v 0.5" stroke-linecap="round"/></svg>'
+};
+
+// Helper : transforme un string SVG en noeud DOM (securise : pas d'innerHTML)
+function svgToNode(svgStr) {
+  if (!svgStr) return null;
+  var parsed = new DOMParser().parseFromString(svgStr, "image/svg+xml");
+  var node = parsed.documentElement;
+  if (node && node.nodeName && node.nodeName.toLowerCase() === "svg") {
+    return document.importNode(node, true);
+  }
+  return null;
+}
+
+// ─── Helpers DOM securises (pas d'innerHTML pour le contenu dynamique) ───
+function el(tag, attrs, children) {
+  var node = document.createElement(tag);
+  if (attrs) {
+    for (var k in attrs) {
+      if (k === "style" && typeof attrs[k] === "object") {
+        for (var s in attrs[k]) node.style[s] = attrs[k][s];
+      } else if (k === "class") {
+        node.className = attrs[k];
+      } else if (k === "dataset") {
+        for (var d in attrs[k]) node.dataset[d] = attrs[k][d];
+      } else {
+        node.setAttribute(k, attrs[k]);
+      }
+    }
+  }
+  if (children) {
+    if (typeof children === "string") {
+      node.appendChild(document.createTextNode(children));
+    } else if (Array.isArray(children)) {
+      children.forEach(function(c) {
+        if (c == null) return;
+        if (typeof c === "string") node.appendChild(document.createTextNode(c));
+        else node.appendChild(c);
+      });
+    } else {
+      node.appendChild(children);
+    }
+  }
+  return node;
+}
+
+// ─── Init carte ───
+var map = L.map("map", {
+  center: [25.5, 53.0],
+  zoom: 6,
+  minZoom: 4,
+  maxZoom: 11,
+  zoomControl: true,
+  worldCopyJump: false
+});
+
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  attribution: "© OpenStreetMap © CARTO",
+  subdomains: "abcd",
+  maxZoom: 19
+}).addTo(map);
+
+// ─── Etat filtres ───
+var activeStatus = new Set(Object.keys(STATUS_META));
+var activeTypes  = new Set(Object.keys(TYPE_META));
+var activeCountries = new Set();
+DATA.infrastructures.forEach(function(i) { activeCountries.add(i.country); });
+DATA.key_pipelines.forEach(function(p) { activeCountries.add(p.country); });
+
+var siteMarkers = [];
+var pipelineLines = [];
+
+// ─── Popups (construits avec DOM API, pas innerHTML) ───
+function buildPopupNode(site, isPipeline) {
+  var meta = STATUS_META[site.status] || STATUS_META.unknown;
+  var typeLabel = isPipeline ? "Pipeline" : (TYPE_META[site.type] ? TYPE_META[site.type].label : site.type);
+
+  var container = el("div");
+
+  // Header (status pill)
+  var pill = el("span", { class: "status-pill", style: { background: meta.color } }, meta.label);
+  container.appendChild(el("div", { class: "popup-header" }, pill));
+
+  // Name
+  container.appendChild(el("h3", { class: "popup-name" }, site.name));
+
+  // Meta
+  container.appendChild(el("div", { class: "popup-meta" }, site.country + " · " + typeLabel));
+
+  // Grid
+  var grid = el("div", { class: "popup-grid" });
+  function addRow(k, v) {
+    grid.appendChild(el("div", { class: "k" }, k));
+    grid.appendChild(el("div", null, v || "—"));
+  }
+  addRow("Operateur", site.operator);
+  addRow("Capacite", site.capacity);
+  if (isPipeline) {
+    addRow("Trace", site.origin[0].toFixed(2) + ", " + site.origin[1].toFixed(2) + " -> " + site.destination[0].toFixed(2) + ", " + site.destination[1].toFixed(2));
+  } else {
+    addRow("Coord.", site.lat.toFixed(2) + ", " + site.lon.toFixed(2));
+  }
+  container.appendChild(grid);
+
+  // Note
+  if (site.status_note) {
+    container.appendChild(el("div", { class: "popup-note" }, site.status_note));
+  }
+
+  // Sources
+  var srcs = el("div", { class: "popup-sources" });
+  srcs.appendChild(el("div", { class: "k" }, "Sources principales"));
+  (site.sources || []).forEach(function(s) {
+    srcs.appendChild(el("div", { class: "src" }, s));
+  });
+  if (!site.sources || !site.sources.length) {
+    srcs.appendChild(el("span", { style: { color: "var(--text-dim)" } }, "—"));
+  }
+  container.appendChild(srcs);
+
+  return container;
+}
+
+// ─── Construit un divIcon Leaflet : SVG type au-dessus + dot statut en-dessous ───
+function createInfraIcon(type, statusColor) {
+  var wrapper = document.createElement("div");
+  wrapper.className = "infra-marker";
+
+  var iconBox = document.createElement("div");
+  iconBox.className = "infra-icon-wrap";
+
+  var svgNode = svgToNode(ICONS[type] || ICONS._default);
+  if (svgNode) iconBox.appendChild(svgNode);
+
+  var dot = document.createElement("div");
+  dot.className = "infra-dot";
+  dot.style.background = statusColor;
+
+  wrapper.appendChild(iconBox);
+  wrapper.appendChild(dot);
+
+  return L.divIcon({
+    html: wrapper,
+    className: "",
+    iconSize: [30, 40],
+    iconAnchor: [15, 35], // ancre = centre du point colore (= position geo reelle)
+    popupAnchor: [0, -34]
+  });
+}
+
+// ─── Markers sites ───
+DATA.infrastructures.forEach(function(site) {
+  var meta = STATUS_META[site.status] || STATUS_META.unknown;
+  var icon = createInfraIcon(site.type, meta.color);
+  var marker = L.marker([site.lat, site.lon], { icon: icon, riseOnHover: true });
+  marker.bindPopup(buildPopupNode(site, false), { maxWidth: 360 });
+  marker.addTo(map);
+  siteMarkers.push({ marker: marker, data: site });
+});
+
+// ─── Pipelines ───
+DATA.key_pipelines.forEach(function(p) {
+  var meta = STATUS_META[p.status] || STATUS_META.unknown;
+  var poly = L.polyline([p.origin, p.destination], {
+    color: meta.color,
+    weight: 4,
+    opacity: 0.85,
+    dashArray: (p.status === "paused" || p.status === "destroyed") ? "8 6" : null
+  });
+  poly.bindPopup(buildPopupNode(p, true), { maxWidth: 360 });
+  poly.bindTooltip(p.name, { className: "pipeline-label", direction: "center", sticky: true });
+  poly.addTo(map);
+  pipelineLines.push({ polyline: poly, data: p });
+});
+
+// ─── Comptage ───
+function countByStatus(status) {
+  var s = DATA.infrastructures.filter(function(i) { return i.status === status; }).length;
+  var p = DATA.key_pipelines.filter(function(pi) { return pi.status === status; }).length;
+  return s + p;
+}
+function countByType(type) {
+  if (type === "pipeline") return DATA.key_pipelines.length;
+  return DATA.infrastructures.filter(function(i) { return i.type === type; }).length;
+}
+function countByCountry(country) {
+  return DATA.infrastructures.filter(function(i) { return i.country === country; }).length
+       + DATA.key_pipelines.filter(function(p) { return p.country === country; }).length;
+}
+
+// ─── Render stats (DOM API) ───
+function renderStats() {
+  var container = document.getElementById("stats");
+  while (container.firstChild) container.removeChild(container.firstChild);
+
+  var total   = DATA.infrastructures.length + DATA.key_pipelines.length;
+  var damaged = countByStatus("damaged") + countByStatus("destroyed");
+  var shutin  = countByStatus("shutin") + countByStatus("paused");
+  var reduced = countByStatus("reduced");
+  var ok      = countByStatus("operational");
+
+  function statCard(value, label, color, span2) {
+    var attrs = { class: "stat" };
+    if (span2) attrs.style = { gridColumn: "span 2" };
+    var card = el("div", attrs);
+    var v = el("div", { class: "v" }, String(value));
+    if (color) v.style.color = color;
+    card.appendChild(v);
+    card.appendChild(el("div", { class: "l" }, label));
+    return card;
+  }
+
+  container.appendChild(statCard(total, "Total sites"));
+  container.appendChild(statCard(damaged, "Endommages / detruits", "#e74c3c"));
+  container.appendChild(statCard(shutin, "A l'arret / pause", "#d35400"));
+  container.appendChild(statCard(reduced, "Production reduite", "#f1c40f"));
+  container.appendChild(statCard(ok, "Operationnels", "#2ecc71", true));
+}
+
+// ─── Render filters (DOM API) ───
+function buildFilterRow(filter, key, label, count, dotColor, svgStr) {
+  var row = el("label", { class: "filter-row", dataset: { filter: filter, key: key } });
+  var input = el("input", { type: "checkbox" });
+  input.checked = true;
+  row.appendChild(input);
+  if (dotColor) {
+    var dot = el("span", { class: "dot" });
+    dot.style.background = dotColor;
+    row.appendChild(dot);
+  }
+  if (svgStr) {
+    var iconWrap = el("span", { class: "type-icon" });
+    var svgNode = svgToNode(svgStr);
+    if (svgNode) iconWrap.appendChild(svgNode);
+    row.appendChild(iconWrap);
+  }
+  row.appendChild(el("span", { class: "label" }, label));
+  row.appendChild(el("span", { class: "count" }, String(count)));
+  return row;
+}
+
+function renderFilters() {
+  var sc = document.getElementById("filters-status");
+  while (sc.firstChild) sc.removeChild(sc.firstChild);
+  Object.keys(STATUS_META).forEach(function(s) {
+    sc.appendChild(buildFilterRow("status", s, STATUS_META[s].label, countByStatus(s), STATUS_META[s].color));
+  });
+
+  var tc = document.getElementById("filters-type");
+  while (tc.firstChild) tc.removeChild(tc.firstChild);
+  Object.keys(TYPE_META).forEach(function(t) {
+    tc.appendChild(buildFilterRow("type", t, TYPE_META[t].label, countByType(t), null, ICONS[t]));
+  });
+
+  var cc = document.getElementById("filters-country");
+  while (cc.firstChild) cc.removeChild(cc.firstChild);
+  var countries = Array.from(activeCountries).sort();
+  countries.forEach(function(c) {
+    cc.appendChild(buildFilterRow("country", c, c, countByCountry(c), null));
+  });
+}
+
+renderStats();
+renderFilters();
+
+// Footer note (textContent, safe)
+document.getElementById("footer-note").textContent = "Voir sources_infrastructures.md pour la methodologie complete.";
+
+// ─── Filter events ───
+document.querySelectorAll(".filter-row").forEach(function(row) {
+  row.addEventListener("change", function() {
+    var filter = row.dataset.filter;
+    var key = row.dataset.key;
+    var checked = row.querySelector("input").checked;
+    if (filter === "status") {
+      if (checked) activeStatus.add(key); else activeStatus.delete(key);
+    } else if (filter === "type") {
+      if (checked) activeTypes.add(key); else activeTypes.delete(key);
+    } else if (filter === "country") {
+      if (checked) activeCountries.add(key); else activeCountries.delete(key);
+    }
+    applyFilters();
+  });
+});
+
+document.querySelectorAll("[data-action]").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var action = btn.dataset.action;
+    var isStatus = action.indexOf("status") !== -1;
+    var sel = isStatus ? "[data-filter='status']" : "[data-filter='type']";
+    var setRef = isStatus ? activeStatus : activeTypes;
+    var setAll = action.indexOf("select") === 0;
+    document.querySelectorAll(sel).forEach(function(row) {
+      row.querySelector("input").checked = setAll;
+      var k = row.dataset.key;
+      if (setAll) setRef.add(k); else setRef.delete(k);
+    });
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  siteMarkers.forEach(function(item) {
+    var show = activeStatus.has(item.data.status)
+            && activeTypes.has(item.data.type)
+            && activeCountries.has(item.data.country);
+    if (show) {
+      if (!map.hasLayer(item.marker)) item.marker.addTo(map);
+    } else {
+      if (map.hasLayer(item.marker)) map.removeLayer(item.marker);
+    }
+  });
+
+  pipelineLines.forEach(function(item) {
+    var show = activeStatus.has(item.data.status)
+            && activeTypes.has("pipeline")
+            && activeCountries.has(item.data.country);
+    if (show) {
+      if (!map.hasLayer(item.polyline)) item.polyline.addTo(map);
+    } else {
+      if (map.hasLayer(item.polyline)) map.removeLayer(item.polyline);
+    }
+  });
+}
+
+// ─── Legende sur la carte (en bas a droite) — DOM API ───
+var mapLegend = L.control({ position: "bottomright" });
+mapLegend.onAdd = function() {
+  var div = el("div", { class: "map-legend" });
+  div.appendChild(el("div", { class: "legend-title" }, "Statut"));
+  Object.keys(STATUS_META).forEach(function(s) {
+    var meta = STATUS_META[s];
+    var row = el("div", { class: "legend-row" });
+    var dot = el("span", { class: "legend-dot" });
+    dot.style.background = meta.color;
+    row.appendChild(dot);
+    row.appendChild(el("span", null, meta.label));
+    div.appendChild(row);
+  });
+  return div;
+};
+mapLegend.addTo(map);
+
+// Hide loader
+setTimeout(function() {
+  var l = document.getElementById("loader");
+  if (l) l.style.display = "none";
+}, 250);
+
+// Auto-fit
+var allLatLng = [];
+DATA.infrastructures.forEach(function(s) { allLatLng.push([s.lat, s.lon]); });
+DATA.key_pipelines.forEach(function(p) { allLatLng.push(p.origin); allLatLng.push(p.destination); });
+if (allLatLng.length) {
+  map.fitBounds(allLatLng, { padding: [40, 40], maxZoom: 7 });
+}
+</script>
+
+</body>
+</html>

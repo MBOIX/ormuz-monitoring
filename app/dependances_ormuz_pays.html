@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dependances UE vis-a-vis d'Ormuz par pays — Crise du detroit (3 juin 2026 / J95)</title>
+<link rel="stylesheet" href="styles_common.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="brand">Crise du detroit d'Ormuz<span class="crisis"> — 3 juin 2026 (J95)</span></div>
+  <a href="index.html">Accueil</a>
+  <a href="carte_infrastructures.html">Carte zone Ormuz</a>
+  <a href="carte_infrastructures_europe.html">Carte Europe</a>
+  <a href="dependances_ormuz_pays.html" class="active">Dependances UE (energie)</a>
+  <a href="dependances_ressources_critiques.html">Ressources critiques</a>
+  <a href="stocks_pays_ue.html">Stocks UE</a>
+  <a href="synthese_france.html">Synthèse imprimable</a>
+</nav>
+
+<main class="page">
+  <h1>Dependances UE vis-a-vis d'Ormuz par pays et par carburant</h1>
+  <p class="subtitle">Importations transitant par le detroit d'Ormuz (baseline 2025), par type d'energie et par Etat membre. Baseline pre-conflit ; au 3 juin 2026 (J95), ces flux sont reduits a ~5 % de leur niveau historique. Nouvelle section ci-dessous : granularite par carburant raffine (gazole, SP95/98, FOD, GNR).</p>
+
+  <div class="legend">
+    <div class="item"><span class="dot" style="background: var(--green);"></span> Faible (&lt; 10 % via Ormuz)</div>
+    <div class="item"><span class="dot" style="background: var(--yellow);"></span> Moyen (10-25 %)</div>
+    <div class="item"><span class="dot" style="background: var(--orange);"></span> Eleve (25-40 %)</div>
+    <div class="item"><span class="dot" style="background: var(--red);"></span> Critique (&gt; 40 %)</div>
+  </div>
+
+  <!-- Synthese UE en haut -->
+  <div class="summary">
+    <h2>Synthese UE agregee</h2>
+    <p style="margin-top: 0; color: var(--text-dim); font-size: 12.5px;">L'UE depend d'Ormuz pour environ 10-15 % de ses imports petroliers et 6-9 % de ses imports gaziers, mais avec des poches de dependance critiques concentrees sur certains pays et certains produits (jet fuel).</p>
+    <div class="summary-grid">
+      <div class="summary-stat">
+        <div class="v">12-15 %</div>
+        <div class="l">Petrole brut UE via Ormuz</div>
+        <div class="delta">~1,1-1,3 mb/j</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">8,9 %</div>
+        <div class="l">GNL UE depuis Qatar 2025</div>
+        <div class="delta down">6 % en Q1 2026 (effondrement)</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">~50 %</div>
+        <div class="l">Jet fuel imports UE du MO</div>
+        <div class="delta down">330 → 60 kb/j (-82 % avril)</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">~15-20 %</div>
+        <div class="l">Consommation totale jet UE du MO</div>
+        <div class="delta">UE importe 30-40 % de ses besoins jet</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DEPENDANCE ORMUZ PAR CARBURANT RAFFINE ========== -->
+  <h2>Dependance Ormuz par carburant raffine — focus FR + voisins UE</h2>
+  <p style="color: var(--text-dim); font-size: 12.5px; margin-top: -8px;">
+    Decomposition de l'exposition aux flux Ormuz par produit fini : <strong>gazole routier (B7)</strong>, <strong>essences SP95-E10 / SP98</strong>, <strong>fioul domestique (FOD / mazout)</strong>, <strong>gazole non routier (GNR / fuel agricole)</strong>. Distinction <strong>directe</strong> (import de brut MO raffine en UE, ou import direct de produit raffine MO) et <strong>indirecte</strong> (raffineries UE elles-memes alimentees partiellement en brut MO).
+  </p>
+
+  <div class="summary">
+    <h2>France — Decomposition par carburant (direct + indirect)</h2>
+    <p style="margin-top: 0; color: var(--text-dim); font-size: 12.5px;">
+      Sources : Eurostat <code>NRG_TI_OIL</code> (imports brut FR par origine), INSEE 2119697, DG Tresor, SDES Chapitre 12 Petrole, calendrier_penuries.md (fiches 5.1.1 a 5.1.7), IRIS OSFME Detroits 2025. Repere 2024 : <strong>brut FR via Moyen-Orient = 12 %</strong> (Arabie 3 %, Irak ~3 %, EAU+Koweit+Qatar reste) — Amerique du Nord devenue 1re source (23 %).
+    </p>
+
+    <div class="cards" style="margin-top: 14px;">
+
+      <div class="country-card">
+        <div class="country-header">
+          <div class="country-name">Gazole routier (B7)</div>
+          <div class="country-risk risk-high">30-43 % total</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Direct</div>
+          <div class="bar"><div style="width: 7%; background: var(--green);"></div></div>
+          <div class="v">5-8 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Indirect</div>
+          <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+          <div class="v">25-35 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Total</div>
+          <div class="bar"><div style="width: 37%; background: var(--orange);"></div></div>
+          <div class="v">30-43 %</div>
+        </div>
+        <div class="note">Carburant le plus expose. Filiere distillat partagee avec FOD. Imports indirects via raffineries NL/BE/FR alimentees brut MO. Date butoir vigilance : <strong>31 mai 2026 (S23)</strong>.</div>
+        <div class="sources">Sources : Eurostat NRG_TI_OIL, calendrier_penuries 5.1.1, IRIS OSFME, UFIP</div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-header">
+          <div class="country-name">Essences SP95 + SP98</div>
+          <div class="country-risk risk-mid">15-30 % total</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Direct</div>
+          <div class="bar"><div style="width: 4%; background: var(--green);"></div></div>
+          <div class="v">&lt; 5 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Indirect</div>
+          <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+          <div class="v">15-25 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Total</div>
+          <div class="bar"><div style="width: 22%; background: var(--yellow);"></div></div>
+          <div class="v">15-30 %</div>
+        </div>
+        <div class="note">FR <strong>exportatrice nette</strong> (raffinage ~1,5× conso interne). Dependance Ormuz la plus faible des 4 carburants. SP98 plus fragile en distribution (~10-12 % stations independantes ne distribuent pas).</div>
+        <div class="sources">Sources : Eurostat nrg_cb_oilm, CPDP, calendrier_penuries 5.1.2-3, UFIP</div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-header">
+          <div class="country-name">FOD (fioul domestique)</div>
+          <div class="country-risk risk-high">30-45 % total</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Direct</div>
+          <div class="bar"><div style="width: 8%; background: var(--green);"></div></div>
+          <div class="v">5-10 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Indirect</div>
+          <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+          <div class="v">25-35 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Total</div>
+          <div class="bar"><div style="width: 38%; background: var(--orange);"></div></div>
+          <div class="v">30-45 %</div>
+        </div>
+        <div class="note">Meme filiere distillat que le gazole. <strong>2,7 M menages chauffes au fioul</strong> (~10 % du parc). Effet retard panique remplissage anticipe hiver. Date butoir : <strong>15 juin 2026 (S25)</strong>.</div>
+        <div class="sources">Sources : SDES Chauffage menages, FF3C, Connaissance des Energies, calendrier_penuries 5.1.4</div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-header">
+          <div class="country-name">GNR (gazole agricole)</div>
+          <div class="country-risk risk-high">25-40 % total</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Direct</div>
+          <div class="bar"><div style="width: 4%; background: var(--green);"></div></div>
+          <div class="v">&lt; 5 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Indirect</div>
+          <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+          <div class="v">25-35 %</div>
+        </div>
+        <div class="metric-row">
+          <div class="k">Total</div>
+          <div class="bar"><div style="width: 33%; background: var(--orange);"></div></div>
+          <div class="v">25-40 %</div>
+        </div>
+        <div class="note">Filiere distillat (accise reduite 3,86 €/hL). Conso ~2 Mm³/an. <strong>Risque social agricole</strong> en cas de hausse durable (potentiel Gilets Jaunes 2.0). Suivi FranceAgriMer + Douanes.</div>
+        <div class="sources">Sources : Douanes (page GNR), FranceAgriMer, calendrier_penuries 5.1.7, Terre-net</div>
+      </div>
+
+    </div>
+  </div>
+
+  <h3 style="margin-top: 24px;">Comparatif voisins UE — exposition Ormuz par carburant (baseline 2025)</h3>
+  <p style="color: var(--text-dim); font-size: 12.5px;">
+    Exposition totale (direct + indirect) par produit raffine. Donnees agregees Eurostat <code>NRG_TI_OIL</code> + sources nationales. <strong>GNR omis</strong> hors France (categorie distincte FR uniquement).
+  </p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Pays</th>
+          <th class="num">Gazole</th>
+          <th class="num">SP95/98</th>
+          <th class="num">FOD</th>
+          <th>Statut global</th>
+          <th>Notes cles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>France</strong></td>
+          <td class="num" style="color: var(--orange);">30-43 %</td>
+          <td class="num" style="color: var(--yellow);">15-30 %</td>
+          <td class="num" style="color: var(--orange);">30-45 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Brut MO 12 % 2024 ; raffinage 75 % conso ; SP exportatrice nette</td>
+        </tr>
+        <tr>
+          <td><strong>Allemagne</strong></td>
+          <td class="num" style="color: var(--yellow);">15-25 %</td>
+          <td class="num" style="color: var(--yellow);">10-20 %</td>
+          <td class="num" style="color: var(--yellow);">15-25 %</td>
+          <td><span class="pill" style="background: var(--yellow); color: #1a1a1a;">Moyen</span></td>
+          <td>Brut MO &lt; 10 % ; mix Norvege/Kazakhstan/US ; PCK Schwedt vulnerable</td>
+        </tr>
+        <tr>
+          <td><strong>Italie</strong></td>
+          <td class="num" style="color: var(--red);">50-65 %</td>
+          <td class="num" style="color: var(--red);">35-50 %</td>
+          <td class="num" style="color: var(--red);">50-65 %</td>
+          <td><span class="pill" style="background: var(--red);">Critique</span></td>
+          <td>Milazzo (50 % Kuwait), Priolo, Falconara orientees Golfe</td>
+        </tr>
+        <tr>
+          <td><strong>Espagne</strong></td>
+          <td class="num" style="color: var(--orange);">35-45 %</td>
+          <td class="num" style="color: var(--orange);">25-35 %</td>
+          <td class="num" style="color: var(--orange);">35-45 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Brut MO ~30 % compense Mexique/Atlantique</td>
+        </tr>
+        <tr>
+          <td><strong>Pays-Bas</strong></td>
+          <td class="num" style="color: var(--orange);">30-40 %</td>
+          <td class="num" style="color: var(--orange);">25-35 %</td>
+          <td class="num" style="color: var(--orange);">30-40 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Rotterdam hub re-export ; raffineries Pernis/Vlaardingen</td>
+        </tr>
+        <tr>
+          <td><strong>Belgique</strong></td>
+          <td class="num" style="color: var(--orange);">25-35 %</td>
+          <td class="num" style="color: var(--orange);">20-30 %</td>
+          <td class="num" style="color: var(--orange);">25-35 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Anvers hub re-export, expose au rebond marche</td>
+        </tr>
+        <tr>
+          <td><strong>Royaume-Uni</strong></td>
+          <td class="num" style="color: var(--orange);">35-45 %</td>
+          <td class="num" style="color: var(--orange);">25-35 %</td>
+          <td class="num" style="color: var(--orange);">35-45 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Lindsey/Humber/Fawley exposees MO ; Grangemouth ferme</td>
+        </tr>
+        <tr>
+          <td><strong>Pologne</strong></td>
+          <td class="num" style="color: var(--orange);">40-50 %</td>
+          <td class="num" style="color: var(--orange);">35-45 %</td>
+          <td class="num" style="color: var(--orange);">40-50 %</td>
+          <td><span class="pill" style="background: var(--orange);">Eleve</span></td>
+          <td>Partenariat Aramco-Orlen Gdansk (30 %)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 11.5px; color: var(--text-faint); margin-top: 8px;">
+    <strong>Note methodo</strong> : la part <em>directe</em> mesure les imports nationaux de brut MO raffine localement ou de produit raffine importe directement du Moyen-Orient. La part <em>indirecte</em> reflete l'exposition via les raffineries UE elles-memes alimentees partiellement en brut MO (interdependance des marches petroliers). Pour la France, voir <a href="../calendrier_penuries.md" style="color: var(--accent);">calendrier_penuries.md</a> (fiches 5.1.1 a 5.1.7) pour les fiches detaillees par produit.
+  </p>
+
+  <h2>Dependance par pays — par carburant</h2>
+  <p style="color: var(--text-dim); font-size: 12.5px; margin-top: -8px;">
+    Les barres montrent la part en % des imports nationaux par produit qui transitait par Ormuz avant le 28 fevrier 2026.
+  </p>
+
+  <div class="cards">
+
+    <!-- ITALIE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Italie</div>
+        <div class="country-risk risk-critical">Critique</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 38%; background: var(--red);"></div></div>
+        <div class="v">35-40 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 33%; background: var(--red);"></div></div>
+        <div class="v">33 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 55%; background: var(--red);"></div></div>
+        <div class="v">~55 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="note">Pays le plus expose UE. Milazzo (50 % Kuwait Petroleum) + Priolo + Falconara orientes bruts du Golfe. Adriatic LNG (Rovigo, 9 bcm) co-detenu QatarEnergy. <strong>Force majeure subie</strong>.</div>
+      <div class="sources">Sources : Euronews 06/03, Concawe 2024, GIIGNL, FuelsEurope, Kpler</div>
+    </div>
+
+    <!-- ROYAUME-UNI -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Royaume-Uni</div>
+        <div class="country-risk risk-critical">Critique</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 45%; background: var(--red);"></div></div>
+        <div class="v">~45 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 60%; background: var(--red);"></div></div>
+        <div class="v">~60 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 35%; background: var(--orange);"></div></div>
+        <div class="v">~35 %</div>
+      </div>
+      <div class="note">Brut Arabie ~17 % seul. <strong>South Hook (21 bcm/an regaz)</strong> co-detenu QatarEnergy = exposition GNL maximale. Heathrow (~50 % jet via Lindsey-Humber-Fawley) tres expose. Hub aviation europeen.</div>
+      <div class="sources">Sources : UK Parliament CDP-2025-0235, Concawe, Kpler, gov.uk</div>
+    </div>
+
+    <!-- FRANCE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">France</div>
+        <div class="country-risk risk-high">Eleve</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 29%; background: var(--orange);"></div></div>
+        <div class="v">25-33 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 9%; background: var(--green);"></div></div>
+        <div class="v">~9 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 50%; background: var(--red);"></div></div>
+        <div class="v">~50 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 28%; background: var(--orange);"></div></div>
+        <div class="v">~28 %</div>
+      </div>
+      <div class="note">Arabie saoudite ~12 % brut, Irak + EAU completent. GNL Qatar marginal (US + Algerie dominent via Dunkerque/Montoir/Fos). <strong>Jet fuel CDG/Orly tres expose</strong>. SAGESS engage seulement 14,5 Mb sur ~100 Mb (quota IEA strict).</div>
+      <div class="sources">Sources : IEA France oil, SAGESS 2024, Connaissance des Energies, CPDP</div>
+    </div>
+
+    <!-- BELGIQUE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Belgique</div>
+        <div class="country-risk risk-high">Eleve</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+        <div class="v">15-25 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 16%; background: var(--yellow);"></div></div>
+        <div class="v">16 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 55%; background: var(--red);"></div></div>
+        <div class="v">~55 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 25%; background: var(--orange);"></div></div>
+        <div class="v">~25 %</div>
+      </div>
+      <div class="note">Hub Anvers reexporte vers UE → vulnerable rebond marche. <strong>Zeebrugge GNL</strong> sous contrat long-terme partiel Qatar. Brussels Airport et Liege (cargo) fortement exposes au jet MO.</div>
+      <div class="sources">Sources : Euronews 06/03, IEA Belgium, ASEVA</div>
+    </div>
+
+    <!-- POLOGNE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Pologne</div>
+        <div class="country-risk risk-high">Eleve</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 35%; background: var(--orange);"></div></div>
+        <div class="v">~35 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 25%; background: var(--orange);"></div></div>
+        <div class="v">25 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 25%; background: var(--orange);"></div></div>
+        <div class="v">~25 %</div>
+      </div>
+      <div class="note"><strong>Partenariat strategique Saudi Aramco-Orlen</strong> a Gdansk (30 %) post-2022 = exposition brut MO accrue. GNL Qatar via Swinoujscie significatif. Naftoport sature → pas de marge pour rebond. Substitution Naftoport-Brent difficile.</div>
+      <div class="sources">Sources : Aramco, Orlen, Euronews 06/03, Naftoport</div>
+    </div>
+
+    <!-- PAYS-BAS -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Pays-Bas</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 25%; background: var(--orange);"></div></div>
+        <div class="v">20-30 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 6%; background: var(--green);"></div></div>
+        <div class="v">~6 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 50%; background: var(--red);"></div></div>
+        <div class="v">~50 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="note">Rotterdam = hub ARA, re-export massif vers DE/BE. Gate Terminal GNL diversifie (US dominant). <strong>Schiphol = 1er hub jet</strong> UE → vulnerabilite jet majeure malgre faible exposition gaz.</div>
+      <div class="sources">Sources : Port of Rotterdam, COVA, IEEFA, Kpler</div>
+    </div>
+
+    <!-- ESPAGNE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Espagne</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 8%; background: var(--green);"></div></div>
+        <div class="v">~8 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 35%; background: var(--orange);"></div></div>
+        <div class="v">~35 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 22%; background: var(--yellow);"></div></div>
+        <div class="v">~22 %</div>
+      </div>
+      <div class="note">Brut MO ~30 % (Arabie, Irak) compense par Mexique + Atlantique. <strong>GNL tres diversifie</strong> (6 terminaux, ~60 bcm/an, 1/3 capacite UE) avec Medgaz + US + Nigeria + Algerie + Trinite-et-Tobago.</div>
+      <div class="sources">Sources : CORES, Enagas, Statista, Repsol/Moeve</div>
+    </div>
+
+    <!-- PORTUGAL -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Portugal</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 25%; background: var(--orange);"></div></div>
+        <div class="v">~25 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 10%; background: var(--yellow);"></div></div>
+        <div class="v">~10 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+        <div class="v">~20 %</div>
+      </div>
+      <div class="note">Sines = hub deepwater atlantique (jusqu'a 350 kDWT). Substitution US/Bresil/Guyana relativement facile pour brut. GNL Sines (7,9 bcm/an) diversifie.</div>
+      <div class="sources">Sources : Galp, REN, IEA Portugal oil security</div>
+    </div>
+
+    <!-- ALLEMAGNE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Allemagne</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 8%; background: var(--green);"></div></div>
+        <div class="v">5-10 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 5%; background: var(--green);"></div></div>
+        <div class="v">~5 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 35%; background: var(--orange);"></div></div>
+        <div class="v">~35 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 15%; background: var(--yellow);"></div></div>
+        <div class="v">~15 %</div>
+      </div>
+      <div class="note">Tres faible exposition brut MO (mix Norvege, Kazakhstan, US, US Mars Blend). <strong>Vulnerabilite specifique PCK Schwedt</strong> (Druzhba + Kazakh interrompu 1er mai). Frankfurt = 2e hub jet UE → exposition jet reelle.</div>
+      <div class="sources">Sources : EBV, BMWK, Argus, Concawe</div>
+    </div>
+
+    <!-- SUISSE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Suisse</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+        <div class="v">~20 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 0%; background: var(--grey);"></div></div>
+        <div class="v">0 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 40%; background: var(--orange);"></div></div>
+        <div class="v">~40 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+        <div class="v">~20 %</div>
+      </div>
+      <div class="note">Acces indirect via Cressier (SPSE depuis Fos) + imports DE/FR. <strong>Kerosene structurellement sous le minimum FONES avant la crise</strong> → risque aerien specifique (Zurich + Geneve).</div>
+      <div class="sources">Sources : Carbura, FONES, SwissInfo, IEA Switzerland</div>
+    </div>
+
+    <!-- LUXEMBOURG -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Luxembourg</div>
+        <div class="country-risk risk-mid">Moyen</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 0%; background: var(--grey);"></div></div>
+        <div class="v">0 % (indirect)</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 0%; background: var(--grey);"></div></div>
+        <div class="v">0 % (indirect)</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 45%; background: var(--red);"></div></div>
+        <div class="v">~45 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 30%; background: var(--orange);"></div></div>
+        <div class="v">~30 % (indirect)</div>
+      </div>
+      <div class="note">Pas de port ni raffinerie : <strong>dependance totale via SFDM/Metz (FR) + Anvers (BE)</strong>. Capacite stockage nationale 196 km3 (objectif 420 km3 non atteint). Cargolux (Findel) = exposition jet majeure (cargo aerien mondial).</div>
+      <div class="sources">Sources : APMS, Tanklux, Lessentiel.lu, Cargolux</div>
+    </div>
+
+    <!-- CROATIE -->
+    <div class="country-card">
+      <div class="country-header">
+        <div class="country-name">Croatie</div>
+        <div class="country-risk risk-low">Faible</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Petrole brut</div>
+        <div class="bar"><div style="width: 10%; background: var(--green);"></div></div>
+        <div class="v">~10 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">GNL (Qatar)</div>
+        <div class="bar"><div style="width: 5%; background: var(--green);"></div></div>
+        <div class="v">~5 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Jet fuel (MO)</div>
+        <div class="bar"><div style="width: 20%; background: var(--yellow);"></div></div>
+        <div class="v">~20 %</div>
+      </div>
+      <div class="metric-row">
+        <div class="k">Produits raff.</div>
+        <div class="bar"><div style="width: 12%; background: var(--yellow);"></div></div>
+        <div class="v">~12 %</div>
+      </div>
+      <div class="note"><strong>Krk FSRU double en 2025</strong> (6,1 bcm/an) = exporteur regional vers HU/SI/AT. Bruts Mediterranee + transit TAL.</div>
+      <div class="sources">Sources : LNG Hrvatska, ceenergynews, Kpler</div>
+    </div>
+
+  </div>
+
+  <h2>Note sur la substitution post-conflit (J95)</h2>
+  <p style="color: var(--text-dim); font-size: 12.5px;">
+    Au 3 juin 2026, les pays les plus exposes ont du basculer rapidement leurs flux. Substitutions documentees :
+  </p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Origines de substitution</th>
+          <th>Flux substitutif (avril 2026)</th>
+          <th>Couverture</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Jet fuel</strong></td>
+          <td>US (Texas/Louisiane) + Nigeria</td>
+          <td>US +400 % a 94 kb/j ; Nigeria record 78-96 kb/j</td>
+          <td><span class="pill" style="background: var(--orange);">~55 %</span></td>
+        </tr>
+        <tr>
+          <td><strong>GNL</strong></td>
+          <td>US LNG (deja 58 % imports UE, projection 2/3 en 2026)</td>
+          <td>+Yamal LNG (Russie) record 2,88 Md EUR Q1 2026</td>
+          <td><span class="pill" style="background: var(--yellow);">~80 %</span></td>
+        </tr>
+        <tr>
+          <td><strong>Petrole brut</strong></td>
+          <td>Aramco East-West Pipeline -> Yanbu/Mediterranee, US (WTI/Mars), Norvege, Bresil/Guyana</td>
+          <td>Norvege saturee, US ↑, Bresil/Guyana ↑ spot</td>
+          <td><span class="pill" style="background: var(--yellow);">~75 %</span></td>
+        </tr>
+        <tr>
+          <td><strong>Produits raffines</strong></td>
+          <td>Raffineries UE a plein regime (Gonfreville, Donges, Pernis, Antwerp)</td>
+          <td>Capacite installee ~9 480 kb/j ; mais -570 kb/j retires 2025-2026 (Grangemouth, Wesseling, Livorno)</td>
+          <td><span class="pill" style="background: var(--yellow);">~85 %</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: var(--text-dim); font-size: 12.5px;">
+    <strong>Verdict</strong> : substitution partielle satisfaisante sauf <strong>jet fuel</strong> (deficit residuel 150-180 kb/j) — IEA declare le 13 mai : <em>"Europe falling short on replacing Middle East jet fuel imports"</em>.
+  </p>
+
+  <div class="meta-foot">
+    Donnees compilees au 3 juin 2026 (J95) · Voir
+    <a href="../infrastructures_europe.md">infrastructures_europe.md</a>,
+    <a href="../sources_infrastructures_europe.md">sources_infrastructures_europe.md</a>,
+    et <a href="../sources.md">sources.md</a> (Tier 1 et Tier 2 carburants raffines : DGEC NPG, prix-carburants.gouv.fr, CPDP, Eurostat NRG_TI_OIL/nrg_stk_oilm/oem, EU Weekly Oil Bulletin, SAGESS, JODI-Oil, FranceAgriMer, FF3C, IRIS OSFME).
+    Niveaux pre-conflit (baseline 2025) ; post-conflit en evolution rapide. Pour la France, voir egalement
+    <a href="../calendrier_penuries.md">calendrier_penuries.md</a> (fiches 5.1.1 a 5.1.7).
+  </div>
+</main>
+
+</body>
+</html>
