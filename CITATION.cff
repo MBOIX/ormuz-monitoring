@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce travail, merci de le citer comme ci-dessous."
+title: "Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)"
+abstract: >-
+  Analyse OSINT de la crise du détroit d'Ormuz : scénarios géopolitiques,
+  impact économique et social en France, données sur l'énergie, les ressources
+  critiques et les infrastructures. Sources ouvertes, cotées et recoupées.
+type: dataset
+authors:
+  - family-names: "Boixiere"
+    given-names: "Mickaël"
+    email: "boixiere.mickael@gmail.com"
+repository-code: "https://github.com/mickael-boixiere/ormuz-monitoring"
+url: "https://github.com/mickael-boixiere/ormuz-monitoring"
+license: CC-BY-4.0
+version: "2026.06.04"
+date-released: "2026-06-04"
+keywords:
+  - OSINT
+  - "détroit d'Ormuz"
+  - "marché pétrolier"
+  - "sécurité énergétique"
+  - "Brent"
+  - France

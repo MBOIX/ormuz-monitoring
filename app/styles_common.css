@@ -313,3 +313,18 @@ table .pill {
   .topbar { padding: 8px 14px; gap: 8px; flex-wrap: wrap; }
   .topbar a { font-size: 11.5px; padding: 3px 7px; }
 }
+
+/* === Bandeau de cadrage (as-of / situation évolutive) === */
+.asof-note {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 14px 24px 30px;
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--text-faint);
+  border-top: 1px solid var(--border);
+}
+.asof-note strong { color: var(--text-dim); }
+.asof-note a { color: var(--accent); text-decoration: none; }
+.asof-note a:hover { text-decoration: underline; }
+@media print { .asof-note { display: none; } }

@@ -293,6 +293,8 @@ Sources ajoutées pour le suivi des matières premières non-énergétiques fort
 | **Renewable Matter** | T, E | **Méthanol quasi-doublé en Asie / plus que doublé en Europe** ; **aluminium en hausse** (exposition Golfe via Ormuz) | https://www.renewablematter.eu/hormuz-methanol-aluminium-supply |
 
 > **MAJ J95 (fin mai-3 juin 2026)** : la **force majeure QatarEnergy à Ras Laffan** est confirmée à **~17 % de la liquéfaction**, réparation estimée **3-5 ans** (Ormuz coupe ~1/5 du GNL mondial) — impact direct sur South Hook (UK), Adriatic LNG (IT) et l'objectif UGS 90 % au 1ᵉʳ novembre (UE 38 % au 2/06). Source : https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz · Exxon alerte un Dated Brent **150-160 $/b** possible sous 2-3 semaines (https://www.cnbc.com/2026/05/28/exxon-oil-inventories-dangerously-low). OPEP+ **+188k b/j juin**, **EAU hors OPEP (3 mai)** (https://www.aljazeera.com/economy/2026/06/01/opec-plus-output-uae-exit).
+>
+> **⚠ Note de traçabilité (04/06/2026)** : les trois URL de cette MAJ (CNBC ×2, Al Jazeera) sont **rompues (404)** au contrôle. Les faits (force majeure ~17 %, Dated Brent 150-160 $/b, +188k b/j / sortie EAU) sont **à recouper sur ≥ 2 sources Tier 1** avant d'être tenus pour confirmés. Aucune URL de substitution n'a été inventée.
 
 ---
 

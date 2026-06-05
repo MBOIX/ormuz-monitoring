@@ -1,0 +1,34 @@
+version = 1
+SPDX-PackageName = "ormuz-monitoring"
+SPDX-PackageSupplier = "Mickaël Boixiere <boixiere.mickael@gmail.com>"
+SPDX-PackageDownloadLocation = "https://github.com/mickael-boixiere/ormuz-monitoring"
+
+# --- Code : application web statique (HTML / CSS / JS) ---
+[[annotations]]
+path = "app/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mickaël Boixiere"
+SPDX-License-Identifier = "MIT"
+
+# --- Contenu éditorial : analyses, scénarios, synthèses, documentation ---
+[[annotations]]
+path = "**.md"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mickaël Boixiere"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# --- Données extraites (compilation et mise en forme originales) ---
+# Les droits sur les donnees SOURCES tierces (IEA, Eurostat, Reuters, ...)
+# restent ceux de leurs detenteurs respectifs. Voir NOTICE et sources*.md.
+[[annotations]]
+path = ["data/**", "**.csv", "**.json", "**.geojson"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mickaël Boixiere"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# --- Fichiers de configuration et metadonnees du depot ---
+[[annotations]]
+path = [".gitignore", "REUSE.toml", "CITATION.cff", "NOTICE"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Mickaël Boixiere"
+SPDX-License-Identifier = "CC-BY-4.0"

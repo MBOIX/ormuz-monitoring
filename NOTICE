@@ -1,0 +1,32 @@
+Ormuz Monitoring — Suivi OSINT de la crise du détroit d'Ormuz (impact France)
+Copyright (c) 2026 Mickaël Boixiere
+
+Ce dépôt est multi-licence (conforme à la spécification REUSE — https://reuse.software/) :
+
+  - Code (app/ : HTML, CSS, JS) ............... MIT
+  - Contenu éditorial (*.md) .................. CC BY 4.0
+  - Données (CSV / JSON / GeoJSON) ............ CC BY 4.0
+
+ATTRIBUTION
+-----------
+Pour toute réutilisation du contenu éditorial ou des données :
+    Source : Mickaël Boixiere — « Ormuz Monitoring » (2026),
+    https://github.com/mickael-boixiere/ormuz-monitoring — CC BY 4.0
+
+DONNÉES TIERCES
+---------------
+Les tableaux et analyses agrègent et citent des sources externes
+(notamment IEA, EIA, Eurostat, AGSI+/GIE, Reuters, Bloomberg, S&P Global,
+Argus, presse internationale).
+
+La licence CC BY 4.0 de ce dépôt couvre uniquement :
+  - la compilation, la sélection et la mise en forme originales des données ;
+  - les analyses, scénarios et synthèses rédigés ;
+  - le droit sui generis sur la base de données (UE).
+
+Elle NE re-licencie PAS les données sous-jacentes. Les chiffres factuels bruts
+ne sont pas protégés par le droit d'auteur ; les droits éventuels sur les jeux
+de données sources restent ceux de leurs détenteurs respectifs. Avant toute
+réutilisation massive de données issues d'un tiers, vérifiez les conditions de
+la source primaire. Le détail des sources et leur cotation figurent dans
+sources.md, sources_infrastructures.md et sources_infrastructures_europe.md.

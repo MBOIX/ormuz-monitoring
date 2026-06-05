@@ -218,7 +218,7 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 - https://www.bloomberg.com/news/articles/2026-03-18/qatar-reports-extensive-damage-at-site-of-ras-laffan-lng-plant
 - https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/
 - https://www.qatarenergy.qa/en/MediaCenter/Pages/newsdetails.aspx?ItemId=3892
-- QatarEnergy force majeure confirmée fin mai 2026 : ~17 % de la capacité de liquéfaction de Ras Laffan touchée, réparation estimée 3-5 ans ; Ormuz coupe ~1/5 du GNL mondial — https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz
+- QatarEnergy force majeure confirmée fin mai 2026 : ~17 % de la capacité de liquéfaction de Ras Laffan touchée, réparation estimée 3-5 ans ; Ormuz coupe ~1/5 du GNL mondial — https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz **⚠ lien rompu (404) au 04/06/2026 ; le chiffre « ~17 % » reste à recouper. Les dommages Ras Laffan sont par ailleurs documentés par Bloomberg (18/03) et The National (09/04) ci-dessus.**
 
 **North Field / Mesaieed**
 - https://naturalgasintel.com/news/north-field-expansion-project-delays-likely-as-qatari-lng-output-crippled-by-iranian-attacks/

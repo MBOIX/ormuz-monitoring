@@ -14,6 +14,18 @@ Chaque source est évaluée selon 3 critères :
 
 ---
 
+## Convention de référence (cible) et traçabilité
+
+Pour rendre chaque chiffre re-vérifiable dans le temps, le format de référence **cible** est :
+
+> [Titre] — Éditeur, JJ mois AAAA. URL live · Archive : `web.archive.org/…` (consulté le JJ/MM/AAAA) · Cote : B2
+
+Règles : (1) doubler l'URL live d'une **copie d'archive** (Wayback / archive.today) pour les pages volatiles ; (2) indiquer la **date de consultation** pour tout chiffre ; (3) pour les bases temps réel (AGSI+, Eurostat, IEA OMR), citer le **snapshot daté**, jamais la racine du site.
+
+> **⚠ Liens rompus signalés au 4 juin 2026** — trois sources étayant des faits structurants ont une URL cassée (404) au moment du contrôle. Les faits concernés sont marqués `⚠ source à revérifier` ci-dessous et restent **à recouper sur ≥ 2 sources Tier 1** avant d'être tenus pour confirmés. Aucune URL de substitution n'a été inventée (principe : ne pas combler un manque par une supposition).
+
+---
+
 ## Tier 1 — Sources de référence (consulter systématiquement)
 
 | Source | Type | Fiabilité | Spécificité dans cette crise | Biais connus |
@@ -204,11 +216,11 @@ Sources officielles pour le suivi de l'**AdBlue (DEF, solution AUS 32 = 32,5 % u
 
 | Source | Type | Référence | URL / Article |
 |---|---|---|---|
-| CNBC (Exxon warns inventories) | E, T | « Exxon warns oil inventories will hit dangerously low levels » 28 mai 2026 — alerte Dated Brent 150-160 $/b sous 2-3 semaines | cnbc.com/2026/05/28/exxon-oil-inventories-dangerously-low |
+| CNBC (Exxon warns inventories) | E, T | « Exxon warns oil inventories will hit dangerously low levels » 28 mai 2026 — alerte Dated Brent 150-160 $/b sous 2-3 semaines | cnbc.com/2026/05/28/exxon-oil-inventories-dangerously-low — **⚠ lien rompu (404) au 04/06/2026, source à revérifier/recouper (≥2 Tier 1)** |
 | Fortune (oil bosses doomsday) | E | « Oil bosses warn the worst is yet to come — but the doomsday scenario hasn't arrived » 30-31 mai 2026 | fortune.com/2026/05/30/oil-bosses-warn-doomsday-hormuz |
 | Axios (China kept lid on prices) | E | « China's surprise oil demand drop kept a lid on prices » fin mai — imports CN −20 % avril (9,4 mb/j), mai ~7 mb/j | axios.com/2026/05/30/china-oil-demand-prices-hormuz |
 | CNBC (China surprise demand) | E, T | « How China surprisingly kept a lid on oil prices during the Hormuz crisis » 31 mai | cnbc.com/2026/05/31/china-oil-imports-hormuz-prices |
-| Al Jazeera (OPEC+ symbolic rise / UAE exit) | E, P | « OPEC+ agrees symbolic +188k b/j output rise for June as UAE exits the cartel » (sortie EAU 3 mai) | aljazeera.com/economy/2026/06/01/opec-plus-output-uae-exit |
+| Al Jazeera (OPEC+ symbolic rise / UAE exit) | E, P | « OPEC+ agrees symbolic +188k b/j output rise for June as UAE exits the cartel » (sortie EAU 3 mai) | aljazeera.com/economy/2026/06/01/opec-plus-output-uae-exit — **⚠ lien rompu (404) au 04/06/2026, source à revérifier/recouper (≥2 Tier 1)** |
 | Euronews (Iran suspends negotiations) | P | « Iran suspends nuclear and Hormuz negotiations, threatens Bab el-Mandeb » 1er juin 2026 | euronews.com/2026/06/01/iran-suspends-negotiations-hormuz |
 | CNN (Iran suspended talks) | P, M | « Iran says it has suspended talks with the US; Trump insists deal coming 'this week' » 1er juin | cnn.com/2026/06/01/middleeast/iran-suspends-us-talks |
 | Washington Post (Israel holding off Beirut) | M, P | « Israel is holding off striking Beirut as Lebanon ceasefire holds » 1er juin — Israël pousse au-delà du Litani | washingtonpost.com/world/2026/06/01/israel-lebanon-beirut-ceasefire |
