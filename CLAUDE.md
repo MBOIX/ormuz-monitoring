@@ -74,7 +74,6 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
     ├── dependances_ormuz_pays.html        # Part des imports énergétiques UE via Ormuz, par pays/carburant
     ├── dependances_ressources_critiques.html  # 13 ressources critiques non-énergétiques (hélium, NPK, alu, méthanol…)
     ├── stocks_pays_ue.html                # Stocks pétroliers stratégiques + UGS gaz par pays UE
-    ├── synthese_france.html               # Synthèse France imprimable A4 (vulgarisation grand public)
     └── styles_common.css                  # Feuille de style partagée (thème sombre)
 ```
 

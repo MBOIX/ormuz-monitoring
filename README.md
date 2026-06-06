@@ -60,26 +60,29 @@ Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](d
 ## Structure du dépôt
 
 ```
-├── index.md                          # Vue d'ensemble + synthèse des 3 scénarios
-├── scenario_optimiste.md             # Scénario A — Accord durable
-├── scenario_realiste.md              # Scénario B — Enlisement (central)
-├── scenario_pessimiste.md            # Scénario C — Escalade
-├── calendrier_penuries.md            # Échéancier prévisionnel des tensions par produit
-├── infrastructures_europe.md         # Raffineries, dépôts, ports, UGS, GNL, pipelines (Europe)
-├── synthese_J89-J95.md               # Dernière synthèse périodique (fait foi)
-├── sources.md                        # Sources OSINT zone du conflit (cotées)
-├── sources_infrastructures.md        # Sources infrastructures zone Ormuz
-├── sources_infrastructures_europe.md # Sources infrastructures Europe
-├── AUDIT.md                          # Audit de préparation à la publication
-├── PLAN_P0.md                        # Plan d'action de mise en conformité
+├── docs/                             # Contenu analytique (markdown)
+│   ├── index.md                          # Vue d'ensemble + synthèse des 3 scénarios
+│   ├── scenario_optimiste.md             # Scénario A — Accord durable
+│   ├── scenario_realiste.md              # Scénario B — Enlisement (central)
+│   ├── scenario_pessimiste.md            # Scénario C — Escalade
+│   ├── calendrier_penuries.md            # Échéancier prévisionnel des tensions par produit
+│   ├── chronologie.md                    # Chronologie détaillée du conflit
+│   ├── infrastructures_europe.md         # Raffineries, dépôts, ports, UGS, GNL, pipelines (Europe)
+│   ├── synthese_J89-J95.md               # Dernière synthèse périodique (fait foi)
+│   ├── sources.md                        # Sources OSINT zone du conflit (cotées)
+│   ├── sources_infrastructures.md        # Sources infrastructures zone Ormuz
+│   ├── sources_infrastructures_europe.md # Sources infrastructures Europe
+│   └── process/                          # Pilotage interne du dépôt
+│       ├── AUDIT.md                          # Audit de préparation à la publication
+│       └── PLAN_P0.md                        # Plan d'action de mise en conformité
 └── app/                              # Application web — dashboards HTML statiques
     ├── index.html                        # Centre de pilotage (entrée)
     ├── carte_infrastructures.html        # Carte zone Ormuz
     ├── carte_infrastructures_europe.html # Carte Europe
+    ├── chronologie.html                  # Frise chronologique interactive
     ├── dependances_ormuz_pays.html       # Dépendance des imports UE via Ormuz, par pays
     ├── dependances_ressources_critiques.html # Ressources critiques non-énergétiques
     ├── stocks_pays_ue.html               # Stocks pétroliers stratégiques + UGS gaz par pays UE
-    ├── synthese_france.html              # Synthèse France imprimable (A4)
     └── styles_common.css                 # Feuille de style partagée (thème sombre)
 ```
 
