@@ -1,20 +1,28 @@
 # Scénario A — Optimiste
 ## « Le MOU avorté, sursaut diplomatique tardif »
-### Probabilité estimée : 10-15 % (au 3 juin 2026, J95) — REPLI POST-SUSPENSION IRAN
+### Probabilité estimée : 8-15 % (au 6 juin 2026, J98) — REPLI POST-ESCALADE + DIPLOMATIE GELÉE
 
 ---
 
-## Mise à jour J95 (3 juin 2026)
+## Mise à jour J98 (6 juin 2026)
 
-**Probabilité abaissée de 12-18 % à 10-15 % (−2 pts).** Le déclencheur central est la **suspension par l'Iran de tous les pourparlers indirects le 1er juin** (motif : « crimes continus » d'Israël au Liban), assortie d'une annonce de vouloir viser la **fermeture complète d'Ormuz** et d'**étendre le blocus à Bab el-Mandeb** — le contraire d'une trajectoire A. Le scénario A « pur » est désormais quasi exclu ; seul subsiste un A « hybride » (cessez-le-feu prolongé + reopening partiel sans deal nucléaire complet) glissant vers B+.
+**Probabilité abaissée de 10-15 % à 8-15 % (−2 pts en borne basse).** Deux facteurs convergents pèsent sur A : (1) [FAIT] l'**escalade militaire concrète du 2-6 juin** (frappe US Hellfire sur le pétrolier vide M/T *Lexie* le 2 juin ; salves de missiles/drones iraniens vers Koweït et Bahreïn ; frappe sur le terminal T1 de l'aéroport de Koweït le 3 juin faisant 1 mort indien et ~63 blessés ; frappes US de représailles sur radars côtiers iraniens Goruk/Qeshm les 5-6 juin) ; (2) [FAIT] la **diplomatie reste gelée** — pourparlers indirects suspendus depuis le 1er juin, Araghchi (3 juin) résume « aucun progrès tangible » même si « les messages continuent d'être échangés ». Le **cessez-le-feu Israël-Liban annoncé le 3 juin à Washington est rejeté dès le 4 juin par le Hezbollah (Qassem)** — accord mort-né, Israël poursuit ses opérations au sud du Litani. Le scénario A « pur » reste quasi exclu ; seul subsiste un A « hybride » (cessez-le-feu prolongé + reopening partiel sans deal nucléaire complet) glissant vers B+.
 
 **Signaux contradictoires maintenant A à flot (pas à zéro)** :
-- **Trump (ABC News)** : un accord rouvrir Ormuz + prolonger le cessez-le-feu est atteignable « dans la semaine ».
-- **Source régionale (CNN)** : négociations « de retour sur les rails » quelques heures après la suspension iranienne — la rupture du 1er juin a la signature d'une posture de négociation, pas d'une rupture définitive.
-- **Brouillon MOU connu (sources US)** : trafic Ormuz sans restriction ; retrait des mines par l'Iran sous 30 jours ; levée proportionnelle du blocus naval US ; waivers de sanctions permettant à l'Iran de vendre son pétrole. **Mais** Trump demande des amendements (HEU + Ormuz) et la Maison Blanche dénie toujours le brouillon iranien — le sticking point HEU reste létal.
-- **Liban (1er juin)** : cessez-le-feu Israël-Hezbollah sous proposition US (Israël s'engage à ne pas viser Dahiyeh, Hezbollah à ne pas attaquer Israël) — élément pro-A, **mais** Israël pousse au-delà du Litani (Al Jazeera 1er juin), ce qui alimente précisément le motif iranien de suspension.
+- [INTERPRÉTATION] **Canal non rompu** : malgré la suspension, « les messages continuent d'être échangés » (Araghchi, 3 juin) — la rupture du 1er juin garde la signature d'une posture de négociation, pas d'une rupture définitive.
+- [FAIT] **UK + France finalisent (4 juin) le plan de mission de déminage d'Ormuz** (~15 nations engagent des moyens, ~40 soutiennent) — infrastructure pré-positionnée pour une réouverture, **mais** son déclenchement est conditionné à un accord qui n'existe pas.
+- [FAIT] **Brouillon MOU connu (sources US)** : trafic Ormuz sans restriction ; retrait des mines par l'Iran sous 30 jours ; levée proportionnelle du blocus naval US ; waivers de sanctions permettant à l'Iran de vendre son pétrole. **Mais** Trump demande des amendements (HEU + Ormuz) et la Maison Blanche a dénié le brouillon iranien — le sticking point HEU reste létal. [INTERPRÉTATION] Le blocus naval, annoncé « levé » par Trump le 29 mai, reste **opérationnellement en vigueur** (levée conditionnelle, MOU non signé, enforcement continu — arraisonnements US du MT *Davina/Lenore* au large du Sri Lanka le 5 juin).
+- [FAIT] **Liban (3-4 juin)** : cessez-le-feu Israël-Liban annoncé le 3 juin (renouvellement, 4e round) **rejeté par le Hezbollah le 4 juin** ; Israël poursuit au-delà du Litani — élément désormais anti-A.
 
-**Marchés (3 juin)** : Brent futures **96,89 $/b (+0,93 %), 3e séance de hausse**, prime de risque géopolitique tendant vers 98 $ — **mais −15,3 % sur 1 mois** (pic 112,93 $ le 19 mai). Le reflux mensuel reste l'élément le plus compatible avec A ; la reprise haussière post-suspension le contredit.
+**Marchés (6 juin)** : [FAIT] Brent futures **~93,1 $/b (clôture 5 juin)**, en **baisse** sur la fenêtre (pic intraday ~99 $ le 3 juin, clôture 97,81 $ ; ~95 $ le 4 juin ; ~93 $ le 5 juin) ; WTI ~90,3-90,5 $, spread Brent-WTI comprimé à ~2,5 $/b (vs ~13 $ le 30 avril). Le reflux du papier reste l'élément le plus compatible avec A, mais il est trompeur : il reflète le pari du marché sur un accord introuvable et le « couvercle chinois » (imports brut Chine 6,36 Mb/j en mai, -44 % vs février), pas une détente réelle. [SPÉCULATION] La thèse Exxon d'un Dated Brent physique à 150-160 $ **ne s'est pas matérialisée à J98** ; aucune assessment Platts/Argus du physique récent n'est disponible en source ouverte.
+
+### Indicateur de falsification (ce qui réfuterait A)
+
+Le scénario A serait **invalidé** (probabilité à abaisser fortement, voire à fermer) si **aucune** de ces conditions observables n'est réunie dans la fenêtre des 4-6 prochaines semaines :
+- ❌ **Round US-Iran en présentiel** avec un lieu identifié (Doha, Mascate, Genève, Vienne, Islamabad bis) **ET** endossement du MOU 60 jours.
+- ❌ **OU** cessez-le-feu Liban respecté **> 7 jours consécutifs** (le cessez-le-feu annoncé le 3 juin a été rejeté par le Hezbollah dès le 4 juin — condition actuellement non remplie).
+
+À l'inverse, A est **réfuté à la hausse** (bascule vers C) si une assessment Platts/Argus confirme un Dated Brent physique > 150 $, ou si Bab el-Mandeb est effectivement fermé.
 
 ---
 
@@ -36,7 +44,8 @@
 | 22 mai | J83 | 8-12 % | Rebond léger (+1-2 pts) : Naqvi V2 à Téhéran avec Vahidi/CGRI, Brent -4 % hebdo, OAT-Bund 69 bps, Lecornu absorbe (1,2 Md€). PLAFOND : décret Mojtaba HEU + Al Jazeera 18/05 « médiation pakistanaise atteint ses limites » |
 | 27 mai | J88 | 14-22 % | REBOND MAJEUR (+6-10 pts) sur narratif Doha + Trump 23/05 |
 | 28 mai | J89 | 12-18 % | REPLI POST-DÉMENTI (-2 pts) : White House (27/05) qualifie le brouillon MOU iranien de « complete fabrication ». Rubio : « a few more days ». Aucun accord signé. Le sticking point HEU (décret Mojtaba 21/05) reste létal. Iran TV acte que même si signé, le reopening Hormuz prend ≥ 30 jours. Scénario A « pur » improbable ; A « hybride » glisse vers B+ |
-| **3 juin** | **J95** | **10-15 %** | **REPLI POST-SUSPENSION (-2 pts) : l'Iran SUSPEND le 1er juin tous les pourparlers indirects (motif « crimes continus » d'Israël au Liban) et annonce viser la fermeture COMPLÈTE d'Ormuz + extension du blocus à Bab el-Mandeb. Le scénario A « pur » est désormais quasi exclu. SEULS contrepoids : Trump (ABC News) dit un accord atteignable « dans la semaine » ; source régionale CNN parle de négociations « de retour sur les rails » quelques heures après la suspension. Brent futures 96,89 $ (+0,93 %, 3e hausse, prime géopolitique vers 98 $) MAIS −15,3 % sur 1 mois. Falaise des stocks signalée par Exxon (cargaisons physiques vers 150-160 $ « dans les prochaines semaines »). EAU sorties de l'OPEP. A « hybride » (cessez-le-feu prolongé + reopening partiel) reste l'unique voie résiduelle** |
+| 3 juin | J95 | 10-15 % | REPLI POST-SUSPENSION (-2 pts) : l'Iran SUSPEND le 1er juin tous les pourparlers indirects (motif « crimes continus » d'Israël au Liban) et annonce viser la fermeture COMPLÈTE d'Ormuz + extension du blocus à Bab el-Mandeb. Le scénario A « pur » est désormais quasi exclu. SEULS contrepoids : Trump (ABC News) dit un accord atteignable « dans la semaine » ; source régionale CNN parle de négociations « de retour sur les rails » quelques heures après la suspension. Brent futures 96,89 $ (+0,93 %, 3e hausse, prime géopolitique vers 98 $) MAIS −15,3 % sur 1 mois. Falaise des stocks signalée par Exxon (cargaisons physiques vers 150-160 $ « dans les prochaines semaines »). EAU sorties de l'OPEP. A « hybride » (cessez-le-feu prolongé + reopening partiel) reste l'unique voie résiduelle |
+| **6 juin** | **J98** | **8-15 %** | **REPLI POST-ESCALADE + DIPLOMATIE GELÉE (-2 pts borne basse) : la fenêtre 2-6 juin matérialise une escalade militaire concrète (frappe US sur le M/T Lexie 2 juin ; salves iraniennes vers Koweït/Bahreïn ; frappe aéroport de Koweït 3 juin, 1 mort indien ~63 blessés ; représailles US sur radars Goruk/Qeshm 5-6 juin) qui sape la voie diplomatique. Pourparlers TOUJOURS gelés (Araghchi 3 juin : « aucun progrès tangible »). Cessez-le-feu Israël-Liban annoncé le 3 juin REJETÉ par le Hezbollah le 4 juin = accord mort-né. SEULS contrepoids : canal non rompu (« messages échangés ») ; UK+France finalisent le plan de déminage d'Ormuz (4 juin), conditionné à un accord inexistant. Brent ~93 $ (clôture 5 juin), reflux trompeur (pari sur accord introuvable + couvercle chinois -44 %). Thèse Exxon 150-160 $ NON matérialisée. A « hybride » reste l'unique voie résiduelle** |
 
 ---
 
@@ -48,7 +57,7 @@ Malgré le **décret Mojtaba Khamenei du 21 mai** (interdiction d'export d'urani
 
 2. **Pression chinoise discrète post-Pékin** : la déclaration conjointe Trump-Xi du 15 mai (« Ormuz doit rester ouvert », « Iran ne peut jamais avoir l'arme nucléaire ») et l'offre de médiation chinoise pourraient se traduire par une pression discrète sur Téhéran, particulièrement si Trump acte la levée des sanctions secondaires Chine évoquée le 15 mai. La Chine ne presserait pas publiquement l'Iran mais pourrait conditionner ses livraisons / paiements / route Yiwu-Xi'an à un assouplissement iranien sur l'enrichissement.
 
-3. **Geste unilatéral Trump** : Trump suspend partiellement le blocus naval comme geste de bonne volonté, ou **acte effectivement la levée des sanctions secondaires Chine**. Possible dans les 6 semaines précédant les midterms (novembre 2026) si les prix à la pompe US menacent l'agenda politique. Le SPR US tombé à **365,1 mb (semaine du 22 mai, -9,1 mb)** sur un programme total de 172 mb (prochain point EIA le 3 juin) ajoute une pression directe vers cette option.
+3. **Geste unilatéral Trump** : Trump suspend partiellement le blocus naval comme geste de bonne volonté, ou **acte effectivement la levée des sanctions secondaires Chine**. Possible dans les 6 semaines précédant les midterms (novembre 2026) si les prix à la pompe US menacent l'agenda politique. Le SPR US tombé à **357,1 mb (semaine au 29 mai, -8 mb hebdo, plus bas depuis janvier 2024)** sur un programme total de 172 mb ajoute une pression directe vers cette option.
 
 4. **Canal pakistanais ultra-intensifié** : Naqvi a effectué **deux visites à Téhéran en 7 jours** (17 + ~20 mai), rencontrant cette fois le **chef du CGRI Vahidi**. Si Sharif arrache un memo iranien compatible avec un compromis (plafond bas + vérification AIEA renforcée + sanctions allégées + rétention domestique HEU compatible avec le décret Mojtaba), le canal pakistanais peut redevenir le vecteur de l'accord. **Memo de retour attendu sous 5-10 jours** (donc 25 mai - 1er juin).
 
@@ -123,7 +132,7 @@ Cinq nouveaux signaux **positifs** dominent désormais les signaux négatifs ent
 | T4 2026 (réouverture progressive) | 75-85 $ | 80-90 $ |
 | 2027 | 65-78 $ (normalisation EIA STEO : 2027 = 76 $ baseline) | Convergence avec futures |
 
-Référence : Brent futures **96,89 $/b au 3 juin (+0,93 %, 3e séance de hausse)** sur prime de risque post-suspension iranienne, tendant vers 98 $ ; mais **−15,3 % sur 1 mois** (pic 112,93 $ le 19 mai), **+49,4 % en glissement annuel**, toujours **~+70 % vs pré-crise (~57 $ fin 2025)**. WTI ~93-94 $. Le 2 juin ~95 $ après +4,2 % le 1er juin (réaction à la suspension). **Risque haussier majeur même en A** : Exxon (Neil Chapman, 28 mai) anticipe des cargaisons physiques Brent à **150-160 $/b** lorsque les stocks toucheront leurs plus-bas absolus « dans les prochaines semaines » — même un scénario A pourrait subir un pic spot transitoire avant la décrue.
+Référence : Brent futures **~93,1 $/b en clôture au 5 juin**, en repli sur la fenêtre (pic intraday ~99 $ le 3 juin, clôture 97,81 $ ; ~95 $ le 4 juin ; ~93 $ le 5 juin) ; toujours **~+70 % vs pré-crise (~57 $ fin 2025)**. WTI ~90,3-90,5 $ ; **spread Brent-WTI comprimé à ~2,5 $/b** (vs ~13 $ le 30 avril). Le pic 112,93 $ du 19 mai reste la référence historique haute. **Risque haussier latent même en A** : [SPÉCULATION] Exxon (Neil Chapman, 28 mai) anticipait des cargaisons physiques Brent à **150-160 $/b** lorsque les stocks toucheraient leurs plus-bas « dans les prochaines semaines » — mais cette thèse **N'EST PAS matérialisée à J98** (aucune assessment Platts/Argus du Dated Brent physique récent en source ouverte). Le risque spot transitoire reste prospectif, pas observé.
 
 ---
 
@@ -131,10 +140,10 @@ Référence : Brent futures **96,89 $/b au 3 juin (+0,93 %, 3e séance de hausse
 
 | Indicateur | Valeur estimée | Comparaison |
 |---|---|---|
-| **Gazole moyen** | 2,00-2,15 €/l (juin-juillet), puis décrue vers 1,85-1,90 €/l (automne) | Récent : **~1,95-2,15 €/L** ; **remise 20 c/L expire FIN JUIN** (risque de rebond mécanique au 1er juillet) |
-| **SP95-E10 moyen** | 1,90-2,05 €/l, puis décrue vers 1,80 €/l | Récent : **SP95-E10 ~1,95 €/L** |
-| **Inflation annuelle 2026** | 2,0-2,4 % | **Mai 2026 : +2,4 % YoY (INSEE provisoire, vs +2,2 % en avril)** — accélération tirée par l'énergie (surtout le gaz) |
-| **Croissance PIB 2026** | +0,7 à +1,0 % | Bercy/BdF/FMI baseline : 0,9 % |
+| **Gazole moyen** | 2,00-2,15 €/l (juin-juillet), puis décrue vers 1,85-1,90 €/l (automne) | Récent : **2,047 €/L (5 juin, Ministère)** en léger repli hebdo ; **remise 20 c/L expire FIN JUIN** (risque de rebond mécanique au 1er juillet) |
+| **SP95-E10 moyen** | 1,90-2,05 €/l, puis décrue vers 1,80 €/l | Récent : **SP95 2,032 €/L, E10 1,973 €/L (5 juin)** |
+| **Inflation annuelle 2026** | 2,0-2,4 % | **Mai 2026 : IPC +2,4 % a/a (IPCH +2,8 %), tirée par l'énergie (+16,8 %)** ; chiffre de juin non disponible avant le 30 juin |
+| **Croissance PIB 2026** | +0,7 à +1,0 % | Banque de France a annoncé le 1er juin une **révision EN BAISSE** (était +0,9 % en mars) ; nouveau chiffre attendu ~mi-juin ; PIB T1 −0,1 % ; récession exclue « de justesse » |
 | **Chômage fin 2026** | ~7,8-8,2 % | Stable vs avant-guerre |
 | **Surcoût annuel ménage (3 pers.)** | 250-400 € | En carburant + alimentation, atténué par aides Lecornu (1,2 Md€ ; plateforme grands rouleurs 100 €/véh ouverte le 27 mai) ; vigilance expiration remise 20 c/L fin juin |
 | **Spread OAT-Bund** | Stabilisation 50-65 bps | Actuel **~67-70 bps** (Bund 10a 2,95 % le 2 juin) — sur trajectoire favorable |
@@ -144,10 +153,10 @@ Référence : Brent futures **96,89 $/b au 3 juin (+0,93 %, 3e séance de hausse
 
 ## Impact sur la vie quotidienne des Français
 
-- **Le plein de 40 L de gazole** passerait de ~78-86 € (début juin) à ~78-82 € en été, puis ~72 € à l'automne. Surcoût vs pré-guerre : 5-10 € par plein. **Point d'attention : la remise 20 c/L expire fin juin** — sans accord, un rebond mécanique de ~8 €/plein interviendrait au 1er juillet.
-- **Alimentation** : hausse contenue à 3-5 % sur les produits de base. Effet retardé sur récoltes 2027 (engrais urée +80 % depuis février, >850 $/t).
-- **Pas de pénurie systémique** : les ruptures d'essence se résorbent en 4-6 semaines ; le diesel se stabilise.
-- **Gaz résidentiel** : pression persistante (IPC mai tiré par l'énergie, surtout le gaz). TTF **47,69 €/MWh au 2 juin (+32,2 % YoY)** ; le stockage gaz UE n'est rempli qu'à **38 %** — la reconstitution avant l'hiver (cible 90 % au 1er nov) reste le point de vigilance même en A. QatarEnergy maintient force majeure sur 17 % de sa liquéfaction.
+- **Le plein de 40 L de gazole** est à **~82 € au 5 juin** (2,047 €/L), en léger repli, puis viserait ~78-82 € en été et ~72 € à l'automne en A. Surcoût vs pré-guerre : 5-10 € par plein. **Point d'attention : la remise 20 c/L expire fin juin** — sans accord, un rebond mécanique de ~8 €/plein interviendrait au 1er juillet.
+- **Alimentation** : hausse contenue à 3-5 % sur les produits de base. Effet retardé sur récoltes 2027 — l'urée **physique livrée** (tender CFR Inde ~935-959 $/t, ≈ ×2 pré-guerre) reste chère, même si le benchmark **papier** a reflué (~419 $/t, -32 % m/m) : distinguer papier et physique comme pour le Brent.
+- **Pas de pénurie systémique** : contre-intuitivement, c'est l'**essence** qui est aujourd'hui la plus touchée (442 stations gazole vs 1 139 SP98), pas le diesel ; les ruptures se résorberaient en 4-6 semaines en A.
+- **Gaz résidentiel** : pression persistante (IPC mai tiré par l'énergie, gaz +16,8 %). Le stockage gaz UE n'est rempli qu'à **~41,5 % (5-6 juin)** — toujours ~13-15 pts sous la norme 5 ans, cible hiver abaissée à 80 % (Pays-Bas < 16 %) ; la reconstitution avant l'hiver reste le point de vigilance même en A. QatarEnergy maintient une force majeure sur 17 % de sa liquéfaction (Ras Laffan), **prolongée jusqu'à mi-août 2026** (réparation 3-5 ans).
 - **Emploi** : faillites transport se stabilisent (600+ déjà perdus). Reprise tourisme et automobile.
 - **Climat des affaires INSEE** : remontée depuis 93,6 (mai 2026) vers 98-102 d'ici fin 2026. Climat emploi 91,7 remonte vers 95-100.
 - **Vacances été 2026** : reflux du chiffre Elabe (63 % de Français renonçant) vers 35-45 % avec normalisation des prix.
@@ -158,7 +167,7 @@ Référence : Brent futures **96,89 $/b au 3 juin (+0,93 %, 3e séance de hausse
 ## Conséquences stratégiques pour la France
 
 - La France émerge **diplomatiquement renforcée** : l'initiative Macron-Starmer (51 pays, 17 avril) + l'**initiative française à l'ONU** (Macron 12 mai, projet résolution CSNU « mission neutre et pacifique » de sécurisation d'Ormuz co-portée avec Londres) + l'engagement français au Liban (poursuivi même après FINUL fin 2027) ont démontré une capacité d'action européenne. Position délicate côté US (cf. critique Washington Times 13 mai) mais en cohérence avec la posture chinoise post-sommet 15 mai.
-- Le coût humain (3 soldats tués) pèse sur le débat FINUL mais est absorbé politiquement si la paix tient. **Aucune nouvelle perte française depuis le 22 avril (J54) — séquence de 30 jours acquise au 22 mai**.
+- Le coût humain pèse sur le débat FINUL mais est absorbé politiquement si la paix tient. **3 militaires français morts au Moyen-Orient au total : 2 sous casque bleu au Liban (Montorio 18/4, Girardin 22/4) + 1 en Irak (Frion, 12/3, opération Chammal).** [FAIT] Un **7e Casque bleu de l'ONU a été tué le 4 juin** (sergent serbe Jovanović, près de Marjeyoun, attribution non établie) — **ce n'est pas un Français** ; aucune nouvelle perte française dans la période. Au Liban, le bilan depuis le 2 mars atteint ~3 433-3 500 tués (~3 200 civils).
 - La crise **accélère la transition énergétique** : nucléaire français valorisé, investissements renouvelables et VE dopés.
 - Le déficit public est contenu (3-7 Md€ d'aides). **Spread OAT-Bund** se normalise. Note souveraine S&P/Fitch (A+) et Moody's (Aa3 perspective négative) préservées.
 - L'affaire du **CMA CGM San Antonio** (5 mai, 8 marins **philippins** blessés, **pavillon maltais** — rectification J69) reste un point de tension diplomatique : la France poussera pour un cadre maritime renforcé.

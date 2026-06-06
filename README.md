@@ -3,7 +3,7 @@
 > **Analyse en sources ouvertes (OSINT) de la crise du détroit d'Ormuz et de son impact sur la France** : situation militaire et diplomatique, marchés de l'énergie, ressources critiques, infrastructures, et traduction concrète pour les ménages français.
 
 ![statut](https://img.shields.io/badge/statut-veille_active-brightgreen)
-![consolidation](https://img.shields.io/badge/consolidation-3_juin_2026_(J95)-orange)
+![consolidation](https://img.shields.io/badge/consolidation-6_juin_2026_(J98)-orange)
 ![type](https://img.shields.io/badge/type-OSINT_%2F_veille-informational)
 ![langue](https://img.shields.io/badge/langue-français-blue)
 ![code](https://img.shields.io/badge/code-MIT-green)
@@ -13,7 +13,7 @@
 
 > ### Comment lire ce dossier — instantané daté, situation évolutive
 >
-> **Dernière consolidation : 3 juin 2026 (J95)** · arrêt des données *(data cutoff)* : 3 juin 2026, heure de Paris.
+> **Dernière consolidation : 6 juin 2026 (J98)** · arrêt des données *(data cutoff)* : 6 juin 2026, heure de Paris.
 >
 > Ce dépôt suit une **crise réelle et en cours**. Chaque chiffre (prix, stocks, flux maritimes) **périme vite** : au-delà de ~48-72 h, considérez les données comme à revérifier. La **synthèse périodique la plus récente** (`synthese_*.md`) fait foi sur l'état courant.
 >
@@ -53,7 +53,7 @@ Le raisonnement suit des **principes d'objectivité** stricts : factualité, sé
 
 L'état courant n'est **pas** recopié ici (pour éviter toute désynchronisation des chiffres). Il fait foi dans :
 
-➡️ **[`synthese_J89-J95.md`](docs/synthese_J89-J95.md)** — synthèse périodique la plus récente.
+➡️ **[`synthese_J95-J98.md`](docs/synthese_J95-J98.md)** — synthèse périodique la plus récente (fait foi sur l'état courant).
 
 Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](docs/index.md).
 
@@ -68,7 +68,8 @@ Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](d
 │   ├── calendrier_penuries.md            # Échéancier prévisionnel des tensions par produit
 │   ├── chronologie.md                    # Chronologie détaillée du conflit
 │   ├── infrastructures_europe.md         # Raffineries, dépôts, ports, UGS, GNL, pipelines (Europe)
-│   ├── synthese_J89-J95.md               # Dernière synthèse périodique (fait foi)
+│   ├── synthese_J95-J98.md               # Dernière synthèse périodique (fait foi)
+│   ├── synthese_J89-J95.md               # Synthèse périodique précédente (archivée)
 │   ├── sources.md                        # Sources OSINT zone du conflit (cotées)
 │   ├── sources_infrastructures.md        # Sources infrastructures zone Ormuz
 │   ├── sources_infrastructures_europe.md # Sources infrastructures Europe
@@ -159,7 +160,7 @@ Dépôt **multi-licence** (conforme à la spécification [REUSE](https://reuse.s
 
 Un fichier [`CITATION.cff`](CITATION.cff) est fourni (bouton **« Cite this repository »** sur GitHub). Citation suggérée :
 
-> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J95). https://github.com/mickael-boixiere/ormuz-monitoring
+> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J98). https://github.com/mickael-boixiere/ormuz-monitoring
 
 ## Contact
 

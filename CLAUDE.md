@@ -59,7 +59,8 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── calendrier_penuries.md             # Échéancier prévisionnel des phases de tension par produit
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-│   ├── synthese_J89-J95.md                # Dernière synthèse périodique (fait foi sur l'état courant)
+│   ├── synthese_J95-J98.md                # Dernière synthèse périodique (fait foi sur l'état courant)
+│   ├── synthese_J89-J95.md                # Synthèse périodique précédente (archivée)
 │   ├── sources.md                         # Sources OSINT zone du conflit (classées et cotées)
 │   ├── sources_infrastructures.md         # Sources infrastructures zone Ormuz
 │   ├── sources_infrastructures_europe.md  # Sources infrastructures Europe

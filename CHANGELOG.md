@@ -4,6 +4,25 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 
 ## [Non publié]
 
+## [J98] — 2026-06-06
+
+### Consolidation périodique
+- **Nouvelle synthèse qui fait foi** : [`synthese_J95-J98.md`](docs/synthese_J95-J98.md) (fenêtre 3 → 6 juin 2026). Méthode : 7 axes OSINT parallèles, recoupement ≥ 2 sources indépendantes, vérification adversariale des claims structurants (cotation Admiralty), étiquetage fait/interprétation/spéculation.
+- **Escalade militaire confirmée (2-6 juin)** : frappe US au Hellfire sur le pétrolier *M/T Lexie* (2 juin, 6e navire neutralisé) ; salves iraniennes vers Koweït/Bahreïn (frappe du terminal T1 de l'aéroport de Koweït : 1 mort, ~63 blessés) ; cycle drones/missiles vs ripostes US sur radars côtiers (Goruk, Qeshm) les 5-6 juin. **Revendication iranienne d'avoir frappé le QG de la Ve Flotte US : démentie par le CENTCOM, non confirmée — traitée comme spéculation.**
+- **Marchés** : Brent futures en repli (~97,8 $ le 3 juin → ~93,1 $ le 5 juin) malgré l'escalade ; thèse Exxon (Dated Brent 150-160 $) **non matérialisée** à J98 ; couvercle chinois maintenu (imports −44 % en mai).
+- **Diplomatie** : négociations toujours suspendues (« aucun progrès tangible », Araghchi, 3 juin) ; cessez-le-feu Liban du 3 juin **rejeté dès le 4 juin** par le Hezbollah ; plan de déminage UK-France finalisé (conditionné à un accord inexistant).
+- **Probabilités révisées** : A 8-15 % (⬇️) · B 60-66 % (⬆️, central) · C 22-30 % (➡️) — avec indicateur de falsification par scénario (P1.4).
+
+### Corrigé (réconciliation de baselines périmées, AUDIT P2.4)
+- SPR US : **357,1 mb** (29 mai) au lieu de 365,1 mb (valeur du 22 mai).
+- Stockage gaz UE : **~41,5 %** (5-6 juin) au lieu de 38 % (donnée du 23 mai).
+- Force majeure QatarEnergy (Ras Laffan) : échéance **mi-août** au lieu de mi-juin.
+- Pertes militaires françaises : **2 FINUL/Liban (Montorio, Girardin) + 1 Chammal/Irak (Frion)** au lieu de « 3 soldats FINUL ».
+- 7e Casque bleu ONU tué (4 juin, sergent serbe) — la mention « aucun depuis le 22 avril » devient caduque.
+
+### Signalé (données absentes assumées)
+- Dated Brent physique 3-6 juin, débit Ormuz quotidien J98, croissance BdF 2026 révisée (~mi-juin), inflation FR juin (30 juin), ventilation gaz par pays : non disponibles en source ouverte — non comblés par estimation.
+
 ## [2026.06.04] - 2026-06-04
 
 ### Ajouté (mise en conformité publication — Sprint P0)

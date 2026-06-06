@@ -1,5 +1,5 @@
 # Infrastructures énergétiques et réserves stratégiques — Europe (France + voisins majeurs)
-### État au 3 juin 2026 (J95 de la crise du détroit d'Ormuz)
+### État au 6 juin 2026 (J98 de la crise du détroit d'Ormuz)
 
 > **Périmètre** : France + Allemagne + Belgique + Pays-Bas + Luxembourg + UK + Italie + Espagne + Suisse + Portugal + Pologne + Croatie + Roumanie + Autriche (corridor TAP/Haidach).
 >
@@ -37,7 +37,7 @@
 
 - **Capacités** : raffineries en kb/j (kilobarrels/jour), dépôts et terminaux en Mm³ ou kt, UGS gaz en bcm working volume (ou TWh), pipelines en kb/j (pétrole) ou bcm/an (gaz).
 - **Coordonnées GPS** : précision 0,01° (~1,1 km).
-- **Niveaux de stock J95** : pour les **stocks pétroliers stratégiques**, niveaux non publiés en temps réel — estimations à partir des dernières données IEA Oil Stocks + déduction des releases coordonnées (400 Mb le 11 mars 2026 + 53,3 Mb tirage US le 12 mai + **9,9 Mb hebdo supplémentaire au 14 mai, nouveau record absolu**). **SPR US à 365,1 mb (semaine du 22 mai)** = plus bas pluriannuel, en repli continu. Pour les **UGS gaz**, données AGSI+ au 27 mai-2 juin 2026 (publication quasi-quotidienne) ; stockage UE **38 % rempli**, objectif réglementaire **90 % au 1er novembre** désormais jugé très difficilement atteignable au rythme actuel d'injection.
+- **Niveaux de stock J98** : pour les **stocks pétroliers stratégiques**, niveaux non publiés en temps réel — estimations à partir des dernières données IEA Oil Stocks + déduction des releases coordonnées (400 Mb le 11 mars 2026 + 53,3 Mb tirage US le 12 mai + **9,9 Mb hebdo supplémentaire au 14 mai, nouveau record absolu**). **SPR US à 357,1 mb (semaine au 29 mai, EIA WPSR)** = plus bas pluriannuel (plus bas depuis janvier 2024), en repli continu (tirage ~8 mb/sem). Pour les **UGS gaz**, données AGSI+ au 5-6 juin 2026 (publication quasi-quotidienne) ; stockage UE **~41,5 % rempli** (~13-15 pts sous la norme 5 ans), objectif réglementaire de remplissage hivernal abaissé à **80 %** (assoupli) ; un retour à 90 % au 1er novembre reste très difficilement atteignable au rythme actuel d'injection.
 - **Dates** : format jj mois aaaa, jour du conflit J = nombre de jours depuis 28 février 2026.
 
 ---
@@ -64,18 +64,18 @@
 
 > **Lecture** : avec ~84 Mt de stocks pétroliers stratégiques, le périmètre tient en théorie ~90 jours de consommation. Au 15 mai, 9-10 % des stocks ont déjà été engagés (libérations coordonnées). La marge restante varie fortement par pays.
 
-### 2.2 Niveaux de remplissage — gaz UGS au 2 juin 2026
+### 2.2 Niveaux de remplissage — gaz UGS au 6 juin 2026
 
 | Pays / agrégat | % rempli | TWh stockés | Écart à la norme 5 ans (55-58 % début juin) | Source |
 |---|---:|---:|---:|---|
-| **UE agrégé** | **~38 %** | ~430 TWh | **−18 à −20 pts** | GIE/AGSI+ 02/06/2026 |
+| **UE agrégé** | **~41,5 %** | ~470 TWh | **−13 à −15 pts** | GIE/AGSI+ 05-06/06/2026 |
 | Italie | 54,05 % | ~110 | −1 pt | AGSI |
 | Espagne | 66,40 % | ~22 | +11 pts | AGSI |
 | Autriche | 42,53 % | ~40 | −12 pts | AGSI |
 | Allemagne | **27,99 %** | ~69 | **−27 pts** | AGSI |
 | France | ~35-40 % (estim.) | ~46 | −17 pts | AGSI + Storengy/Téréga |
 
-> **Risque hivernal 2026-2027** : pour atteindre 90 % au 1er novembre, l'Europe doit injecter ~**3 400 GWh/j**. Au 2 juin (UE 38 %), le rythme d'injection reste insuffisant. **Objectif 90 % très probablement inatteignable** au rythme actuel ; aggravé par la force majeure QatarEnergy (17 % de la liquéfaction de Ras Laffan, réparation estimée 3-5 ans) qui ampute durablement l'offre GNL mondiale.
+> **Risque hivernal 2026-2027** : la cible réglementaire de remplissage hivernal a été abaissée à **80 %** (assouplie). Au 6 juin (UE ~41,5 %), le rythme d'injection reste insuffisant pour un retour à 90 % au 1er novembre, qui demeure **très probablement inatteignable** ; situation aggravée par la force majeure QatarEnergy (17 % de la liquéfaction de Ras Laffan, prolongée jusqu'à mi-août 2026, réparation estimée 3-5 ans) qui ampute durablement l'offre GNL mondiale. Pays-Bas sous 16 % de remplissage.
 
 ---
 
@@ -157,7 +157,7 @@
 
 ### 3.4 Dépôts stratégiques (15 sites majeurs identifiés)
 
-| Site | Pays | Lat,Lon | Opérateur | Capacité | Stock estimé J95 | % rempli | Type |
+| Site | Pays | Lat,Lon | Opérateur | Capacité | Stock estimé J98 | % rempli | Type |
 |---|---|---|---|---|---|---:|---|
 | **Géosel Manosque** | FR | 43.83, 5.83 | Géosel (EDF Invest/Ardian/TotalEnergies) | 9,2 Mm³ (30 cavités) | 7,5-8,0 Mm³ | **84 %** | strategic |
 | DPF Fos | FR | 43.43, 4.86 | DPF SA | 830 km³ | n/d | 75 % | strategic+commercial |
@@ -204,7 +204,7 @@
 
 #### France (8 sites)
 
-| UGS | Lat,Lon | Opérateur | Working volume (TWh / bcm) | % fill (J95) | Géologie |
+| UGS | Lat,Lon | Opérateur | Working volume (TWh / bcm) | % fill (J98) | Géologie |
 |---|---|---|---|---:|---|
 | **Chémery** | 47.32, 1.55 | Storengy | 33 TWh / 3,0 bcm | 36 % | Aquifère |
 | Lussagnet + Izaute | 43.71, -0.10 | Téréga | 33 TWh / 2,9 bcm | 45 % | Aquifère |
@@ -215,7 +215,7 @@
 | Beynes | 48.86, 1.87 | Storengy | 5 TWh | 35 % | Aquifère |
 | **Manosque (Géométhane)** | 43.83, 5.78 | Géométhane | 3 TWh / 274 Mm³ utile | 40 % | Caverne saline (9 cavités) |
 
-**Total France** : ~104 TWh working = ~9,4 bcm ; % moyen pondéré ~38 %.
+**Total France** : ~104 TWh working = ~9,4 bcm ; % moyen pondéré ~42 % (au 6 juin 2026 ; au-dessus de la moyenne UE ~41,5 %).
 
 #### Allemagne + Autriche (7 sites)
 
@@ -283,7 +283,7 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 
 #### Pétrole brut
 
-| Pipeline | Trajet | Capacité | Statut J95 | Note |
+| Pipeline | Trajet | Capacité | Statut J98 | Note |
 |---|---|---|---|---|
 | **TAL (Transalpine)** | Trieste → Ingolstadt | 850 kb/j post TAL-PLUS (042025) | operational | Bénéficie sortie Druzhba CZ |
 | MERO/IKL | Ingolstadt → Litvínov | 200 kb/j | operational | Substitut Druzhba pour CZ |
@@ -296,7 +296,7 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 
 #### Gaz naturel
 
-| Pipeline | Trajet | Capacité (bcm/an) | Statut J95 | Note |
+| Pipeline | Trajet | Capacité (bcm/an) | Statut J98 | Note |
 |---|---|---|---|---|
 | Nord Stream 1 | RU → DE Greifswald | 55 (théorique) | **destroyed** | Sabotage 26/09/2022 ; sanctions UE 18/07/2025 |
 | Nord Stream 2 | RU → DE Greifswald | 55 (théorique) | **destroyed** | Endommagé 09/2022, jamais certifié |
@@ -321,7 +321,7 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 | Fin avril 2026 (J62) | 15,5 | 17,5 | 555 | Tirages européens en cours (Europe = 26,8 % de 400 Mb ≈ 107 Mb) | IEA OMR avril |
 | 12 mai 2026 (J73) | 14,8-15,0 | 17,0 | 545 | **US annonce +53,3 Mb** (program exchange) | Al Jazeera 12/05 |
 | 22 mai 2026 (J83) | ~14,5-14,8 | ~16,7-17,0 | ~530-540 | Pas de 2ᵉ tranche IEA officielle | IEA |
-| 3 juin 2026 (J95) | ~14,3-14,6 | ~16,5-16,8 | ~525-535 | SPR US 365,1 mb (sem. 22 mai) ; IEA confirme >1 Md bbl perdus depuis le 28/02 ; release coordonnée 400 Mb (mars) | IEA / EIA |
+| 6 juin 2026 (J98) | ~14,2-14,5 | ~16,4-16,7 | ~520-530 | SPR US 357,1 mb (sem. au 29 mai, EIA WPSR) = plus bas depuis janvier 2024, tirage ~8 mb/sem ; IEA confirme >1 Md bbl perdus depuis le 28/02 ; release coordonnée 400 Mb (mars) | IEA / EIA |
 
 > **Conclusions** :
 > - L'Europe a engagé ~55-60 Mb (9-10 % de la baseline) en 76 jours. Rythme **soutenable jusqu'à fin 2026** sans 2ᵉ tranche.
@@ -340,7 +340,8 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 | 27/05/2026 (J88) | ~38,5-39 % (estim. ~436 TWh) | 48,04 (+5,37 % le 26/5) | 10,8 (cumul QTD) | 2,6 | Trump 23/05 « accord largely negotiated » ; Brent <100 $ |
 | **28/05/2026 (J89)** | **~39-39,5 %** (estim. ~442 TWh) | **48,5** (estim., stable) | **11,0** (cumul QTD) | 2,6 | **WH dénie MOU iranien (« complete fabrication ») le 27/05** ; **INSEE confiance ménages 82 (-2) = plus bas 3 ans** ; Brent 96,30 $ (+2,13 %) ; Commission UE révise UE 2026 à 1,1 % ; BCE warn récession DE/IT |
 | **03/06/2026 (J95)** | **~38 %** (≈430 TWh ; révision AGSI+ à la baisse) | **47,69** (02/06) | **~11,3** (cumul QTD) | 2,6 | **Iran suspend les pourparlers le 1er juin** + menace Bab el-Mandeb ; Trump « accord dans la semaine » ; **cessez-le-feu Liban tenu le 1er juin** (Israël pousse au-delà du Litani) ; QatarEnergy force majeure 17 % Ras Laffan (répar. 3-5 ans) ; OPEP+ +188k b/j juin, EAU hors OPEP (3 mai) ; Brent 96,89 $ ; INSEE IPC mai +2,4 % YoY |
-| Objectif 1/11/2026 | 90 % obligatoire UE | n/a | n/a | n/a | **Atteinte très difficile** au rythme actuel (UE 38 % au 2/06) ; force majeure Ras Laffan ampute l'offre GNL ~1/5 du marché mondial |
+| **06/06/2026 (J98)** | **~41,5 %** (≈470 TWh ; AGSI+ 05-06/06) | 47-48 (estim.) | **~11,5** (cumul QTD) | 2,6 | Escalade militaire 2-6 juin (salve iranienne du 3 juin → **revendication de frappes sur la Ve Flotte démentie par CENTCOM, missiles interceptés** [SPÉCULATION/revendication] ; terminal aéroport Koweït touché le 3 juin ; 7e Casque bleu FINUL — sergent serbe — tué le 4 juin) ; **cessez-le-feu Liban du 3 juin REJETÉ par le Hezbollah le 4 juin** (accord mort-né) ; **force majeure QatarEnergy/Ras Laffan prolongée jusqu'à mi-août 2026** (répar. 3-5 ans) ; SPR US 357,1 mb (sem. au 29 mai) ; Brent ~93 $ en clôture (5 juin), WTI ~90,5 $ |
+| Objectif 1/11/2026 | 90 % obligatoire UE (cible hivernale assouplie à 80 %) | n/a | n/a | n/a | **Atteinte de 90 % très difficile** au rythme actuel (UE ~41,5 % au 6/06) ; force majeure Ras Laffan (prolongée mi-août) ampute l'offre GNL ~1/5 du marché mondial |
 
 > **Lecture clé** : le différentiel **DE 28 % vs ES 66 %** reflète deux trajectoires : (a) Espagne a maximisé son arbitrage GNL (1/3 capacité regaz EU) ; (b) Allemagne doublement frappée (perte Russie + tirage hivernal massif), peine à injecter. **Rehden** sous-rempli = risque hivernal majeur 2026-2027.
 
@@ -352,7 +353,7 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 
 ### 5.1 Pétrole — produits raffinés (gazole + essence + fioul + jet)
 
-| Pays | Jours couverture stocks stratégiques (baseline) | Jours estimés J95 | Tenue dans scénario A (réouverture rapide) | Scénario B (enlisement) | Scénario C (escalade) |
+| Pays | Jours couverture stocks stratégiques (baseline) | Jours estimés J98 | Tenue dans scénario A (réouverture rapide) | Scénario B (enlisement) | Scénario C (escalade) |
 |---|---:|---:|---|---|---|
 | France | 90-100 j | ~85-90 j | **OK** | Tendu mais gérable | Critique au-delà de 6 mois |
 | Allemagne | 95 j | ~80 j | OK | Tendu | Critique 4-5 mois |
@@ -379,7 +380,7 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 
 ---
 
-## 6. Vulnérabilités identifiées (priorité de surveillance J95+)
+## 6. Vulnérabilités identifiées (priorité de surveillance J98+)
 
 1. **Géosel Manosque (43,83°N, 5,83°E)** — épicentre stratégique FR. Capacité de soutirage physique limitée (cavités salines, pression).
 2. **PCK Schwedt (DE)** — déjà fragilisée (Druzhba post-2022 + arrêt Kazakh 1ᵉʳ mai 2026). Approvisionnement Berlin/Est-Allemagne en risque double.
@@ -399,9 +400,9 @@ Voir [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.
 Voir [[scenario_realiste]] et [[scenario_pessimiste]] pour les trajectoires détaillées.
 
 **Synthèse rapide** :
-- À J95, la France dispose encore d'environ **85-90 jours de couverture** sur les produits raffinés (stocks stratégiques engagés à 9-10 % seulement).
-- Le **gazole** reste le point critique : ~2,12 €/l à la pompe (record 2,188 €/l le 31 mars). Si crise se prolonge > 4 mois, risque de **rationnement** et / ou ouverture stocks SAGESS au-delà du quota IEA. La suspension iranienne des pourparlers le 1er juin retire l'hypothèse de détente rapide à court terme ; Brent 96,89 $ (3 juin), Exxon alerte 150-160 $/b possible sous 2-3 semaines sur le spot physique.
-- Le **gaz** est le risque différé : objectif 90 % UGS au 1ᵉʳ novembre 2026 très difficilement atteignable (UE 38 % au 2 juin ; TTF 47,69 €/MWh). Force majeure QatarEnergy à Ras Laffan (17 % liquéfaction, répar. 3-5 ans) ; Ormuz coupe ~1/5 du GNL mondial. Hiver 2026-2027 pourrait connaître prix TTF > 80 €/MWh si Ormuz reste fermé.
+- À J98, la France dispose encore d'environ **85-90 jours de couverture** sur les produits raffinés (stocks stratégiques engagés à 9-10 % seulement).
+- Le **gazole** reste le point critique : **2,047 €/l à la pompe (5 juin, source Ministère ; léger repli hebdo)**, record 2,188 €/l le 31 mars. Si crise se prolonge > 4 mois, risque de **rationnement** et / ou ouverture stocks SAGESS au-delà du quota IEA. [FAIT] Brent ~93 $ en clôture (5 juin), reflux du papier malgré l'escalade militaire 2-6 juin. [SPÉCULATION] La thèse Exxon (28 mai) de cargaisons physiques Brent à 150-160 $/b **n'est PAS matérialisée à J98** : aucune assessment Platts/Argus Dated Brent en source ouverte n'établit un tel niveau ; la dernière donnée solide est une prime > 25 $/b sur les futures (EIA, avril). Le Dated Brent physique courant est un **gap** (non publié).
+- Le **gaz** est le risque différé : objectif 90 % UGS au 1ᵉʳ novembre 2026 très difficilement atteignable (UE **~41,5 % au 6 juin** ; cible hivernale réglementaire assouplie à 80 % ; Pays-Bas < 16 %). Force majeure QatarEnergy à Ras Laffan (17 % liquéfaction, **prolongée jusqu'à mi-août 2026**, répar. 3-5 ans) ; Ormuz coupe ~1/5 du GNL mondial. Hiver 2026-2027 pourrait connaître prix TTF > 80 €/MWh si Ormuz reste fermé.
 - **Carbura Suisse intact** mais Suisse non-AIE → pas de mutualisation européenne formelle.
 - **Capacité de raffinage FR** maintenue (1 060 kb/j conventionnel + 2 bio) ; Gonfreville et Donges tournent à pleine capacité depuis mars 2026 (Euronews 27 avril 2026).
 
@@ -410,13 +411,13 @@ Voir [[scenario_realiste]] et [[scenario_pessimiste]] pour les trajectoires dét
 ## 8. Liens connexes
 
 - [[index]] — Synthèse 3 scénarios
-- [[scenario_realiste]] — Scénario B (58-66 %) — Enlisement stagflationniste consolidé
+- [[scenario_realiste]] — Scénario B (60-66 %) — Enlisement stagflationniste consolidé
 - [[scenario_pessimiste]] — Scénario C (22-30 %) — Récession technique européenne + stagflation lourde
-- [[scenario_optimiste]] — Scénario A (12-18 %) — MOU 14 points en négociation à Doha (non signé)- [[sources_infrastructures_europe]] — Référencement détaillé
+- [[scenario_optimiste]] — Scénario A (8-15 %) — MOU 14 points en négociation à Doha (non signé)- [[sources_infrastructures_europe]] — Référencement détaillé
 - [[sources_infrastructures]] — Sources zone du conflit (Iran/Golfe)
 - [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.html) — Carte interactive Europe
 - [`app/carte_infrastructures.html`](app/carte_infrastructures.html) — Carte interactive zone Ormuz
 
 ---
 
-*Document compilé le 3 juin 2026 (J95). Révision recommandée : hebdomadaire pour les niveaux gaz (AGSI+), mensuelle pour les stocks pétroliers (IEA OMR), à chaque incident ou changement de statut documenté.*
+*Document compilé le 6 juin 2026 (J98). Révision recommandée : hebdomadaire pour les niveaux gaz (AGSI+), mensuelle pour les stocks pétroliers (IEA OMR), à chaque incident ou changement de statut documenté.*

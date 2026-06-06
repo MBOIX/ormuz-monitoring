@@ -13,8 +13,8 @@ authors:
 repository-code: "https://github.com/mickael-boixiere/ormuz-monitoring"
 url: "https://github.com/mickael-boixiere/ormuz-monitoring"
 license: CC-BY-4.0
-version: "2026.06.04"
-date-released: "2026-06-04"
+version: "2026.06.06"
+date-released: "2026-06-06"
 keywords:
   - OSINT
   - "détroit d'Ormuz"

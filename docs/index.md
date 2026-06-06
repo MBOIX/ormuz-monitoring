@@ -1,11 +1,11 @@
 # Index — Crise du Détroit d'Ormuz / Impact France
 ### Projet d'analyse OSINT, économique et sociale
-#### État au 3 juin 2026 — Jour 95 du conflit
+#### État au 6 juin 2026 — Jour 98 du conflit
 
 ---
 
 > **Comment lire ce dossier — instantané daté, situation évolutive.**
-> Dernière consolidation : **3 juin 2026 (J95)** · arrêt des données : 3 juin 2026, heure de Paris.
+> Dernière consolidation : **6 juin 2026 (J98)** · arrêt des données : 6 juin 2026, heure de Paris.
 > Suivi d'une crise **réelle et en cours** : chaque chiffre (prix, stocks, flux) périme vite ; au-delà de ~48-72 h, données à revérifier. La synthèse périodique la plus récente (`synthese_*.md`) fait foi. Analyse **OSINT sur sources ouvertes**, à vocation informative — ni conseil financier, ni source de sécurité opérationnelle. Voir [`README.md`](../README.md) et [`sources.md`](sources.md).
 
 ---
@@ -14,75 +14,74 @@
 
 Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointes sur l'Iran (Opération Epic Fury), tuant le Guide suprême Ali Khamenei. L'Iran a répondu en fermant le détroit d'Ormuz — passage de 20 % du pétrole et du gaz naturel mondial — déclenchant la plus grande perturbation de l'approvisionnement pétrolier de l'histoire.
 
-**95 jours de crise. Diagnostic lucide** : la situation reste **stagflationniste avérée** et **pré-récessive pour l'Allemagne et l'Italie**. La fenêtre 28 mai → 3 juin a apporté un **rappel de fragilité** : après le narratif d'« éclaircie Doha » de fin mai, **l'Iran a SUSPENDU le 1er juin tous les pourparlers indirects** (motif : « crimes continus » d'Israël au Liban), a annoncé viser la « fermeture complète d'Ormuz » et **menacé d'étendre le blocus au détroit de Bab el-Mandeb**. Quelques heures plus tard, Trump (ABC News) affirme qu'un accord reste atteignable « dans la semaine » et une source régionale (CNN) parle de négociations « de retour sur les rails ». **Aucun accord n'est signé** ; la Maison Blanche dénie toujours le brouillon iranien.
+**98 jours de crise. Diagnostic lucide** : la situation reste **stagflationniste avérée** et **pré-récessive pour l'Allemagne et l'Italie**. La fenêtre 3 juin → 6 juin a vu **l'escalade militaire devenir concrète, mais sans bascule** : frappe US au missile sur le pétrolier vide *Lexie* (2 juin, 6e navire neutralisé), salves iraniennes de missiles/drones vers le Golfe, frappe du terminal de l'aéroport de Koweït (1 mort, ~63 blessés) et représailles US sur les radars côtiers iraniens (Goruk, Qeshm). **Point critique** : l'IRGC a *revendiqué* avoir frappé le QG de la Ve Flotte US à Bahreïn — **[SPÉCULATION] revendication DÉMENTIE par CENTCOM**, missiles interceptés, aucun dégât US confirmé par source indépendante. Côté diplomatie, **les pourparlers indirects restent suspendus depuis le 1er juin** (Araghchi, 3 juin : « aucun progrès tangible », mais « les messages continuent ») : le canal n'est pas coupé, mais aucune vraie négociation n'a lieu. **Aucun accord n'est signé.**
 
-**Le fait énergétique central de la quinzaine** : **Exxon (Neil Chapman, SVP, 28 mai) avertit que les stocks mondiaux atteignent des niveaux « inédits » et que les cargaisons physiques de Brent grimperont à 150-160 $/b dès que les stocks toucheront leurs plus-bas absolus, « dans les prochaines semaines » (2-3 semaines).** L'IEA chiffre désormais la perte à **plus d'un milliard de barils** (plus grande disruption de l'histoire) et a acté en mars une **release coordonnée record de 400 Mb**. Le marché « papier » (Brent à ~97 $) masque une réalité physique qui se tend : la douleur est **poussée vers l'aval du baril** — gazole, essence, jet, GPL, naphta montent **2-3× plus vite que le brut**, surtout en Asie (Fortune/JPMorgan : « we're in the fault lines of the real global energy shock »).
+**Le paradoxe énergétique central de la fenêtre** : **pendant que les missiles volaient, le Brent papier a BAISSÉ** de ~98 $ (3 juin) à **~93 $/b (clôture 5 juin)** [B2], le WTI tombant vers **~90,3-90,5 $/b** (spread Brent-WTI comprimé à ~2,5 $/b vs ~13 $ le 30 avril). Le marché parie sur un accord US-Iran qui n'existe pas, et **la Chine continue d'écraser la demande** (imports brut **6,36 Mb/j en mai, −44 % vs février**, plus bas en ~10 ans). [SPÉCULATION] La thèse Exxon d'un Dated Brent physique à **150-160 $/b sous 2-3 semaines** (Neil Chapman, SVP, 28 mai) **NE s'est PAS matérialisée à J98** : non seulement le prix papier recule, mais **aucune assessment Platts/Argus du Dated Brent physique récent n'est disponible** en source ouverte — on ne sait pas où est le prix physique au 6 juin, et il faut l'assumer plutôt que d'inventer un chiffre (le ~132,74 $ d'un blog non fiable est écarté). La douleur reste **poussée vers l'aval du baril** (gazole, essence, jet, GPL, naphta) et vers les ressources critiques.
 
-**Pourquoi Brent reste sous 100 $ malgré tout — le « mystère » résolu (Fortune 31 mai)** : la **Chine a retardé le point de rupture** en coupant ses imports de **−20 % en avril (9,4 mb/j)** et ~7 mb/j en mai (plus forte chute depuis la pandémie), en puisant dans sa **SPR (1,4 Md bbl, la plus grande au monde)**. Ce coussin chinois est **conjoncturel, pas structurel** : quand il se résorbera, la falaise des stocks décrite par Exxon se matérialisera.
+**Pourquoi Brent reste sous 100 $ malgré l'escalade — le « couvercle chinois » tient** : la **Chine retarde le point de rupture** (imports brut 6,36 Mb/j en mai, −44 % vs février, en puisant dans sa SPR, la plus grande au monde). Ce coussin chinois est **conjoncturel, pas structurel** : quand il se résorbera, le risque physique décrit par Exxon pourra se matérialiser — mais ce n'est pas acquis à J98.
 
-**Ce que les institutions Tier 1 actent à J95** :
-- **EXXON / CHEVRON (28-30 mai)** : stocks mondiaux à des niveaux « inédits » ; Dated Brent physique projeté **150-160 $/b** sous 2-3 semaines.
-- **IEA** : **> 1 milliard de barils** perdus depuis le 28 février ; **release coordonnée record de 400 Mb** (actée mars).
+**Ce que les institutions Tier 1 actent à J98** :
+- **EXXON (28 mai)** : alerte stocks mondiaux « inédits » ; Dated Brent physique projeté **150-160 $/b** sous 2-3 semaines — **[SPÉCULATION] non matérialisée à J98**, source unique et intéressée, à surveiller sans la tenir pour acquise.
+- **EIA (WPSR, sem. au 29 mai)** : **SPR US à 357,1 mb** (corrige le 365,1 mb du 22 mai), tirage ~8 mb/sem, plus bas depuis janvier 2024.
 - **OPEP+** : **les EAU ont QUITTÉ l'OPEP** (1ère réunion sans eux, 3 mai) → **moins d'amortisseurs de choc** ; quota Arabie 10,291 mb/j mais production réelle 7,76 mb/j (mars) ; capacité mondiale de réserve > 4 mb/j, quasi exclusivement saoudienne.
 - **Commission UE Spring forecast 2026** : croissance UE **1,1 %** ; inflation UE **3,1 %** ; Allemagne **0,6 %**, Italie **0,5 %**, France **0,9 %**.
-- **BCE** (mai 2026) : **récession technique probable en Allemagne et en Italie d'ici fin 2026** ; stagflation européenne caractérisée.
-- **INSEE IPC mai 2026 (provisoire)** : **+2,4 % sur 1 an** (vs +2,2 % en avril) — **accélération tirée par l'énergie, surtout le gaz**.
+- **Banque de France (1er juin)** : **révision EN BAISSE de la croissance 2026** annoncée (était +0,9 % en mars) ; **PIB T1 −0,1 %** ; récession exclue « de justesse » ; nouveau chiffre attendu ~mi-juin (non disponible à J98).
+- **INSEE IPC mai 2026** : **+2,4 % sur 1 an** (IPCH +2,8 %) — **tirée par l'énergie (+16,8 %)** ; chiffre de juin pas avant le 30 juin.
 - **Défaillances d'entreprises FR (BdF)** : **69 392 sur 12 mois = RECORD 35 ANS** ; transport-entreposage **+8,8 %**.
-- **Brent 3 juin** : **96,89 $/b (+0,93 %)**, 3e séance de hausse vers 98 $ sur prime de risque (suspension Iran) — mais **−15,3 % sur le mois** (pic 112,93 $ le 19 mai) et **+49 % en glissement annuel**, soit toujours **~+70 % vs pré-crise** (~57 $ fin 2025).
-- **Gaz TTF 47,69 €/MWh (2 juin)** : **+32 % YoY / ~+45 % vs pré-crise** ; **stockage gaz UE à 38 % seulement** (cible 90 % au 1er nov) — **alerte explicite sur la reconstitution avant l'hiver**.
-- **Ressources critiques non-énergétiques** : **urée > 850 $/t (+80 % depuis février**, tender panique Inde 2,5 Mt à **950 $/t**) ; **hélium** (Qatar ~1/3 mondial, co-produit du GNL de Ras Laffan, **force majeure sur 17 % de la liquéfaction**) ; **méthanol** (spot quasi-doublé en Asie, plus que doublé en Europe depuis janvier) ; **aluminium** en hausse (fonderies du Golfe électro-intensives).
+- **Brent 5 juin** : **~93,1 $/b en clôture** (pic intraday ~99 $ le 3 juin, clôture 97,81 $ ; ~95 $ le 4 juin) — **−15 %+ sur le mois** (pic 112,93 $ le 19 mai), soit toujours **~+60-70 % vs pré-crise** (~57 $ fin 2025).
+- **Gaz** : **stockage gaz UE à ~41,5 %** (AGSI+, 5-6 juin ; corrige le 38 % qui datait du 23 mai), toujours ~13-15 pts sous la norme 5 ans ; **cible hiver abaissée à 80 %** ; Pays-Bas < 16 %.
+- **Ressources critiques non-énergétiques** : **urée** — futures (papier) ~419 $/t (−32 % m/m) MAIS physique livré (tender CFR Inde) ~935-959 $/t ≈ ×2 pré-guerre ; **hélium** (Qatar ~1/3 mondial, co-produit du GNL de Ras Laffan, **force majeure sur 17 % de la liquéfaction**, spot 600-900 $/Mcf) ; **méthanol** (spot Chine ~3000 CNY/t, momentum récent baissier en Asie, Europe ferme — « doublé » en glissement depuis janvier) ; **aluminium** LME cash ~3 736 $/t (pic 3 855 $ le 2 juin, plus haut en 4 ans).
 
-**Côté Liban (1er juin)** : un **cessez-le-feu Israël-Hezbollah** a été conclu sous proposition US (Israël s'engage à ne pas viser la banlieue sud de Beyrouth / Dahiyeh, Hezbollah à ne pas attaquer Israël ; objectif : étendre la trêve à tout le Liban). **Contradiction notable** : Israël continue de pousser au-delà du Litani (Al Jazeera, 1er juin), et c'est précisément l'action israélienne au Liban que Téhéran invoque pour suspendre les pourparlers. **3 soldats français de la FINUL tués** (Frion 12/3, Montorio 18/4, Girardin 22/4) — **aucune nouvelle perte** (42 jours). Mandat FINUL achevé le 31 décembre 2026.
+**Côté Liban (3-4 juin)** : un **cessez-le-feu Israël-Liban** a été annoncé le 3 juin à Washington (renouvellement d'une trêve existante, 4e round) — **mais le Hezbollah (Qassem) l'a REJETÉ dès le 4 juin** (« équivaut à une capitulation ») et Israël poursuit ses opérations au sud du Litani : **accord mort-né**. **[FAIT] Un 7e Casque bleu de la FINUL a été tué le 4 juin** (sergent serbe Jovanović, près de Marjeyoun ; attribution non établie) — **ce n'est pas un Français**. Sur les **3 militaires français morts au Moyen-Orient** depuis février, **seuls 2 sont tombés au Liban sous casque bleu FINUL** (Montorio 18/4, Girardin 22/4) ; le 3e (Frion, 12/3) a été tué en Irak (opération Chammal). **Aucune nouvelle perte française** sur la période. Tués au Liban depuis le 2 mars ≈ 3 433-3 500 (~3 200 civils). Mandat FINUL achevé le 31 décembre 2026.
 
 **Côté France (lucide)** :
-- Surface stabilisée : Brent sous 100 $, FNSEA-JA suspendue, plateforme aide grands rouleurs 100 €/véh ouverte le 27 mai (~3M bénéficiaires), aides Lecornu 1,2 Md€, OAT-Bund contenu (~67-70 bps, Bund 10a 2,95 % le 2 juin).
-- **Sous-jacent récessif structurel** : **inflation mai +2,4 % qui ré-accélère (gaz)**, confiance ménages au plus bas 3 ans, emploi au plus bas depuis Covid, défaillances record 35 ans, transport en cascade de faillites, récoltes 2026/2027 compromises (urée +80 %). **C'est une dégradation, pas une stabilisation.**
-- **Point de vigilance imminent** : la **remise carburant de 20 c/L expire fin juin** → risque de **marche d'escalier à la pompe début juillet** sur un Brent encore à ~+70 %.
+- Surface stabilisée, détente de marché : Brent papier en baisse (~93 $), **gazole pompe en léger repli (2,047 €/L au 5 juin, SP95 2,032 €/L)**, FNSEA-JA suspendue, plateforme aide grands rouleurs 100 €/véh ouverte le 27 mai (~3M bénéficiaires), aides Lecornu 1,2 Md€.
+- **Sous-jacent récessif structurel** : **inflation mai +2,4 % tirée par l'énergie (+16,8 %)**, **PIB T1 −0,1 %** et **révision BdF en baisse de la croissance 2026** (1er juin), confiance ménages au plus bas 3 ans, défaillances record 35 ans, transport en cascade de faillites. **C'est une dégradation, pas une stabilisation.**
+- **Point de vigilance imminent** : la **remise carburant de 20 c/L expire fin juin** → risque de **marche d'escalier à la pompe début juillet**. Contre-intuitif : **les ruptures touchent davantage l'ESSENCE que le diesel** (~2 307 stations en difficulté, dont ~411 critiques sur 13 régions ; le gazole est le carburant le moins touché).
 
-**Probabilités J95 (recalibrage lucide)** :
+**Probabilités J98 (recalibrage lucide)** :
 
-- 🟢 **A 10-15 %** (-2 pts vs J89) — la **suspension iranienne du 1er juin** est un revers concret : le canal indirect est rompu, l'Iran ré-affiche un objectif maximaliste (fermeture complète + Bab el-Mandeb). Le « back on track » de Trump empêche l'effondrement mais le chemin vers A s'est de nouveau resserré.
-- 🟡 **B 58-64 %** (quasi stable) — scénario central : enlisement stagflationniste, cessez-le-feu de facto qui tient sans deal structurel, **nouvelle normalité européenne**. Le coussin chinois et le silence maritime relatif soutiennent ce central.
-- 🔴 **C 24-32 %** (+2 pts) — **re-armement de la queue d'escalade** : suspension des pourparlers + menace Bab el-Mandeb + **falaise des stocks Exxon (150-160 $/b physique sous 2-3 semaines)** + **sortie des EAU de l'OPEP** (moins d'amortisseurs) = pathway « choc de prix physique + escalade maritime » de nouveau crédible à court terme.
+- 🟢 **A 8-15 %** (-2 pts vs J95) — **l'escalade militaire 2-6 juin sape une diplomatie déjà gelée** : pourparlers suspendus depuis le 1er juin, cessez-le-feu Liban du 3 juin rejeté dès le 4. Falsifié si : round US-Iran en présentiel avec lieu identifié ET endossement du MOU 60 jours ; OU cessez-le-feu Liban respecté > 7 jours.
+- 🟡 **B 60-66 %** (⬆️ léger, CENTRAL) — la **fenêtre 3-6 juin EST l'enlisement** : cycle action-riposte sans bascule, prix papier qui recule, physique tendu. Coussin chinois et cessez-le-feu de facto soutiennent le central. Falsifié si : règlement signé rouvrant Ormuz (→ A) OU Bab el-Mandeb fermé / Dated Brent physique > 150 $ confirmé (→ C).
+- 🔴 **C 22-30 %** (➡️ stable) — les arguments des deux sens **s'annulent** : escalade réelle MAIS revendication Ve Flotte démentie, missiles interceptés, Brent papier en baisse, **thèse Exxon non matérialisée**. Falsifié si : assessment Platts/Argus Dated Brent > 150 $ ; OU attaque effective Bab el-Mandeb ; OU dégât confirmé par imagerie tierce sur un actif US majeur ; OU incident de mine.
 
 **Ce qu'il faut cesser de relativiser** :
-- Brent à 97 $ ne reflète **pas** la réalité physique : Exxon projette **150-160 $/b** sur le Dated Brent sous 2-3 semaines. Le marché papier est tenu artificiellement bas par la Chine.
-- La douleur a migré vers **l'aval du baril** : ce sont le gazole, le jet et le GPL qui flambent (2-3× le brut), exactement ce qui touche les ménages et les transporteurs français.
-- **Stockage gaz UE à 38 %** à l'entrée de la saison de remplissage = **l'hiver 2026-27 est un risque actif**, pas théorique.
-- **L'urée à +80 %** compromet les rendements de la moisson 2026 et les semis d'automne → impact alimentaire différé 2026-2027.
-- Le MOU n'est **pas signé**, le canal indirect est **suspendu**, et même finalisé, **le reopening d'Ormuz prend ≥ 30 jours** (retrait des mines) : retour à la normale au mieux fin juillet/août. Les dommages cumulés sur 95 jours sont **structurels**.
+- Brent à ~93 $ ne reflète **pas** la réalité physique. [SPÉCULATION] Exxon projetait **150-160 $/b** sur le Dated Brent sous 2-3 semaines : **non matérialisé à J98**, et **aucune assessment Platts/Argus du physique récent n'est disponible** — l'écart papier/physique reste le cœur du diagnostic, mais sans chiffre physique vérifié.
+- La douleur a migré vers **l'aval du baril** et vers les **ressources critiques** : urée physique livré ≈ ×2 pré-guerre (tender CFR Inde ~935-959 $/t), aluminium au plus haut en 4 ans, hélium tendu — exactement ce qui touche les ménages, les transporteurs et l'industrie.
+- **Stockage gaz UE à ~41,5 %** (corrigé ; le « 38 % » datait du 23 mai) à l'entrée de la saison de remplissage, ~13-15 pts sous la norme 5 ans, cible hiver abaissée à 80 % = **l'hiver 2026-27 est un risque actif**, pas théorique.
+- **L'urée physique à ≈ ×2** compromet les rendements de la moisson 2026 et les semis d'automne → impact alimentaire différé 2026-2027.
+- Le MOU n'est **pas signé**, le canal indirect est **suspendu**, et même finalisé, **le reopening d'Ormuz prend ≥ 30 jours** (retrait des mines) : retour à la normale au mieux fin juillet/août. Les dommages cumulés sur 98 jours sont **structurels**.
 
 ---
 
-## Chiffres clés (3 juin 2026)
+## Chiffres clés (6 juin 2026)
 
 | Indicateur | Valeur | Contexte |
 |---|---|---|
-| **Brent futures** | **96,89 $/b (3 juin, +0,93 %)** | 3e séance de hausse vers 98 $ (prime de risque post-suspension Iran) ; **−15,3 % sur le mois** (pic 112,93 $ le 19 mai), **+49 % YoY**, toujours **~+70 % vs pré-crise** (~57 $ fin 2025) |
-| **Dated Brent (spot physique)** | **Exxon projette 150-160 $/b sous 2-3 semaines** | « Approaching unheard of inventory levels » (Neil Chapman, SVP Exxon, 28 mai) ; le marché papier ~97 $ masque la tension physique |
-| **WTI** | ~93-94 $/b | Sous le Brent ; même volatilité |
-| **Produits raffinés (gazole/jet/GPL/naphta)** | **+2-3× la vitesse du brut** (Fortune/JPMorgan 31 mai) | La douleur migre vers l'aval du baril ; raffineries (Asie/Europe) réduisent leurs débits |
-| **Gaz TTF Europe** | **47,69 €/MWh (2 juin)** | **+32 % YoY / ~+45 % vs pré-crise** ; rebond le 1er juin sur suspension Iran + menace Bab el-Mandeb |
-| **Stockage gaz UE** | **38 % rempli** | Cible 90 % au 1er nov ; **alerte reconstitution avant l'hiver** ; QatarEnergy force majeure sur 17 % de la liquéfaction (Ras Laffan) |
-| **JKM Asie (GNL spot)** | ~17-18 $/MMBtu | Coupure ~1/5 de l'offre GNL mondiale ; comblée par GNL US + pipeline Norvège à prix supérieurs |
-| **SPR US** | **365,1 mb (sem. 22 mai)** | −9,1 mb vs 374,2 mb ; programme total 172 mb ; **prochain point EIA = 3 juin** ; trajectoire d'épuisement critique fin juin si rythme maintenu |
-| **SPR Chine (coussin clé)** | **1,4 Md bbl** (plus grande au monde, déc. 2025) | Imports chinois **−20 % en avril (9,4 mb/j)**, ~7 mb/j en mai → **retarde la falaise mondiale des stocks** ; teapots ciblés par US Treasury |
-| **IEA — barils perdus** | **> 1 milliard** depuis le 28 février | Plus grande disruption de l'histoire ; **release coordonnée record 400 Mb** (actée mars) |
-| **OPEP+ (juin)** | **+188 000 b/j** (Arabie + Russie +62k chacun) | **Les EAU ont QUITTÉ l'OPEP (3 mai)** → moins d'amortisseurs ; quota Arabie 10,291 mb/j vs prod réelle 7,76 mb/j ; réserve mondiale > 4 mb/j |
-| **Urée / engrais azotés** | **> 850 $/t (+80 % depuis février)** | Tender panique Inde 15 avril : 2,5 Mt à **950 $/t** ; ~1/3 du commerce maritime mondial d'engrais à risque (QAFCO/QatarEnergy force majeure) |
-| **Hélium** | Qatar ~1/3 de l'offre mondiale | Co-produit du GNL de Ras Laffan ; **force majeure 17 % liquéfaction** → tension durable (IRM, semi-conducteurs, soudure) |
-| **Méthanol** | quasi-doublé (Asie) / plus que doublé (Europe) depuis janvier | Intrant chimie/plastiques/carburants |
-| **Gazole France (moyen)** | **~1,95-2,15 €/L** | Remise 20 c/L valable avril-juin (**EXPIRE FIN JUIN** → risque marche d'escalier début juillet) ; gazole pro **+31,3 % depuis fin février** (>7,5 t) |
-| **SP95-E10 France (moyen)** | **~1,95 €/L** | Stable bas ; remise Lecornu efficace |
-| **Inflation France (mai, INSEE provisoire)** | **+2,4 % sur 1 an** | **Ré-accélération vs +2,2 % avril** ; tirée par l'énergie, surtout le **gaz** ; gazole +42,1 % a/a en avril |
-| **Inflation zone euro (avril, Eurostat)** | **3,0 % a/a** | Plus haut depuis septembre 2022 ; au-dessus cible BCE |
+| **Brent futures** | **~93,1 $/b (clôture 5 juin)** | Pic intraday ~99 $ le 3 juin (clôture 97,81 $), ~95 $ le 4 juin, puis ~93 $ le 5 ; **−15 %+ sur le mois** (pic 112,93 $ le 19 mai), toujours **~+60-70 % vs pré-crise** (~57 $ fin 2025) — baisse malgré l'escalade [B2] |
+| **Dated Brent (spot physique)** | **NON établi au 3-6 juin** | [SPÉCULATION] Exxon projetait 150-160 $/b sous 2-3 semaines (Neil Chapman, SVP, 28 mai) : **non matérialisé à J98** ; aucune assessment Platts/Argus récente en source ouverte ; ~132 $ d'un blog non fiable écarté |
+| **WTI** | **~90,3-90,5 $/b (5 juin)** | Spread Brent-WTI comprimé à ~2,5 $/b (vs ~13 $ le 30 avril) [B2] |
+| **Stockage gaz UE** | **~41,5 % rempli (5-6 juin)** | Corrige le « 38 % » (qui datait du 23 mai) ; ~13-15 pts sous la norme 5 ans ; **cible hiver abaissée à 80 %** ; Pays-Bas < 16 % [C2] |
+| **SPR US** | **357,1 mb (sem. au 29 mai)** | Corrige le 365,1 mb du 22 mai ; tirage ~8 mb/sem, **plus bas depuis janvier 2024** [A1] |
+| **Imports brut Chine** | **6,36 Mb/j (mai)** | **−44 % vs février**, plus bas en ~10 ans → « couvercle chinois » maintenu mais temporaire [A2] |
+| **Flux Ormuz (sortant non-iranien)** | **8-16 % de la normale** | Détroit quasi-fermé ; reprise limitée aux convois escortés US ; projection « ~50 % fin juin » = [SPÉCULATION] mono-source (Energy Aspects), non acquise [B2] |
+| **OPEP+** | **EAU hors OPEP (3 mai)** | Moins d'amortisseurs ; quota Arabie 10,291 mb/j vs prod réelle 7,76 mb/j ; réserve mondiale > 4 mb/j |
+| **Urée / engrais azotés** | **Futures ~419 $/t (−32 % m/m) ; physique livré ~935-959 $/t ≈ ×2 pré-guerre** | Distinguer papier vs physique (comme Brent) : le papier reflue, le physique (tender CFR Inde) reste cher [B2] |
+| **Hélium** | **Spot 600-900 $/Mcf (détente m/m en mai)** | Qatar ~1/3 mondial impacté (Ras Laffan) ; Airgas −50 % livraisons (risque IRM) ; hausse contractuelle = prospective non matérialisée [C2] |
+| **Méthanol** | **Spot Chine ~3000 CNY/t (plus bas depuis mars)** | Momentum récent baissier en Asie, Europe ferme ; « doublé » reste vrai en glissement depuis janvier [C2] |
+| **Aluminium (LME cash)** | **~3 736 $/t (5 juin)** | Pic 3 855 $ le 2 juin = plus haut en 4 ans (pas un record absolu) ; smelter Alba à −19 % [B2] |
+| **Gazole France (pompe)** | **2,047 €/L (5 juin, Ministère)** | Léger repli hebdo ; gazole pro (indice CNR) **+29,3 % vs février** (fin mai), en repli depuis le pic +42,7 % de début avril [A1/B2] |
+| **SP95 / SP98 / E10 France** | **2,032 / 2,074 / 1,973 €/L (5 juin)** | Léger repli hebdo ; suit le Brent papier (calme), pas la tension physique [A1] |
+| **Stations en difficulté** | **~2 307 (dont ~411 critiques, 13 régions)** | Contre-intuitif : **l'ESSENCE plus touchée que le diesel** (gazole = le moins touché, 442 stations vs SP98 1 139) [C2] |
+| **Inflation France (mai, INSEE)** | **+2,4 % a/a (IPCH +2,8 %)** | Tirée par l'énergie (**+16,8 %**) ; chiffre de juin pas avant le 30 juin [A1] |
+| **Croissance FR 2026 (Banque de France)** | **Révision EN BAISSE annoncée le 1er juin** | Était +0,9 % en mars ; PIB T1 −0,1 % ; récession exclue « de justesse » ; nouveau chiffre ~mi-juin (non disponible) [A2] |
 | **Croissance UE / DE / IT 2026 (Commission UE)** | **1,1 % / 0,6 % / 0,5 %** | BCE : récession technique probable DE/IT fin 2026 |
 | **Défaillances entreprises FR (BdF)** | **69 392 sur 12 mois = RECORD 35 ANS** | +4,6 % YoY ; transport-entreposage **+8,8 %** |
-| **Spread OAT-Bund 10 ans** | **~67-70 bps** | Bund 10a 2,95 % le 2 juin ; spread contenu, dégradation Moody's latente |
-| **Flux Ormuz (Kpler)** | ~5 % de la normale | Inchangé ; **reopening ≥ 30 jours après signature** (retrait des mines) — non amorcé |
-| **MOU US-Iran** | **NON SIGNÉ — pourparlers SUSPENDUS le 1er juin** | Iran suspend le canal indirect (motif Liban) + vise fermeture complète Ormuz + menace Bab el-Mandeb ; Trump : accord « dans la semaine » ; CNN : « back on track » ; WH dénie le brouillon iranien |
-| **Cessez-le-feu Liban** | **Conclu le 1er juin** (Israël épargne Dahiyeh, Hezbollah n'attaque pas) | Objectif : étendre à tout le Liban ; MAIS Israël pousse au-delà du Litani |
-| **Morts France** | 3 militaires FINUL | Frion (12/3), Montorio (18/4), Girardin (22/4) — **aucune nouvelle perte (42 jours)** |
+| **Force majeure Qatar (Ras Laffan)** | **Prolongée jusqu'à mi-août 2026** | (et non mi-juin) ; ~17 % de la liquéfaction HS (~12,8 Mt/an), réparation 3-5 ans [B2] |
+| **MOU US-Iran** | **NON SIGNÉ — pourparlers SUSPENDUS depuis le 1er juin** | Araghchi (3 juin) : « aucun progrès tangible » mais « les messages continuent » ; canal gelé, pas coupé |
+| **Cessez-le-feu Liban** | **Annoncé le 3 juin, REJETÉ par le Hezbollah le 4 juin** | Renouvellement (4e round) ; Israël poursuit au sud du Litani ; accord mort-né |
+| **Morts France** | **3 militaires : 2 FINUL (Liban) + 1 Chammal (Irak)** | Montorio (18/4) et Girardin (22/4) au Liban ; Frion (12/3) en Irak — **aucune nouvelle perte FR** |
+| **Casques bleus FINUL tués** | **7e tué le 4 juin** | Sergent serbe Jovanović (près de Marjeyoun), **non français** ; attribution non établie [A2] |
 | **Aides Lecornu** | 1,2 Md€ cumulé | Plateforme grands rouleurs 100 €/véh ouverte le 27 mai (~3M bénéficiaires) ; **remise 20 c/L expire fin juin** |
 | **FNSEA-JA** | **Mobilisation suspendue** | Convergence Gilets Jaunes neutralisée |
 
@@ -94,9 +93,9 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 |---|---|
 | `CLAUDE.md` | Instructions pour Claude Code — rôle, contexte, workflow de mise à jour |
 | `index.md` | Ce fichier — vue d'ensemble et synthèse des 3 scénarios |
-| `scenario_optimiste.md` | Scénario A (10-15 %) — Accord US-Iran (pourparlers suspendus le 1er juin) |
-| `scenario_realiste.md` | Scénario B (58-64 %) — Enlisement stagflationniste, nouvelle normalité européenne |
-| `scenario_pessimiste.md` | Scénario C (24-32 %) — Choc de prix physique + escalade maritime (Bab el-Mandeb) |
+| `scenario_optimiste.md` | Scénario A (8-15 %) — Accord US-Iran (pourparlers suspendus depuis le 1er juin) |
+| `scenario_realiste.md` | Scénario B (60-66 %) — Enlisement stagflationniste, nouvelle normalité européenne |
+| `scenario_pessimiste.md` | Scénario C (22-30 %) — Choc de prix physique + escalade maritime (Bab el-Mandeb) |
 | `calendrier_penuries.md` | Calendrier prévisionnel des pénuries S19→S30 (4 mai → 26 juillet 2026) — 41 produits sous scénario B |
 | `infrastructures_europe.md` | Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays |
 | `sources.md` / `sources_infrastructures*.md` | Tableaux des sources OSINT classées par fiabilité et domaine |
@@ -106,45 +105,51 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 
 ## Synthèse des trois scénarios
 
-### 🟢 Scénario A — « L'accord US-Iran (pourparlers suspendus le 1er juin) » (10-15 %)
+### 🟢 Scénario A — « L'accord US-Iran (pourparlers suspendus depuis le 1er juin) » (8-15 %)
 
 **En bref** : la pression économique sur l'Iran (récession −6,1 %, rial effondré, 1+ M emplois perdus) et la médiation (Pakistan, Qatar/Doha, Chine) finissent par produire un accord-cadre. Le brouillon de MOU décrit par les sources US prévoit : **trafic Ormuz sans restriction, retrait des mines par l'Iran sous 30 jours, levée proportionnelle du blocus naval US, waivers de sanctions permettant à l'Iran de vendre son pétrole**. Trump demande des amendements (HEU + Ormuz).
 
 **Pour la France** : gazole vers 2,00-2,15 €/L cet été puis décrue vers 1,80-1,90 €/L à l'automne ; inflation contenue 2,0-2,4 % ; croissance 2026 +0,7 à +1,0 % ; surcoût ménage 250-400 €/an.
 
-**Pourquoi A recule de 2 pts (J95)** : **l'Iran a suspendu le canal indirect le 1er juin** et ré-affiche un objectif maximaliste (fermeture complète d'Ormuz, menace Bab el-Mandeb). Le « back on track » de Trump (CNN) maintient le scénario en vie mais le chemin opérationnel s'est de nouveau resserré. Le sticking point HEU (décret Mojtaba du 21 mai interdisant l'export d'uranium enrichi) reste non résolu.
+**Pourquoi A recule de 2 pts (J98 : 8-15 %)** : **l'escalade militaire 2-6 juin sape une diplomatie déjà gelée** (pourparlers suspendus depuis le 1er juin), et le **cessez-le-feu Liban du 3 juin a été rejeté dès le 4** par le Hezbollah. Le canal indirect n'est pas mort (« les messages continuent », Araghchi le 3 juin) mais aucune vraie négociation n'a lieu. Le sticking point HEU (décret Mojtaba du 21 mai interdisant l'export d'uranium enrichi) reste non résolu.
 
-**Le scénario reste possible si** : (1) la reprise des canaux (Qatar/Pakistan) sous 7-14 jours ; (2) un geste unilatéral US (suspension partielle du blocus, libération des 24 Md$ de fonds gelés) ; (3) la matérialisation de la médiation chinoise ; (4) la falaise des stocks Exxon force paradoxalement les deux camps à accélérer (la perspective d'un Brent physique à 150-160 $ est un aiguillon politique pour Trump avant les midterms de novembre).
+**Indicateur de falsification (ce qui ferait basculer VERS A)** : un **round US-Iran en présentiel avec lieu identifié ET endossement du MOU 60 jours** ; OU un **cessez-le-feu Liban respecté > 7 jours**.
 
----
-
-### 🟡 Scénario B — « L'enlisement stagflationniste, nouvelle normalité européenne » (58-64 %) ← CENTRAL
-
-**En bref** : le cessez-le-feu de facto tient (pas de frappes aériennes massives ni de morts US), mais **rien n'est résolu sur le fond**. La diplomatie patine (suspension du 1er juin puis « back on track »), la guerre maritime s'institutionnalise, les incidents restent sous le seuil létal généralisé. Le coussin chinois et la release IEA de 400 Mb amortissent le prix papier, mais la tension physique s'accumule.
-
-**Pour la France** : gazole durablement entre 2,15 et 2,40 €/L (avec **risque de marche d'escalier à l'expiration de la remise fin juin**) ; inflation 2,5-3,5 % (déjà +2,4 % en mai, ré-accélération gaz) ; croissance +0,3 à +0,8 % ; surcoût ménage 600-1 000 €/an ; ruptures plus marquées sur l'essence que sur le diesel ; 1 200-1 800 faillites projetées dans le transport. Risque social fragmenté mais amorti (FNSEA-JA suspendue, aides Lecornu).
-
-**Pourquoi B reste central (J95)** : (1) la suspension iranienne du 1er juin est **rapidement requalifiée « back on track »** — pattern d'enlisement organisé, pas de rupture ; (2) **aucun incident maritime létal nouveau** ; (3) le **coussin chinois** (imports −20 %, SPR 1,4 Md bbl) tient le prix papier sous 100 $ ; (4) la **release IEA de 400 Mb** soutient l'offre ; (5) côté France, les amortisseurs Lecornu et la suspension FNSEA-JA neutralisent la convergence sociale. Tout pointe vers un **long statu quo armé**.
-
-**Le risque majeur de ce scénario** : (1) **la falaise des stocks Exxon** — quand le coussin chinois se résorbera, le Dated Brent physique peut bondir vers 150-160 $, faisant basculer B vers C par le prix ; (2) la **sortie des EAU de l'OPEP** réduit la capacité de réponse à un nouveau choc ; (3) le **stockage gaz UE à 38 %** menace l'hiver 2026-27 ; (4) la probabilité hebdomadaire d'incident maritime létal reste non nulle (menace Bab el-Mandeb active).
+**Le scénario reste possible si** : (1) la reprise des canaux (Qatar/Pakistan) sous 7-14 jours ; (2) un geste unilatéral US (suspension partielle du blocus, libération des fonds gelés) ; (3) la matérialisation de la médiation chinoise ; (4) [SPÉCULATION] si la tension physique se matérialisait, elle pourrait paradoxalement forcer les deux camps à accélérer (aiguillon politique pour Trump avant les midterms de novembre) — non observé à J98.
 
 ---
 
-### 🔴 Scénario C — « Choc de prix physique + escalade maritime » (24-32 %)
+### 🟡 Scénario B — « L'enlisement stagflationniste, nouvelle normalité européenne » (60-66 %) ← CENTRAL
 
-**En bref** : deux pathways, désormais ré-armés :
-1. **Pathway de prix physique** (montée en poids à J95) : le **coussin chinois se résorbe** et la **falaise des stocks décrite par Exxon** se matérialise → Dated Brent physique 150-160 $/b, puis 145-220 $+ si panique. La **sortie des EAU de l'OPEP** prive le marché d'amortisseurs.
-2. **Pathway maritime** : la **menace iranienne d'étendre le blocus à Bab el-Mandeb** (annoncée le 1er juin) se concrétise, ou un navire/destroyer touché avec pertes US/européennes déclenche des frappes US sur l'Iran et une fermeture totale d'Ormuz.
+**En bref** : le cessez-le-feu de facto tient (pas de frappes aériennes massives ni de morts US), mais **rien n'est résolu sur le fond**. La **fenêtre 3-6 juin EST l'enlisement** : cycle action-riposte (frappes US/iraniennes, navires touchés) **sans bascule**, diplomatie gelée, prix papier qui recule pendant que le physique se tend. La guerre maritime s'institutionnalise, les incidents restent sous le seuil de rupture. Le coussin chinois amortit le prix papier, mais la tension physique s'accumule.
+
+**Pour la France** : gazole durablement élevé (2,047 €/L au 5 juin, avec **risque de marche d'escalier à l'expiration de la remise fin juin**) ; inflation 2,5-3,5 % (déjà +2,4 % en mai) ; croissance révisée en baisse (PIB T1 −0,1 %) ; surcoût ménage 600-1 000 €/an ; **ruptures plus marquées sur l'essence que sur le diesel** ; faillites en cascade dans le transport. Risque social fragmenté mais amorti (FNSEA-JA suspendue, aides Lecornu).
+
+**Pourquoi B reste central (J98 : 60-66 %, ⬆️ léger)** : (1) **le cycle action-riposte du 2-6 juin n'a franchi aucun seuil de bascule** — escalade réelle mais contenue, revendication Ve Flotte démentie ; (2) le **prix papier recule** (~93 $) malgré l'escalade ; (3) le **coussin chinois** (imports brut 6,36 Mb/j, −44 % vs février) tient le prix sous 100 $ ; (4) côté France, les amortisseurs Lecornu et la suspension FNSEA-JA neutralisent la convergence sociale. Tout pointe vers un **long statu quo armé**.
+
+**Indicateur de falsification (ce qui ferait sortir de B)** : un **règlement signé rouvrant Ormuz** (→ A) ; OU **Bab el-Mandeb fermé** / **Dated Brent physique > 150 $ confirmé** par une assessment Platts/Argus (→ C).
+
+**Le risque majeur de ce scénario** : (1) [SPÉCULATION] si le coussin chinois se résorbait, le Dated Brent physique pourrait bondir vers 150-160 $ (thèse Exxon, **non matérialisée à J98**), faisant basculer B vers C par le prix ; (2) la **sortie des EAU de l'OPEP** réduit la capacité de réponse à un nouveau choc ; (3) le **stockage gaz UE à ~41,5 %** (~13-15 pts sous la norme) menace l'hiver 2026-27 ; (4) la probabilité hebdomadaire d'incident maritime létal reste non nulle (menace Bab el-Mandeb, restée verbale à J98).
+
+---
+
+### 🔴 Scénario C — « Choc de prix physique + escalade maritime » (22-30 %)
+
+**En bref** : deux pathways, toujours présents :
+1. **Pathway de prix physique** : le **coussin chinois se résorbe** et la tension physique se matérialise → [SPÉCULATION] Dated Brent physique 150-160 $/b (thèse Exxon, **non matérialisée à J98**), puis 145-220 $+ si panique. La **sortie des EAU de l'OPEP** prive le marché d'amortisseurs.
+2. **Pathway maritime** : la **menace iranienne d'étendre le blocus à Bab el-Mandeb** (restée verbale à J98, aucune attaque effective) se concrétise, ou un navire/destroyer touché avec pertes US/européennes déclenche des frappes US sur l'Iran et une fermeture totale d'Ormuz.
 
 **Pour la France** : gazole 2,60-3,60 €/L ; pénurie effective de diesel avec rationnement préfectoral ; inflation 4,5-6,5 % ; récession (−1,0 à −0,3 %) ; chômage 9-10,5 % ; surcoût ménage 1 300-2 700 €/an ; crise sociale majeure ; bouclier carburant d'urgence (15-25 Md€) avec dégradation de la note souveraine probable.
 
-**Pourquoi C remonte de 2 pts (J95)** : (1) **suspension des pourparlers iraniens le 1er juin** + objectif maximaliste ré-affiché ; (2) **menace explicite Bab el-Mandeb** (élargissement géographique du blocus) ; (3) **falaise des stocks Exxon** (150-160 $ physique sous 2-3 semaines) = choc de prix crédible à court terme ; (4) **EAU hors OPEP** = moins d'amortisseurs ; (5) **stockage gaz UE 38 %** = vulnérabilité hivernale. Le pathway fiscal-social France reste amorti (FNSEA-JA suspendue, aides Lecornu), mais l'**expiration de la remise carburant fin juin** est un déclencheur social latent.
+**Pourquoi C reste stable (J98 : 22-30 %, ➡️)** : les arguments des deux sens **s'annulent**. Côté escalade : escalade militaire réelle 2-6 juin (frappes US/iraniennes, navires touchés, menace Bab el-Mandeb maintenue). Côté détente : **revendication Ve Flotte démentie** par CENTCOM, missiles interceptés, **Brent papier en baisse** (~93 $), **thèse Exxon non matérialisée**. Le pathway fiscal-social France reste amorti (FNSEA-JA suspendue, aides Lecornu), mais l'**expiration de la remise carburant fin juin** est un déclencheur social latent.
+
+**Indicateur de falsification (ce qui ferait basculer VERS C)** : une **assessment Platts/Argus du Dated Brent > 150 $** ; OU une **attaque effective sur Bab el-Mandeb** ; OU un **dégât confirmé par imagerie tierce sur un actif US majeur** ; OU un **incident de mine**.
 
 ---
 
 ## Tableau récapitulatif
 
-| Indicateur | 🟢 A (10-15 %) | 🟡 B (58-64 %) | 🔴 C (24-32 %) |
+| Indicateur | 🟢 A (8-15 %) | 🟡 B (60-66 %) | 🔴 C (22-30 %) |
 |---|---|---|---|
 | **Brent futures** | 90-100 $ → 75-85 $ T4 | 95-115 $ → 85-100 $ T4 | 130-180+ $ |
 | **Dated Brent (physique)** | 100-110 $ → 80-90 $ T4 | 110-130 $ (falaise Exxon 150-160 $ possible) | 150-220+ $ |
@@ -160,78 +165,78 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 
 ---
 
-## Échéances critiques (mises à jour J95)
+## Échéances critiques (mises à jour J98)
 
 | Date | Événement | Statut / Impact |
 |---|---|---|
-| ~~1er juin~~ | Iran suspend les pourparlers indirects | ✅ **Observé** : motif Liban ; vise fermeture complète Ormuz + menace Bab el-Mandeb ; revers pour A |
-| ~~1er juin~~ | Cessez-le-feu Israël-Hezbollah | ✅ **Observé** : Israël épargne Dahiyeh ; objectif étendre à tout le Liban ; MAIS Israël pousse au-delà du Litani |
-| ~~28 mai~~ | Exxon — alerte stocks/Dated Brent | ✅ **Observé** : « unheard of inventory levels » ; physique 150-160 $/b sous 2-3 semaines |
-| **3 juin** | EIA Weekly Petroleum Status Report | SPR US nouveau point ; rythme −9 mb/sem à confirmer (365,1 mb au 22 mai) |
-| **~mi-juin** | IEA OMR juin + EIA STEO juin | Hypothèse reprise lente flux Hormuz à tester ; révision Brent post-suspension |
-| **~mi-juin** | Falaise des stocks Exxon (2-3 semaines) | Fenêtre critique : si coussin chinois se résorbe → Dated Brent vers 150-160 $ |
+| ~~2 juin~~ | Frappe US sur le pétrolier vide *Lexie* | ✅ **Observé** [B2] : 6e navire neutralisé depuis le blocus du 13 avril |
+| ~~3 juin~~ | Salve iranienne + revendication Ve Flotte US | ✅ **Observé** [B1 démenti] : revendication IRGC **DÉMENTIE par CENTCOM**, missiles interceptés, aucun dégât US confirmé ; frappe terminal aéroport Koweït (1 mort, ~63 blessés) |
+| ~~3 juin~~ | Cessez-le-feu Israël-Liban annoncé à Washington | ✅ **Observé** : renouvellement (4e round) ; **rejeté par le Hezbollah dès le 4 juin** ; Israël poursuit au sud du Litani — accord mort-né |
+| ~~4 juin~~ | 7e Casque bleu FINUL tué + plan déminage UK-FR | ✅ **Observé** [A2/B2] : sergent serbe Jovanović (non français) ; UK+France finalisent le plan de mission de déminage (~15 nations) — déclenchement conditionné à un accord inexistant |
+| **~mi-juin** | IEA OMR juin + EIA STEO juin | Reprise lente des flux Ormuz à tester ; trajectoire Brent post-escalade |
+| **~mi-juin** | Révision croissance 2026 Banque de France | Nouveau chiffre attendu (était +0,9 % en mars) — non disponible à J98 |
 | **Fin juin** | **Expiration remise carburant 20 c/L** | Risque marche d'escalier prix pompe début juillet ; déclencheur social latent |
-| **Fin juin (~27 juin)** | Alerte critique SPR US si rythme maintenu | Stock projeté ~310-320 mb — non tenable ; impératif accord ou OPEP+ |
-| **~mi-juillet** | Reconstitution stockage gaz UE | 38 % au 3 juin ; trajectoire vers 90 % au 1er nov à valider |
-| **Été 2026** | Moisson 2026, semis automne | Confirmation impact engrais (urée +80 %) |
+| **30 juin** | INSEE IPC juin | Premier point d'inflation post-escalade (chiffre de juin pas avant cette date) |
+| **Mi-août 2026** | Fin de la force majeure Qatar (Ras Laffan) | Liquéfaction réduite (~17 %) prolongée jusqu'à mi-août (et non mi-juin) |
+| **Été 2026** | Moisson 2026, semis automne | Confirmation impact engrais (urée physique ≈ ×2 pré-guerre) |
 | **Novembre 2026** | Midterms US | Pression Trump pour deal préalable |
 | **31 décembre 2026** | Fin du mandat FINUL | Décision engagement français post-FINUL |
 
 ---
 
-## Évolution récente des probabilités (J54 → J95)
+## Évolution récente des probabilités (J54 → J98)
 
-| Scénario | 23 avr (J54) | 14 mai (J75) | 22 mai (J83) | 27 mai (J88) | 28 mai (J89) | **3 juin (J95)** | Tendance J89→J95 |
+| Scénario | 23 avr (J54) | 14 mai (J75) | 22 mai (J83) | 28 mai (J89) | 3 juin (J95) | **6 juin (J98)** | Tendance J95→J98 |
 |---|---|---|---|---|---|---|---|
-| 🟢 A — Optimiste | 10-15 % | 8-12 % | 8-12 % | 14-22 % | 12-18 % | **10-15 %** | ⬇️ -2 pts (Iran SUSPEND les pourparlers le 1er juin ; objectif maximaliste ré-affiché ; canal indirect rompu) |
-| 🟡 B — Réaliste | 50-60 % | 55-65 % | 62-70 % | 55-65 % | 58-66 % | **58-64 %** | ➡️ stable (« back on track » rapide ; coussin chinois + release IEA tiennent le prix papier ; enlisement central) |
-| 🔴 C — Pessimiste | 25-35 % | 28-35 % | 20-28 % | 18-26 % | 22-30 % | **24-32 %** | ⬆️ +2 pts (menace Bab el-Mandeb ; falaise stocks Exxon 150-160 $ physique ; EAU hors OPEP = moins d'amortisseurs) |
+| 🟢 A — Optimiste | 10-15 % | 8-12 % | 8-12 % | 12-18 % | 10-15 % | **8-15 %** | ⬇️ -2 pts (escalade militaire 2-6 juin ; diplomatie gelée depuis le 1er juin ; cessez-le-feu Liban du 3 juin rejeté le 4) |
+| 🟡 B — Réaliste | 50-60 % | 55-65 % | 62-70 % | 58-66 % | 58-64 % | **60-66 %** | ⬆️ léger (la fenêtre 3-6 juin EST l'enlisement : cycle action-riposte sans bascule ; prix papier qui recule ; physique tendu) |
+| 🔴 C — Pessimiste | 25-35 % | 28-35 % | 20-28 % | 22-30 % | 24-32 % | **22-30 %** | ➡️ stable (arguments des deux sens s'annulent : escalade réelle MAIS revendication Ve Flotte démentie, Brent en baisse, thèse Exxon non matérialisée) |
 
-**Lecture analytique J95** : la fenêtre 28 mai → 3 juin **dément l'optimisme de fin mai sans le réduire à néant**. La suspension iranienne du 1er juin rompt le canal indirect, mais elle est requalifiée « back on track » en quelques heures — confortant le **central B (enlisement)**. Le vrai changement est **énergétique et structurel** : Exxon acte que le marché papier (~97 $) **sous-estime massivement la tension physique** (150-160 $/b projeté sous 2-3 semaines), la Chine **retarde mais ne supprime pas** la falaise des stocks, et **les EAU ont quitté l'OPEP**, amputant la capacité d'amortissement. Sur le gaz, **un stockage UE à 38 %** transforme l'hiver 2026-27 en risque actif. **Recalibrage** : A -2 pts (10-15 %), B stable (58-64 %), C +2 pts (24-32 %) par le double effet menace Bab el-Mandeb + choc de prix physique imminent.
+**Lecture analytique J98** : la fenêtre 3 → 6 juin offre une image paradoxale — **plus de violence sur le terrain, mais un Brent papier qui BAISSE** (~93 $ le 5 juin). L'escalade militaire est **réelle mais contenue** : la revendication iranienne la plus spectaculaire (frappe du QG de la Ve Flotte US) est **démentie par CENTCOM** et non prouvée [SPÉCULATION]. La diplomatie reste gelée (pourparlers suspendus depuis le 1er juin) et le cessez-le-feu Liban du 3 juin a été rejeté dès le 4 — d'où **A -2 pts**. Le central B se renforce légèrement parce que **ce cycle action-riposte sans bascule, avec prix papier qui recule, EST la définition de l'enlisement**. C reste stable : l'escalade militaire (argument haussier) est compensée par la **non-matérialisation de la thèse Exxon** [SPÉCULATION], le démenti de la Ve Flotte et la baisse du Brent. **Le cœur du diagnostic** demeure l'écart papier/physique — mais à J98 ce physique est un **gap assumé** (aucune assessment Platts/Argus récente), pas un chiffre à 150-160 $. **Recalibrage** : A 8-15 %, B 60-66 %, C 22-30 %.
 
 ---
 
-## Insights analytiques avancés (au 3 juin)
+## Insights analytiques avancés (au 6 juin)
 
-### 1. Le marché papier ment : la vraie crise est physique et à l'aval du baril
-Brent à ~97 $ donne une fausse impression de détente. **Exxon (28 mai) projette le Dated Brent physique à 150-160 $/b sous 2-3 semaines** quand les stocks toucheront leurs plus-bas absolus. Surtout, **la douleur a migré vers l'aval du baril** : gazole, jet, GPL et naphta montent **2-3× plus vite que le brut** (Fortune/JPMorgan), car les raffineries d'Asie et d'Europe réduisent leurs débits faute de brut. C'est exactement ce qui frappe le portefeuille des ménages et des transporteurs français — d'où le **gazole pro +31,3 % depuis fin février** et l'**inflation mai +2,4 % tirée par l'énergie**.
+### 1. Le marché papier ment : la vraie crise est physique et à l'aval du baril — mais le chiffre physique reste un gap
+Brent à ~93 $ (en **baisse** malgré l'escalade) donne une fausse impression de détente. [SPÉCULATION] **Exxon (28 mai) projetait le Dated Brent physique à 150-160 $/b sous 2-3 semaines** : **non matérialisé à J98**, et **aucune assessment Platts/Argus du physique récent n'est disponible** en source ouverte — on ne sait pas où est le prix physique au 6 juin, et il faut l'assumer plutôt que d'inventer un chiffre. Ce qui reste avéré : **la douleur a migré vers l'aval du baril** (gazole, jet, GPL, naphta) et vers les ressources critiques. C'est exactement ce qui frappe le portefeuille des ménages et des transporteurs français — d'où le **gazole pro +29,3 % vs février** et l'**inflation mai +2,4 % tirée par l'énergie (+16,8 %)**.
 
-### 2. Le « coussin chinois » : le facteur qui retarde (mais n'annule pas) la falaise
-Le mystère « pourquoi pas de doomsday ? » est résolu (Fortune 31 mai) : **la Chine a coupé ses imports de −20 % en avril (9,4 mb/j) et ~7 mb/j en mai**, puisant dans sa **SPR de 1,4 Md bbl** (la plus grande au monde). Ce coussin est **conjoncturel** : Pékin peut tenir des mois, pas indéfiniment. **Quand il se résorbera, la falaise Exxon se matérialisera** — c'est le principal mécanisme de bascule B → C par le prix. Les raffineries « teapot » chinoises, ciblées par le Trésor US, ont perdu la décote de 5-15 $/b sur le brut iranien.
+### 2. Le « couvercle chinois » : le facteur qui retarde (mais n'annule pas) le choc
+Le mystère « pourquoi pas de doomsday ? » tient au comportement chinois : **les imports de brut chinois sont tombés à 6,36 Mb/j en mai (−44 % vs février)**, plus bas en ~10 ans, en puisant dans la SPR (la plus grande au monde). Ce coussin est **conjoncturel** : Pékin peut tenir des mois, pas indéfiniment. **Quand il se résorbera, le risque physique pourra se matérialiser** — c'est le principal mécanisme de bascule B → C par le prix, mais il n'est pas acquis à J98. Les raffineries « teapot » chinoises, ciblées par le Trésor US, ont perdu la décote sur le brut iranien.
 
 ### 3. La sortie des EAU de l'OPEP : moins d'amortisseurs pour le prochain choc
-Les **EAU ont quitté l'OPEP** (1ère réunion sans eux le 3 mai). Avec l'Arabie, les EAU détenaient l'essentiel de la capacité de réserve mondiale (> 4 mb/j). Leur départ **fragilise la capacité collective de répondre à un nouveau choc** : la hausse de juin (+188 000 b/j) est symbolique, le quota saoudien (10,291 mb/j) dépasse de loin la production réelle (7,76 mb/j). Le marché entre dans la falaise des stocks **avec moins de filets de sécurité**.
+Les **EAU ont quitté l'OPEP** (1ère réunion sans eux le 3 mai). Avec l'Arabie, les EAU détenaient l'essentiel de la capacité de réserve mondiale (> 4 mb/j). Leur départ **fragilise la capacité collective de répondre à un nouveau choc** : le quota saoudien (10,291 mb/j) dépasse de loin la production réelle (7,76 mb/j). Le marché aborde la suite **avec moins de filets de sécurité**.
 
 ### 4. Le gaz : l'hiver 2026-27 devient un risque actif
-**Stockage gaz UE à 38 %** à l'entrée de la saison de remplissage, alors que la cible est 90 % au 1er novembre. Le **GNL est amputé de ~1/5** (QatarEnergy force majeure sur 17 % de la liquéfaction à Ras Laffan, réparation 3-5 ans), comblé par du GNL US et du pipeline norvégien à prix spot supérieurs (**TTF 47,69 €/MWh, +32 % YoY**). Un plan sobriété formel à l'automne (analogue 2022) devient probable en scénario B, et un rationnement industriel possible en C.
+**Stockage gaz UE à ~41,5 %** (corrigé ; le « 38 % » datait du 23 mai) à l'entrée de la saison de remplissage, ~13-15 pts sous la norme 5 ans, avec une **cible hiver abaissée à 80 %** (Pays-Bas < 16 %). Le **GNL est amputé de ~1/5** (force majeure QatarEnergy sur 17 % de la liquéfaction à Ras Laffan, **prolongée jusqu'à mi-août**, réparation 3-5 ans). Un plan sobriété formel à l'automne (analogue 2022) devient probable en scénario B, et un rationnement industriel possible en C.
 
 ### 5. « Au-delà du pétrole » : la crise des ressources critiques non-énergétiques
-Ormuz n'est pas qu'une artère pétrolière. **Urée/engrais azotés > 850 $/t (+80 % depuis février**, tender panique Inde à 950 $/t) → **rendements moisson 2026 et semis d'automne compromis** (impact pain/semoule/huile en 2026-2027). **Hélium** : le Qatar fournit ~1/3 du marché mondial comme co-produit du GNL de Ras Laffan — la force majeure menace IRM médicales, semi-conducteurs et soudure. **Méthanol** : spot quasi-doublé en Asie, plus que doublé en Europe depuis janvier. **Aluminium** en hausse (fonderies du Golfe électro-intensives). Voir `app/dependances_ressources_critiques.html`.
+Ormuz n'est pas qu'une artère pétrolière. **Urée/engrais azotés** : même mensonge du thermomètre que pour le pétrole — le **futures (papier) reflue à ~419 $/t (−32 % m/m)** mais le **physique livré (tender CFR Inde) reste à ~935-959 $/t ≈ ×2 pré-guerre** → **rendements moisson 2026 et semis d'automne compromis** (impact pain/semoule/huile en 2026-2027). **Hélium** : le Qatar fournit ~1/3 du marché mondial comme co-produit du GNL de Ras Laffan (spot 600-900 $/Mcf, Airgas −50 % livraisons, risque IRM). **Méthanol** : spot Chine ~3000 CNY/t (momentum récent baissier en Asie, Europe ferme ; « doublé » en glissement depuis janvier). **Aluminium** LME cash ~3 736 $/t (pic 3 855 $ le 2 juin, plus haut en 4 ans). Voir `app/dependances_ressources_critiques.html`.
 
-### 6. La suspension du 1er juin : revers réel pour A, pas rupture pour B
-L'Iran a **suspendu le canal indirect le 1er juin** (motif : « crimes » israéliens au Liban) et ré-affiché un objectif maximaliste (fermeture complète + Bab el-Mandeb). Mais le « back on track » de Trump/CNN en quelques heures montre que **le canal n'est pas mort**, seulement gelé. C'est un **revers pour A** (-2 pts) et un **argument pour C** (+2 pts), mais cela **conforte paradoxalement B** : l'enlisement organisé inclut ces à-coups diplomatiques.
+### 6. L'escalade militaire 2-6 juin : réelle mais sans bascule
+Du 2 au 6 juin, le cycle action-riposte est devenu concret (frappe US sur le *Lexie*, salves iraniennes, frappe de l'aéroport de Koweït, représailles US sur radars côtiers). [SPÉCULATION] L'IRGC a **revendiqué** avoir frappé le QG de la Ve Flotte US à Bahreïn — **revendication DÉMENTIE par CENTCOM**, missiles interceptés, aucun dégât US confirmé : à traiter comme déclaration, pas comme fait. Aucun seuil de bascule n'a été franchi. C'est un **argument pour C** (escalade réelle) **annulé** par le démenti, les interceptions et la baisse du Brent papier — d'où un C **stable**, et un B **renforcé** (ce cycle EST l'enlisement).
 
-### 7. La menace Bab el-Mandeb : élargissement géographique du risque maritime
-La menace iranienne d'**étendre le blocus à Bab el-Mandeb** (1er juin) rouvre un front que le marché avait écarté depuis avril. Si concrétisée (avec relais Houthis), elle **double le verrou maritime** (Ormuz + Bab el-Mandeb), reroutant le trafic Asie-Europe par le Cap et ajoutant 10-20 jours de transit — pression directe sur les prix physiques et les chaînes d'approvisionnement européennes.
+### 7. La menace Bab el-Mandeb : restée verbale à J98
+La menace iranienne d'**étendre le blocus à Bab el-Mandeb** [SPÉCULATION/B3] **reste verbale** au 6 juin (aucune attaque effective). Si concrétisée (avec relais Houthis), elle **doublerait le verrou maritime** (Ormuz + Bab el-Mandeb), reroutant le trafic Asie-Europe par le Cap et ajoutant 10-20 jours de transit. Une attaque effective sur ce détroit est l'un des **indicateurs de bascule vers C**.
 
 ### 8. France : la marche d'escalier de fin juin
-La **remise carburant de 20 c/L expire fin juin**. Sur un Brent encore à ~+70 % et un gazole à ~2,10 €/L, sa disparition produirait une **marche d'escalier à la pompe début juillet** (+15-25 c/L visibles d'un coup), au moment précis où l'inflation ré-accélère (+2,4 % en mai). C'est le **déclencheur social latent** le plus identifiable du calendrier, malgré la suspension FNSEA-JA et les amortisseurs Lecornu.
+La **remise carburant de 20 c/L expire fin juin**. Sur un gazole à 2,047 €/L (5 juin), sa disparition produirait une **marche d'escalier à la pompe début juillet** (+15-25 c/L visibles d'un coup). Contre-intuitif : à J98, **les ruptures touchent davantage l'ESSENCE que le diesel** (~2 307 stations en difficulté, dont ~411 critiques sur 13 régions ; le gazole est le carburant le moins touché) — le « risque diesel » est aujourd'hui un risque de prix et de logistique, pas (encore) de pompe à sec. C'est le **déclencheur social latent** le plus identifiable du calendrier, malgré la suspension FNSEA-JA et les amortisseurs Lecornu.
 
 ---
 
 ## Recommandations pour les ménages français
 
-### Niveau actuel de vigilance : 🟠 ÉLEVÉ STRUCTUREL — Pourparlers suspendus le 1er juin, falaise des stocks physiques annoncée par Exxon (150-160 $/b), stockage gaz UE à 38 %, remise carburant qui expire fin juin. Le marché papier rassure à tort.
+### Niveau actuel de vigilance : 🟠 ÉLEVÉ STRUCTUREL — Escalade militaire 2-6 juin (réelle mais sans bascule), pourparlers gelés depuis le 1er juin, stockage gaz UE ~41,5 % sous la norme, remise carburant qui expire fin juin. Détente de surface (Brent papier ~93 $, pompe en léger repli) à ne pas surinterpréter.
 
 > Détail produit par produit avec dates butoirs d'achat : voir [calendrier_penuries.md](calendrier_penuries.md).
 
-1. **Carburant** : maintenir le réservoir au-dessus de la moitié. **Faire le plein / remplir jerricans homologués AVANT FIN JUIN** (expiration de la remise 20 c/L + falaise des stocks physiques). Déposer la demande **aide grands rouleurs 100 €/véh** sur impots.gouv.fr si éligible.
-2. **Chauffage** : **commander le fioul AVANT FIN JUIN** (économie 500-1 200 € + délais de livraison qui s'allongent). TTF gaz +45 % vs pré-crise ; **l'hiver 2026-27 est un risque actif** (stockage UE à 38 %).
-3. **Alimentation** : stock de 2-3 semaines de base. **Récoltes 2026/2027 compromises** par l'urée à +80 % : impact différé sur pain, semoule, huile.
-4. **Finances** : garder 200-300 € en espèces ; reporter les achats lourds non essentiels ; OAT-Bund contenu mais dégradation Moody's latente.
-5. **Information** : **ne pas se fier au seul Brent papier (~97 $)** — la tension est physique (Exxon 150-160 $) et à l'aval du baril (gazole/jet/GPL). Attendre la **signature** d'un accord, pas les déclarations Trump ni les annonces iraniennes contradictoires.
+1. **Carburant** : maintenir le réservoir au-dessus de la moitié. **Faire le plein / remplir jerricans homologués AVANT FIN JUIN** (expiration de la remise 20 c/L). Déposer la demande **aide grands rouleurs 100 €/véh** sur impots.gouv.fr si éligible. À noter : les ruptures touchent aujourd'hui surtout l'essence, pas le diesel.
+2. **Chauffage** : **commander le fioul AVANT FIN JUIN** (économie + délais de livraison qui s'allongent). Gaz cher et **l'hiver 2026-27 est un risque actif** (stockage UE ~41,5 %, ~13-15 pts sous la norme, cible hiver abaissée à 80 %).
+3. **Alimentation** : stock de 2-3 semaines de base. **Récoltes 2026/2027 compromises** par l'urée physique livré ≈ ×2 pré-guerre : impact différé sur pain, semoule, huile. Le risque alimentaire reste logistique (camions diesel + AdBlue), pas agricole à ce stade.
+4. **Finances** : garder 200-300 € en espèces ; reporter les achats lourds non essentiels ; dégradation de la note souveraine latente.
+5. **Information** : **ne pas se fier au seul Brent papier (~93 $)** — il a même baissé pendant l'escalade. La tension est physique et à l'aval du baril, mais **le chiffre du physique récent n'est pas connu** (aucune assessment Platts/Argus) : ne pas se fier non plus à la thèse Exxon (150-160 $), **non matérialisée**. Attendre la **signature** d'un accord, pas les déclarations Trump ni les revendications iraniennes (ex. Ve Flotte, démentie).
 6. **Dirigeants TPE/PME** : trésorerie tendue (défaillances record 35 ans, transport +8,8 %) ; sécuriser les créances ; activer les aides ASP/Bercy ; anticiper le saut de coût gazole de fin juin.
 
 ---
 
-*Document généré le 3 juin 2026 (J95). Prochaine mise à jour recommandée : ~mi-juin (EIA STEO + IEA OMR juin + reprise éventuelle des pourparlers + matérialisation/non de la falaise des stocks Exxon). **Avertissement méthodologique** : ce document écarte délibérément les sources orientées au profit de Reuters, AFP, Bloomberg, FT, CNBC, Fortune, Axios, Banque de France, INSEE, Commission UE, BCE, IMF, IEA, EIA, World Bank/IFPRI, et analyses Tier 1 (Goldman Sachs, JPMorgan, Morgan Stanley).*
+*Document généré le 6 juin 2026 (J98). Prochaine mise à jour recommandée : ~mi-juin (EIA STEO + IEA OMR juin + révision croissance BdF + reprise éventuelle des pourparlers) puis 30 juin (IPC juin). **Avertissement méthodologique** : ce document écarte délibérément les sources orientées au profit de Reuters, AFP, Bloomberg, FT, CNBC, Fortune, Axios, Banque de France, INSEE, Commission UE, BCE, IMF, IEA, EIA, World Bank/IFPRI, et analyses Tier 1 (Goldman Sachs, JPMorgan, Morgan Stanley).*

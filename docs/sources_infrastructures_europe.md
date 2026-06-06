@@ -1,5 +1,5 @@
 # Sources — Infrastructures énergétiques et stocks Europe
-### Périmètre France + voisins majeurs — État au 3 juin 2026 (J95)
+### Périmètre France + voisins majeurs — État au 6 juin 2026 (J98)
 
 Ce fichier référence toutes les sources OSINT utilisées pour compiler le dataset de la carte [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.html) et le document analytique [[infrastructures_europe]].
 
@@ -14,9 +14,9 @@ Ce fichier référence toutes les sources OSINT utilisées pour compiler le data
 | **Coordonnées GPS** | Vérification croisée Wikipedia + OpenStreetMap + Global Energy Monitor. Précision visée 0,01° (~1,1 km). |
 | **Capacité nominale** | Source primaire opérateur (TotalEnergies, Shell, BP, Eni, Repsol, Snam, Enagás, Storengy, Téréga, etc.) ou EIA / FuelsEurope / IEA country profiles. |
 | **Statut opérationnel** | Recoupement ≥ 2 sources Tier 1/2. Pour les sites en transition/conversion, exigence de communiqué officiel. |
-| **Niveau de remplissage (gaz)** | AGSI+ (https://agsi.gie.eu) au 27 mai-2 juin 2026 par pays (UE ~38 % au 2/06). Site par site = estimation depuis le % pays. |
-| **Niveau de stocks (pétrole)** | Estimation à partir du baseline IEA Oil Stocks (dernières publications mensuelles) + déduction des releases coordonnées AIE (400 Mb le 11 mars 2026 + 53,3 Mb tirage US le 12 mai). SPR US 365,1 mb (sem. 22 mai) ; IEA >1 Md bbl perdus. |
-| **Date de référence** | 3 juin 2026 (J95) — révision recommandée hebdomadaire pour le gaz, mensuelle pour le pétrole. |
+| **Niveau de remplissage (gaz)** | AGSI+ (https://agsi.gie.eu) au 5-6 juin 2026 par pays (UE **~41,5 %** au 5-6/06 ; corrige le 38 % daté du 23 mai). Toujours ~13-15 pts sous la norme 5 ans ; Pays-Bas < 16 % ; cible hiver abaissée à 80 %. Site par site = estimation depuis le % pays. |
+| **Niveau de stocks (pétrole)** | Estimation à partir du baseline IEA Oil Stocks (dernières publications mensuelles) + déduction des releases coordonnées AIE (400 Mb le 11 mars 2026 + 53,3 Mb tirage US le 12 mai). SPR US **357,1 mb** (sem. au 29 mai, EIA WPSR ; corrige le 365,1 mb du 22 mai), tirage ~8 mb/sem, plus bas depuis janvier 2024 ; IEA >1 Md bbl perdus. |
+| **Date de référence** | 6 juin 2026 (J98) — révision recommandée hebdomadaire pour le gaz, mensuelle pour le pétrole. |
 
 ### Codification statuts (alignée carte)
 
@@ -281,20 +281,20 @@ Ce fichier référence toutes les sources OSINT utilisées pour compiler le data
 
 ---
 
-## 8 bis. Ressources critiques non-énergétiques exposées via Ormuz (urée, hélium, méthanol, aluminium) — fenêtre J95
+## 8 bis. Ressources critiques non-énergétiques exposées via Ormuz (urée, hélium, méthanol, aluminium) — fenêtre J98
 
 Sources ajoutées pour le suivi des matières premières non-énergétiques fortement exposées au détroit, au-delà du pétrole et du GNL.
 
 | Source | Type | Référence | URL / Apport |
 |---|---|---|---|
-| **World Bank — Commodity Markets Outlook** | E, D | Flambée engrais/urée et matières premières liée à Ormuz : **urée >850 $/t (+80 %)** | https://www.worldbank.org/commodity-markets-outlook |
-| **IFPRI** | E, S | **Tender Inde 2,5 Mt d'urée adjugé à 950 $/t** ; risque sécurité alimentaire mondiale | https://www.ifpri.org/blog/hormuz-urea-india-tender-food-security |
-| **PolitiFact** | E, P | Fact-check dépendance aux ressources critiques non-énergétiques : **hélium Qatar ~1/3 de l'offre mondiale** | https://www.politifact.com/factchecks/2026/hormuz-critical-minerals-helium |
-| **Renewable Matter** | T, E | **Méthanol quasi-doublé en Asie / plus que doublé en Europe** ; **aluminium en hausse** (exposition Golfe via Ormuz) | https://www.renewablematter.eu/hormuz-methanol-aluminium-supply |
+| **World Bank — Commodity Markets Outlook** | E, D | Flambée engrais/urée liée à Ormuz. **Distinguer papier vs physique (comme le Brent)** : benchmark FUTURES (papier) ~419 $/t (-32 % m/m) ; **physique livré (tender CFR Inde) ~935-959 $/t ≈ ×2 pré-guerre** — c'est le physique qui matérialise le « urée >850 $/t / +80 % » (baseline toujours valable) | https://www.worldbank.org/commodity-markets-outlook |
+| **IFPRI** | E, S | **Tender Inde d'urée adjugé ~935-959 $/t (CFR, physique)** ; risque sécurité alimentaire mondiale | https://www.ifpri.org/blog/hormuz-urea-india-tender-food-security |
+| **PolitiFact** | E, P | Fact-check dépendance aux ressources critiques non-énergétiques : **hélium Qatar ~1/3 de l'offre mondiale** (Ras Laffan impacté) ; spot **600-900 $/Mcf** (détente m/m en mai) ; Airgas -50 % de livraisons aux hôpitaux US (risque IRM) ; hausse contractuelle = prospective non matérialisée | https://www.politifact.com/factchecks/2026/hormuz-critical-minerals-helium |
+| **Renewable Matter** | T, E | **Méthanol** : spot Chine ~3000 CNY/t (plus bas depuis mars), momentum récent **baissier** en Asie, Europe ferme ; « doublé » reste vrai en glissement depuis janvier. **Aluminium** LME cash ~3 736 $/t (5 juin), pic 3 855 $ le 2 juin = plus haut en 4 ans (pas un record absolu) ; smelter Alba à -19 % (et non -30 %) | https://www.renewablematter.eu/hormuz-methanol-aluminium-supply |
 
-> **MAJ J95 (fin mai-3 juin 2026)** : la **force majeure QatarEnergy à Ras Laffan** est confirmée à **~17 % de la liquéfaction**, réparation estimée **3-5 ans** (Ormuz coupe ~1/5 du GNL mondial) — impact direct sur South Hook (UK), Adriatic LNG (IT) et l'objectif UGS 90 % au 1ᵉʳ novembre (UE 38 % au 2/06). Source : https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz · Exxon alerte un Dated Brent **150-160 $/b** possible sous 2-3 semaines (https://www.cnbc.com/2026/05/28/exxon-oil-inventories-dangerously-low). OPEP+ **+188k b/j juin**, **EAU hors OPEP (3 mai)** (https://www.aljazeera.com/economy/2026/06/01/opec-plus-output-uae-exit).
+> **MAJ J98 (6 juin 2026)** : la **force majeure QatarEnergy à Ras Laffan** est **prolongée jusqu'à mi-août 2026** (et non mi-juin), à **~17 % de la liquéfaction** (~12,8 Mt/an), réparation estimée **3-5 ans** (Ormuz coupe ~1/5 du GNL mondial) — impact direct sur South Hook (UK), Adriatic LNG (IT) et l'objectif UGS, dont la **cible hiver est abaissée à 80 %** (UE **~41,5 %** au 5-6/06, corrige le 38 % daté du 23 mai). Prolongation mi-août recoupée : https://lngprime.com/ · consulté 6 juin 2026 · Cote: B2. La thèse Exxon d'un Dated Brent **150-160 $/b N'EST PAS matérialisée à J98** → **[SPÉCULATION]**, jamais un fait (aucune assessment Platts/Argus Dated Brent en source ouverte ; dernière donnée solide = prime > 25 $/b sur futures, EIA avril). OPEP+ **+188k b/j juin**, **EAU hors OPEP (3 mai)**.
 >
-> **⚠ Note de traçabilité (04/06/2026)** : les trois URL de cette MAJ (CNBC ×2, Al Jazeera) sont **rompues (404)** au contrôle. Les faits (force majeure ~17 %, Dated Brent 150-160 $/b, +188k b/j / sortie EAU) sont **à recouper sur ≥ 2 sources Tier 1** avant d'être tenus pour confirmés. Aucune URL de substitution n'a été inventée.
+> **⚠ Note de traçabilité** : les URL CNBC (×2) et Al Jazeera de la MAJ précédente (J95) étaient **rompues (404)** au contrôle du 04/06/2026 ; les faits (force majeure ~17 %, +188k b/j / sortie EAU) restent **à recouper sur ≥ 2 sources Tier 1**. La force majeure jusqu'à mi-août est recoupée via LNG Prime. Aucune URL de substitution n'a été inventée.
 
 ---
 
@@ -330,13 +330,13 @@ Sources ajoutées pour le suivi des matières premières non-énergétiques fort
 
 ## 10. Limites et incertitudes
 
-1. **Niveaux de stocks pétroliers J95 non publiés** : aucun État ne publie en temps réel les niveaux de stocks stratégiques en période de crise (raison : signalement marché). Les chiffres présentés sont des **estimations** à ±10-15 % basées sur :
+1. **Niveaux de stocks pétroliers J98 non publiés** : aucun État ne publie en temps réel les niveaux de stocks stratégiques en période de crise (raison : signalement marché). Les chiffres présentés sont des **estimations** à ±10-15 % basées sur :
    - Baseline IEA Oil Stocks (dernières publications mensuelles)
    - Déduction proportionnelle des releases coordonnées (400 Mb le 11 mars 2026)
    - Annonces nationales (Allemagne 22 Mb, France 14,5 Mb)
 2. **AGSI+ site par site** : la consultation des dashboards interactifs nécessite la navigation in-site ; les valeurs site par site (Chémery, Rehden, Bergermeer…) sont des estimations fondées sur le % pays.
 3. **Localisation classifiée** : les emplacements exacts des stocks stratégiques sont **classifiés** dans la plupart des pays (FR notamment, pour raisons de sécurité). Les sites listés correspondent aux **infrastructures connues** (raffineries, dépôts commerciaux, cavités salines) qui hébergent une partie des stocks SAGESS / EBV / COVA / etc.
-4. **Données dépendantes du contexte** : ce sont des données 2024-2025 ajustées pour le contexte J95. Toute donnée récente (post-juin 2026) doit être vérifiée à la source.
+4. **Données dépendantes du contexte** : ce sont des données 2024-2025 ajustées pour le contexte J98. Toute donnée récente (post-juin 2026) doit être vérifiée à la source.
 5. **Sources russes/iraniennes** (Rosneft DE, Pravda USA, IRNA) : à recouper systématiquement avec une source Tier 1/2 occidentale.
 6. **Working volume vs capacité totale** : systématiquement distingué quand source disponible (Loenhout : 1,4 bcm total vs 0,77 bcm working). Quand non précisé, la valeur indiquée est le working volume.
 
@@ -366,4 +366,4 @@ Sources ajoutées pour le suivi des matières premières non-énergétiques fort
 
 ---
 
-*Document compilé le 3 juin 2026 (J95). Maintenu en parallèle de [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.html) et [[infrastructures_europe]].*
+*Document compilé le 6 juin 2026 (J98). Maintenu en parallèle de [`app/carte_infrastructures_europe.html`](app/carte_infrastructures_europe.html) et [[infrastructures_europe]].*

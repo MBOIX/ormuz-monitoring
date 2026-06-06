@@ -1,6 +1,6 @@
 # Sources OSINT — Crise du Détroit d'Ormuz
 ### Classement par fiabilité et domaine d'expertise
-#### Dernière mise à jour : 3 juin 2026 (J95) — recalibrage méthodologique : éviction sources orientées
+#### Dernière mise à jour : 6 juin 2026 (J98) — recalibrage méthodologique : éviction sources orientées
 
 ---
 
@@ -209,6 +209,35 @@ Sources officielles pour le suivi de l'**AdBlue (DEF, solution AUS 32 = 32,5 % u
 - Al Jazeera (pour MENA, biais qatari mais analyse souvent solide)
 - CNN, NPR, PBS, BBC (mainstream avec rigueur éditoriale)
 - The National (UAE, biais émirati mais bien sourcé sur Golfe)
+
+---
+
+## Sources clés ajoutées pour la fenêtre J96→J98 (4 → 6 juin 2026)
+
+Convention de référence robuste : « Titre — Éditeur, date, URL · consulté 6 juin 2026 · Cote: X# ».
+
+| Source | Type | Référence | URL · consultation · cote |
+|---|---|---|---|
+| CENTCOM (communiqué) | M | Frappe US Hellfire sur le pétrolier vide M/T *Lexie* vers Kharg (2 juin, 6ᵉ navire neutralisé depuis le 13 avril) ; démenti de toute frappe iranienne réussie sur le QG de la Ve Flotte (Bahreïn, 3 juin) — **[FAIT/B2]** frappe *Lexie* ; **[SPÉCULATION/F4]** revendication IRGC démentie | centcom.mil/MEDIA/PRESS-RELEASES/ · consulté 6 juin 2026 · Cote: B1 |
+| ABC News (live updates) | M, P | Live blog Moyen-Orient 3-5 juin : salve iranienne missiles/drones vers le Golfe, interceptions, frappe T1 aéroport de Koweït | abcnews.go.com/International/live-updates/ · consulté 6 juin 2026 · Cote: B2 |
+| RFE/RL (Radio Free Europe) | M, P | Couverture frappes US sur radars côtiers (Goruk, Qeshm, 5-6 juin) + drones iraniens abattus vers Ormuz | rferl.org/ · consulté 6 juin 2026 · Cote: B2 |
+| The War Zone (TWZ) | M | Détail technique frappe *Lexie* (Hellfire), arraisonnements US (MT *Davina*/*Lenore* au large du Sri Lanka, 5 juin) | twz.com/news-features/ · consulté 6 juin 2026 · Cote: B2 |
+| Al Jazeera | M, P | Frappe porte-conteneurs *MSC Sariska V* à Umm Qasr (Irak, 3 juin, équipage sauf) ; rejet de l'accord Liban par le Hezbollah (Qassem, 4 juin) | aljazeera.com/news/2026/6/ · consulté 6 juin 2026 · Cote: B2 |
+| gCaptain (mission déminage) | M, T | UK + France finalisent le plan de mission de déminage d'Ormuz (~15 nations), déclenchement conditionné à un accord inexistant (4 juin) | gcaptain.com/ · consulté 6 juin 2026 · Cote: B2 |
+| Naharnet / AFP (Araghchi) | P | Position iranienne (Araghchi) sur l'état des négociations gelées ; contexte cessez-le-feu Israël-Liban annoncé à Washington (3 juin, 4ᵉ round) puis mort-né | naharnet.com/ · consulté 6 juin 2026 · Cote: A2 |
+| Fortune (prix pétrole) | E | Brent ~93,1 $/b en clôture (5 juin) ; pic intraday 3 juin ~99 $, clôture 97,81 $ ; 4 juin clôture ~95 $ — **[FAIT/B2]** | fortune.com/article/price-of-oil-06-05-2026 · consulté 6 juin 2026 · Cote: B2 |
+| Investing.com / Trading Economics | E, D | WTI ~90,3-90,5 $/b (5 juin) ; spread Brent-WTI comprimé à ~2,5 $/b (vs ~13 $ le 30 avril) | investing.com/commodities/crude-oil · tradingeconomics.com/commodity/brent-crude-oil · consulté 6 juin 2026 · Cote: B2 |
+| EIA (WPSR / SPR) | T, D | SPR US **357,1 mb** (semaine au 29 mai, WPSR) — corrige le 365,1 mb du 22 mai ; tirage ~8 mb/sem, plus bas depuis janvier 2024 | eia.gov/petroleum/supply/weekly/ · consulté 6 juin 2026 · Cote: A1 |
+| AGSI+ / GIE (gaz) | T, D | Stockage gaz UE **~41,5 %** (5-6 juin) — corrige le 38 % daté du 23 mai ; ~13-15 pts sous la norme 5 ans ; Pays-Bas < 16 % ; cible hiver abaissée à 80 % | agsi.gie.eu/ · consulté 6 juin 2026 · Cote: C2 |
+| LNG Prime (Qatar Ras Laffan) | T | Force majeure Ras Laffan **prolongée jusqu'à mi-août 2026** (et non mi-juin) ; ~17 % de la liquéfaction HS (~12,8 Mt/an), réparation 3-5 ans | lngprime.com/ · consulté 6 juin 2026 · Cote: B2 |
+| data.economie.gouv.fr (carburants) | E, S, D | Gazole pompe FR **2,047 €/L**, SP95 2,032, SP98 2,074, E10 1,973 (5 juin, Ministère) ; léger repli hebdo ; gazole = carburant le MOINS touché (442 stations vs SP98 1 139) | data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/ · consulté 6 juin 2026 · Cote: A1 |
+| CNR / TRM24 (gazole pro) | E, S, D | Indice gazole professionnel CNR **+29,3 % vs février** (fin mai), en repli depuis le pic +42,7 % de début avril | cnr.fr/espaces/13/indices-mensuels-longue-distance · consulté 6 juin 2026 · Cote: B2 |
+| INSEE (IPC mai 2026) | E, S, D | IPC mai **+2,4 % a/a** (IPCH +2,8 %), tiré par l'énergie (+16,8 %) ; pas de chiffre de juin avant le 30 juin | insee.fr/fr/statistiques/ipc-mai-2026 · consulté 6 juin 2026 · Cote: A1 |
+| Banque de France (révision croissance) | E | Révision **en baisse** de la croissance FR 2026 annoncée le 1er juin (était +0,9 % en mars) ; nouveau chiffre attendu ~mi-juin ; PIB T1 -0,1 % ; récession exclue « de justesse » — **chiffre révisé non encore publié (gap à venir)** | banque-france.fr/fr/publications-et-statistiques/publications · consulté 6 juin 2026 · Cote: A2 |
+| ONU Info (Casque bleu FINUL) | P, M | 7ᵉ Casque bleu FINUL tué le 4 juin (sergent serbe Jovanović, près de Marjeyoun) ; attribution non établie — **[FAIT/A2]** | news.un.org/fr/ · consulté 6 juin 2026 · Cote: A2 |
+| Ministère des Armées (Frion / Chammal) | M | Rappel pertes françaises au Moyen-Orient = 3 au total : 2 FINUL/Liban (Montorio 18/4, Girardin 22/4) + 1 Chammal/Irak (cpl Frion, 12/3) ; aucune nouvelle perte FR sur la fenêtre J96-J98 | defense.gouv.fr/ · consulté 6 juin 2026 · Cote: A1 |
+
+> **Note de marché (J98)** : le **Dated Brent physique** n'est **pas établi** au 3-6 juin (aucune assessment Platts/Argus en source ouverte) ; dernière donnée solide = prime > 25 $/b sur les futures (EIA, avril). La thèse Exxon d'un Dated Brent 150-160 $/b **n'est pas matérialisée** à J98 → à traiter comme **[SPÉCULATION]**, jamais comme fait. Le chiffre ~132,74 $ (Substack) est **écarté**. Flux Ormuz sortant non-iranien estimé **8-16 %** de la normale (détroit quasi-fermé) ; la projection « ~50 % fin juin » (Energy Aspects) est **mono-source [SPÉCULATION]**, à ne pas présenter comme acquise. Imports brut Chine **6,36 Mb/j** (mai, -44 % vs février, A2) = « couvercle chinois » temporaire.
 
 ---
 

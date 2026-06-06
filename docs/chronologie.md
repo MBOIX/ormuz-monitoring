@@ -4,17 +4,17 @@
 >
 > **Référence de calcul** — J1 = 28 février 2026 (frappes US-Israël, Opération Epic Fury, mort d'Ali Khamenei, fermeture d'Ormuz par l'Iran).
 >
-> **Dernière mise à jour** — 5 juin 2026. Dernière consolidation de l'état de situation : 3 juin 2026 (J95).
+> **Dernière mise à jour** — 6 juin 2026. Dernière consolidation de l'état de situation : 6 juin 2026 (J98).
 >
-> **Note de fraîcheur (CRITIQUE)** — Ce fichier n'est pas la source de vérité sur les chiffres courants (prix, stocks, % UGS, probabilités de scénarios). **La synthèse périodique la plus récente (`synthese_J*-J*.md`) fait foi sur l'état courant** ; ici, les valeurs chiffrées sont conservées telles qu'elles ont été datées à leur observation, pour mémoire historique. Avant toute analyse, vérifier l'ancienneté du dernier point (3 juin 2026) et rafraîchir si une recherche apporte du neuf.
+> **Note de fraîcheur (CRITIQUE)** — Ce fichier n'est pas la source de vérité sur les chiffres courants (prix, stocks, % UGS, probabilités de scénarios). **La synthèse périodique la plus récente (`synthese_J*-J*.md`) fait foi sur l'état courant** ; ici, les valeurs chiffrées sont conservées telles qu'elles ont été datées à leur observation, pour mémoire historique. Avant toute analyse, vérifier l'ancienneté du dernier point (6 juin 2026) et rafraîchir si une recherche apporte du neuf.
 
 ## Note méthodologique
 
-- **Sources croisées** — Chaque ligne cite les fichiers d'origine (abréviés) : `index` (index.md), `réaliste` (scenario_realiste.md), `optimiste` (scenario_optimiste.md), `pessimiste` (scenario_pessimiste.md), `synthèse` (synthese_J89-J95.md), `calendrier` (calendrier_penuries.md), `sources` (sources.md), `infra` (infrastructures_europe.md). Conformément à la règle de recoupement, un fait reposant sur un **fichier unique** est signalé comme tel (fiabilité moindre).
+- **Sources croisées** — Chaque ligne cite les fichiers d'origine (abréviés) : `index` (index.md), `réaliste` (scenario_realiste.md), `optimiste` (scenario_optimiste.md), `pessimiste` (scenario_pessimiste.md), `synthèse` (synthese_J95-J98.md), `calendrier` (calendrier_penuries.md), `sources` (sources.md), `infra` (infrastructures_europe.md). Conformément à la règle de recoupement, un fait reposant sur un **fichier unique** est signalé comme tel (fiabilité moindre).
 - **Importance** — `structurant` (modifie la trajectoire de la crise ou des scénarios), `majeur` (impact notable), `mineur` (jalon de contexte). Les événements **structurants** sont en **gras** dans la colonne Événement.
 - **Catégories** — Militaire / Politique-Diplomatique / Économique-Marchés / Impact France / Analytique.
 - **Principe fait / interprétation / manque assumé** — Les tableaux ne contiennent que des **faits datés** issus des sources. Les J-day marqués « (estim.) » sont **déduits par calcul a posteriori**, non explicitement mentionnés dans la source. Les divergences sont exposées telles quelles en section « Contradictions ». Les périodes sans données figurent en « Vides documentaires » : **aucun événement n'a été inventé pour combler un trou**.
-- **Avertissement de comptage J-day** — Le calcul strict (J1 = 28 février) place le 22 avril à **J54**, le 23 avril à **J55**, le 14 mai à **J76**, le 19 mai à **J81**, le 21 mai à **J83**, le 1er juin à **J94**, le 3 juin à **J96**. Or les fichiers source affichent fréquemment des J-day inférieurs d'un cran (ex. 3 juin libellé « J95 » partout). **Les J-day ci-dessous reproduisent ceux des fichiers source** (parfois flottants), avec le calcul strict signalé en note quand il diverge. Ce flottement n'est pas résolu — voir « Contradictions ».
+- **Avertissement de comptage J-day** — Le calcul strict (J1 = 28 février) place le 22 avril à **J54**, le 23 avril à **J55**, le 14 mai à **J76**, le 19 mai à **J81**, le 21 mai à **J83**, le 1er juin à **J94**, le 3 juin à **J96**, le 6 juin à **J99**. Or les fichiers source affichent fréquemment des J-day inférieurs d'un cran (ex. 3 juin libellé « J95 » partout, 6 juin libellé « J98 »). **Les J-day ci-dessous reproduisent ceux des fichiers source** (parfois flottants), avec le calcul strict signalé en note quand il diverge. Ce flottement n'est pas résolu — voir « Contradictions ».
 
 ---
 
@@ -189,7 +189,7 @@
 
 ---
 
-## Phase 7 — Alerte Exxon, suspension iranienne et consolidation J95 (28 mai → 3 juin 2026, J89 → J95)
+## Phase 7 — Alerte Exxon, suspension iranienne et point J95 (28 mai → 3 juin 2026, J89 → J95)
 
 | Date | J-day | Catégorie | Importance | Événement | Sources |
 |---|---|---|---|---|---|
@@ -216,6 +216,35 @@
 
 ---
 
+## Phase 8 — Cycle action-riposte maritime et consolidation J98 (2 → 6 juin 2026, J94 → J98)
+
+> *Note de granularité : fenêtre dense côté militaire/maritime (cycle action-riposte quasi quotidien dans le Golfe) mais marchés papier en repli — l'enlisement décrit par le scénario B se matérialise sur cette micro-période. J-day reproduits des fichiers source (6 juin libellé « J98 » ; calcul strict J99 — voir Contradictions).*
+
+| Date | J-day | Catégorie | Importance | Événement | Sources |
+|---|---|---|---|---|---|
+| 2 juin 2026 | J94 | Militaire | majeur | **[FAIT]** Frappe US (missile Hellfire) sur le pétrolier vide **M/T Lexie** en route vers Kharg — 6e navire neutralisé depuis le blocus du 13 avril | synthèse |
+| 3 juin 2026 | J95 / J96 | Militaire | structurant | **[FAIT/B1 pour la salve ; revendication F4] Salve iranienne (missiles + drones) vers le Golfe ; l'IRGC REVENDIQUE des frappes sur le QG de la Ve Flotte US (Bahreïn)** — **DÉMENTI CENTCOM** : missiles interceptés, aucun dégât US confirmé. À traiter comme **revendication/[SPÉCULATION]**, non comme fait établi — *contradiction documentaire, voir Contradictions* | synthèse |
+| 3 juin 2026 | J95 / J96 | Militaire | majeur | **[FAIT]** Frappe du terminal **T1 de l'aéroport de Koweït** : 1 mort (ressortissant indien), ~63 blessés — **cause disputée** (drone iranien vs erreur de tir Patriot), **non tranchée** — *contradiction documentaire, voir Contradictions* | synthèse |
+| 3 juin 2026 | J95 / J96 | Militaire | majeur | **[FAIT]** Porte-conteneurs **MSC Sariska V** touché à **Umm Qasr (Irak)** ; équipage sauf | synthèse |
+| 3 juin 2026 | J95 / J96 | Politique-Diplomatique | majeur | **[FAIT]** Cessez-le-feu **Israël-Liban** annoncé à Washington (renouvellement, 4e round) | synthèse |
+| 4 juin 2026 | J96 / J97 | Politique-Diplomatique | structurant | **[FAIT] Le Hezbollah (Qassem) REJETTE l'accord ; Israël poursuit ses opérations au sud du Litani → accord mort-né** | synthèse |
+| 4 juin 2026 | J96 / J97 | Impact France | structurant | **[FAIT] 7e Casque bleu de la FINUL tué (sergent serbe Jovanović, près de Marjeyoun) ; attribution NON établie** — *contradiction documentaire, voir Contradictions*. Premier Casque bleu FINUL tué depuis le 22 avril (rend caduc « aucune perte depuis le 22 avril ») ; **non français** — bilan militaires FR au Moyen-Orient inchangé à 3 (Frion 12/3, Montorio 18/4, Girardin 22/4) | synthèse |
+| 4 juin 2026 | J96 / J97 | Politique-Diplomatique | majeur | **[FAIT]** UK + France finalisent le **plan de mission de déminage d'Ormuz** (~15 nations engagées) — **[INTERPRÉTATION]** déclenchement conditionné à un accord inexistant à ce stade | synthèse |
+| 5 juin 2026 | J97 / J98 | Économique-Marchés | structurant | **[FAIT] Brent futures ~93 $/b en clôture, WTI ~90,5 $ ; spread Brent-WTI comprimé à ~2,5 $/b (vs ~13 $ le 30 avril)** ; arraisonnement US du **MT Davina/Lenore** au large du Sri Lanka (sanctions) | synthèse |
+| 5-6 juin 2026 | J97-J98 | Militaire | majeur | **[FAIT]** 4 drones iraniens vers Ormuz abattus ; frappes US sur radars côtiers (**Goruk, Qeshm**) ; 7 missiles iraniens vers Koweït/Bahreïn (6 interceptés) | synthèse |
+| 29 mai → 6 juin 2026 | J90-J98 | Militaire | majeur | **[INTERPRÉTATION/B1]** Blocus naval US annoncé « levé » par Trump (29 mai) mais **opérationnellement EN VIGUEUR** (levée conditionnelle, MOU non signé, enforcement continu) | synthèse |
+| 2-6 juin 2026 | J94-J98 | Militaire | mineur | **[SPÉCULATION/B3]** Menace iranienne sur **Bab el-Mandeb** reste **VERBALE** — aucune attaque effective constatée | synthèse |
+| 6 juin 2026 | J98 | Économique-Marchés | structurant | **[FAIT] Consolidation J98 : Brent futures ~93,1 $/b (clôture 5 juin ; pic intraday 3 juin ~99 $, clôture 97,81 $ ; 4 juin ~95 $) ; WTI ~90,3-90,5 $ ; Dated Brent physique NON établi en source ouverte (dernière donnée solide : prime > 25 $/b sur futures, EIA avril) ; gazole pompe 2,047 €/L, SP95 2,032 €/L (5 juin, Ministère) ; gazole pro indice CNR +29,3 % vs février (en repli depuis le pic +42,7 % début avril)** — la thèse Exxon Dated Brent 150-160 $ N'EST PAS matérialisée à J98, à traiter **[SPÉCULATION]** | synthèse |
+| 6 juin 2026 | J98 | Économique-Marchés | majeur | **[FAIT]** Stockage gaz UE (AGSI+) **~41,5 %** (corrige le « 38 % » daté du 23 mai), toujours ~13-15 pts sous la norme 5 ans, cible hiver abaissée à 80 %, Pays-Bas < 16 % ; SPR US **357,1 mb** (semaine au 29 mai, EIA WPSR, tirage ~8 mb/sem) ; flux Ormuz sortant non-iranien **8-16 %** de la normale (projection « ~50 % fin juin » = [SPÉCULATION] mono-source Energy Aspects) ; imports brut Chine 6,36 Mb/j (mai, −44 % vs février, plus bas ~10 ans) | synthèse |
+| 6 juin 2026 | J98 | Économique-Marchés | majeur | **[FAIT]** Ressources critiques : urée FUTURES (papier) ~419 $/t (−32 % m/m) mais PHYSIQUE livré (tender CFR Inde) ~935-959 $/t (≈ ×2 pré-guerre) ; méthanol spot Chine ~3000 CNY/t (momentum baissier en Asie, Europe ferme) ; aluminium LME cash ~3 736 $/t (pic 3 855 $ le 2 juin = plus haut en 4 ans, smelter Alba −19 %) ; hélium spot 600-900 $/Mcf (détente m/m), Qatar ~1/3 mondial impacté (Ras Laffan) | synthèse |
+| 6 juin 2026 | J98 | Économique-Marchés | majeur | **[FAIT]** Force majeure Qatar (Ras Laffan, ~17 % de la liquéfaction HS ≈ 12,8 Mt/an) **prolongée jusqu'à mi-août 2026** (réparation 3-5 ans) | synthèse |
+| 6 juin 2026 | J98 | Impact France | majeur | **[FAIT]** Inflation FR IPC mai +2,4 % a/a (IPCH +2,8 %), tirée par l'énergie (+16,8 %) — **[MANQUE ASSUMÉ]** pas de chiffre de juin avant le 30 juin ; stations en difficulté ~2 307 (dont ~411 critiques, 13 régions), l'**essence est plus touchée que le diesel** (gazole = carburant le moins touché, 442 stations vs SP98 1 139) — corrige « ~5 % des stations à sec » | synthèse, calendrier |
+| 1er juin 2026 | J93 / J94 | Impact France | majeur | **[FAIT/A2]** Banque de France annonce une **révision EN BAISSE** de la croissance FR 2026 (était +0,9 % en mars) ; PIB T1 −0,1 % ; récession exclue « de justesse » — **[MANQUE ASSUMÉ]** nouveau chiffre attendu ~mi-juin, **ne pas pré-remplir** | synthèse |
+| 6 juin 2026 | J98 | Analytique | structurant | **[INTERPRÉTATION] Consolidation/recalibrage J98 : B 60-66 % (central, ⬆️ léger — la fenêtre 3-6 juin EST l'enlisement : cycle action-riposte sans bascule), A 8-15 % (⬇️ : escalade + diplomatie gelée + cessez-le-feu Liban rejeté), C 22-30 % (➡️ stable — arguments des deux sens s'annulent : escalade réelle mais revendication Ve Flotte démentie, missiles interceptés, Brent papier en baisse, thèse Exxon non matérialisée)** | index, réaliste, optimiste, pessimiste, synthèse, calendrier |
+| 6 juin 2026 | J98 | Analytique | mineur | Rédaction de la synthèse périodique J95-J98 et propagation documentaire (consolidation J98) ; bilan : 3 militaires français morts au Moyen-Orient (2 FINUL/Liban + 1 Chammal/Irak), aucune nouvelle perte FR ; tués au Liban depuis le 2 mars ≈ 3 433-3 500 (~3 200 civils) | synthèse |
+
+---
+
 ## Données mensuelles agrégées (mois de référence, jour non précisé)
 
 | Période | J-day | Catégorie | Importance | Événement | Sources |
@@ -223,12 +252,12 @@
 | Printemps 2026 | — | Économique-Marchés | majeur | Commission UE Spring forecast : croissance UE 1,1 % en 2026 (vs 1,5 % en 2025), inflation 3,1 % | sources |
 | Mi-avril 2026 | J~46-50 (estim.) | Impact France | mineur | Rupture nationale de nitrendipine (laboratoire Viatris) affectant 50 000 patients hypertendus | calendrier |
 | Mai 2026 | J62-J92 (estim.) | Impact France | majeur | Inflation FR mai +2,4 % YoY (INSEE IPC, vs +2,2 % en avril), tirée par l'énergie ; confiance des ménages 82 (−2) ; popularité Macron 21 % favorables / 75 % défavorables (Ipsos BVA), Bardella ~34 % ; aide GNR 15 c/L (53 M€) | réaliste, synthèse, calendrier, sources |
-| Fin mai 2026 | J89-J93 (estim.) | Impact France | mineur | ~5 % des stations françaises à sec (tensions ponctuelles diesel) ; arrivages de gazole par bateau en Europe du Nord au plus bas depuis 10 ans (−40 % YoY) | synthèse |
+| Fin mai 2026 | J89-J93 (estim.) | Impact France | mineur | ~5 % des stations françaises à sec (tensions ponctuelles diesel) — *valeur datée, corrigée au J98 : ~2 307 stations en difficulté, l'essence plus touchée que le diesel ; voir Phase 8* ; arrivages de gazole par bateau en Europe du Nord au plus bas depuis 10 ans (−40 % YoY) | synthèse |
 | Juin 2026 | J94+ (estim.) | Économique-Marchés | structurant | **IEA Oil Market Report juin : confirme >1 milliard de barils perdus depuis le 28/02** | sources |
 
 ---
 
-## Échéances prospectives (postérieures au 3 juin 2026 — non survenues)
+## Échéances prospectives (postérieures au 6 juin 2026 — non survenues)
 
 > *Ces items sont des dates butoirs, conditions de scénario ou recommandations, et non des événements avérés.*
 
@@ -278,6 +307,14 @@ Les divergences suivantes sont exposées telles quelles, **sans arbitrage forcé
 
 14. **J-day des frappes US-Iran du 7-8 mai** — `pessimiste` attribue **J69** à la fois au 7 mai (texte) et au 8 mai (tableau). Calcul strict : 7 mai = J68. Flottement interne non résolu. *(pessimiste, réaliste)*
 
+15. **Revendication IRGC de frappes sur le QG de la Ve Flotte US (Bahreïn), 3 juin** — L'IRGC **revendique** avoir touché le quartier général de la Ve Flotte ; **CENTCOM dément** (missiles interceptés, aucun dégât US confirmé). Revendication (cote ~F4) contre démenti officiel (B1) : aucune confirmation par imagerie tierce. À traiter comme **revendication/[SPÉCULATION]**, jamais comme fait établi. *(synthèse)*
+
+16. **Cause de la frappe du terminal T1 de l'aéroport de Koweït, 3 juin** — Origine **disputée** : drone iranien vs erreur de tir d'un Patriot. **Non tranchée** en source ouverte (1 mort indien, ~63 blessés). *(synthèse)*
+
+17. **Attribution du tir ayant tué le 7e Casque bleu FINUL (sergent serbe Jovanović), 4 juin** — Mort **avérée** (près de Marjeyoun) mais **attribution non établie** (auteur non identifié). Premier Casque bleu FINUL tué depuis le 22 avril ; ce n'est **pas** un militaire français (bilan FR au Moyen-Orient inchangé à 3). *(synthèse)*
+
+18. **J-day du 6 juin (J98 affiché vs J99 strict)** — Le 6 juin est libellé **« J98 »** dans les fichiers source (consolidation), alors que le calcul strict (J1 = 28 février) donne **J99**. Le décalage −1 observé depuis fin mai (voir point 8) se prolonge à la consolidation J98. Flottement non résolu. *(synthèse, toutes sources)*
+
 ---
 
 ## Vides documentaires
@@ -294,7 +331,7 @@ Ces périodes sont **sous-couvertes par construction** (reconstitution a posteri
 
 - **5 mai → 7 mai 2026 (J67 → J69)** — Dense côté maritime (San Antonio, Persian Gulf Strait Authority, pause Project Freedom, frappes réciproques) mais **aucun élément économique daté** (Brent, SPR) sur cette micro-fenêtre, alors que les marchés sont volatils. Les prix journaliers Brent ne sont documentés en continu qu'à partir du 18 mai (`sources`).
 
-- **Après le 3 juin 2026 (J95)** — Au-delà de la consolidation J95, il n'existe que des **échéances prospectives** (remplissage cuves 15 juin, canal officiel mi-juin, alerte SPR ~27 juin, expiration remise 20 c/L fin juin, cessez-le-feu Liban ~29 juin, midterms novembre, UGS 1er nov, FINUL 31 déc). **Aucun événement réel postérieur au 3 juin n'est disponible** — limite de fraîcheur du dossier (instantané daté du 3 juin). Ne pas extrapoler.
+- **Après le 6 juin 2026 (J98)** — Au-delà de la consolidation J98, il n'existe que des **échéances prospectives** (remplissage cuves 15 juin, canal officiel mi-juin, croissance BdF révisée ~mi-juin, alerte SPR ~27 juin, expiration remise 20 c/L fin juin, inflation FR juin le 30 juin, cessez-le-feu Liban ~29 juin, force majeure Qatar mi-août, midterms novembre, UGS 1er nov, FINUL 31 déc). **Aucun événement réel postérieur au 6 juin n'est disponible** — limite de fraîcheur du dossier (instantané daté du 6 juin). Ne pas extrapoler ; en particulier, **Dated Brent physique courant, débit Ormuz J98 exact, croissance BdF révisée et inflation FR juin sont des « gaps » à venir**, non à combler par un nombre.
 
 ---
 
@@ -316,7 +353,7 @@ Sujets manquants ou fragiles identifiés à la relecture critique, **à confirme
 Notes de qualité (fiabilité réduite) :
 
 - **Bascule de granularité au 12 mai (J73)** — Le suivi quotidien dense ne démarre qu'à la création du `calendrier_penuries.md`. Les ~10 semaines antérieures sont une **reconstitution a posteriori**.
-- **Décalage systématique de J-day (+1) dans `sources` sur 20 mai → 3 juin** — Non résolu ; traiter tous les J-day de fin mai-juin avec prudence.
-- **Sur-dépendance à un fichier unique** — Le nom « Frion » repose sur le seul `index` ; le tirage SPR −9,9 mb du 20 mai et l'OPEP+ du 1er juin sur le seul `sources` (liens 404) ; les infrastructures pré-crise (Le Havre, Grangemouth, Druzhba) sur le seul `infra`. **Recoupement ≥2 sources non garanti.**
-- **Alerte Exxon 150-160 $/b (Neil Chapman)** — Pivot du dossier, mais lien `sources` rompu (404) au 4 juin et source unique élargie à « Chevron/Fortune » sans recoupement primaire — à reconfirmer.
+- **Décalage systématique de J-day (+1) dans `sources` sur 20 mai → 6 juin** — Non résolu ; le 6 juin affiché « J98 » contre J99 strict (voir Contradictions §18). Traiter tous les J-day de fin mai-juin avec prudence.
+- **Sur-dépendance à un fichier unique** — Le nom « Frion » repose sur le seul `index` ; le tirage SPR −9,9 mb du 20 mai et l'OPEP+ du 1er juin sur le seul `sources` (liens 404) ; les infrastructures pré-crise (Le Havre, Grangemouth, Druzhba) sur le seul `infra` ; les événements 2-6 juin (Phase 8) reposent sur la seule `synthèse` J95-J98. **Recoupement ≥2 sources non garanti.**
+- **Alerte Exxon 150-160 $/b (Neil Chapman)** — Pivot du dossier, mais **non matérialisée au 6 juin (J98)** : aucune assessment Platts/Argus de Dated Brent physique > 150 $ en source ouverte, Brent papier en repli (~93 $) ; à traiter **[SPÉCULATION]**, non comme fait. Lien `sources` rompu (404) au 4 juin, source unique élargie à « Chevron/Fortune » sans recoupement primaire — à reconfirmer.
 - **J-day « déduits/estim. » sur dates abrégées (12/3, 18/4, 22/4)** — Datation calculée a posteriori, non mention explicite en source : fiabilité moindre que les dates calendaires.

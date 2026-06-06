@@ -1,5 +1,5 @@
 # Sources — Carte des infrastructures pétrolières et gazières
-### Zone du conflit Ormuz élargie — État au 3 juin 2026 (J95)
+### Zone du conflit Ormuz élargie — État au 6 juin 2026 (J98)
 
 Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le dataset de la carte `app/carte_infrastructures.html`. Couverture : 54 sites individuels (champs, raffineries, terminaux, pétrochimie, centrales) + 7 pipelines stratégiques.
 
@@ -12,7 +12,7 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 | **Coordonnées géographiques** | Vérification croisée Wikipedia + OpenStreetMap + Global Energy Monitor (GEM). Précision visée 0,01° (~1,1 km). |
 | **Capacité nominale** | Source primaire opérateur (Aramco, ADNOC, NIOC, QatarEnergy, KPC, Bapco) ou EIA country profiles. |
 | **Statut opérationnel** | Recoupement minimum 2 sources Tier 1/2 ; pour les sites endommagés, exigence de communiqué officiel ou imagerie satellite (ESA, Planet Labs, Maxar). |
-| **Date de référence** | 3 juin 2026 (J95) — révision recommandée hebdomadaire. |
+| **Date de référence** | 6 juin 2026 (J98) — révision recommandée hebdomadaire. |
 
 ### Codification des statuts
 
@@ -218,7 +218,7 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 - https://www.bloomberg.com/news/articles/2026-03-18/qatar-reports-extensive-damage-at-site-of-ras-laffan-lng-plant
 - https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/
 - https://www.qatarenergy.qa/en/MediaCenter/Pages/newsdetails.aspx?ItemId=3892
-- QatarEnergy force majeure confirmée fin mai 2026 : ~17 % de la capacité de liquéfaction de Ras Laffan touchée, réparation estimée 3-5 ans ; Ormuz coupe ~1/5 du GNL mondial — https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz **⚠ lien rompu (404) au 04/06/2026 ; le chiffre « ~17 % » reste à recouper. Les dommages Ras Laffan sont par ailleurs documentés par Bloomberg (18/03) et The National (09/04) ci-dessus.**
+- QatarEnergy force majeure **prolongée jusqu'à mi-août 2026** (et non mi-juin) : ~17 % de la capacité de liquéfaction de Ras Laffan touchée (~12,8 Mt/an), réparation estimée 3-5 ans ; Ormuz coupe ~1/5 du GNL mondial — https://www.cnbc.com/2026/05/31/qatar-ras-laffan-lng-force-majeure-hormuz **⚠ lien rompu (404) au 04/06/2026 ; le chiffre « ~17 % » reste à recouper. Les dommages Ras Laffan sont par ailleurs documentés par Bloomberg (18/03) et The National (09/04) ci-dessus.** Prolongation mi-août recoupée : https://lngprime.com/ · consulté 6 juin 2026 · Cote: B2.
 
 **North Field / Mesaieed**
 - https://naturalgasintel.com/news/north-field-expansion-project-delays-likely-as-qatari-lng-output-crippled-by-iranian-attacks/
@@ -288,6 +288,7 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 - https://www.pipeline-journal.net/news/egypt-offers-sumed-pipeline-saudi-crude-strategic-bypass-amid-red-sea-oil-shift
 - https://en.wikipedia.org/wiki/Sumed_pipeline
 - **MAJ J95 (1er juin 2026)** : l'Iran suspend les pourparlers et **menace le détroit de Bab el-Mandeb** (risque pesant sur le bypass SUMED/mer Rouge) — https://www.euronews.com/2026/06/01/iran-suspends-negotiations-hormuz
+- **MAJ J98 (6 juin 2026)** : sur la fenêtre 2-6 juin, la menace iranienne sur Bab el-Mandeb reste **verbale** — aucune attaque effective constatée — **[SPÉCULATION/B3]**. À surveiller comme indicateur de bascule vers le scénario pessimiste.
 
 ---
 
@@ -312,4 +313,4 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 
 ---
 
-*Compilation arrêtée au 3 juin 2026 (J95 du conflit). Total : 54 sites individuels + 7 pipelines stratégiques. Prochaine révision : 10 juin 2026.*
+*Compilation arrêtée au 6 juin 2026 (J98 du conflit). Total : 54 sites individuels + 7 pipelines stratégiques. Prochaine révision : 13 juin 2026.*
