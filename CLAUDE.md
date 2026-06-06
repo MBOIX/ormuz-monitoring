@@ -23,7 +23,10 @@ Ces règles priment sur toute autre considération de style dans les raisonnemen
 
 Suivi de la **crise du détroit d'Ormuz** déclenchée le 28 février 2026 par les frappes américano-israéliennes sur l'Iran (Opération Epic Fury) : fermeture du détroit par l'Iran, plus grande perturbation pétrolière de l'histoire (~20 % du pétrole mondial), cessez-le-feu fragile (8 avril), blocus naval américain (13 avril), guerre de position maritime en cours.
 
-### Chronologie clé
+### Chronologie clé — jalons fondateurs (immuables)
+
+Cette liste ne contient que les jalons structurants de la crise. Les développements des dernières semaines (« fil chaud ») ne sont **pas** maintenus ici : ils vivent dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`), qui fait foi.
+
 - **28 février 2026** : Frappes US-Israël, mort de Khamenei, Iran ferme Ormuz
 - **8 avril** : Cessez-le-feu de 2 semaines (médiation Pakistan)
 - **11-12 avril** : Échec du 1er round de pourparlers à Islamabad (21h de négociations)
@@ -35,41 +38,39 @@ Suivi de la **crise du détroit d'Ormuz** déclenchée le 28 février 2026 par l
 - **22 avril** : Mort du cpl-chef Girardin (2ème soldat français FINUL)
 - **23 avril** : Trump ordonne "shoot and kill" sur les poseurs de mines
 - **3 mai** : OPEP+ relève l'offre de +188 000 b/j (1ère réunion sans les EAU, qui ont quitté l'organisation)
-- **21 mai** : décret Mojtaba Khamenei interdisant l'export d'uranium enrichi (sticking point HEU)
-- **28 mai** : Exxon (Neil Chapman) alerte sur des stocks « inédits » et un Dated Brent physique à 150-160 $/b sous 2-3 semaines
-- **1er juin** : Iran suspend les pourparlers indirects (motif Liban) + menace d'étendre le blocus à Bab el-Mandeb ; cessez-le-feu Israël-Hezbollah conclu le même jour (Israël épargne Dahiyeh)
 
-### État de situation — dernière consolidation : 3 juin 2026 (J95)
+### État de situation courant
 
-> **Fraîcheur** : ce bloc est un instantané daté, pas une vérité permanente. Avant toute analyse, vérifier son ancienneté (aujourd'hui vs 3 juin) ; au-delà de ~48-72h ou si une recherche apporte du neuf, le rafraîchir **et** ré-horodater le titre ci-dessus. La synthèse périodique la plus récente (`synthese_*.md`) fait foi sur l'état courant.
-
-- Cessez-le-feu de facto (pas de frappes aériennes massives) ; MOU US-Iran **non signé** et **pourparlers indirects SUSPENDUS par l'Iran le 1er juin** (WH dénie le brouillon iranien) — Trump maintient un accord « dans la semaine », CNN « back on track »
-- Détroit fermé de facto (~5 % du trafic normal), blocus US actif, saisies mutuelles de navires ; **menace iranienne d'extension à Bab el-Mandeb**
-- Brent : 96,89 $/b (futures, +0,93 % le 3 juin, −15,3 % sur le mois, ~+70 % vs pré-crise) ; **marché papier qui masque la tension physique** — Exxon projette le Dated Brent à 150-160 $/b sous 2-3 semaines ; la douleur migre vers l'aval du baril (raffinés +2-3× le brut)
-- **Coussin chinois** : imports −20 % (9,4 mb/j en avril, ~7 mb/j en mai), SPR 1,4 Md bbl → retarde la falaise des stocks. **SPR US 365,1 mb** ; **release IEA record 400 Mb** ; **>1 Md bbl perdus**
-- Gaz : **TTF 47,69 €/MWh** (~+45 % vs pré-crise) ; **stockage gaz UE à 38 %** (cible 90 % au 1er nov, hiver à risque) ; QatarEnergy force majeure sur 17 % de la liquéfaction (Ras Laffan)
-- Ressources critiques non-énergétiques : **urée >850 $/t (+80 %)**, hélium (Qatar ~1/3 mondial), méthanol (quasi-doublé), aluminium en hausse
-- Gazole France : ~1,95-2,15 €/l (remise 20 c/l **expire fin juin**) ; **inflation FR mai +2,4 %** (ré-accélération, gaz)
-- 3 soldats français tués (aucune nouvelle perte) ; ~900 millions de barils de pétrole perdus (estim.) depuis le 28 février (≈14 semaines)
+> **Aucun chiffre daté n'est figé ici.** Prix (Brent futures / Dated Brent, gazole), volumes (flux Ormuz, SPR, releases IEA), niveaux de stocks/UGS, statuts d'infrastructure et pertes humaines évoluent en continu. **La synthèse périodique la plus récente (`docs/synthese_J*-J*.md`) fait foi sur l'état courant** : la lire avant toute analyse.
+>
+> Ne jamais hardcoder de valeur datée dans ce fichier (rechargé à chaque session → risque d'ancrage sur une donnée périmée, contraire au principe « Réviser, ne pas ancrer »). Si une donnée d'état doit être citée, la sourcer depuis la synthèse courante, pas depuis CLAUDE.md.
 
 ## Structure des fichiers
 
 ```
 ├── CLAUDE.md                          # Ce fichier — instructions pour Claude Code
-├── index.md                           # Vue d'ensemble + synthèse des 3 scénarios
-├── scenario_optimiste.md              # Scénario A (12-18%) — Accord durable
-├── scenario_realiste.md               # Scénario B (58-66%) — Enlisement (CENTRAL)
-├── scenario_pessimiste.md             # Scénario C (22-30%) — Escalade
-├── calendrier_penuries.md             # Échéancier prévisionnel des phases de tension par produit
-├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-├── synthese_J89-J95.md                # Dernière synthèse périodique (fait foi sur l'état courant)
-├── sources.md                         # Sources OSINT zone du conflit (classées et cotées)
-├── sources_infrastructures.md         # Sources infrastructures zone Ormuz
-├── sources_infrastructures_europe.md  # Sources infrastructures Europe
+├── README.md                          # Présentation publique, méthodologie, licence, citation
+├── CHANGELOG.md                       # Journal des versions
+├── docs/                              # Contenu analytique (markdown)
+│   ├── index.md                           # Vue d'ensemble + synthèse des 3 scénarios
+│   ├── scenario_optimiste.md              # Scénario A (12-18%) — Accord durable
+│   ├── scenario_realiste.md               # Scénario B (58-66%) — Enlisement (CENTRAL)
+│   ├── scenario_pessimiste.md             # Scénario C (22-30%) — Escalade
+│   ├── calendrier_penuries.md             # Échéancier prévisionnel des phases de tension par produit
+│   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
+│   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
+│   ├── synthese_J89-J95.md                # Dernière synthèse périodique (fait foi sur l'état courant)
+│   ├── sources.md                         # Sources OSINT zone du conflit (classées et cotées)
+│   ├── sources_infrastructures.md         # Sources infrastructures zone Ormuz
+│   ├── sources_infrastructures_europe.md  # Sources infrastructures Europe
+│   └── process/                           # Pilotage interne du dépôt
+│       ├── AUDIT.md                           # Audit de publication GitHub (priorités P0/P1/P2)
+│       └── PLAN_P0.md                         # Plan d'action Sprint P0
 └── app/                               # Application web — dashboards HTML statiques (voir section dédiée)
     ├── index.html                         # Centre de pilotage (entrée)
     ├── carte_infrastructures.html         # Carte zone Ormuz (54 sites + 7 pipelines)
     ├── carte_infrastructures_europe.html  # Carte Europe (~160 entrées)
+    ├── chronologie.html                   # Frise chronologique interactive
     ├── dependances_ormuz_pays.html        # Part des imports énergétiques UE via Ormuz, par pays/carburant
     ├── dependances_ressources_critiques.html  # 13 ressources critiques non-énergétiques (hélium, NPK, alu, méthanol…)
     ├── stocks_pays_ue.html                # Stocks pétroliers stratégiques + UGS gaz par pays UE
@@ -77,8 +78,8 @@ Suivi de la **crise du détroit d'Ormuz** déclenchée le 28 février 2026 par l
     └── styles_common.css                  # Feuille de style partagée (thème sombre)
 ```
 
-> Note : `impact_france_hormuz.md` (historique chronologique J1→J89 envisagé) n'a jamais été créé ; ses références ont été retirées de `app/index.html`, `infrastructures_europe.md` et `sources_infrastructures_europe.md`. À créer si le besoin se confirme.
-> Convention : les synthèses périodiques sont nommées `synthese_J<début>-J<fin>.md` ; la plus récente reflète l'état courant et doit être ajoutée à cette arborescence à sa création.
+> Note : `impact_france_hormuz.md` (historique chronologique J1→J89 envisagé) n'a jamais été créé ; ses références ont été retirées de `app/index.html`, `docs/infrastructures_europe.md` et `docs/sources_infrastructures_europe.md`. À créer si le besoin se confirme.
+> Convention : les synthèses périodiques sont nommées `docs/synthese_J<début>-J<fin>.md` ; la plus récente reflète l'état courant et doit être ajoutée à cette arborescence à sa création.
 
 ## Application web (dashboards)
 
@@ -93,9 +94,9 @@ Le dossier `app/` est une **application web statique** (HTML + CSS, **aucun fram
 ### Règle de cohérence (CRITIQUE)
 Dashboards et fichiers `.md` doivent rester **synchronisés**. À chaque mise à jour de fond :
 
-1. **Compteur J-day et date** : mettre à jour `<title>`, `<nav class="topbar">` et tous les sous-titres (`<p class="subtitle">`) sur les 7 pages HTML. Vérifier la valeur affichée avant édition (au moment de cette consolidation : `3 juin 2026 (J95)`).
+1. **Compteur J-day et date** : valeur unique de référence = celle affichée dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`). La date n'est volontairement pas figée dans CLAUDE.md pour éviter un (N+1)ᵉ emplacement à synchroniser. La propager telle quelle vers `<title>`, `<nav class="topbar">` et tous les sous-titres (`<p class="subtitle">`) des 7 pages HTML, après avoir vérifié la valeur actuellement affichée.
 2. **Données chiffrées** (prix, stocks, % UGS, days of cover, flux Ormuz) : tout chiffre modifié dans un `.md` doit l'être dans le dashboard correspondant (et inversement).
-3. **Statuts d'infrastructure** (opérationnel / endommagé / hors service / saisi) : propager simultanément dans `infrastructures_europe.md` et `carte_infrastructures*.html`.
+3. **Statuts d'infrastructure** (opérationnel / endommagé / hors service / saisi) : propager simultanément dans `docs/infrastructures_europe.md` et `carte_infrastructures*.html`.
 4. **Méthodologie** : la section « Méthodologie » d'`app/index.html` doit refléter les baselines réellement utilisées (releases IEA, tirages SPR, cotation des sources).
 5. **Contrôle final** : après édition, vérifier qu'aucun chiffre ou statut ne diffère entre `.md` et HTML. En cas de doute, le `.md` source fait foi sur les dashboards.
 
@@ -109,14 +110,14 @@ Dashboards et fichiers `.md` doivent rester **synchronisés**. À chaque mise à
 ## Méthodologie d'analyse
 
 ### Workflow de mise à jour
-1. **Rechercher** : interroger les sources de `sources.md` par ordre de priorité (Tier 1 d'abord).
+1. **Rechercher** : interroger les sources de `docs/sources.md` par ordre de priorité (Tier 1 d'abord).
 2. **Coter & recouper** : attribuer une cote Admiralty (cf. ci-dessous) ; croiser **≥ 2 sources indépendantes** pour tout fait militaire ou chiffre économique. Indépendantes = pas la même source primaire reprise en boucle.
 3. **Classer** : Militaire / Politique-Diplomatique / Économique-Marchés / Impact France.
 4. **Analyser (ACH)** : confronter les hypothèses concurrentes avant de conclure (cf. ci-dessous), puis évaluer l'impact sur chaque scénario (probabilités, trajectoires).
 5. **Mettre à jour** : fichiers de scénarios + document principal + dashboards concernés (règle de cohérence).
 
 ### Cotation des sources (système Admiralty / OTAN STANAG 2511)
-Noter chaque source clé par un couple **lettre + chiffre** dans `sources.md` :
+Noter chaque source clé par un couple **lettre + chiffre** dans `docs/sources.md` :
 - **Fiabilité de la source** : A (totalement fiable) · B (généralement fiable) · C (assez fiable) · D (pas toujours fiable) · E (peu fiable) · F (non évaluable).
 - **Crédibilité de l'information** : 1 (confirmée par d'autres sources) · 2 (probablement vraie) · 3 (possiblement vraie) · 4 (douteuse) · 5 (improbable) · 6 (non évaluable).
 - Ex. : un communiqué officiel recoupé = `B2` ; une rumeur réseau social isolée = `E5`/`F6`. Les deux axes sont **indépendants** : une source fiable peut relayer une info non confirmée.

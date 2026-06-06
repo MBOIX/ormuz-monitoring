@@ -24,7 +24,7 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 ## [J95] — 2026-06-03
 
 ### Consolidation périodique
-- État de situation au jour 95 du conflit (voir [`synthese_J89-J95.md`](synthese_J89-J95.md), qui fait foi sur l'état courant).
+- État de situation au jour 95 du conflit (voir [`synthese_J89-J95.md`](docs/synthese_J89-J95.md), qui fait foi sur l'état courant).
 - Faits saillants : suspension iranienne des pourparlers (1er juin), alerte Exxon sur le Dated Brent physique, sortie des EAU de l'OPEP, force majeure QatarEnergy à Ras Laffan, inflation FR +2,4 % (INSEE, mai).
 - Probabilités des scénarios : A 12-18 % · B 58-66 % (central) · C 22-30 %.
 

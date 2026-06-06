@@ -6,7 +6,7 @@
 
 > **Comment lire ce dossier — instantané daté, situation évolutive.**
 > Dernière consolidation : **3 juin 2026 (J95)** · arrêt des données : 3 juin 2026, heure de Paris.
-> Suivi d'une crise **réelle et en cours** : chaque chiffre (prix, stocks, flux) périme vite ; au-delà de ~48-72 h, données à revérifier. La synthèse périodique la plus récente (`synthese_*.md`) fait foi. Analyse **OSINT sur sources ouvertes**, à vocation informative — ni conseil financier, ni source de sécurité opérationnelle. Voir [`README.md`](README.md) et [`sources.md`](sources.md).
+> Suivi d'une crise **réelle et en cours** : chaque chiffre (prix, stocks, flux) périme vite ; au-delà de ~48-72 h, données à revérifier. La synthèse périodique la plus récente (`synthese_*.md`) fait foi. Analyse **OSINT sur sources ouvertes**, à vocation informative — ni conseil financier, ni source de sécurité opérationnelle. Voir [`README.md`](../README.md) et [`sources.md`](sources.md).
 
 ---
 

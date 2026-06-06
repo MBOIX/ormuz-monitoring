@@ -53,9 +53,9 @@ Le raisonnement suit des **principes d'objectivité** stricts : factualité, sé
 
 L'état courant n'est **pas** recopié ici (pour éviter toute désynchronisation des chiffres). Il fait foi dans :
 
-➡️ **[`synthese_J89-J95.md`](synthese_J89-J95.md)** — synthèse périodique la plus récente.
+➡️ **[`synthese_J89-J95.md`](docs/synthese_J89-J95.md)** — synthèse périodique la plus récente.
 
-Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](index.md).
+Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](docs/index.md).
 
 ## Structure du dépôt
 
@@ -116,15 +116,15 @@ L'analyse applique des cadres d'évaluation standardisés :
 - **Distinction fait / interprétation / spéculation** — étiquetée explicitement ; les données manquantes ou contradictoires sont assumées plutôt que comblées.
 - **Règle clé du domaine** — séparer systématiquement le **Brent *futures*** (marché papier) du **Dated Brent *spot*** (physique) : l'écart est l'indicateur de la pénurie réelle.
 
-> Note de transparence : ces cadres sont la cible méthodologique du projet. Leur degré d'application au fil des fichiers est lui-même audité dans [`AUDIT.md`](AUDIT.md) (le dépôt documente ses propres écarts).
+> Note de transparence : ces cadres sont la cible méthodologique du projet. Leur degré d'application au fil des fichiers est lui-même audité dans [`AUDIT.md`](docs/process/AUDIT.md) (le dépôt documente ses propres écarts).
 
 ## Sources & fiabilité
 
 Toutes les sources sont recensées et cotées dans :
 
-- [`sources.md`](sources.md) — zone du conflit (militaire, politique, marchés).
-- [`sources_infrastructures.md`](sources_infrastructures.md) — infrastructures zone Ormuz.
-- [`sources_infrastructures_europe.md`](sources_infrastructures_europe.md) — infrastructures Europe.
+- [`sources.md`](docs/sources.md) — zone du conflit (militaire, politique, marchés).
+- [`sources_infrastructures.md`](docs/sources_infrastructures.md) — infrastructures zone Ormuz.
+- [`sources_infrastructures_europe.md`](docs/sources_infrastructures_europe.md) — infrastructures Europe.
 
 Données structurelles principales : IEA, EIA, Eurostat, AGSI+/GIE, JODI, prix-carburants.gouv.fr.
 

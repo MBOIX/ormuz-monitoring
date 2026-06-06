@@ -796,7 +796,7 @@ Chaque date prévisionnelle de bascule est obtenue par **croisement de 5 facteur
 4. **Élasticité-prix observée** dans crises antérieures — analogies utilisées : grèves raffineries France 2010 et 2022 (gazole), guerre Ukraine 2022 (huile tournesol, gaz, engrais), choc pétrolier 1973 (rationnement administratif), Covid 2020 (papier toilette, paracétamol, ruée comportementale).
 5. **Observations terrain J0 → J73** — rapports stations en rupture (5-20 % selon enseigne et région d'après scenario_realiste.md), alertes filières (ANSM bulletins, ANIA communiqués, FNTR/FNSEA/Coop de France), reportages presse pro (Réussir, La France Agricole, Le Moniteur des Pharmacies), tracking maritime (Kpler, UKMTO).
 
-**Règle de recoupement** : conformément au [CLAUDE.md](CLAUDE.md) du projet, **chaque date prévisionnelle nécessite au minimum 2 sources indépendantes Tier 1**. Les dates non recoupées sont marquées `?` avec confiance ★ uniquement.
+**Règle de recoupement** : conformément au [CLAUDE.md](../CLAUDE.md) du projet, **chaque date prévisionnelle nécessite au minimum 2 sources indépendantes Tier 1**. Les dates non recoupées sont marquées `?` avec confiance ★ uniquement.
 
 **Limites explicites de la méthode** :
 - Le **niveau réel des stocks France au déclenchement** (28 février 2026) n'est pas public pour les médicaments individuels ni pour les stocks privés agro-alimentaires. Marge ±2-3 semaines sur les bascules de paliers.

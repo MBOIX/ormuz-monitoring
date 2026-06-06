@@ -11,12 +11,12 @@
 <nav class="topbar">
   <div class="brand">Crise du detroit d'Ormuz<span class="crisis"> — 3 juin 2026 (J95)</span></div>
   <a href="index.html" class="active">Accueil</a>
+  <a href="chronologie.html">Chronologie</a>
   <a href="carte_infrastructures.html">Carte zone Ormuz</a>
   <a href="carte_infrastructures_europe.html">Carte Europe</a>
   <a href="dependances_ormuz_pays.html">Dependances UE (energie)</a>
   <a href="dependances_ressources_critiques.html">Ressources critiques</a>
   <a href="stocks_pays_ue.html">Stocks UE</a>
-  <a href="synthese_france.html">Synthèse imprimable</a>
 </nav>
 
 <main class="page">
@@ -42,6 +42,17 @@
       <li><strong>Probabilités J95</strong> : <strong>A 12-18 % (WH dénie MOU, Iran suspend)</strong>, <strong>B 58-66 % (central consolidé)</strong>, <strong>C 22-30 % (menace fermeture totale + Bab el-Mandeb)</strong>.</li>
     </ul>
     <p style="margin-bottom: 0; font-size: 13px; font-weight: bold; color: var(--orange, #e67e22);">Cesser de relativiser : l'éclaircie diplomatique est tactique, le dommage économique est structurel et persistera des trimestres même si MOU signé.</p>
+  </div>
+
+  <h2>Frise chronologique</h2>
+  <div class="cards">
+    <a class="card linkcard" href="chronologie.html" style="border-color: rgba(88,166,255,0.4);">
+      <h3>Chronologie interactive de la crise</h3>
+      <p><strong>154 evenements dates</strong> du 28 fevrier (J1) au 3 juin 2026 (J95) : militaire, diplomatique, marches, impact France — recoupes et cotes depuis 8 fichiers sources.</p>
+      <p>Frise filtrable (categorie, importance), en-tetes de phase, segments « agregats mensuels » et « echeances prospectives », contradictions et vides documentaires signales.</p>
+      <p>Source : <code>chronologie.md</code> (154 evenements, 14 contradictions, 6 vides documentaires).</p>
+      <p style="color: var(--accent); margin-top: 10px; font-size: 11.5px;">Ouvrir la frise →</p>
+    </a>
   </div>
 
   <h2>Cartes interactives</h2>
@@ -105,6 +116,11 @@
       <p><code>index.md</code> — Synthese des 3 scenarios (optimiste, realiste, pessimiste) et probabilites.</p>
     </div>
     <div class="card">
+      <h3>Chronologie</h3>
+      <p><code>chronologie.md</code> — Fil chronologique consolide : 154 evenements dates (28 fev → 3 juin 2026), sources croisees, contradictions et vides documentaires assumes.</p>
+      <p>Vue interactive : <a href="chronologie.html" style="color: var(--accent);">chronologie.html</a>.</p>
+    </div>
+    <div class="card">
       <h3>Scenarios</h3>
       <p><code>scenario_optimiste.md</code> (12-18 %) — Accord durable</p>
       <p><code>scenario_realiste.md</code> (58-66 %) — Enlisement [CENTRAL]</p>
@@ -128,7 +144,7 @@
 
   <h2>Methodologie</h2>
   <div class="card">
-    <p style="margin-top: 0;"><strong>Donnees</strong> : recoupement minimum 2 sources Tier 1/2 (IEA, AGSI+, GIE, ALSI, ENTSOG, operateurs, Bloomberg, Reuters, Al Jazeera, Argus, S&amp;P Global). Pour les carburants raffines FR/UE (gazole, SP95/98, FOD, GNR) : DGEC NPG hebdo, prix-carburants.gouv.fr (API open data), CPDP, SAGESS, Eurostat (<code>nrg_stk_oilm</code>, <code>nrg_stk_oem</code>, <code>NRG_TI_OIL</code>), EU Weekly Oil Bulletin, JODI-Oil, FranceAgriMer (GNR), FF3C (FOD), IRIS OSFME. Voir <a href="../sources.md" style="color: var(--accent);">sources.md</a> pour la liste complete.</p>
+    <p style="margin-top: 0;"><strong>Donnees</strong> : recoupement minimum 2 sources Tier 1/2 (IEA, AGSI+, GIE, ALSI, ENTSOG, operateurs, Bloomberg, Reuters, Al Jazeera, Argus, S&amp;P Global). Pour les carburants raffines FR/UE (gazole, SP95/98, FOD, GNR) : DGEC NPG hebdo, prix-carburants.gouv.fr (API open data), CPDP, SAGESS, Eurostat (<code>nrg_stk_oilm</code>, <code>nrg_stk_oem</code>, <code>NRG_TI_OIL</code>), EU Weekly Oil Bulletin, JODI-Oil, FranceAgriMer (GNR), FF3C (FOD), IRIS OSFME. Voir <a href="../docs/sources.md" style="color: var(--accent);">sources.md</a> pour la liste complete.</p>
     <p><strong>Niveaux pre-crise (baseline)</strong> : 2024-2025 confirmes par publications mensuelles agences nationales.</p>
     <p><strong>Niveaux J95 (3 juin 2026)</strong> : estimations explicitement annotees, deduites des releases coordonnees IEA (400 Mb le 11 mars 2026) + tirage US complementaire (programme 172 mb) + <strong>SPR US 365,1 mb (semaine du 22 mai, -9,1 mb)</strong> + donnees mensuelles disponibles. EAU sorties de l'OPEP le 3 mai (hors quotas).</p>
     <p><strong>Conventions</strong> : prix Brent en USD/baril (distinguer futures vs Dated spot), capacites raffineries en kb/j, UGS gaz en bcm working volume, dates au format jj mois aaaa.</p>
@@ -136,7 +152,7 @@
   </div>
 
   <div class="meta-foot">
-    Maintenu sous <code>OSINT/Ormuz/</code> · Voir <a href="CLAUDE.md">CLAUDE.md</a> pour les conventions du projet ·
+    Maintenu sous <code>OSINT/Ormuz/</code> · Voir <a href="../CLAUDE.md">CLAUDE.md</a> pour les conventions du projet ·
     Mise a jour recommandee : hebdomadaire pour le gaz (AGSI+), mensuelle pour le petrole (IEA OMR), sur evenement pour les statuts d'infrastructure.
   </div>
 </main>
