@@ -110,7 +110,7 @@ Le reste (présentation, polish, cohérence numérique résiduelle) est importan
 
 # P2 — Polish (finition professionnelle)
 
-## P2.1 — Ré-accentuer le texte français des dashboards *(Majeur visuellement)* — ⬜ **[À FAIRE : chrome encore « detroit / Dependances / energie »]**
+## P2.1 — Ré-accentuer le texte français des dashboards *(Majeur visuellement)* — ✅ **[FAIT J98 : chrome + corps + données JS des cartes ré-accentués]**
 
 **Constat.** 6 pages sur 7 ont un chrome **sans accents** : « Centre de pilotage — Crise du detroit d'Ormuz », « Dependances », « energie », « strategique », « petrole ». La barre de nav **mélange** accentué et non-accentué (« Synthèse imprimable » vs « Dependances UE »). L'encodage est UTF-8 : aucun obstacle technique. Pour un livrable français destiné à des décideurs, c'est le signal « amateur » le plus visible. `synthese_france.html`, lui, est parfaitement accentué — modèle à suivre.
 
@@ -176,7 +176,7 @@ Le reste (présentation, polish, cohérence numérique résiduelle) est importan
 - [ ] ⬜ Cartes hors-ligne (vendoriser Leaflet + tuiles) — **non fait** (toujours `unpkg` + `cartocdn`).
 
 **Sprint 3 — Polish (P2)**
-- [ ] ⬜ Ré-accentuation des 6 dashboards — **non fait** (chrome encore « detroit / Dependances / energie »).
+- [x] ✅ Ré-accentuation des 6 dashboards — **fait (J98)** : `<title>`, nav, sous-titres, corps et chaînes de texte français des cartes Leaflet (popups/labels) ré-accentués ; ~1280 accents ajoutés, validés par invariant « dé-accentuation avant = après » (seules les marques diacritiques ont changé, aucune structure/attribut/nom de fichier).
 - [ ] ⬜ Accessibilité WCAG (contrastes, couleur+texte, `<noscript>`)
 - [ ] ⬜ Échelles de barres comparables
 - [x] ✅ Réconciliation des chiffres périmés — **fait (J98)** : SPR 357,1 mb, gaz UE ~41,5 %, Qatar mi-août, « 2 FINUL + 1 Chammal/Irak », compteurs chronologie 169/18/6.
