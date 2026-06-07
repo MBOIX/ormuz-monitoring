@@ -75,7 +75,8 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
     ├── dependances_ormuz_pays.html        # Part des imports énergétiques UE via Ormuz, par pays/carburant
     ├── dependances_ressources_critiques.html  # 13 ressources critiques non-énergétiques (hélium, NPK, alu, méthanol…)
     ├── stocks_pays_ue.html                # Stocks pétroliers stratégiques + UGS gaz par pays UE
-    └── styles_common.css                  # Feuille de style partagée (thème sombre)
+    ├── styles_common.css                  # Feuille de style partagée (thème sombre)
+    └── nav.js                             # Header + footer mutualisés (Web Components natifs <site-nav>/<site-footer>)
 ```
 
 > Note : `impact_france_hormuz.md` (historique chronologique J1→J89 envisagé) n'a jamais été créé ; ses références ont été retirées de `app/index.html`, `docs/infrastructures_europe.md` et `docs/sources_infrastructures_europe.md`. À créer si le besoin se confirme.
@@ -83,28 +84,28 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 
 ## Application web (dashboards)
 
-Le dossier `app/` est une **application web statique** (HTML + CSS, **aucun framework JS, aucune dépendance externe**) qui matérialise les données des fichiers analytiques. Ouverture en local par double-clic ou via `python3 -m http.server` depuis `app/`.
+Le dossier `app/` est une **application web statique** (HTML + CSS + un unique composant JS natif `nav.js`, **aucun framework, aucun CDN applicatif, aucune dépendance externe**) qui matérialise les données des fichiers analytiques. Ouverture en local par double-clic ou via `python3 -m http.server` depuis `app/`.
 
 ### Architecture
 - **Point d'entrée** : `app/index.html` (« Centre de pilotage »).
 - **Feuille de style unique** : `app/styles_common.css` — variables CSS (`--bg`, `--panel`, `--accent`, `--green/yellow/orange/red`), thème sombre type GitHub. Toute nouvelle page s'y rattache.
-- **Barre de navigation (`<nav class="topbar">`)** : identique sur toutes les pages (marque + compteur J-day + liens vers toutes les vues). La page courante porte la classe `active`.
+- **Header & footer mutualisés** : générés par les Web Components natifs `<site-nav active="…">` et `<site-footer [variant="…"]>` définis dans `app/nav.js` (**source unique**, plus aucune duplication entre pages). Chaque page n'écrit que la balise + l'attribut `active` ; `nav.js` rend la barre `topbar` (marque + compteur J-day + liens), pose la classe `active` et le pied de page. La barre est `position: sticky` portée par `<site-nav>` (cf. `styles_common.css`), pas par `.topbar`. Toute modification de l'ordre/des liens de nav ou du texte de footer se fait **uniquement dans `nav.js`**.
 - **Codage couleur** : vert = nominal / sûr ; jaune = vigilance ; orange = engagé / tendu ; rouge = critique. Respecter cette sémantique pour tout nouvel indicateur.
 
 ### Règle de cohérence (CRITIQUE)
 Dashboards et fichiers `.md` doivent rester **synchronisés**. À chaque mise à jour de fond :
 
-1. **Compteur J-day et date** : valeur unique de référence = celle affichée dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`). La date n'est volontairement pas figée dans CLAUDE.md pour éviter un (N+1)ᵉ emplacement à synchroniser. La propager telle quelle vers `<title>`, `<nav class="topbar">` et tous les sous-titres (`<p class="subtitle">`) des 7 pages HTML, après avoir vérifié la valeur actuellement affichée.
+1. **Compteur J-day et date** : valeur unique de référence = celle affichée dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`). La date n'est volontairement pas figée dans CLAUDE.md pour éviter un (N+1)ᵉ emplacement à synchroniser. Pour la barre de nav ET le pied de page, un seul point de mise à jour : la constante `ASOF` de `app/nav.js` (propagée automatiquement aux 7 pages). Restent à mettre à jour page par page : les `<title>` et les sous-titres (`<p class="subtitle">`), qui sont propres à chaque page. Vérifier la valeur actuellement affichée avant de la changer.
 2. **Données chiffrées** (prix, stocks, % UGS, days of cover, flux Ormuz) : tout chiffre modifié dans un `.md` doit l'être dans le dashboard correspondant (et inversement).
 3. **Statuts d'infrastructure** (opérationnel / endommagé / hors service / saisi) : propager simultanément dans `docs/infrastructures_europe.md` et `carte_infrastructures*.html`.
 4. **Méthodologie** : la section « Méthodologie » d'`app/index.html` doit refléter les baselines réellement utilisées (releases IEA, tirages SPR, cotation des sources).
 5. **Contrôle final** : après édition, vérifier qu'aucun chiffre ou statut ne diffère entre `.md` et HTML. En cas de doute, le `.md` source fait foi sur les dashboards.
 
 ### Quand modifier l'app
-- Évolution des chiffres macro / stocks / prix → page concernée + date dans la topbar de toutes les pages.
+- Évolution des chiffres macro / stocks / prix → page concernée ; la date/J-day de la nav et du footer se met à jour une seule fois via `ASOF` dans `app/nav.js`.
 - Nouveau document analytique `.md` → ajouter une carte dans « Documents analytiques » d'`app/index.html`.
-- Nouveau dashboard → réutiliser `styles_common.css` + la `topbar` standard, et ajouter le lien sur toutes les autres pages (cohérence de navigation).
-- **Ne pas introduire** de framework JS, de CDN ni de dépendance réseau : l'app doit rester ouvrable hors-ligne.
+- Nouveau dashboard → réutiliser `styles_common.css`, placer `<site-nav active="…">`, `<site-footer>` et `<script src="nav.js"></script>`, puis ajouter une entrée dans le tableau `LINKS` de `app/nav.js` (le lien apparaît alors sur **toutes** les pages — un seul endroit à éditer).
+- **Ne pas introduire** de framework JS, de CDN ni de dépendance réseau : l'app doit rester ouvrable hors-ligne. Le JS vanilla local et sans dépendance (ex. `nav.js`, Web Components natifs) est admis ; un framework, un bundler ou un script distant ne l'est pas.
 - **Exception connue (à résorber)** : `carte_infrastructures.html` et `carte_infrastructures_europe.html` chargent **Leaflet via le CDN unpkg** + des **tuiles en ligne** → connexion réseau requise. Les autres pages sont strictement hors-ligne. Pour un usage 100 % hors-ligne des cartes : héberger Leaflet en local et embarquer un jeu de tuiles.
 
 ## Méthodologie d'analyse
