@@ -233,16 +233,7 @@
 </head>
 <body>
 
-<nav class="topbar">
-  <div class="brand">Crise du détroit d'Ormuz<span class="crisis"> — 6 juin 2026 (J98)</span></div>
-  <a href="index.html">Accueil</a>
-  <a href="carte_infrastructures.html" class="active">Carte zone Ormuz</a>
-  <a href="carte_infrastructures_europe.html">Carte Europe</a>
-  <a href="dependances_ormuz_pays.html">Dépendances UE (énergie)</a>
-  <a href="dependances_ressources_critiques.html">Ressources critiques</a>
-  <a href="stocks_pays_ue.html">Stocks UE</a>
-  <a href="chronologie.html">Chronologie</a>
-</nav>
+<site-nav active="carte-ormuz"></site-nav>
 
 <div id="app">
   <aside id="sidebar">
@@ -778,11 +769,8 @@ if (allLatLng.length) {
 }
 </script>
 
-<footer class="asof-note">
-  <strong>Instantané au 6 juin 2026 (J98) — situation évolutive.</strong>
-  Suivi OSINT d'une crise réelle et en cours : les chiffres (prix, stocks, flux) périment vite, à revérifier au-delà de ~48-72 h. La synthèse périodique la plus récente fait foi.
-  Analyse sur sources ouvertes — ni conseil financier, ni source de sécurité opérationnelle. · <a href="../README.md">À propos &amp; méthodologie</a>
-</footer>
+<site-footer></site-footer>
 
+<script src="nav.js"></script>
 </body>
 </html>

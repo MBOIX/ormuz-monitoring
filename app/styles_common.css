@@ -28,6 +28,18 @@ html, body {
 }
 
 /* === Topbar navigation === */
+/* Header & footer mutualisés (Web Components nav.js). Le sticky vit sur
+   <site-nav> : appliqué à .topbar, il serait neutralisé par l'enveloppe du
+   custom element (de la même hauteur que la barre). */
+site-nav {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+site-footer {
+  display: block;
+}
 .topbar {
   display: flex;
   align-items: center;
@@ -35,9 +47,6 @@ html, body {
   padding: 10px 20px;
   background: var(--panel);
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 .topbar .brand {
   font-weight: 600;
