@@ -4,6 +4,30 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 
 ## [Non publié]
 
+### Ajouté (documents thématiques, J103)
+- **[`docs/flux_mer_rouge.md`](docs/flux_mer_rouge.md)** : état de l'art chiffré des flux du corridor mer Rouge (Bab-el-Mandeb ↔ Suez ↔ SUMED) par ressource — pétrole, GNL, conteneurs, vracs — baseline 2023 vs état actuel (détournement Cap de Bonne-Espérance), sources EIA/IMF/UNCTAD cotées.
+- **[`docs/adblue_cycle_de_vie.md`](docs/adblue_cycle_de_vie.md)** : document vulgarisé documentant tout le cycle de vie de l'AdBlue (gaz → ammoniac → urée → AdBlue), production française (un seul site intégré : Yara Le Havre), chaîne d'import/transit, prix, **6 maillons faibles**, scénarios prospectifs calibrés (ICD 203) et recommandations. Méthode : 6 axes OSINT + vérification adversariale (31 confirmés, 3 réfutés corrigés, 8 invérifiables signalés), 46 sources cotées.
+- **[`docs/synthese_J98-J103.md`](docs/synthese_J98-J103.md)** : ajout d'une section « Focus prospectif — Confinement énergétique & AdBlue » (verdict calibré : risque de confinement carburant quasi nul à horizon semaines ; AdBlue = maillon faible du fret à surveiller).
+- Cartes « Flux mer Rouge » et « AdBlue — cycle de vie » ajoutées dans `app/index.html` (Documents analytiques).
+
+## [J103] — 2026-06-10
+
+### Consolidation périodique
+- **Nouvelle synthèse qui fait foi** : [`synthese_J98-J103.md`](docs/synthese_J98-J103.md) (fenêtre 6 → 10 juin 2026). Méthode : 6 axes OSINT parallèles, recoupement ≥ 2 sources indépendantes, vérification adversariale (42 claims confirmés, 0 réfuté, 5 invérifiables ; cotation Admiralty), étiquetage fait/interprétation/spéculation.
+- **Focus mer Rouge** : le 8 juin, les Houthis décrètent l'interdiction de la navigation israélienne en mer Rouge (menace verbale, aucun navire attaqué sur la fenêtre) — **second verrou maritime potentiel** sur Bab-el-Mandeb en plus d'Ormuz ; fragilise le contournement via SUMED (+150 %).
+- **Carte enrichie** : `app/carte_infrastructures.html` passe de 54 à **67 sites** (ajout de 13 infrastructures de la façade mer Rouge / Bab-el-Mandeb / Suez : Petro Rabigh, Jizan + IGCC, têtes SUMED Aïn Sokhna & Sidi Kerir, raffinerie de Suez, ports yéménites Hodeidah/Salif/Mokha, Bashayer & Port-Soudan, Horizon Djibouti) ; vue carte élargie vers l'ouest. Sources dans `sources_infrastructures.md`.
+- **Militaire** : ~30 missiles iraniens tirés directement sur Israël (7-8 juin) puis pause conditionnelle du CGRI ; 7e navire neutralisé par le blocus US (*Marivex*, 8 juin). Aucune nouvelle perte française.
+- **Marchés** : Brent futures ~91,8 $ (10 juin), point bas ~89,7 $ le 9 juin (~−12 % sur le mois), WTI ~88,2 $ ; 3e « signal de réouverture » d'Ormuz (Wright, 9 juin) non chiffré/non recoupé.
+- **Check stocks toutes ressources** : gaz UE ~42,5 % (9 juin) ; SPR US figé à 357,1 mb (WPSR du 5 juin non publié) ; aluminium en backwardation (pénurie physique) ; urée papier ~402 $/t (+6,5 % le 9 juin).
+- **Probabilités inchangées vs J98** : A 8-15 % · B 60-66 % (central) · C 22-30 % — la fenêtre 6-10 juin confirme l'enlisement ; la menace mer Rouge déplace la nature du risque C sans en franchir la borne.
+
+### Corrigé (principe « réviser, ne pas ancrer »)
+- Force majeure QatarEnergy (Ras Laffan) : échéance **mi-août maintenue** (établie à J98) — une annonce plus ancienne (mi-mai) ne justifie pas une révision à la baisse ; statut non reconfirmé dans la fenêtre.
+- Affirmations non vérifiables écartées des livrables : changement de gouverneur de la Banque de France, désignation nominale du successeur du Guide suprême — sourcées mais non confirmables, retirées par prudence factuelle.
+
+### Signalé (données absentes assumées)
+- Dated Brent physique 6-10 juin, débit Ormuz quotidien exact, WPSR EIA semaine au 5 juin, cotations hélium/méthanol/soufre propres à la fenêtre, croissance BdF 2026 (mi-juin), inflation FR juin (fin juin), ventilation gaz par pays : non disponibles en source ouverte — non comblés par estimation. Divergence non résolue sur le nombre de stations FR en difficulté (~2 307 J98 vs ~3 % officiel J103).
+
 ## [J98] — 2026-06-06
 
 ### Consolidation périodique

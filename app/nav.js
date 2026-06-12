@@ -6,7 +6,7 @@
 
   // Valeur de référence unique (cf. règle de cohérence CLAUDE.md) :
   // à mettre à jour ici lors d'un nouveau jalon — propagée à la nav ET au footer.
-  var ASOF = "6 juin 2026 (J98)";
+  var ASOF = "10 juin 2026 (J103)";
 
   // Ordre de la navigation = source unique. Modifier ici se répercute sur toutes les pages.
   var LINKS = [

@@ -1,7 +1,7 @@
 # Sources — Carte des infrastructures pétrolières et gazières
-### Zone du conflit Ormuz élargie — État au 6 juin 2026 (J98)
+### Zone du conflit Ormuz élargie + façade mer Rouge — État au 10 juin 2026 (J103)
 
-Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le dataset de la carte `app/carte_infrastructures.html`. Couverture : 54 sites individuels (champs, raffineries, terminaux, pétrochimie, centrales) + 7 pipelines stratégiques.
+Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le dataset de la carte `app/carte_infrastructures.html`. Couverture : 67 sites individuels (champs, raffineries, terminaux, pétrochimie, centrales) + 7 pipelines stratégiques — dont la façade mer Rouge / Bab-el-Mandeb / Suez ajoutée à J103.
 
 ---
 
@@ -12,7 +12,7 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 | **Coordonnées géographiques** | Vérification croisée Wikipedia + OpenStreetMap + Global Energy Monitor (GEM). Précision visée 0,01° (~1,1 km). |
 | **Capacité nominale** | Source primaire opérateur (Aramco, ADNOC, NIOC, QatarEnergy, KPC, Bapco) ou EIA country profiles. |
 | **Statut opérationnel** | Recoupement minimum 2 sources Tier 1/2 ; pour les sites endommagés, exigence de communiqué officiel ou imagerie satellite (ESA, Planet Labs, Maxar). |
-| **Date de référence** | 6 juin 2026 (J98) — révision recommandée hebdomadaire. |
+| **Date de référence** | 10 juin 2026 (J103) — révision recommandée hebdomadaire. |
 
 ### Codification des statuts
 
@@ -292,6 +292,36 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 
 ---
 
+## Façade mer Rouge / Bab-el-Mandeb / canal de Suez — ajout J103 (10 juin 2026)
+
+Enrichissement de la carte avec 13 sites de la façade mer Rouge (Golfe → Suez → Bab-el-Mandeb), déclenché par la menace houthie du 8 juin (interdiction de navigation israélienne en mer Rouge, cf. `synthese_J98-J103.md`). Le bypass SUMED, devenu débouché de secours à +150 %, fait de cette façade un point critique du contournement d'Ormuz. Coordonnées vérifiées (≥2 sources si possible) ; statuts cotés selon la même grille.
+
+**Arabie saoudite (côte mer Rouge)**
+- Petro Rabigh — https://en.wikipedia.org/wiki/Petro_Rabigh · https://www.mees.com/2026/5/1/refining-petrochemicals/saudi-arabias-petro-rabigh-in-the-money-with-q1-profit/
+- Terminal de Jeddah (ex-raffinerie, hub produits depuis 2017) — https://www.mees.com/2017/11/24/refining-petrochemicals/saudi-shutters-jeddah-refinery-ahead-of-jazan-start-up/
+- Raffinerie de Jizan (Jazan) — https://saudipedia.com/en/article/1304/economy-and-business/saudi-aramco/jazan-refinery · https://en.wikipedia.org/wiki/Jizan
+- Centrale IGCC de Jizan (JIGPC, 3,8 GW) — https://www.nsenergybusiness.com/projects/jizan-integrated-gasification-combined-cycle-power-project/ · https://www.gem.wiki/Jizan_IGCC_power_plant
+
+**Égypte (têtes du pipeline SUMED + Suez)**
+- Terminal SUMED Aïn Sokhna (tête sud, golfe de Suez) — https://en.wikipedia.org/wiki/Sumed_pipeline · https://www.egyptindependent.com/egypts-sumed-oil-flows-jump-150-on-red-sea-trade-rerouting/
+- Terminal SUMED Sidi Kerir (tête nord, Méditerranée) — https://en.wikipedia.org/wiki/Sumed_pipeline · https://shipnext.com/port/sidi-kerir-terminal-egskt-egy
+- Raffinerie de Suez (El-Nasr Petroleum) — https://globalenergyobservatory.org/geoid/6489 · https://www.offshore-technology.com/marketdata/el-suez-i-refinery-egypt/
+
+**Yémen (côte mer Rouge, zone Houthi/gouvernementale)**
+- Port de Hodeidah (Al-Hudaydah) — https://en.wikipedia.org/wiki/Hudaydah_Port · https://maritime-executive.com/article/israel-targets-houthi-ports-of-hodeidah-and-ras-isa-with-more-airstrikes
+- Port de Salif (Saleef) — https://en.wikipedia.org/wiki/Hodeidah · (même source frappes Maritime Executive)
+- Port et centrale de Mokha (Al-Mukha) — https://en.wikipedia.org/wiki/Port_of_Mokha · https://openinframap.org/stats/area/Yemen/plants/-16172125
+- *Note : le terminal Ras Isa / FSO Safer figure déjà dans la carte (entrée `ras_isa_terminal`, statut `destroyed`), enrichi J103 du transfert de pétrole sur le VLCC « Yemen » (UNDP, 2023) — https://www.undp.org/press-releases/united-nations-completes-removal-oil-decaying-tanker-red-sea*
+
+**Soudan (mer Rouge — statuts `unknown`, guerre civile)**
+- Terminal de Bashayer (Marsa Bashayer, Nile Blend) — https://shipnext.com/port/bashayer-1-oil-terminal-ssd · https://www.gpsnauticalcharts.com/main/sa_gb53493a-red-sea-sudan-bashayer-oil-terminals-nautical-chart.html
+- Port-Soudan (terminal pétrolier) — https://www.eia.gov/international/content/analysis/countries_long/Sudan_and_South_Sudan/background.htm
+
+**Djibouti (proche Bab-el-Mandeb)**
+- Terminal Horizon Djibouti (Doraleh) — https://www.horizon-terminals.com/services_existing_terminals_h-djibouti.html · https://en.wikipedia.org/wiki/Port_of_Doraleh
+
+---
+
 ## Règles d'utilisation
 
 1. **Vérification croisée systématique** : tout statut `damaged` ou `destroyed` doit être confirmé par ≥ 2 sources Tier 1/2 indépendantes + idéalement imagerie satellite.
@@ -313,4 +343,4 @@ Ce fichier répertorie toutes les sources OSINT utilisées pour compiler le data
 
 ---
 
-*Compilation arrêtée au 6 juin 2026 (J98 du conflit). Total : 54 sites individuels + 7 pipelines stratégiques. Prochaine révision : 13 juin 2026.*
+*Compilation arrêtée au 10 juin 2026 (J103 du conflit). Total : 67 sites individuels + 7 pipelines stratégiques. Prochaine révision : 17 juin 2026.*

@@ -57,10 +57,13 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── scenario_realiste.md               # Scénario B (58-66%) — Enlisement (CENTRAL)
 │   ├── scenario_pessimiste.md             # Scénario C (22-30%) — Escalade
 │   ├── calendrier_penuries.md             # Échéancier prévisionnel des phases de tension par produit
+│   ├── flux_mer_rouge.md                   # État de l'art chiffré des flux du corridor mer Rouge (Bab-el-Mandeb/Suez/SUMED)
+│   ├── adblue_cycle_de_vie.md              # Doc vulgarisé : cycle de vie complet de l'AdBlue, maillons faibles, prospective
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-│   ├── synthese_J95-J98.md                # Dernière synthèse périodique (fait foi sur l'état courant)
-│   ├── synthese_J89-J95.md                # Synthèse périodique précédente (archivée)
+│   ├── synthese_J98-J103.md               # Dernière synthèse périodique (fait foi sur l'état courant) — focus mer Rouge
+│   ├── synthese_J95-J98.md                # Synthèse périodique précédente (archivée)
+│   ├── synthese_J89-J95.md                # Synthèse périodique antérieure (archivée)
 │   ├── sources.md                         # Sources OSINT zone du conflit (classées et cotées)
 │   ├── sources_infrastructures.md         # Sources infrastructures zone Ormuz
 │   ├── sources_infrastructures_europe.md  # Sources infrastructures Europe

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infrastructures énergétiques — Crise du détroit d'Ormuz (6 juin 2026 / J98)</title>
+<title>Infrastructures énergétiques — Ormuz & mer Rouge (10 juin 2026 / J103)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="stylesheet" href="styles_common.css">
 <style>
@@ -238,7 +238,7 @@
 <div id="app">
   <aside id="sidebar">
     <h1>Infrastructures énergétiques</h1>
-    <div class="subtitle">Crise du détroit d'Ormuz · 6 juin 2026 (J98)</div>
+    <div class="subtitle">Crise du détroit d'Ormuz · zone Golfe &amp; mer Rouge · 10 juin 2026 (J103)</div>
 
     <div class="section">
       <h2>Aperçu</h2>
@@ -284,8 +284,9 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 <script>
-// Dataset complet — 54 sites + 7 pipelines, compilé au 6 juin 2026 (J98)
-// Sources : Bloomberg, Reuters, Al Jazeera, IEA, EIA, Argus, GEM, Wikipedia
+// Dataset complet — 67 sites + 7 pipelines, enrichi au 10 juin 2026 (J103)
+// J103 : ajout de la façade mer Rouge / Bab-el-Mandeb / canal de Suez (13 sites)
+// Sources : Bloomberg, Reuters, Al Jazeera, IEA, EIA, Argus, GEM, Wikipedia, MEES, SUMED
 // Voir sources_infrastructures.md pour la liste complète
 var DATA = {
   infrastructures: [
@@ -350,7 +351,22 @@ var DATA = {
 
     { id:"aden_refinery", name:"Raffinerie d'Aden", country:"Yemen", type:"raffinerie", lat:12.78, lon:44.99, operator:"Aden Refinery Company", capacity:"0,15 mb/j (nominal, largement inactif)", status:"paused", status_note:"Fermée depuis 2015 ; gouvernement yéménite a approuvé réouverture en zone franche ; pas redémarrée.", sources:["yemenmonitor.com"] },
     { id:"marib_refinery", name:"Raffinerie & Champ de Marib", country:"Yemen", type:"raffinerie", lat:15.46, lon:45.32, operator:"Safer Exploration & Production", capacity:"~0,01 mb/j (très réduit)", status:"reduced", status_note:"Endommagée et sous capacité depuis guerre civile ; pipeline Marib-Ras Isa hors service.", sources:["Wikipedia — Marib-Ras Isa pipeline","farmonaut.com"] },
-    { id:"ras_isa_terminal", name:"Terminal de Ras Isa / FSO Safer", country:"Yemen", type:"terminal-export", lat:15.12, lon:42.62, operator:"Safer / contrôle Houthi", capacity:"Historique 0,4 mb/j (inactif)", status:"destroyed", status_note:"Port pétrolier détruit par frappes US 17 avril 2025 ; inactif.", sources:["Wikipedia — Marib-Ras Isa pipeline"] }
+    { id:"ras_isa_terminal", name:"Terminal de Ras Isa / FSO Safer", country:"Yemen", type:"terminal-export", lat:15.12, lon:42.62, operator:"Safer / contrôle Houthi", capacity:"Historique 0,4 mb/j (inactif)", status:"destroyed", status_note:"Port pétrolier détruit par frappes US 17 avril 2025 ; inactif. Pétrole de l'ex-FSO Safer transféré sur le VLCC 'Yemen' (ex-Nautica) en 2023 (opération UNDP).", sources:["Wikipedia — Marib-Ras Isa pipeline","undp.org — FSO Safer oil removal"] },
+
+    // === J103 — Façade mer Rouge / Bab-el-Mandeb / canal de Suez ===
+    { id:"petro_rabigh", name:"Petro Rabigh (raffinerie + pétrochimie)", country:"Saudi Arabia", type:"raffinerie", lat:22.716, lon:39.016, operator:"Rabigh Refining & Petrochemical Co. (Saudi Aramco / Sumitomo Chemical)", capacity:"~0,40 mb/j raffinage + ~2,4 Mt/an pétrochimie", status:"operational", status_note:"Côte mer Rouge, hors de portée houthie. Bénéfice T1 2026 positif. Débouché de produits contournant le Golfe.", sources:["en.wikipedia.org — Petro Rabigh","mees.com — Petro Rabigh Q1 profit"] },
+    { id:"jeddah_terminal", name:"Terminal de Jeddah (hub stockage produits)", country:"Saudi Arabia", type:"terminal-export", lat:21.45, lon:39.17, operator:"Saudi Aramco", capacity:"Stockage/distribution produits (ex-raffinerie 77 kb/j, fermée 2017)", status:"operational", status_note:"Ancienne raffinerie convertie en hub de stockage/distribution de produits pétroliers en 2017 ; n'est plus une raffinerie.", sources:["mees.com — Saudi shutters Jeddah refinery 2017"] },
+    { id:"jizan_refinery", name:"Raffinerie de Jizan (Jazan)", country:"Saudi Arabia", type:"raffinerie", lat:16.89, lon:42.55, operator:"Saudi Aramco", capacity:"~0,40 mb/j", status:"operational", status_note:"Côte sud mer Rouge, ~80 km de la frontière yéménite mais sous protection saoudienne ; opérationnelle.", sources:["saudipedia.com — Jazan refinery","en.wikipedia.org — Jizan"] },
+    { id:"jizan_igcc", name:"Centrale IGCC de Jizan (JIGPC)", country:"Saudi Arabia", type:"centrale-electrique", lat:16.87, lon:42.57, operator:"Jazan Integrated Gasification & Power Co. (Air Products / ACWA Power / Saudi Aramco)", capacity:"3,8 GW (plus grand IGCC au monde)", status:"operational", status_note:"Alimente la raffinerie Jizan (5 x 770 MW).", sources:["nsenergybusiness.com — Jizan IGCC","gem.wiki — Jizan IGCC"] },
+    { id:"sumed_ain_sokhna", name:"Terminal SUMED Aïn Sokhna (golfe de Suez)", country:"Egypt", type:"terminal-export", lat:29.633, lon:32.33, operator:"Arab Petroleum Pipelines Co. (SUMED)", capacity:"Tête sud du pipeline SUMED — 2,5 mb/j (saturé)", status:"operational", status_note:"Réception jusqu'à 4 pétroliers simultanés. Flux à plein régime (+150 % vs février) par reroutage anti-Ormuz. Point critique du contournement mer Rouge.", sources:["en.wikipedia.org — SUMED pipeline","egyptindependent.com — SUMED flows +150%"] },
+    { id:"sumed_sidi_kerir", name:"Terminal SUMED Sidi Kerir (Méditerranée)", country:"Egypt", type:"terminal-export", lat:31.10, lon:29.617, operator:"Arab Petroleum Pipelines Co. (SUMED)", capacity:"Tête nord — stockage ~19,5 mb ; chargement jusqu'à 5 VLCC", status:"operational", status_note:"~27 km à l'ouest d'Alexandrie ; débouché méditerranéen du brut reroutant Ormuz via SUMED.", sources:["en.wikipedia.org — SUMED pipeline","shipnext.com — Sidi Kerir terminal"] },
+    { id:"suez_refinery_elnasr", name:"Raffinerie de Suez (El-Nasr Petroleum)", country:"Egypt", type:"raffinerie", lat:29.957, lon:32.533, operator:"El-Nasr Petroleum Company", capacity:"~0,08 mb/j", status:"operational", status_note:"À la jonction golfe de Suez / canal de Suez.", sources:["globalenergyobservatory.org — El-Nasr","offshore-technology.com — El Suez refinery"] },
+    { id:"hodeidah_port", name:"Port de Hodeidah (Al-Hudaydah)", country:"Yemen", type:"terminal-export", lat:14.841, lon:42.930, operator:"Yemen Red Sea Ports Corp. (autorité Houthi)", capacity:"Import carburants/vrac (fortement réduit)", status:"damaged", status_note:"Principal port mer Rouge yéménite (zone Houthi) ; docks endommagés par frappes israéliennes 2025 ; aucune frappe nouvelle confirmée 6-10 juin 2026.", sources:["en.wikipedia.org — Hudaydah Port","maritime-executive.com — Israel targets Hodeidah/Ras Isa"] },
+    { id:"salif_port", name:"Port de Salif (Saleef)", country:"Yemen", type:"terminal-export", lat:15.30, lon:42.683, operator:"Autorité portuaire Houthi", capacity:"Vrac (réduit)", status:"reduced", status_note:"Port mer Rouge au nord de Hodeidah ; visé par frappes israéliennes 2025 ; pas de frappe nouvelle confirmée 6-10 juin 2026.", sources:["en.wikipedia.org — Hodeidah","maritime-executive.com — Israel targets Houthi ports"] },
+    { id:"mokha_power_plant", name:"Port et centrale de Mokha (Al-Mukha)", country:"Yemen", type:"centrale-electrique", lat:13.317, lon:43.25, operator:"Gouvernement yéménite (PEC)", capacity:"Centrale vapeur (capacité réduite)", status:"reduced", status_note:"~75 km de Bab-el-Mandeb, contrôle gouvernemental ; centrale thermique endommagée lors de frappes antérieures.", sources:["en.wikipedia.org — Port of Mokha","openinframap.org — Yemen plants"] },
+    { id:"bashayer_terminal_sudan", name:"Terminal pétrolier de Bashayer (Marsa Bashayer)", country:"Sudan", type:"terminal-export", lat:19.402, lon:37.322, operator:"Greater Nile Petroleum Operating Company (GNPOC)", capacity:"Export Nile Blend ~1,2 mb/j", status:"unknown", status_note:"~13 nm au sud de Port-Soudan, via bouée CALM SPM. Statut courant non vérifié (guerre civile soudanaise).", sources:["shipnext.com — Bashayer oil terminal","gpsnauticalcharts.com — Bashayer"] },
+    { id:"port_soudan", name:"Port-Soudan (terminal pétrolier)", country:"Sudan", type:"terminal-export", lat:19.616, lon:37.216, operator:"Sea Ports Corporation (Soudan)", capacity:"Import/export produits", status:"unknown", status_note:"Principal port soudanais sur la mer Rouge ; statut courant incertain (guerre civile en cours).", sources:["eia.gov — Sudan & South Sudan background"] },
+    { id:"horizon_djibouti", name:"Terminal pétrolier Horizon Djibouti (Doraleh)", country:"Djibouti", type:"terminal-export", lat:11.60, lon:43.067, operator:"Horizon Djibouti Terminals Ltd (ENOC / Horizon)", capacity:"Stockage ~370 000 m³ ; 2 postes (30 000 et 80 000 DWT)", status:"operational", status_note:"Doraleh (~5 km ouest de Djibouti-ville) ; hub logistique régional proche de Bab-el-Mandeb.", sources:["horizon-terminals.com — Djibouti","en.wikipedia.org — Port of Doraleh"] }
   ],
 
   key_pipelines: [
@@ -459,8 +475,8 @@ function el(tag, attrs, children) {
 
 // ─── Init carte ───
 var map = L.map("map", {
-  center: [25.5, 53.0],
-  zoom: 6,
+  center: [22.5, 46.5],
+  zoom: 5,
   minZoom: 4,
   maxZoom: 11,
   zoomControl: true,
