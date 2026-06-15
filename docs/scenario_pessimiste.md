@@ -1,6 +1,30 @@
 # Scénario C — Pessimiste
-## « L'escalade maritime cumulative ou la bascule fiscale-sociale »
-### Probabilité estimée : 22-30 % (au 6 juin 2026, J98) — STABLE : « escalade réelle mais seuils non franchis »
+## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
+### Probabilité estimée : 14-22 % (au 15 juin 2026, J108) — RECUL : désescalade US-Iran + chute des prix plafonnent le haussier ; Liban = principal déclencheur résiduel
+
+---
+
+## Mise à jour J108 (15 juin 2026)
+
+**Probabilité abaissée de 20-28 % à 14-22 % (⬇️).** [INTERPRÉTATION] La désescalade côté US-Iran et la chute des prix **plafonnent fortement** le potentiel haussier de C, dont le centre de gravité se déplace du maritime/prix vers le **régional (Liban)**.
+
+**Arguments qui font reculer C** :
+1. [FAIT] **Désescalade côté US-Iran** : 4 jours consécutifs sans frappe ; **blocus naval ordonné levé** par Trump ; accord déclaré « complet » et confirmé côté iranien, signature datée au 19 juin.
+2. [FAIT] **Chute des prix** : Brent ~83,78 $ à la réouverture (14 juin), plus bas depuis ~2 mois ; Bourses asiatiques au record. Le marché bascule vers une anticipation de retour de l'offre.
+3. [SPÉCULATION] **Thèse Exxon (150-160 $ Dated Brent) toujours non matérialisée** ; demande mondiale 2026 qui craque (AIE −0,42 Mb/j).
+4. [FAIT] **Houthis : menace verbale, aucune attaque effective** ; menace Bab el-Mandeb toujours non concrétisée.
+
+**Le déclencheur résiduel dominant — le Liban** :
+- [FAIT] **~30 morts à Beyrouth le 14 juin** (frappe israélienne, journée la plus meurtrière de la trêve). Netanyahou **dissocie explicitement le Liban** de l'accord US-Iran. Si cet embrasement entraîne l'Iran (qui considère le Liban comme un front lié), C peut se réactiver.
+
+**Déclencheurs latents secondaires** : un nouveau report/échec de la signature du 19 juin suivi d'une reprise des frappes ; l'expiration de la remise carburant fin juin (pathway fiscal-social, toujours amorti par les aides Lecornu et l'absence de mobilisation datée) ; le stockage gaz UE bas (~44,3 %).
+
+### Indicateur de falsification (ce qui confirmerait C) — aucun franchi à J108
+- 🔴 Assessment Platts/Argus confirmant un **Dated Brent physique > 150 $**.
+- 🔴 OU **attaque effective sur Bab el-Mandeb**.
+- 🔴 OU **embrasement du Liban entraînant l'Iran**.
+- 🔴 OU **dégât confirmé par imagerie tierce** sur un actif US majeur, OU **incident de mine**.
+- 🔴 OU **échec/report de la signature du 19 juin suivi d'une reprise des frappes massives**.
 
 ---
 
@@ -51,6 +75,8 @@ Le scénario C serait **confirmé** (probabilité à relever fortement) si **l'u
 | 28 mai | J89 | 22-30 % | REDÉFINITION + REMONTÉE (+4 pts) : C ne se limite plus à la rupture maritime aiguë. INSEE confiance ménages FR 82 (3 ans bas). Inflation zone euro 3 % (avril). WH dénie MOU iranien le 27/05. C = « stagflation lourde + récession technique européenne » |
 | 3 juin | J95 | 24-32 % | HAUSSE (+2 pts) : l'Iran SUSPEND les pourparlers (1er juin) et menace de FERMETURE COMPLÈTE d'Ormuz + extension Bab el-Mandeb (matérialise le double blocage du Pathway 1). FALAISE DES STOCKS signalée par Exxon : cargaisons physiques Brent vers 150-160 $ « dans les prochaines semaines » ; raffinés montent 2-3× plus vite que le brut (douleur sur l'aval). EAU SORTIES DE L'OPEP (3 mai) = moins d'amortisseurs. Amortisseurs : Chine retarde la rupture (imports -20 % avril), Brent futures sous 100 $ (96,89 $, -15,3 % sur 1 mois), OAT-Bund ~67-70 bps, FNSEA-JA suspendue, aucune nouvelle perte FR. Déclencheurs latents : pic spot Exxon fin juin, expiration remise 20 c/L fin juin, stockage gaz UE 38 % |
 | **6 juin** | **J98** | **22-30 %** | **STABLE (➡️, borne resserrée) : arguments des deux sens s'ANNULENT. Escalade militaire RÉELLE 2-6 juin (Lexie 2/6 ; aéroport Koweït 3/6, 1 mort indien ~63 blessés ; MSC Sariska V à Umm Qasr ; radars Goruk/Qeshm 5-6/6) MAIS seuils NON franchis : revendication Ve Flotte DÉMENTIE par CENTCOM, missiles interceptés, Brent papier EN BAISSE (~93 $), thèse Exxon 150-160 $ NON matérialisée, menace Bab el-Mandeb encore VERBALE. SPR US 357,1 mb (plus bas depuis janv. 2024), flux Ormuz 8-16 %, gaz UE ~41,5 %, force majeure Qatar prolongée mi-août. Amortisseurs : couvercle chinois -44 %, OAT-Bund ~67-70 bps, FNSEA-JA suspendue, aucune nouvelle perte FR. Cessez-le-feu Liban annoncé 3/6 rejeté par Hezbollah 4/6 (accord mort-né) ; 7e Casque bleu ONU tué (serbe, non FR)** |
+| 13 juin | J106 | 20-28 % | ~STABLE (-2 pts) : déclencheurs plus actifs (fermeture totale d'Ormuz le 11/6, 3 marins indiens tués sur le Settebello = 1ers morts civils maritimes, drones du 13/6) MAIS potentiel haussier plafonné — Brent en chute (~87 $), 1ʳᵉ contraction demande mondiale depuis 2020, thèse Exxon invalidée |
+| **15 juin** | **J108** | **14-22 %** | **RECUL (-6 pts) : désescalade côté US-Iran (4 jours sans frappe, BLOCUS ORDONNÉ LEVÉ, accord confirmé côté iranien, signature datée 19 juin) + chute des prix (Brent ~83,78 $ réouverture 14/6, plus bas en ~2 mois) PLAFONNENT le haussier. Thèse Exxon toujours non matérialisée ; Houthis = menace verbale, aucune attaque ; Bab el-Mandeb non concrétisé. PRINCIPAL DÉCLENCHEUR RÉSIDUEL = LIBAN : ~30 morts à Beyrouth le 14/6 (journée la plus meurtrière de la trêve, dissociée de l'accord). Pathway fiscal-social toujours amorti (aides Lecornu inchangées, pas de mobilisation datée). Aucun seuil de bascule franchi** |
 
 ---
 

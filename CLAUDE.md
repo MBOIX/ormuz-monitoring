@@ -61,8 +61,10 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── adblue_cycle_de_vie.md              # Doc vulgarisé : cycle de vie complet de l'AdBlue, maillons faibles, prospective
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-│   ├── synthese_J98-J103.md               # Dernière synthèse périodique (fait foi sur l'état courant) — focus mer Rouge
-│   ├── synthese_J95-J98.md                # Synthèse périodique précédente (archivée)
+│   ├── synthese_J106-J108.md              # Dernière synthèse périodique (fait foi sur l'état courant) — accord-cadre confirmé non signé + G7 Évian + effondrement prix
+│   ├── synthese_J103-J106.md              # Synthèse périodique précédente (archivée) — bascule diplomatique + escalade au pic + OPEP+
+│   ├── synthese_J98-J103.md               # Synthèse périodique antérieure (archivée) — focus mer Rouge
+│   ├── synthese_J95-J98.md                # Synthèse périodique antérieure (archivée)
 │   ├── synthese_J89-J95.md                # Synthèse périodique antérieure (archivée)
 │   ├── sources.md                         # Sources OSINT zone du conflit (classées et cotées)
 │   ├── sources_infrastructures.md         # Sources infrastructures zone Ormuz

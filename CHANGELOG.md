@@ -2,6 +2,59 @@
 
 Ce projet est un **suivi de situation évolutif** : ce journal trace les consolidations datées et les évolutions structurelles du dépôt. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Les dates sont au format AAAA-MM-JJ (heure de Paris).
 
+## [J108] — 2026-06-15
+
+### Consolidation périodique
+- **Nouvelle synthèse qui fait foi** : [`synthese_J106-J108.md`](docs/synthese_J106-J108.md) (fenêtre 13 → 15 juin 2026). Méthode : 6 axes OSINT parallèles (militaire/maritime, diplomatie/G7, OPEP+/marchés, stocks énergie, ressources critiques, France), recoupement ≥ 2 sources indépendantes, vérification adversariale (cotation Admiralty), étiquetage fait/interprétation/spéculation.
+- **La bifurcation s'oriente vers la sortie de crise, sans certitude** : amélioration matérielle du dossier diplomatique, terrain et verrous inchangés.
+  - **Diplomatie** : le 14 juin, Trump déclare l'accord US-Iran **« complet »**, autorise la réouverture « sans péage » d'Ormuz et **ordonne la levée du blocus naval** ; **CONFIRMATION côté iranien** (vice-MAE Gharibabadi) — nouveau vs J106. **Signature reportée au 19 juin en Suisse** (pas le 14 à Genève). Verrous intacts : aval du Guide Mojtaba Khamenei toujours non confirmé par Téhéran, versions du texte incompatibles (24/25 Md$ vs 300 Md$), volet nucléaire reporté (~440 kg HEU 60 % restent en Iran 60 j). **4ᵉ annonce de réouverture** → prudence.
+  - **G7 d'Évian** (15-17 juin, présidence Macron) ouvert le 15 ; Macron propose frégate chasse-mines + avions sous 2-3 j ; **déclaration E4 (FR/DE/UK/IT)** sur la mission de déminage (réaffectation Aspides) + conditionnalité sanctions ; la Chine salue l'accord.
+  - **Militaire/maritime** : 4ᵉ jour sans frappe US/Iran (cessez-le-feu de facto tient sur ce front) ; bilan CENTCOM inchangé (9 neutralisés / 139 redirigés) ; **Liban : ~30 morts à Beyrouth le 14 juin = journée la plus meurtrière de la trêve** (dissocié de l'accord) ; Houthis menace verbale ; **Ormuz toujours fermé à ~95 %** (ouverture déclaratoire) ; aucune nouvelle perte française (bilan 3).
+- **Marchés** : Brent settle **~87,33 $** (13/06) → **~83,78 $** réouverture (14/06), WTI ~84,88 → **~80,90 $** ; Bourses asiatiques au record (Nikkei +5,4 %) ; demande 2026 : **divergence accrue** (AIE −0,42 Mb/j vs OPEP +0,97 vs EIA ~+0,6) ; OSP saoudien −6 $ juillet confirmé ; OPEP+ 5 juillet ; Irak ~1,3 Mb/j (vise Ceyhan).
+- **Check stocks toutes ressources** : SPR US inchangé **349,2 mb** ; **WPSR brut commercial US −3,6 mb à ~422,9 mb, 8ᵉ baisse consécutive** ; gaz UE **~44,3 %** ; TTF **43,51 €/MWh** (plus bas en 5 sem.) ; **urée détente accentuée** (spot ~400 $/t) ; **AdBlue France stable** (hausse « inévitable » NON matérialisée) ; **soufre record 860 $/t ferme** ; hélium tension (aucun redémarrage) ; aluminium détente confirmée ; ammoniac UE détente ; phosphates DAP tension.
+- **France** : **gazole ~1,988 €/L** (15 juin, −3 ct — répercussion enfin), essence figée ; **~3 % de stations en difficulté** (officiel) ; **projections Banque de France et note INSEE TOUJOURS non publiées** au 15 juin (manque assumé) ; aides inchangées (échéance ASP aides pro carburant le 15 juin).
+- **Probabilités RÉVISÉES** : A **35-45 %** (⬆️ forte hausse vs 22-32 % — accord confirmé + signature datée + blocus ordonné levé, mais non signé) · B **38-46 %** (⬇️ vs 44-52 %, n'est plus le seul modal) · C **14-22 %** (⬇️ vs 20-28 % — désescalade US-Iran + chute des prix plafonnent le haussier). Propagées à `index.md`, scénarios A/B/C, `calendrier_penuries.md`, `app/index.html`, `stocks_pays_ue.html`.
+- **Dashboards synchronisés** : `nav.js` (ASOF → J108, propagé aux 7 pages), titres/sous-titres, faits saillants `app/index.html` (+ carte « Documents analytiques » pour la nouvelle synthèse), lignes d'évolution/chiffres dans `stocks_pays_ue.html`, `dependances_ressources_critiques.html`, `dependances_ormuz_pays.html`, cartes.
+- **Dette chronologie résorbée** : [`docs/chronologie.md`](docs/chronologie.md) et [`app/chronologie.html`](app/chronologie.html) étendues du J98 au J108 (ajout des **Phases 9 — J103→J106** et **10 — J106→J108**).
+
+### Corrigé (principe « réviser, ne pas ancrer »)
+- Accord US-Iran : passe de « texte agréé non confirmé » à **« complet » confirmé côté iranien**, signature datée au **19 juin** ; blocus naval **ordonné levé**.
+- Stocks brut commercial US : **−3,6 mb à ~422,9 mb** (sem. au 6 juin, 8ᵉ baisse) au lieu de −7,2 mb / 426,5 mb (sem. au 5 juin).
+- Statut Ormuz : **« ouverture » annoncée (14 juin) mais flux toujours ~95 % sous la normale** (déclaratoire) au lieu de « fermeture totale déclarée ».
+- Gazole France : **~1,988 €/L** (−3 ct, début de répercussion) ; stations en difficulté **~3 %** (officiel 15 juin).
+- Urée : **~400 $/t** (indice spot, détente accentuée) au lieu de ~445-449 $/t.
+- Mission de déminage Ormuz : **E4 / pilotée UE** (réaffectation Aspides) — le chiffre « 15+ nations » n'est pas confirmé sur la fenêtre.
+
+### Signalé (données absentes assumées)
+- Dated Brent physique (13-15 juin), texte intégral et définitif du MOU US-Iran (publication promise post-signature du 19 juin, 3 versions divergentes), aval explicite du Guide, débit Ormuz quotidien exact, projections Banque de France et note INSEE de juin (non publiées au 15 juin), prolongation éventuelle de la force majeure Qatar au-delà de mi-juin, CP GPL saoudien de juillet (~28-30 juin), cotations fraîches de juin pour méthanol/potasse/paraxylène/bitume/noir de carbone, relevé AdBlue France daté, clôture officielle des futures du 15 juin, MAJ CENTCOM du bilan de blocus des 14-15 juin.
+
+## [J106] — 2026-06-13
+
+### Consolidation périodique
+- **Synthèse** : [`synthese_J103-J106.md`](docs/synthese_J103-J106.md) (fenêtre 10 → 13 juin 2026). Méthode : 6 axes OSINT en 2 vagues (rattrapage des axes saturés par la limite de session : militaire/maritime, OPEP+, ressources critiques), recoupement ≥ 2 sources indépendantes, vérification adversariale (cotation Admiralty), étiquetage fait/interprétation/spéculation.
+- **Bifurcation (et non plus enlisement)** : la fenêtre superpose le **pic de l'escalade** et la **première bascule diplomatique crédible**.
+  - **Diplomatie** : le 11 juin, Trump **annule ses frappes** et annonce un **« great settlement »** (cessez-le-feu +60 j, Ormuz rouvert à la signature) ; le 12 juin, le médiateur **pakistanais Sharif confirme un « texte agréé »**. **Non signé** : l'Iran ne confirme pas, versions des termes incompatibles, aval du Guide manquant, Trump désavoue les termes fuités.
+  - **Militaire/maritime** : hélico US (Apache) abattu près d'Ormuz (9 juin) → frappes croisées (toutes interceptées) → **fermeture totale d'Ormuz déclarée par l'Iran le 11 juin** (trafic réel ~95 % sous la normale, AIS) ; **3 marins indiens tués sur le M/T *Settebello*** (1ʳᵉˢ victimes civiles maritimes du blocus) ; drones iraniens abattus le 13 juin ; bilan CENTCOM 9 neutralisés / 139 redirigés. **Aucune nouvelle perte française.**
+- **OPEP+ (check demandé)** : réunion du 7 juin, reconduction **+188 000 b/j** pour juillet (sans les EAU, théorique car barils bloqués), prochaine réunion 5 juillet ; **OSP saoudien −6 $** (plus forte coupe depuis 2022) ; les 3 rapports mensuels (MOMR, IEA OMR, EIA STEO) convergent sur la **1ʳᵉ contraction de la demande mondiale 2026 depuis 2020** ; **prédiction Exxon (150-160 $) invalidée** (Brent à ~87 $).
+- **Check stocks toutes ressources** : WPSR publié → **SPR US 349,2 mb** (−7,9 mb/sem.), 7ᵉ baisse de brut commercial US ; gaz UE ~43,4 % ; **détente urée** (réouverture exports chinois → tender indien −50 %) ; **AdBlue France toujours nominal** ; **soufre aux records absolus** (805-860 $/t) ; GPL/hélium au plus haut ; **aluminium en détente partielle** (backwardation effondrée).
+- **France** : gazole ~2,018 €/L (12 juin), ~2 % de stations en difficulté (amélioration) ; **INSEE confirme l'inflation mai à +2,4 %** (sous-jacente en accélération à +1,5 %) ; projections Banque de France attendues 15-16 juin.
+- **Probabilités RÉVISÉES (bifurcation)** : A **22-32 %** (⬆️ forte hausse vs 8-15 %) · B **44-52 %** (⬇️, reste modal) · C **20-28 %** (➡️ ~stable). Propagées à `index.md`, `app/index.html`, `stocks_pays_ue.html`.
+- **Dashboards synchronisés** : `nav.js` (ASOF → J106, propagé aux 7 pages), titres/sous-titres, faits saillants `app/index.html`, ligne d'évolution J106 dans `stocks_pays_ue.html`, sous-titre `dependances_ressources_critiques.html`, flux Ormuz dans `dependances_ormuz_pays.html`.
+
+### Corrigé (principe « réviser, ne pas ancrer »)
+- SPR US : **349,2 mb** (5 juin, WPSR publié le 10 juin) au lieu de 357,1 mb (29 mai, gap J103 comblé).
+- Statut Ormuz : **fermeture totale déclarée (11 juin)** / trafic réel ~95 % sous la normale, au lieu de « flux ~5-16 % ».
+- Bilan blocus US : **9 neutralisés / 139 redirigés** (13 juin) au lieu de 7 / 134 (8 juin) ; **3 premières victimes civiles maritimes** (*Settebello*).
+- Urée : **~445-449 $/t** (tender indien, −50 %) au lieu de ~×2 — détente liée à la réouverture des exports chinois (exogène à Ormuz).
+- Prédiction Exxon (Dated Brent 150-160 $) : **invalidée** (et non plus seulement « non matérialisée »).
+- EAU : sortie de l'OPEP datée au **1er mai** (et non 3 mai) selon les sources OPEP+ de juin.
+
+### Signalé (données absentes assumées)
+- Dated Brent physique (10-13 juin), texte intégral du MOU US-Iran (2 versions contradictoires), lieu/date d'une signature éventuelle, aval du Guide, débit Ormuz quotidien exact (annonces CENTCOM vs Iran contradictoires), bilan civil iranien des frappes, cotations fraîches de juin pour méthanol/phosphates/potasse/paraxylène/bitume/noir de carbone, relevé AdBlue France daté, projections Banque de France et note INSEE de juin (publication ~15-16 juin), clôture officielle des futures du 12 juin, OSP saoudien Europe/USA.
+
+### Non synchronisé (dette assumée, à résorber)
+- `app/chronologie.html` reste **figée au J98** (frise non maintenue depuis le J98, événements J99→J106 non ajoutés) ; elle renvoie explicitement à la synthèse périodique pour l'état courant. À étendre lors d'un prochain cycle (28 fév → 13 juin).
+
 ## [Non publié]
 
 ### Ajouté (documents thématiques, J103)

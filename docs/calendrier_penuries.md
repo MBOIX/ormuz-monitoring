@@ -1,6 +1,6 @@
 # Calendrier prévisionnel des pénuries — France
 ## Scénario B (Réaliste / Enlisement) — Période S19 → S30 (4 mai → 26 juillet 2026)
-### Édition 2.8 — 6 juin 2026 (J98) — consolidation J98 : escalade militaire 2-6 juin (revendication Ve Flotte démentie, missiles interceptés), Brent papier en reflux (~93 $), thèse Exxon 150-160 $ NON matérialisée, douleur sur l'aval du baril maintenue, la pénurie au détail frappe l'ESSENCE plus que le diesel, remise carburant expire fin juin
+### Édition 2.9 — 15 juin 2026 (J108) — consolidation J108 : accord US-Iran « complet » et confirmé côté iranien (signature reportée au 19 juin), blocus naval ordonné levé, Brent sous 84 $ à la réouverture, gazole pompe enfin en baisse (1,988 €/L), urée en détente accentuée (~400 $/t), AdBlue FR stable (hausse « inévitable » non matérialisée), la pénurie au détail frappe toujours l'ESSENCE plus que le diesel, remise carburant expire fin juin
 
 ---
 
@@ -8,18 +8,30 @@
 
 | Paramètre | Valeur |
 |---|---|
-| **Scénario de référence** | B — Réaliste / Enlisement stagflationniste (**probabilité 60-66 % au 6 juin, CENTRAL CONSOLIDÉ**, [scenario_realiste.md](scenario_realiste.md)). A 8-15 % (⬇️ : escalade militaire 2-6 juin, diplomatie gelée, cessez-le-feu Liban du 3 juin rejeté par le Hezbollah le 4 juin) ; C 22-30 % (➡️ stable : escalade réelle MAIS revendication Ve Flotte démentie par CENTCOM, missiles interceptés, Brent papier en baisse, thèse Exxon 150-160 $ non matérialisée) |
+| **Scénario de référence** | B — Réaliste / Enlisement stagflationniste (**probabilité 38-46 % au 15 juin, recule mais reste très plausible — n'est plus le seul modal**, [scenario_realiste.md](scenario_realiste.md)). A 35-45 % (⬆️ forte hausse : accord confirmé côté iranien, signature datée au 19 juin, blocus ordonné levé, frappes cessées) ; C 14-22 % (⬇️ : désescalade US-Iran + chute des prix plafonnent le haussier ; Liban = principal déclencheur résiduel). **NB : ce calendrier reste construit sous l'hypothèse B (enlisement) ; en cas de signature effective le 19 juin et de réouverture réelle d'Ormuz, les bascules tardives S25-S30 peuvent être atténuées d'un cran.** |
 | **Périmètre géographique** | France métropolitaine (national, disparités régionales signalées) |
 | **Horizon couvert** | 12 semaines — S19 (4-10 mai) → S30 (20-26 juillet 2026) |
 | **Granularité** | Hebdomadaire |
 | **Nombre de produits suivis** | 41 (8 énergie + 12 alimentation de base + 10 frais + 11 hygiène/santé/équipement, dont Levothyrox ajouté en Édition 2.1) |
-| **Date d'édition** | **6 juin 2026 (J98 du conflit Ormuz) — Édition 2.8** |
+| **Date d'édition** | **15 juin 2026 (J108 du conflit Ormuz) — Édition 2.9** |
 | **Niveau de confiance global** | ★★★★ (4/5) — paramètres macro figés, mais incertitude croissante au-delà de S25. **Édition 2.1 a corrigé un biais d'optimisme inversé** (sur-anticipation des bascules micro-produits — voir bloc « Affinage 2.1 » ci-dessous). |
 | **Prochaine révision recommandée** | Hebdomadaire — chaque vendredi, après publication des bulletins UFIP / FranceAgriMer / ANSM |
 
 ### Avertissements explicites
 
 > **Document prévisionnel sous hypothèse scénario B uniquement.** Pour les bornes haute (résolution rapide) et basse (escalade militaire), se reporter respectivement à [scenario_optimiste.md](scenario_optimiste.md) et [scenario_pessimiste.md](scenario_pessimiste.md). Voir l'**Annexe C** pour la lecture comparée.
+>
+> **🔧 Affinage Édition 2.9 (15 juin 2026, J108) — ACCORD CONFIRMÉ CÔTÉ IRANIEN + SIGNATURE DATÉE AU 19 JUIN, PRIX EN CHUTE, RÉPERCUSSION ENFIN AMORCÉE À LA POMPE, URÉE EN DÉTENTE ACCENTUÉE, ADBLUE FR STABLE** : la bifurcation penche vers la sortie de crise. Probabilités révisées : **A 35-45 % (⬆️ forte hausse), B 38-46 % (⬇️ mais très plausible), C 14-22 % (⬇️)**. Sept points structurants :
+>
+> α. **[FAIT/B2] Brent en chute sur l'espoir d'accord** : ~87,33 $ settle (13 juin) → **~83,78 $ à la réouverture (14 juin)**, plus bas depuis ~2 mois ; WTI ~84,88 → ~80,90 $ ; Bourses asiatiques au record (Nikkei +5,4 %).
+> β. **[SPÉCULATION] Dated Brent physique toujours inconnu** (aucune assessment Platts/Argus datée du 13-15 juin) ; thèse Exxon 150-160 $ toujours non matérialisée. La doctrine de précaution sur les dérivés reste justifiée par la tension physique (8ᵉ baisse consécutive des stocks de brut US, distillats 13 % sous la moyenne 5 ans), pas par un niveau Dated chiffré.
+> γ. **[FAIT/A1] Répercussion ENFIN amorcée à la pompe, surtout sur le gazole** : gazole **~1,988 €/L (15 juin, −3,0 ct vs 12 juin)**, SP95-E5 ~1,992, E10 ~1,954 (quasi figé), SP98 ~2,034. L'**essence reste figée pendant que le gazole baisse** → confirmation que la tension d'offre spécifique pèse sur l'essence. Plein 40 L gazole ~79,5 €. **Remise 20 c/L expire fin juin** → risque de marche d'escalier maintenu au 1er juillet.
+> δ. **[FAIT/A1] Au détail, l'ESSENCE reste le maillon le plus exposé** : ~3 % des stations en difficulté (officiel 15/06 ; IDF 6 %, Bretagne/Corse/PACA 1 %). Le diesel garde la priorité réglementaire.
+> ε. **[FAIT/B2] Urée en DÉTENTE ACCENTUÉE** : indice spot ~**400 $/t (12 juin)** après le tender indien à 445-449 $/t (8 juin), −50 % vs avril ; moteur exogène à Ormuz (réouverture exports chinois). → desserre la cascade engrais → récolte et la pression amont sur AdBlue.
+> ζ. **[FAIT/B2] AdBlue/DEF FR STABLE — la hausse « inévitable » ne s'est PAS matérialisée** : ~0,40 €/L en cuve/IBC, ~0,75 €/L en station ; aucune rupture ni allocation. La détente de l'urée amont retire de la pression à court terme. Reste le signal le plus précoce à surveiller (fiche 5.1.9 = vigilance prospective, pas pénurie observée).
+> η. **[FAIT/A1] Gaz UE ~44,3 %** (15 juin), toujours −14 pts sous la norme ; TTF détendu à **43,51 €/MWh** (plus bas en 5 sem.). Force majeure Qatar : échéance « mi-juin » atteinte, **prolongation non confirmée** (statut non tranché). **Inflation FR IPC mai +2,4 % a/a** (sous-jacente +1,5 %), juin pas avant le 30 juin (*gap*). **Projections Banque de France + note INSEE TOUJOURS non publiées au 15 juin** (croissance 2026 « sous 0,9 % » sans chiffre ; FMI mai France 0,7 %) — *gap*, ne pas pré-remplir. Soufre record 860 $/t ; aluminium détente confirmée (backwardation +15 $/t) ; phosphates DAP en tension (~930-935 $/t CFR Inde) ; CP GPL juillet non publié (attendu ~28-30 juin).
+>
+> **Diplomatie / militaire [B2]** : accord US-Iran déclaré « complet » par Trump (14 juin) **ET confirmé côté iranien** (Gharibabadi) ; **signature reportée au 19 juin en Suisse** (pas le 14 à Genève) ; **blocus naval ordonné levé** ; aval du Guide Mojtaba non confirmé ; versions incompatibles (24/25 vs 300 Md$) ; volet nucléaire reporté. **Ormuz toujours ~95 % sous la normale** (ouverture déclaratoire). G7 d'Évian ouvert le 15 juin. **Liban : ~30 morts à Beyrouth le 14 juin** (journée la plus meurtrière de la trêve). **3 militaires FR morts, inchangé** (Frion 12/3 Irak, Montorio 18/4 et Girardin 22/4 Liban). **Aucune nouvelle perte française.** Pas de mobilisation carburant datée (manif évoquée 20 juin, hors fenêtre).
 >
 > **🔧 Affinage Édition 2.8 (6 juin 2026, J98) — CONSOLIDATION J98 : ESCALADE MILITAIRE SANS BASCULE, BRENT PAPIER EN REFLUX, THÈSE EXXON NON MATÉRIALISÉE, LA PÉNURIE AU DÉTAIL FRAPPE L'ESSENCE PLUS QUE LE DIESEL** : la fenêtre 3-6 juin **est** l'enlisement (scénario B) — cycle action-riposte sans bascule, prix papier qui recule, physique tendu. Probabilités révisées : **B 60-66 % (⬆️ léger, CENTRAL), A 8-15 % (⬇️), C 22-30 % (➡️ stable)**. Sept points structurants :
 >
