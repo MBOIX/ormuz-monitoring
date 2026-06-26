@@ -1,6 +1,16 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 14-22 % (au 15 juin 2026, J108) — RECUL : désescalade US-Iran + chute des prix plafonnent le haussier ; Liban = principal déclencheur résiduel
+### Probabilité estimée : 10-16 % (au 18 juin 2026, J111) — RECUL CONFIRMÉ : signature + désescalade + chute des prix plafonnent fortement le haussier ; Liban + réversibilité Trump = déclencheurs résiduels
+
+---
+
+## Mise à jour J111 (18 juin 2026)
+
+**Probabilité abaissée à 10-16 % (vs 14-22 % à J108).** [INTERPRÉTATION] La **signature effective de l'accord** (17 juin), la désescalade US-Iran formalisée et la **chute des prix** (Brent sous 79 $, plus bas en 3 mois ; AIE qui anticipe désormais un « excédent 2027 ») plafonnent encore davantage le potentiel haussier de C. Le centre de gravité de ce scénario reste **régional (Liban)** et **réversible** :
+1. **Pathway maritime / prix** : très affaibli — la thèse d'un choc physique recule avec l'accord signé et la demande mondiale molle ; le **Dated Brent physique reste toutefois inconnu** (gap assumé), donc non totalement écarté.
+2. **Pathway régional / réversibilité** : le **Liban poursuit** (Hezbollah de retour au feu le 17 juin, cumul ~3 826 morts, Israël hors accord, Iran posant le retrait israélien comme condition de non-violation) et **Trump assume la réversibilité** (menace de reprendre les bombardements « si l'Iran ne se tient pas bien »). Ce sont les **principaux déclencheurs résiduels**.
+
+**Falsifié (vers C) si** : embrasement du Liban entraînant l'Iran ; OU reprise des frappes US ; OU incident létal majeur en mer / sur un actif US ; OU assessment Platts/Argus du Dated Brent > 130 $.
 
 ---
 

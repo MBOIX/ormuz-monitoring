@@ -59,10 +59,12 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── calendrier_penuries.md             # Échéancier prévisionnel des phases de tension par produit
 │   ├── flux_mer_rouge.md                   # État de l'art chiffré des flux du corridor mer Rouge (Bab-el-Mandeb/Suez/SUMED)
 │   ├── adblue_cycle_de_vie.md              # Doc vulgarisé : cycle de vie complet de l'AdBlue, maillons faibles, prospective
+│   ├── impacts_agricoles.md                # Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-│   ├── synthese_J106-J108.md              # Dernière synthèse périodique (fait foi sur l'état courant) — accord-cadre confirmé non signé + G7 Évian + effondrement prix
-│   ├── synthese_J103-J106.md              # Synthèse périodique précédente (archivée) — bascule diplomatique + escalade au pic + OPEP+
+│   ├── synthese_J108-J111.md              # Dernière synthèse périodique (fait foi sur l'état courant) — accord US-Iran SIGNÉ (en avance, 17 juin) + texte 14 points publié + G7 Évian clos + Brent au plus bas en 3 mois + projections BdF/INSEE
+│   ├── synthese_J106-J108.md              # Synthèse périodique précédente (archivée) — accord-cadre confirmé non signé + G7 Évian + effondrement prix
+│   ├── synthese_J103-J106.md              # Synthèse périodique antérieure (archivée) — bascule diplomatique + escalade au pic + OPEP+
 │   ├── synthese_J98-J103.md               # Synthèse périodique antérieure (archivée) — focus mer Rouge
 │   ├── synthese_J95-J98.md                # Synthèse périodique antérieure (archivée)
 │   ├── synthese_J89-J95.md                # Synthèse périodique antérieure (archivée)
@@ -79,6 +81,7 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
     ├── chronologie.html                   # Frise chronologique interactive
     ├── dependances_ormuz_pays.html        # Part des imports énergétiques UE via Ormuz, par pays/carburant
     ├── dependances_ressources_critiques.html  # 13 ressources critiques non-énergétiques (hélium, NPK, alu, méthanol…)
+    ├── impacts_agricoles.html             # Impacts agricoles (champ→assiette) : tableau d'impacts + frise prospective 2026-2029 + focus France
     ├── stocks_pays_ue.html                # Stocks pétroliers stratégiques + UGS gaz par pays UE
     ├── styles_common.css                  # Feuille de style partagée (thème sombre)
     └── nav.js                             # Header + footer mutualisés (Web Components natifs <site-nav>/<site-footer>)
@@ -100,7 +103,7 @@ Le dossier `app/` est une **application web statique** (HTML + CSS + un unique c
 ### Règle de cohérence (CRITIQUE)
 Dashboards et fichiers `.md` doivent rester **synchronisés**. À chaque mise à jour de fond :
 
-1. **Compteur J-day et date** : valeur unique de référence = celle affichée dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`). La date n'est volontairement pas figée dans CLAUDE.md pour éviter un (N+1)ᵉ emplacement à synchroniser. Pour la barre de nav ET le pied de page, un seul point de mise à jour : la constante `ASOF` de `app/nav.js` (propagée automatiquement aux 7 pages). Restent à mettre à jour page par page : les `<title>` et les sous-titres (`<p class="subtitle">`), qui sont propres à chaque page. Vérifier la valeur actuellement affichée avant de la changer.
+1. **Compteur J-day et date** : valeur unique de référence = celle affichée dans la synthèse périodique la plus récente (`docs/synthese_J*-J*.md`). La date n'est volontairement pas figée dans CLAUDE.md pour éviter un (N+1)ᵉ emplacement à synchroniser. Pour la barre de nav ET le pied de page, un seul point de mise à jour : la constante `ASOF` de `app/nav.js` (propagée automatiquement aux 8 pages). Restent à mettre à jour page par page : les `<title>` et les sous-titres (`<p class="subtitle">`), qui sont propres à chaque page. Vérifier la valeur actuellement affichée avant de la changer.
 2. **Données chiffrées** (prix, stocks, % UGS, days of cover, flux Ormuz) : tout chiffre modifié dans un `.md` doit l'être dans le dashboard correspondant (et inversement).
 3. **Statuts d'infrastructure** (opérationnel / endommagé / hors service / saisi) : propager simultanément dans `docs/infrastructures_europe.md` et `carte_infrastructures*.html`.
 4. **Méthodologie** : la section « Méthodologie » d'`app/index.html` doit refléter les baselines réellement utilisées (releases IEA, tirages SPR, cotation des sources).

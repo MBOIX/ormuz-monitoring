@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (18 juin 2026 / J111)</title>
+<link rel="stylesheet" href="styles_common.css">
+<style>
+  /* === Pastilles de palier === */
+  .palier {
+    display: inline-block;
+    padding: 1px 8px;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    white-space: nowrap;
+  }
+  .palier.p-green  { background: var(--green);  color: #0b2f1a; }
+  .palier.p-yellow { background: var(--yellow); color: #1a1a1a; }
+  .palier.p-orange { background: var(--orange); }
+  .palier.p-red    { background: var(--red); }
+
+  /* === Frise calendaire 3 ans === */
+  .frise {
+    display: flex;
+    gap: 0;
+    margin: 16px 0 22px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .frise .seg {
+    flex: 1;
+    padding: 12px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
+  }
+  .frise .seg:last-child { border-right: none; }
+  .frise .seg .yr { font-weight: 700; font-size: 12.5px; display: block; }
+  .frise .seg .st { font-size: 10px; display: block; margin-top: 3px; opacity: 0.95; }
+  .frise .seg.green  { background: var(--green);  color: #0b2f1a; }
+  .frise .seg.yellow { background: var(--yellow); color: #1a1a1a; }
+  .frise .seg.orange { background: var(--orange); color: #fff; }
+  .frise .seg.orangedark { background: var(--orange-dark); color: #fff; }
+  .frise .seg.red    { background: var(--red); color: #fff; }
+
+  .jalons {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+  .jalon {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 15px;
+    border-top: 3px solid var(--accent);
+  }
+  .jalon h3 { margin: 0 0 4px; font-size: 14px; }
+  .jalon .when { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 8px; }
+  .jalon p { color: var(--text-dim); font-size: 12px; margin: 6px 0; }
+  .jalon.t-orange    { border-top-color: var(--orange); }
+  .jalon.t-orangedark{ border-top-color: var(--orange-dark); }
+  .jalon.t-yellow    { border-top-color: var(--yellow); }
+  .jalon.t-green     { border-top-color: var(--green); }
+  .jalon .branch { margin-top: 8px; font-size: 11.5px; padding: 6px 9px; border-radius: 4px; color: var(--text); }
+  .jalon .branch.a { background: rgba(46, 204, 113, 0.10); border-left: 3px solid var(--green); }
+  .jalon .branch.c { background: rgba(231, 76, 60, 0.10);  border-left: 3px solid var(--red); }
+  .jalon .branch strong { color: var(--text); }
+
+  .tag-fait   { color: var(--text-faint); font-size: 10px; font-weight: 700; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<site-nav active="impacts-agri"></site-nav>
+
+<main class="page">
+  <h1>Impacts agricoles du blocage du détroit d'Ormuz — du champ à l'assiette</h1>
+  <p class="subtitle">Chaîne alimentaire complète, de l'intrant à l'assiette : engrais, soufre, carburant agricole, AdBlue, énergie de production, fret céréalier, sécurité alimentaire mondiale, transformation et prix au consommateur. Données au <strong>18 juin 2026 (J111)</strong>. <strong>Cadre de cohérence</strong> : l'accord-cadre US-Iran est <em>signé juridiquement</em> (17 juin) mais <strong>Ormuz reste matériellement fermé</strong> (0-7 transits/j contre 94-140 normal, déminage non commencé) — la réouverture est juridique, pas physique. Source de fond : <a href="../docs/impacts_agricoles.md">docs/impacts_agricoles.md</a>. La synthèse périodique la plus récente (<code>synthese_J108-J111.md</code>) fait foi sur l'état courant.</p>
+
+  <div class="summary">
+    <h2>En une phrase</h2>
+    <p style="margin-top: 0; color: var(--text-dim); font-size: 13px;">
+      Le choc Ormuz sur l'alimentation est <strong>réel, à deux vitesses, décalé dans le temps et largement non encore matérialisé dans l'assiette</strong> : la branche azotée des engrais (urée, ammoniac, AdBlue) <strong>se détend</strong> — mais pour une raison <em>exogène</em> à Ormuz (réouverture des exports chinois) — pendant que la branche <strong>soufre/phosphates reste en tension record</strong> ; le prix de référence mondial du grain est <strong>baissier</strong> (pétrole + accord) ; l'impact le plus lourd est <strong>différé</strong> vers la campagne automne 2026 / hiver 2027 ; la gravité humaine se concentre sur des <strong>crises alimentaires localisées préexistantes</strong> qu'Ormuz aggrave à la marge sans en être le moteur.
+    </p>
+    <div class="summary-grid">
+      <div class="summary-stat">
+        <div class="v">~360 $/t</div>
+        <div class="l">Urée spot (17 juin) — détente</div>
+        <div class="delta down">−37 %/mois ; moteur EXOGÈNE à Ormuz (réouverture exports chinois, plancher 660 $/t le 26 mai)</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">860 $/t</div>
+        <div class="l">Soufre — OSP ADNOC juin (record absolu)</div>
+        <div class="delta down">DAP 930-935 $/t CFR Inde (+~40 % vs janvier) ; tension multi-causale (Ormuz + suspension exports Chine)</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">−9,3 %</div>
+        <div class="l">Blé CBOT sur le mois</div>
+        <div class="delta down">~602-605 c/bu ; prix grain BAISSIER (pétrole ~78 $ + accord), pas de choc CAF mondial matérialisé</div>
+      </div>
+      <div class="summary-stat">
+        <div class="v">~266 M</div>
+        <div class="l">Personnes en insécurité alim. aiguë (13 hotspots)</div>
+        <div class="delta down">FAO-WFP, 17 juin ; famines IPC 5 (Soudan, Gaza, Somalie) ; Ormuz = aggravateur, pas moteur primaire (12/13 = conflit local)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="item"><span class="dot" style="background: var(--green);"></span> 🟢 Nominal (&lt; +10 %)</div>
+    <div class="item"><span class="dot" style="background: var(--yellow);"></span> 🟡 Vigilance (+10-30 %)</div>
+    <div class="item"><span class="dot" style="background: var(--orange);"></span> 🟠 Tendu (+30-80 % / rationnement partiel)</div>
+    <div class="item"><span class="dot" style="background: var(--red);"></span> 🔴 Critique / crise</div>
+  </div>
+
+  <!-- ============================ TABLEAU D'IMPACTS ============================ -->
+  <h2>Tableau d'impacts — produit × canal × géographie</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Produit / filière</th>
+          <th>Canal</th>
+          <th>Géographie</th>
+          <th>Variation / état (juin 2026)</th>
+          <th>Palier</th>
+          <th class="num">Cote</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Urée</strong> (engrais azoté)</td><td>Intrants</td><td>Monde</td><td>~360 $/t spot, −37 %/mois ; détente <em>exogène</em> à Ormuz (Chine)</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Urée payée ferme</strong></td><td>Intrants</td><td>France</td><td>~793 €/t départ port ; décalée du spot (achats anticipés, MACF)</td><td><span class="palier p-orange">Tendu</span></td><td class="num">A2</td></tr>
+        <tr><td><strong>Ammonitrate 33,5</strong></td><td>Intrants</td><td>France</td><td>~554 €/t départ usine ; azotés +14,8 % sur 8 mois (Agreste)</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">A2</td></tr>
+        <tr><td><strong>Ammoniac</strong></td><td>Intrants</td><td>UE / Monde</td><td>~608-775 $/t CFR Tampa ; marges azote revenues pré-conflit</td><td><span class="palier p-green">Nominal</span></td><td class="num">C2</td></tr>
+        <tr><td><strong>Soufre</strong> (OSP)</td><td>Intrants</td><td>Golfe / Inde</td><td>860 $/t FOB (record absolu), ~1 000 $/t CFR Inde</td><td><span class="palier p-red">Critique</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>DAP</strong> (phosphate)</td><td>Intrants</td><td>Inde / Monde</td><td>930-935 $/t CFR, +~40 % vs janvier ; Chine suspend ses exports</td><td><span class="palier p-orange">Tendu</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Potasse</strong> (MOP)</td><td>Intrants</td><td>Monde</td><td>stable (« exception ») ; offre Canada/Russie/Biélorussie</td><td><span class="palier p-green">Nominal</span></td><td class="num">C2</td></tr>
+        <tr><td><strong>GNR</strong> (gazole agricole)</td><td>Carburant</td><td>France</td><td>~1 501 €/1000 L TTC ; reflux après pic du 3 avril ; aide 15 ct/L jusqu'au 31 août</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>AdBlue / DEF</strong></td><td>Carburant</td><td>France</td><td>~0,40-0,80 €/L ; stable, <strong>aucune rupture</strong> ; réversible</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Blé</strong></td><td>Fret / prix</td><td>Monde (CBOT)</td><td>~602-605 c/bu, −9,3 %/mois (baissier : pétrole + accord)</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Maïs</strong></td><td>Fret / prix</td><td>Monde</td><td>~414 c/bu ; baissier ; Iran/Golfe importateur exposé</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Riz</strong></td><td>Prix</td><td>Monde</td><td>~11,81 $/cwt, baissier (surplus Inde/Thaïlande/Vietnam)</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Soja / tourteau</strong></td><td>Intrants élevage</td><td>France / UE</td><td>tourteau ~340 €/t (moy. 2025), pics +80 €/t ; tendu</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Huiles végétales</strong></td><td>Prix</td><td>Monde</td><td>indice FAO 185,0, −4,6 %/mois (1ᵉʳ repli 2026) mais niveau haut</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Sucre</strong></td><td>Prix / énergie</td><td>Monde</td><td>indice FAO +7,5 %/mois (report canne→éthanol Brésil)</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Viande bovine</strong></td><td>Élevage</td><td>France</td><td>prod. ~+7,8 %/an ; conso ~+12-15 % ; moteur = cheptel, <em>pas Ormuz</em></td><td><span class="palier p-orange">Tendu</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Porc</strong></td><td>Élevage</td><td>France / UE</td><td>stable/lourd ; conso ~+2 %/an</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Lait</strong></td><td>Élevage</td><td>France / UE</td><td>détente (prix FR −7,3 % T1, SMP −45 %/an) ; beurre +14 %</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Café</strong></td><td>Fret import</td><td>Monde</td><td>Arabica ~2,60 $/lb ; élevé, léger repli</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Légumes de serre</strong></td><td>Énergie</td><td>France</td><td>exposés (chauffage gaz) mais saison + TTF ~41 €/MWh</td><td><span class="palier p-green">Nominal</span></td><td class="num">B2</td></tr>
+        <tr><td><strong>Fruits / produits frais</strong></td><td>Énergie / prix</td><td>France</td><td>IPC frais +3,4 %/an (chaleur précoce, énergie aval)</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Sécurité alim. — pays vulnérables</strong></td><td>Multi-canal</td><td>Soudan, S.-Sud, Gaza, Somalie, Yémen, Sahel</td><td>266 M en insécurité aiguë, famines IPC 5 ; Ormuz aggravateur, pas moteur</td><td><span class="palier p-red">Critique</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Panier alimentaire (gros)</strong></td><td>Synthèse</td><td>Monde</td><td>FFPI 130,8 (mai), plateau haut, +2,9 %/an</td><td><span class="palier p-yellow">Vigilance</span></td><td class="num">A1</td></tr>
+        <tr><td><strong>Panier alimentaire (conso)</strong></td><td>Synthèse</td><td>France / zone euro</td><td>FR +1,1 %/an, ZE 1,9 % ; en décélération</td><td><span class="palier p-green">Nominal</span></td><td class="num">A1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============================ FAITS PAR CANAL ============================ -->
+  <h2>Les faits marquants par canal de transmission</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>(a) Engrais &amp; intrants chimiques</h3>
+      <p><span class="tag-fait">[FAIT]</span> Marché <strong>scindé en deux</strong> : <strong>azote en détente</strong> (urée ~360 $/t, ammoniac marges pré-conflit) tirée par la <strong>réouverture des exports chinois</strong> (exogène au flux physique d'Ormuz, qui reste fermé) ; <strong>soufre/phosphates en tension record</strong> (OSP 860 $/t, DAP 930-935 $/t) — tension <em>multi-causale</em> (Ormuz + suspension exports phosphates Chine). ~21 Mt/an d'urée et ~4 Mt/an de DAP coupées du Golfe.</p>
+    </div>
+    <div class="card">
+      <h3>(b) Carburant agricole &amp; AdBlue</h3>
+      <p><span class="tag-fait">[FAIT]</span> <strong>Aucune pénurie en France.</strong> GNR retombé à ~1 501 €/1000 L TTC après le pic du 3 avril (137,71 €/hl HT, ×1,9 vs mi-février). <strong>Correction clé</strong> : l'aide GNR de 15 ct/L est <strong>prolongée jusqu'au 31 août</strong> (décret 2026-477) — pas d'effet de falaise au 1ᵉʳ juillet. AdBlue stable (~0,40-0,80 €/L), réversible si l'offre chinoise se referme : <strong>signal le plus précoce à surveiller</strong>.</p>
+    </div>
+    <div class="card">
+      <h3>(c) Énergie de production &amp; transformation</h3>
+      <p><span class="tag-fait">[FAIT]</span> La détente gazière (TTF ~41 €/MWh, −21 %/mois) <strong>soulage à la marge</strong> (peu de chauffage de serre en juin). <strong>Aucune fermeture d'usine agroalimentaire UE imputable au choc Ormuz</strong> : les fermetures (sucre, lait) sont <em>structurelles</em> (surplus, imports, prix bas) — dépréciation Südzucker annoncée 11 j AVANT le J1. L'hiver 2026-2027 est la vraie fenêtre de risque énergétique.</p>
+    </div>
+    <div class="card">
+      <h3>(d) Fret céréalier &amp; flux maritimes</h3>
+      <p><span class="tag-fait">[FAIT]</span> Ormuz = point de passage agricole <strong>secondaire</strong> : ~2 Mt/mois de céréales (~0,2 % du commerce maritime mondial, ~4,8 % du commerce mondial de céréales — <em>pas</em> 3 %). Enjeu <strong>régional</strong> (Golfe, Iran) et indirect via les engrais. Mer Rouge déjà détournée depuis fin 2023. Effet prix sur le grain : <strong>baissier</strong>. Assurance « risque de guerre » ~4 % de la coque, maintenue.</p>
+    </div>
+    <div class="card">
+      <h3>(e) Sécurité alimentaire des pays vulnérables</h3>
+      <p><span class="tag-fait">[FAIT]</span> FFPI mai 130,8 (plateau haut, +2,9 %/an). Hunger Hotspots (17 juin) : ~266 M en insécurité aiguë, famines IPC 5 (Soudan, S.-Sud, Gaza, Somalie, +Nigeria/Borno). <strong>Conflit local = moteur primaire de 12/13</strong>, financement humanitaire −59 % = aggravateur ; Ormuz = <em>driver transversal</em>, jamais moteur primaire. Égypte absorbe (pain baladi maintenu, réserves 4-6 mois).</p>
+    </div>
+    <div class="card">
+      <h3>(f) Du champ à l'assiette : prix conso</h3>
+      <p><span class="tag-fait">[FAIT]</span> Transmission <strong>décalée (6-12 sem.) et asymétrique</strong>. Inflation alimentaire conso <strong>en recul</strong> : zone euro 1,9 %/an, France +1,1 % (mai). Front avancé sur le frais (FR +3,4 %). Coûts amont <strong>contrastés</strong> (céréales/sucre en hausse, engrais azotés/gaz en repli). Élevage = canal le plus exposé mais <strong>divergent</strong> (bœuf tendu par l'offre, lait en détente).</p>
+    </div>
+  </div>
+
+  <!-- ============================ PAYS IMPACTÉS ============================ -->
+  <h2>Pays impactés — exportateurs, importateurs, vulnérables</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Catégorie</th><th>Pays / zones</th><th>Mécanisme</th><th>Verdict</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Exportateurs du Golfe (offre coupée)</strong></td>
+          <td>Iran, Qatar, Arabie saoudite, EAU, Oman</td>
+          <td>~21 Mt/an d'urée et ~4 Mt/an de DAP coupées ; exports hebdo Golfe −90 % ; ~1 Mt d'azote + ~1 Mt de soufre bloquées. Production partiellement redémarrée (QAFCO, lignes iraniennes), évacuation verrouillée tant qu'Ormuz n'est pas matériellement rouvert.</td>
+          <td><span class="pill" style="background: var(--orange);">Offre verrouillée</span></td>
+        </tr>
+        <tr>
+          <td><strong>Grands importateurs exposés (intrants)</strong></td>
+          <td>Inde (pivot), Brésil, Bangladesh (53 % engrais via Golfe), Asie du SE, Afrique sub-saharienne</td>
+          <td>Exposition surtout via le <em>coût/disponibilité des intrants azotés</em>, plus que via le grain. L'Inde profite directement de la détente chinoise (prime +20 $/t) ; stocks Kharif jugés « adéquats ».</td>
+          <td><span class="pill" style="background: var(--yellow); color:#1a1a1a;">Intrants tendus</span></td>
+        </tr>
+        <tr>
+          <td><strong>Absorbeurs (réserves / subventions)</strong></td>
+          <td>Égypte, Arabie saoudite, EAU</td>
+          <td>Pain baladi maintenu (2 EGP/80 g) malgré +17 % de carburant ; réserves de blé 4-6 mois (≥6 mois en Arabie). Aucune émeute de la faim datée de juin 2026.</td>
+          <td><span class="pill" style="background: var(--green); color:#0b2f1a;">Choc absorbé</span></td>
+        </tr>
+        <tr>
+          <td><strong>Crise alimentaire (gravité humaine)</strong></td>
+          <td>Soudan, Soudan du Sud, Gaza, Somalie, Nigeria/Borno, Yémen, Sahel</td>
+          <td>Famines IPC 5 confirmées/projetées. <strong>Majoritairement portées par le conflit local + chute des financements (−59 %)</strong> ; Ormuz = aggravateur transversal (prix énergie/engrais/fret), pas moteur. Liban ajouté (escalade fin février, non causalement reliée à Ormuz dans le texte) ; Madagascar ajouté pour raison météo.</td>
+          <td><span class="pill" style="background: var(--red);">Critique</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============================ PROSPECTIVE 3 ANS ============================ -->
+  <h2>Prospective 2026-2029 — calendrier sur 3 ans</h2>
+  <p class="subtitle" style="margin-bottom: 6px;"><span class="tag-fait">[SPÉCULATION]</span> Au-delà des deux prochains trimestres, toute trajectoire est <strong>massivement spéculative</strong>. Calendrier <strong>ancré sur le scénario central B</strong> (enlisement / normalisation lente, 30-38 % au J111), avec bifurcations vers <strong>A</strong> (accord durable, 48-58 % — normalisation plus rapide) et <strong>C</strong> (escalade/choc, 10-16 % — aggravation). Couleur = intensité dominante sous scénario B.</p>
+
+  <div class="frise">
+    <div class="seg orange"><span class="yr">Été 2026</span><span class="st">Moisson HN · soudure Sahel</span></div>
+    <div class="seg orangedark"><span class="yr">Aut.-hiver 2026-27</span><span class="st">Semis · engrais · hiver gazier</span></div>
+    <div class="seg yellow"><span class="yr">2027</span><span class="st">Récolte · reconstitution stocks</span></div>
+    <div class="seg yellow"><span class="yr">2028</span><span class="st">Campagne post-choc</span></div>
+    <div class="seg green"><span class="yr">2029</span><span class="st">Normal-haut ou cicatrices</span></div>
+  </div>
+
+  <div class="jalons">
+    <div class="jalon t-orange">
+      <div class="when">(i) Été 2026</div>
+      <h3>Moisson HN &amp; soudure du Sahel</h3>
+      <p><span class="tag-fait">[FAIT]</span> Récolte 2026 « déjà en terre, azote épandu » : l'effet engrais ne touche pas cette récolte mais sa <strong>qualité</strong> (crainte −1 pt de protéines / −4 q/ha en cas d'impasse azotée — Arvalis). Bilans 2026/27 en repli (FAO −2 %, IGC −3 %, blé d'hiver US −25 %), <em>d'origine météo/sécheresse</em>. Soudure Sahel = <strong>pic de gravité humaine</strong> (jusqu'à 52,8 M).</p>
+      <div class="branch a"><strong>A :</strong> prix détendus, intrants 2026/27 plus abordables.</div>
+      <div class="branch c"><strong>C :</strong> re-flambée énergie/engrais sur les semis d'automne.</div>
+    </div>
+    <div class="jalon t-orangedark">
+      <div class="when">(ii) Automne-hiver 2026-2027</div>
+      <h3>Semis, réservations d'engrais, hiver gazier</h3>
+      <p><span class="tag-fait">[INTERPRÉTATION]</span> <strong>Fenêtre la plus sensible.</strong> Réservation normale des engrais : si les prix payés restent élevés (MACF + surtaxe russe + Golfe non normalisé), des <strong>arbitrages de sous-fertilisation</strong> pèseraient sur rendements et qualité 2027. L'hiver gazier (stockage UE ~45 %, ~13-15 pts sous la norme) est le point où un effet énergétique <em>pourrait</em> devenir déclencheur en transformation.</p>
+      <div class="branch a"><strong>A :</strong> reconstitution du gaz + retour de l'offre Golfe → desserrement.</div>
+      <div class="branch c"><strong>C :</strong> la « normalisation 2027 » de la Banque mondiale s'effondre.</div>
+    </div>
+    <div class="jalon t-yellow">
+      <div class="when">(iii) 2027</div>
+      <h3>Récolte &amp; reconstitution des stocks</h3>
+      <p><span class="tag-fait">[FAIT/INTERPRÉTATION]</span> Banque mondiale : normalisation des engrais en 2027 — urée <strong>−9 à −25 %</strong> (−25 % conditionnel à une détente du gaz), DAP −10 %, potasse −6 %, <strong>gaz naturel UE −20 %</strong> — mais « bien au-dessus de la moyenne 2015-19 ». <strong>Hypothèse explicite et non acquise</strong> : retour des exports MO + détente du gaz (= scénario A). Normalisation physique <em>différée</em> : « l'engrais n'est pas haut dans la file ».</p>
+      <div class="branch a"><strong>A :</strong> normalisation plus rapide.</div>
+      <div class="branch c"><strong>C :</strong> hypothèse caduque.</div>
+    </div>
+    <div class="jalon t-yellow">
+      <div class="when">(iv) 2028</div>
+      <h3>Campagne « post-choc »</h3>
+      <p><span class="tag-fait">[SPÉCULATION]</span> Sous B, prix d'intrants revenus sous les pics 2026 mais au-dessus du pré-crise, avec des <strong>cicatrices</strong> : décapitalisation bovine FR persistante (déficit d'animaux finis ; −20 % de vaches mères à 2030 = « quasi irréversible »), report d'investissements, endettement. Aucune projection chiffrée FR/UE 2028 (campagne non semée).</p>
+      <div class="branch a"><strong>A :</strong> retour plus net au régime normal-haut.</div>
+      <div class="branch c"><strong>C :</strong> aggravation pluriannuelle (rendements, stocks).</div>
+    </div>
+    <div class="jalon t-green">
+      <div class="when">(v) 2029</div>
+      <h3>Retour à la normale ou cicatrices durables</h3>
+      <p><span class="tag-fait">[SPÉCULATION]</span> Sous A/B, retour probable des prix d'intrants à un régime « normal-haut » et des flux Ormuz à la normale. Cicatrices résiduelles surtout <strong>structurelles et françaises/européennes</strong> (cheptel, parc de transformation déjà en contraction <em>avant</em> la crise), peu attribuables à Ormuz seul. Aucune édition OCDE-FAO post-Ormuz publiée.</p>
+      <div class="branch c"><strong>C prolongé :</strong> aggravation comptée en années.</div>
+    </div>
+  </div>
+
+  <!-- ============================ CONCLUSION FRANCE ============================ -->
+  <h2>Conclusion — focus France</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Un choc de coûts d'intrants, pas de disponibilité</h3>
+      <p><span class="tag-fait">[FAIT/INTERPRÉTATION]</span> Au 18 juin 2026, le choc Ormuz sur l'alimentation française est un choc de <strong>coûts d'intrants</strong>, partiellement amorti et désormais en partie en reflux — <strong>pas un choc de disponibilité</strong>. Aucune pénurie alimentaire physique.</p>
+    </div>
+    <div class="card">
+      <h3>Production 2026-2028</h3>
+      <p>Récolte 2026 en demi-teinte (blé tendre ~32,4 Mt, −1,9 % ; orge/colza en baisse). L'effet « engrais cher » se lit sur la <strong>qualité attendue</strong> (protéines) et se <strong>reporte sur 2027</strong>. L'effet propre d'Ormuz est réel mais difficile à isoler (météo, MACF, surtaxe russe, achats anticipés).</p>
+    </div>
+    <div class="card">
+      <h3>Prix payé par l'agriculteur</h3>
+      <p>Urée ~793 €/t, ammonitrate ~554 €/t — élevés et <strong>décalés du spot</strong> qui détend. GNR ~1 501 €/1000 L TTC, <strong>aide 15 ct/L prolongée au 31 août</strong> (pas d'effet de falaise au 1ᵉʳ juillet). AdBlue stable.</p>
+    </div>
+    <div class="card">
+      <h3>Trésorerie / faillites</h3>
+      <p>Stress financier réel : défaillances agricoles <strong>+23 % au T1 2026</strong> (viticulture la plus touchée), garanties dette/trésorerie élargies. Signal structurel, antérieur et plus large que le seul choc Ormuz.</p>
+    </div>
+    <div class="card">
+      <h3>Budget des ménages</h3>
+      <p>Inflation alimentaire FR <strong>+1,1 %/an en mai</strong> (décélération) ; le repli énergie/urée de juin <strong>pas encore dans les rayons</strong> (transmission décalée, asymétrique). Léger sursaut estival possible avant détente automnale.</p>
+    </div>
+    <div class="card">
+      <h3>Calibrage du risque <span style="font-weight:400; color:var(--text-dim);">(ICD 203)</span></h3>
+      <p>Pénurie alimentaire physique FR 2026 attribuable à Ormuz : <strong>très improbable (5-20 %)</strong>. Effet de coût persistant sur intrants/prix jusqu'à la campagne 2027 : <strong>probable (55-80 %)</strong>, surtout en scénario B. Confiance : <strong>modérée</strong>.</p>
+    </div>
+  </div>
+
+  <h2>Indicateurs de bascule à surveiller (côté agricole)</h2>
+  <div class="cards">
+    <div class="card"><h3>Réouverture <em>réelle</em> d'Ormuz</h3><p>Données AIS, pas déclarations → conditionne la normalisation 2027 des engrais.</p></div>
+    <div class="card"><h3>OSP soufre ADNOC de juillet</h3><p>Non publié au 18 juin → premier signal de reflux/persistance de la tension phosphates.</p></div>
+    <div class="card"><h3>Politique d'export de la Chine</h3><p>Urée <em>et</em> phosphates : moteur exogène de la détente azote / de la tension DAP. Tout resserrement rouvrirait la pression.</p></div>
+    <div class="card"><h3>Premières allocations AdBlue (FR)</h3><p>Signal le plus précoce d'un retournement.</p></div>
+    <div class="card"><h3>Indice FAO de juin (3 juillet) &amp; IPC alimentaire FR de juin</h3><p>Mesure de la transmission de la détente de mi-juin.</p></div>
+    <div class="card"><h3>Taux réel de protéines de la moisson 2026 &amp; réservations d'engrais automne</h3><p>Confirme/infirme la crainte qualité ; indicateur avancé des rendements 2027.</p></div>
+  </div>
+
+  <div class="meta-foot">
+    Données compilées au 18 juin 2026 (J111) · Document de fond : <a href="../docs/impacts_agricoles.md">docs/impacts_agricoles.md</a> · Voir aussi <a href="dependances_ressources_critiques.html">ressources critiques</a> et <a href="dependances_ormuz_pays.html">dépendances énergétiques</a>.
+    <br>
+    <strong>Méthode</strong> : recherche OSINT multi-agents (8 axes) + vérifications adversariales par recoupement de ≥2 sources indépendantes ; cotation Admiralty/STANAG 2511 ; probabilités calibrées ICD 203. Faits, interprétations et spéculations explicitement séparés ; vides documentaires assumés. Quand une vérification corrige la recherche brute, c'est la vérification qui prime (corrections appliquées : aide GNR prolongée au 31 août ; bœuf +7,8 %/an et non +33 % ; « ~3 % du commerce maritime » → ~0,2 %/~4,8 % ; huiles FAO en baisse ; soufre/DAP multi-causal ; coûts amont contrastés).
+    <br>
+    Sources principales : Argus, Profercy, Kpler, TradingEconomics, IFPRI, World Bank Commodity Markets Outlook, FAO (Food Price Index, Hunger Hotspots), IGC, USDA WASDE, Eurostat, INSEE, BCE, Banque de France, Reussir/Les Marchés, La France Agricole, Terre-net, agriculture.gouv.fr (décret n°2026-477), Südzucker IR, UNCTAD. La synthèse périodique la plus récente (<code>docs/synthese_J108-J111.md</code>) fait foi sur l'état courant de la crise.
+  </div>
+</main>
+
+<site-footer></site-footer>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
 
   // Valeur de référence unique (cf. règle de cohérence CLAUDE.md) :
   // à mettre à jour ici lors d'un nouveau jalon — propagée à la nav ET au footer.
-  var ASOF = "15 juin 2026 (J108)";
+  var ASOF = "18 juin 2026 (J111)";
 
   // Ordre de la navigation = source unique. Modifier ici se répercute sur toutes les pages.
   var LINKS = [
@@ -16,6 +16,7 @@
     { key: "carte-europe",   href: "carte_infrastructures_europe.html",     label: "Carte Europe" },
     { key: "dependances-ue", href: "dependances_ormuz_pays.html",           label: "Dépendances UE (énergie)" },
     { key: "ressources",     href: "dependances_ressources_critiques.html", label: "Ressources critiques" },
+    { key: "impacts-agri",   href: "impacts_agricoles.html",                label: "Impacts agricoles" },
     { key: "stocks",         href: "stocks_pays_ue.html",                   label: "Stocks UE" }
   ];
 

@@ -1,6 +1,14 @@
 # Scénario B — Réaliste
 ## « L'enlisement organisé sous cessez-le-feu indéfini, ponctué d'incidents non létaux »
-### Probabilité estimée : 38-46 % (au 15 juin 2026, J108) — RECULE MAIS RESTE TRÈS PLAUSIBLE : la signature peut échouer ou glisser ; n'est plus le seul modal
+### Probabilité estimée : 30-38 % (au 18 juin 2026, J111) — RECUL CONFIRMÉ : l'accord est signé, mais une normalisation lente/incomplète ou un échec sur le fond (nucléaire à 60 j, Liban) reste très plausible
+
+---
+
+## Mise à jour J111 (18 juin 2026)
+
+**Probabilité abaissée à 30-38 % (vs 38-46 % à J108).** [INTERPRÉTATION] La signature effective de l'accord (17 juin) **élimine la version « pas d'accord / signature qui échoue »** de ce scénario, d'où le recul. Mais B reste **très plausible** sous une forme déplacée : le cadre signé peut n'accoucher que d'une **normalisation lente ou incomplète** (Ormuz toujours fermé matériellement, déminage de plusieurs semaines, retour de l'offre du Golfe étalé sur des mois) **ou échouer sur le fond** — le texte est « vague » de l'aveu même des US, le nucléaire est renvoyé à 60 jours et peut caler, le Liban reste actif. C'est désormais le scénario d'un **« accord creux » ou d'une nouvelle normalité dégradée**, plus que d'une absence d'accord.
+
+**Ce qui maintient B élevé** : (1) les dommages structurels (stocks au plus bas — SPR US plus bas depuis 1983, récoltes 2027, faillites du transport routier) persistent indépendamment de la signature ; (2) la croissance France 2026 désormais confirmée à **0,5-0,7 %** (BdF 0,5 % / INSEE 0,7 % / FMI 0,7 %) et l'inflation qui mord encore (IPCH 2026 ~2,5 %) actent l'enlisement économique ; (3) l'hiver gazier 2026-2027 reste un risque actif (UGS UE ~45 %, ~13-15 pts sous la norme). **Falsifié vers A** si Ormuz rouvre réellement et l'accord tient ; **vers C** si le Liban entraîne l'Iran ou si les frappes US reprennent.
 
 ---
 

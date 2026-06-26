@@ -1,0 +1,213 @@
+# Impacts agricoles du blocage du détroit d'Ormuz — du champ à l'assiette
+
+### Analyse OSINT + économie agricole + impact France — chaîne alimentaire complète, de l'intrant à l'assiette
+**18 juin 2026 (J111 du conflit)**
+
+> **À lire d'abord.** Ce document suit les impacts de la crise du détroit d'Ormuz (déclenchée le 28 février 2026, J1) sur **toute la chaîne alimentaire** : intrants (engrais, soufre, carburant agricole, AdBlue, énergie de production), production agricole, fret céréalier, sécurité alimentaire mondiale, transformation et prix au consommateur — jusqu'à l'assiette française. Chaque élément porteur est **étiqueté** `[FAIT]` (observé/sourcé), `[INTERPRÉTATION]` (déduction) ou `[SPÉCULATION]` (hypothèse), et **coté** au système Admiralty/STANAG 2511 (lettre A→F = fiabilité de la source ; chiffre 1→6 = crédibilité de l'information). Les vides documentaires sont assumés en fin de document, jamais comblés par une estimation déguisée en certitude. **Cadre de cohérence (baseline J111)** : l'accord-cadre US-Iran est *signé juridiquement* (17 juin) mais **Ormuz reste matériellement fermé** (0-7 transits/j contre 94-140 en temps normal, déminage non commencé) ; la réouverture est juridique, pas physique. La synthèse périodique la plus récente (`synthese_J108-J111.md`) fait foi sur l'état courant de la crise.
+
+---
+
+## 1. En une phrase / l'essentiel
+
+Au 18 juin 2026, le choc Ormuz sur l'alimentation est **réel mais à deux vitesses, décalé dans le temps, et largement non encore matérialisé dans l'assiette** : la branche azotée des engrais (urée, ammoniac, AdBlue) **se détend nettement** — mais pour une raison *exogène* à Ormuz (réouverture des exports chinois), pendant que la branche soufre/phosphates **reste en tension record** parce qu'elle, dépend directement du blocage physique ; le prix de référence mondial du grain est **baissier** (pétrole et accord), les indices de prix alimentaires sont **en plateau haut** au stade gros (FAO mai) et **en décélération** au stade consommateur (zone euro, France) ; l'impact le plus lourd est **différé** vers la campagne automne 2026 / hiver 2027 (qualité du blé, réservations d'engrais, alimentation animale) et **concentré, côté gravité humaine, sur des crises alimentaires localisées préexistantes** (famines IPC 5 déjà confirmées), qu'Ormuz aggrave à la marge sans en être le moteur.
+
+**À retenir :**
+
+- `[FAIT]` **Urée en détente, soufre en tension record** : indice urée spot ~360 $/t (−37 %/mois, 17 juin) ; OSP soufre ADNOC 860 $/t FOB (record absolu) ; DAP 930-935 $/t CFR Inde (+~40 % vs janvier). La détente azote est *exogène* à Ormuz (Chine) ; la tension soufre/phosphates lui est en partie adossée. **(B2)**
+- `[FAIT]` **France, pas de pénurie d'intrants** : GNR retombé à ~1 501 €/1000 L TTC après pic du 3 avril, aide de 15 ct/L **prolongée jusqu'au 31 août** (et non expirée fin juin) ; AdBlue stable, aucune rupture. **(B2/A2)**
+- `[FAIT]` **Prix du grain baissier, pas de choc alimentaire mondial matérialisé** : blé CBOT ~602-605 c/bu (−9,3 %/mois) ; indice FAO 130,8 (mai, quasi stable, plateau haut). **(B2/A1)**
+- `[FAIT]` **La crise alimentaire est localisée et préexistante** : rapport FAO-WFP Hunger Hotspots (17 juin) — 13 hotspots, ~266 M de personnes en insécurité aiguë, famines IPC 5 confirmées (Soudan, Gaza, Somalie) ; moteur dominant = conflit local (12/13) + chute des financements (−59 %), Ormuz = aggravateur transversal, pas moteur primaire. **(A1)**
+- `[INTERPRÉTATION]` **L'impact agricole majeur d'Ormuz est devant nous, pas derrière** : qualité protéique du blé 2026, réservations d'engrais automne 2026/hiver 2027, normalisation des stocks. La récolte 2026 de l'hémisphère Nord est « déjà en terre, l'azote épandu, la facture payée ». **(B2)**
+
+---
+
+## 2. Les faits marquants par canal de transmission
+
+### (a) Engrais & intrants chimiques agricoles
+
+`[FAIT]` Le marché des engrais reste **scindé en deux** au 18 juin. En temps normal, Ormuz achemine ~30-35 % des exports mondiaux d'urée et 20-30 % de l'ammoniac, et concentre une part majeure du soufre entrant dans les phosphates ; le blocage a coupé ~21 Mt/an de capacité d'export d'urée du Golfe et ~4 Mt/an de DAP. **(B2 — IFPRI, Global-Agriculture.com)**
+
+`[FAIT]` **Azote en détente nette.** L'indice urée spot est à ~360 $/t le 17 juin (−37,4 %/mois, −16,8 %/an). Le tender indien NFL (~1,7 Mt, clos ~10 juin) a obtenu des offres à 445-449 $/t CFR, ~−50 % vs avril, avec >6 Mt d'offres reçues. **(B2 — TradingEconomics, Business Standard)**
+
+`[FAIT, vérifié adversarialement]` **Le moteur de la détente azote est EXOGÈNE au flux physique d'Ormuz** : la Chine a rouvert ses exports d'urée le 26 mai 2026 (plancher 660 $/t prillée, 670 $/t granulée FOB, +20 $/t pour l'Inde, quotas 1,5-1,6 Mt juin-août). La détente ne vient **pas** d'une réouverture matérielle d'Ormuz (toujours fermé). **(B2 — Profercy, Reuters via WHBL)** `[INTERPRÉTATION]` Nuance de cadrage à conserver : la décision chinoise est elle-même une *réponse politique* à la crise Ormuz (Pékin rouvre parce que la crise a fait flamber les prix). « Exogène à Ormuz » s'entend donc comme **exogène au flux physique du détroit**, non comme déconnecté de la crise.
+
+`[FAIT]` **Ammoniac en détente** : Tampa ~608-775 $/t CFR ; marges azote des producteurs européens revenues à leur niveau pré-conflit grâce à la baisse du gaz (TTF ~40,86 €/MWh) ; aucune nouvelle fermeture d'usine. **(C2 — Grainews, ProcurementResource)**
+
+`[FAIT, vérifié adversarialement]` **Soufre/phosphates en tension RECORD.** OSP soufre ADNOC juin = **860 $/t FOB Ruwais** (+100 $/t vs mai), record absolu selon Argus (+40-60 $ vs le pic 2008) ; Koweït KSP 805 $/t. DAP Inde = **930-935 $/t CFR** (+~40 % vs janvier, plus haut depuis juillet 2022). **(A1 — Argus)** **Corrections issues de la vérification, à ne pas masquer :** (1) la causalité est **multi-factorielle**, pas mono-Ormuz — un moteur majeur du DAP est *exogène* (suspension des exports de phosphates par la Chine, NDRC, décidée en décembre 2025, courant jusqu'à ~août 2026) ; Hormuz agit surtout *indirectement* via le coût du soufre/acide sulfurique (acide spot >500 $/t). (2) La formule « aucun navire de soufre ne traverse Ormuz » est **inexacte** : Argus a documenté des transits sporadiques (MV *Valsamitis* ~26 avril, *Richsing Lotus* ~1-6 mai) ; le blocage est quasi-total en *volume* (~1 Mt de soufre bloquée), pas absolu. (3) Le soufre n'est pas strictement irremplaçable : des alternatives existent (Jizan/Yanbu/Duqm, Canada, Kazakhstan), mais contraintes (>45 % de l'offre Golfe « stranded »). Le marché soufre était de plus déjà en rallye *avant* la guerre.
+
+`[FAIT]` **Potasse = exception stable** : offre Canada/Russie/Biélorussie suffisante, perspective 2026 « steady ». **(C2 — World Bank, DTN)**
+
+`[FAIT]` **Production redémarre, exports toujours bloqués** : QatarEnergy/QAFCO (5,8 Mt/an) a redémarré début mai ; en Iran plusieurs lignes tournent (Kermanshah, Khorasan, une ligne de Pardis) tandis que Lordegan/Razi/Hengam restent à l'arrêt. ~800 kt-1 Mt d'engrais et >40 navires restent immobilisés autour d'Ormuz ; exports hebdomadaires du Golfe −90 % (600 kt fin février → 60 kt début juin). **(B2 — ICIS, Bloomberg, Kpler)**
+
+`[FAIT]` **France** : l'indice urée spot mondial détend (~360 $/t) mais les **prix payés par l'agriculteur restent élevés et décalés** — urée ~793 €/t départ port (terre-net, 18 juin), ammonitrate 33,5 ~554 €/t départ usine (16 juin), Agreste chiffrant +14,8 % sur les engrais azotés simples sur 8 mois de campagne 2025-26. ~90-100 % des besoins 2026 étaient couverts fin 2025 ; l'inquiétude porte sur 2026/27. Dépendance structurelle : la France importe ~42 % de ses engrais azotés de grands pays gaziers, ~24 % de l'UE, ~30 % de l'urée importée venant de Russie. **(B2/A2)** `[INTERPRÉTATION, vérifiée]` Le décalage spot/ferme est dû aux **achats anticipés** et à la **fiscalité** (MACF en vigueur depuis le 1ᵉʳ janvier 2026 ; surtaxe engrais russes via Règlement UE 2025/1227). Nuance : la presse agricole FR attribue un poids *majeur* à la perspective d'accord Ormuz dans le déclenchement de la détente — l'impact « Ormuz pur » sur la ferme est réel mais difficile à isoler et n'est pas le seul moteur.
+
+### (b) Carburant agricole (GNR/diesel) & AdBlue/DEF
+
+`[FAIT, vérifié adversarialement]` **GNR France en reflux, aucune pénurie.** Pic historique ~137,71 €/hl HT (= 1,377 €/L HT ; ~209 €/hl TTC) le **3 avril 2026**, soit un quasi-doublement (×1,9 vs ~72 €/hl HT mi-février ; ×2,4 vs ~58 €/hl HT fin décembre 2025). Prix courant retombé à ~0,98 €/L HT (12 juin) / ~1 501 €/1000 L TTC (18 juin). **(B2 — bulletin hebdo ministère de l'Écologie via reussir.fr ; FioulReduc en confirmation d'ordre de grandeur)** *Correction de la borne basse : « ~65 €/hl fin 2025 » de certaines reprises est imprécis ; la valeur correcte est ~58 €/hl HT.* Le carburant pèse 13-20 % du CA des entreprises de travaux agricoles ; la hausse au pic n'était pas amortissable.
+
+`[FAIT, vérifié adversarialement — CORRECTION IMPORTANTE]` **L'aide GNR de 15 ct/L N'EXPIRE PAS fin juin** : le décret n°2026-477 du 10 juin 2026 (JO 12 juin) **prolonge le remboursement jusqu'au 31 août 2026** (livraisons de mai, juin, juillet, août). Il n'y a **aucun « risque au 1ᵉʳ juillet » du fait de l'aide GNR**. La date du 30 juin ne concerne que le *dépôt* des demandes de l'aide d'avril (3,86 ct/L) et une mesure de cotisations sociales. **(A2 — agriculture.gouv.fr, décret JO + 5 médias)** *Ceci corrige la baseline interne (calendrier_penuries.md et certaines synthèses), qui évoquait un « marché d'escalier au 1ᵉʳ juillet » : à rectifier.*
+
+`[FAIT]` **AdBlue France STABLE** : ~0,375-0,40 €/L vrac/IBC, 0,60-0,80 €/L GMS, 0,70-1,00 €/L station ; **aucune rupture ni allocation**. La hausse « inévitable » (+170 % évoquée par certains fournisseurs) ne s'est pas matérialisée. **(B2 — Le Hub Agro, Bulteau, Reussir)** `[INTERPRÉTATION, bien étayée]` Cette stabilité **repose sur la détente de l'urée**, elle-même exogène à Ormuz (Chine) alors qu'Ormuz reste fermé : elle est donc **réversible** si l'offre chinoise se referme ou si le Golfe ne revient pas. C'est **le signal le plus précoce à surveiller** côté agricole.
+
+`[FAIT]` Hors de France, le carburant agricole reste un facteur limitant ailleurs : rationnement diesel signalé en Afrique de l'Est (Maurice ~21 jours de couverture fin mars) ; Inde affectée via le coût d'import. **(B2/C2 — IFPRI, données datées mars, à actualiser)**
+
+### (c) Énergie de production & transformation
+
+`[FAIT]` L'énergie est un poste majeur et mal substituable. Serres maraîchères chauffées en France : ~1 082 ha, chauffage = 2ᵉ poste de coût (~23 %), gaz naturel sur 77-97 % des exploitations. Diesel agricole ~31 % des inputs énergie en grandes cultures UE. En transformation, l'énergie représente 5-50 % des coûts selon le procédé (~15 % en moyenne) ; la chaîne du froid 15-18 % du CA (réfrigération = 70-80 % de la facture électrique). **(B2 — CTIFL, Rabobank, Eurostat)**
+
+`[FAIT]` La détente gazière en cours (TTF ~41 €/MWh, −21 %/mois) **soulage à la marge mais avec retard et de façon saisonnièrement faible** (peu de chauffage de serre en juin) ; elle agit d'abord sur les marges azotées (revenues pré-conflit), pas encore dans les contrats de transformation souvent couverts/forward. **(INTERPRÉTATION — B2)**
+
+`[FAIT, vérifié adversarialement]` **Aucune fermeture d'usine agroalimentaire UE/FR n'est imputable au choc énergétique d'Ormuz en mai-juin 2026.** Les fermetures visibles (sucreries : 22/103 fermées depuis 2017, Pontelongo en Italie, Trenčianska Teplá en Slovaquie ; laiteries) sont **structurelles** : surplus mondial (196 Mt prod. vs 193 Mt conso.), imports (sucre ukrainien −50 % depuis fin 2023, Mercosur), fin des quotas 2017, prix bas, baisse du cheptel. **Preuve de timing** : la dépréciation Südzucker (450-550 M€) a été annoncée le **17 février 2026, 11 jours AVANT le J1** de la crise. Le seul arrêt agroalimentaire UE pour cause d'énergie jamais documenté est Cofigeo — mais **en décembre 2022-janvier 2023, pas en 2026**. **(B2/A1 — ESM/Reuters, Südzucker IR, JDD)** `[INTERPRÉTATION]` Nuance honnête : l'énergie reste un *cofacteur* de coût réel qui comprime des marges déjà faibles ; elle n'est le déclencheur d'aucune fermeture en 2026. L'hiver 2026-2027 est la fenêtre où un effet énergétique pourrait, lui, devenir déclencheur.
+
+`[FAIT]` Moisson française 2026 démarrée en avance (~9 j sur le blé tendre, « 2ᵉ année la plus précoce depuis 2011 ») : le séchage des grains et la consommation de GNR interviennent dans un contexte de carburant encore élevé mais en repli. **(B3 — reussir.fr)**
+
+### (d) Fret céréalier & flux alimentaires maritimes
+
+`[FAIT, vérifié adversarialement]` **Ormuz est un point de passage agricole secondaire mais non négligeable** : ~2 Mt/mois de céréales/oléagineux/dérivés livrées au golfe Persique (~24 Mt/an ; 25-30 Mt/an si l'on inclut les oléagineux), pour des pays importateurs à 70-90 % de leur alimentation de base. **Correction** : cela représente **~0,2 % du commerce maritime mondial total** (12,1 Md t, UNCTAD 2024) et **~4,8 % du commerce mondial de céréales** (~504 Mt, FAO) — **et non « ~3 % du commerce maritime mondial »** (chiffre erroné, probablement confondu avec les ~3,5 % du conteneur mondial transitant par le Golfe). Source primaire unique = Kpler, non validée en valeur absolue par une source A1 indépendante. **(B2 — Kpler ; UNCTAD/FAO pour les ratios)** `[INTERPRÉTATION]` L'enjeu Ormuz est surtout **régional** (sécurité alimentaire du Golfe, Iran en tête, importateur majeur de maïs) et **indirect via les engrais** — pas un choc sur le prix mondial du grain.
+
+`[FAIT]` Au plus fort du blocage (mai), ~280 vraquiers immobilisés début mars, ~800-1 000 navires en attente ; ~3 vraquiers/jour transitent actuellement contre >20/j normalement. Imports céréaliers du Golfe = 942 000 t en mai (−50 % sur un an). **(B1/B2 — CRS R48903, Kpler via UkrAgroConsult)**
+
+`[FAIT]` **Le corridor mer Rouge** (Bab-el-Mandeb/Suez) est l'axe céréalier majeur (~13-15 % des céréales/oléagineux maritimes mondiaux, ~15 % du blé), mais il était **déjà majoritairement détourné depuis fin 2023** (Houthis) : reroutage par le cap de Bonne-Espérance = +3 000-3 500 milles, +10-14 jours, +1,2-1,8 M$ de carburant par aller-retour. L'effet *propre* de la crise Ormuz sur les volumes de ce corridor n'est pas isolable. **(B2 — World Grain, Maersk)**
+
+`[FAIT, vérifié adversarialement]` **Au 18 juin, l'effet PRIX sur le grain est BAISSIER, pas haussier** : blé CBOT ~602-605 c/bu (−9,3 %/mois, ~+5 %/an), maïs ~414 c/bu, sous l'effet du décrochage du pétrole (Brent ~78 $) et de l'accord US-Iran. Sens corroboré en papier (CBOT, Euronext) *et* en physique (FOB mer Noire en baisse). **Réserve** : un choc CAF physique *localisé* persiste sur les routes Golfe/mer Rouge (non capté par le benchmark mondial). **(B2/B1 — TradingEconomics, Fastmarkets, AHDB)**
+
+`[FAIT]` **Fret en hausse, mais pour des raisons non liées au grain** : Baltic Dry ~2 653-2 818 pts (faiblesse charbon/industrie), conteneur WCI ~3 549 $/EVP, SCFI ~2 726 (pic 2 ans) tirés par pré-saison/tarifs US/Coupe du monde 2026. Assurance « risque de guerre » Ormuz ~4 % de la valeur de coque (vs 0,125 % pré-crise) maintenue malgré la signature (les primes mettent 12-36 mois à refluer). **(B2 — TradingEconomics, Drewry, Strauss Center)**
+
+### (e) Sécurité alimentaire des pays vulnérables
+
+`[FAIT]` **Indice FAO des prix alimentaires (FFPI) mai 2026 = 130,8 pts** (−0,2 %/mois, +2,9 %/an, 18,4 % sous le pic de mars 2022), proche du plus haut en 3 ans : **plateau haut**, pas calme bas. Sous-indices : céréales 114,3 (+2,6 %/mois, blé en hausse 4ᵉ mois) ; sucre 95,1 (+7,5 %, lien pétrole→éthanol brésilien) ; **huiles végétales 185,0 (−4,6 %, 1ᵉʳ repli de 2026)** ; viande 130,5 (+0,1 %/mois, +6,3 %/an) ; laitier en léger repli. **La donnée de juin n'est pas encore publiée (sortie 3 juillet).** **(A1 — FAO)** *Note : ne pas écrire « huiles en hausse » — elles baissent.*
+
+`[FAIT]` **Rapport FAO-WFP Hunger Hotspots juin-novembre 2026 (clôture d'analyse 5 juin, publié 17 juin)** : ~266 M de personnes en insécurité alimentaire aiguë dans 13 hotspots ; **famines IPC 5 confirmées ou projetées** au Soudan, Soudan du Sud, Gaza, Somalie (Burhakaba), avec le Nigeria (Borno) ajouté au plus haut niveau de préoccupation. **(A1)**
+
+`[FAIT, vérifié sur source primaire — corrections]` Le rapport ajoute **Liban** (du fait de l'escalade des hostilités Israël-Hezbollah depuis fin février 2026 ; drivers : conflit + chocs économiques) et **Madagascar** (du fait de conditions météo erratiques, *pas* du conflit). Il identifie le **conflit armé comme moteur primaire de 12 des 13 hotspots** et l'**effondrement des financements humanitaires (−59 % entre 2022 et 2025)** comme aggravateur majeur. **Précisions** : (1) la phrase « ripple effects of the conflict in the Middle East » s'applique à la **Somalie**, pas à l'ajout Liban/Madagascar ; (2) le rapport ne qualifie *pas* l'escalade libanaise de « déclencheur Ormuz » (lien causal absent du texte). `[INTERPRÉTATION]` **Contrairement à ce que laissent croire les communiqués de presse**, le rapport intégral consacre une **section thématique dédiée et proéminente** au détroit d'Ormuz (urée +46 % fév-mars, carburants +40 %/mois en mars) et le tisse comme **driver transversal aggravant** dans quasi tous les chapitres-pays — mais **jamais comme moteur primaire** d'un hotspot. **(A1 — PDF intégral FAO-WFP)**
+
+`[FAIT]` Populations à risque (bornes, fenêtres hétérogènes) : Soudan 19,5 M (41 %) ; Soudan du Sud 7,8 M (55 %) ; Yémen 18,3 M (>50 %) ; Somalie 6 M ; Sahel/Afrique de l'Ouest jusqu'à 52,8 M durant la soudure juin-août. Crise de financement : ~318 M de personnes en faim sévère, WFP ne peut en nourrir qu'~1/3. **(A1/A2 — FAO-WFP, Cadre Harmonisé)**
+
+`[FAIT]` **Égypte** (1ᵉʳ importateur mondial de blé) : prix du pain baladi subventionné **maintenu** (2 EGP les 80 g) malgré +17 % de carburant ; budget subventions alimentaires FY2026/27 ~178 Md EGP (dont ~134 Md pour le pain) ; réserves stratégiques de blé ~4-6 mois. Arabie saoudite ≥6 mois de blé, EAU 4-6 mois. **Aucune émeute de la faim datée de juin 2026** en source ouverte. **(B2)** **Pakistan** : blé +34,2 %/an (mars), FMI imposant la suppression du prix de soutien (juin 2026). **(B2)**
+
+`[SPÉCULATION / borne, non réalisée]` WFP (19 mai) : jusqu'à +45 M de personnes supplémentaires en insécurité d'ici fin 2026 *si* le conflit dure jusqu'à mi-2026 — chiffre **conditionnel**, antérieur à l'accord du 17 juin, non remis à jour. **(B2)**
+
+### (f) Du champ à l'assiette : transformation & prix au consommateur
+
+`[FAIT]` **La transmission coût intrants → prix consommateur est décalée (6-12 semaines, plusieurs mois) et ASYMÉTRIQUE** (hausse rapide, baisse lente). La BCE le documente : « les chocs de prix qui frappent les fermes au printemps atteignent les consommateurs à l'automne ». **(B2/A2 — BCE, World Bank)**
+
+`[FAIT, vérifié adversarialement]` **Au stade consommateur, l'inflation alimentaire RECULE.** Zone euro : « alimentation+alcool+tabac » à 1,9 %/an en mai (chiffre définitif Eurostat du 17 juin, vs 2,4 % en avril). France : IPC alimentation +1,1 %/an en mai (4ᵉ mois de décélération). **(A1 — Eurostat, INSEE)** **Front avancé sur le non-transformé/frais** : zone euro « non transformé » +4,0 % vs transformé +1,1 % ; France produits frais +3,4 % (rebond, chaleur précoce) vs hors-frais +0,8 %. *Correction adversariale* : les coûts amont sont **contrastés**, pas « tous en hausse » — céréales (blé +7,8 %/an) et sucre (+7,5 %/mois) montent, mais **les engrais azotés (urée −37 %/mois) et le gaz sont en repli** ; seuls phosphates/soufre restent élevés. Le repli énergie/urée de juin **n'est pas encore dans les prix détail de mai**.
+
+`[FAIT, vérifié adversarialement]` **Maillon élevage = canal de transmission structurel le plus exposé** (alimentation animale = 60-70 % du coût de production), mais il **DIVERGE** : ce n'est pas une hausse généralisée de la viande. **Correction de magnitude** : le bœuf n'est **pas** à +33 %/an en juin — ce chiffre était la hausse de *janvier 2026* (ou la hausse cumulée sur ~2 ans). Au 18 juin, le prix producteur des gros bovins est à ~6,90 €/kg, soit **~+7,8 %/an** seulement (après 8 semaines de baisse) ; à la consommation ~+12-15 %/an. Porc stable/lourd, lait en détente (prix FR −7,3 % au T1, poudre lait écrémé UE −45 %/an), mais beurre +14 %/an (détente non uniforme). **(B2 — Reussir/Les Marchés, web-agri, IndexBox)** `[INTERPRÉTATION]` **La divergence s'explique par l'OFFRE (décapitalisation du cheptel bovin + épizooties FCO/MHE/DNC), exogène à Ormuz**, et non par le seul coût d'alimentation animale — qui frapperait les trois filières de la même façon.
+
+`[FAIT]` Tourteau de soja tendu (~340 €/t moyenne 2025, pics +80 €/t sous effet RDUE + géopolitique). Café à des niveaux élevés (Arabica ~2,60 $/lb), exposé au fret import, en léger repli. Riz **sous pression baissière** (~11,81 $/cwt) du fait des surplus exportateurs — contre-exemple, peu d'effet Ormuz. **(B2)**
+
+---
+
+## 3. Tableau d'impacts — produit × canal × géographie
+
+> Paliers : 🟢 nominal / <+10 % · 🟡 +10-30 % (vigilance) · 🟠 +30-80 % ou rationnement partiel/tension · 🔴 critique/crise. Variations datées de juin 2026 sauf mention.
+
+| Produit / filière | Canal | Géographie | Variation / état (juin 2026) | Palier | Cote |
+|---|---|---|---|---|---|
+| Urée (engrais azoté) | Intrants | Monde | ~360 $/t spot, −37 %/mois ; détente *exogène* à Ormuz (Chine) | 🟡 | B2 |
+| Urée payée ferme | Intrants | France | ~793 €/t départ port ; décalée du spot (achats anticipés, MACF) | 🟠 | A2 |
+| Ammonitrate 33,5 | Intrants | France | ~554 €/t départ usine ; azotés +14,8 % sur 8 mois (Agreste) | 🟡 | A2 |
+| Ammoniac | Intrants | UE / Monde | ~608-775 $/t CFR Tampa ; marges azote revenues pré-conflit | 🟢 | C2 |
+| Soufre (OSP) | Intrants | Golfe / Inde | 860 $/t FOB (record absolu), ~1 000 $/t CFR Inde | 🔴 | A1 |
+| DAP (phosphate) | Intrants | Inde / Monde | 930-935 $/t CFR, +~40 % vs janvier ; Chine suspend exports | 🟠 | A1 |
+| Potasse (MOP) | Intrants | Monde | stable (« exception ») ; offre Canada/Russie/Biélorussie | 🟢 | C2 |
+| GNR (gazole agricole) | Carburant | France | ~1 501 €/1000 L TTC ; reflux après pic 3 avril ; aide 15 ct/L jusqu'au 31 août | 🟡 | B2 |
+| AdBlue/DEF | Carburant | France | ~0,40-0,80 €/L ; stable, **aucune rupture** ; réversible | 🟢 | B2 |
+| Blé | Fret / prix | Monde (CBOT) | ~602-605 c/bu, −9,3 %/mois (baissier : pétrole + accord) | 🟢 | B2 |
+| Maïs | Fret / prix | Monde | ~414 c/bu ; baissier ; Iran/Golfe importateur exposé | 🟢 | B2 |
+| Riz | Prix | Monde | ~11,81 $/cwt, baissier (surplus Inde/Thaïlande/Vietnam) | 🟢 | B2 |
+| Soja / tourteau | Intrants élevage | France / UE | tourteau ~340 €/t (moy. 2025), pics +80 €/t ; tendu | 🟡 | B2 |
+| Huiles végétales | Prix | Monde | indice FAO 185,0, −4,6 %/mois (1ᵉʳ repli 2026) mais niveau haut | 🟡 | A1 |
+| Sucre | Prix / énergie | Monde | indice FAO +7,5 %/mois (report canne→éthanol Brésil) | 🟡 | A1 |
+| Viande bovine | Élevage | France | prod. ~+7,8 %/an ; conso ~+12-15 % ; moteur = cheptel, *pas Ormuz* | 🟠 | B2 |
+| Porc | Élevage | France / UE | stable/lourd ; conso ~+2 %/an | 🟢 | B2 |
+| Lait | Élevage | France / UE | détente (prix FR −7,3 % T1, SMP −45 %/an) ; beurre +14 % | 🟢 | B2 |
+| Café | Fret import | Monde | Arabica ~2,60 $/lb ; élevé, léger repli | 🟡 | B2 |
+| Légumes de serre | Énergie | France | exposés (chauffage gaz) mais hiver doux + TTF ~41 €/MWh | 🟢 | B2 |
+| Fruits / produits frais | Énergie / prix | France | IPC frais +3,4 %/an (chaleur précoce, énergie aval) | 🟡 | A1 |
+| Sécurité alim. pays vulnérables | Multi-canal | Soudan, S. Sud, Gaza, Somalie, Yémen, Sahel | 266 M en insécurité aiguë, famines IPC 5 ; Ormuz aggravateur, pas moteur | 🔴 | A1 |
+| Panier alimentaire (gros) | Synthèse | Monde | FFPI 130,8 (mai), plateau haut, +2,9 %/an | 🟡 | A1 |
+| Panier alimentaire (conso) | Synthèse | France / zone euro | FR +1,1 %/an, ZE 1,9 % ; en décélération | 🟢 | A1 |
+
+---
+
+## 4. Pays impactés — exportateurs, importateurs, vulnérables
+
+`[FAIT]` **Exportateurs du Golfe coupés (offre).** Iran, Qatar, Arabie saoudite, EAU, Oman concentrent l'essentiel des exports d'urée, d'ammoniac et de soufre passant par Ormuz : ~21 Mt/an d'urée et ~4 Mt/an de DAP coupées, exports hebdomadaires du Golfe −90 %, ~1 Mt d'azote et ~1 Mt de soufre bloquées. La production interne a partiellement redémarré (QAFCO, plusieurs lignes iraniennes), mais **l'évacuation reste verrouillée** tant qu'Ormuz n'est pas matériellement rouvert. **(B2)**
+
+`[FAIT/INTERPRÉTATION]` **Grands importateurs exposés (demande / intrants).** L'**Inde** (1ᵉʳ importateur mondial d'urée ; production tombée à 1,5 Mt/mois en mars sur pénurie de GNL) est le pivot — mais ses stocks Kharif sont jugés « adéquats » par le gouvernement et la détente chinoise lui profite directement (prime de +20 $/t). Le **Brésil**, le **Bangladesh** (53 % de ses engrais venant du Golfe), l'**Asie du Sud-Est** et l'**Afrique sub-saharienne** (Kenya, Tanzanie, Mozambique, Somalie) sont cités par la FAO comme à risque immédiat — via le coût/disponibilité des intrants azotés, plus que via le grain. L'**Égypte** absorbe le choc par ses subventions (pain baladi maintenu) et ses réserves (4-6 mois). **(A1/B2)**
+
+`[FAIT]` **Pays à risque de crise alimentaire (gravité humaine).** Les famines IPC 5 confirmées ou projetées (Soudan, Soudan du Sud, Gaza, Somalie, + Nigeria/Borno) et les 13 hotspots FAO-WFP sont **majoritairement portés par le conflit local et la chute des financements (−59 %)**, Ormuz n'étant qu'un aggravateur transversal (prix énergie/engrais/fret). Liban ajouté à la liste (escalade fin février, concomitante mais non causalement reliée à Ormuz dans le texte), Madagascar ajouté pour raison météo. `[INTERPRÉTATION]` La hiérarchie est donc claire : **Ormuz amplifie une carte de la faim déjà tracée par d'autres causes**, il ne la redessine pas. **(A1)**
+
+---
+
+## 5. Prospective 2026-2029 — calendrier sur 3 ans
+
+> `[SPÉCULATION]` **Avertissement** : au-delà des deux prochains trimestres, toute trajectoire est **massivement spéculative**. Ce calendrier est **ancré sur le scénario central B** (enlisement / normalisation lente, 30-38 % au J111), avec bifurcations explicites vers **A** (accord durable, 48-58 % — normalisation plus rapide) et **C** (escalade/choc, 10-16 % — aggravation). Les bilans céréaliers 2026/27 cités sont **en grande partie d'origine climatique et antérieurs à Ormuz** : ne pas les imputer principalement au détroit (erreur de causalité).
+
+### (i) Été 2026 — moisson de l'hémisphère Nord & soudure du Sahel
+
+`[FAIT]` Récolte 2026 « déjà en terre, azote épandu, facture payée » : l'effet engrais d'Ormuz **ne touche pas cette récolte**, il se lit surtout sur la **qualité** (crainte d'une baisse du taux de protéines du blé FR/UE par impasse sur le dernier apport d'azote — Arvalis estime −1 pt de protéines / −4 q/ha pour une impasse). Bilans mondiaux 2026/27 attendus en repli (FAO −2 %, IGC −3 %, blé d'hiver US −25 % vs 2025 — *d'origine météo/sécheresse*). Soudure Sahel (jusqu'à 52,8 M en insécurité) = **pic de gravité humaine attendu juin-août**. `[B-A-C]` En **A**, prix détendus et intrants 2026/27 plus abordables ; en **C**, re-flambée énergie/engrais sur les semis d'automne. **(A1/A2/B2)**
+
+### (ii) Automne-hiver 2026-2027 — semis, réservations d'engrais, hiver gazier
+
+`[INTERPRÉTATION]` **Fenêtre la plus sensible.** C'est la période de **réservation normale des engrais** : si les prix payés restent élevés (verrou MACF + surtaxe russe + Golfe non normalisé), des **arbitrages de sous-fertilisation** sont probables, pesant sur les rendements et la qualité 2027. L'**hiver gazier** (stockage UE ~45 % au 16 juin, ~13-15 pts sous la norme ; force majeure Qatar prolongée jusqu'à mi-août) est le point où un **effet énergétique pourrait devenir déclencheur** de réductions d'activité agroalimentaire (non observé en juin 2026). Alimentation animale = canal à surveiller (tourteaux, énergie élevage). `[B-A-C]` En **A**, reconstitution des stocks de gaz et retour de l'offre Golfe → desserrement ; en **C** (Ormuz refermé/gaz tendu), la « normalisation 2027 » de la Banque mondiale **s'effondre**. **(B2/B3)**
+
+### (iii) 2027 — récolte & reconstitution des stocks
+
+`[FAIT/INTERPRÉTATION]` La Banque mondiale (Commodity Markets Outlook avril 2026) projette une **normalisation des engrais en 2027** : urée **−9 à −25 %** (−25 % *conditionnel* à une détente du gaz), DAP −10 %, potasse −6 %, **gaz naturel UE −20 %** — mais « bien au-dessus de la moyenne 2015-19 ». **Hypothèse explicite et non acquise** : le retour des exports du Moyen-Orient *et* une détente du gaz, c'est-à-dire **le scénario A (réouverture effective d'Ormuz)**. La normalisation physique sera de toute façon **différée** : pétrole et GNL passent en priorité, « l'engrais n'est pas haut dans la file » (Kpler/IGC). `[B-A-C]` En **B**, normalisation lente et incomplète ; en **A**, plus rapide ; en **C**, hypothèse caduque. **(A1)**
+
+### (iv) 2028 — campagne « post-choc »
+
+`[SPÉCULATION]` Sous **B**, l'essentiel des prix d'intrants serait revenu sous les pics 2026 mais au-dessus du niveau pré-crise, avec des **cicatrices** : décapitalisation bovine FR persistante (déficit d'animaux finis 2026-2027 ; une baisse de 20 % du cheptel de vaches mères à horizon 2030 aurait des conséquences « quasi irréversibles »), report d'investissements, endettement (garantie Bpifrance reconduite jusqu'au 31 décembre 2026). Aucune projection chiffrée FR/UE 2028 n'existe (campagne non semée) — toute valeur serait spéculative. **(B2 pour les tendances structurelles ; reste SPÉCULATION)**
+
+### (v) 2029 — retour à la normale ou cicatrices durables
+
+`[SPÉCULATION]` Sous **A/B**, retour probable des prix d'intrants à un régime « normal-haut » et des flux Ormuz à la normale ; les cicatrices résiduelles seraient surtout **structurelles et françaises/européennes** (cheptel, parc de transformation déjà en contraction *avant* la crise), peu attribuables à Ormuz seul. Sous **C** prolongé, l'aggravation se compterait en années (rendements, stocks mondiaux, insécurité alimentaire). Aucune édition OCDE-FAO Agricultural Outlook post-Ormuz n'est encore publiée (la dernière reste 2025-2034, juillet 2025). **(SPÉCULATION)**
+
+---
+
+## 6. Conclusion — focus France
+
+`[FAIT/INTERPRÉTATION]` **Pour la France, au 18 juin 2026, le choc Ormuz sur l'alimentation est un choc de *coûts d'intrants*, partiellement amorti et désormais en partie en reflux, pas un choc de disponibilité.**
+
+- **Production agricole 2026-2028** : récolte 2026 en demi-teinte (blé tendre ~32,4 Mt, −1,9 % vs 2025 ; orge et colza en baisse), mais l'effet « engrais cher » se lit surtout sur la **qualité attendue** (protéines du blé) et se **reporte sur 2027**. L'effet propre d'Ormuz est réel mais **difficile à isoler** des facteurs météo, MACF, surtaxe russe et achats anticipés.
+- **Prix payé par l'agriculteur** : urée ~793 €/t, ammonitrate ~554 €/t — élevés et **décalés du spot mondial** (qui détend) ; GNR retombé à ~1 501 €/1000 L TTC, **aide de 15 ct/L prolongée jusqu'au 31 août** (pas d'effet de falaise au 1ᵉʳ juillet, contrairement à une crainte antérieure) ; AdBlue stable.
+- **Trésorerie / faillites** : stress financier réel — défaillances agricoles **+23 % au T1 2026** (viticulture la plus touchée), dispositifs de garantie dette/trésorerie élargis. Signal structurel, antérieur et plus large que le seul choc Ormuz.
+- **Prix alimentaires au consommateur & budget des ménages** : inflation alimentaire FR **+1,1 %/an en mai** (en décélération), IPC total +2,4 % ; l'INSEE projette l'alimentaire hors frais à ~+1,0 % en juin. Le repli énergie/urée de juin **n'est pas encore dans les rayons** (transmission décalée, asymétrique) : un léger sursaut estival reste possible avant détente automnale.
+- **Risque social agricole** : présent (FNSEA jugeant les aides insuffisantes, réclamant 30 ct/L) mais **sans flambée datée** dans la fenêtre 15-18 juin ; la détente des prix énergie/engrais réduit la pression haussière sans l'annuler.
+
+`[INTERPRÉTATION, calibrage ICD 203]` **Probabilité que la France connaisse en 2026 une pénurie alimentaire physique attribuable à Ormuz : très improbable (5-20 %).** **Probabilité d'un effet de coût persistant sur les intrants et les prix alimentaires jusqu'à la campagne 2027 : probable (55-80 %)**, surtout en scénario B. **Niveau de confiance : modéré** (transmission décalée, donnée de juin non publiée, part Ormuz non isolable des facteurs exogènes).
+
+**Indicateurs de bascule à surveiller (côté agricole) :**
+- **Réouverture *réelle* d'Ormuz** (données AIS, pas déclarations) → conditionne la normalisation 2027 des engrais.
+- **OSP soufre ADNOC de juillet** (non publié au 18 juin) → premier signal de reflux/persistance de la tension phosphates.
+- **Politique d'export de la Chine** (urée *et* phosphates) → moteur exogène de la détente azote / de la tension DAP : tout resserrement rouvrirait la pression.
+- **Premières allocations AdBlue en France** → signal le plus précoce d'un retournement.
+- **Indice FAO de juin** (sortie 3 juillet) et **IPC alimentaire FR de juin** (~30 juin) → mesure de la transmission de la détente de mi-juin.
+- **Taux réel de protéines de la moisson 2026** (récolte en cours) → confirme ou infirme la crainte qualité.
+- **Réservations d'engrais automne 2026/hiver 2027** → indicateur avancé des rendements 2027.
+
+---
+
+## Données absentes assumées
+
+- **OSP soufre ADNOC de juillet** non publié au 18 juin : impossible de dire si le record de 860 $/t reflue.
+- **Assessment Argus/Profercy strictement datée du 15-18 juin pour le DAP CFR Inde** : le 930-935 $/t provient de l'achat marocain juin-juillet, supposé inchangé mais non reconfirmé jour pour jour.
+- **Volume précis d'engrais bloqué dans Ormuz au 18 juin** : fourchette large (~800 kt urée / ~1 Mt « fertilizer » / >40 navires), pas de décompte unique consolidé.
+- **Statut de redémarrage réel des exports d'engrais iraniens post-signature** (17 juin) non chiffré ; calendrier de retour des unités offline (Lordegan, Razi, Hengam) absent.
+- **Indice FAO des prix alimentaires de juin 2026** non publié au 18 juin (sortie 3 juillet) : effet de la détente de mi-juin non mesurable.
+- **IPC alimentaire FR / HICP zone euro de juin** non disponibles (dernière donnée dure = mai) : le « repli pas encore dans le détail » ne sera vérifiable qu'avec les chiffres de juin.
+- **Effet quantifié sur les épandages 2026 réellement réduits** (Mt d'azote/phosphate non appliquées) : aucune donnée d'observation, uniquement des projections.
+- **Taux réel de protéines de la moisson 2026** : récolte en cours, tout chiffre serait spéculatif.
+- **Prix engrais France/UE détail (urée, ammonitrate, DAP) datés de juin 2026** au-delà des cotations citées : non agrégés ; le coût net d'un panier composé (azote en baisse, P/soufre en hausse) dépend du mix régional et n'est pas consolidé.
+- **Part imputable à Ormuz seul** dans les bilans céréaliers 2026/27 et l'inflation alimentaire : non isolable des facteurs climat, surfaces, MACF, surplus mondiaux.
+- **Mise à jour WFP/PAM post-accord** (après 17 juin) sur l'insécurité alimentaire : non disponible ; les chiffres conditionnels (+45 M) datent d'avant la signature.
+- **Données Pakistan/Afrique 2026 sur diesel agricole/engrais/AdBlue** : partielles et datées (mars).
+- **Calendrier ferme de reconstitution des stocks mondiaux d'engrais** après réouverture matérielle d'Ormuz : qualitatif (« semaines à plusieurs mois »), pas de date.
+- **Aucune édition OCDE-FAO Agricultural Outlook 2026-2035** publiée au 18 juin : projections décennales post-Ormuz indisponibles.
+
+---
+
+*Méthode : recherche OSINT multi-agents (8 axes) + vérifications adversariales par recoupement de ≥2 sources indépendantes, recherche active de réfutation ; cotation Admiralty/STANAG 2511 (fiabilité source A→F, crédibilité info 1→6) ; probabilités calibrées ICD 203 (fourchettes). Faits, interprétations et spéculations explicitement séparés ; vides documentaires assumés sans estimation déguisée. Quand une vérification adversariale corrige la recherche brute, c'est la vérification qui prime (corrections appliquées : aide GNR prolongée au 31 août ; bœuf +7,8 %/an et non +33 % ; « ~3 % du commerce maritime » remplacé par ~0,2 %/~4,8 % ; huiles FAO en baisse ; soufre/DAP multi-causal et transits non nuls ; coûts amont contrastés, pas tous en hausse). Sources principales citées : Argus, Profercy, Kpler, TradingEconomics, IFPRI, World Bank Commodity Markets Outlook, FAO Food Price Index & Cereal Supply and Demand Brief, FAO-WFP Hunger Hotspots (PDF intégral), IGC, USDA WASDE, Eurostat, INSEE, BCE, Banque de France, Reussir/Les Marchés, La France Agricole, Terre-net, web-agri, agriculture.gouv.fr (décret n°2026-477), ESM/Reuters, Südzucker IR, UNCTAD. La synthèse périodique la plus récente — `docs/synthese_J108-J111.md` — fait foi sur l'état courant de la crise du détroit d'Ormuz.*

@@ -1,6 +1,20 @@
 # Scénario A — Optimiste
-## « L'accord US-Iran (« complet », confirmé côté iranien, signature 19 juin, non signé) »
-### Probabilité estimée : 35-45 % (au 15 juin 2026, J108) — FORTE HAUSSE : ACCORD CONFIRMÉ CÔTÉ IRANIEN, SIGNATURE DATÉE, BLOCUS ORDONNÉ LEVÉ
+## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
+### Probabilité estimée : 48-58 % (au 18 juin 2026, J111) — SCÉNARIO MODAL : ACCORD SIGNÉ EN AVANCE + TEXTE PUBLIÉ ; RESTE À CONFIRMER LA RÉOUVERTURE MATÉRIELLE ET L'AVAL DU GUIDE
+
+---
+
+## Mise à jour J111 (18 juin 2026)
+
+**Probabilité relevée à 48-58 % — A devient le scénario MODAL (vs 35-45 % à J108).** Le verrou central de J108 saute : [FAIT] l'accord US-Iran (« mémorandum d'Islamabad », 14 points) a été **signé par anticipation** — paraphe électronique les 14-15 juin (Vance + Ghalibaf), **signature des deux présidents le 17 juin** (Trump au G7 à Versailles, Pezeshkian à Téhéran), entré en vigueur **deux jours avant** la date prévue. [FAIT] Le **texte intégral a été publié le 17 juin**, ce qui lève aussi le verrou « versions incompatibles » (300 Md$ de reconstruction + avoirs gelés débloqués + waivers pétroliers = complémentaires). [FAIT] La **cérémonie suisse du 19 juin** devient caduque (l'Iran l'annule, la Suisse la maintenait — contradiction non tranchée). Le cessez-le-feu US-Iran est **formalisé** et le blocus naval US est en **cours de levée** (3 pétroliers iraniens sortis le 16 juin).
+
+**Plafond maintenu (ce qui empêche A d'aller plus haut)** :
+1. [FAIT] **Ormuz reste fermé matériellement** : 0-7 transits/jour contre 94-140 en temps normal, déminage non commencé (30-50 j). La réouverture est juridique, pas matérielle — c'est la 4ᵉ annonce de réouverture (prudence). L'indicateur de confirmation de A (flux AIS réel) **n'est pas déclenché**.
+2. [INTERPRÉTATION] **L'aval personnel du Guide Mojtaba Khamenei reste indéterminé** : le Conseil suprême de sécurité nationale a approuvé, mais le Guide ne s'est pas exprimé publiquement (« tacit approval » côté US vs « no indication » côté israélien).
+3. [FAIT, structurant] **Le texte est, de l'aveu même des US, « politique » et « vague »**, ses engagements de fond reposant sur des accords « en coulisses » non écrits ; le **volet nucléaire est renvoyé à 60 jours** (uranium 440,9 kg dilué sur place sous AIEA).
+4. [FAIT] **Le Liban poursuit** (Hezbollah de retour au feu le 17 juin) et l'Iran en fait une condition de non-violation — vecteur capable de fragiliser l'application.
+
+**Indicateur de falsification (ce qui confirmerait A)** : **réouverture réelle d'Ormuz** mesurée à l'AIS + achèvement du déminage ; **déclaration explicite du Guide** ou de l'IRIB validant l'accord ; **tenue des pourparlers nucléaires sur 60 jours**.
 
 ---
 
