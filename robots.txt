@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mboix.github.io/ormuz-monitoring/sitemap.xml

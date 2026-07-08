@@ -77,7 +77,7 @@ Les vues d'ensemble et les trois scénarios prospectifs sont dans [`index.md`](d
 │       ├── AUDIT.md                          # Audit de préparation à la publication
 │       └── PLAN_P0.md                        # Plan d'action de mise en conformité
 └── app/                              # Application web — dashboards HTML statiques
-    ├── index.html                        # Centre de pilotage (entrée)
+    ├── index.html                        # Observatoire (entrée)
     ├── carte_infrastructures.html        # Carte zone Ormuz
     ├── carte_infrastructures_europe.html # Carte Europe
     ├── chronologie.html                  # Frise chronologique interactive
@@ -160,7 +160,7 @@ Dépôt **multi-licence** (conforme à la spécification [REUSE](https://reuse.s
 
 Un fichier [`CITATION.cff`](CITATION.cff) est fourni (bouton **« Cite this repository »** sur GitHub). Citation suggérée :
 
-> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J98). https://github.com/mickael-boixiere/ormuz-monitoring
+> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J131, 8 juillet 2026). https://github.com/MBOIX/ormuz-monitoring
 
 ## Contact
 

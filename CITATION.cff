@@ -10,11 +10,11 @@ authors:
   - family-names: "Boixiere"
     given-names: "Mickaël"
     email: "boixiere.mickael@gmail.com"
-repository-code: "https://github.com/mickael-boixiere/ormuz-monitoring"
-url: "https://github.com/mickael-boixiere/ormuz-monitoring"
+repository-code: "https://github.com/MBOIX/ormuz-monitoring"
+url: "https://github.com/MBOIX/ormuz-monitoring"
 license: CC-BY-4.0
-version: "2026.06.06"
-date-released: "2026-06-06"
+version: "2026.07.08"
+date-released: "2026-07-08"
 keywords:
   - OSINT
   - "détroit d'Ormuz"

@@ -110,7 +110,7 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 | `impacts_agricoles.md` | Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France |
 | `infrastructures_europe.md` | Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays |
 | `sources.md` / `sources_infrastructures*.md` | Tableaux des sources OSINT classées par fiabilité et domaine |
-| `app/` | Application web — 9 dashboards HTML statiques (Centre de pilotage, cartes, dépendances, ressources, impacts agricoles, stocks) |
+| `app/` | Application web — 9 dashboards HTML statiques (Observatoire, cartes, dépendances, ressources, impacts agricoles, stocks) |
 
 ---
 

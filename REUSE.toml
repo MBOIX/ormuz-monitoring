@@ -1,7 +1,7 @@
 version = 1
 SPDX-PackageName = "ormuz-monitoring"
 SPDX-PackageSupplier = "Mickaël Boixiere <boixiere.mickael@gmail.com>"
-SPDX-PackageDownloadLocation = "https://github.com/mickael-boixiere/ormuz-monitoring"
+SPDX-PackageDownloadLocation = "https://github.com/MBOIX/ormuz-monitoring"
 
 # --- Code : application web statique (HTML / CSS / JS) ---
 [[annotations]]

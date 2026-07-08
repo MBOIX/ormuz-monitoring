@@ -77,7 +77,7 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │       ├── AUDIT.md                           # Audit de publication GitHub (priorités P0/P1/P2)
 │       └── PLAN_P0.md                         # Plan d'action Sprint P0
 └── app/                               # Application web — dashboards HTML statiques (voir section dédiée)
-    ├── index.html                         # Centre de pilotage (entrée)
+    ├── index.html                         # Observatoire (entrée)
     ├── carte_infrastructures.html         # Carte zone Ormuz (54 sites + 7 pipelines)
     ├── carte_infrastructures_europe.html  # Carte Europe (~160 entrées)
     ├── chronologie.html                   # Frise chronologique interactive
@@ -97,7 +97,7 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 Le dossier `app/` est une **application web statique** (HTML + CSS + un unique composant JS natif `nav.js`, **aucun framework, aucun CDN applicatif, aucune dépendance externe**) qui matérialise les données des fichiers analytiques. Ouverture en local par double-clic ou via `python3 -m http.server` depuis `app/`.
 
 ### Architecture
-- **Point d'entrée** : `app/index.html` (« Centre de pilotage »).
+- **Point d'entrée** : `app/index.html` (« Observatoire »).
 - **Feuille de style unique** : `app/styles_common.css` — variables CSS (`--bg`, `--panel`, `--accent`, `--green/yellow/orange/red`), thème sombre type GitHub. Toute nouvelle page s'y rattache.
 - **Header & footer mutualisés** : générés par les Web Components natifs `<site-nav active="…">` et `<site-footer [variant="…"]>` définis dans `app/nav.js` (**source unique**, plus aucune duplication entre pages). Chaque page n'écrit que la balise + l'attribut `active` ; `nav.js` rend la barre `topbar` (marque + compteur J-day + liens), pose la classe `active` et le pied de page. La barre est `position: sticky` portée par `<site-nav>` (cf. `styles_common.css`), pas par `.topbar`. Toute modification de l'ordre/des liens de nav ou du texte de footer se fait **uniquement dans `nav.js`**.
 - **Codage couleur** : vert = nominal / sûr ; jaune = vigilance ; orange = engagé / tendu ; rouge = critique. Respecter cette sémantique pour tout nouvel indicateur.
