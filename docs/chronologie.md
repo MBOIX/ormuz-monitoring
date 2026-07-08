@@ -4,9 +4,9 @@
 >
 > **Référence de calcul** — J1 = 28 février 2026 (frappes US-Israël, Opération Epic Fury, mort d'Ali Khamenei, fermeture d'Ormuz par l'Iran).
 >
-> **Dernière mise à jour** — 26 juin 2026 (J119). Dernière consolidation de l'état de situation : 26 juin 2026 (J119).
+> **Dernière mise à jour** — 8 juillet 2026 (J131). Dernière consolidation de l'état de situation : 8 juillet 2026 (J131).
 >
-> **Note de fraîcheur (CRITIQUE)** — Ce fichier n'est pas la source de vérité sur les chiffres courants (prix, stocks, % UGS, probabilités de scénarios). **La synthèse périodique la plus récente (`synthese_J*-J*.md`) fait foi sur l'état courant** ; ici, les valeurs chiffrées sont conservées telles qu'elles ont été datées à leur observation, pour mémoire historique. Avant toute analyse, vérifier l'ancienneté du dernier point (26 juin 2026) et rafraîchir si une recherche apporte du neuf.
+> **Note de fraîcheur (CRITIQUE)** — Ce fichier n'est pas la source de vérité sur les chiffres courants (prix, stocks, % UGS, probabilités de scénarios). **La synthèse périodique la plus récente (`synthese_J*-J*.md`) fait foi sur l'état courant** ; ici, les valeurs chiffrées sont conservées telles qu'elles ont été datées à leur observation, pour mémoire historique. Avant toute analyse, vérifier l'ancienneté du dernier point (8 juillet 2026) et rafraîchir si une recherche apporte du neuf.
 
 ## Note méthodologique
 
@@ -363,6 +363,30 @@
 
 ---
 
+## Phase 13 — L'accord se fracture : rechute militaire directe US-Iran, licence pétrolière révoquée, cessez-le-feu déclaré « terminé » (26 juin → 8 juillet 2026, J119 → J131)
+
+> *Note de granularité : la fenêtre fait basculer la crise d'un « accord fragile qui s'applique » à un « accord fracturé qui survit juridiquement ». En 48 h (7-8 juillet), le terrain rejoue le pire schéma d'avril : le CGRI frappe 3 navires, le Trésor US révoque la licence pétrolière iranienne, CENTCOM frappe >80 cibles iraniennes (1re frappe US directe depuis le cessez-le-feu du 8 avril), l'Iran riposte sur des bases US du Golfe (aucune victime rapportée), et Trump déclare le cessez-le-feu « terminé ». MAIS aucune mort rapportée, le MOU n'est pas déclaré nul (Araghchi : « éléments clés rendus inefficaces »), et le canal de Doha pourrait reprendre. Le Brent rebondit sans flamber (~74-78 $). J-day strict (8 juillet = J131). Détail chiffré et sources : `synthese_J119-J131.md`, qui fait foi.*
+
+| Date | J-day | Catégorie | Importance | Événement | Sources |
+|---|---|---|---|---|---|
+| 30 juin 2026 | J123 | Impact France | majeur | **[FAIT/A1]** INSEE — **IPC provisoire de juin +1,8 %/an** (après +2,4 % en mai), IPCH +2,0 %, énergie +11,2 % : désinflation confirmée. Même jour, **TotalEnergies uniformise son plafond à 1,99 €/L** (essence + gazole) et le réétend aux autoroutes sur 5 week-ends de grands départs | synthèse |
+| 1er-2 juillet 2026 | J124-J125 | Politique-Diplomatique | majeur | **[FAIT]** Pourparlers de **Doha** (médiation Qatar/Pakistan) : progrès **procédural** sur le canal du MOU et le déblocage d'avoirs ; **volet nucléaire de fond non commencé**. NPR révèle une clause : **fonds de reconstruction de 300 Md$** financé par des « partenaires régionaux » (sans obligation US) | synthèse |
+| 2 juillet 2026 | J125 | Impact France | mineur | **[FAIT]** Lecornu : **risque de déficit public à 7 % du PIB** si le budget 2027 n'est pas voté avant fin février 2027 (objectif 5 % en 2026) — marge d'aide carburant réduite | synthèse |
+| 3 juillet 2026 | J126 | Militaire | majeur | **[FAIT]** Déclaration conjointe **UK-France-Oman** sur la sécurité maritime + **opérations de déminage France-Oman** ; Macron annonce le **retour du porte-avions *Charles-de-Gaulle* à Toulon** (moyens de guerre des mines FR maintenus sur zone) | synthèse |
+| 5 juillet 2026 | J128 | Économique-Marchés | majeur | **[FAIT]** Réunion **OPEP+** : hausse de **+188 000 b/j pour août** (7 pays, toujours sans les EAU) — 5ᵉ hausse consécutive ; prochaine réunion **2 août** | synthèse |
+| 6 juillet 2026 | J129 | Militaire | majeur | **[FAIT]** Annonce du lancement (« dans les jours à venir ») d'une **mission navale multinationale élargie (>10 pays OTAN**, RFA *Lyme Bay* + moyens FR vers Duqm) ; frappe israélienne à Nabatieh (**4 civils tués**) pendant les funérailles de Khamenei ; **cumul Liban ~4 304-4 319** (min. Santé libanais, borne) | synthèse |
+| 6 juillet 2026 | J129 | Économique-Marchés | mineur | **[FAIT]** **Brent < 72 $** (plus bas depuis fin février), WTI ~68-69 $ — la hausse de quota OPEP+ n'enraye pas la baisse | synthèse |
+| 7 juillet 2026 | J130 | Militaire | structurant | **[FAIT, B2 / attribution non revendiquée] Le CGRI frappe 3 navires commerciaux** (méthanier qatari *Al Rekayat*, pétrolier saoudien *Wedyan*, +1) sur la route omanaise ; attribution CGRI par des officiels US + accusation Qatar/Arabie, **non revendiquée par Téhéran** (TV d'État : navires ayant « ignoré des avertissements ») | synthèse |
+| 7 juillet 2026 | J130 | Économique-Marchés | structurant | **[FAIT] Le Trésor US révoque la licence pétrolière iranienne** (General License X1) — plus aucun nouvel achat/chargement de brut iranien, **wind-down des opérations en cours jusqu'au 17 juillet** | synthèse |
+| 7-8 juillet 2026 | J130-J131 | Militaire | structurant | **[FAIT] CENTCOM frappe >80 cibles iraniennes** (défenses aériennes, radars côtiers, missiles anti-navires, >60 vedettes du CGRI) près de Kharg, Bandar Abbas, Sirik et Qeshm — **première frappe US directe sur l'Iran depuis le cessez-le-feu du 8 avril** | synthèse |
+| 8 juillet 2026 | J131 | Militaire | structurant | **[FAIT] L'Iran riposte sur des bases US** à Bahreïn (secteur Ve Flotte — un immeuble résidentiel endommagé) et au Koweït (drones/missiles **interceptés**) — **aucune victime rapportée** ; le CGRI revendique « 85 cibles » **(non vérifié)** | synthèse |
+| 8 juillet 2026 | J131 | Politique-Diplomatique | structurant | **[FAIT] Trump (sommet OTAN d'Ankara) déclare le cessez-le-feu « terminé »** (« *it's over* »), son administration dit « rien annulé » ; **Araghchi : les frappes ont « rendu inefficaces des éléments clés »** — l'Iran **ne déclare PAS le MOU nul**. **[INTERPRÉTATION]** Accord fracturé, pas annulé | synthèse |
+| 8 juillet 2026 | J131 | Économique-Marchés | majeur | **[FAIT] Brent rebond ~74-78 $** (creux < 72 $ le 6 juillet), WTI ~70-74,5 $ — prime de guerre qui réapparaît **sans flamber** ; **SPR US 319,5 mb** (sem. au 3 juillet, plus bas depuis avril 1983) ; **force majeure GNL Qatar prolongée à mi-septembre** ; **soufre OSP Adnoc 1 000 $/t** (record). **Dated Brent physique toujours introuvable (gap)** | synthèse |
+| 26 juin-8 juillet 2026 | J119-J131 | Impact France | mineur | **[FAIT]** **Aucune nouvelle perte militaire française de combat** ; bilan FINUL de combat **inchangé (3)**. Gazole national reparti **à la hausse ~1,914 €/L** (8 juillet, +2,3 ct/L vs le 25 juin) — la baisse s'inverse | synthèse |
+| 8 juillet 2026 | J131 | Analytique | structurant | **[INTERPRÉTATION] Recalibrage J131 : A 15-25 % (⬇️⬇️ vs 40-50 % — accord activement démantelé : licence révoquée, frappes directes, « c'est terminé »), B 33-43 % (≈ — reste modal de justesse : rechute qui se re-cape sans guerre ouverte), C 32-42 % (⬆️⬆️ vs 12-18 % — frappes bilatérales directes, sanctions ré-imposées, Brent en rebond)** | synthèse |
+
+---
+
 ## Données mensuelles agrégées (mois de référence, jour non précisé)
 
 | Période | J-day | Catégorie | Importance | Événement | Sources |
@@ -375,21 +399,19 @@
 
 ---
 
-## Échéances prospectives (postérieures au 26 juin 2026 — non survenues)
+## Échéances prospectives (postérieures au 8 juillet 2026 — non survenues)
 
-> *Ces items sont des dates butoirs, conditions de scénario ou recommandations, et non des événements avérés. Les items désormais survenus ou en cours de réalisation sont annotés ci-dessous (voir Phases 9 à 12 pour les faits datés).*
+> *Ces items sont des dates butoirs, conditions de scénario ou recommandations, et non des événements avérés. Rafraîchis au 8 juillet 2026 (J131) : les échéances désormais échues ont été retirées (elles figurent, le cas échéant, comme faits datés dans les Phases 9 à 13).*
 
 | Date | J-day | Catégorie | Importance | Événement | Sources |
 |---|---|---|---|---|---|
-| ~21 août 2026 | J~175 (estim.) | Économique-Marchés | structurant | **Fin de la fenêtre de 60 jours des pourparlers nucléaires** (§3 du mémorandum, extensible ; **pourparlers ouverts le 21 juin en Suisse**, voir Phase 12) — l'échec ferait rebasculer vers les scénarios B/C ; aucune substance nucléaire tranchée à la signature | synthèse |
-| 15 juin 2026 | J108 | Impact France | mineur | *(échéance atteinte)* Date butoir conseillée de remplissage des cuves de fioul domestique (économie 500-900 € sur cuve 2 000 L) — recommandation prospective ; fioul ~1 554 €/1000 L au 12 juin | réaliste |
-| Mi-juin 2026 | J108 (estim.) | Analytique | mineur | *(largement levée)* Condition nécessaire au scénario A : ouverture d'un canal officiel. **Au 15 juin** : accord-cadre confirmé côté iranien, date de signature fixée au 19 juin, G7 d'Évian mobilisé (voir Phase 10) — la condition d'un canal formel est matériellement remplie, sa concrétisation par signature restant à venir | optimiste |
-| ~27 juin 2026 | J~120 (estim.) | Économique-Marchés | majeur | Alerte critique SPR US si rythme maintenu — stock projeté ~310-320 mb (non tenable ; impératif accord ou OPEP+) | index |
-| Fin juin 2026 | J~120-123 (estim.) | Impact France | structurant | **Expiration de la remise carburant de 20 c/L → rebond mécanique ~8 €/plein au 1er juillet (déclencheur social latent)** | index, réaliste, optimiste, pessimiste |
-| ~29 juin 2026 | J122 (estim.) | Politique-Diplomatique | majeur | Échéance d'expiration de l'extension de 45 jours du cessez-le-feu Israël-Liban (actée le 15 mai) — signal d'invalidation à surveiller | réaliste, optimiste, pessimiste, calendrier |
-| Été 2026 (→ fin août) | à venir | Impact France | majeur | Mesures FR prolongées : aide grands rouleurs (100 €/véh) jusqu'à fin août ; majoration 20 c/L certains agents publics jusqu'en décembre ; abaissement temporaire des normes gazole anti-ruptures | synthèse |
+| 10 juillet 2026 | J133 (estim.) | Impact France | majeur | **INSEE — IPC définitif de juin 2026** (confirme/ajuste l'estimation provisoire +1,8 %/an) ; 1er point d'inflation consolidé après la rechute du 7-8 juillet | index, synthèse |
+| ~17 juillet 2026 | J140 (estim.) | Politique-Diplomatique | structurant | **Fin de la fenêtre de 30 j du MOU : levée du blocus US (§4) + déminage d'Ormuz par l'Iran (§5)** ; même date, **fin du wind-down des ventes de brut iranien** (licence révoquée le 7 juillet) — échéances rendues incertaines par la rupture du 7-8 juillet | index, synthèse |
+| Été 2026 (→ fin août) | à venir | Impact France | majeur | Mesures FR carburant prolongées : aide « grands rouleurs » 100 €/véh **jusqu'au 31 juillet** ; aide GNR agricole 15 ct/L **jusqu'au 31 août** ; marge budgétaire réduite (déficit menaçant 7 % du PIB) | synthèse |
+| 2 août 2026 | J156 (estim.) | Économique-Marchés | majeur | **Réunion ministérielle OPEP+** — quotas de septembre (après +188 000 b/j pour août décidés le 5 juillet) | synthèse |
+| ~mi-août 2026 | J~170 (estim.) | Politique-Diplomatique | structurant | **Fin de la fenêtre de négociation nucléaire** (§3 du MOU, 60 j depuis le 17 juin) — volet le plus incertain ; tenue compromise après l'escalade du 7-8 juillet | synthèse |
 | Novembre 2026 | futur | Politique-Diplomatique | majeur | Midterms US (pression sur Trump pour un deal préalable) | index |
-| 1er novembre 2026 | J247 (estim.) | Économique-Marchés | structurant | **Échéance réglementaire UE : objectif 90 % de remplissage des UGS gaz, jugé très difficilement atteignable au rythme actuel** | infra |
+| 1er novembre 2026 | J247 (estim.) | Économique-Marchés | structurant | **Échéance réglementaire UE : objectif 90 % de remplissage des UGS gaz** — très difficilement atteignable (trajectoire projetée 70-76 %, force majeure GNL Qatar prolongée à mi-septembre) | infra |
 | 31 décembre 2026 | J307 (estim.) | Politique-Diplomatique | majeur | Fin/début du retrait du mandat de la FINUL (décision sur l'engagement français post-FINUL ; retrait complet fin 2027) | index, réaliste |
 
 ---
@@ -458,7 +480,7 @@ Ces périodes sont **sous-couvertes par construction** (reconstitution a posteri
 
 - **5 mai → 7 mai 2026 (J67 → J69)** — Dense côté maritime (San Antonio, Persian Gulf Strait Authority, pause Project Freedom, frappes réciproques) mais **aucun élément économique daté** (Brent, SPR) sur cette micro-fenêtre, alors que les marchés sont volatils. Les prix journaliers Brent ne sont documentés en continu qu'à partir du 18 mai (`sources`).
 
-- **Après le 26 juin 2026 (J119)** — La couverture datée s'étend désormais jusqu'au 26 juin (Phases 9 à 12, via les synthèses J103-J106, J106-J108, J108-J111 et J111-J119). Au-delà, il ne reste que des **échéances prospectives** (alerte SPR ~27 juin ; expiration de la remise carburant fin juin ; indice IPC FR de juin le 30 juin ; CP GPL saoudien de juillet ~28-30 juin ; OPEP+ 5 juillet ; cessez-le-feu Liban ~29 juin ; fin de la fenêtre nucléaire de 60 j ~mi-août ; force majeure Qatar mi-août ; midterms novembre ; UGS 1er nov ; FINUL 31 déc). **Aucun événement réel postérieur au 26 juin n'est disponible** — limite de fraîcheur du dossier (instantané daté du 26 juin). Ne pas extrapoler ; en particulier, **réouverture matérielle ET durable d'Ormuz mesurée à l'AIS (pas par déclaration), réconciliation du comptage des transits (CENTCOM vs AIS), achèvement et certification du déminage, 1er accès AIEA effectif, 1er transfert d'avoirs confirmé, niveau du Dated Brent physique et tenue effective des pourparlers nucléaires à 60 jours sont des « gaps » à venir**, non à combler par un nombre.
+- **Après le 8 juillet 2026 (J131)** — La couverture datée s'étend désormais jusqu'au 8 juillet (Phases 9 à 13, via les synthèses J103-J106 → J119-J131). La fenêtre 26 juin-8 juillet a matérialisé une **rechute militaire directe US-Iran** (Phase 13 : 3 navires frappés par le CGRI, CENTCOM >80 cibles, riposte iranienne Bahreïn/Koweït, cessez-le-feu déclaré « terminé » par Trump). Au-delà du 8 juillet, il ne reste que des **échéances prospectives** (IPC définitif 10 juillet ; fin de la fenêtre §4/§5 + wind-down de la licence pétrolière ~17 juillet ; OPEP+ 2 août ; fin de la fenêtre nucléaire ~mi-août ; UGS 90 % 1er nov ; FINUL 31 déc). **Aucun événement réel postérieur au 8 juillet n'est disponible** — limite de fraîcheur du dossier (instantané daté du 8 juillet). Ne pas extrapoler ; en particulier, **effet réel des frappes du 7-8 juillet sur les transits d'Ormuz, reprise ou non des pourparlers de Doha (~9 juillet), bilan humain iranien des frappes CENTCOM, réouverture matérielle et durable d'Ormuz mesurée à l'AIS, certification du déminage, 1er accès AIEA effectif, 1er transfert d'avoirs confirmé et niveau du Dated Brent physique sont des « gaps » à venir**, non à combler par un nombre.
 
 ---
 
