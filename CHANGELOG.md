@@ -2,6 +2,28 @@
 
 Ce projet est un **suivi de situation évolutif** : ce journal trace les consolidations datées et les évolutions structurelles du dépôt. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Les dates sont au format AAAA-MM-JJ (heure de Paris).
 
+## [J131] — 2026-07-08
+
+### Consolidation périodique
+- **Nouvelle synthèse qui fait foi** : [`synthese_J119-J131.md`](docs/synthese_J119-J131.md) (fenêtre 26 juin → 8 juillet 2026). Méthode : 5 axes OSINT parallèles (militaire/Ormuz, diplomatique/nucléaire, marchés/OPEP, France, ressources/gaz), recoupement ≥ 2 sources indépendantes, cotation Admiralty/STANAG 2511, étiquetage fait/interprétation/spéculation.
+- **La rechute violente : l'accord de juin est fracturé sur le terrain, sans être juridiquement annulé.**
+  - **Militaire / Ormuz** : le 7 juillet, le **CGRI frappe 3 navires commerciaux** (méthanier qatari *Al Rekayat*, pétrolier saoudien *Wedyan*, +1) sur la route omanaise (attribution CGRI **non revendiquée** par Téhéran) ; **CENTCOM frappe >80 cibles iraniennes** — **1ʳᵉ frappe US directe sur l'Iran depuis le cessez-le-feu du 8 avril** ; le 8 juillet, l'**Iran riposte sur des bases US à Bahreïn et au Koweït** (dégâts matériels, **aucune victime rapportée**). Transits AIS remontés à 30-43/j (PortWatch/Kpler, 3-5 juillet) mais **avant l'escalade** ; déminage non quantifié ; **évacuation OMI toujours suspendue** (~11 000 marins). **Coalition navale >10 pays OTAN lancée (6 juillet)** ; *Charles-de-Gaulle* rentré à Toulon (3 juillet). Bilan FINUL de combat reste 3.
+  - **Diplomatie** : **Trump déclare le cessez-le-feu « terminé »** (8 juillet) mais son administration dit « rien annulé » ; **Araghchi : « éléments clés rendus inefficaces »** sans déclarer le **MOU nul**. **Trésor US révoque la licence pétrolière iranienne** (7 juillet, General License X1 — ventes à cesser avant le 17 juillet). Pourparlers de Doha (1er-2 juillet) : progrès procédural, nucléaire de fond non commencé ; fonds de reconstruction 300 Md$ révélé (§ non chiffré à J119). **AIEA toujours refusée** ; avoirs gelés (12 Md$) toujours en litige, **aucun transfert confirmé**. Funérailles d'État d'Ali Khamenei (3-9 juillet) ; nouveau Guide Mojtaba **absent de toutes les cérémonies**.
+  - **Marchés** : **Brent < 72 $ (6 juillet) puis rebond ~74-78 $ (7-8 juillet)** — prime de guerre qui réapparaît **sans flamber** ; WTI ~70-74,5 $. **OPEP+ (5 juillet) : +188 000 b/j pour août** (5ᵉ hausse ; réunion suivante 2 août). **EIA STEO juillet : T3 74 $ / 2027 65 $** (publié avant l'escalade). **Dated Brent physique : toujours introuvable (gap).**
+  - **Stocks énergie** : **SPR US 319,5 mb (3 juillet), plus bas depuis avril 1983** (−11,7 mb en 2 sem.) ; brut commercial US ~408,4 mb (26 juin, −3,8 mb) ; gaz UE **~48-50 %** (injection la plus lente en ~6 ans, trajectoire 70-76 % fin de saison) ; TTF ~44-45 €/MWh ; **force majeure GNL Qatar prolongée à mi-septembre** (explosion Barzan du 21-22 juin, ≥13 morts).
+  - **Ressources critiques** : **soufre au record — OSP Adnoc 1 000 $/t FOB** (comble le gap $/t de J119) ; DAP ~930 $/t (Chine ferme les phosphates jusqu'à août) ; **aluminium ~3 156 $/t** (juin −16 %, plus forte chute depuis 2008) ; urée détente maintenue ~368 $/t ; hélium/AdBlue stables par défaut. Aucun rationnement FR/UE hors hélium.
+  - **France** : **gazole ~1,891 → ~1,914 €/L** (+2,3 ct/L — **la baisse s'inverse**) ; **plafond TotalEnergies uniformisé à 1,99 €/L** (essence+gazole, 30 juin) + réétendu aux autoroutes sur 5 week-ends estivaux ; **IPC juin +1,8 %/an** (désinflation confirmée, IPCH +2,0 %, énergie +11,2 %) ; **Lecornu (2 juillet) : risque déficit 7 % du PIB** → marge d'aide réduite. Aides carburant inchangées (grands rouleurs 31 juillet, GNR agricole 31 août).
+  - **Impacts France à moyen-long terme** : hiver gazier 2026-2027 **qui s'aggrave** (force majeure GNL Qatar prolongée à mi-septembre, remplissage UE lent) ; chaîne alimentaire sous tension (soufre record, DAP) mais azote/AdBlue desserrés ; marge budgétaire d'amortissement réduite.
+- **Recalibrage des scénarios (rupture)** : 🔴 **C 12-18 → 32-42 %** (⬆️⬆️, frappes bilatérales directes, sanctions ré-imposées, Brent en rebond — plus fort signal C depuis le pic) · 🟡 **B 35-45 → 33-43 %** (≈, reste modal de justesse : rechute qui se re-cape sans guerre ouverte) · 🟢 **A 40-50 → 15-25 %** (⬇️⬇️, accord activement démantelé, ne survit que juridiquement).
+
+### Propagation (règle de cohérence CLAUDE.md)
+- `nav.js` : constante `ASOF` → « 8 juillet 2026 (J131) » (propagée aux 8 pages).
+- `index.md`, `app/index.html`, `chronologie.html`, `stocks_pays_ue.html`, `dependances_ressources_critiques.html`, `impacts_agricoles.html`, `dependances_ormuz_pays.html`, cartes : titres/sous-titres, blocs d'actualité, tables de chiffres et probabilités passés à J131.
+- `impacts_agricoles.md` : **actualisation J131 moyen-long terme France** (hiver gazier aggravé, soufre record confirmé — gap J119 résolu, marge budgétaire réduite, ancrage prospectif A/B/C recalibré).
+- `scenario_optimiste.md`, `scenario_realiste.md`, `scenario_pessimiste.md` : en-têtes de probabilité et bloc « Mise à jour J131 ».
+- `CLAUDE.md` : arborescence des synthèses (J119-J131 fait foi, J111-J119 archivée) ; retrait des probabilités de scénarios périmées de l'arbo (anti-ancrage).
+- **Reste à faire (suivi)** : `chronologie.md` (doc source) — ajout d'une **Phase 13** (26 juin-8 juillet) non encore réalisé ; seule la frise interactive `chronologie.html` a été prolongée à J131.
+
 ## [J119] — 2026-06-26
 
 ### Consolidation périodique

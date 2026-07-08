@@ -1,6 +1,27 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 12-18 % (au 26 juin 2026, J119) — LÉGÈRE HAUSSE : les incidents cinétiques redeviennent réels (frappe Ever Lovely, menaces CGRI, « hit harder » de Trump) ; mais talks en cours + prix effondrés plafonnent le haussier
+### Probabilité estimée : 32-42 % (au 8 juillet 2026, J131) — FORTE HAUSSE : LE PLUS FORT SIGNAL C DEPUIS LE PIC DE LA CRISE — frappes bilatérales directes US↔Iran, sanctions pétrolières ré-imposées, Brent en rebond ; C DEVIENT QUASI ÉQUIPROBABLE AVEC B, plafonné seulement par l'absence de morts rapportées et un canal diplomatique techniquement ouvert
+
+---
+
+## Mise à jour J131 (8 juillet 2026)
+
+**Probabilité fortement relevée à 32-42 % (vs 12-18 % à J119) — le plus fort signal C depuis le pic de la crise.** [INTERPRÉTATION] La fenêtre du 7-8 juillet réactive simultanément les trois pathways de C : maritime (3 navires frappés par le CGRI), militaire direct (CENTCOM frappe >80 cibles iraniennes, riposte iranienne sur Bahreïn/Koweït), et économique (licence pétrolière révoquée). C'est la première fois depuis le cessez-le-feu du 8 avril que les deux camps échangent des frappes directes.
+
+**Ce qui fait bondir C** :
+1. [FAIT, B2] **Le CGRI frappe 3 navires commerciaux (7 juillet)** — méthanier qatari *Al Rekayat*, pétrolier saoudien *Wedyan*, +1 — la plus lourde attaque contre des navires commerciaux depuis la signature de l'accord de juin.
+2. [FAIT, B1/B2] **Le Trésor US révoque la licence pétrolière iranienne (7 juillet)** — le levier des sanctions pétrolières, levé le 18-22 juin, est réactivé.
+3. [FAIT, B2] **CENTCOM frappe >80 cibles iraniennes (7-8 juillet)** — première frappe américaine directe sur l'Iran depuis le cessez-le-feu du 8 avril — et **l'Iran riposte sur des bases US à Bahreïn et au Koweït** (dégâts matériels, aucune victime rapportée).
+4. [FAIT, B2] **Trump déclare le cessez-le-feu « terminé » (8 juillet)** — les actes (frappes CENTCOM réelles) suivent les mots, à la différence des contradictions habituelles de Trump.
+5. [FAIT, B2] **Brent en rebond de +5-6 $ en 2-3 séances (~74-78 $)** — la prime de guerre réapparaît nettement.
+
+**Ce qui plafonne encore C (pas plus de 32-42 %)** : aucune mort n'est rapportée dans ces échanges (ni les 3 navires, ni CENTCOM, ni les ripostes iraniennes) — le seuil létal qui, en avril, avait précédé chaque bascule n'est pas franchi ; l'Iran n'a pas déclaré le MOU nul ; l'administration Trump dit que « rien n'a été annulé » ; le canal de Doha reste techniquement ouvert (reprise pressentie ~9 juillet) ; le Brent reste loin d'une flambée (~74-78 $, vs pic historique 112,93 $ du 19 mai).
+
+**Falsifié (vers C confirmé, hausse supplémentaire) si** : première mort dans un échange US-Iran ou sur un navire ; déclaration iranienne formelle de nullité du MOU ; nouvelle salve de frappes CENTCOM ou du CGRI ; assessment Platts/Argus du Dated Brent > 130 $.
+
+**Falsifié (vers B/A, recul) si** : reprise effective des pourparlers de Doha ; absence de nouvelle frappe dans les jours suivants ; 1er transfert d'avoirs confirmé.
+
+Source : [`synthese_J119-J131.md`](synthese_J119-J131.md).
 
 ---
 
@@ -104,6 +125,7 @@ Le scénario C serait **confirmé** (probabilité à relever fortement) si **l'u
 | **15 juin** | **J108** | **14-22 %** | **RECUL (-6 pts) : désescalade côté US-Iran (4 jours sans frappe, BLOCUS ORDONNÉ LEVÉ, accord confirmé côté iranien, signature datée 19 juin) + chute des prix (Brent ~83,78 $ réouverture 14/6, plus bas en ~2 mois) PLAFONNENT le haussier. Thèse Exxon toujours non matérialisée ; Houthis = menace verbale, aucune attaque ; Bab el-Mandeb non concrétisé. PRINCIPAL DÉCLENCHEUR RÉSIDUEL = LIBAN : ~30 morts à Beyrouth le 14/6 (journée la plus meurtrière de la trêve, dissociée de l'accord). Pathway fiscal-social toujours amorti (aides Lecornu inchangées, pas de mobilisation datée). Aucun seuil de bascule franchi** |
 | 18 juin | J111 | 10-16 % | RECUL CONFIRMÉ (-4 pts) : signature (17/6) + désescalade US-Iran + chute des prix (Brent sous 79 $, AIE « excédent 2027 ») plafonnent le haussier. Déclencheurs résiduels = Liban (Hezbollah de retour au feu 17/6) + réversibilité Trump. Aucun seuil franchi |
 | **26 juin** | **J119** | **12-18 %** | **LÉGÈRE HAUSSE (+2 pts) : incidents cinétiques RÉELS — frappe Ever Lovely (25/6), OMI suspend l'évacuation (26/6), menaces radio CGRI, re-fermeture d'Ormuz (20/6), fracture civilo-militaire iranienne, « hit harder » de Trump. MAIS plafonné : signature + aval (conditionnel) du Guide + blocus levé + licence pétrolière + talks en cours + Brent au plus bas en 4 mois. Pas de mort dans la frappe ; négociations continuent** |
+| **8 juillet** | **J131** | **32-42 %** | **FORTE HAUSSE (⬆️⬆️, plus fort signal C depuis le pic de la crise) : CGRI frappe 3 navires (Al Rekayat, Wedyan, +1), licence pétrolière US révoquée, CENTCOM frappe >80 cibles iraniennes (1ʳᵉ frappe directe depuis le 8 avril), Iran riposte sur Bahreïn/Koweït, Trump déclare le cessez-le-feu « terminé ». Plafonné par l'absence de mort rapportée, le MOU non déclaré nul, et Brent encore modéré (~74-78 $, pas de flambée)** |
 
 ---
 
