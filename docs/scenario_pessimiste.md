@@ -1,6 +1,21 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 10-16 % (au 18 juin 2026, J111) — RECUL CONFIRMÉ : signature + désescalade + chute des prix plafonnent fortement le haussier ; Liban + réversibilité Trump = déclencheurs résiduels
+### Probabilité estimée : 12-18 % (au 26 juin 2026, J119) — LÉGÈRE HAUSSE : les incidents cinétiques redeviennent réels (frappe Ever Lovely, menaces CGRI, « hit harder » de Trump) ; mais talks en cours + prix effondrés plafonnent le haussier
+
+---
+
+## Mise à jour J119 (26 juin 2026)
+
+**Probabilité relevée à 12-18 % (vs 10-16 % à J111).** [INTERPRÉTATION] Le potentiel haussier de C reste plafonné par la signature, la désescalade US-Iran formelle et l'effondrement des prix (Brent ~72-74 $, récit AIE « excédent 2027 »), mais les **incidents cinétiques sont redevenus réels** dans la fenêtre — ce qui justifie une légère remontée.
+
+**Ce qui fait remonter légèrement C** :
+1. [FAIT, B2/B3] **Frappe sur l'*Ever Lovely* (25 juin)** sur la route omanaise ; **OMI suspend l'évacuation (26 juin)** ; **menaces radio explicites du CGRI** aux navires (« in range of my missiles »). Le pathway maritime, dormant à J111, se réactive d'un cran.
+2. [FAIT] **Re-fermeture d'Ormuz par le CGRI (20 juin)** et **fracture civilo-militaire iranienne** (le CGRI agit à rebours du MAE et du gouvernement) — facteur d'imprévisibilité.
+3. [FAIT] **Réversibilité assumée par Trump** (« we'll hit Iran very hard again… only harder », menace d'invasion/péages) et **Liban toujours actif** (cumul ~3 912 au 19 juin).
+
+**Ce qui plafonne C** : signature réelle + aval (conditionnel) du Guide + blocus levé + licence pétrolière US + talks nucléaires ouverts + Brent au plus bas en 4 mois (prime de guerre effacée). **Pas de mort dans la frappe Ever Lovely** ; les deux camps continuent de négocier.
+
+**Falsifié (vers C) si** : nouvelle frappe CGRI avec morts ou sur un actif US ; déclaration iranienne de nullité du MOU ; embrasement du Liban entraînant l'Iran ; reprise des frappes US ; assessment Platts/Argus du Dated Brent > 130 $.
 
 ---
 
@@ -87,6 +102,8 @@ Le scénario C serait **confirmé** (probabilité à relever fortement) si **l'u
 | **6 juin** | **J98** | **22-30 %** | **STABLE (➡️, borne resserrée) : arguments des deux sens s'ANNULENT. Escalade militaire RÉELLE 2-6 juin (Lexie 2/6 ; aéroport Koweït 3/6, 1 mort indien ~63 blessés ; MSC Sariska V à Umm Qasr ; radars Goruk/Qeshm 5-6/6) MAIS seuils NON franchis : revendication Ve Flotte DÉMENTIE par CENTCOM, missiles interceptés, Brent papier EN BAISSE (~93 $), thèse Exxon 150-160 $ NON matérialisée, menace Bab el-Mandeb encore VERBALE. SPR US 357,1 mb (plus bas depuis janv. 2024), flux Ormuz 8-16 %, gaz UE ~41,5 %, force majeure Qatar prolongée mi-août. Amortisseurs : couvercle chinois -44 %, OAT-Bund ~67-70 bps, FNSEA-JA suspendue, aucune nouvelle perte FR. Cessez-le-feu Liban annoncé 3/6 rejeté par Hezbollah 4/6 (accord mort-né) ; 7e Casque bleu ONU tué (serbe, non FR)** |
 | 13 juin | J106 | 20-28 % | ~STABLE (-2 pts) : déclencheurs plus actifs (fermeture totale d'Ormuz le 11/6, 3 marins indiens tués sur le Settebello = 1ers morts civils maritimes, drones du 13/6) MAIS potentiel haussier plafonné — Brent en chute (~87 $), 1ʳᵉ contraction demande mondiale depuis 2020, thèse Exxon invalidée |
 | **15 juin** | **J108** | **14-22 %** | **RECUL (-6 pts) : désescalade côté US-Iran (4 jours sans frappe, BLOCUS ORDONNÉ LEVÉ, accord confirmé côté iranien, signature datée 19 juin) + chute des prix (Brent ~83,78 $ réouverture 14/6, plus bas en ~2 mois) PLAFONNENT le haussier. Thèse Exxon toujours non matérialisée ; Houthis = menace verbale, aucune attaque ; Bab el-Mandeb non concrétisé. PRINCIPAL DÉCLENCHEUR RÉSIDUEL = LIBAN : ~30 morts à Beyrouth le 14/6 (journée la plus meurtrière de la trêve, dissociée de l'accord). Pathway fiscal-social toujours amorti (aides Lecornu inchangées, pas de mobilisation datée). Aucun seuil de bascule franchi** |
+| 18 juin | J111 | 10-16 % | RECUL CONFIRMÉ (-4 pts) : signature (17/6) + désescalade US-Iran + chute des prix (Brent sous 79 $, AIE « excédent 2027 ») plafonnent le haussier. Déclencheurs résiduels = Liban (Hezbollah de retour au feu 17/6) + réversibilité Trump. Aucun seuil franchi |
+| **26 juin** | **J119** | **12-18 %** | **LÉGÈRE HAUSSE (+2 pts) : incidents cinétiques RÉELS — frappe Ever Lovely (25/6), OMI suspend l'évacuation (26/6), menaces radio CGRI, re-fermeture d'Ormuz (20/6), fracture civilo-militaire iranienne, « hit harder » de Trump. MAIS plafonné : signature + aval (conditionnel) du Guide + blocus levé + licence pétrolière + talks en cours + Brent au plus bas en 4 mois. Pas de mort dans la frappe ; négociations continuent** |
 
 ---
 

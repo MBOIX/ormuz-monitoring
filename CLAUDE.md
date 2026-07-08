@@ -62,8 +62,9 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── impacts_agricoles.md                # Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
-│   ├── synthese_J108-J111.md              # Dernière synthèse périodique (fait foi sur l'état courant) — accord US-Iran SIGNÉ (en avance, 17 juin) + texte 14 points publié + G7 Évian clos + Brent au plus bas en 3 mois + projections BdF/INSEE
-│   ├── synthese_J106-J108.md              # Synthèse périodique précédente (archivée) — accord-cadre confirmé non signé + G7 Évian + effondrement prix
+│   ├── synthese_J111-J119.md              # Dernière synthèse périodique (fait foi sur l'état courant) — accord signé qui s'applique (blocus US levé, aval conditionnel du Guide) puis se fissure (Ormuz re-fermé par le CGRI, frappe Ever Lovely, OMI suspend l'évacuation, litiges avoirs/AIEA) + Brent au plus bas en 4 mois + recalibrage A 40-50 / B 35-45 / C 12-18
+│   ├── synthese_J108-J111.md              # Synthèse périodique précédente (archivée) — accord US-Iran SIGNÉ (en avance, 17 juin) + texte 14 points publié + G7 Évian clos + projections BdF/INSEE
+│   ├── synthese_J106-J108.md              # Synthèse périodique antérieure (archivée) — accord-cadre confirmé non signé + G7 Évian + effondrement prix
 │   ├── synthese_J103-J106.md              # Synthèse périodique antérieure (archivée) — bascule diplomatique + escalade au pic + OPEP+
 │   ├── synthese_J98-J103.md               # Synthèse périodique antérieure (archivée) — focus mer Rouge
 │   ├── synthese_J95-J98.md                # Synthèse périodique antérieure (archivée)

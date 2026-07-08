@@ -2,6 +2,26 @@
 
 Ce projet est un **suivi de situation évolutif** : ce journal trace les consolidations datées et les évolutions structurelles du dépôt. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Les dates sont au format AAAA-MM-JJ (heure de Paris).
 
+## [J119] — 2026-06-26
+
+### Consolidation périodique
+- **Nouvelle synthèse qui fait foi** : [`synthese_J111-J119.md`](docs/synthese_J111-J119.md) (fenêtre 18 → 26 juin 2026). Méthode : 4 axes OSINT parallèles (militaire/Ormuz, diplomatique, marchés, France), recoupement ≥ 2 sources indépendantes, cotation Admiralty/STANAG 2511, étiquetage fait/interprétation/spéculation.
+- **L'accord signé commence à s'appliquer sur le terrain — puis manque de capoter en 72 h.**
+  - **Diplomatie** : **aval (conditionnel) du Guide Mojtaba Khamenei** (18-19 juin) — « permission » accordée « malgré des réserves » : le dernier verrou de J111 est levé (mais non contraignant). **General License X** (Trésor US, 22 juin) : exemption pétrolière de 60 j (~21 août, ~67 Mb libérés). **Pourparlers nucléaires ouverts en Suisse (21 juin)** puis dits « en pause » après une menace de Trump. **Litige public sur les avoirs gelés (23 juin)** : 12 Md$ — séquestre contrôlé US (vivres/médicaments) vs libre usage iranien. **AIEA** revendiquée par Vance mais **niée par Baghaei** (non vérifiée). Cérémonie suisse du 19 juin : **n'a pas eu lieu** (résolu).
+  - **Militaire / Ormuz** : **blocus naval US levé (18 juin, CENTCOM)** — 3 pétroliers iraniens + 3 saoudiens ressortent (1er brut iranien en ~2 mois). **Mais l'Iran (CGRI) re-décrète la fermeture d'Ormuz (20 juin)** (invoquant le Liban), **démentie par son propre MAE et par CENTCOM**. **Comptages irréconciliables** : CENTCOM 55-70 transits/j (record) vs AIS ~5/j (« Closed »), navigation « dark ». **Frappe sur le porte-conteneurs *Ever Lovely* (25 juin)** sur la route omanaise (attribution CGRI par des responsables US, non confirmée) ; **OMI suspend l'évacuation des ~11 000 marins (26 juin)**. **4ᵉ décès français CONFIRMÉ** : 1re classe Florian Gilet (8e RPIMa, tir accidentel, hors FINUL, ~10 juin) — bilan FINUL de combat reste 3. Liban : cumul ~3 912 (19 juin), trêve renouvelée mais fragile.
+  - **Marchés** : **Brent ~72,6-73,8 $ / WTI ~70,4 $ (26 juin)**, WTI sous 70 $ en séance (creux ~69,63 $) ; hebdo ~−10 %, mensuel ~−21 %, prime de guerre quasi effacée. Banques en coupe (Goldman T4 80 / Morgan Stanley T3 90 / Citi 2027 65) ; **AIE : récit « excédent 2027 »**. **Fed** en pause (3,50-3,75 %), note BofA évoquant jusqu'à 3 hausses 2026. **Dated Brent physique : toujours introuvable (gap).**
+  - **Stocks énergie** : **SPR US ~331,2 mb** (−9,06 mb, plus bas depuis 1983, ~84 mb sortis depuis mars) ; **10ᵉ baisse** du brut commercial US (−6,1 mb à 412,1 mb) ; gaz UE **~46,4 %** (24-25 juin) ; TTF ~41 €/MWh ; force majeure Qatar toujours en vigueur (mi-août).
+  - **Ressources critiques** : **aluminium nouveau plus bas ~3 119 $/t** (24 juin) ; urée détente confirmée (~360 $/t ; UE suspend les droits urée/ammoniac) ; hélium toujours HS ; soufre/DAP toujours tendus ; AdBlue France stable. Aucun rationnement FR/UE hors hélium.
+  - **France** : **gazole ~1,943 → ~1,891 €/L** (−8,1 ct/L/sem) ; **repli du plafonnement TotalEnergies (23 juin)** — cap maintenu dans ~1 200 stations rurales, ~2 300 déplafonnées (marché à 1,80-1,90 €/L) ; **aide « grands rouleurs » 100 € guichet ouvert jusqu'au 31 juillet** (corrige la baseline J111 « ASP clos le 15 juin »). Pas de note macro nouvelle (BdF 0,5 % / INSEE 0,7 % inchangés).
+- **Recalibrage des scénarios** : 🟢 **A 48-58 → 40-50 %** (⬇️, reste modal : le signé s'applique mais la réouverture s'est révélée réversible) · 🟡 **B 30-38 → 35-45 %** (⬆️, la « réouverture heurtée / accord creux » s'est matérialisée — B se rapproche de A) · 🔴 **C 10-16 → 12-18 %** (⬆️, incidents cinétiques réels : Ever Lovely, menaces CGRI, « hit harder » de Trump).
+
+### Propagation (règle de cohérence CLAUDE.md)
+- `nav.js` : constante `ASOF` → « 26 juin 2026 (J119) » (propagée aux 8 pages).
+- `index.md`, `app/index.html`, `chronologie.html`, `stocks_pays_ue.html`, `dependances_ressources_critiques.html`, `impacts_agricoles.html`, cartes, `dependances_ormuz_pays.html` : titres/sous-titres, blocs d'actualité, tables de chiffres et probabilités passés à J119.
+- `chronologie.md` : ajout de la **Phase 12** (18-26 juin, 17 entrées datées) + **2 nouvelles contradictions** (comptage transits CENTCOM/AIS, attribution *Ever Lovely*) + résolution des points « cérémonie suisse » et « 3 vs 4 morts FR » + mise à jour Vides documentaires.
+- `scenario_optimiste.md`, `scenario_realiste.md`, `scenario_pessimiste.md` : en-têtes de probabilité, bloc « Mise à jour J119 » et lignes du tableau d'évolution (J111 + J119).
+- `CLAUDE.md` : arborescence des synthèses (J111-J119 fait foi, J108-J111 archivée).
+
 ## [J111] — 2026-06-18
 
 ### Consolidation périodique

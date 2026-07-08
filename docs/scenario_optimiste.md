@@ -1,6 +1,26 @@
 # Scénario A — Optimiste
 ## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
-### Probabilité estimée : 48-58 % (au 18 juin 2026, J111) — SCÉNARIO MODAL : ACCORD SIGNÉ EN AVANCE + TEXTE PUBLIÉ ; RESTE À CONFIRMER LA RÉOUVERTURE MATÉRIELLE ET L'AVAL DU GUIDE
+### Probabilité estimée : 40-50 % (au 26 juin 2026, J119) — SCÉNARIO MODAL À BORNE RÉDUITE : LE SIGNÉ S'APPLIQUE (BLOCUS LEVÉ, GUIDE VALIDE CONDITIONNELLEMENT) MAIS LA RÉOUVERTURE D'ORMUZ S'EST RÉVÉLÉE CONTESTÉE ET RÉVERSIBLE
+
+---
+
+## Mise à jour J119 (26 juin 2026)
+
+**Probabilité abaissée à 40-50 % — A reste le scénario MODAL mais sa borne recule (vs 48-58 % à J111).** [INTERPRÉTATION] L'optimisme de J111 était en avance sur le terrain : ce qui était signé a **commencé à s'appliquer**, puis a **montré sa réversibilité en moins de 72 h**.
+
+**Ce qui consolide A** :
+1. [FAIT, A1] **Blocus naval US levé (18 juin)** : CENTCOM déclare toutes les opérations de blocus cessées ; 3 pétroliers iraniens + 3 saoudiens ressortent (1er brut iranien en ~2 mois).
+2. [FAIT] **Aval (conditionnel) du Guide Mojtaba Khamenei (18-19 juin)** : « permission » accordée « malgré des réserves » — le verrou central de J111 est levé (mais non contraignant sur la suite).
+3. [FAIT] **General License X (22 juin)** : exemption pétrolière US de 60 j (~21 août), ~67 Mb libérés ; **pourparlers nucléaires ouverts en Suisse (21 juin)**.
+4. [FAIT] **Prix effondrés** (Brent ~72-74 $, WTI sous 70 $ en séance) : le marché tarife la détente.
+
+**Plafond abaissé (ce qui fait reculer la borne de A)** :
+1. [FAIT, contesté] **Ormuz a rouvert puis a été RE-FERMÉ par le CGRI (20 juin)** ; comptages irréconciliables (CENTCOM 55-70 transits/j vs AIS ~5/j) ; couloir nord miné, couloir sud omanais contesté. Réouverture **heurtée et réversible**, pas nette.
+2. [FAIT, B2/B3] **Frappe sur l'*Ever Lovely* (25 juin)** sur la route omanaise ; **OMI suspend l'évacuation des ~11 000 marins (26 juin)** — le CGRI peut opposer un veto cinétique à toute route.
+3. [FAIT] **Litige sur le fond** : avoirs gelés (séquestre US vs libre usage iranien), AIEA revendiquée par Vance mais **niée par Baghaei**, nucléaire renvoyé à 60 j, talks « en pause ».
+4. [FAIT] **Liban toujours actif** (cumul ~3 912 au 19 juin ; Israël garde la zone ~40 km) — motif invoqué par l'Iran pour re-fermer Ormuz.
+
+**Indicateur de falsification (ce qui confirmerait A)** : réouverture RÉELLE et durable d'Ormuz mesurée à l'AIS + achèvement du déminage ; reprise des escortes/évacuations OMI sans incident ; 1er accès AIEA effectif + 1er transfert d'avoirs confirmé ; tenue des pourparlers nucléaires sur 60 jours.
 
 ---
 
@@ -84,6 +104,8 @@ Le scénario A serait **invalidé** (probabilité à abaisser fortement, voire �
 | **6 juin** | **J98** | **8-15 %** | **REPLI POST-ESCALADE + DIPLOMATIE GELÉE (-2 pts borne basse) : la fenêtre 2-6 juin matérialise une escalade militaire concrète (frappe US sur le M/T Lexie 2 juin ; salves iraniennes vers Koweït/Bahreïn ; frappe aéroport de Koweït 3 juin, 1 mort indien ~63 blessés ; représailles US sur radars Goruk/Qeshm 5-6 juin) qui sape la voie diplomatique. Pourparlers TOUJOURS gelés (Araghchi 3 juin : « aucun progrès tangible »). Cessez-le-feu Israël-Liban annoncé le 3 juin REJETÉ par le Hezbollah le 4 juin = accord mort-né. SEULS contrepoids : canal non rompu (« messages échangés ») ; UK+France finalisent le plan de déminage d'Ormuz (4 juin), conditionné à un accord inexistant. Brent ~93 $ (clôture 5 juin), reflux trompeur (pari sur accord introuvable + couvercle chinois -44 %). Thèse Exxon 150-160 $ NON matérialisée. A « hybride » reste l'unique voie résiduelle** |
 | 13 juin | J106 | 22-32 % | FORTE HAUSSE (bifurcation) : Trump annule ses frappes (11 juin) et annonce un « great settlement » ; le médiateur pakistanais Sharif confirme un « texte final agréé ». MAIS Iran ne confirme pas, versions incompatibles, aval du Guide manquant, 3 fausses annonces déjà au compteur. Brent ~87 $ |
 | **15 juin** | **J108** | **35-45 %** | **FORTE HAUSSE (+13 pts médiane) : accord déclaré « complet » par Trump (14 juin) ET CONFIRMÉ CÔTÉ IRANIEN (Gharibabadi) ; signature DATÉE au 19 juin en Suisse ; BLOCUS NAVAL ORDONNÉ LEVÉ ; 4 jours sans frappe US/Iran. Plafond : signature non faite et DÉJÀ REPORTÉE (14 → 19 juin), aval du Guide Mojtaba non confirmé par Téhéran, versions incompatibles (24/25 vs 300 Md$), volet nucléaire reporté (~440 kg HEU 60 % en Iran 60 j), 4ᵉ annonce de réouverture. Ormuz toujours ~95 % sous la normale (ouverture déclaratoire). G7 d'Évian ouvert le 15 juin (Macron : frégate chasse-mines + avions sous 2-3 j ; déclaration E4). Brent ~83,78 $ réouverture (14 juin). PROBABLE MAIS NON ACQUIS** |
+| 18 juin | J111 | 48-58 % | SCÉNARIO MODAL : accord SIGNÉ en avance (17/6, Versailles), texte des 14 points publié, blocus en cours de levée, cessez-le-feu formalisé, Brent sous 79 $. Plafond : Ormuz toujours fermé matériellement (0-7 transits/j), aval du Guide indéterminé, texte « vague » (US), nucléaire à 60 j, Liban actif |
+| **26 juin** | **J119** | **40-50 %** | **RECUL DE BORNE (-8 pts plafond) mais A RESTE MODAL : le signé commence à s'appliquer (blocus levé 18/6, aval conditionnel du Guide 18-19/6, General License X 22/6, talks Suisse 21/6, Brent sous 74 $) MAIS la réouverture s'est révélée réversible (re-fermeture CGRI 20/6, frappe Ever Lovely 25/6, OMI suspend l'évacuation 26/6) et le fond cale (litige avoirs gelés, AIEA niée par Baghaei). Réouverture heurtée, pas nette** |
 
 ---
 
