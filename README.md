@@ -160,7 +160,7 @@ Dépôt **multi-licence** (conforme à la spécification [REUSE](https://reuse.s
 
 Un fichier [`CITATION.cff`](CITATION.cff) est fourni (bouton **« Cite this repository »** sur GitHub). Citation suggérée :
 
-> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J131, 8 juillet 2026). https://github.com/MBOIX/ormuz-monitoring
+> Boixiere, M. (2026). *Ormuz Monitoring — Suivi de la crise du détroit d'Ormuz (impact France)* (version J135, 12 juillet 2026). https://github.com/MBOIX/ormuz-monitoring
 
 ## Contact
 

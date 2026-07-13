@@ -1,6 +1,29 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 32-42 % (au 8 juillet 2026, J131) — FORTE HAUSSE : LE PLUS FORT SIGNAL C DEPUIS LE PIC DE LA CRISE — frappes bilatérales directes US↔Iran, sanctions pétrolières ré-imposées, Brent en rebond ; C DEVIENT QUASI ÉQUIPROBABLE AVEC B, plafonné seulement par l'absence de morts rapportées et un canal diplomatique techniquement ouvert
+### Probabilité estimée : 40-50 % (au 12 juillet 2026, J135) — C DEVIENT LE SCÉNARIO MODAL, pour la première fois depuis le pic de la crise : les trois indicateurs de bascule de J131 se sont tous déclenchés (seuil létal franchi, salves récurrentes, effondrement mesuré des flux + fermeture proclamée) — plafonné par un prix qui n'a pas encore coté la fermeture, l'absence de victime américaine et un canal diplomatique vivant
+
+---
+
+## Mise à jour J135 (12 juillet 2026)
+
+**Probabilité relevée à 40-50 % (vs 32-42 % à J131) — C devient modal.** [INTERPRÉTATION] Application directe de la grille de J131 : les trois indicateurs de bascule vers C se sont **tous** déclenchés dans la fenêtre. C'est un cas d'école de discipline ACH — la conclusion suit les indicateurs pré-définis, pas l'émotion de la séquence.
+
+**Les trois indicateurs déclenchés** :
+1. [FAIT, B2/B3] **« Première mort »** : 14 morts / 78 blessés selon le ministère iranien de la Santé (2 premières nuits ; 8 militaires selon l'IRNA — contradiction interne, **borne basse**) ; 2 militaires iraniens nommés tués (3ᵉ nuit) ; **1 marin indien du *GFS Galaxy* porté disparu** (première victime maritime potentielle). En avril, chaque bascule avait été précédée du franchissement de ce seuil.
+2. [FAIT, B1/B2] **« Nouvelle salve »** : deux de plus — nuits du 8-9 juillet (~90 cibles) et du 11-12 juillet (~140 cibles, la plus grosse en plusieurs semaines), **>300 cibles cumulées revendiquées** ; ripostes iraniennes sur jusqu'à **6 pays du Golfe + la Jordanie** (blessés civils au Qatar et au Koweït, plateforme offshore de Kuwait Oil Company touchée).
+3. [FAIT, B2] **« Effet mesuré sur les transits »** : effondrement de ~34/j (5 juillet) à ~11-17/j (9-10 juillet), AIS-dark ~40-46 %, trafic visible **quasi nul le 12** ; **exports du Golfe à 71 % de la normale** (Goldman) ; primes d'assurance-guerre ~5 % de la valeur du navire ; **fermeture formellement proclamée par le CGRI le 12 juillet** — première proclamation formelle (vs blocages de fait), corroborée par une attaque réelle simultanée (*GFS Galaxy*).
+
+**Ce qui plafonne encore C (pas plus de 40-50 %)** :
+- **Le prix n'a pas coté l'escalade finale** : Brent 76,01 $ (clôture du 10, la fermeture du 12 n'est pas pricée — week-end), Dated Brent ~77 $ (IEA), prime physique d'avril disparue. Le choc actuel est un choc de **flux et de risque**, pas encore de **prix** — verdict à l'ouverture du lundi 13.
+- **Aucune victime américaine** ; les ripostes iraniennes sont massivement interceptées et calibrées.
+- **L'Iran exporte toujours** (~1,5 Mb/j, Kharg « en utilisation complète ») — ni Washington ne frappe les terminaux pétroliers, ni Téhéran ne bloque ses propres flux : les deux camps préservent l'objet du chantage.
+- **Le canal diplomatique produit encore** : conditions US écrites, médiation Qatar-Pakistan, double corridor omanais.
+
+**Falsifié (vers C confirmé / haut de fourchette) si** : Brent > 85-90 $ à la réouverture (le marché price la fermeture) ; mort confirmée du marin du *GFS Galaxy* ou première victime américaine ; expiration sèche du wind-down le 17 juillet + nouvelle salve ; frappe sur un terminal pétrolier (Kharg) ou re-fermeture complète mesurée (transits ~0 durable) ; dénonciation formelle du MOU.
+
+**Falsifié (vers B, recul) si** : acceptation iranienne du double corridor omanais ; session de Doha tenue ; nouvelle licence pétrolière au 17 juillet ; semaine du 13 sans nouvelle salve et transits en remontée.
+
+Source : [`synthese_J131-J135.md`](synthese_J131-J135.md).
 
 ---
 
@@ -126,6 +149,7 @@ Le scénario C serait **confirmé** (probabilité à relever fortement) si **l'u
 | 18 juin | J111 | 10-16 % | RECUL CONFIRMÉ (-4 pts) : signature (17/6) + désescalade US-Iran + chute des prix (Brent sous 79 $, AIE « excédent 2027 ») plafonnent le haussier. Déclencheurs résiduels = Liban (Hezbollah de retour au feu 17/6) + réversibilité Trump. Aucun seuil franchi |
 | **26 juin** | **J119** | **12-18 %** | **LÉGÈRE HAUSSE (+2 pts) : incidents cinétiques RÉELS — frappe Ever Lovely (25/6), OMI suspend l'évacuation (26/6), menaces radio CGRI, re-fermeture d'Ormuz (20/6), fracture civilo-militaire iranienne, « hit harder » de Trump. MAIS plafonné : signature + aval (conditionnel) du Guide + blocus levé + licence pétrolière + talks en cours + Brent au plus bas en 4 mois. Pas de mort dans la frappe ; négociations continuent** |
 | **8 juillet** | **J131** | **32-42 %** | **FORTE HAUSSE (⬆️⬆️, plus fort signal C depuis le pic de la crise) : CGRI frappe 3 navires (Al Rekayat, Wedyan, +1), licence pétrolière US révoquée, CENTCOM frappe >80 cibles iraniennes (1ʳᵉ frappe directe depuis le 8 avril), Iran riposte sur Bahreïn/Koweït, Trump déclare le cessez-le-feu « terminé ». Plafonné par l'absence de mort rapportée, le MOU non déclaré nul, et Brent encore modéré (~74-78 $, pas de flambée)** |
+| **12 juillet** | **J135** | **40-50 %** | **C DEVIENT MODAL (⬆️, 1ʳᵉ fois depuis le pic) : les 3 indicateurs de bascule de J131 tous déclenchés — seuil létal franchi (14 morts min. Santé iranien / 8 IRNA, borne basse ; marin du GFS Galaxy disparu), 3 salves US (>300 cibles), ripostes sur 6 pays + Jordanie, Ormuz déclaré « fermé » (12/7) avec transits quasi nuls et exports du Golfe à 71 %. Plafonné par : prix non encore coté (Brent 76,01 $, fermeture non pricée), zéro victime US, exports iraniens continus, canal diplomatique vivant** |
 
 ---
 

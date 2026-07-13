@@ -1,6 +1,6 @@
 # Calendrier prévisionnel des pénuries — France
-## Scénario B (Réaliste / Enlisement) — Période S19 → S30 (4 mai → 26 juillet 2026)
-### Édition 2.9 — 15 juin 2026 (J108) — consolidation J108 : accord US-Iran « complet » et confirmé côté iranien (signature reportée au 19 juin), blocus naval ordonné levé, Brent sous 84 $ à la réouverture, gazole pompe enfin en baisse (1,988 €/L), urée en détente accentuée (~400 $/t), AdBlue FR stable (hausse « inévitable » non matérialisée), la pénurie au détail frappe toujours l'ESSENCE plus que le diesel, remise carburant expire fin juin
+## Trajectoire centrale : Scénario C (Escalade / guerre d'usure — modal, 40-50 %) — Période S29 → S40 (13 juillet → 4 octobre 2026)
+### Édition 3.0 — 13 juillet 2026 (J136) — refonte complète : nouvelle fenêtre de 12 semaines, ré-ancrage sur C modal (seuil létal franchi, Ormuz déclaré « fermé jusqu'à nouvel ordre », transits AIS effondrés — mais Brent 79,02 $ au 13 juillet : réaction réelle et mesurée, sous le seuil de choc 85-90 $), re-cotation des 42 produits avec relecture adversariale (29 ajustements), correction d'erreurs de mécanisme héritées (soja Brésil, ananas, poisson importé : flux Atlantique / mer Rouge, PAS Ormuz). Constat central : **aucune pénurie nouvelle constatée en France à J136** — les seules tensions réelles sont préexistantes à l'escalade (Doliprane adulte contingenté ANSM, amoxicilline pédiatrique, pétrole lampant) ; le risque de la fenêtre est un **choc de prix différé et un automne cumulatif** (distillats mondiaux, hiver gazier, rentrée), pas une rupture immédiate
 
 ---
 
@@ -8,18 +8,30 @@
 
 | Paramètre | Valeur |
 |---|---|
-| **Scénario de référence** | B — Réaliste / Enlisement stagflationniste (**probabilité 38-46 % au 15 juin, recule mais reste très plausible — n'est plus le seul modal**, [scenario_realiste.md](scenario_realiste.md)). A 35-45 % (⬆️ forte hausse : accord confirmé côté iranien, signature datée au 19 juin, blocus ordonné levé, frappes cessées) ; C 14-22 % (⬇️ : désescalade US-Iran + chute des prix plafonnent le haussier ; Liban = principal déclencheur résiduel). **NB : ce calendrier reste construit sous l'hypothèse B (enlisement) ; en cas de signature effective le 19 juin et de réouverture réelle d'Ormuz, les bascules tardives S25-S30 peuvent être atténuées d'un cran.** |
+| **Scénario de référence** | **C — Escalade / guerre d'usure (modal : 40-50 % au 12 juillet 2026, J135**, [scenario_pessimiste.md](scenario_pessimiste.md)) ; bornes : B — Enlisement / re-capage 30-40 % ([scenario_realiste.md](scenario_realiste.md)), A — Accord durable 8-15 % ([scenario_optimiste.md](scenario_optimiste.md)). **NB : « C modal » = guerre d'usure durable avec Ormuz fermé/dangereux et prix qui finissent par coter — PAS la guerre totale ni un Brent > 150 $. C'est une fourchette (40-50 %), pas une certitude : la lecture B (Annexe C) reste presque aussi probable.** En cas de re-capage confirmé (corridor omanais accepté, session de Doha tenue, transits AIS durablement > 40/j), basculer sur la lecture B de l'Annexe C. |
 | **Périmètre géographique** | France métropolitaine (national, disparités régionales signalées) |
-| **Horizon couvert** | 12 semaines — S19 (4-10 mai) → S30 (20-26 juillet 2026) |
+| **Horizon couvert** | 12 semaines — S29 (13-19 juillet) → S40 (28 septembre-4 octobre 2026) |
 | **Granularité** | Hebdomadaire |
-| **Nombre de produits suivis** | 41 (8 énergie + 12 alimentation de base + 10 frais + 11 hygiène/santé/équipement, dont Levothyrox ajouté en Édition 2.1) |
-| **Date d'édition** | **15 juin 2026 (J108 du conflit Ormuz) — Édition 2.9** |
-| **Niveau de confiance global** | ★★★★ (4/5) — paramètres macro figés, mais incertitude croissante au-delà de S25. **Édition 2.1 a corrigé un biais d'optimisme inversé** (sur-anticipation des bascules micro-produits — voir bloc « Affinage 2.1 » ci-dessous). |
-| **Prochaine révision recommandée** | Hebdomadaire — chaque vendredi, après publication des bulletins UFIP / FranceAgriMer / ANSM |
+| **Nombre de produits suivis** | 42 (9 énergie dont AdBlue + 12 alimentation de base + 10 frais + 11 hygiène/santé/équipement) |
+| **Date d'édition** | **13 juillet 2026 (J136 du conflit Ormuz) — Édition 3.0** |
+| **Niveau de confiance global** | ★★★★ (4/5) — mais **hétérogène** : ★★ sur GPL bouteilles, thé, conserves, légumineuses, poisson importé et lampes-tempête, faute de données datées de la fenêtre (gaps assumés fiche par fiche). Le garde-fou anti « biais d'optimisme inversé » (Édition 2.1) a été appliqué par relecture adversariale systématique — 29 ajustements, dont 12 rétrogradations de paliers. |
+| **Prochaine révision recommandée** | Hebdomadaire (lundi, après publication DGEC) ; révision événementielle sur : verdict complet des marchés post-fermeture (TTF, Dated Brent), **17 juillet** (expiration wind-down pétrolier US + échéances §4/§5 du MOU), **31 juillet** (fin aide « grands rouleurs » + échéance annoncée de l'interdiction d'export diesel russe), **2 août** (OPEP+), **~mi-août** (fin de la fenêtre nucléaire), **1er septembre** (rentrée), publication mensuelle AIE OMR / EIA STEO / FAO FPI |
 
 ### Avertissements explicites
 
-> **Document prévisionnel sous hypothèse scénario B uniquement.** Pour les bornes haute (résolution rapide) et basse (escalade militaire), se reporter respectivement à [scenario_optimiste.md](scenario_optimiste.md) et [scenario_pessimiste.md](scenario_pessimiste.md). Voir l'**Annexe C** pour la lecture comparée.
+> **Document prévisionnel sous trajectoire centrale C (scénario modal à J135 : 40-50 %) — une fourchette, pas une certitude.** La borne moins sévère (B — re-capage par la médiation Qatar-Pakistan et le double corridor omanais, 30-40 %) et la borne de détente (A — accord durable, 8-15 %, très improbable) sont traitées en **Annexe C**. Trois mécanismes de la fenêtre sont **indépendants de l'issue Ormuz** et s'appliquent sous B comme sous C : la tension mondiale sur les distillats (exports diesel russes suspendus, crack spread record), le choc climatique café (Brésil) et les tensions médicaments préexistantes (ANSM). Voir [scenario_pessimiste.md](scenario_pessimiste.md) et [scenario_realiste.md](scenario_realiste.md) pour les signaux de bascule.
+>
+> **🔧 Affinage Édition 3.0 (13 juillet 2026, J136) — REFONTE : NOUVELLE FENÊTRE S29→S40, RÉ-ANCRAGE SUR C MODAL, RE-COTATION ADVERSARIALE DES 42 PRODUITS** : l'Édition 2.9 (15 juin) était ancrée sur « accord confirmé, prix en chute » — l'exact inverse de la situation au 13 juillet (guerre d'usure ouverte, 14 morts selon le ministère iranien de la Santé, *GFS Galaxy* frappé, **Ormuz déclaré « fermé jusqu'à nouvel ordre » le 12 juillet**, transits AIS ~11-17/j puis quasi nuls — cf. [synthese_J131-J135.md](synthese_J131-J135.md), qui fait foi). Méthode : 4 collecteurs par catégorie (recherche web produit par produit) + 4 relecteurs adversariaux → **29 ajustements**. Neuf points structurants :
+>
+> 1. **Le verdict des marchés du lundi 13 juillet est tombé : Brent 79,02 $ (+3,96 %)** [FAIT, source secondaire agrégée unique — à confirmer] — une réaction réelle mais **mesurée**, sous le seuil de 85-90 $ qui signerait un choc de prix franc. Le marché price une guerre d'usure, pas un blocus total.
+> 2. **Aucune pénurie nouvelle constatée en France à J136** malgré 5 semaines d'aggravation militaire majeure : gazole quasi stable (moyenne 1,903 €/L au 6/7 ; signal non officiel ~1,97-1,98 €/L le 12/7 à confirmer par la DGEC), grands départs du 11-14 juillet sans incident, aucune rupture alimentaire, **l'inflation alimentaire décélère** (+0,9 % a/a en juin, 5ᵉ mois consécutif — l'Édition 2.2 anticipait +4-6 %). Le « biais d'optimisme inversé » de l'Édition 2.1 est **re-confirmé massivement** : cas d'école de l'huile de tournesol (classée 🚨 urgence en mai, prix détail stable 7 semaines plus tard, FAO confirmant la stabilité spécifique du tournesol).
+> 3. **Trois erreurs de mécanisme héritées des éditions précédentes sont corrigées** (relecture adversariale) : (a) le **soja brésilien ne transite PAS par Ormuz** (route Atlantique directe) — le canal réel est indirect et différé (engrais du Golfe → coûts de la récolte brésilienne 2026-27, horizon mensuel/pluriannuel, pas hebdomadaire) : bascules viandes/œufs recalées ; (b) l'**ananas français vient du Costa Rica** (~60 % des exports mondiaux, flux Atlantique), pas d'Asie via Ormuz : le 🔴 « fruits exotiques » est retiré ; (c) le **poisson importé** (Norvège = mer du Nord ; Asie = Suez/mer Rouge ou cap de Bonne-Espérance) ne dépend pas d'Ormuz : le vecteur pertinent est la crise **mer Rouge** (2 vraquiers coulés par les Houthis les 6-9 juillet, primes d'assurance en hausse) et le gazole marin — trajectoire rétrogradée de 🔴 à 🟡-🟠, confiance ★★.
+> 4. **Deux sous-anticipations corrigées en sens inverse** : le **Doliprane adulte (500 mg cp / 1000 mg effervescent) est bien en rupture avec contingentement ANSM actif** (bulletin semaine 23, retour à la normale annoncé 2027) — le sirop pédiatrique reste disponible ; l'**amoxicilline pédiatrique** a connu des ruptures dans ~30 % des officines interrogées en mai (USPO), avec contingentement et interdiction d'export déjà en vigueur — ces tensions sont **préexistantes à l'escalade** (API Inde/Chine), à ne pas imputer à Ormuz, mais la rentrée (S33+) les aggravera mécaniquement.
+> 5. **La fausse « suspension d'exports de batteries chinoises » est corrigée** : la décision MOFCOM n°70/2025 est une **suspension des CONTRÔLES à l'export** (facilitation, trêve commerciale Trump-Xi) valable jusqu'au 10 novembre 2026 — hors fenêtre. Piles/power banks : plafonnés à 🟠 (surcoût fret conteneur +15-30 %), le 🔴 d'octobre est retiré.
+> 6. **Le vrai risque de la fenêtre est cumulatif et se situe à l'automne (S33-S40)** : convergence de la rentrée (pics ORL → antibiotiques), du démarrage de la campagne fioul (les mêmes capacités de raffinage distillats déjà tendues : crack spread 3-2-1 record 64,58 $, exports diesel russes suspendus — échéance annoncée 31 juillet, reconduction incertaine —, stocks US distillats ~12 % sous moyenne), de l'**hiver gazier dégradé** (PRVG CRE **+7,4 % au 1er juillet** — dont ~1,5 pt d'acheminement sans lien avec Ormuz —, TTF ~50 €/MWh, UGS UE 50,88 % sur trajectoire ~72 %, QatarEnergy en pause GNL) et de la fin des aides (grands rouleurs 31 juillet, GNR agricole 31 août).
+> 7. **Café : le choc est là, mais il est brésilien** — arabica +16,2 % en une séance le 6 juillet (plus forte hausse journalière du siècle, clôture ~3,50 $/lb), +33,6 % sur le mois : mécanisme **climatique** (pluies au Minas Gerais), pas Ormuz. Seul produit alimentaire avec un 🔴 plausible sur la fenêtre.
+> 8. **Fret conteneur Asie-Europe en hausse réelle mais modérée** (Shanghai-Rotterdam +5 % à 4 933 $/40', tarifs FAK 7 000-8 500 $/40' annoncés au 15 juillet, rattachés par Drewry aux tensions Ormuz/mer Rouge) : les hausses FOB observées sur le riz (+2-4 %) restent très loin du seuil 🟠 (+30-80 %) — bascules alimentaires plafonnées à 🟡 sauf café.
+> 9. **Probabilités et falsificateurs** : ce calendrier bascule vers la lecture B (Annexe C) si le corridor omanais est accepté / une session de Doha se tient / les transits remontent durablement > 40/j ; il se durcit (avancer les dates butoirs de 2-4 semaines) si première victime américaine, frappe sur un terminal pétrolier (Kharg), Brent > 90 $ durable ou Dated Brent > 100 $.
 >
 > **🔧 Affinage Édition 2.9 (15 juin 2026, J108) — ACCORD CONFIRMÉ CÔTÉ IRANIEN + SIGNATURE DATÉE AU 19 JUIN, PRIX EN CHUTE, RÉPERCUSSION ENFIN AMORCÉE À LA POMPE, URÉE EN DÉTENTE ACCENTUÉE, ADBLUE FR STABLE** : la bifurcation penche vers la sortie de crise. Probabilités révisées : **A 35-45 % (⬆️ forte hausse), B 38-46 % (⬇️ mais très plausible), C 14-22 % (⬇️)**. Sept points structurants :
 >
@@ -170,642 +182,487 @@
 | 🔴 | **Inaccessibilité prolongée** | Disponibilité < 30 % ; rationnement strict ; rupture > 2 semaines ; substitution obligatoire |
 
 **Confiance** : ★ (1 source unique non recoupée) à ★★★★★ (≥ 3 sources Tier 1 convergentes).
-**Sensibilité déclencheurs** : `+` (faible), `++` (moyenne), `+++` (forte) face aux 4 déclencheurs surveillés — **Liban** (✅ trêve prolongée +45j le 15 mai, prochaines échéances 29 mai sécurité Pentagone et 2-3 juin politique State Dept), **négociations Iran-US** (3ème round Washington 14-15 mai concernait Israël-Liban et non Iran-US ; proposition Trump 16 mai rejetée par Khamenei ; canal Pakistan réactivé via Naqvi à Téhéran 17 mai), **saisies de navires Ormuz** (Hui Chuan saisi 14 mai, silence opérationnel 15-17 mai), **mouvement social France** (manif Montparnasse 16 mai tenue, mobilisation FNSEA confirmée 26 mai).
+**Sensibilité déclencheurs** : `+` (faible), `++` (moyenne), `+++` (forte) face aux déclencheurs surveillés de la fenêtre — **verdict complet des marchés post-fermeture** (Brent 79,02 $ le 13/7 [source unique] ; TTF et Dated Brent non encore observés), **échéance du 17 juillet** (expiration du wind-down pétrolier US + fenêtre §4/§5 du MOU), **31 juillet** (fin aide « grands rouleurs » ; échéance annoncée de l'interdiction d'export diesel russe), **OPEP+ 2 août**, **fin de la fenêtre nucléaire ~mi-août** (sous C modal, l'échec est le défaut), **rentrée du 1er septembre** (pics ORL, logistique), **hiver gazier** (UGS ~72 % en trajectoire, campagne fioul), **ruée comportementale** (wildcard non datable : tout JT « pénurie » peut transformer un 🟢 en 🟠 en 48-72 h indépendamment des stocks).
 
 ---
 
-## 3. Synthèse exécutive — Top 10 à sécuriser AVANT
+## 3. Synthèse exécutive — Top 12 à sécuriser (Édition 3.0, fenêtre S29→S40)
 
-> Ces 10 produits cumulent **risque de bascule 🟠/🔴 sur la période**, **dépendance Ormuz forte** et **fenêtre d'action courte**. Pour un ménage de 4 personnes, le budget total de mise en stock est estimé entre **440 et 750 €** au prix S19 — soit **180-280 € d'économie** vs achat différé après les premières bascules.
+> Ces produits cumulent **risque de bascule sur la fenêtre**, **mécanisme documenté** (pas d'« ambiance ») et **fenêtre d'action courte**. Pour un ménage de 4 personnes, le budget de mise en stock du Top 12 est estimé entre **520 et 900 €** au prix S29 (hors fioul, poste annuel séparé). **Changement de philosophie vs Édition 2.9** : les urgences ne viennent plus d'une pénurie imminente généralisée (aucune constatée à J136) mais (1) de **tensions préexistantes réelles** (pétrole lampant, Doliprane adulte, amoxicilline), (2) d'un **choc de prix différé** (distillats, gaz, café) et (3) de la **convergence d'automne** (rentrée + campagne fioul + hiver gazier + fin des aides).
 
-> **🔧 Top 12 réorganisé en Édition 2.2** : vue 3 mois sous B sustained. Les produits avec **bascule 🔴 attendue S29-S30** (fin juillet 2026) ou **anticipation hiver indispensable** montent en priorité, même si leur urgence court terme est plus faible. **Le calendrier ne prévient pas seulement contre les bascules imminentes — il prévient contre l'accumulation enlisement qui rendra les approvisionnements progressivement plus difficiles et plus chers de juin à août.**
-
-| #   | Produit                                          | **Date butoir (achat optimal)**             | Trajectoire max (S30)               | Quantité 4 pers./3 mois        | Budget S19                            | Économie achat anticipé |
+| #   | Produit                                          | **Date butoir (achat optimal)**             | Trajectoire max (S40, sous C)               | Quantité 4 pers.        | Budget S29                            | Justification (mécanisme, pas ambiance) |
 | --- | ------------------------------------------------ | ------------------------------------------- | ----------------------------------- | ------------------------------ | ------------------------------------- | ----------------------- |
-| 1   | **Gazole routier (B7)** ⭐ FERMEMENT CONFIRMÉ     | **🚨 AVANT FIN JUIN 2026 (S26) — expiration remise 20 c/L** | 🟠 dès S23, **🔴 S30 (fin juillet)** | 60 L (jerricans + plein)       | 130-145 €                             | 40-80 € + 20 c/L de remise |
-| 2   | **Fioul domestique** ⭐ ANTICIPATION HIVER         | **🚨 AVANT FIN JUIN 2026 (S26) — remise + délais livraison** | 🟠 dès S27, **🔴 S30 si livraisons saturées** | Cuve 2 000 L (annuel)          | 3 100-3 500 € *(annuel)*              | **500-1 200 € *(annuel)*** |
-| 3   | **Pétrole lampant + lampe-tempête** ⭐ 🔴 S25      | **🚨 24 mai 2026 (S22)**                     | **🔴 S25-S30** (6 sem. consécutives)  | 1 lampe + 5 L pétrole          | 60-120 €                              | 30-60 €                 |
-| 4   | **Huile de tournesol** *(restauré 2.2)* — RÉCOLTE COMPROMISE | **🚨 14 juin 2026 (S24)**                   | 🟠 dès S24, **🔴 S29-S30** (récolte mer Noire) | 6 L (3 mois)                   | 24-36 €                               | 25-50 €                 |
-| 5   | **Paracétamol pédiatrique buvable** *(restauré)* — SAISON FROIDE | **🚨 14 juin 2026 (S24)** *(avant pré-rentrée)* | 🟠 dès S26, **🔴 S29-S30**            | 3 flacons sirop                | 12-18 €                               | usage critique          |
-| 6   | **Antihypertenseurs sartans** *(restauré)* — RUÉE COMPORTEMENTALE | **🚨 14 juin 2026 (S24)**                   | 🟠 dès S26, **🔴 S29-S30**            | 3-4 boîtes (3 mois)            | 0-25 € reste à charge                 | usage chronique         |
-| 7   | **Viande bovine (congélation)** ⭐ +20-34 % YoY     | **25 mai 2026 (S23)**                        | 🟠 confirmé S24-S30 (élargi 2.2)     | 6-9 kg congelé                 | 70-150 €                              | 25-50 €                 |
-| 8   | **Café torréfié** ⭐ ⭐ +37 % sur 3 ans              | **1er juin 2026 (S24)**                      | 🟠 dès S25, **🟠→🔴 S30**             | 1,5-2 kg (3 mois)              | 30-60 €                               | 25-50 €                 |
-| 9   | **Fruits exotiques** ⭐ FERMEMENT CONFIRMÉ → 🔴 fin | **24 mai 2026 (S23)**                        | 🟠 dès S23, **🔴 S29-S30**            | hebdo, à congeler              | variable                              | 15-40 €                 |
-| 10  | **Riz basmati / asiatique** *(restauré)*           | **🚨 14 juin 2026 (S25)** *(avant cumul océan Indien)* | 🟠 dès S26, **🔴 S29-S30**          | 6-9 kg (3 mois)                | 18-30 €                               | 15-30 €                 |
-| 11  | **Power banks + piles AA/AAA** *(restauré 2.2)*    | **30 juin 2026 (S26)** *(avant suspension Chine nov)* | 🟠 dès S28-S29 (lithium + Chine)     | 2 power banks 10-20 kWh + piles | 80-160 €                              | 30-60 €                 |
-| 12  | **Levothyrox** 🆕 *surveillance*                   | **Réévaluation J108 (fin juin)** ; renouvellement anticipé 10-15j | Princeps 🟢 ; générique 🟡 dès S28, 🟠 si pic | 2 mois d'avance (chronique)    | 0 € (remb. 65 %)                      | usage vital, **NE PAS SWITCHER sans avis médecin** |
+| 1   | **Pétrole lampant + lampe-tempête** 🚨 déjà 🔴    | **Action immédiate S29 (13-19 juillet)** — échéance de mai déjà échue | **🔴 toute la fenêtre** (indexé Brent + niche dépletable) | 1 lampe + 5-10 L + frontales LED | 60-120 €                              | Marché de niche à stock mince ; toute couverture « blackout hiver » à l'automne videra les rayons |
+| 2   | **Café torréfié** ⭐ choc du 6 juillet             | **Avant le 26 juillet (fin S30)**            | 🟠 dès S29, **🟠→🔴 S37-S40**         | 1,5-2 kg (3 mois)              | 14-26 € (600 g) / 35-60 € (2 kg)      | Arabica +16,2 % en une séance (climat Brésil, indépendant d'Ormuz) ; répercussion détail en cours |
+| 3   | **Gazole B7** ⭐                                   | **Avant le 31 juillet (S31)** — fin de l'aide « grands rouleurs » | 🟠 stable, **risque 🟠→🔴 localisé S37-S40** (prix, pas rupture nationale) | 120-180 L (réserve légale) | 228-360 €                             | Distillats mondiaux tendus (crack record, Russie) + test du 17/7 ; SAGESS ~90 j = pas de pénurie immédiate |
+| 4   | **AdBlue / DEF** ⭐ (pro : transporteurs, agri)    | **Avant fin juillet (S30-S31)**              | 🟠, **risque 🔴 conditionnel S32+** si fermeture > 30-60 j | Pro : stock 4-6 sem ; VP : 2-3 bidons 10 L | 30-45 € (VP)                          | 35-40 % du commerce mondial d'urée via Ormuz ; DOC 30-60 j depuis le 7-8/7 → risque visible fin août-septembre |
+| 5   | **Antibiotiques (chroniques/familles)**           | **Renouvellement anticipé avant le 9 août (fin S32)** | 🟠 dès S29, **🟠→🔴 S33-S40** (rentrée ORL) | Sur ordonnance uniquement      | 0-15 € reste à charge                 | Tension PRÉEXISTANTE documentée (USPO : ~30 % officines en rupture amox pédiatrique en mai ; contingentement actif) + pic saisonnier certain |
+| 6   | **Paracétamol formes adulte** (cp 500 / eff. 1000) | **Reconstitution raisonnée avant fin juillet (S30-S31)** | **🟠 toute la fenêtre** (contingenté ANSM, retour normal annoncé 2027) | 4-6 boîtes (usage familial normal) | 10-18 €                               | Rupture + contingentement ANSM réels (bulletin sem. 23) — PAS de stockage massif : contingentement = achat par ordonnance/besoin |
+| 7   | **Fioul domestique** ⭐ ANTICIPATION HIVER         | **Remplissage avant le 30 août (fin S35)** — avant la campagne | 🟡-🟠 été, **🟠 S37-S40** (délais > 3 sem possibles) | Cuve 2 000 L (annuel)          | ~2 840-2 980 € *(annuel)*             | Prix d'été encore bas (1,42-1,49 €/L) ; la campagne de chauffe capte les mêmes distillats tendus ; délais s'allongent à la rentrée |
+| 8   | **Piles AA/AAA + LED + power banks**              | **Avant le 30 août (fin S35)**               | 🟠 toute la fenêtre (fret +15-30 %) — **pas de 🔴** (correction : pas d'embargo chinois) | 16+16 piles, 8 LED, 2 power banks | 120-230 €                             | Surcoût fret conteneur avéré ; demande « préparation hiver » saisonnière ; l'échéance chinoise réelle (10 nov) est HORS fenêtre |
+| 9   | **GPL bouteilles (zones rurales)**                | **Avant le 26 juillet (fin S30)**            | 🟠 toute la fenêtre (confiance ★★)  | 2 bouteilles 13 kg d'avance    | 68-88 €                               | Pas de choc constaté (38 € / recharge) ; risque = concentration terminaux + saison de rentrée ; lien Ormuz NON démontré (gap) |
+| 10  | **Viande bovine (congélation)** ⭐                 | **Avant le 31 juillet (S31)** — fin aide transporteurs | 🟡 été (canicule), **🟠 S32-S40** (fret frigo, énergie) | 3-4 kg congelé                 | 50-70 €                               | Prix déprimés par la canicule = fenêtre d'achat ; le renchérissement vient du fret/énergie à la rentrée, pas du soja (mécanisme corrigé) |
+| 11  | **Eau embouteillée** (si dépendance puits/qualité) | **Avant le 31 juillet (S31)**                | 🟠 prix toute la fenêtre (TVA 20 % + PET) — pas de rupture | 54 L (compromis OMS 1 mois)    | 36-50 €                               | Choc de PRIX acté (TVA 5,5→20 %) ; production 100 % France = pas de pénurie physique ; risque résiduel = ruée comportementale |
+| 12  | **Levothyrox / insuline (dispositifs)** *surveillance* | Levothyrox : **13 septembre (fin S37)** ; stylos/aiguilles : **26 juillet (fin S30)** | 🟢 (princeps/insuline) ; 🟢→🟡 générique | 1-2 mois d'avance (chroniques) | 0-25 € + 25-40 € dispositifs          | Aucune tension réelle (production UE) ; risque purement comportemental (mémoire 2017) ; **NE PAS SWITCHER** de spécialité sans médecin |
 
-**⭐ Lecture rapide au 6 juin (J98) — Édition 2.8 (vue 3 mois, B central consolidé 60-66 %, escalade militaire sans bascule, Brent papier en reflux ~93 $, douleur sur l'aval maintenue ; au détail l'ESSENCE est plus touchée que le diesel ; remise 20 c/L expire fin juin)** :
+**⭐ Lecture rapide au 13 juillet (J136) — Édition 3.0 (fenêtre 12 semaines, C modal 40-50 %, verdict marchés : réaction mesurée)** :
 
-- **🚨 PRIORITÉ FIN JUIN — gazole + fioul AVANT l'expiration de la remise 20 c/L (fin juin)** : profiter du repli temporaire du Brent papier (gazole détail **2,047 €/L au 5 juin**, léger repli hebdo) AVANT le risque de marche d'escalier de ~+20 c/L au 1er juillet. **Si chauffage fioul, planifier remplissage avant fin juin** (économie 500-1 200 € + remise). Le reflux du Brent ne se transmet PAS à la pompe (raffinés montent plus vite que le brut, Fortune/JPMorgan).
-- **⚠️ CONTRE-INTUITIF au détail — l'ESSENCE est plus touchée que le diesel** : sur ~2 307 stations en difficulté (dont ~411 critiques, 13 régions), le **gazole est le carburant le MOINS touché (442 stations)** vs SP98 (1 139). Le diesel garde la priorité réglementaire (fret, ORSEC). **Automobilistes essence : sécuriser le plein en priorité** ; SP95 à 2,032 €/L, SP98 2,074, E10 1,973 (5 juin).
-- **Cette semaine** — fenêtre d'opportunité : **viande bovine à congeler** + **fruits exotiques** + **pétrole lampant + lampe-tempête** (déjà 🔴 depuis S25).
-- **Avant 14 juin** : **café** + **anticiper huile tournesol/riz basmati/paracétamol pédiatrique/sartans** avant que la propagation enlisement ne se matérialise en juin.
-- **Mi-juin (avant 30 juin)** : **power banks + piles** avant cumul suspension exports Chine novembre ; **AdBlue** pour transporteurs/agriculteurs (urée >850 $/t, +80 %).
-- **Surveillance continue** : **Levothyrox** (réévaluation fin juin) + psychotropes si chronique (alerte ANSM distincte).
+- **🚨 PRIORITÉ IMMÉDIATE (S29)** : kit éclairage (pétrole lampant déjà 🔴 + lampe-tempête, marché de niche) — c'est la seule vraie urgence héritée. **Café** avant la fin du mois (le choc brésilien du 6 juillet va se répercuter au détail).
+- **⚠️ CONTRE-INTUITIF n°1 — aucune pénurie nouvelle en France à J136** malgré la fermeture déclarée d'Ormuz : pas de queue, pas de rationnement carburant, inflation alimentaire en décélération (+0,9 %). **Acheter posément, pas en panique** — la fenêtre S29-S31 est une fenêtre d'opportunité de prix, pas une course contre la rupture.
+- **⚠️ CONTRE-INTUITIF n°2 — les vraies tensions sont préexistantes et non-Ormuz** : Doliprane adulte (contingenté ANSM depuis juin, retour normal 2027), amoxicilline pédiatrique (~30 % officines touchées en mai), pétrole lampant (indexé Brent), café (climat Brésil). Ormuz ajoute du **prix**, pas (encore) de la **rupture**.
+- **Avant le 31 juillet (S31)** : gazole (aide grands rouleurs), viande bovine à congeler (prix déprimés par la canicule), AdBlue pour les pros, eau si besoin spécifique. **Le 31 juillet est la date la plus chargée de la fenêtre** (fin d'aide + échéance diesel russe + veille d'OPEP+).
+- **Avant fin août (S35)** : **fioul** (avant la campagne de chauffe — le poste d'économie le plus important du calendrier : 70-150 €/1 000 L), piles/LED/power banks, renouvellements d'ordonnances avant la rentrée.
+- **Septembre (S36-S40)** : c'est la **fenêtre de convergence des risques** (rentrée ORL + campagne fioul + hiver gazier + éventuel échec de la fenêtre nucléaire de mi-août). Les paliers 🟠→🔴 du calendrier sont concentrés là — arriver en septembre avec les stocks déjà constitués.
 
-**⚠️ Différence essentielle vs Édition 2.1 (sous-évaluait l'enlisement 3 mois)** : la Édition 2.2 restaure les paliers cibles tardifs S25-S30, **car sous scénario B sustained 3 mois, l'accumulation enlisement amplifie progressivement les tensions**. Le calendrier n'est pas un instantané — c'est une trajectoire. Une absence de tension au 17 mai sur l'huile tournesol ne signifie PAS une absence de tension fin juillet. Il faut **acheter MAINTENANT pour les bascules 🔴 attendues fin de période**.
-
-**Hors top 12 mais à surveiller fin juin / juillet** : poisson frais importé (déjà 🟠 → 🔴 S28-S30 — basculer vers surgelé Norvège), pois chiches importés (avant 8 juin), GPL bouteilles si zone rurale (avant 15 juin), **psychotropes** si traitement chronique (alerte ANSM 8 jan + 5 fév 2026 : 14 molécules en tension depuis janvier 2025, situation aggravée — distinct de la crise Ormuz), **antibiotiques amoxi/clav** (🔴 S30 anticipé pour rentrée automne ORL), **AdBlue / DEF** *(nouveau 2.3)* — non critique pour ménage typique mais **vigilance transporteurs PME + agriculteurs SCR Stage V + propriétaires VP diesel récent** : avant **15 juin 2026 (S25)** pour exploitants agricoles (campagne moissons juillet-août), 2-3 bidons 10 L pour particuliers VP diesel (~30-40 €) ; prix vrac déjà ×2 vs 2020, projection BGL +170 % possible. Voir fiche détaillée 5.1.9.
+**Hors Top 12 mais à surveiller** : poisson importé (🟡-🟠, vecteur mer Rouge/gazole marin — substituer par le surgelé sans urgence) ; kérosène/billets d'avion (surcharges 50-319 € actées — acheter les billets d'automne avant fin août) ; gaz naturel (PRVG +7,4 % déjà acté — vérifier son contrat avant la révision CRE d'octobre) ; beurre/fromages et volaille (renchérissement de rentrée via fret frigo/énergie) ; **psychotropes** (tensions ANSM distinctes d'Ormuz, 14 molécules depuis 2025).
 
 ---
 
 ## 4. Tableaux matriciels par catégorie
 
-> Lecture : chaque cellule indique le palier dominant attendu en fin de la semaine considérée. `→` indique une bascule probable au cours de la semaine.
-> S19 = 4-10 mai · S20 = 11-17 mai · S21 = 18-24 mai · S22 = 25-31 mai · S23 = 1-7 juin · S24 = 8-14 juin · S25 = 15-21 juin · S26 = 22-28 juin · S27 = 29 juin-5 juil · S28 = 6-12 juil · S29 = 13-19 juil · S30 = 20-26 juil
+> Lecture : chaque cellule indique le palier dominant attendu en fin de semaine considérée, **sous trajectoire centrale C (modal, 40-50 %)**. `→` indique une bascule probable au cours de la semaine. `*` = risque **localisé/intermittent ou tarifaire** (le seuil 🔴 « disponibilité < 30 %, rupture > 2 semaines » n'est PAS attendu à l'échelle nationale — annotation issue de la relecture adversariale).
+> S29 = 13-19 juil · S30 = 20-26 juil · S31 = 27 juil-2 août · S32 = 3-9 août · S33 = 10-16 août · S34 = 17-23 août · S35 = 24-30 août · S36 = 31 août-6 sept · S37 = 7-13 sept · S38 = 14-20 sept · S39 = 21-27 sept · S40 = 28 sept-4 oct
 >
-> **Note matrices Édition 2.2 (17 mai)** :
-> - **Paliers S19-S22 (validés Édition 2.1)** : observation directe sur produits Tier 1 (carburants, gaz, ruptures stations) ; extrapolation cohérente avec trajectoire prix pour autres produits. **Pas d'urgence court terme** au-delà du Top 12.
-> - **Paliers S23-S26 (juin — restitués Édition 2.2)** : propagation enlisement attendue à 6-12 semaines (validation FranceAgriMer / NielsenIQ / Coface). C'est la **fenêtre de bascule majeure** où les produits passent progressivement de 🟡 à 🟠.
-> - **Paliers S27-S30 (juillet — restitués Édition 2.2)** : effets cumulés enlisement 3 mois (inflation alimentaire +4-6 % a/a, récolte 2026 compromise par engrais, API Asie sustained, hiver gazier anticipé, ruée comportementale estivale). C'est la **fenêtre où les bascules 🔴 se matérialisent** sur huile tournesol, riz basmati, paracétamol pédiatrique, sartans, pétrole lampant déjà en 🔴 depuis S25, fruits exotiques.
-> - **Aucune avance de date sur les bascules existantes** justifiée par les événements 14-17 mai (silence opérationnel détroit, OAT-Bund en repli, ceasefire Liban +45j). **MAIS aucune raison non plus d'atténuer les bascules tardives** : le scénario B sustained 3 mois est la trajectoire centrale, par construction le calendrier doit refléter ses effets cumulés.
+> **Note matrices Édition 3.0 (13 juillet)** :
+> - **Paliers S29-S31 (mi-fin juillet)** : observation directe — aucune pénurie nouvelle constatée, prix quasi stables hors gaz (PRVG +7,4 %) et café. Les paliers reflètent l'état réel, pas l'ambiance militaire.
+> - **Paliers S32-S36 (août)** : fenêtre conditionnelle — érosion progressive si Ormuz reste fermé (DOC 30-60 j depuis le 7-8 juillet), échéances du 31 juillet (aides, diesel russe) et de mi-août (fenêtre nucléaire). C'est là que la trajectoire C se différencie réellement de B.
+> - **Paliers S37-S40 (septembre)** : **fenêtre de convergence** — rentrée (ORL, logistique), campagne fioul, hiver gazier, effets cumulés de 8+ semaines de guerre d'usure. Concentration des 🟠→🔴* du calendrier.
+> - **12 rétrogradations vs les projections 2.2/2.9** (anti « optimisme inversé », validé par 8 semaines d'observation) et **2 aggravations** (Doliprane adulte, amoxicilline — tensions ANSM réelles).
 
-### 4.1 Énergie *(Édition 2.2 : essences/GPL renforcés fin période, kérosène trajectoire estivale)*
+### 4.1 Énergie *(Édition 3.0 : distillats = le vrai fil rouge ; gaz = seul choc facture acté ; AdBlue = risque conditionnel au DOC)*
 
-| Produit | S19 | S20 | S21 | S22 | S23 | S24 | S25 | S26 | S27 | S28 | S29 | S30 | Conf. |
+| Produit | S29 | S30 | S31 | S32 | S33 | S34 | S35 | S36 | S37 | S38 | S39 | S40 | Conf. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Gazole routier (B7) ⭐ | 🟡 | 🟡 | 🟡→🟠 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★★★ |
-| Essence SP95-E10 *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Essence SP98 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
-| Fioul domestique ⭐ | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★★★ |
-| GPL bouteilles *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡-🟠 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
-| Gaz naturel résidentiel | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | ★★★★★ |
-| Électricité résidentielle | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★★ |
-| Kérosène (billets avion) *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| **AdBlue / DEF camions** ⭐ *(nouveau 2.3)* | 🟡 | 🟡 | 🟡 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★ |
+| Gazole routier (B7) ⭐ | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴* | 🟠→🔴* | ★★★★ |
+| Essence SP95-E10 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| Essence SP98 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
+| Fioul domestique ⭐ | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠* | 🟠* | 🟠* | 🟠* | ★★★★ |
+| GPL bouteilles | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★ |
+| Gaz naturel résidentiel | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★★ |
+| Électricité résidentielle | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★★ |
+| Kérosène (billets avion) | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| **AdBlue / DEF** ⭐ | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | 🟠→🔴* | ★★★ |
 
-### 4.2 Alimentation de base *(Édition 2.2 : paliers fin de période restitués sous B sustained 3 mois)*
+*Notes 4.1 : gazole/fioul — les `🟠→🔴*` de septembre désignent des bascules **localisées/intermittentes ou de prix** (+30-80 % cumulés), PAS une rupture nationale (SAGESS ~90 j, ORSEC non activé) ; gaz — 🟠 = palier de **prix** (PRVG +7,4 % acté, TTF ~50 €), pas de rationnement physique attendu dans la fenêtre (plan de sobriété possible en toute fin) ; kérosène — palier **tarifaire** (surcharges 50-319 €) ; AdBlue — `🔴*` conditionnel à une fermeture d'Ormuz > 30-60 j (comptée depuis le 7-8/7 : visible fin août au plus tôt) ; électricité — mécanisme distinct (canicule/hydrologie puis prix de gros), pas Ormuz.*
 
-| Produit | S19 | S20 | S21 | S22 | S23 | S24 | S25 | S26 | S27 | S28 | S29 | S30 | Conf. |
+### 4.2 Alimentation de base *(Édition 3.0 : désinflation constatée (+0,9 % a/a), 8 rétrogradations ; café = seule urgence, mécanisme climatique brésilien)*
+
+| Produit | S29 | S30 | S31 | S32 | S33 | S34 | S35 | S36 | S37 | S38 | S39 | S40 | Conf. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Pâtes sèches *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | ★★★★★ |
-| Riz long grain (européen) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
-| Riz basmati / asiatique *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★★ |
-| Blé tendre / farine T55 *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | ★★★★★ |
-| Semoule de blé | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
-| Légumineuses sèches *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★ |
-| Huile de tournesol *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★★ |
-| Huile d'olive *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | ★★★★ |
-| Sucre cristallisé *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | ★★★★★ |
-| Lait UHT | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★★ |
-| Café torréfié ⭐ *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★★★ |
-| Thé *(corr. 2.2)* | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
-| Conserves (tomate/thon/sardine) *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | ★★★ |
+| Pâtes sèches | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
+| Riz long grain / basmati | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠* | 🟡→🟠* | ★★★ |
+| Blé tendre / farine T55 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★★ |
+| Semoule de blé | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★ |
+| Légumineuses sèches | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★ |
+| Huile de tournesol | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
+| Huile d'olive | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
+| Sucre cristallisé | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★ |
+| Lait UHT | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★ |
+| Café torréfié ⭐ | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🟠→🔴 | 🟠→🔴 | 🟠→🔴 | ★★★★★ |
+| Thé | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★ |
+| Conserves (tomate, thon, sardine) | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★ |
 
-### 4.3 Frais — chaîne du froid *(Édition 2.2 : viandes secondaires + œufs + laitiers renforcés fin période)*
+*Notes 4.2 : riz — `🟠*` de fin de fenêtre à basse confiance, conditionné à une transmission fret non encore mesurée (hausses FOB observées : +2-4 % seulement) ; café — 🔴 possible, mécanisme **climatique brésilien** (indépendant d'Ormuz, tient sous B comme sous C) ; pâtes/semoule — bascule conditionnée à la confirmation du repli durum France (−5,5 %, stock UE 0,4 Mt) fin août ; tournesol/sucre/farine — rétrogradés (désinflation constatée, offre confirmée).*
 
-| Produit | S19 | S20 | S21 | S22 | S23 | S24 | S25 | S26 | S27 | S28 | S29 | S30 | Conf. |
+### 4.3 Frais — chaîne du froid *(Édition 3.0 : correction géographique majeure — soja Brésil/ananas/poisson ≠ Ormuz ; canicule = amortisseur court terme, fret frigo + énergie = vecteur de rentrée)*
+
+| Produit | S29 | S30 | S31 | S32 | S33 | S34 | S35 | S36 | S37 | S38 | S39 | S40 | Conf. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Viande bovine ⭐ +20-34 % | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★★ |
-| Viande porcine *(corr. 2.2)* | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Volaille *(corr. 2.2)* | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Poisson frais (importé) | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🟠→🔴 | 🟠→🔴 | ★★★★ |
-| Œufs *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | ★★★★★ |
-| Lait frais *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | ★★★★ |
-| Beurre / fromages ⭐ +25-30 % *(corr. 2.2)* | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Légumes locaux saison | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★★ |
-| Légumes importés hors saison | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟢→🟡 | 🟢→🟡 | 🟢→🟡 | 🟢→🟡 | ★★★★ |
-| Fruits importés exotiques ⭐ FERMEMENT *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★★ |
+| Viande bovine ⭐ | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| Viande porcine | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| Volaille | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| Poisson frais (importé) | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★ |
+| Œufs | 🟢 | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
+| Lait frais | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | 🟡-🟠 | ★★★★ |
+| Beurre / fromages | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
+| Légumes locaux saisonniers | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★★ |
+| Légumes importés hors saison | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟢-🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
+| Fruits importés (banane, orange, ananas) | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★ |
 
-### 4.4 Hygiène, santé, équipement *(Édition 2.2 : MITM tardifs restitués sous B 3 mois, Levothyrox générique sous-tendu)*
+*Notes 4.3 : viandes/œufs — le canal « soja Brésil via Ormuz » des éditions précédentes était **géographiquement faux** (route Atlantique) : les bascules de rentrée reposent sur le fret frigo, l'énergie (TTF ~50 €) et la demande post-canicule, le canal engrais Golfe→Brésil jouant à horizon 2026-27 (récolte suivante) ; poisson/fruits — vecteur réel = **mer Rouge** (2 vraquiers coulés début juillet, assurances) et gazole marin, PAS Ormuz — 🔴 des éditions précédentes retirés (ananas = Costa Rica/Atlantique) ; canicule — amortit la demande viandes S29-S31 (fenêtre d'achat) mais ampute la collecte laitière (−10/−30 % Grand Ouest).*
 
-| Produit | S19 | S20 | S21 | S22 | S23 | S24 | S25 | S26 | S27 | S28 | S29 | S30 | Conf. |
+### 4.4 Hygiène, santé, équipement *(Édition 3.0 : 2 aggravations documentées (Doliprane adulte, amoxicilline) ; corrections piles/power banks (pas d'embargo chinois) ; pétrole lampant seul 🔴 maintenu)*
+
+| Produit | S29 | S30 | S31 | S32 | S33 | S34 | S35 | S36 | S37 | S38 | S39 | S40 | Conf. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Paracétamol (comprimés) | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Paracétamol pédiatrique buvable *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★★ |
-| Antibiotiques (amoxi/clav) | 🟡 | 🟡 | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★★ |
-| Antihypertenseurs sartans *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠→🔴 | 🔴 | ★★★★ |
-| **Levothyrox princeps Merck (UE)** *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | ★★★★★ |
-| **Lévothyroxine générique (Thyrofix/Tcaps)** 🆕 *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡 | 🟡→🟠 | ★★★★ |
+| Paracétamol — formes adulte (cp 500 / eff 1000) | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
+| Paracétamol — sirop pédiatrique | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★ |
+| Antibiotiques (amox / amox-clav) ⭐ | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | 🟠→🔴 | 🟠→🔴 | 🟠→🔴 | 🔴* | 🔴* | 🔴* | 🔴* | ★★★★ |
+| Antihypertenseurs (sartans / IEC) | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★ |
 | Insuline analogues | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | ★★★★★ |
-| Eau embouteillée *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | 🟠 | ★★★★ |
-| Papier hygiénique *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★ |
-| Lessive / savon / gel douche | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡-🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
-| Piles + ampoules LED *(corr. 2.2)* | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🔴 | ★★★ |
-| Bougies / lampe-tempête / pétrole | 🟡 | 🟡 | 🟠 | 🟠 | 🟠 | 🟠 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | ★★ |
-| Power banks / FFP2 / gants *(corr. 2.2)* | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟡 | 🟡→🟠 | 🟠 | 🟠 | ★★★ |
+| Lévothyroxine (princeps / génériques) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢→🟡 | 🟢→🟡 | 🟢→🟡 | 🟢→🟡 | 🟡 | 🟡 | 🟡 | 🟡 | ★★★★★ |
+| Eau embouteillée | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🟡 | 🟠→🟡 | 🟠→🟡 | 🟠→🟡 | ★★★★ |
+| Papier hygiénique | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | 🟡→🟢 | 🟡→🟢 | 🟡→🟢 | 🟡→🟢 | ★★★ |
+| Lessive, savon, gel douche | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠→🟡 | 🟠→🟡 | 🟠→🟡 | 🟠→🟡 | ★★★ |
+| Piles AA/AAA + ampoules LED | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
+| Bougies + pétrole lampant / lampes-tempête 🚨 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 | ★★ |
+| Power banks + FFP2 + gants | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | 🟠 | ★★★ |
+
+*Notes 4.4 : paracétamol — ligne dédoublée (correction adversariale) : les formes adulte sont en **rupture avec contingentement ANSM** (bulletin sem. 23, retour normal annoncé 2027), le sirop pédiatrique reste disponible (vigilance comportementale) ; antibiotiques — `🔴*` de rentrée = tension **préexistante** (USPO : ~30 % officines, contingentement, export interdit) aggravée par le pic saisonnier ORL certain, PAS un effet Ormuz ; eau/lessive — 🟠 = paliers de **prix** (TVA 20 %, pétrochimie), production France = pas de rupture physique ; piles/power banks — plafonnés 🟠 (correction : la décision chinoise MOFCOM 70/2025 est une **facilitation** des exports jusqu'au 10 nov 2026, pas un embargo — l'échéance réelle est hors fenêtre) ; pétrole lampant — 🔴 maintenu (indexé Brent, marché de niche, déjà 🔴 depuis juin).*
 
 ---
 
 ## 5. Détail par produit
 
+> **Format Édition 3.0** — chaque fiche donne : l'état constaté au 13 juillet 2026 (J136, étiqueté [FAIT]/[INTERPRÉTATION]/[GAP]), le mécanisme réel de dépendance (corrigé des erreurs géographiques des éditions précédentes), la trajectoire S29→S40 sous C modal avec bornes B/A, la date butoir actualisée (toutes les dates de mai-juin des éditions 2.x sont échues), la sensibilité, la confiance et **ce qui change vs l'Édition 2.9**. Les recommandations de stock restent calibrées « ménage de 4 personnes », dans le respect des limites légales et sans achat de panique.
+
 ### 5.1 Énergie
 
 #### 5.1.1 Gazole routier (B7)
 
-- **Stocks France** : SAGESS ~17,4 Mt produits raffinés ≈ **90 jours** de consommation, dont ~9-10 Mt de distillats moyens. Stocks opérateurs (TotalEnergies, Esso, BP) ≈ 30-40 j supplémentaires. Érosion estimée **12-15 % depuis J1**.
-- **Dépendance Ormuz** : direct ~5-8 % (brut Golfe Persique : Arabie + Irak + EAU) ; indirect ~25-35 % (raffineries Anvers/Rotterdam/Lavera tirent leur brut sur marché mondial tendu ; France importe ~50 % de son gazole fini, déficit raffinage chronique). **Brent à 100-115 $ se transmet entièrement au prix pompe.**
-- **Substituts** : libération SAGESS coordonnée AIE (~30 Mb au niveau européen depuis mars), brut Norvège/Brésil/Guyana/USA (saturé), Algérie (priorité France/Italie), biocarburants B30/B100 (< 2 % conso), rationnement préfectoral (utilisé 2022).
-- **Reco stock 4 pers./1 mois** : **120-180 L** (1-2 jerricans 20 L homologués UN/ADR + plein réservoir maintenu > 50 %). Budget : **260-440 €**. **Limite légale France : 10 L max/jerrican par particulier, total ≤ 60 L à transporter** (arrêté 1.6.2001). Stockage domicile non réglementé sous 240 L mais **risque incendie majeur** : à proscrire en habitat collectif.
-- **Date butoir** : **AVANT FIN JUIN 2026 (S26) — la remise carburant de 20 c/L EXPIRE FIN JUIN** : risque de marche d'escalier de ~+20 c/L au 1er juillet à périmètre Brent inchangé. Acheter avant cette date capture la remise ET évite le palier 🟠 généralisé. Attention : le reflux du Brent papier (clôture ~93 $ le 5 juin) ne se transmet PAS proportionnellement à la pompe — les raffinés montent plus vite que le brut (Fortune 31 mai / JPMorgan). [SPÉCULATION] La projection Exxon (28 mai) de cargaisons physiques Brent à 150-160 $/b **n'est PAS matérialisée à J98** (aucune assessment Platts/Argus Dated Brent en source ouverte ; *gap*) ; elle reste un risque haut, pas un fait. **Note détail J98 [FAIT/C2]** : c'est l'essence (SP98 1 139 stations) qui manque avant le gazole (442 stations) — le diesel garde la priorité réglementaire. Après l'été : probabilité forte d'allocations station et de pic prix > 2,40 €/l.
-- **Sensibilité déclencheurs** : `+++` Liban (rupture trêve 17 mai), saisies navires Ormuz, rumeur grève dépôts pétroliers, déclaration Trump escalatoire.
-- **Sources** : UFIP Énergies & Mobilités, SAGESS, prix-carburants.gouv.fr, L'Argus, AIE OMR mensuel, DGEC bulletin pétrolier hebdo.
-- **Confiance** : ★★★★ (analogies 2010/2022 robustes).
+- **État au 13 juillet** : [FAIT] moyenne hebdo officielle **1,903 €/L** (6 juillet) ; relevés 1,912-1,914 €/L (7-8 juillet) ; signal non officiel ~1,97-1,98 €/L le 12 juillet [à confirmer par la publication DGEC du 13] — stable début juillet, **signal d'accélération non confirmé mi-juillet**. Plafond TotalEnergies 1,99 €/L actif (~1 200 stations + 5 week-ends autoroutiers). **Aucun incident carburant national** au 1er chassé-croisé. [FAIT] Brent **79,02 $ le 13 juillet (+3,96 %)** [source secondaire unique] — la fermeture déclarée est cotée modérément, pas encore transmise à la pompe.
+- **Mécanisme réel** : la fin de la remise 20 c/L (30 juin) n'a PAS produit de marche d'escalier mesurable [FAIT — l'anticipation 2.9 ne s'est pas matérialisée]. Le fil rouge est désormais **la tension mondiale sur les distillats, largement indépendante d'Ormuz** : crack spread 3-2-1 NYMEX record (64,58 $ le 8/7), marges diesel Europe > 60 $/b, stocks distillats US ~12 % sous moyenne, **exports diesel russes suspendus** (échéance annoncée 31 juillet — reconduction incertaine, point d'inflexion majeur). SAGESS ≈ 90 j de tampon, ORSEC non activé.
+- **Trajectoire C (centrale)** : 🟠 stable S29-S36 ; S37-S40 **🟠 avec risque de bascules 🟠→🔴 localisées et intermittentes** (rentrée + démarrage campagne fioul sur les mêmes distillats) — le mécanisme le plus probable est une **hausse de prix cumulée +30-80 %**, pas une rupture physique nationale. Point d'inflexion : mi-août (fenêtre nucléaire — sous C, l'échec est le défaut). **Borne B** : 🟡 stable (plancher 🟡, pas 🟢 : la tension distillats russe tient sous B). **Borne A** : 🟡→🟢 dès S31-S32 (très improbable).
+- **Date butoir** : **avant le 31 juillet 2026 (S31)** — fin de l'aide « grands rouleurs » (100 €/véh, guichet impots.gouv.fr) et échéance diesel russe. Réserve légale 4 pers./1 mois : 120-180 L (jerricans homologués, ≤ 10 L/jerrican transporté, total ≤ 60 L en transport ; stockage domestique à proscrire en habitat collectif). Budget : 228-360 €.
+- **Sensibilité** : `+++` (17 juillet wind-down ; 31 juillet diesel russe ; mi-août fenêtre nucléaire ; grève dépôts ; déclaration escalatoire).
+- **Confiance** : ★★★★ · **Sources** : DGEC/prix-carburants.gouv.fr, bdor, TotalEnergies, TradingEconomics/Investing, Tank Transport.
+- **Vs Édition 2.9** : la bascule 🔴 « dès S30 » ne s'est pas matérialisée (confirmation du biais d'optimisme inversé) — repoussée à S37-S40, requalifiée « localisée/prix », mais re-fondée sur un mécanisme plus robuste (distillats mondiaux) que la seule fermeture d'Ormuz.
 
 #### 5.1.2 Essence SP95-E10
 
-- **Stocks France** : ~3,5-4 Mt SAGESS + opérateurs ; consommation ~9 Mt/an → ~140-160 j théoriques. **France structurellement excédentaire en essence** (raffinage produit 1,5x conso intérieure, exporte vers USA East Coast).
-- **Dépendance Ormuz** : direct < 3 %, indirect 15-20 %. Effet prix > effet volume.
-- **Substituts** : bioéthanol E85 (3 000+ stations, 1,15 €/l hors crise), import Anvers/Rotterdam/Repsol Espagne. Conversion E85 boîtier homologué : 700-1 200 € mais retour < 1 an au prix actuel.
-- **Reco stock 4 pers./1 mois** : **40-60 L max** (essence beaucoup plus volatile et dangereuse à stocker que gazole, durée stockage 6 mois max). Budget : **85-135 €**. **Privilégier E85 si véhicule compatible/converti**.
-- **Date butoir** : **AVANT FIN JUIN 2026 (S26) — la remise carburant de 20 c/L EXPIRE FIN JUIN** (risque de marche d'escalier ~+20 c/L au 1er juillet). Moins critique que gazole sur le volume, mais l'effet remise s'applique de la même façon. Comme pour le gazole, les raffinés montent 2-3× plus vite que le brut (Fortune/JPMorgan) : le reflux du Brent ne protège pas la pompe.
-- **Sensibilité déclencheurs** : `++` (France exportatrice nette ; rumeur grève raffinage seul vrai risque rupture).
-- **Sources** : UFIP, prix-carburants.gouv.fr, L'Argus, bioéthanol.fr (Collective du Bioéthanol), SNPAA.
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] moyenne hebdo 1,901 €/L (6/7) — **l'écart de prix essence/gazole s'est quasi effacé** (1,901 vs 1,903) : la tension raffinage frappe les deux carburants. France structurellement **exportatrice nette** d'essence. [GAP] Impossible de confirmer si « l'essence plus touchée que le diesel en stations » (vrai en juin) l'est toujours — aucune donnée nationale de rupture datée de juillet.
+- **Trajectoire C** : 🟠 stable toute la fenêtre — le statut exportateur protège d'une bascule 🔴 ; risque résiduel = panique-achat localisée. **B** : 🟡 stable. **A** : 🟡→🟢 rapide.
+- **Date butoir** : moins critique que le gazole — réservoir > 50 % et 40-60 L d'avance **avant le 31 juillet (S31)**. Budget 76-120 €. E85 (3 000+ stations) reste la meilleure protection si véhicule compatible.
+- **Sensibilité** : `++` · **Confiance** : ★★★★ · **Sources** : DGEC/bdor, UFIP.
+- **Vs Édition 2.9** : trajectoire confirmée (🟠 sans 🔴) ; fait nouveau : disparition du différentiel de prix essence/gazole.
 
 #### 5.1.3 Essence SP98
 
-- **Stocks France** : niche ~10-12 % conso essence. Mêmes stocks SAGESS (fongibles) mais **distribution station par station plus fragile** : nombreuses stations indépendantes ne distribuent pas SP98 ou en faible volume.
-- **Dépendance Ormuz** : identique SP95-E10.
-- **Substituts** : SP95-E10 (compatible majorité véhicules récents non sportifs), E85 si compatible.
-- **Reco stock 4 pers./1 mois** : idem SP95-E10. **Si véhicule récent (< 2010), basculer SP95-E10 sans risque mécanique.**
-- **Date butoir** : **15 juin 2026 (S25)** pour stations indépendantes ; sinon 30 juin.
-- **Sensibilité déclencheurs** : `+` (carburant niche, panique-achat ciblée possible).
-- **Sources** : UFIP, prix-carburants.gouv.fr, L'Argus.
-- **Confiance** : ★★★ (granularité station mal documentée).
+- **État au 13 juillet** : [FAIT] 1,997 €/L (6/7), seuil des 2 €/L franchi ponctuellement (2,003 le 8/7) — progressivement, pas brutalement. Aucune rupture généralisée.
+- **Trajectoire C** : 🟠 toute la fenêtre, franchissement durable des 2 €/L probable — pas de 🔴 (niche substituable par le SP95-E10 pour la quasi-totalité des véhicules post-2010). **B** : 🟡-🟠. **A** : 🟡.
+- **Date butoir** : pas de stock dédié — **basculer vers le SP95-E10 avant le 20 juillet** si compatible, en anticipation du test du 17 juillet.
+- **Sensibilité** : `+` · **Confiance** : ★★★ · **Sources** : DGEC/bdor.
+- **Vs Édition 2.9** : date butoir du 15 juin échue sans rupture — recalée sans reproduire une urgence non matérialisée.
 
 #### 5.1.4 Fioul domestique
 
-- **Stocks France** : SAGESS fongible avec gazole. Cuves particuliers : **3,3 millions de foyers chauffés au fioul**, capacité moyenne cuve 1 500-3 000 L. **Sortie de saison de chauffe (avril-mai = creux annuel)** : la moitié des cuves sont à < 30 % de remplissage.
-- **Dépendance Ormuz** : identique gazole (filière distillat). ~5-8 % direct, ~25-35 % indirect.
-- **Substituts** : pompes à chaleur (subventions MaPrimeRénov' renforcées probable scénario B), bois bûche/granulés (pellets ~9 €/sac 15kg), électricité Joule.
-- **Reco stock 4 pers./1 mois** : **Remplir cuve à 100 % avant 30 juin** (maison 100 m² mal isolée : conso annuelle ~2 000-3 500 L). Coût remplissage 2 000 L au prix S19 : **3 100-3 500 €**. Au pic prévu fin juillet : **3 600-4 000 €**. **Économie potentielle remplissage anticipé : 500-900 €**.
-- **Date butoir** : **AVANT FIN JUIN 2026 (S26) impérativement** — double argument : (1) la **remise carburant de 20 c/L expire fin juin** (le fioul, distillat fongible avec le gazole, en bénéficie), (2) au-delà, délais > 3 semaines et risque de ne pas être livré avant l'automne (priorité aux contrats en cours). Idéalement commander **avant le 15 juin** pour sécuriser le créneau de livraison ET la remise.
-- **Sensibilité déclencheurs** : `++` (déclencheur principal = effet retard sur gazole + panique remplissage anticipé).
-- **Sources** : FF3C (Fédération Française des Combustibles, Carburants et Chauffage), UFIP, DGEC, Connaissance des Énergies, Optima Énergie.
-- **Confiance** : ★★★★★ (mécanisme campagne d'été extrêmement bien documenté, vu 2022).
+- **État au 13 juillet** : [FAIT] **1,42-1,49 €/L** début-mi juillet (1 000 L ≈ 1 422-1 486 €) — **stable, très en deçà des 3 100-3 500 €/2 000 L projetés par l'Édition 2.9 pour l'été : projection non matérialisée**. Fongible avec le gazole : mêmes tensions distillats mondiales. [FAIT, source unique — prudence] déficit programmé de « brut acide » SPR US du 12 juillet au ~23 août (mécanisme distinct, non confirmé officiellement).
+- **Trajectoire C** : 🟡-🟠 S29-S31 (creux saisonnier, demande quasi nulle) → 🟠 S32-S36 → **🟠 S37-S40 avec risque de tension localisée (délais de livraison > 3 semaines)** au démarrage de la campagne de chauffe — un 🔴 généralisé exigerait un cumul non acquis (échec mi-août ET reconduction de l'interdiction russe au-delà du 31/7). **B** : 🟡 l'été, 🟡→🟠 en septembre (le choc distillats russe tient sous B). **A** : 🟡 stable.
+- **Date butoir** : **remplir la cuve avant le 30 août 2026 (fin S35)** — profiter des prix d'été avant la remontée saisonnière et l'allongement des délais de rentrée. Budget 2 000 L : ≈ 2 840-2 980 €. Économie vs commande hivernale : 70-150 €/1 000 L.
+- **Sensibilité** : `++` (31 juillet diesel russe ; mi-août ; météo d'automne) · **Confiance** : ★★★★ · **Sources** : fioulmarket, lenergeek, EIA (distillats).
+- **Vs Édition 2.9** : le 🔴 « fin juillet » ne s'est pas matérialisé — la vraie fenêtre de risque est septembre (campagne de chauffe), pas l'été ; date butoir recalée sur le calendrier saisonnier réel.
 
 #### 5.1.5 GPL bouteilles (Butagaz, Antargaz, Primagaz)
 
-- **Stocks France** : ~700 kt GPL (sites Lavéra, Donges, Le Havre, cavernes salines de Carresse-Cassaber, Tersanne). Consommation domestique ~1,3 Mt/an. Importations ~70 % (Algérie, Norvège, USA, Moyen-Orient via Ormuz pour ~15 %).
-- **Dépendance Ormuz** : direct **12-18 %** (LPG Qatar, EAU, Iran historiquement transitent par Ormuz) ; indirect 10-15 %.
-- **Substituts** : Algérie (Sonatrach, Bethioua, Skikda), USA (Mont Belvieu — capacités export saturées), Norvège (Mongstad), bouteilles électriques/induction pour cuisson.
-- **Reco stock 4 pers./1 mois** : cuisson uniquement = **1 bouteille 13 kg = 2-4 mois usage**. Acheter **2 bouteilles consignées d'avance**. Budget : **80-105 €**.
-- **Date butoir** : **15 juin 2026 (S25)** pour résidences secondaires/zones rurales.
-- **Sensibilité déclencheurs** : `++` (dépendance directe Qatar/EAU forte ; saisie tanker GPL = signal majeur).
-- **Sources** : France Gaz Liquides (FGL, ex-CFBP), Butagaz, Antargaz, Primagaz, Connaissance des Énergies, DGEC.
-- **Confiance** : ★★★ (données stocks GPL France peu publiques).
+- **État au 13 juillet** : [FAIT] recharge 13 kg ≈ 33,90-44,10 € selon enseigne — **pas de choc de prix constaté**. [GAP] Aucun chiffre France daté de juillet sur stocks/ruptures de bouteilles. [FAIT] QatarEnergy suspend sa remontée en cadence GNL (9/7) — signal de contrainte sur le corridor, **mais le lien avec l'approvisionnement GPL résidentiel français n'est PAS démontré** (France excédentaire en butane, propane par routes diversifiées Méditerranée/Atlantique — correction adversariale ; le « 83 % de stations en rupture » de mai concernait l'autogaz, marché distinct).
+- **Trajectoire C** : 🟠 toute la fenêtre (prudence par défaut, **confiance ★★**) — le risque de rentrée (zones rurales, résidences secondaires) est saisonnier plus qu'Ormuz-dépendant. **B** : 🟡-🟠. **A** : 🟡.
+- **Date butoir** : 2 bouteilles consignées d'avance **avant le 26 juillet (fin S30)** pour les zones rurales. Budget : 68-88 €.
+- **Sensibilité** : `++` · **Confiance** : ★★ (part Ormuz de l'approvisionnement français non documentée — gap) · **Sources** : picbleu, Bloomberg (Qatar).
+- **Vs Édition 2.9** : risque requalifié — le lien Ormuz→bouteilles françaises est explicitement marqué non démontré au lieu d'être supposé.
 
 #### 5.1.6 Gaz naturel résidentiel
 
-- **Stocks France** : stockages souterrains (Storengy, Teréga) capacité totale ~138 TWh, **niveau cohérent avec le stockage gaz UE à ~41,5 % au 6 juin** (~13-15 pts sous la norme 5 ans ; cible hivernale réglementaire assouplie à 80 % ; Pays-Bas < 16 %) — **inquiétude hiver confirmée** : injection forcée à prix forts (TTF ~47-48 €/MWh), Hormuz coupant ~1/5 du GNL mondial et QatarEnergy en force majeure sur 17 % de sa liquéfaction (Ras Laffan, **prolongée jusqu'à mi-août 2026**).
-- **Dépendance Ormuz** : direct **18-22 %** (LNG Qatar = ~20 % du LNG France via terminaux Dunkerque, Montoir, Fos-Cavaou). LNG total = ~40 % du gaz France depuis fin 2022. Indirect 25-30 % (compétition européenne pour LNG USA, Norvège, Algérie).
-- **Substituts** : pipeline Norvège (saturé), Algérie (Transmed via Italie + Medgaz), LNG USA (Sabine Pass, Corpus Christi, Plaquemines), effacement industriel, biométhane France (~9 TWh/an).
-- **Reco stock 4 pers./1 mois** : **non stockable au domicile.** Action utile : **vérifier contrat (TRV vs marché) avant 1er juillet**, anticiper changement fournisseur si offre marché favorable. Souscrire offre fixe 1-2 ans si disponible < 100 €/MWh.
-- **Date butoir** : **N/A pour le stockage**. Pour contrat fixe : **avant 30 juin 2026 (S26)**, avant indexation tarifs été (révision CRE trimestrielle juillet).
-- **Sensibilité déclencheurs** : `+` sur la période (hiver = `++++`) — signal majeur = baisse niveau stockages EU sous courbe 2022 mi-juin.
-- **Sources** : GRTgaz (bilan hebdo stockages), Teréga, CRE, AGSI EU storage, Connaissance des Énergies.
-- **Confiance** : ★★★★★ (effet hiver = retardé hors période, certitude haute sur palier 🟡 mai-juillet).
+- **État au 13 juillet** : [FAIT, officiel CRE] **PRVG +7,4 % TTC au 1er juillet** (152,86 → 164,21 €/MWh, ≈ +2,7 €/mois) — **première transmission tarifaire officielle du choc aux ménages** ; nuance : ~1,5 point provient de la revalorisation de l'acheminement (+5,87 %), **sans lien avec Ormuz** — part attribuable au conflit ≈ 5,9 points. [FAIT] TTF ~48,8-50 €/MWh (9-10/7, +12 % en 3 séances) ; stocks UE **50,88 %** (8/7), rythme +0,19 pt/j < +0,25 requis, trajectoire ~72 % ; QatarEnergy en pause GNL (9/7).
+- **Trajectoire C** : 🟠 toute la fenêtre — **palier de PRIX** (le +7,4 % est acté, une nouvelle hausse à la révision d'octobre est probable), pas de rationnement physique attendu ; **plan de sobriété anticipé possible en toute fin de fenêtre** (signal politique). Point d'inflexion : mi-août (fenêtre nucléaire) et rythme d'injection UGS. **B** : 🟡 (TTF < 40 € si corridor accepté). **A** : 🟡→🟢 (peu probable, force majeure qatarie indépendante).
+- **Date butoir** : **vérifier son contrat (TRV vs offres de marché) avant le 30 septembre (fin S39)** — avant la révision CRE d'octobre et le pic hivernal.
+- **Sensibilité** : `+` (été) → `+++` (approche hiver) · **Confiance** : ★★★★★ · **Sources** : CRE (officiel), GIE AGSI, TradingEconomics.
+- **Vs Édition 2.9** : le « gaz cher d'hiver » est passé de théorie à **fait mesuré sur la facture** (+7,4 %) ; la pause qatarie du 9/7 aggrave la trajectoire d'approvisionnement.
 
 #### 5.1.7 Électricité résidentielle
 
-- **Stocks France** : pas de "stock" en sens strict. Marges RTE printemps-été 2026 : nucléaire disponibilité ~80-85 % (Grand Carénage), hydraulique stocks bas, éolien/solaire saisonnier OK, imports CWE possibles.
-- **Dépendance Ormuz** : indirect 5-10 % (prix gros électricité couplé au gaz : centrales TAC/CCG marginales fixent le prix spot 30-40 % du temps). Pas de risque physique d'approvisionnement avant l'hiver.
-- **Substituts** : effacement industriel (RTE EcoWatt, Tempo EDF), centrales gaz arrêt en pointe, imports Allemagne/Espagne/UK (interconnexions ~15 GW).
-- **Reco stock 4 pers./1 mois** : non stockable sauf via batteries domestiques (10 kWh ~6 000-9 000 €, ROI > 10 ans). Action utile : (1) souscrire offre **Tempo EDF** ou équivalent, (2) prévoir **kit autonomie 48 h** (groupe électrogène 2 kVA ~400 €, lampes solaires, batterie portable 1 kWh ~700 €) pour risque hiver.
-- **Date butoir** : pas urgent en mai-juillet. **Préparer kit autonomie avant 30 septembre 2026** pour anticiper hiver.
-- **Sensibilité déclencheurs** : `+` (canicule juillet, arrêt nucléaire imprévu, rupture interconnexion). Sensibilité Ormuz directe : faible.
-- **Sources** : RTE éCO2mix, RTE Bilan Prévisionnel, CRE, EDF, ENEDIS.
-- **Confiance** : ★★★★★ (bilan prévisionnel RTE printemps-été toujours rassurant hors canicule extrême).
+- **État au 13 juillet** : [FAIT, RTE] canicule début juillet (9 départements en alerte rouge le 10/7), **plusieurs réacteurs bridés/arrêtés** (seuils thermiques des cours d'eau) — signal EcoWatt NON activé, RTE : « aucune vigilance particulière ». [GAP] Pas de donnée CRE tarif électricité juillet distincte du gaz.
+- **Trajectoire C** : 🟢 S29-S33 → 🟢→🟡 S34-S37 (si nouvelle canicule + prix de gros tirés par le TTF) → 🟡 S38-S40 (prix de gros, pas de risque de coupure avant l'hiver profond). **Mécanisme distinct d'Ormuz** (hydrologie/canicule puis prix du gaz) — B et A quasi identiques en disponibilité.
+- **Date butoir** : non stockable — souscrire une offre à effacement (Tempo) et préparer un kit autonomie 48 h **avant le 30 septembre**.
+- **Sensibilité** : `+` · **Confiance** : ★★★★★ · **Sources** : RTE (officiel).
+- **Vs Édition 2.9** : facteur nouveau — la canicule (réacteurs bridés) n'existait pas au 15 juin ; palier 🟢 maintenu (pas de vigilance RTE), risque documenté sans dramatisation.
 
-#### 5.1.8 Kérosène aviation (Jet A-1)
+#### 5.1.8 Kérosène aviation (Jet A-1) — billets d'avion
 
-- **Stocks France** : distillat fongible avec gazole/fioul. Stocks dédiés aviation Roissy/Orly/Marseille/Lyon ~10-15 j (norme IATA). France raffine ~50 % de sa conso jet, importe le reste (Moyen-Orient ~15 % avant crise).
-- **Dépendance Ormuz** : direct **12-18 %** (jet du Golfe historiquement). Indirect 30-40 % (compétition mondiale distillats moyens).
-- **Substituts** : SAF (Sustainable Aviation Fuel) < 2 % du mix, reroutage approvisionnement USA, Inde (Jamnagar Reliance).
-- **Reco stock 4 pers./1 mois (côté consommateur)** : non applicable. Recommandation : **éviter d'acheter billets juin-août 2026 maintenant** si pas obligatoire ; **assurance annulation** systématique. Pas de pénurie passager attendue, mais surcharge fuel +20-35 % (Europe : +60-110 €/billet AR ; long courrier : +200-450 €/billet AR ; annulations capacité ~5-10 %).
-- **Date butoir** : pour billets longs courriers : **acheter avant 31 mai 2026 (S23)** (avant prochaine révision tarifaire IATA juin).
-- **Sensibilité déclencheurs** : `+` (impact diffus, ajustement par les prix).
-- **Sources** : UFIP (statistiques jet), DGAC, IATA Jet Fuel Price Monitor, AIE OMR, Air France-KLM communiqués, Argus Media Jet Fuel.
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] kérosène Europe **1 500-1 730 $/t** (~×2 vs pré-crise) ; **surcharges Air France-KLM actées : ~50 € AR moyen-courrier, jusqu'à 100-319 € long-courrier** ; exemple : Paris-Barcelone 98 → 126 € en une semaine ; été 2026 = +20-40 % vs 2025 ; détournements de routes (+1-2 h de vol). Low-costs hedgées plus stables.
+- **Trajectoire C** : 🟠 toute la fenêtre — **palier tarifaire** (pas de rupture passager) ; suit le crack distillats, sans tampon SAGESS. **B** : 🟡→🟠 (détournements réduits). **A** : 🟡 (produit le plus réactif à la baisse).
+- **Date butoir** : billets d'automne/fin d'année **avant le 30 août (fin S35)** — avant la révision tarifaire de septembre. Assurance annulation systématique.
+- **Sensibilité** : `+` · **Confiance** : ★★★★ · **Sources** : compagnies (surcharges), presse voyage.
+- **Vs Édition 2.9** : l'une des rares fiches où l'anticipation 2.9 s'est **réalisée et quantifiée** (surcharges) ; palier plafonné à 🟠 (tarifaire) par cohérence avec la définition des paliers.
 
 #### 5.1.9 AdBlue / DEF (urée technique ISO 22241)
 
-- **Périmètre** : solution AUS 32 = 32,5 % urée technique + 67,5 % eau déminéralisée. **OBLIGATOIRE sur tous les véhicules diesel Euro VI via SCR** (poids lourds, autocars, VUL, voitures particulières post-2014, tracteurs Stage V). Sans AdBlue : mode dégradé puis **refus de démarrer après 2-3 pleins gazole** (contrôle OBD, pas de bypass légal — amende 7 500 € + retrait carte grise).
-- **Stocks France** : aucun stock stratégique national (l'AdBlue **n'est PAS dans le périmètre SAGESS**). Production FR : **Yara Le Havre (Gonfreville) 184 kt/an** (seul site intégré NH₃ → urée → AdBlue de France, 70 % des stocks AdBlue FR) + **Fertiberia 50 kt/an** (nouvelle usine fév. 2025, Île-de-France) + TotalEnergies La Mède (unité de mélange). Capacité totale FR mélange ~280-350 kt/an. **Consommation FR estimée 0,8-1,2 Mt/an** (recoupement bottom-up : 625 000 PL × 5 % du gazole + VUL + VP + tracteurs SCR). **France structurellement importatrice nette** d'urée technique. **DOC systémique : 30-60 jours** avant rupture critique (15-60 j chez transporteurs, 5-10 j stations, 15-25 j producteurs). **⚠️ Statut J98 [FAIT/B2] : AUCUNE rupture d'AdBlue constatée à ce jour** — l'AdBlue reste un **risque ANTICIPÉ** (signal de marché haussier sur l'urée), pas une pénurie observée. *Gap* : pas de donnée de rupture effective ni d'allocation distributeur en source ouverte au 6 juin.
-- **Dépendance Ormuz** : **35-40 % du commerce mondial d'urée transite par Ormuz** (Rystad : 18,5 Mt/an). Producteurs Golfe = **QatarEnergy/QAFCO Qatar (5,6 Mt/an = 14 % commerce mondial — frappé 2 mars 2026 sur Mesaieed, force majeure maintenue)**, Fertiglobe Ruwais (EAU), SAFCO (Arabie), OMIFCO (Oman), Iran. UE importe 41 % Égypte, 33 % Russie+BY (anti-dumping), 17 % Algérie, < 9 % Golfe direct — **mais la qualité technique (ISO 22241) est plus concentrée Golfe que l'urée engrais** [estimé 20-30 % via Ormuz, INCERTAIN]. **Distinguer papier vs physique (comme le Brent) au 6 juin [B2]** : le **benchmark FUTURES (papier) ~419 $/t (-32 % m/m)** s'est détendu, MAIS le **PHYSIQUE livré (tender CFR Inde) ~935-959 $/t ≈ ×2 le niveau pré-guerre** — c'est le physique qui frappe l'acheteur final. La baseline « urée >850 $/t (+80 %) » = le physique, **qui reste valable** ; le repli du papier ne protège pas la chaîne urée→AdBlue.
-- **Substituts** : Algérie (Sonatrach/Sorfert/Fertiglobe Annaba, +1-2 Mt/an possible), Trinidad-et-Tobago (saturé), US (CF Industries, Nutrien — logistique limitée), production UE restart si TTF gaz < 40 €/MWh (BASF/Yara/Borealis/Achema). **Aucune substitution technique** à l'AdBlue pour SCR Euro VI ; bypass logiciel OBD illégal.
-- **Reco stock professionnels** : transporteurs PME = **stocker 30-60 j de conso** en cuve 1 000-5 000 L on-site (durée conservation 12-18 mois à 5-25 °C). Particuliers VP diesel SCR = **2-3 bidons 10 L d'avance** (~30-40 €). Exploitants agricoles : remplir cuves AdBlue **avant 15 juin 2026** pour campagne moissons. Prix vrac actuel 0,375 €/L (vs 0,19 €/L 2020 = **×2**) ; pompe VP 0,80-1,20 €/L ; bidon 5 L 1,20-1,50 €/L.
-- **Date butoir** : **15 juin 2026 (S25)** pour transporteurs et agriculteurs (campagne moissons juillet-août = SCR Stage V obligatoire). Au-delà : risque allocations distributeurs, hausses retail vers 1,50-2,00 €/L.
-- **Sensibilité déclencheurs** : `+++` (cascade indirecte via gaz TTF + arrêts NH₃ UE + arrêt urée Chine 50-75 % + escalade Ormuz). **Au 6 juin : urée physique ~935-959 $/t (≈ ×2 pré-guerre) + QatarEnergy/QAFCO toujours en force majeure** = pression haussière maintenue côté physique, même si le **futures papier a reflué à ~419 $/t (-32 % m/m)**. Projection BGL (Allemagne, IRU) : **+170 % possible** sur le prix AdBlue [prospective, non matérialisée]. Italie : **+20-25 % retail** déjà observé. **Effet 2022 répété mais plus structurel** (Ormuz = chaîne urée globale, pas seulement gaz UE). **Mais à J98 : aucune rupture AdBlue effective constatée (*gap*)** — le risque reste anticipé.
-- **Sources** : VDA AdBlue (Verband der Automobilindustrie, certification ISO 22241), VDA QMC, Yara France, Fertiberia, Fertilizers Europe, IRU, BGL, FNTR, CRU Group, Rystad Energy, Kpler, IFPRI, Profercy, trans.info, Trasporto Europa, Upply, SDES (parc PL 625 000), Terre-net.
-- **Confiance** : ★★★ (volume conso FR reconstitué par recoupement bottom-up, données officielles fragmentaires ; pas de granularité publique sur urée technique vs engrais ; DOC chez transporteurs non statistiqué FNTR/CNR).
+- **État au 13 juillet** : [GAP majeur — confirmé par la synthèse J131-J135] **aucune donnée nouvelle datée depuis le 15 juin**, malgré l'escalade militaire majeure — 5 semaines de silence documentaire. [FAIT] **Aucune rupture d'AdBlue constatée depuis le début de la crise.** Mécanisme structurel intact : QAFCO en force majeure, ~35-40 % du commerce mondial d'urée via Ormuz, écart papier/physique urée inchangé, prix vrac ~×2 vs 2020.
+- **Trajectoire C** : 🟠 S29-S31 → **risque de bascule 🟠→🔴 conditionnel S32+** si la fermeture du 12/7 se prolonge au-delà du délai systémique de 30-60 j (compté depuis le 7-8/7 : premiers signes possibles **fin août-septembre**, campagne moissons puis rentrée logistique concentrant la demande). **B** : 🟠 → 🟡-🟠 (Qatar/EAU producteurs majeurs, corridor = détente directe). **A** : 🟡.
+- **Date butoir** : **pros (transporteurs PME, exploitants SCR Stage V) : stock 4-6 semaines avant fin juillet (S30-S31)** ; particuliers VP diesel SCR : 2-3 bidons 10 L (~30-45 €).
+- **Sensibilité** : `+++` (fermeture prolongée = LE produit à bascule rapide de la catégorie) · **Confiance** : ★★★ · **Sources** : synthese_J131-J135 (dépôt), bulteauservices ; gap assumé.
+- **Vs Édition 2.9** : reconduction faute de donnée — le silence documentaire de 5 semaines sans rupture est en soi un signal (la chaîne urée résiste mieux que redouté) ; date butoir recalée sur le DOC réel (août-septembre), reste **le signal précoce n°1 à surveiller**.
 
 ---
-
-> ### 🔗 Encadré transversal — La chaîne du risque alimentaire (gazole + AdBlue → rayons)
->
-> **Le risque alimentaire en France n'est pas agricole, il est logistique.** Les denrées de base existent (production nationale) ; ce qui peut manquer, c'est leur **acheminement**. La quasi-totalité de la distribution alimentaire roule par la **route**, et deux intrants conditionnent ce transport — tous deux suivis dans la section 5.1 :
->
-> 1. **Gazole B7** (fiche 5.1.1, 🔴 fin juillet attendu) — carburant des camions, citernes et chaîne du froid.
-> 2. **AdBlue / DEF** (fiche 5.1.9, 🔴 fin juillet attendu) — **le maillon le plus insidieux** : la quasi-totalité des poids lourds **Euro VI** (~90 % du parc équipé SCR, donnée allemande) **ne peuvent plus rouler une fois l'AdBlue épuisé** (inducement réglementaire : alertes → bridage → refus de redémarrage). **Aucun contournement légal, aucun stock stratégique SAGESS.**
->
-> **Différence de nature entre les deux** : le rationnement préfectoral (**plan ORSEC Hydrocarbures**) peut *répartir* du gazole qui existe en priorisant le fret (ordre : urgences → transporteurs → agriculteurs → **particuliers en dernier**) ; il **ne peut pas répartir de l'AdBlue qui n'existe plus**. C'est pourquoi l'AdBlue est le vrai point de défaillance unique de la distribution alimentaire.
->
-> **Lecture par scénario** :
-> - **Scénario B (central)** : trous **ponctuels et localisés** (produit absent quelques jours, disparités régionales, frais/importé avant le sec). Pas de rayons vides durables, car le fret alimentaire est priorisé sur l'automobiliste individuel. On peut avoir « stations à sec pour les particuliers » **et** « rayons garnis » simultanément.
-> - **Scénario C (escalade)** : c'est là que « rayon vide **et non réapprovisionné** » devient réel — déclencheur = rupture conjointe gazole + AdBlue (fenêtre DOC AdBlue 30-60 j, soit potentiellement **courant juillet**). Avancer alors toutes les dates butoirs de la section 5.2 de 2-3 semaines.
->
-> **Signal précurseur à surveiller** (précède de 1-3 semaines tout problème de réassort) : **premières allocations d'AdBlue chez les transporteurs** + **activation du plan ORSEC** en préfecture. Le rayon vide est un indicateur *retard* — trop tardif pour agir.
 
 ### 5.2 Alimentation de base (sec / longue conservation)
 
 #### 5.2.1 Pâtes sèches (semoule de blé dur)
 
-- **Stocks France** : France = **2e producteur UE de blé dur** (~1,3 Mt en 2023), Panzani/Lustucru/Alpina sourcent 100 % France. Stocks meuneries-pasta : 2-3 mois autonomie. FranceAgriMer : stocks finaux blé tendre 2025-26 à **3,047 Mt (+9 %)** — situation confortable.
-- **Dépendance Ormuz** : ~5 % (matière première FR ; emballage carton/film plastique légèrement impacté ; transport routier +30 %).
-- **Substituts** : import Italie (Barilla) si tension, mais coûts logistiques équivalents.
-- **Reco stock 4 pers./1 mois** : **4 kg ≈ 8-12 €**.
-- **Date butoir** : non critique avant S30 ; pas de bascule 🟠 attendue sur l'horizon.
-- **Sensibilité déclencheurs** : `+` (transport routier / gazole).
-- **Sources** : FranceAgriMer ([franceagrimer.fr](https://www.franceagrimer.fr/filiere-grandes-cultures/Cereales/Eclairer/Etudes-et-Analyses/Chiffres-et-bilans)), [La France Agricole — fabricants pâtes blé dur FR](https://www.lafranceagricole.fr/filieres-vegetales/article/873081/les-fabricants-de-pates-veulent-davantage-de-ble-dur-francais), [Ministère Agriculture](https://agriculture.gouv.fr/le-secret-des-bonnes-pates).
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] IPC juin « pain et céréales » **+0,1 % a/a** (quasi plat) ; le PDG de Carrefour annonce des **baisses de prix à venir sur les pâtes**. [FAIT, nouveau — risque domestique distinct d'Ormuz] récolte durum France 2026 **−5,5 %** (canicule + surfaces), stock de fin de campagne UE ~**0,4 Mt** (tension) ; qualité bonne. [GAP] Pas de prix physique durum daté depuis février (235-240 €/t).
+- **Trajectoire C** : 🟢 S29-S34 → 🟢→🟡 S35-S38 (si la collecte confirme le repli fin août) → 🟡 S39-S40. Jamais 🟠 sur la fenêtre. **B/A** : 🟢.
+- **Date butoir** : non critique — achat facultatif fin août (S35) si FranceAgriMer confirme ; 4 kg ≈ 8-14 €.
+- **Sensibilité** : `+` (+ transport routier intérieur après le 31/7, fin d'aide gazole pro — mineur) · **Confiance** : ★★★★ · **Sources** : Terre-net, Réussir, INSEE, Commission UE.
+- **Vs Édition 2.9** : bascule transport retirée ; remplacée par un risque réel mais différé et domestique (durum −5,5 %) — plus fondé, plus tardif.
 
-#### 5.2.2 Riz long grain
+#### 5.2.2 Riz long grain / basmati
 
-- **Stocks France** : faible production locale (Camargue ~50 kt) ; **~95 % import** (Italie, Espagne, Inde, Thaïlande, Cambodge). Stocks distributeurs : 3-6 semaines.
-- **Dépendance Ormuz** : 30-50 %. Riz indien/thaï/cambodgien transite via Suez → Ormuz pour partie ; surcoût fret conteneur +200-400 % (puis -19/-26 % décrue mai). Riz italien/espagnol épargné.
-- **Substituts** : bascule sur riz UE (Italie, Espagne) — capacité limitée et hausse de prix sur marché européen.
-- **Reco stock 4 pers./1 mois** : **3 kg ≈ 9-15 €**.
-- **Date butoir** : **18 mai 2026 (S22)** pour basmati/thaï ; riz européen reste accessible.
-- **Sensibilité déclencheurs** : `++` (durée fermeture détroit, météo mousson Asie).
-- **Sources** : [Trading Economics — cours riz](https://fr.tradingeconomics.com/commodity/rice), [Insee — riz blanc Bangkok](https://www.insee.fr/fr/statistiques/serie/010002065).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] hausses FOB **modérées** (10 juin-1er juillet) : thaï +2,2-2,3 %, indien CAF +4,2 %, basmati +3,9 % — **très loin du seuil 🟠 (+30-80 %)**. Imports UE −11 % sur la campagne. Fret Asie-Europe en hausse réelle (Shanghai-Rotterdam +5 %, FAK 7 000 $/40' au 15/7 — rattaché aux tensions Ormuz/mer Rouge). FAO : production mondiale 2026/27 −1,63 % (El Niño). Aucune rupture en France.
+- **Trajectoire C** : 🟡 S29-S38 → **🟡→🟠 S39-S40 à basse confiance**, conditionné à une transmission fret dans les prix d'achat non encore mesurée (ajustement adversarial : le saut à 🟠 dès août du collecteur a été rétrogradé). Riz européen (Camargue, Italie) = amortisseur. **B** : 🟡 stable. **A** : 🟢→🟡.
+- **Date butoir** : basmati/thaï — prudence **avant le 9 août (fin S32)** ; 3 kg ≈ 10-16 €. Riz européen : sans urgence.
+- **Sensibilité** : `++` · **Confiance** : ★★★ · **Sources** : FranceAgriMer, Drewry/Ports et corridors, FAO.
+- **Vs Édition 2.9** : le 🟠→🔴 « dès S29-S30 » est **infirmé par les cotations réelles** (+2-4 %) — correction nette à la baisse, vigilance fret maintenue.
 
 #### 5.2.3 Blé tendre / farine T55
 
-- **Stocks France** : France autosuffisante, exportateur net (> 15 Mt/an). FranceAgriMer février 2026 : stocks finaux 3,047 Mt (+9 %). Conditions culture S18 : 80 % bonnes/très bonnes. Récolte 2026 prévue normale.
-- **Dépendance Ormuz** : 0 % (matière première FR) ; transport et énergie meunerie impactés.
-- **Substituts** : aucun nécessaire.
-- **Reco stock 4 pers./1 mois** : **5 kg farine ≈ 7-10 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (météo printemps / sécheresse moisson juin-juillet > tension Ormuz).
-- **Sources** : [FranceAgriMer](https://www.franceagrimer.fr/filiere-grandes-cultures/Cereales/Eclairer/Etudes-et-Analyses/Chiffres-et-bilans), [Réussir — récolte 2026 prévisions UE](https://www.terre-net.fr/actualite-des-marches/article/897694/moisson-2026-les-premieres-previsions-de-l-ue-pour-les-cereales), [Terre-net — cours blé Euronext](https://www.terre-net.fr/marche-agricole/ble-tendre/terme).
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] France exportatrice nette (> 15 Mt/an), moisson 2026 en avance (~15 j), production stable ; IPC « pain et céréales » +0,1 % ; Carrefour annonce des baisses sur la farine.
+- **Trajectoire C** : **🟢 toute la fenêtre** — dépendance Ormuz nulle sur la matière première ; aucun mécanisme de bascule identifié même sous C. **B/A** : 🟢.
+- **Date butoir** : aucune — 5 kg ≈ 6-9 €.
+- **Sensibilité** : `+` · **Confiance** : ★★★★★ · **Sources** : Terre-net, INSEE.
+- **Vs Édition 2.9** : la bascule tardive 🟡 est retirée — confirmée superflue par les données de juillet.
 
 #### 5.2.4 Semoule de blé
 
-- **Stocks France** : production nationale Panzani/Tipiak. Identique à pâtes (filière blé dur FR).
-- **Dépendance Ormuz** : 5-10 %.
-- **Substituts** : Italie, Maroc, Tunisie.
-- **Reco stock 4 pers./1 mois** : **1,5 kg ≈ 4-5 €**.
-- **Date butoir** : non critique avant S30.
-- **Sensibilité déclencheurs** : `+`.
-- **Sources** : FranceAgriMer, Réussir.
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : filière durum commune avec les pâtes (récolte −5,5 %, stock UE 0,4 Mt). [GAP] Aucune donnée spécifique semoule datée — inférée par filière.
+- **Trajectoire C** : 🟢 S29-S35 → 🟢→🟡 S36-S40 (même logique que les pâtes, légère avance possible si les substituts d'import subissent le même stress durum). **B/A** : 🟢.
+- **Date butoir** : non critique avant fin août (S35) ; 1,5 kg ≈ 4-6 €.
+- **Sensibilité** : `+` · **Confiance** : ★★★ · **Sources** : Pleinchamp, Terre-net.
+- **Vs Édition 2.9** : idem pâtes — facteur climatique/récolte ajouté, calendrier non avancé.
 
 #### 5.2.5 Légumineuses sèches (lentilles, pois chiches, haricots)
 
-- **Stocks France** : production FR partielle (lentilles Puy/Berry, haricots Tarbais). **Pois chiches majoritairement importés** (Canada, Turquie, Mexique, Argentine). Stocks GMS : 4-6 semaines.
-- **Dépendance Ormuz** : pois chiches ~40 % (transit Méditerranée+Suez), lentilles corail (Canada/Turquie) ~30 %, haricots rouges (Argentine) ~15 %.
-- **Substituts** : production FR limitée mais en hausse (filière bio).
-- **Reco stock 4 pers./1 mois** : **2 kg mix ≈ 5-8 €**.
-- **Date butoir** : **8 juin 2026 (S25)** pour pois chiches ; lentilles non urgentes.
-- **Sensibilité déclencheurs** : `++` (container shipping rates, météo Canada/Turquie).
-- **Sources** : [Terresunivia — observatoire prix légumineuses](https://www.terresunivia.fr/l-interprofession/actualites/point-eco-les-resultats-de-lobservatoire-des-prix-payes-aux-producteurs-de-legumineuses-a-graines), [le850.com — légumineuses 2026](https://le850.com/legumineuses-en-2026-lentilles-vertes-du-puy-pois-chiches-et-haricots-tarbais-dans-la-cuisine-francaise/).
-- **Confiance** : ★★★.
+- **État au 13 juillet** : [FAIT] prix détail début 2026 modérés (lentilles corail 2,50-3,50 €/kg, pois chiches 2-3 €/kg) — aucun signe de flambée. [GAP] **Aucune donnée producteur/import datée de la fenêtre** (silence Terresunivia/le850).
+- **Trajectoire C** : **🟡 toute la fenêtre** (ajustement adversarial : le 🟠 d'août du collecteur, fondé sur le seul mécanisme fret sans donnée, est requalifié en **hypothèse de veille**, pas en trajectoire). Amortisseurs : lentilles du Puy/Berry, haricots Tarbais (production nationale). **B** : 🟡. **A** : 🟢→🟡.
+- **Date butoir** : pois chiches d'import — prudence **avant le 16 août (fin S33)** ; 2 kg mix ≈ 5-9 €.
+- **Sensibilité** : `++` (fret + transport routier post-31/7) · **Confiance** : ★★ · **Sources** : le850, Terresunivia (silence = gap).
+- **Vs Édition 2.9** : le 🟠→🔴 « dès S29-S30 » est retiré (aucune donnée à l'appui, désinflation alimentaire générale) — bascule repoussée en veille.
 
-#### 5.2.6 Huile de tournesol 🚨
+#### 5.2.6 Huile de tournesol
 
-- **Stocks France** : production FR ~500 kt graines, mais raffinage demande Ukraine. Lesieur (Saipol) communique "pas de risque immédiat". Stocks distributeurs : 3-5 semaines.
-- **Dépendance Ormuz** : indirect **60-70 %** — Ukraine (Mer Noire) théoriquement OK, mais **index FAO huiles végétales +5,9 % en avril (plus haut depuis juillet 2022)** car cours pétrole + biocarburants tirent demande sur palme/colza/tournesol.
-- **Substituts** : huile colza FR (production OK), huile palme (Indonésie/Malaisie via Suez+Ormuz, +200 % fret).
-- **Reco stock 4 pers./1 mois** : **3 L ≈ 12-18 €**.
-- **Date butoir** : **🚨 AVANT 17 mai 2026 (S20) — URGENCE IMMÉDIATE.**
-- **Sensibilité déclencheurs** : `+++` (Mer Noire, prix palme, biocarburants).
-- **Sources** : [FAO huiles végétales](https://www.fao.org/newsroom/detail/fao-food-price-index-up-for-third-consecutive-month-largely-on-rising-vegetable-oil-prices/en), [La Ferme du Plateau — pénurie huile France](https://www.fermeduplateau.fr/alimentation/penurie-dhuile-france/), [Observatoire des aliments — huile tournesol pénurie](https://observatoire-des-aliments.fr/qualite/huile-de-tournesol-debut-de-penurie).
-- **Confiance** : ★★★★ (recoupement FAO + ANIA + précédent 2022).
+- **État au 13 juillet** : [FAIT] **cas d'école du biais d'optimisme inversé** : classée 🚨 urgence en mai (Éd. 2.2-2.9), elle affiche 7 semaines plus tard un prix détail **stable voire en baisse réelle** (1,68 €/L premier prix) ; l'indice FAO huiles monte (+3,8 % m/m) **tiré par le palme et le colza — « prix du tournesol restés globalement stables »** (FAO, mot pour mot). Graine Saint-Nazaire 555 €/t (+10 €/sem, marché « bloqué »). [FAIT] La canicule de juin a pu dégrader le potentiel de rendement français — mesure à la récolte (août-septembre).
+- **Trajectoire C** : 🟢 S29-S33 → 🟢→🟡 S34-S37 (si la récolte confirme les dégâts canicule + si le palme, substitut, continue de renchérir) → 🟡 S38-S40. **Le 🟠 est retiré de la fenêtre.** **B/A** : 🟢.
+- **Date butoir** : **aucune urgence** — achat au fil de l'eau ; si prudence, avant le 23 août (fin S34, résultat récolte) ; 3 L ≈ 9-15 €.
+- **Sensibilité** : `+` · **Confiance** : ★★★★ · **Sources** : FAO (via Boursorama), Réussir, O. Dauvers.
+- **Vs Édition 2.9** : correction majeure — l'« urgence immédiate » de mai est infirmée par 7 semaines de faits ; trajectoire entièrement repensée à la baisse.
 
 #### 5.2.7 Huile d'olive
 
-- **Stocks France** : faible production FR (~5 kt). Import Espagne (60 %), Italie, Tunisie, Grèce.
-- **Dépendance Ormuz** : ~10 % direct, prix déjà élevés post-sécheresse 2024.
-- **Substituts** : campagne 2025-26 Espagne 1,38 Mt (stable), Italie +30 % (~300 kt) — offre globalement bonne.
-- **Reco stock 4 pers./1 mois** : **1,5 L ≈ 13-22 €**.
-- **Date butoir** : non critique ; opportunité d'acheter en S20-S22 avant éventuelle nouvelle hausse.
-- **Sensibilité déclencheurs** : `+` (météo Méditerranée été 2026).
-- **Sources** : [Réussir — huile olive 2025-26](https://www.reussir.fr/lesmarches/les-prix-de-lhuile-dolive-devraient-rester-loin-des-records-sur-20252026), [Le Monde de l'épicerie fine — huile olive FR](https://monde-epicerie-fine.fr/production-huile-dolive-francaise-2025-2026/).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] campagne 2025-26 : prix de gros « loin des records », offre européenne bonne (Espagne ~1,38 Mt stable, Italie +30 %) ; production française contrastée mais qualité exceptionnelle. Pression structurelle de long terme (climat, Xylella) sans choc daté dans la fenêtre.
+- **Trajectoire C** : **🟡 toute la fenêtre** — prochaine récolte méditerranéenne à partir d'octobre (hors fenêtre) ; un 🟠 de fin de fenêtre resterait spéculatif (coût énergie des huileries). **B** : 🟡. **A** : 🟡→🟢.
+- **Date butoir** : fenêtre d'achat ouverte jusqu'à mi-septembre (S38) ; 1,5 L ≈ 12-19 €.
+- **Sensibilité** : `+` · **Confiance** : ★★★★ · **Sources** : Réussir, interprofession.
+- **Vs Édition 2.9** : bascule 🟠 « dès S29-S30 » repoussée hors fenêtre — offre confirmée bonne.
 
 #### 5.2.8 Sucre cristallisé
 
-- **Stocks France** : 1er producteur UE betterave (~4,5 Mt sucre 2024-25). Cristal Union, Tereos. Autosuffisance + export.
-- **Dépendance Ormuz** : 0-5 % (sucre canne Brésil pour spécialités, transit Atlantique non Ormuz).
-- **Substituts** : aucun nécessaire ; bascule canne→betterave si besoin.
-- **Reco stock 4 pers./1 mois** : **1 kg ≈ 1-2 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (récolte Brésil 2026, énergie sucreries).
-- **Sources** : [Réussir — sucre prix baisse](https://www.reussir.fr/lesmarches/les-prix-du-sucre-en-baisse-le-marche-sattend-une-augmentation-des-exportations-mondiales), [Cristal Union](https://www.reussir.fr/grandes-cultures/betterave-sucriere-cristal-union-limite-la-casse-dans-un-contexte-de-prix-du-sucre-au-plus-bas).
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] cours mondial en repli (14,81 $/lb le 3/7 ; sucre blanc UE 510 €/t, −7,3 % a/a) ; Carrefour annonce une baisse. **[FAIT/CONTRADICTION assumée]** l'équilibre mondial 2026/27 est disputé : excédent ~+1,9 Mt selon certaines sources vs **déficit −0,26 Mt (ISO) / −0,1 Mt (Czarnikow)** — divergence non tranchée entre organismes de référence. [FAIT] France 1er producteur betteravier UE, autosuffisante — dépendance Ormuz 0-5 %.
+- **Trajectoire C** : **🟢 toute la fenêtre** — quel que soit l'arbitrage mondial, l'autosuffisance betteravière française protège la disponibilité et amortit les prix. **B/A** : 🟢.
+- **Date butoir** : aucune — 1 kg ≈ 0,90-1,50 €.
+- **Sensibilité** : `+` · **Confiance** : ★★★★ (abaissée d'un cran : divergence ISO/Czarnikow sur l'équilibre mondial signalée) · **Sources** : Terre-net, Agri-Mutuel, ISO/Czarnikow (contradiction).
+- **Vs Édition 2.9** : bascule 🟡 supprimée ; contradiction de sources mondiale ajoutée par transparence (sans effet sur le palier France).
 
 #### 5.2.9 Lait UHT
 
-- **Stocks France** : production 24 Mt/an, autosuffisance. Stocks UHT : 2-3 mois (longue conservation). Production février +12 % beurre, +9 % PLE.
-- **Dépendance Ormuz** : 0 % matière, ~10 % via transport et emballages tetra/PET.
-- **Substituts** : N/A (production locale).
-- **Reco stock 4 pers./1 mois** : **12 L ≈ 12-15 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (tensions export UE, prix beurre).
-- **Sources** : [Réussir — lait conditionné](https://www.reussir.fr/lesmarches/lait-conditionne-la-consommation-baisse-de-plus-de-5-en-2025), [Cerfrance — marché lait 2026](https://maine-et-loire.cerfrance.fr/actualites/marche-du-lait-2026-vers-un-basculement-des-prix-apres-des-records-historiques).
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] IPC juin « produits laitiers et œufs » **+0,3 % a/a** (en ralentissement) — désinflation confirmée. Production française 24 Mt/an, autosuffisance ; stocks UHT 2-3 mois. [GAP] Pas de donnée UHT spécifique datée.
+- **Trajectoire C** : 🟢→🟡 S29-S32 → 🟡 stable S33-S40 (pas de 🟠 : la désinflation laitière ne justifie pas d'aggravation ; le report distributeurs du frais vers l'UHT peut même soutenir la demande sans menacer l'offre). **B** : 🟢. **A** : 🟢.
+- **Date butoir** : non critique ; 12 L ≈ 11-14 € — l'UHT est la **substitution recommandée** au lait frais en cas de tension fret frigo (cf. 5.3.6).
+- **Sensibilité** : `+` · **Confiance** : ★★★ · **Sources** : INSEE.
+- **Vs Édition 2.9** : trajectoire confirmée, légèrement confortée par la désinflation.
 
-#### 5.2.10 Café torréfié
+#### 5.2.10 Café torréfié ⭐
 
-- **Stocks France** : 100 % import (Brésil, Vietnam, Colombie, Éthiopie). Stocks torréfacteurs : 2-4 mois. **Cours arabica déjà +75 % en 2024, +190 % depuis 2023** (climat Brésil), avant crise Ormuz.
-- **Dépendance Ormuz** : 30-50 % indirect (fret conteneur +200-400 % Asie/Brésil → Europe via Cap pour partie).
-- **Substituts** : aucun (mono-origine tropical).
-- **Reco stock 4 pers./1 mois** : **600 g ≈ 12-22 €**.
-- **Date butoir** : **1er juin 2026 (S24)** pour amortir hausse prévue.
-- **Sensibilité déclencheurs** : `++` (météo Brésil, fret maritime, change USD/EUR).
-- **Sources** : [Le Gascon — prix café 2025-2026](https://cafes-legascon.com/prix-du-cafe-en-grain-pourquoi-ca-augmente-autant-en-2025-2026/), [info.fr — café doublement prix fin 2026](https://info.fr/cafe-prix-doublement-france-2026/), [Insee — cours café arabica](https://www.insee.fr/fr/statistiques/serie/010002042).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] **choc de marché majeur et récent** : arabica ICE (sept.) **+16,2 % en une séance le 6 juillet** (clôture ~3,50 $/lb — valeur corrigée par la relecture adversariale), « plus forte hausse journalière du siècle en % » ; recul partiel ensuite (~3,29 $/lb) mais **+33,6 % sur un mois**. **Déclencheur : pluies au Minas Gerais (Brésil) — mécanisme CLIMATIQUE, pas Ormuz** [INTERPRÉTATION recoupée]. Détail déjà +37-56 % vs 2022 ; des torréfacteurs évoquent un doublement possible d'ici fin 2026. Pression secondaire : fret robusta Asie (Ormuz/mer Rouge).
+- **Trajectoire C** : 🟠 S29-S36 (répercussion du choc en cours) → **🟠→🔴 S37-S40** si le choc climatique se prolonge (fin de récolte Brésil) cumulé au fret — **seul produit alimentaire avec un 🔴 plausible sur la fenêtre**. **B** : 🟠 stable (le choc brésilien tient sous B — pas de 🔴 sans surcoût fret). **A** : 🟡→🟠.
+- **Date butoir** : **avant le 26 juillet (fin S30)** — avant la pleine répercussion au détail ; 1,5-2 kg ≈ 35-60 € (600 g ≈ 14-26 €).
+- **Sensibilité** : `++` (météo Brésil > Ormuz) · **Confiance** : ★★★★★ · **Sources** : ICE via Comunicaffe/Perfect Daily Grind (clôture corrigée), NielsenIQ/ICI.
+- **Vs Édition 2.9** : anticipation confirmée et dépassée — mais pour un mécanisme différent de celui supposé (climat, pas fret) ; date butoir avancée.
 
 #### 5.2.11 Thé
 
-- **Stocks France** : 100 % import (Inde 21 % production mondiale, Sri Lanka, Kenya, Chine). Stocks distributeurs/torréfacteurs : 2-3 mois.
-- **Dépendance Ormuz** : 50-70 % (transit Suez+Ormuz pour Inde/Sri Lanka/Chine ; déroutement Cap +35-50 jours).
-- **Substituts** : Kenya (Atlantique) partiel, mais variétés différentes.
-- **Reco stock 4 pers./1 mois** : **200 g ≈ 5-10 €**.
-- **Date butoir** : **6 juillet 2026 (S28)** ; non critique avant.
-- **Sensibilité déclencheurs** : `++` (Mer Rouge, fret conteneurs).
-- **Sources** : [Echo du Mardi — commerce mondial thé](https://www.echodumardi.com/actualite/le-commerce-mondial-du-the-les-principaux-pays-producteurs-et-importateurs/), [Inkubox conteneur](https://inkubox.com/conteneur-chine-france-couts-delais/).
-- **Confiance** : ★★★ (peu de données spécifiques 2026 sur prix consommateur).
+- **État au 13 juillet** : [GAP total] aucune donnée France 2026 datée (marché de niche) ; seul mécanisme documenté : fret Asie-Europe en hausse (cf. 5.2.2), le thé Inde/Sri Lanka/Chine transitant majoritairement par Suez/mer Rouge.
+- **Trajectoire C** : **🟡 toute la fenêtre** (ajustement adversarial : le 🟠 de fin de fenêtre, fondé sur un gap total, est requalifié en scénario spéculatif signalé, pas en trajectoire). **B** : 🟡. **A** : 🟢→🟡.
+- **Date butoir** : reportée par prudence **au 16 août (fin S33)** ; 200 g ≈ 6-11 €.
+- **Sensibilité** : `++` · **Confiance** : ★★ · **Sources** : Drewry (fret) — gap produit assumé.
+- **Vs Édition 2.9** : date butoir échue reportée ; palier plafonné à 🟡 faute de toute donnée.
 
 #### 5.2.12 Conserves (tomate, thon, sardine)
 
-- **Stocks France** : tomate (Italie, Espagne, Maroc, Chine) ; thon (Tunisie, Maroc, Espagne, Équateur) ; sardine (Maroc, Portugal, France). Conserveries FR (Belle-Iloise, Connétable). Stocks linéaire : 1-2 mois.
-- **Dépendance Ormuz** : tomate Chine ~10 %, thon Asie/Pacifique 30-50 %, sardine Maroc 5 %.
-- **Substituts** : production FR/UE pour sardine/thon listao Espagne, tomate Italie/Espagne.
-- **Reco stock 4 pers./1 mois** : **8 boîtes (thon/sardine/tomate) ≈ 12-20 €**.
-- **Date butoir** : non critique avant S30 ; cibler thon Asie avant **8 juin 2026 (S25)**.
-- **Sensibilité déclencheurs** : `+` (pêche Pacifique, saison tomate Italie).
-- **Sources** : Réussir, FranceAgriMer.
-- **Confiance** : ★★★.
+- **État au 13 juillet** : [FAIT] marché des sardines en croissance (251,7 M€), gagnant des parts sur le thon pour raisons de prix — signal de disponibilité plutôt rassurant. [GAP] Aucune donnée de gros datée (thon Asie-Pacifique, tomate, sardine Maroc). Mécanisme fret Asie = pertinent pour le seul thon.
+- **Trajectoire C** : **🟡 toute la fenêtre** pour l'ensemble de la catégorie (ajustement adversarial) ; le **🟠 « thon d'origine Asie » reste un risque de fin de fenêtre à confiance réduite (★)** — substituts : thon listao Espagne, sardine Maroc/Portugal/France, tomate Italie/Espagne. **B** : 🟡. **A** : 🟢→🟡.
+- **Date butoir** : non critique avant le 23 août (fin S34) ; cibler le thon Asie en priorité si stock ; 8 boîtes mix ≈ 11-19 €.
+- **Sensibilité** : `+` · **Confiance** : ★★ · **Sources** : Consoglobe (parts de marché) — gap gros assumé.
+- **Vs Édition 2.9** : bascule reportée ~6 semaines et **limitée au segment thon Asie** au lieu de toute la catégorie.
 
 ---
 
 ### 5.3 Frais — chaîne du froid
 
-#### 5.3.1 Viande bovine
+> **Correction structurelle Édition 3.0 (relecture adversariale)** : les éditions précédentes — et le premier jet de celle-ci — attribuaient au détroit d'Ormuz des flux qui n'y transitent pas : **le soja brésilien** (route Atlantique directe Brésil-Europe), **l'ananas** (Costa Rica ≈ 60 % des exports mondiaux et ~80 000 t vers la France — flux Atlantique), **le poisson importé** (Norvège = mer du Nord ; Asie = Suez/mer Rouge, largement déroutée par le cap de Bonne-Espérance depuis 2024). Les vrais vecteurs pour cette catégorie sont : le **fret frigorifique** (gazole, énergie), le **coût de l'énergie de la chaîne du froid** (TTF ~50 €/MWh — entrepôts, laiteries), la **crise mer Rouge** (2 vraquiers coulés par les Houthis les 6-9 juillet, primes d'assurance), la **canicule** (amortisseur de demande à court terme, dégât laitier), et — différé à la campagne 2026-27 — le canal **engrais du Golfe → coûts de production mondiaux**. Les paliers ci-dessous en tiennent compte.
 
-- **Stocks France** : autosuffisance ~95 %, décapitalisation cheptel en cours. Vache R Cholet 7,25 €/kg net (20 avril). Aliment bétail tourteau soja non OGM 650-700 €/t.
-- **Dépendance Ormuz** : direct ~5 % (Brésil, Argentine via Atlantique) ; indirect 30-40 % (soja Brésil + transport frigo).
-- **Substituts** : production FR robuste à court terme.
-- **Reco stock 4 pers./1 mois** : **3 kg congelé ≈ 35-50 €**.
-- **Date butoir** : **25 mai 2026 (S23)** pour congélation.
-- **Sensibilité déclencheurs** : `++` (grèves transporteurs, prix soja, gazole frigo).
-- **Sources** : [Réussir — bovins matières premières alimentation](https://www.reussir.fr/bovins-viande/les-marches-des-matieres-premieres-pour-lalimentation-des-bovins-sont-tendus-sans-visibilite), [Chambres Agriculture Bretagne](https://bretagne.chambres-agriculture.fr/detail-actu/viande-bovine-des-prix-porteurs-mais-une-crise-de-loffre-persistante), [Interbev](https://www.interbev.fr/interbev/chiffres-cles/).
-- **Confiance** : ★★★★.
+#### 5.3.1 Viande bovine ⭐
+
+- **État au 13 juillet** : [FAIT] demande déprimée par la canicule, tarifs qui se tassent (Cholet en baisse 6-7/7), approvisionnement abattoirs bas, autosuffisance ~95 % ; FranceAgriMer (19/6, dernier point) : animation commerciale en recul. [GAP] Pas de cotation post-escalade (FranceAgriMer de mi-juillet non publié).
+- **Mécanisme corrigé** : la dépendance « soja via Ormuz » des éditions précédentes était géographiquement fausse — le canal réel est **indirect et différé** (engrais du Golfe → coûts de la récolte brésilienne 2026-27, horizon mensuel/pluriannuel). Les vecteurs de la fenêtre : **fret frigo, énergie, demande post-canicule, fin de l'aide transporteurs (31/7)**.
+- **Trajectoire C** : 🟡 S29-S31 (canicule = demande molle, **fenêtre d'achat à prix déprimés**) → 🟡→🟠 S32-S36 (fin de canicule, demande de rentrée, fret frigo/énergie renchéris) → 🟠 S37-S40 (tarifs +25-40 %, ruptures sporadiques par calibre possibles — pas de 🔴). **B** : 🟡 → 🟠 léger. **A** : 🟢→🟡.
+- **Date butoir** : **congélation avant le 31 juillet (S31)** — profiter des prix déprimés ET de l'aide transporteurs ; 3-4 kg ≈ 50-70 €.
+- **Sensibilité** : `++` · **Confiance** : ★★★★ · **Sources** : FranceAgriMer, Web-Agri, Réussir, La France Agricole.
+- **Vs Édition 2.9** : bascule tempérée par la canicule (S32 au lieu de S25) ; mécanisme soja corrigé.
 
 #### 5.3.2 Viande porcine
 
-- **Stocks France** : autosuffisance ~105 %, exportateur net. Filière intégrée (Cooperl, Bigard).
-- **Dépendance Ormuz** : indirect 25-35 % (soja brésilien aliment + transport frigo).
-- **Substituts** : production locale.
-- **Reco stock 4 pers./1 mois** : **4 kg congelé ≈ 30-45 €**.
-- **Date butoir** : non critique ; achats opportunistes.
-- **Sensibilité déclencheurs** : `+` (transport frigo, peste porcine — risque exogène).
-- **Sources** : [Réussir — porc commerce mondial 2026](https://www.reussir.fr/lesmarches/le-commerce-mondial-du-porc-plombe-par-la-baisse-europeenne-en-2026).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] autosuffisance ~105 %, exportateur net, filière intégrée ; aliment sur stocks confortables. Mécanisme soja corrigé (cf. 5.3.1).
+- **Trajectoire C** : 🟡 S29-S33 → 🟡→🟠 S34-S40 (fret frigo, énergie, demande de rentrée — tarifs +20-35 %, pas de rupture). **B** : 🟢→🟡. **A** : 🟢.
+- **Date butoir** : **avant le 31 juillet** ; 4 kg congelé ≈ 40-60 €.
+- **Sensibilité** : `+` (risque exogène dominant : sanitaire) · **Confiance** : ★★★★ · **Sources** : Réussir.
+- **Vs Édition 2.9** : bascule ralentie (S34+), mécanisme corrigé.
 
 #### 5.3.3 Volaille
 
-- **Stocks France** : autosuffisance ~70 % (importations Pologne, Brésil, Ukraine). Aliment soja 44 % conso totale FR.
-- **Dépendance Ormuz** : ~25 % (soja Brésil aliment + import volaille Asie marginal).
-- **Substituts** : production FR + UE (Pologne).
-- **Reco stock 4 pers./1 mois** : **4 kg congelé ≈ 30-50 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (grippe aviaire — exogène, prix soja, gazole).
-- **Sources** : [Réussir — volaille marché mondial](https://www.reussir.fr/lesmarches/qui-alimente-la-croissance-du-commerce-mondial-du-poulet).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] autosuffisance ~70 % (imports Pologne/Brésil/Ukraine) ; canicule = consommation en berne ; stocks d'aliment 2025-26 confortables.
+- **Trajectoire C** : 🟡 S29-S32 → 🟡→🟠 S33-S36 → 🟠 S37-S40 (demande de rentrée + fret frigo + coûts d'élevage énergie ; tarifs +25-40 %, rationnement de formes possible sur certains calibres). **B** : 🟡→🟢 puis 🟡. **A** : 🟢.
+- **Date butoir** : **avant le 31 juillet** ; 4 kg congelé ≈ 40-60 €.
+- **Sensibilité** : `+` (grippe aviaire = variable exogène dominante) · **Confiance** : ★★★★ · **Sources** : Réussir.
+- **Vs Édition 2.9** : bascule décalée à S33 (canicule + inertie des stocks d'aliment) ; mécanisme soja corrigé.
 
 #### 5.3.4 Poisson frais (importé)
 
-- **Stocks France** : **75 % import** (Norvège saumon, Chine merlu/cabillaud, Vietnam pangasius, Sénégal/Maroc). Production FR (Boulogne) en chute libre : **gazole marin doublé en 1 mois**, chalutiers à quai.
-- **Dépendance Ormuz** : 40-60 % (chaîne froid + import Asie via Suez+Ormuz).
-- **Substituts** : Norvège (Atlantique, Cap Nord) reste accessible — saumon, cabillaud, hareng.
-- **Reco stock 4 pers./1 mois** : **2 kg congelé Norvège ≈ 25-40 €**.
-- **Date butoir** : **DÉJÀ DÉPASSÉE pour frais ; viser surgelé Norvège**.
-- **Sensibilité déclencheurs** : `+++` (gazole marin, gazole transport frigo, météo Atlantique Nord).
-- **Sources** : [Chaîne Logistique Froid — point situation 20 avril 2026](https://www.lachainelogistiquedufroid.fr/crise-du-carburant-point-de-situation-au-20-avril-2026-pour-le-transport-sous-temperature-dirigee/), [franceinfo — Boulogne criée gazole marin](https://www.franceinfo.fr/economie/transports/prix-des-carburants/reportage-a-la-criee-de-boulogne-sur-mer-la-hausse-des-prix-du-gazole-marin-se-repercute-sur-toute-la-filiere-jusqu-au-prix-final-du-poisson_7906712.html).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] ~75 % importé (Norvège saumon — mer du Nord ; Chine/Vietnam — Suez/mer Rouge ou cap de Bonne-Espérance ; Sénégal/Maroc — Atlantique) ; saumon Rungis 10,46 €/kg (3/7) ; pêche française sous pression du **gazole marin** (Boulogne). [FAIT] **Aucun de ces flux ne transite par Ormuz** — correction adversariale majeure : le « 40-60 % dépendance Ormuz » et la « rupture < 48 h » des éditions précédentes ne reposaient sur aucun fondement géographique.
+- **Mécanisme réel** : gazole marin (coûts de pêche), **mer Rouge** (2 vraquiers coulés début juillet, assurances, déroutements déjà largement actés depuis 2024) et fret frigo — des vecteurs de **prix**, pas de rupture immédiate.
+- **Trajectoire C** : 🟡-🟠 S29-S33 → 🟠 S34-S40 (prix : +20-40 % probable sur les espèces d'import asiatique et le saumon ; substitution surgelé disponible). **Pas de 🔴** — retiré. **B** : 🟡. **A** : 🟡→🟢.
+- **Date butoir** : **pas de date critique** (la « bascule du 20 juillet » des versions antérieures est retirée — non sourcée) ; basculer progressivement vers le surgelé si les prix frais dérivent ; 2 kg surgelé ≈ 25-40 €.
+- **Sensibilité** : `++` (mer Rouge, gazole marin) · **Confiance** : ★★ (abaissée — aucune donnée de rupture détail, gap) · **Sources** : Foodomarket (Rungis), flux_mer_rouge.md (dépôt), synthese_J131-J135.
+- **Vs Édition 2.9** : **correction majeure** — trajectoire rétrogradée de 🟠→🔴 à 🟡-🟠, mécanisme entièrement re-fondé (mer Rouge/gazole marin, pas Ormuz), fausse urgence retirée.
 
 #### 5.3.5 Œufs
 
-- **Stocks France** : autosuffisance 100 %. Aliment poules 44 % soja import (Brésil > 60 %).
-- **Dépendance Ormuz** : 0 % direct, 25-30 % indirect via aliment.
-- **Substituts** : aliment FR colza, blé.
-- **Reco stock 4 pers./1 mois** : **30 œufs ≈ 8-12 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (grippe aviaire — exogène, prix soja).
-- **Sources** : [VetAgro Sup — soja élevage France](https://chaire-bea.vetagro-sup.fr/en-france-les-animaux-delevage-sont-nourris-avec-du-soja-issu-de-la-deforestation-vrai-ou-faux/).
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] autosuffisance 100 %, production insensible à la canicule ; aliment sur stocks. Mécanisme « soja Ormuz » corrigé : le canal réel (engrais → coûts mondiaux) joue sur la campagne suivante.
+- **Trajectoire C** : 🟢 S29-S32 → 🟡 S33-S40 (coûts d'aliment et d'énergie en hausse progressive ; tarifs +10-25 %, pas de pénurie). **B** : 🟢 puis 🟡 léger. **A** : 🟢.
+- **Date butoir** : achat d'opportunité **avant le 31 juillet** (limite de conservation 2-3 semaines — pas de sur-stockage) ; 30 œufs ≈ 8-12 €.
+- **Sensibilité** : `+` (grippe aviaire exogène) · **Confiance** : ★★★★ · **Sources** : filière (VetAgro Sup), INSEE.
+- **Vs Édition 2.9** : bascule 🟠 retirée ; reste 🟢 jusqu'à S32 (vs 🟡 dès S24 en 2.9).
 
 #### 5.3.6 Lait frais
 
-- **Stocks France** : production 24 Mt, mais lait frais = chaîne froid critique. Conso lait conditionné -5 % en 2025.
-- **Dépendance Ormuz** : 0 % matière, 15-20 % via transport frigo + emballages.
-- **Substituts** : substituer par UHT.
-- **Reco stock 4 pers./1 mois** : substituer par UHT.
-- **Date butoir** : non critique — privilégier UHT.
-- **Sensibilité déclencheurs** : `++` (grèves transporteurs frigo > tout autre facteur).
-- **Sources** : [Réussir — lait conditionné](https://www.reussir.fr/lesmarches/lait-conditionne-la-consommation-baisse-de-plus-de-5-en-2025).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] canicule : **collecte −10 à −30 % rapportée dans le Grand Ouest** (stress thermique, chiffre qualitatif — pas de donnée Agreste officielle, gap) ; chaîne frigo sensible au coût de l'énergie (TTF ~50 €/MWh).
+- **Trajectoire C** : 🟢→🟡 S29-S32 (canicule = offre réduite, +10-15 %) → 🟡 S33-S36 → 🟡-🟠 S37-S40 (fret frigo + énergie de la chaîne du froid chiffrés via le TTF — les distributeurs privilégient l'UHT, le frais devient plus cher sans être rare). **B** : 🟡 puis 🟢→🟡. **A** : 🟢.
+- **Date butoir** : non critique — **basculer une partie de la consommation vers l'UHT** (moins cher, conservation 12 mois ; cf. 5.2.9).
+- **Sensibilité** : `++` (canicule immédiate ; énergie/TTF à la rentrée) · **Confiance** : ★★★★ · **Sources** : Réussir, GIE AGSI (TTF).
+- **Vs Édition 2.9** : canicule intégrée (nouvelle) ; le vecteur énergie de la chaîne du froid est désormais chiffré (TTF) au lieu d'être implicite.
 
 #### 5.3.7 Beurre / fromages
 
-- **Stocks France** : production OK (+12 % beurre fév 2026, +2 % fromage). Beurre 4 400 €/t stabilisé. Demande UE en hausse → tensions export.
-- **Dépendance Ormuz** : 0 % matière, 10-15 % transport.
-- **Substituts** : autosuffisance.
-- **Reco stock 4 pers./1 mois** : **1 kg beurre + 2 kg fromages ≈ 25-40 €**.
-- **Date butoir** : non critique ; opportunité S20-S22.
-- **Sensibilité déclencheurs** : `+` (demande export UE, prix poudre lait mondial).
-- **Sources** : [La France Agricole — beurre poudre lait](https://www.lafranceagricole.fr/conjoncture-laitiere/article/898418/le-prix-du-beurre-se-stabilise-celui-de-la-poudre-de-lait-remonte), [Réussir — fromage beurre marché mondial 2026](https://www.reussir.fr/lesmarches/plus-de-fromage-moins-de-beurre-sur-le-marche-mondial-en-2026).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] production robuste (+12 % beurre, +2 % fromage en début d'année), beurre ~4 400 €/t stabilisé ; demande d'export UE ferme ; autosuffisance garantie.
+- **Trajectoire C** : 🟡 S29-S34 → 🟡→🟠 S35-S40 (rentrée : demande + **fret frigo renchéri par l'énergie — TTF ~50 €/MWh, trajectoire UGS ~72 %** — et l'export ferme ; tarifs +20-35 %, disponibilité préservée). **B** : 🟡. **A** : 🟡→🟢.
+- **Date butoir** : stock congelable (beurre) **avant le 13 septembre (fin S37)** ; 1 kg beurre + 2 kg fromages ≈ 25-40 €.
+- **Sensibilité** : `+` (export UE = facteur principal) · **Confiance** : ★★★★ · **Sources** : La France Agricole.
+- **Vs Édition 2.9** : bascule repoussée de S29 à S35 ; canal gazier d'hiver explicitement chiffré (ajustement adversarial).
 
-#### 5.3.8 Légumes locaux saisonniers (PdT, courgette, carotte)
+#### 5.3.8 Légumes locaux saisonniers (pomme de terre, courgette, carotte)
 
-- **Stocks France** : autosuffisance pomme de terre. Saison FR : courgette dès mai-juin, carotte primeur dès mai. Stocks PdT 2025-26 : confortables.
-- **Dépendance Ormuz** : < 5 % direct, ~15 % indirect (gazole tracteurs, frigo).
-- **Substituts** : N/A (locaux).
-- **Reco stock 4 pers./1 mois** : **10 kg PdT + 3 kg légumes ≈ 15-25 €**.
-- **Date butoir** : non critique.
-- **Sensibilité déclencheurs** : `+` (météo printemps, GNR récolte juin-juillet).
-- **Sources** : FranceAgriMer, Réussir.
-- **Confiance** : ★★★★★.
+- **État au 13 juillet** : [FAIT] pleine saison française, stocks PdT confortables, canicule = effet qualitatif sans rupture ; GNR agricole aidé (15 ct/L) jusqu'au 31 août.
+- **Trajectoire C** : **🟢 toute la fenêtre** — point d'ancrage bas-risque du calendrier. **B/A** : 🟢.
+- **Date butoir** : aucune.
+- **Sensibilité** : `+` (météo seule) · **Confiance** : ★★★★★ · **Sources** : FranceAgriMer, Réussir.
+- **Vs Édition 2.9** : inchangé.
 
 #### 5.3.9 Légumes importés hors saison (tomate, poivron, agrumes)
 
-- **Stocks France** : 60-70 % import (Espagne, Maroc, Italie). Tomate FR 3,72 €/kg vs 3 € import.
-- **Dépendance Ormuz** : 10-20 % direct (transport Espagne/Maroc routier).
-- **Substituts** : production FR sous serre (chauffage gaz cher !) ; bascule sur saison locale dès juin.
-- **Reco stock 4 pers./1 mois** : **5 kg ≈ 15-25 €** ; éviter hors saison, attendre saison FR.
-- **Date butoir** : non critique (substitution saisonnière).
-- **Sensibilité déclencheurs** : `+` (prix gaz serres FR, gazole transport).
-- **Sources** : [franceinfo — fruits légumes FR vs étranger](https://www.franceinfo.fr/economie/emploi/metiers/agriculture/infographies-les-fruits-et-legumes-cultives-en-france-sont-ils-vraiment-plus-chers-que-ceux-produits-a-l-etranger_6334222.html), [Team France Export — fruits légumes Espagne](https://www.teamfrance-export.fr/fiche-marche/produits-alimentaires/produits-vegetaux/ES).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] 60-70 % d'import (Espagne, Maroc, Italie — routes routières/Méditerranée occidentale, **hors Ormuz**) ; l'été bascule l'offre vers la production française.
+- **Trajectoire C** : 🟢-🟡 S29-S36 (saison locale dominante) → 🟡 S37-S40 (retour progressif de l'import d'automne, renchéri par le gazole et les serres — gaz). **B/A** : 🟢-🟡.
+- **Date butoir** : aucune — suivre la saison.
+- **Sensibilité** : `+` · **Confiance** : ★★★★ · **Sources** : FranceAgriMer.
+- **Vs Édition 2.9** : bascule 🟠 retirée (les routes d'import ne touchent pas Ormuz) ; risque résiduel = coût des serres au gaz en fin de fenêtre.
 
 #### 5.3.10 Fruits importés (banane, orange, ananas)
 
-- **Stocks France** : 100 % import. Banane (Côte d'Ivoire, Colombie, Équateur, Antilles FR), orange (Espagne, Maroc, Égypte), ananas (Costa Rica).
-- **Dépendance Ormuz** : banane Atlantique ~10 %, orange Égypte ~30 %, ananas Asie ~50 %.
-- **Substituts** : pomme/poire FR de garde, fraise FR saison.
-- **Reco stock 4 pers./1 mois** : non stockable frais ; stocker pommes/compote.
-- **Date butoir** : non pertinent (denrées non stockables).
-- **Sensibilité déclencheurs** : `+` (fret conteneurs Asie, gazole transport).
-- **Sources** : Réussir, FranceAgriMer.
-- **Confiance** : ★★★.
-
-> **Intrants agricoles (transverse, impact lagged)** : urée 505 → 580 €/t (+15 % post-frappes), Qafco Qatar = 14 % commerce mondial urée. **Effet 2026 partiel** (réserves achetées hiver), **effet 2027 majeur** sur récolte. GNR : aide gouvernementale 15 c/L mai 2026 (53 M€). **Récolte 2026 : qualité/protéine en baisse attendue** (Arvalis). Aliment bétail (soja CBOT 1187 cts$/boisseau, tourteau 650-700 €/t) impacte cascade viande/œufs/laitiers. Sources : [La France Agricole — récolte 2026 engrais](https://www.lafranceagricole.fr/conjoncture-cultures/article/895979/recolte-2026-des-engrais-plus-chers-font-craindre-une-qualite-en-baisse), [DG Trésor — qui sème la guerre](https://www.tresor.economie.gouv.fr/Articles/2026/03/13/qui-seme-la-guerre-ne-seme-guere-les-engrais), [Ministère Agriculture — soutien GNR](https://agriculture.gouv.fr/face-la-persistance-de-prix-eleves-des-carburants-le-gouvernement-renforce-son-soutien-aux).
+- **État au 13 juillet** : [FAIT — correction adversariale majeure] **l'ananas français vient du Costa Rica** (~60 % des exports mondiaux, ~80 000 t vers la France), de l'Équateur, de Côte d'Ivoire et du Ghana — **tous flux Atlantique, sans lien avec Ormuz** ; la banane est Atlantique (Antilles, Afrique de l'Ouest, Amérique latine) ; l'orange d'été vient d'Afrique du Sud/Amérique du Sud (cap/Atlantique) et d'Égypte (Méditerranée). Le « 🔴 fruits exotiques » des éditions 2.x reposait sur une géographie erronée.
+- **Trajectoire C** : **🟡 toute la fenêtre** — renchérissement par le fret général (bunker, assurances mer Rouge pour une part minoritaire) et l'énergie de la chaîne du froid ; +10-25 % de prix possibles, pas de pénurie. **B** : 🟢-🟡. **A** : 🟢.
+- **Date butoir** : **retirée** (la « bascule critique du 20 juillet » n'a pas de fondement) — achat au fil de l'eau ; congeler/compoter reste une simple optimisation budget.
+- **Sensibilité** : `+` · **Confiance** : ★★★ · **Sources** : CBI/Cirad (via relecture adversariale), FranceAgriMer.
+- **Vs Édition 2.9** : **le 🔴 est retiré** et l'erreur géographique héritée est corrigée explicitement plutôt que reconduite.
 
 ---
 
 ### 5.4 Hygiène, santé, équipement
 
+> **Rappel médicaments** : les tensions ci-dessous sont pour l'essentiel **préexistantes à la crise d'Ormuz** (API Inde/Chine, files industrielles) et documentées par l'ANSM — Ormuz ajoute du coût de fret, pas la cause première. **Ne jamais constituer de stock de médicaments au-delà du besoin familial raisonnable** : le contingentement existe précisément pour protéger l'accès de tous.
+
 #### 5.4.1 Paracétamol (Doliprane / génériques)
 
-> **🔧 Mise à jour Édition 2.1** : **bascule pédiatrique buvable rétrogradée de 🟠/🔴 à 🟡** dans la matrice (S22-S26 = 🟡 maintenu). Justification : ANSM 23 février 2026 a rappelé 27 lots de Doliprane 2,4 % buvable pour défaut de graduation pipettes (pas pénurie) et a **explicitement confirmé que les stocks restent suffisants**. Pas de signalement de tension MITM sur le paracétamol pédiatrique au 17 mai 2026. **Anticipation du renouvellement reste recommandée** (sensibilité ruée +++), mais l'urgence absolue est révisée à la baisse.
+- **État au 13 juillet** : [FAIT — correction adversariale d'une sous-anticipation] le bulletin ANSM (sem. 23, juin 2026) place **Doliprane 500 mg comprimés et 1000 mg effervescent en RUPTURE avec contingentement quantitatif actif** (grossistes-répartiteurs et officines), **retour à la normale annoncé pour 2027** ; le **sirop pédiatrique reste globalement disponible**. Production Sanofi Lisieux en montée de capacité (+40 % visés 2026). Statut MITM (stock de sécurité 4 mois).
+- **Trajectoire C** : formes adulte **🟠 toute la fenêtre** (tension réelle documentée + pic de rentrée S33+) ; sirop pédiatrique **🟡** (vigilance comportementale, pas de tension d'offre constatée). **B** : idem — la tension est **indépendante d'Ormuz**. **A** : idem.
+- **Date butoir** : reconstitution familiale **raisonnable** (4-6 boîtes, pas plus) **avant fin juillet (S30-S31)** ; formes pédiatriques : au besoin, sans stockage.
+- **Sensibilité** : `++` (ruée comportementale médiatique possible en 48-72 h) · **Confiance** : ★★★ · **Sources** : ANSM (bulletin sem. 23, via relecture), Sanofi.
+- **Vs Édition 2.9** : **aggravation vs le premier jet 3.0** (qui concluait à tort « aucune tension ») — la rupture contingentée des formes adulte est un fait ANSM, pas une anticipation ; distinction adulte/pédiatrique introduite.
 
-- **Stocks France** : Doliprane = MITM avec **stock sécurité 4 mois** (décret 2021-349). Sanofi Lisieux : production 424 M boîtes/an, capacité +40 % à compter de 2026. ANSM (fév 2026) : stocks suffisants malgré rappel qualité.
-- **Dépendance Ormuz** : API ~60 % Inde/Chine via conteneur. Production locale (Sanofi Lisieux + futur Seqens Roussillon : 20 % API fin 2026 seulement).
-- **Substituts** : production France (Lisieux Sanofi/Opella, Upsa Agen), génériques européens. Substitution thérapeutique limitée (ibuprofène lui-même fragile).
-- **Reco stock 4 pers./1 mois** : **4 boîtes Doliprane 1000 mg adulte + 2 flacons sirop pédiatrique si enfants + 2 boîtes paracétamol générique. Budget : 15-25 €**.
-- **Date butoir** : **21 juin 2026 (S25)** pour comprimés adulte. **24 mai 2026 (S22)** pour formes buvables pédiatriques (anticipation prudente, pas urgence absolue 2.1).
-- **Sensibilité déclencheurs** : `+++` (la moindre annonce media de ruée déclenche bascule en 48-72h, cf. paracétamol hiver 2022).
-- **Sources** : [ANSM Plan hivernal 2025-2026](https://ansm.sante.fr/actualites/plan-hivernal-2025-2026-point-sur-lapprovisionnement-en-medicaments), [Sanofi/Opella Lisieux](https://www.upsa.com/upsa-participe-au-plan-daction-du-gouvernement-pour-la-relocalisation-du-principe-actif-du-paracetamol-en-france), [Seqens Roussillon](https://www.seqens.com/fr/avec-le-soutien-du-programme-france-relance-et-partenariat-avec-sanofi-et-upsa-seqens-officialise-le-lancement-du-projet-de-construction-dune-nouvelle-unite-de-production-de-paracetamol/), [CNOP MITM 4 mois](https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/stock-minimal-de-securite-augmente-a-4-mois-pour-422-medicaments).
-- **Confiance** : ★★★★.
+#### 5.4.2 Antibiotiques (amoxicilline + amox/clav) ⭐
 
-#### 5.4.2 Antibiotiques (amoxicilline + amoxi/clav)
-
-- **Stocks France** : molécule sentinelle plan hivernal ANSM 2025-2026. MITM = stock sécurité 4 mois pour formes critiques. Forme injectable historiquement fragile.
-- **Dépendance Ormuz** : **90 % pénicilline mondiale produite Inde/Chine**. API + intermédiaires fermenteurs = 100 % extra-UE. Production formulation finale : Espagne (GSK Aranjuez), France (Delpharm Lille). Conteneur.
-- **Substituts** : inter-classes (céphalosporines, macrolides) eux-mêmes en flux tendu. Recommandations ANSM épargne antibiotique.
-- **Reco stock 4 pers./1 mois** : **non recommandé en stock domestique** sans prescription. Si traitement chronique en cours : anticiper renouvellement dès S20-S21.
-- **Date butoir** : **1er juin 2026 (S23)** pour renouvellement ordonnance. Pas d'auto-stockage.
-- **Sensibilité déclencheurs** : `++` (saisons : automne 2026 verra forte aggravation ; ouvertures écoles, infections ORL).
-- **Sources** : [ANSM amoxi/clav](https://ansm.sante.fr/informations-de-securite/persistance-des-tensions-dapprovisionnement-en-amoxicilline-clamoxyl-et-generiques-amoxicilline-acide-clavulanique-augmentin-et-generiques-toutes-formes-orales-tous-dosages), [Vidal](https://www.vidal.fr/actualites/29939-penurie-d-amoxicilline-les-recommandations-de-l-ansm-pour-une-utilisation-a-bon-escient.html), [SPILF infectiologie](https://www.infectiologie.com/fr/actualites/rupture-de-stock-d-amoxicilline_-n.html).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT — USPO, mai 2026] **~30 % des officines interrogées ont connu au moins une rupture d'amoxicilline pédiatrique dans le mois** ; distribution **contingentée** en établissements et officines, vente directe suspendue, **export interdit** — un dispositif de crise déjà actif, pas des « signalements isolés ». Tension structurelle préexistante (API Inde/Chine ~90 %), sans dégradation nouvelle datée de juillet. Molécule sentinelle du plan hivernal ANSM.
+- **Trajectoire C** : 🟠 S29-S32 (baseline tendue, été calme) → **🟠→🔴 S33-S36 puis 🔴\* S37-S40** (rentrée : pics ORL pédiatriques certains, demande +50-100 % vs été, sur une chaîne déjà contingentée — le `*` signale que le dispositif ANSM de rationnement organisé évite la rupture sèche « rayon vide », mais l'accès sera contraint). **B/A** : identiques à ±1 cran — **mécanisme quasi indépendant d'Ormuz**.
+- **Date butoir** : patients chroniques et familles : **renouvellements/consultations anticipés avant le 9 août (fin S32)**. Pas d'automédication ni de stock hors ordonnance.
+- **Sensibilité** : `++` (rentrée, épidémiologie) · **Confiance** : ★★★★ · **Sources** : USPO (mai), ANSM.
+- **Vs Édition 2.9** : trajectoire proche mais mieux fondée (chiffre USPO intégré) ; bascule 🔴 calée sur la rentrée (S33+) et non sur juillet.
 
 #### 5.4.3 Antihypertenseurs (sartans / IEC)
 
-> **🔧 Mise à jour Édition 2.1** : **bascule sartans rétrogradée de 🟠 S23 à 🟡 S23 → 🟠 S26** dans la matrice. Justification : aucun signalement ANSM spécifique 2026 sur sartans. Les tensions historiques 2018-2021 (impuretés NDEA/NDMA) sont structurelles mais pas en pic actuel. **L'alerte nitrendipine de Viatris (mi-avril 2026, 50 000 patients) confirme un point chaud sur antihypertenseurs en général** — anticipation du renouvellement reste prudente.
+- **État au 13 juillet** : [FAIT] alerte nitrendipine (Viatris) d'avril : patients déjà basculés (IEC/calciques) ; **aucune nouvelle alerte sartans en juin-juillet** ; classe MITM (4 mois de stock de sécurité).
+- **Trajectoire C** : 🟠 S29-S32 (héritage baseline) → 🟠→🟡 S33-S36 → 🟡 S37-S40 (pas de pic saisonnier comparable aux infections ; +5-10 % de demande au froid, gérable). **B/A** : 🟡.
+- **Date butoir** : chroniques — renouvellement d'avance **avant le 26 juillet (fin S30)**, avant le creux des officines d'août ; 0-15 € reste à charge.
+- **Sensibilité** : `++` · **Confiance** : ★★★★ · **Sources** : ANSM.
+- **Vs Édition 2.9** : le 🔴 de fin juillet est **retiré** (zéro alerte nouvelle, alerte Viatris absorbée) — rétrogradation documentée.
 
-- **Stocks France** : classe entière sur liste MITM (stock 4 mois pour 422 médicaments). **ALERTE pré-existante** : nitrendipine (Viatris) en rupture nationale depuis mi-avril 2026 (50 000 patients), losartan historiquement fragile.
-- **Dépendance Ormuz** : API 70-85 % Inde/Chine pour valsartan, losartan, irbesartan, candésartan. IEC (ramipril, périndopril) : Servier dispose de production en partie européenne. Génériqueurs (EG Labo, Mylan/Viatris, Biogaran) très exposés import.
-- **Substituts** : substitution intra-classe gérable par pharmacien. Substitution inter-classes (sartans→IEC→bêtabloquants→inhibiteurs calciques) nécessite avis médical. Diurétiques peu impactés.
-- **Reco stock 4 pers./1 mois** : patient chronique : **3 boîtes d'avance** (1 mois en cours + 2 mois tampon). Demander au pharmacien substitution équivalente. Budget : remboursement SS, **0-15 € reste à charge**.
-- **Date butoir** : **24 mai 2026 (S22)** pour anticiper renouvellement. Discuter switch sartan→IEC français avec médecin avant fin mai.
-- **Sensibilité déclencheurs** : `+++` (saisies navires API en route, blocages portuaires, alertes impuretés NDMA/azides).
-- **Sources** : [ANSM losartan](https://ansm.sante.fr/actualites/medicaments-a-base-de-losartan-seul-ou-en-association-conduite-a-tenir-dans-un-contexte-de-tensions-dapprovisionnement), [Ma-sante.news nitrendipine](https://ma-sante.news/rupture-stock-penurie-medicament-hypertension-nitrendipine/), [Resip choix IEC sartans](https://documents.resip.fr/002929.pdf).
-- **Confiance** : ★★★★.
+#### 5.4.4 Insuline analogues (Lantus, Humalog, Novorapid)
 
-#### 5.4.4 Insuline analogues (Lantus, Humalog)
+- **État au 13 juillet** : [FAIT] production **UE** (Sanofi Francfort, Novo Nordisk Kalundborg/Chartres, Lilly Fegersheim) — dépendance Ormuz nulle sur l'API ; dispositifs (stylos, aiguilles, capteurs) partiellement asiatiques (fret +20-30 %) ; diabétiques = **prioritaires absolus** de tout plan de rationnement.
+- **Trajectoire C** : **🟢 toute la fenêtre**. **B/A** : 🟢.
+- **Date butoir** : insuline — aucune ; **dispositifs** (stylos, aiguilles, capteurs) : renouvellement d'avance **avant le 26 juillet (fin S30)**. Budget dispositifs ≈ 25-40 € (hors capteurs remboursés).
+- **Sensibilité** : `+` · **Confiance** : ★★★★★ · **Sources** : ANSM, laboratoires.
+- **Vs Édition 2.9** : inchangé (🟢 confirmé).
 
-- **Stocks France** : MITM avec stock sécurité 4 mois. **Production majoritairement européenne** : Sanofi Lantus = Frankfurt, Novo Nordisk = Kalundborg/Bagsværd + Chartres (investissement 2,1 Md€), Eli Lilly Humalog = Indianapolis + Fegersheim + Sesto.
-- **Dépendance Ormuz** : 0 % API insuline pour analogues européens. Mais **dispositifs (stylos, aiguilles)** souvent fabriqués Asie (BD Medical, Owen Mumford). Verre flacons : Europe.
-- **Substituts** : insulines NPH humaines (production européenne ancienne). Substitution analogue→analogue gérée par diabétologue. Pas d'arrêt possible (chronique vital).
-- **Reco stock 4 pers./1 mois** : patient diabétique : **renouvellement normal + 1 mois d'avance** (limite légale 3 mois). Vérifier dispositifs (stylos, aiguilles) en pharmacie. Capteurs glucose (Freestyle Libre, Dexcom) : composants Asie, anticiper.
-- **Date butoir** : pas de date butoir sur insuline elle-même. **21 juin 2026 (S25)** pour stocks de stylos/aiguilles/capteurs.
-- **Sensibilité déclencheurs** : `+` (très faible côté API ; modéré dispositifs médicaux ; énergie chaîne du froid).
-- **Sources** : [Sanofi Frankfurt](https://www.sanofi.fr/fr/media/communiques-et-dossiers-de-presse/), [Le Moniteur Sanofi insuline Allemagne](https://www.lemoniteurdespharmacies.fr/business/laboratoires/sanofi-investit-13-milliard-en-allemagne-pour-renforcer-sa-production-dinsuline), [Open Insulin France](https://fr.openinsulin.org/qui-sont-aujourdhui-les-producteurs-dinsuline/).
-- **Confiance** : ★★★★★.
+#### 5.4.4-bis Lévothyroxine (Levothyrox, Euthyrox, Henning, Tcaps, Thyrofix)
 
-#### 5.4.4-bis Lévothyroxine (Levothyrox, Euthyrox, L-Thyroxine Henning, Tcaps, Thyrofix) 🆕 Édition 2.1
-
-> **🔧 Nouvelle fiche Édition 2.1** : ajout suite à demande utilisateur (~3 millions de patients hypothyroïdiens / post-thyroïdectomie en France ; mémoire collective sensible post-crise « nouvelle formule » 2017-2018). **Diagnostic au 17 mai 2026 : risque faible. Pas d'urgence. Anticipation raisonnable recommandée.**
-
-- **Statut MITM** : **OUI**, inscription structurelle (marge thérapeutique étroite, arrêt impossible). Liste MITM ANSM mise à jour 13 mars 2026 (8 107 médicaments). **Mais Levothyrox lui-même NON inscrit sur la liste des ruptures ANSM au 17 mai 2026.**
-- **Stocks France** : stock sécurité réglementaire **4 mois minimum** (arrêté 2021 renforcé post-crise psychotropes). 6 spécialités encore commercialisées au 17 mai (Levothyrox NF, Euthyrox ancienne formule prolongée jusqu'à fin 2028, L-Thyroxine Henning Sanofi, L-Thyroxin Serb gouttes, Tcaps Genevrier, Thyrofix Uni-Pharma). Tsoludose et Tirosint Solution arrêtés depuis avril 2025.
-- **Production / dépendance Ormuz** :
-  - **Levothyrox / Euthyrox (princeps Merck)** : 100 % usine Merck **Darmstadt (Allemagne)** depuis ~2015 ; site Merck Semoy (Loiret) potentiel secours, non actif ; siège Lyon administratif. **API probablement synthétisé en interne ou contrats européens** (non publié précisément).
-  - Génériques (Thyrofix, etc.) : API souvent Inde/Chine (72 % exports mondiaux), exposition Ormuz indirecte plus élevée.
-  - Excipients (mannitol, citrate de sodium pour NF) : sources multiples mondiales, basiques.
-  - Pas de chaîne du froid (comprimés stables).
-- **Exposition Ormuz directe : FAIBLE.** Production finale UE → France par route, pas de dépendance hydrocarbures lourds. **Exposition indirecte : MODÉRÉE à 6-12 mois** (renchérissement transport, coût énergie production allemande).
-- **Substituts** : 5 spécialités commercialisées. **Switch médicalement possible** mais nécessite contrôle TSH à 6-8 semaines (marge thérapeutique étroite — risque iatrogène). Médicament prioritaire dans tout plan de rationnement.
-- **Reco stock patient chronique** : **2 mois d'avance** (au-delà du 1 mois standard, en-deçà des 3 mois qui videraient la chaîne). Pas de surstockage paniqué.
-- **Date butoir** : **aucune urgence au 17 mai 2026.** Réévaluation **fin juin 2026 (J108)** si crise Ormuz persiste, puis tous les 30 jours.
-- **Déclencheurs d'escalade** :
-  - Tout signalement ANSM sur lévothyroxine
-  - Communiqué Merck / Sanofi sur API
-  - Ruptures observées sur Henning ou Thyrofix (générique = signal précoce avant princeps)
-  - Communication CNOP / USPO / FSPF
-- **Sensibilité déclencheurs** : `+++` (extrême sur ruée patients — la mémoire 2017-2018 est vive, tout bruit médiatique peut déclencher ruée pharmacie en 24h indépendamment de la situation réelle).
-- **Recommandations pratiques patients** :
-  1. **Renouvellement anticipé** : demander le renouvellement 10-15 jours avant fin de boîte.
-  2. **NE PAS changer de spécialité par anticipation** : tout switch nécessite contrôle TSH à 6-8 semaines. Risque iatrogène > risque rupture à ce stade.
-  3. **Identifier la spécialité de substitution acceptable AVEC son médecin** maintenant (mention « si rupture, substituer par Henning / Tcaps » sur ordonnance).
-  4. **Patients post-thyroïdectomie / cancer** : prioritaires absolus, anticiper davantage (3 mois si possible).
-  5. **Numéro vert Levothyrox** (0 800 97 14 18) : historiquement actif, à vérifier en cas de question.
-- **Sources** : [ANSM — Disponibilités produits de santé](https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments), [ANSM — Plan hivernal 2025-2026](https://ansm.sante.fr/actualites/plan-hivernal-2025-2026-point-sur-lapprovisionnement-en-medicaments), [ANSM — Euthyrox jusqu'à fin 2028](https://ansm.sante.fr/actualites/medicaments-a-base-de-levothyroxine-euthyrox-sera-disponible-jusqua-fin-2028), [ANSM — Dossier lévothyroxine](https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france), [ANSM — Liste MITM](https://ansm.sante.fr/documents/reference/medicaments-dinteret-therapeutique-majeur-mitm), [CNOP — Point lévothyroxine](https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/point-sur-la-disponibilite-des-medicaments-a-base-de-levothyroxine), [Vidal — Euthyrox prolongé](https://www.vidal.fr/actualites/30379-euthyrox-mise-a-disposition-prolongee-jusqu-en-2025.html), [L'Usine Nouvelle — Merck Serono production](https://www.usinenouvelle.com/article/sous-tension-en-france-merck-serono-reorganise-sa-production-de-levothyrox.N202764), [PharmaCompass — Levothyroxine API](https://www.pharmacompass.com/listed-active-pharmaceutical-ingredients/levothyroxine-sodium).
-- **Confiance** : ★★★★★ (4 sources ANSM convergentes + production UE confirmée).
+- **État au 13 juillet** : [FAIT] non listée en rupture ni tension (ANSM) ; Euthyrox garanti jusqu'à fin 2028 (Merck Darmstadt, production UE) ; 6 spécialités disponibles ; génériques ~30 % API Inde/Chine (exposition fret 6-12 mois, pas hebdomadaire). Risque dominant : **comportemental** (mémoire de la crise 2017-2018 — toute rumeur peut déclencher une ruée en 24-48 h chez ~3 M de patients).
+- **Trajectoire C** : princeps **🟢** ; ensemble 🟢 → 🟢→🟡 S33+ (pure vigilance comportementale) → 🟡 S37-S40. **B/A** : 🟢.
+- **Date butoir** : renouvellement d'avance de saison **avant le 13 septembre (fin S37)** ; **NE PAS CHANGER de spécialité sans avis médical**.
+- **Sensibilité** : `+++` (comportemental pur) · **Confiance** : ★★★★★ · **Sources** : ANSM, Merck.
+- **Vs Édition 2.9** : inchangé sur le fond ; date butoir recalée sur la grille réelle des semaines.
 
 #### 5.4.5 Eau embouteillée
 
-- **Stocks France** : production 100 % France. Marché 3,4 Md€/an. Stocks distributeurs : 2-4 semaines. **Choc 2026** : TVA passée de 5,5 % à 20 % sur eau PET → +14,5 pts de prix structurel ; MEMN alerte sur hausse PET (résine plastique pétrochimique).
-- **Dépendance Ormuz** : eau : 0 % import. Bouteilles PET : résine importée pour partie (UE + Asie), exposée pétrole et fret. Bouchons, étiquettes : flux européens.
-- **Substituts** : eau du robinet (qualité France élevée), filtres carafe (Brita), gourdes. Eau de source en bonbonne.
-- **Reco stock 4 pers./1 mois** : pour 4 personnes/30 jours buvable seule = ~120 L (1 L/pers/jour). OMS situation crise = 3 L/pers/jour total → 360 L (lourd à stocker). **Compromis raisonnable : 6 packs 6×1,5 L (54 L) + filtre carafe + gourdes. Budget : 30-50 €**.
-- **Date butoir** : **21 juin 2026 (S25)** pour éviter pic ruée juillet. **Étaler les achats sur 4-6 semaines pour ne pas alimenter la ruée soi-même.**
-- **Sensibilité déclencheurs** : `+++` (ruée panique : Covid 2020, carburant 2022 ; canicule ; tweet/JT TF1 sur "pénurie eau" ; saisie navire pétrolier amplifie psychose).
-- **Sources** : [MEMN alerte PET](https://eaumineralenaturelle.fr/gouttes-dactu/la-memn-alerte-sur-la-hausse-des-prix-des-matieres-premieres-plastique-pet), [Eurotribunes TVA 20 %](https://www.eurotribunes.fr/2796/tva-eau-minerale-annee/), [Xerfi](https://www.xerfi.com/presentationetude/le-marche-des-eaux-en-bouteille_IAA32).
-- **Confiance** : ★★★★.
+- **État au 13 juillet** : [FAIT] **choc de PRIX acté et structurel : TVA 5,5 % → 20 %** (+14,5 pts) + PET/fret renchéris — production 100 % France (aucun risque physique lié à Ormuz). Aucune rupture constatée ; stocks distributeurs 2-4 semaines.
+- **Trajectoire C** : 🟠 S29-S36 (**palier de prix**, ~+40 % vs 2025 ; risque résiduel = ruée comportementale estivale/canicule) → 🟠→🟡 S37-S40. **B** : 🟡. **A** : 🟢→🟡 (une remise en cause de la TVA serait politique, pas géopolitique).
+- **Date butoir** : si besoin spécifique (puits, qualité, nourrissons) : 54 L (1 mois, 4 pers.) **avant le 31 juillet (S31)** ≈ 36-50 €. Sinon : eau du robinet.
+- **Sensibilité** : `+++` (comportemental) · **Confiance** : ★★★★ · **Sources** : CRE/DGFiP (TVA), distributeurs.
+- **Vs Édition 2.9** : trajectoire confirmée — palier requalifié explicitement « prix, pas offre ».
 
 #### 5.4.6 Papier hygiénique
 
-- **Stocks France** : production France (Essity Kunheim, Saillat ; Cellule Aubertin ; Hayat Essity Stenay ; Wepa Lille). Marché 4,4 Md€/an. Pâte à papier importée majoritairement (Brésil, Scandinavie, Amérique du Nord). Stocks distributeurs : 1-3 semaines.
-- **Dépendance Ormuz** : pâte à papier : flux Atlantique (peu impacté Ormuz/Suez). **Mais** : énergie usines (gaz) exposée prix énergie ; transport routier diesel ; emballages plastique exposés PET. Hausse coûts production +25 % sur 3 mois.
-- **Substituts** : aucun (sauf bidet/jet, lingettes — elles-mêmes fragiles).
-- **Reco stock 4 pers./1 mois** : **2 packs 24 rouleaux compactés ≈ 48 rouleaux. Budget : 25-35 €**. Stockage discret (pour éviter d'alimenter panique entourage).
-- **Date butoir** : **15 juin 2026 (S24)** pour profiter des promos pré-vacances et éviter pic juillet.
-- **Sensibilité déclencheurs** : `+++` (extrême sur ruée panique ; baseline France post-Covid psychologiquement chargé).
-- **Sources** : [Xerfi articles hygiène papier](https://www.xerfi.com/presentationetude/le-marche-des-articles-d-hygiene-en-papier_BPA10), [UsineNouvelle](https://www.usinenouvelle.com/article/non-la-france-ne-va-pas-manquer-de-papier-toilette.N1078514), [France Bleu Essity](https://www.francebleu.fr/emissions/la-nouvelle-eco-en-alsace/alsace/marc-specque-hausse-des-prix-pour-les-produits-d-hygiene-essity).
-- **Confiance** : ★★★ (filière OK, risque 100 % comportemental).
+- **État au 13 juillet** : [FAIT] production française (Essity, Hayat, Wepa), pâte importée par flux Atlantique (hors Ormuz) ; coûts +15-25 % (énergie, emballage) ; aucune rupture.
+- **Trajectoire C** : 🟡 S29-S36 → 🟡→🟢 S37-S40 (hors ruée comportementale — wildcard classique). **B/A** : 🟡→🟢.
+- **Date butoir** : reconstitution simple **avant le 31 juillet (S31)** ; 2 packs de 24 ≈ 25-35 €.
+- **Sensibilité** : `++` (mémoire 2020) · **Confiance** : ★★★ · **Sources** : industriels.
+- **Vs Édition 2.9** : inchangé (🟡 prix).
 
 #### 5.4.7 Lessive, savon, gel douche
 
-- **Stocks France** : marché 5+ Md€/an. Production France pour P&G (Amiens), Henkel (Reims), Unilever (Le Meux), Colgate (Compiègne). Tensioactifs souvent dérivés pétrochimiques ou huile de palme/coco.
-- **Dépendance Ormuz** : tensioactifs synthétiques : exposés prix pétrole. Huile de palme : Indonésie/Malaisie via conteneur (Cap Bonne-Espérance, +10-15 j). Emballages PET/PEHD : pétrochimie. Hausse coûts production +15-25 %.
-- **Substituts** : savon de Marseille (France, oléochimie OK), lessive maison (savon Marseille + bicarbonate + cristaux soude). Marques distributeurs moins exposées.
-- **Reco stock 4 pers./1 mois** : 1 bidon lessive 5 L, 4 gels douche/shampoing, 6 savons de Marseille 300 g, 2 bouteilles liquide vaisselle. **Budget : 35-50 €**.
-- **Date butoir** : **21 juin 2026 (S25)** sur formats économiques. **24 mai 2026 (S22)** pour produits parfumés/premium.
-- **Sensibilité déclencheurs** : `++` (promo enseignes, pics prix Brent, panique secondaire après papier toilette).
-- **Sources** : [LSA Conso](https://www.lsa-conso.fr/l-industrie-de-l-entretien-se-frotte-au-made-in-france,139304), [FEBEA](https://www.febea.fr/presse/la-febea-alerte-lance-le-beauty-industry-package-industrie-cosmetique-competitive-durable), [Mordor Intelligence détergents](https://www.mordorintelligence.com/industry-reports/laundry-detergents-market).
-- **Confiance** : ★★★.
+- **État au 13 juillet** : [FAIT] production française (P&G, Henkel, Unilever, Colgate) ; tensioactifs pétrochimiques et huiles tropicales (routes du Cap) ; coûts +15-25 % depuis février ; aucune rupture.
+- **Trajectoire C** : 🟠 S29-S36 (**palier de prix**) → 🟠→🟡 S37-S40. **B** : 🟡. **A** : 🟢→🟡.
+- **Date butoir** : reconstitution **avant le 31 juillet (S31)** ; kit 1 mois ≈ 35-50 €.
+- **Sensibilité** : `++` · **Confiance** : ★★★ · **Sources** : industriels, indices pétrochimie.
+- **Vs Édition 2.9** : inchangé (prix, pas offre).
 
 #### 5.4.8 Piles AA/AAA + ampoules LED
 
-- **Stocks France** : piles alkaline AA/AAA ~95 % importées Asie. Distributeurs : stocks 4-6 semaines. Ampoules LED : 90 %+ Chine via conteneur.
-- **Dépendance Ormuz** : piles : 70-95 % via conteneur Asie-Europe (Cap Bonne-Espérance OK ; suspension export Chine batteries levée nov 2025-nov 2026). LED : 90 % Chine. Surcoûts +1500-4000 $/conteneur impactés sur prix linéaire (+15-30 %).
-- **Substituts** : piles rechargeables (NiMH Eneloop), bougies, lampes solaires. Ampoules LED stockées 2-3 mois.
-- **Reco stock 4 pers./1 mois** : 16 piles AA + 16 piles AAA + 4 ampoules LED E27 + 4 GU10. **Budget : 40-70 € (alkaline) / 80-120 € (rechargeables + chargeur)**.
-- **Date butoir** : **15 juin 2026 (S24)** sur piles. **28 juin 2026 (S26)** sur LED.
-- **Sensibilité déclencheurs** : `++` (suspension export Chine fin 2026 — échéance novembre, saisie navires conteneur, crise électrique France).
-- **Sources** : [Docshipper fret France-Chine 2026](https://docshipper.fr/fret-chine-france-tarifs-temps-transit-droits-taxes-conseils-import-export/), [Inkubox conteneur](https://inkubox.com/conteneur-chine-france-couts-delais/), [Sino-Shipping](https://www.sino-shipping.com/fr/country-guides/shipping-from-china-to-france/).
-- **Confiance** : ★★★.
+- **État au 13 juillet** : [FAIT] ~95 % import Asie ; stocks distributeurs 4-6 semaines ; fret conteneur +15-30 %. **[CORRECTION adversariale]** : la « suspension d'exports de batteries chinoises » invoquée par les éditions précédentes est une lecture inversée — la décision MOFCOM n°70/2025 **suspend les CONTRÔLES à l'export** (facilitation, trêve commerciale) jusqu'au **10 novembre 2026** ; l'échéance réelle (réactivation éventuelle des contrôles) est **hors fenêtre**.
+- **Trajectoire C** : **🟠 toute la fenêtre** (surcoût fret + demande saisonnière « préparation hiver » en septembre) — **le 🔴 d'octobre est retiré**, aucun mécanisme vérifié ne franchit le seuil « dispo < 30 % ». **B** : 🟡-🟠. **A** : 🟡. **À surveiller APRÈS S40** : décision chinoise du 10-11 novembre.
+- **Date butoir** : **avant le 30 août (fin S35)** — avant la demande de rentrée/hiver ; 16 AA + 16 AAA + 8 LED ≈ 40-70 € (rechargeables + chargeur : 80-120 €, meilleur choix).
+- **Sensibilité** : `++` (récits « délestage hiver ») · **Confiance** : ★★★ · **Sources** : MOFCOM 70/2025 (via relecture adversariale — HSF/CIRS/Jones Day), Drewry (fret).
+- **Vs Édition 2.9** : **correction de mécanisme majeure** — le faux embargo chinois est retiré, le palier redescend à 🟠 constant.
 
-#### 5.4.9 Bougies + lampes à pétrole / lampe-tempête 🚨
+#### 5.4.9 Bougies + pétrole lampant / lampes-tempête 🚨
 
-- **Stocks France** : bougies utilitaires : production mixte France (Bolsius, Spaas Belgique) + Chine. **Marché de niche, stocks distributeurs faibles (2-4 sem.).** Lampes-tempête : 80 % Chine/Inde (Dietz, Feuerhand "made in Germany" rare). Pétrole lampant : produit pétrolier (Total), exposé Brent + raffinage.
-- **Dépendance Ormuz** : bougies basique : ~50 % UE + 50 % Chine. Bougies parfumées/longue durée : Chine massivement. Lampes-tempête : 80 % Asie, conteneur. **Pétrole lampant : produit raffiné, prix indexé Brent (+40-60 % vs pré-crise)**.
-- **Substituts** : lampes solaires (Asie), lampes dynamo (Asie), feu de bois pour cuisson, lampe frontale LED.
-- **Reco stock 4 pers./1 mois** : 1 lampe-tempête + 5 L pétrole lampant (durée ~50 h éclairage). 2 paquets 50 bougies chauffe-plat. 4 bougies cylindriques 24 h. 1 lampe frontale LED par personne + piles. **Budget : 60-120 €**.
-- **Date butoir** : **🚨 24 mai 2026 (S22) sur lampes-tempête. 15 juin 2026 (S24) sur pétrole et bougies. C'est la priorité achat la plus urgente du tableau.**
-- **Sensibilité déclencheurs** : `+++` (annonces RTE/EDF tension électrique, couverture média préparation hiver 2026-2027 dès juin).
-- **Sources** : [Idealo lampes 2026](https://www.idealo.fr/cat/12772F3483718/lampes-de-camping.html), [Guillouard](https://www.guillouard.com/produit/nouvelle-lampe-a-petrole/), [SVB Marine](https://www.svb-marine.fr/fr/categorie/lampe-tempete-marine).
-- **Confiance** : ★★ (marché de niche, peu d'observations Tier 1 — recommandation conservatrice).
+- **État au 13 juillet** : [FAIT] **pétrole lampant : déjà 🔴 depuis juin** (produit raffiné indexé Brent, +40-60 % vs pré-crise, distribution résiduelle) ; lampes-tempête ~80 % Asie, **marché de niche à stocks minces** (2-4 semaines distributeurs) — dépletable en jours si la demande « préparation blackout » s'active ; bougies 50 % UE / 50 % Chine. [GAP] Prix pétrole lampant de juillet non relevé précisément.
+- **Trajectoire C** : **🔴 toute la fenêtre** pour le pétrole lampant (indexation Brent + niche) ; lampes-tempête/bougies : disponibilité correcte à J136 mais **premier produit à disparaître en cas de récit médiatique « délestages d'hiver »** (RTE/EcoWatt) attendu à partir de septembre. **B** : 🟠 (Brent plus bas). **A** : 🟡.
+- **Date butoir** : **action immédiate en cours de S29 (13-19 juillet)** — l'échéance formelle est dépassée depuis mai : compléter maintenant le kit (1 lampe-tempête + 5-10 L de pétrole lampant + bougies + frontales LED + piles) ≈ 60-120 €. **Stockage du pétrole lampant : local ventilé, jamais en habitat collectif.**
+- **Sensibilité** : `+++` (récit délestage = ruée quasi certaine) · **Confiance** : ★★ (niche, peu de données Tier 1) · **Sources** : distributeurs spécialisés, RTE (contexte).
+- **Vs Édition 2.9** : trajectoire confirmée (seul 🔴 hérité maintenu) ; libellé de date corrigé (« action immédiate », pas une date passée).
 
 #### 5.4.10 Power banks + masques FFP2 + gants
 
-- **Stocks France** : **Power banks** : 100 % import Asie (Anker, Xiaomi, Romoss). Stocks distributeurs 4-8 semaines. **Masques FFP2** : stock stratégique État = **680 millions FFP2 + 1,35 Md chirurgicaux + 100 000 FFP3** ; reconstitution 2024 origine européenne. **Gants** : 1,15 Md autres EPI mobilisables ; production majoritairement Malaisie/Thaïlande via conteneur.
-- **Dépendance Ormuz** : power banks : 100 % Asie conteneur (Cap Bonne-Espérance OK ; suspension export Chine batteries levée jusqu'à novembre 2026). FFP2 : ~30-40 % Asie + 60-70 % UE/France post-Covid. Gants : 70-85 % Malaisie/Thaïlande conteneur.
-- **Substituts** : power banks : pas de substitut domestique. Masques chirurgicaux ↔ FFP2 selon usage. Gants : tissu lavable insuffisant médical.
-- **Reco stock 4 pers./1 mois** : **2 power banks 10 000-20 000 mAh + câbles USB-C. 1 boîte 50 FFP2. 2 boîtes 100 gants nitrile (taille S/M/L). Budget : 80-150 €**.
-- **Date butoir** : **🚨 power banks : 24 mai 2026 (S22) — fenêtre courte.** Gants : avant 15 juin 2026 (S24). FFP2 : pas urgent (stock État + production France).
-- **Sensibilité déclencheurs** : `++` (échéance suspension export Chine batteries — novembre 2026 ; reprise Covid-like ; délestage électrique France).
-- **Sources** : [Caducee.net stock État masques](https://www.caducee.net/actualite-medicale/16788/stocks-de-masques-et-d-epi-la-france-face-au-mur-de-la-peremption-en-2026.html), [LeQuotidienDuPharmacien FFP2](https://www.lequotidiendupharmacien.fr/exercice-pro/ffp2-le-dilemme-du-made-france), [Checkitprocure power banks](https://blog.checkitprocure.com/can-you-still-ship-power-banks-and-lithium-batteries-from-china-2026-export-update).
-- **Confiance** : ★★★.
+- **État au 13 juillet** : [FAIT] power banks 100 % Asie (fret +20-30 %, stocks 4-8 semaines) — **même correction MOFCOM que 5.4.8** (pas d'embargo, échéance réelle hors fenêtre) ; FFP2 : **stock d'État ~680 M + production France** — le pic de demande de mai a été absorbé ; gants : Malaisie/Thaïlande (routes du Cap/mer Rouge).
+- **Trajectoire C** : power banks **🟠 toute la fenêtre** (fret + demande « kit d'urgence » de septembre — pas de 🔴) ; FFP2 **🟡** (stock d'État = amortisseur) ; gants 🟡. **B** : 🟡. **A** : 🟡.
+- **Date butoir** : power banks — **avant le 30 août (fin S35)** si non équipé (2 × 10-20 000 mAh ≈ 40-80 €) ; FFP2 : sans urgence (1 boîte ≈ 20 €) ; gants : reconstitution avant le 31 juillet ≈ 15-30 €.
+- **Sensibilité** : `++` · **Confiance** : ★★★ · **Sources** : MOFCOM (via relecture), Santé publique France (stock d'État).
+- **Vs Édition 2.9** : faux embargo retiré ; FFP2 rétrogradé à 🟡 (stock d'État documenté).
 
 ---
 
@@ -826,7 +683,7 @@ Chaque date prévisionnelle de bascule est obtenue par **croisement de 5 facteur
 **Limites explicites de la méthode** :
 - Le **niveau réel des stocks France au déclenchement** (28 février 2026) n'est pas public pour les médicaments individuels ni pour les stocks privés agro-alimentaires. Marge ±2-3 semaines sur les bascules de paliers.
 - Le **risque comportemental (ruée panique)** est intrinsèquement non datable : il dépend d'un déclencheur média imprévisible (tweet, JT, photo de rayon vide). Il peut transformer un palier 🟢 en 🟠 en 48-72 h indépendamment des stocks réels. Aucune des dates ci-dessus ne capture ce wildcard.
-- Le **scénario B exclut le scénario C par hypothèse**. En cas d'incident majeur (mine touchant tanker à pleine charge, tir mortel US-CGRI, frappe centrales iraniennes), basculer vers le scénario C avec : avancement de toutes les dates butoirs de 4 semaines, montée d'un cran de tous les paliers.
+- La **trajectoire centrale C n'est pas une certitude (40-50 %, modal)**. En cas de re-capage confirmé (corridor omanais accepté, session de Doha tenue, transits AIS durablement > 40/j), appliquer la lecture B de l'Annexe C ; en cas d'aggravation franche (première victime américaine, frappe sur un terminal pétrolier, Brent > 90 $ durable, Dated Brent > 100 $), avancer les dates butoirs de 2-4 semaines et monter d'un cran les paliers carburants/fioul/AdBlue.
 - Les **portails URL listés** sont des points de vérification permanents (UFIP, FranceAgriMer, ANSM, etc.), **pas des articles datés 2026**. C'est à l'utilisateur de consulter les bulletins en cours pour vérifier l'évolution réelle vs cette projection.
 
 ---
@@ -897,31 +754,29 @@ Sources mobilisées pour ce document **en complément** du tableau central [sour
 
 ---
 
-## Annexe C — Bornes alternatives (lecture sous A et C)
+## Annexe C — Bornes alternatives (lecture sous B et A)
 
-Ce calendrier est rédigé strictement sous le **scénario B**. Pour les bornes haute et basse, appliquer les ajustements suivants :
+Ce calendrier est rédigé sous la **trajectoire centrale C (modal, 40-50 %)**. Les paliers et dates butoirs ci-dessus intègrent déjà la prudence — il n'y a **pas** de « lecture pire » à appliquer par défaut. Pour les bornes moins sévères :
 
-### Sous le scénario A — Optimiste (signature MOU, réouverture progressive du détroit)
+### Sous le scénario B — Enlisement / re-capage (30-40 %, presque aussi probable que C)
 
-**Déclencheurs probables** : signature effective MOU "one-page memo" US-Iran, reconnaissance publique négociations directes par Téhéran, Brent < 90 $ durablement, déminage > 20 mines neutralisées (cf. signaux scenario_optimiste.md).
-
-**Effets sur ce calendrier** :
-- **Décaler toutes les dates butoirs de 4 à 8 semaines vers l'avenir**
-- **Atténuer les paliers de 1 cran** (🟠 → 🟡, 🟡 → 🟢) sauf produits déjà en pénurie pré-existante (sartans, paracétamol pédiatrique, poisson frais, huile tournesol — lesquels relèvent de tensions structurelles indépendantes d'Ormuz)
-- **Maintenir les recommandations stock pour les produits ★★ (faible confiance)** : la prudence reste de mise sur lampes-tempête et power banks dont le marché est fragile indépendamment de la crise
-
-### Sous le scénario C — Pessimiste (escalade militaire, fermeture totale, blocus généralisé)
-
-**Déclencheurs probables** : tir mortel détroit US/CGRI, frappes US sur centrales/ponts iraniens, blocage effectif Bab al-Mandeb par Houthis, Brent > 120 $ futures, échec total round Liban-Israël (cf. signaux scenario_pessimiste.md).
+**Déclencheurs probables** : acceptation iranienne du double corridor omanais, session de Doha effectivement tenue, nouvelle licence pétrolière US au 17 juillet (au lieu d'une expiration sèche), transits AIS durablement > 40/j, Brent stabilisé < 80 $.
 
 **Effets sur ce calendrier** :
-- **🚨 Avancer toutes les dates butoirs de 4 semaines vers le passé** (ex : date butoir gazole passe du 31 mai au 3 mai → déjà passée → urgence immédiate)
-- **Monter tous les paliers d'un cran** (🟢 → 🟡, 🟡 → 🟠, 🟠 → 🔴)
-- **Ajouter un palier 🔴 systématique en S26-S30** sur produits 100 % import Asie (riz basmati, café, thé, fruits exotiques, power banks, piles, pétrole lampant)
-- **Activer rationnement administratif probable** sur gazole (préfectoral) et médicaments MITM (ANSM allocation hospitalière)
-- **Ruée panique multi-produits simultanée probable** — éviter de contribuer en achetant en grandes quantités un seul produit ; étaler par catégorie
+- **Atténuer d'un cran les paliers liés à Ormuz** (🟠 → 🟡 sur carburants, GPL, AdBlue, fret alimentaire) — **mais PAS les paliers exogènes**, qui tiennent sous B comme sous C : café (climat Brésil), distillats mondiaux (Russie), gaz (PRVG déjà acté, force majeure qatarie), Doliprane adulte/amoxicilline (ANSM, API Asie), pétrole lampant (indexé Brent), TVA eau embouteillée.
+- **Décaler les dates butoirs de 2 à 4 semaines vers l'avenir** (hors médicaments et café, dont les échéances sont saisonnières/climatiques, pas géopolitiques).
+- **Maintenir les recommandations d'anticipation d'hiver** (fioul avant fin août, kit éclairage) : l'hiver gazier dégradé est largement acquis quel que soit le scénario (UGS ~72 % en trajectoire, PRVG +7,4 % déjà acté).
 
-> **En cas de bascule C détectée** (incident majeur dans le détroit, tir mortel, échec négociations totales) : **stop immédiat de la lecture sous B, basculer sur scenario_pessimiste.md** et réviser toutes les recommandations.
+### Sous le scénario A — Accord durable (8-15 %, très improbable)
+
+**Déclencheurs probables** : accord formalisé sur les conditions US du 10 juillet (y compris le volet uranium), réouverture mesurée et continue d'Ormuz (> 60/j), levée de la force majeure qatarie, Brent < 70 $ durable.
+
+**Effets sur ce calendrier** :
+- **Atténuer de 1 à 2 crans tous les paliers Ormuz-dépendants** en 4-6 semaines (le physique met des semaines à suivre le diplomatique — le déminage et les assurances ne se normalisent pas par décret).
+- **Les exceptions exogènes demeurent** : café, Doliprane adulte, amoxicilline, pétrole lampant (qui suit le Brent à la baisse, mais reste un marché de niche fragile).
+- Ne pas liquider les stocks de précaution constitués : les recommandations de fond (réservoir > 50 %, fioul avant l'hiver, pharmacie familiale raisonnable) restent valables hors crise.
+
+> **En cas de bascule C confirmée à la hausse** (première victime américaine, frappe sur Kharg, Brent > 90 $ durable, Dated Brent > 100 $, rationnement administratif annoncé) : **avancer toutes les dates butoirs de 2-4 semaines, monter d'un cran les paliers carburants/fioul/AdBlue**, et relire [scenario_pessimiste.md](scenario_pessimiste.md) — sans achat de panique : étaler par catégorie, ne pas vider un rayon.
 
 ---
 
@@ -935,10 +790,13 @@ Ce calendrier est rédigé strictement sous le **scénario B**. Pour les bornes 
 | **17 mai 2026 (J78)** | **2.2** | OSINT Ormuz | **Restitution trajectoire enlisement 3 mois** suite à challenge utilisateur (« beaucoup trop optimiste »). **Diagnostic** : Édition 2.1 avait correctement décalé les bascules court terme S19-S22 mais avait à tort atténué les paliers cibles tardifs S25-S30. **Sous scénario B sustained 3 mois (60-68 %), l'enlisement amplifie progressivement** via 5 mécanismes cumulés : (i) inflation alimentaire retardée (+4-6 % a/a juillet-août, vs +1,2 % avril), (ii) récolte 2026 compromise (engrais urée +30 %, qualité protéique en baisse Arvalis, tournesol mer Noire juillet-août), (iii) stocks SAGESS + SPR US + API génériques Asie fondants à mi-juin, (iv) stockage gaz UE 34,3 % vs cible 90 % = industries énergivores en chômage partiel dès juillet, (v) ruée comportementale + saison froide automnale anticipée. **Corrections appliquées** : (a) Top 12 réorganisé avec **vue 3 mois** — anticipation hiver (fioul, pétrole lampant, huile tournesol récolte compromise) + anticipation rentrée ORL (paracétamol pédiatrique, antibiotiques, sartans) + anticipation suspension Chine novembre (power banks, piles) ; (b) matrices énergie : essences SP95 et GPL renforcés 🟠 S26-S30, gaz résidentiel 🟠 S28-S30 (hiver gazier anticipé sur marchés), kérosène 🟠 dès S25 (effet été) ; (c) matrices alimentation : huile tournesol **🔴 S29-S30** (récolte), riz basmati **🔴 S29-S30** (océan Indien sustained), café 🟠→🔴 S30, légumineuses 🟠/🔴 S30, conserves 🟠 S28-S30, pâtes 🟡 S28-S30 (transport Italie), huile olive 🟠 S28-S30 (cumul transport), sucre 🟡 S28-S30 ; (d) matrices frais : porc/volaille 🟠 S27-S30 (alimentation animale), œufs 🟠 S27-S30, lait frais et beurre/fromages 🟠 S27-S30, fruits exotiques **🔴 S29-S30** ; (e) matrices hygiène/santé : **paracétamol pédiatrique 🔴 S29-S30**, **sartans 🔴 S29-S30**, **amoxi/clav 🔴 S30** (rentrée automne ORL), eau embouteillée 🟠 S27-S30 (canicule + PET cher + ruée), piles+LED 🟠 dès S25 → 🔴 S30, power banks 🟠 S28-S30 (suspension Chine batteries novembre) ; (f) **Levothyrox** : ligne dédoublée — **princeps Merck (UE) reste 🟢** toute la période avec petite vigilance 🟡 S30 ; **générique (Thyrofix/Tcaps) bascule 🟡 dès S27 → 🟠 S30** (API Inde/Chine sustained 3 mois) ; (g) note matrices restructurée en 3 fenêtres (S19-S22 actuelle / S23-S26 propagation / S27-S30 cumul). **Confiance globale** : maintenue ★★★★. **Principe directeur 2.2** : le calendrier n'est pas un instantané court terme — c'est une trajectoire prévisionnelle 3 mois sous scénario central. Une absence de tension actuelle sur l'huile tournesol ne signifie PAS une absence fin juillet : il faut **acheter maintenant pour les bascules 🔴 attendues fin de période**. |
 | **3 juin 2026 (J95)** | **2.7** | OSINT Ormuz | **Mise à jour fenêtre 28 mai → 3 juin.** **Probabilités révisées : B 58-64 %, A 10-15 % (-2 pts ; Iran SUSPEND les pourparlers le 1er juin), C 24-32 % (re-armement : menace fermeture complète Ormuz + Bab el-Mandeb).** Ajout du bloc « **🔧 Affinage Édition 2.7** » (6 points : a. suspension Iran → re-armement C ; b. Exxon projette cargaisons physiques Brent 150-160 $/b sous 2-3 sem. ; c. **douleur sur l'AVAL du baril** — raffinés 2-3× le brut, Fortune/JPMorgan ; d. urée >850 $/t +80 % + tender Inde 2,5 Mt à 950 $/t ; e. stockage gaz UE 38 % → tension hivernale ; f. **remise carburant 20 c/L expire fin juin** → marche d'escalier pompe début juillet). Ajout synthèse fenêtre J95. **Chiffres actualisés** : Brent 96,89 $ (-15,3 % sur 1 mois mais +49,4 % YoY), SPR US **365,1 mb** (-9,1 vs 374,2), TTF **47,69 €/MWh** (+32,2 % YoY), stockage gaz UE **38 %**, urée **>850 $/t**, INSEE IPC mai **+2,4 %**. **Dates butoirs gazole/fioul/essence repositionnées sur « avant fin juin »** (expiration remise 20 c/L). Fiches 5.1.1, 5.1.2, 5.1.4, 5.1.6, 5.1.9 actualisées. Cessez-le-feu Liban 1er juin (Israël épargne Dahiyeh) ; 3 militaires FR FINUL inchangé ; EAU sortis de l'OPEP (3 mai). **Confiance globale** : maintenue ★★★★. |
 | **6 juin 2026 (J98)** | **2.8** | OSINT Ormuz | **Consolidation J98 (fenêtre 3-6 juin = enlisement scénario B).** **Probabilités révisées : B 60-66 % (⬆️ léger, CENTRAL), A 8-15 % (⬇️ : escalade militaire + cessez-le-feu Liban du 3 juin rejeté par le Hezbollah le 4 juin), C 22-30 % (➡️ stable : escalade réelle mais revendication Ve Flotte démentie, missiles interceptés, Brent papier en baisse, thèse Exxon non matérialisée).** Ajout du bloc « **🔧 Affinage Édition 2.8** » (7 points α-η + pertes). **Chiffres actualisés** : Brent ~93,1 $ clôture (5 juin) après pic intraday 3 juin ~99 $, WTI ~90,5 $, **spread Brent-WTI ~2,5 $/b** ; **SPR US 357,1 mb** (sem. au 29 mai, corrige 365,1) ; **gaz UE ~41,5 %** (corrige 38 % qui datait du 23 mai), cible hivernale assouplie à 80 %, Pays-Bas < 16 % ; **force majeure Ras Laffan prolongée mi-août** (corrige mi-juin) ; gazole pompe **2,047 €/L**, SP95 2,032, SP98 2,074, E10 1,973 (5 juin) ; gazole pro CNR **+29,3 % vs février** (en repli depuis pic +42,7 %) ; **INSEE IPC mai +2,4 %** (IPCH +2,8 %) ; **urée : futures papier ~419 $/t (-32 % m/m) vs physique livré ~935-959 $/t ≈ ×2**. **Nouveaux faits intégrés** : [FAIT/C2] au détail l'**ESSENCE plus touchée que le diesel** (~2 307 stations en difficulté, gazole = le moins touché 442 vs SP98 1 139) ; [FAIT/B2] **AdBlue = risque anticipé, AUCUNE rupture constatée** (*gap*) ; [SPÉCULATION] thèse Exxon 150-160 $ **non matérialisée à J98**, Dated Brent physique courant = *gap* ; [FAIT/A2] **7e Casque bleu FINUL tué le 4 juin** (sergent serbe Jovanović), **3 militaires FR au Moyen-Orient inchangé** (2 FINUL + 1 Chammal/Irak). **Gaps signalés (non chiffrés)** : Dated Brent physique courant, croissance BdF révisée (annonce 1er juin, chiffre ~mi-juin), inflation FR juin (avant le 30 juin), débit Ormuz J98 exact (8-16 % de la normale, projection « ~50 % fin juin » = spéculation mono-source Energy Aspects). Fiches 5.1.1, 5.1.6, 5.1.9 actualisées. **Confiance globale** : maintenue ★★★★. |
+| **15 juin 2026 (J108)** | **2.9** | OSINT Ormuz | *(entrée reconstituée a posteriori — l'Édition 2.9 n'avait pas été consignée dans ce journal)* Consolidation J108 : accord US-Iran « complet » et confirmé côté iranien (signature alors attendue le 19 juin), blocus naval ordonné levé, Brent sous 84 $, gazole pompe 1,988 €/L en baisse, urée en détente (~400 $/t), AdBlue stable. Probabilités d'alors : A 35-45 % (⬆️), B 38-46 %, C 14-22 % (⬇️). Dates butoirs resserrées sur « avant fin juin » (expiration remise 20 c/L). Bloc « Affinage 2.9 » en tête de document. |
+| **13 juillet 2026 (J136)** | **3.0** | OSINT Ormuz | **REFONTE COMPLÈTE — nouvelle fenêtre S29→S40 (13 juillet-4 octobre), ré-ancrage sur C modal (40-50 % à J135), re-cotation des 42 produits.** Méthode : workflow multi-agents — 4 collecteurs par catégorie (recherche web produit par produit, Sonnet/Haiku) + 4 relecteurs adversariaux (Sonnet) → **29 ajustements appliqués**, dont 12 rétrogradations (anti « optimisme inversé ») et 2 aggravations (Doliprane adulte contingenté ANSM ; amoxicilline pédiatrique ~30 % officines en rupture en mai, USPO). **Corrections de mécanisme** : soja Brésil (Atlantique, pas Ormuz — canal réel : engrais différé), ananas (Costa Rica, pas Asie), poisson importé (mer Rouge/gazole marin, pas Ormuz — 🔴 retiré), « suspension batteries Chine » (en réalité suspension des contrôles à l'export jusqu'au 10 nov, facilitation — 🔴 piles/power banks retiré). **Faits nouveaux structurants** : Brent 79,02 $ au 13/7 (+3,96 %, réaction mesurée, source unique à confirmer) ; PRVG gaz CRE +7,4 % au 1/7 (~1,5 pt d'acheminement hors Ormuz) ; inflation alimentaire française +0,9 % a/a (décélération, 5ᵉ mois) ; choc café arabica +16,2 % le 6/7 (climat Brésil) ; fret Asie-Europe +5 % (FAK 7 000-8 500 $/40' au 15/7) ; canicule (réacteurs bridés, lait −10/−30 % Grand Ouest). **Aucune pénurie nouvelle constatée à J136** — le risque de la fenêtre est un choc de prix différé et un automne cumulatif (rentrée + campagne fioul + hiver gazier + fin des aides). Top 12 refondu, Annexe C inversée (bornes B et A), 42 fiches réécrites. Confiance globale ★★★★ (hétérogène, gaps assumés). |
 
 **Prochaines révisions à anticiper** :
-- **Vendredi 13 juin 2026 (J~105)** — suite de l'escalade militaire 2-6 juin (cycle action-riposte Ormuz, statut du cessez-le-feu Liban mort-né du 3 juin rejeté le 4 juin) + **chiffre révisé de croissance FR 2026 (Banque de France, attendu ~mi-juin)** + point Exxon « cargaisons physiques 150-160 $/b » (échéance, à confirmer ou infirmer par une assessment Platts/Argus) + bulletin UFIP hebdo + niveau SPR US hebdo + bulletin AdBlue/urée (papier vs physique)
-- **Mi-juin 2026 (J~108)** — niveau stockage gaz UE vs trajectoire 80/90 % + suivi de la force majeure Ras Laffan (échéance mi-août) + premier signal éventuel de rupture/allocation AdBlue (aucune à J98)
-- **🚨 Fin juin 2026 (J~120)** — **EXPIRATION DE LA REMISE CARBURANT 20 c/L** : valider l'effet marche d'escalier sur gazole/essence/fioul au 1er juillet + arbitrages aides Lecornu
-- **Réévaluation J108 (fin juin)** — Levothyrox + tests dates butoirs S26 (power banks, piles, AdBlue)
-- **Mensuel** — révision fréquentielle complète après publication AIE OMR + EIA STEO + FAO FPI
+- **Lundi 20 juillet 2026 (S30)** — moyenne DGEC de la semaine du 13 (1ʳᵉ moyenne officielle post-fermeture déclarée) + verdict TTF/Dated Brent + suites de l'échéance du **17 juillet** (wind-down pétrolier + §4/§5 MOU) + statut du corridor omanais/Doha
+- **Fin juillet 2026 (S31)** — expiration de l'aide « grands rouleurs » (31/7) + échéance annoncée de l'interdiction d'export diesel russe (31/7 : reconduction ou levée = inflexion majeure pour gazole/fioul) + point mensuel FAO/OPEP+ (réunion du 2 août)
+- **Mi-août 2026 (S33-S34)** — **fin de la fenêtre nucléaire du MOU** (sous C modal, l'échec est le défaut : réévaluer carburants/AdBlue/GPL à la hausse si nouvelle salve) + bulletin ANSM (Doliprane/amoxicilline avant rentrée) + trajectoire UGS gaz
+- **Fin août 2026 (S35)** — fin de l'aide GNR agricole (31/8) + date butoir fioul (remplissage avant campagne) + résultat récolte tournesol/durum France (confirme ou infirme les bascules alimentaires S36+)
+- **Rentrée (S36-S37)** — pics ORL (antibiotiques), logistique de rentrée, 1ᵉʳ point de la campagne fioul, révision CRE gaz d'octobre en approche
+- **Mensuel** — révision complète après publication AIE OMR + EIA STEO + FAO FPI + bulletin ANSM
