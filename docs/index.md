@@ -111,8 +111,9 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 | `calendrier_penuries.md` | Calendrier prévisionnel des pénuries S29→S40 (13 juillet → 4 octobre 2026) — Édition 3.0, 42 produits, trajectoire centrale C modal + bornes B/A |
 | `impacts_agricoles.md` | Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France |
 | `infrastructures_europe.md` | Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays |
+| `pertes_humaines_materielles.md` | Recensement documenté des pertes humaines et matérielles J1→J136 (fourchettes, cotes, contradictions exposées — **fait foi sur les pertes**) |
 | `sources.md` / `sources_infrastructures*.md` | Tableaux des sources OSINT classées par fiabilité et domaine |
-| `app/` | Application web — 9 dashboards HTML statiques (Observatoire, cartes, dépendances, ressources, impacts agricoles, stocks) |
+| `app/` | Application web — 10 dashboards HTML statiques (Observatoire, chronologie, pertes, cartes, dépendances, ressources, impacts agricoles, stocks) |
 
 ---
 

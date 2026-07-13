@@ -12,6 +12,7 @@
   var LINKS = [
     { key: "accueil",        href: "index.html",                            label: "Accueil" },
     { key: "chronologie",    href: "chronologie.html",                      label: "Chronologie" },
+    { key: "pertes",         href: "pertes.html",                           label: "Pertes" },
     { key: "carte-ormuz",    href: "carte_infrastructures.html",            label: "Carte zone Ormuz" },
     { key: "carte-europe",   href: "carte_infrastructures_europe.html",     label: "Carte Europe" },
     { key: "dependances-ue", href: "dependances_ormuz_pays.html",           label: "Dépendances UE (énergie)" },

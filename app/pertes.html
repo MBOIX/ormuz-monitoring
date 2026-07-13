@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertes humaines et matérielles — Crise du détroit d'Ormuz (13 juillet 2026 / J136)</title>
+<meta name="description" content="Recensement documenté en sources ouvertes des pertes humaines et matérielles de la crise du détroit d'Ormuz : fourchettes, statuts de vérification, contradictions exposées.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d1117">
+<link rel="stylesheet" href="styles_common.css">
+<style>
+  .statut { display: inline-block; padding: 1px 7px; border-radius: 9px; font-size: 10.5px; font-weight: 600; white-space: nowrap; }
+  .st-conf { background: rgba(63,185,80,0.18); color: var(--green, #3fb950); border: 1px solid rgba(63,185,80,0.4); }
+  .st-rapp { background: rgba(210,153,34,0.15); color: var(--yellow, #d29922); border: 1px solid rgba(210,153,34,0.4); }
+  .st-rev  { background: rgba(248,81,73,0.12); color: var(--red, #f85149); border: 1px solid rgba(248,81,73,0.4); }
+  .verif-tag { font-size: 10.5px; color: var(--text-dim); font-weight: normal; }
+  table.pertes { width: 100%; border-collapse: collapse; font-size: 12px; margin: 10px 0 18px; }
+  table.pertes th { text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--panel-border, #30363d); color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+  table.pertes td { padding: 6px 8px; border-bottom: 1px solid var(--panel-border, #21262d); vertical-align: top; line-height: 1.45; }
+  table.pertes tr:hover td { background: rgba(88,166,255,0.04); }
+  .tablewrap { overflow-x: auto; }
+  .num { text-align: right; white-space: nowrap; }
+  .warn-block { border-left: 3px solid var(--orange, #db6d28); background: rgba(219,109,40,0.06); padding: 10px 14px; border-radius: 4px; font-size: 12.5px; margin: 14px 0; }
+</style>
+</head>
+<body>
+
+<site-nav active="pertes"></site-nav>
+
+<main class="page">
+  <h1>Pertes humaines et matérielles — recensement documenté</h1>
+  <p class="subtitle">J1 → J136 (28 février → 13 juillet 2026). <strong>Recensement de ce qui est documenté en sources ouvertes — pas le bilan réel du conflit</strong> : les chiffres des parties au conflit sont des bornes basses par principe, une grande partie des pertes est invérifiable. Chaque entrée porte un statut (<span class="statut st-conf">confirmé</span> ≥ 2 sources indépendantes · <span class="statut st-rapp">rapporté</span> source unique crédible · <span class="statut st-rev">revendiqué / contesté</span> non corroboré) et une cote Admiralty. Les cumuls sont des fourchettes précisant <em>qui compte</em> ; les périmètres incompatibles ne sont jamais additionnés. Document source (fait foi sur les pertes) : <a href="../docs/pertes_humaines_materielles.md">docs/pertes_humaines_materielles.md</a> (v1.0). Contre-vérification adversariale : effectuée sur Liban/Golfe/Israël ✓ ; <strong>planifiée</strong> sur France/FINUL, Iran, marins/navires et matériel (interrompue — les sections concernées sont marquées).</p>
+
+  <h2>Vue d'ensemble — les grands cumuls (fourchettes)</h2>
+  <div class="summary">
+    <div class="summary-grid">
+      <div class="summary-stat"><div class="v">3 468 – 6 000+</div><div class="l">Morts Iran, « guerre des 40 jours » (28/2→8/4) — 3 décomptes concurrents, figés depuis avril (C3/F4)</div></div>
+      <div class="summary-stat"><div class="v">17 / 115</div><div class="l">Morts/blessés Iran, rechute 8-12 juillet (min. Santé, révisé 11/7) — vs 8-9 militaires selon l'IRNA (contradiction interne)</div></div>
+      <div class="summary-stat"><div class="v">4 320-4 321</div><div class="l">Tués Liban depuis le 2 mars (~9-11/7, min. Santé — borne basse, non désagrégé) · 12 207 blessés (B3)</div></div>
+      <div class="summary-stat"><div class="v">≥ 20-24</div><div class="l">Civils israéliens tués (tirs iraniens) — corrigé de « ≥4 » par contre-vérification (B2/C2) · IDF Liban : 16→~40 (C3)</div></div>
+      <div class="summary-stat"><div class="v">4</div><div class="l">Militaires français morts (3 combat + 1 accident) — FINUL de combat stricto sensu : 2 · ≥ 8-9 blessés (A1/C2)</div></div>
+      <div class="summary-stat"><div class="v">7</div><div class="l">Casques bleus FINUL tués (4 Indonésie, 2 France, 1 Serbie) — attributions non tranchées (A2)</div></div>
+      <div class="summary-stat"><div class="v">13 – 18</div><div class="l">Militaires US morts, tous théâtres (Pentagone 13 vs indépendants 17-18) — ~7 au combat / ~9 accidents ; 365-553 blessés (B2/C3)</div></div>
+      <div class="summary-stat"><div class="v">0</div><div class="l">Mort US/UK par action ennemie en zone Ormuz/Liban/mer Rouge depuis le blocus (13/4) — l'indicateur de bascule reste non déclenché (A2)</div></div>
+      <div class="summary-stat"><div class="v">≥ 18 + 1</div><div class="l">Marins civils tués (14 Ormuz dont 3 par frappe US + ≥4 mer Rouge) + 1 disparu (GFS Galaxy) · 11 otages (B2)</div></div>
+      <div class="summary-stat"><div class="v">~6 000</div><div class="l">Marins toujours bloqués (OMI, 8/7) — évacuation suspendue depuis le 25-26 juin (A1)</div></div>
+      <div class="summary-stat"><div class="v">104</div><div class="l">Marins militaires iraniens tués — frégate IRIS Dena torpillée (4/4) ; source unique, à recouper (C2)</div></div>
+      <div class="summary-stat"><div class="v">13 + 14</div><div class="l">Accidents industriels liés à la crise, À PART du bilan de guerre : Ras Laffan 21-22/6 (13) · hélico Aramco Ras Tanura 28/6 (14) (B2)</div></div>
+      <div class="summary-stat"><div class="v">42</div><div class="l">Aéronefs US perdus/endommagés au 13/5 (rapport CRS officiel, dont 24 drones MQ-9) — coût 29 Md$ (A2)</div></div>
+      <div class="summary-stat"><div class="v">&gt; 300</div><div class="l">Cibles iraniennes revendiquées par CENTCOM, 3 salves des 7-12 juillet — auto-déclaré, non corroboré par imagerie tierce (B2)</div></div>
+      <div class="summary-stat"><div class="v">~50 + 2</div><div class="l">Navires commerciaux nommés attaqués/saisis (Ormuz) + 2 coulés en mer Rouge — ~35 événements de mars-avril absents du dépôt jusqu'ici (B2)</div></div>
+      <div class="summary-stat"><div class="v">7 100 – 9 700+</div><div class="l">Agrégat global toutes parties (trackers non officiels, 9/7) — fourchette indicative, jamais un chiffre validé (D4)</div></div>
+    </div>
+  </div>
+
+  <div class="warn-block"><strong>Découverte majeure de ce recensement</strong> : le « zéro perte américaine » du dépôt ne vaut que pour la zone Ormuz/Liban/mer Rouge sous action ennemie depuis le blocus du 13 avril (toujours exact, démenti CENTCOM du 12/7 à l'appui). Sur l'ensemble de la guerre, <strong>13 à 18 militaires américains sont morts</strong> (quasi tous du 1ᵉʳ au 12 mars : frappe de drone sur le port de Shuaiba au Koweït — 6 morts —, crash accidentel d'un KC-135 — 6 morts…), plus 1 Britannique (accident). De même, ~35 attaques de navires de mars-avril, le bilan civil israélien (≥ 20-24), les commandants iraniens nommés et les accidents industriels (Ras Laffan, Ras Tanura) manquaient au dépôt.</div>
+
+  <h2>Pertes humaines — militaires français et FINUL <span class="verif-tag">[passe adversariale planifiée]</span></h2>
+  <div class="tablewrap"><table class="pertes">
+    <tr><th>Date</th><th>Nom / contingent</th><th>Circonstances</th><th>Statut</th></tr>
+    <tr><td>12/3</td><td><strong>Adj.-chef Arnaud Frion</strong> (42 ans, 7ᵉ BCA) — Chammal/Irak, pas FINUL</td><td>Frappe de 2 drones, base Mala Qara (Erbil) ; + 6 blessés français</td><td><span class="statut st-conf">confirmé</span> A1</td></tr>
+    <tr><td>18/4</td><td><strong>Florian Montorio</strong> (40 ans, 17ᵉ RGP, grade contesté) — FINUL</td><td>Embuscade de Ghanduriyah (Sud-Liban) ; « présumé Hezbollah » (ONU), démenti</td><td><span class="statut st-conf">confirmé</span> A1</td></tr>
+    <tr><td>18→22/4</td><td><strong>Cpl-chef Anicet Girardin</strong> (31 ans) — FINUL</td><td>Blessé dans la même embuscade (+2 autres blessés), décédé le 22/4</td><td><span class="statut st-conf">confirmé</span> A1</td></tr>
+    <tr><td>10/6</td><td><strong>1ʳᵉ cl. Florian Gilet/Gillet</strong> (21 ans, 8ᵉ RPIMa) — hors FINUL</td><td>Tir accidentel (DPMO Saliyeh) — orthographe incohérente jusque sur defense.gouv.fr</td><td><span class="statut st-conf">confirmé</span> A2</td></tr>
+    <tr><td>~28-30/3</td><td><strong>4 Casques bleus indonésiens</strong> (Rhomadhon ; 1 mort de ses blessures, nom inconnu ; Iskandar ; Ichwan)</td><td>Projectile sur position + IED contre convoi — attributions non tranchées (char israélien allégué / « IED probablement Hezbollah » vs « origine inconnue » UNIFIL)</td><td><span class="statut st-conf">confirmé</span> B2</td></tr>
+    <tr><td>3-4/6</td><td><strong>Sgt Milovan Jovanović</strong> (Serbie) — FINUL</td><td>Tir de mortier, position 7-2 (Marjeyoun) ; +2 blessés (Espagne, Salvador) ; attribution non tranchée</td><td><span class="statut st-conf">confirmé</span> B2</td></tr>
+  </table></div>
+  <p style="font-size:12px; color: var(--text-dim);">Total FINUL : <strong>7 tués</strong> (ONU, stable depuis le 4/6) + ≥ 11-13 blessés (reconstruction). Militaires US/UK : voir le document source §2.3 — 13-18 morts tous théâtres (dont ~7 au combat), <strong>0 par action ennemie en zone Ormuz/Liban/mer Rouge depuis le 13 avril</strong>.</p>
+
+  <h2>Pertes humaines — Iran <span class="verif-tag">[passe adversariale planifiée]</span></h2>
+  <div class="tablewrap"><table class="pertes">
+    <tr><th>Périmètre</th><th>Fourchette</th><th>Qui compte (biais)</th><th>Cote</th></tr>
+    <tr><td>« Guerre des 40 jours » (28/2→8/4) — morts</td><td class="num"><strong>3 468 – 3 636 – 6 000+</strong></td><td>Fondation des martyrs (gouv.) · HRANA (ONG : 1 701 civils + 1 221 mil. + 714 n.c.) · US/Israël (non détaillé) — <strong>figés depuis avril</strong></td><td>C3/C3/F4</td></tr>
+    <tr><td>Idem — blessés</td><td class="num">15 000 – 26 500</td><td>Anomalie : la source iranienne est la PLUS haute (inverse du biais habituel) — non comparable</td><td>C4/F4</td></tr>
+    <tr><td>Rechute (8-9/7, 2 nuits)</td><td class="num"><strong>14→17 morts / 78→115 blessés</strong></td><td>Min. Santé (révisé 11/7) <strong>vs IRNA : 8-9 militaires</strong>, aucun bilan civil — contradiction interne</td><td>C3/C4</td></tr>
+    <tr><td>3ᵉ salve (11-12/7)</td><td class="num">aucun total — 2 militaires nommés</td><td>Dont lt Hamidreza Dehghani (marine régulière — Artesh, pas CGRI), Jask ; sources iraniennes uniques</td><td>C3</td></tr>
+    <tr><td>Dirigeants/commandants nommés</td><td class="num">≥ 13 nommés</td><td>Khamenei (+ ≥4 famille), Shamkhani, Pakpour, Mousavi, Nasirzadeh, Baseri, Panjaki, Larijani ×2, Soleimani, Badfar, Khatib, Tangsiri, Khademi — « ~40 » (Israël) / « 48 » (Trump) non détaillés</td><td>B2 (nommés) / C3-C4 (agrégats)</td></tr>
+    <tr><td>Frappes civiles majeures</td><td class="num">156 · 21 · ~20 · 8 · 1</td><td>École de Minab (28/2, dont 120 écoliers) · Lamerd (28/2) · pl. Niloofar (1-2/3) · pont de Karaj (2/4) · Bushehr (4/4)</td><td>B2/C3</td></tr>
+  </table></div>
+
+  <h2>Pertes humaines — Liban, Israël, Golfe <span class="verif-tag">[contre-vérifié ✓]</span></h2>
+  <div class="tablewrap"><table class="pertes">
+    <tr><th>Front</th><th>Morts documentés</th><th>Blessés</th><th>Notes</th></tr>
+    <tr><td><strong>Liban</strong> (depuis le 2/3)</td><td class="num"><strong>4 320-4 321</strong> (~9-11/7)</td><td class="num">12 207</td><td>Min. Santé — borne basse, civils/combattants non désagrégés ; Nabatieh 6/7 : 4 civils</td></tr>
+    <tr><td><strong>Israël</strong> — civils (tirs iraniens)</td><td class="num"><strong>≥ 20-24</strong></td><td class="num">n.d.</td><td>Dont Beit Shemesh 1/3 : 9 (enquête Amnesty) ; Haïfa : 4 — <strong>corrigé de « ≥4 »</strong></td></tr>
+    <tr><td><strong>Israël</strong> — IDF (front Liban)</td><td class="num">16 (26/4) → ~40</td><td class="num">~700 (source unique)</td><td>Aucune série officielle continue — C3/D4</td></tr>
+    <tr><td><strong>Koweït</strong></td><td class="num">≥ 2</td><td class="num">≥ 65</td><td>Enfant ~4/3 (date corrigée) ; aéroport <strong>3/6</strong> (le dépôt disait 2/6 — corrigé) : 1 mort/63 blessés, attribution disputée (drone vs Patriot) ; agrégats 11/182 non recoupés — écartés</td></tr>
+    <tr><td><strong>Bahreïn</strong></td><td class="num">3 (au 11/6)</td><td class="num">51+</td><td>Dont Sara Dashti (Seef, 10/3 — distinct de Sitra : 32 blessés) ; pas de mise à jour post-11/6</td></tr>
+    <tr><td><strong>Qatar</strong></td><td class="num">1 (28/6)</td><td class="num">≥ 20</td><td>16 (28/2) + 1 (28/6) + 3 dont 1 enfant (12/7) ; agrégat « 14/90 » introuvable — écarté</td></tr>
+    <tr><td><strong>Arabie saoudite</strong></td><td class="num">2 (Al-Kharj, 8/3)</td><td class="num">12-29</td><td>Le « 17 » de Wikipédia = 2 + Pennington (US) + 14 de Ras Tanura (accident, à part) — pseudo-contradiction levée</td></tr>
+    <tr><td><strong>EAU</strong></td><td class="num">13 (avril, obsolète)</td><td class="num">217-224</td><td>Dont 2 militaires (accident hélico 9/3) — C3</td></tr>
+    <tr><td><strong>Jordanie</strong></td><td class="num">0 confirmé</td><td class="num">29</td><td>Malgré des dizaines de missiles/drones (9/7, 12/7)</td></tr>
+    <tr><td><strong>Accidents industriels (À PART)</strong></td><td class="num">13 + 14</td><td class="num">66 + n.d.</td><td>Ras Laffan/Barzan 21-22/6 (sabotage exclu ; 18 disparus non réconciliés) · hélico Aramco Ras Tanura 28/6 (enquête en cours)</td></tr>
+  </table></div>
+
+  <h2>Marins et navires <span class="verif-tag">[passe adversariale planifiée]</span></h2>
+  <p style="font-size:12.5px;">≥ <strong>18 marins civils tués</strong> — 14 côté Ormuz/golfe d'Oman (<em>Skylight</em> 2, <em>MKD Vyom</em> 1, <em>Mussafah 2</em> 4, <em>Mayuree Naree</em> 3, <em>Safesea Vishnu</em> 1, <strong><em>Settebello</em> 3 — tués par la frappe américaine du blocus, 9/6</strong>) + ≥ 4 en mer Rouge (<em>Eternity C</em>) ; <strong>1 disparu</strong> (<em>GFS Galaxy</em>, 11/7, non résolu) ; 11 otages Houthis (libération rapportée par les Houthis, non confirmée) ; ~6 000 marins bloqués (OMI). À part : <strong>IRIS Dena</strong> (frégate iranienne torpillée le 4/4) — 104 marins militaires tués (source unique, C2).</p>
+  <div class="tablewrap"><table class="pertes">
+    <tr><th>Théâtre</th><th>Volume documenté</th><th>Événements structurants</th></tr>
+    <tr><td>Ormuz / golfe d'Oman — attaques et saisies iraniennes</td><td class="num">~40 navires nommés (mars-juillet)</td><td>Coulés : <em>Mussafah 2</em> (6/3), <em>Haji Ali</em> (13/5) · saisis : <em>MSC Epaminondas</em>, <em>MSC Francesca</em>, <em>Euphoria</em> (les « 3 navires » du 22/4, enfin nommés), <em>Ocean Koi</em>, <em>Hui Chuan</em>… · frappés : <em>San Antonio</em> (8 blessés), <em>Ever Lovely</em>, <em>Al Rekayat</em>, <em>Wedyan</em>, <em>GFS Galaxy</em> + 2 non identifiés (7/7 et 12/7)</td></tr>
+    <tr><td>Blocus naval américain (l'Iran est la cible)</td><td class="num">≥ 11 navires</td><td><em>Lexie</em> détruit (2/6), <em>Settebello</em> (3 morts, 9/6), <em>Marivex</em>, <em>Jalveer</em>, + ≥ 9 capturés avril-mai (<em>Dorena</em>, <em>Tifani</em>…) — <strong>contradiction de comptage CENTCOM non résolue</strong> (« 6ᵉ neutralisé » le 2/6 vs ≥ 9 nommés avant fin mai)</td></tr>
+    <tr><td>Mer Rouge (Houthis)</td><td class="num">2 coulés (6-9/7)</td><td><em>Magic Seas</em> (22 secourus) · <em>Eternity C</em> (≥ 4 morts, 11 otages, ~10 non comptabilisés)</td></tr>
+  </table></div>
+  <p style="font-size:12px; color: var(--text-dim);">Table navire par navire (≈ 50 lignes datées, avec pavillons, bilans, attributions et cotes) : voir le document source §3.</p>
+
+  <h2>Matériel militaire — revendiqué vs corroboré <span class="verif-tag">[passe adversariale planifiée]</span></h2>
+  <div class="tablewrap"><table class="pertes">
+    <tr><th>Camp</th><th>Corroboré (meilleure source)</th><th>Revendiqué non corroboré (à ne pas reprendre comme fait)</th></tr>
+    <tr><td><strong>Pertes US</strong></td><td><strong>42 aéronefs</strong> perdus/endommagés au 13/5 (rapport CRS IN12692, A2) : 4 F-15E (dont 3 par tir ami), 1 F-35A endommagé, 1 A-10, 7 KC-135 (crash du 12/3 : 6 morts), 1 E-3, 2 MC-130J détruits au sol en Iran, 1 HH-60W, 24 MQ-9, 1 MQ-4C ; coût 29 Md$ (12/5) ; + 1 Apache abattu (9/6, pilotes récupérés). Aucun décompte consolidé post-mai (gap)</td><td>« MQ-9/F-35/RQ-4 touchés » (CGRI, 26/5 — E3, aucune perte US confirmée) ; « 3 morts US au Koweït » (Iran, 12/7 — démenti CENTCOM)</td></tr>
+    <tr><td><strong>Pertes iraniennes</strong></td><td>2 Su-24 abattus par des F-15 qataris (2/3 — rare fait corroboré par un tiers) · IRIS Dena torpillée (4/4) · corvette Jamaran coulée à quai (C3, source CENTCOM unique)</td><td>Cumuls navals irréconciliables : &gt; 30 → &gt; 100 → 17+1 → ~120 → 155 (US, sans méthodologie) · « &gt; 60 vedettes CGRI » (7-8/7, sans imagerie tierce) · « &gt; 300 cibles » en 3 salves (catégories agrégées) · « 190+ lanceurs » (C4) · « 28 bateaux » (Trump, C4) · « 85 cibles » (CGRI, F4) · frappes Duqm/Jordanie (F6, démenties/non confirmées)</td></tr>
+  </table></div>
+
+  <h2>Contradictions majeures (exposées, non arbitrées)</h2>
+  <div class="card" style="font-size:12.5px;">
+    <p>1. <strong>Bilan iranien de la rechute</strong> : min. Santé 17/115 vs IRNA 8-9 militaires — deux organes du même État. · 2. <strong>Pertes US</strong> : Pentagone 13 vs indépendants 17-18 (allégation de sous-déclaration non vérifiée). · 3. <strong>Comptage du blocus</strong> : « 6ᵉ/7 navires » CENTCOM vs ≥ 9 nommés. · 4. <strong>Pertes navales iraniennes</strong> : 5 cumuls incompatibles. · 5. <strong>Blessés iraniens</strong> : 26 500 (Iran) &gt; 15 000 (US/Israël) — inversion du biais habituel, inexpliquée. · 6. <strong>Micro-contradictions officielles</strong> : grade de Montorio, orthographe Gilet/Gillet (jusque sur defense.gouv.fr), date Frion. · 7. <strong>Aéroport de Koweït : 3/6</strong> (multi-sources) vs 2/6 (dépôt) — correction de baseline. · 8. <strong>Agrégats Golfe</strong> (Koweït 11/182, Qatar « 14/90 ») non recoupés — écartés des fourchettes de référence.</p>
+  </div>
+
+  <div class="warn-block" style="border-color: var(--text-dim); background: none;"><strong>Vides documentaires (sélection)</strong> : aucun cumul iranien à jour (les 3 décomptes sont figés à avril — mai-juillet non couverts) · sort du marin du <em>GFS Galaxy</em> · identités des navires « 3ᵉ » (7/7) et « 2ᵉ » (12/7) · bilans humains des captures du blocus US · série IDF officielle · 18 disparus de Ras Laffan · recoupement de l'IRIS Dena · pertes matérielles US post-13 mai · toute évaluation tierce des pertes matérielles iraniennes. Liste complète au §7 du document source.</div>
+
+  <div class="meta-foot">
+    Recensement v1.0 compilé le 13 juillet 2026 (J136) · Workflow multi-agents (5 collecteurs + contre-vérification adversariale — 1/5 catégories passées, les autres planifiées) · Document source (fait foi sur les pertes) : <a href="../docs/pertes_humaines_materielles.md">docs/pertes_humaines_materielles.md</a> · La synthèse périodique la plus récente (<code>docs/synthese_J131-J135.md</code>) fait foi sur l'état courant de la crise.
+  </div>
+</main>
+
+<site-footer></site-footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

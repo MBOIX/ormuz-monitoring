@@ -61,6 +61,7 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
 │   ├── adblue_cycle_de_vie.md              # Doc vulgarisé : cycle de vie complet de l'AdBlue, maillons faibles, prospective
 │   ├── impacts_agricoles.md                # Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France
 │   ├── chronologie.md                     # Chronologie détaillée du conflit (arbitrages, vides documentaires)
+│   ├── pertes_humaines_materielles.md     # Recensement documenté des pertes humaines et matérielles J1→J136 (fourchettes + cotes + statuts confirmé/rapporté/revendiqué ; fait foi sur les pertes ; mis à jour à chaque synthèse périodique)
 │   ├── infrastructures_europe.md          # Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays
 │   ├── synthese_J131-J135.md              # Dernière synthèse périodique (fait foi sur l'état courant) — le seuil létal franchi : premières morts rapportées (14 selon le min. iranien de la Santé, borne basse), 3 salves CENTCOM (>300 cibles), GFS Galaxy frappé (1 marin disparu), Ormuz déclaré « fermé jusqu'à nouvel ordre » avec transits effondrés — mais prix non encore coté (Brent 76,01 $, fermeture du 12 non pricée) et canal diplomatique actif + recalibrage A 8-15 / B 30-40 / C 40-50 (C modal)
 │   ├── synthese_J119-J131.md              # Synthèse périodique précédente (archivée) — la rechute violente : reprise des frappes directes US↔Iran (7-8 juillet), 3 navires frappés par le CGRI, licence pétrolière US révoquée, Trump déclare le cessez-le-feu « terminé » — mais sans mort rapportée ni nullité juridique du MOU + Brent en rebond modéré (~74-78 $) + recalibrage A 15-25 / B 33-43 / C 32-42
@@ -82,6 +83,7 @@ Cette liste ne contient que les jalons structurants de la crise. Les développem
     ├── carte_infrastructures.html         # Carte zone Ormuz (54 sites + 7 pipelines)
     ├── carte_infrastructures_europe.html  # Carte Europe (~160 entrées)
     ├── chronologie.html                   # Frise chronologique interactive
+    ├── pertes.html                        # Pertes humaines et matérielles (recensement documenté, fourchettes + statuts)
     ├── dependances_ormuz_pays.html        # Part des imports énergétiques UE via Ormuz, par pays/carburant
     ├── dependances_ressources_critiques.html  # 13 ressources critiques non-énergétiques (hélium, NPK, alu, méthanol…)
     ├── impacts_agricoles.html             # Impacts agricoles (champ→assiette) : tableau d'impacts + frise prospective 2026-2029 + focus France
