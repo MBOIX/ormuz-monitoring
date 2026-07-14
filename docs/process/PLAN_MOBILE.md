@@ -81,4 +81,11 @@ Les audits sources sur-diagnostiquent par ailleurs plusieurs points : menu hambu
 
 ---
 
-*Une fois validé, ce plan est exécuté tâche par tâche, dans l'ordre P0 → P1 → P2. Contrôle final de cohérence CLAUDE.md (§ Règle de cohérence) à chaque étape : aucun chiffre ou statut ne doit diverger entre `.md` et HTML.*
+## 5. Exécution — 14 juillet 2026 (J137)
+
+**Les 6 actions P0/P1/P2 sont appliquées** (5 fichiers touchés : `styles_common.css`, les 2 cartes, `chronologie.html`, `impacts_agricoles.html`). Deux correctifs supplémentaires, découverts pendant la validation et restés dans le périmètre minimaliste :
+
+- **Césure des valeurs `.metric-row .v`** (`overflow-wrap: anywhere`, bloc 700px) : la valeur longue « ~135 j essence/diesel » de la carte Suisse (`stocks_pays_ue`) ne tenait pas dans la colonne de 40 px et propageait un débordement de page de 17 px à 360 px (346 px de grille + paddings card/page). La césure préserve l'alignement des barres, contrairement à une colonne `auto` qui l'aurait rompu.
+- **`flex-wrap: wrap` remonté dans la règle de base `.topbar`** : avec 9 liens + marque, la barre forçait 881 px de large entre 701 et ~880 px (le wrap n'existait que sous 700 px) → scroll horizontal sur les 9 pages à 768 px. Sans effet au-delà de ~900 px où rien ne replie.
+
+**Validation** (critères du §4) : sonde headless Chrome (iframe à largeur contrainte, mesure `scrollWidth`) sur les 7 pages hors cartes × 360/390/768 px = **aucun débordement** ; contrôles visuels à 360 px sur index (topbar repliée, cibles ~30 px), stocks (cards 1 colonne, barres alignées, valeurs en césure), chronologie (filtres sur 3 lignes, recherche intégrée), impacts agricoles (frise empilée verticalement, texte lisible), carte zone Ormuz (sidebar empilée, carte manipulable). `ASOF` de `nav.js` intact, aucune donnée chiffrée modifiée. Nota : la capture headless top-level à `--window-size=360` est trompeuse (largeur de fenêtre minimale macOS ~450 px) — utiliser la méthode iframe pour tout contrôle futur.

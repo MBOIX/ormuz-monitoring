@@ -2,6 +2,13 @@
 
 Ce projet est un **suivi de situation évolutif** : ce journal trace les consolidations datées et les évolutions structurelles du dépôt. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Les dates sont au format AAAA-MM-JJ (heure de Paris).
 
+## [J137] — 2026-07-14
+
+### Optimisation de l'affichage mobile (exécution de PLAN_MOBILE)
+- **Exécution intégrale du plan** [`docs/process/PLAN_MOBILE.md`](docs/process/PLAN_MOBILE.md) (6 actions P0/P1/P2) : bloc mobile 700px de `styles_common.css` enrichi (cards 1 colonne, `metric-row` recalibrée, `summary-grid` 140px, `country-header` en wrap, cibles tactiles nav ~30 px) + nouveau palier ultra-mobile 430px (titres, densité tableaux, planchers de police 11,5 px) + filet `img { max-width: 100% }` ; cartes : loader recentré et carte à 55vh ; chronologie : barre de filtres assouplie ; impacts agricoles : frise prospective empilée sous 500 px.
+- **2 correctifs hors plan découverts en validation** : césure des valeurs `.metric-row .v` (une valeur longue de la carte Suisse débordait la page de 17 px à 360 px) ; `flex-wrap` remonté dans la règle de base `.topbar` (la nav à 9 liens forçait 881 px de large entre 701 et ~880 px → scroll horizontal des 9 pages à 768 px).
+- **Validation** : sonde headless (7 pages × 360/390/768 px) sans débordement + contrôles visuels à 360 px ; CSS uniquement, aucune donnée chiffrée ni date modifiée (`ASOF` intact).
+
 ## [J136] — 2026-07-13
 
 ### Nouvelle vue : recensement des pertes humaines et matérielles

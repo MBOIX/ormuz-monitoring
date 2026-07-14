@@ -58,6 +58,11 @@
   .frise .seg.orange { background: var(--orange); color: #fff; }
   .frise .seg.orangedark { background: var(--orange-dark); color: #fff; }
   .frise .seg.red    { background: var(--red); color: #fff; }
+  @media (max-width: 500px) {
+    .frise { flex-direction: column; }
+    .frise .seg { border-right: none; border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
+    .frise .seg:last-child { border-bottom: none; }
+  }
 
   .jalons {
     display: grid;

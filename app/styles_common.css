@@ -18,6 +18,7 @@
 }
 
 * { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
 html, body {
   margin: 0; padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
@@ -43,6 +44,7 @@ site-footer {
 .topbar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
   padding: 10px 20px;
   background: var(--panel);
@@ -320,7 +322,21 @@ table .pill {
 @media (max-width: 700px) {
   .page { padding: 14px 14px 40px; }
   .topbar { padding: 8px 14px; gap: 8px; flex-wrap: wrap; }
-  .topbar a { font-size: 11.5px; padding: 3px 7px; }
+  .topbar a { font-size: 11.5px; padding: 6px 10px; }
+  .cards { grid-template-columns: 1fr; }
+  .metric-row { grid-template-columns: 90px 1fr 40px; gap: 6px 8px; }
+  .metric-row .v { overflow-wrap: anywhere; }
+  .summary-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  .country-card .country-header { flex-wrap: wrap; gap: 4px 8px; }
+}
+
+/* Ultra-mobile */
+@media (max-width: 430px) {
+  .page h1 { font-size: 19px; }
+  .summary-grid { grid-template-columns: 1fr; }
+  table { font-size: 11.5px; }
+  table th, table td { padding: 6px 7px; }
+  .country-card .country-risk, table .pill, .summary-stat .l { font-size: 11.5px; }
 }
 
 /* === Bandeau de cadrage (as-of / situation évolutive) === */
