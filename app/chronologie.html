@@ -291,7 +291,10 @@
 @media (max-width: 700px) {
   :root { --rail: 0px; --spine-x: 16px; }
   .timeline::before { left: var(--spine-x); }
-  .phase { top: calc(var(--topbar-h) + 50px); padding-left: var(--spine-x); }
+  /* Même formule que le desktop : sous la barre de filtres réelle (repliée ou dépliée,
+     --filters-h est recalée à chaque bascule) ; fond opaque pour éviter la transparence
+     du dégradé sur le contenu qui défile dessous. */
+  .phase { top: calc(var(--topbar-h) + var(--filters-h, 60px)); padding-left: var(--spine-x); background: var(--bg); }
   .phase-inner { padding-left: 26px; }
   .phase::after { left: calc(var(--spine-x) - 5px); }
   .filters .fg-label { min-width: 0; }
@@ -568,6 +571,7 @@ function apply() {
   const list = orderedList();
   renderTimeline(list);
   buildPhaseNav(list);
+  syncFiltersHeight(); // le compteur mis à jour peut faire varier la hauteur de la barre
 }
 
 // === Reveal au defilement (observer partage + batch initial anti-flash) ===

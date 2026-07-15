@@ -7,6 +7,7 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 ### Cartes plein écran et filtres chronologie repliés sur mobile
 - **Cartes zone Ormuz & Europe** : sous 700 px, la carte occupe tout l'écran et la sidebar devient un **panneau coulissant depuis la gauche** (bouton flottant « ☰ Filtres », `prefers-reduced-motion` respecté), remplaçant l'empilement 45vh/55vh. Correction au passage : hauteur de barre de nav mesurée (`--nav-h`) au lieu du 42 px codé en dur (faux depuis le hamburger — le bas de carte était rogné en mobile), avec `invalidateSize()` Leaflet.
 - **Chronologie** : la barre de filtres (~150 px sticky) est **repliée par défaut sous 700 px** derrière un bouton « ☰ Filtres & recherche » (compteur d'événements toujours visible) ; la bascule recale `--filters-h` pour les en-têtes de phase sticky. Desktop inchangé.
+- **Correctifs post-intégration (retours d'usage)** : en-têtes de phase de la chronologie recalés sous la barre de filtres réelle (formule `--topbar-h + --filters-h` au lieu d'un décalage codé en dur, fond opaque, recalcul après chaque `apply()`) — fini le chevauchement au scroll ; `site-nav` relevé à `z-index: 1300` pour que le menu hamburger se déroule au-dessus des panes/contrôles Leaflet et du panneau latéral des cartes.
 - Détail et validation : [`PLAN_MOBILE.md`](docs/process/PLAN_MOBILE.md) §7.
 
 ### Menu hamburger sur mobile

@@ -36,7 +36,9 @@ site-nav {
   display: block;
   position: sticky;
   top: 0;
-  z-index: 100;
+  /* Au-dessus des panes/contrôles Leaflet (~1000) et des panneaux latéraux des cartes
+     (1100/1200), sinon le menu hamburger se déroule derrière eux. */
+  z-index: 1300;
 }
 site-footer {
   display: block;

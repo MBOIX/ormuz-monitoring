@@ -110,3 +110,7 @@ Deux demandes utilisateur supplémentaires, dans la continuité du hamburger :
 **Chronologie — filtres repliés par défaut en mobile.** Sous 700 px, les 5 rangées de `#filters` (~150 px sticky) sont masquées derrière un bouton « ☰ Filtres & recherche » ; seul le compteur d'événements reste visible. La bascule recale `--filters-h`, donc les en-têtes de phase sticky suivent l'état replié/déplié. Desktop inchangé (bouton masqué).
 
 **Validation** : captures fermé/ouvert à 360 px sur les 3 pages (carte plein écran + panneau avec stats/filtres ; chronologie compacte + barre complète au tap) ; desktop 1200 px identique à l'existant.
+
+**Correctifs post-intégration (retours d'usage mobile, même jour)** :
+- *Chronologie — en-tête de phase qui chevauchait le contenu au scroll* : le `top` sticky mobile utilisait un décalage codé en dur (`--topbar-h + 50px`), calibré pour l'ancienne barre de filtres toujours dépliée, et le fond en dégradé laissait transparaître les cartes. Recalé sur la formule desktop (`--topbar-h + --filters-h`), fond opaque en mobile, et `--filters-h` recalculée à la fin de chaque `apply()` (le compteur d'événements, rempli après la mesure initiale, faussait la hauteur).
+- *Cartes — menu hamburger déroulé derrière la carte* : `site-nav` était à `z-index: 100`, sous les panes/contrôles Leaflet (~400-1000) et le panneau latéral (1100) ; le déroulé du burger passait donc dessous. `site-nav` relevé à `z-index: 1300`.
