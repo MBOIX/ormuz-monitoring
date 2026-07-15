@@ -4,6 +4,9 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 
 ## [J138] — 2026-07-15
 
+### Topbar : affordance de navigation (desktop)
+- Les liens de la barre de navigation étaient du texte nu (bordure transparente, fond au survol seulement) — rien n'indiquait qu'ils étaient cliquables. Ils deviennent des **boutons visibles au repos** (fond léger + bordure + rayon 6 px, accent au survol), même idiome que les chips/boutons des dashboards ; gap resserré (14→8 px). Le panneau du menu hamburger mobile hérite du style (entrées encadrées).
+
 ### Cartes plein écran et filtres chronologie repliés sur mobile
 - **Cartes zone Ormuz & Europe** : sous 700 px, la carte occupe tout l'écran et la sidebar devient un **panneau coulissant depuis la gauche** (bouton flottant « ☰ Filtres », `prefers-reduced-motion` respecté), remplaçant l'empilement 45vh/55vh. Correction au passage : hauteur de barre de nav mesurée (`--nav-h`) au lieu du 42 px codé en dur (faux depuis le hamburger — le bas de carte était rogné en mobile), avec `invalidateSize()` Leaflet.
 - **Chronologie** : la barre de filtres (~150 px sticky) est **repliée par défaut sous 700 px** derrière un bouton « ☰ Filtres & recherche » (compteur d'événements toujours visible) ; la bascule recale `--filters-h` pour les en-têtes de phase sticky. Desktop inchangé.

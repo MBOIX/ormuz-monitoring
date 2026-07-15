@@ -47,7 +47,7 @@ site-footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 8px;
   padding: 10px 20px;
   background: var(--panel);
   border-bottom: 1px solid var(--border);
@@ -64,19 +64,22 @@ site-footer {
   font-size: 12px;
   margin-left: 6px;
 }
+/* Liens de nav en boutons visibles (même idiome que les chips/boutons des dashboards) :
+   fond + bordure au repos pour l'affordance, accent au survol. */
 .topbar a {
   color: var(--text-dim);
   text-decoration: none;
   font-size: 12.5px;
-  padding: 4px 10px;
-  border-radius: 4px;
-  border: 1px solid transparent;
+  padding: 5px 11px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
   transition: all 0.12s;
 }
 .topbar a:hover {
   color: var(--text);
-  background: rgba(255,255,255,0.04);
-  border-color: var(--border);
+  background: rgba(255,255,255,0.08);
+  border-color: var(--accent);
 }
 .topbar a.active {
   color: var(--accent);
