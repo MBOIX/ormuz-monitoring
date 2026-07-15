@@ -58,7 +58,7 @@ Les audits sources sur-diagnostiquent par ailleurs plusieurs points : menu hambu
 
 | Point | Justification du rejet |
 |---|---|
-| Menu hamburger | Nécessiterait du JS et un nouveau pattern dans `nav.js` (source unique partagée). Le flex-wrap actuel est fonctionnel — aucun lien inaccessible — on se contente d'agrandir les cibles tactiles à ~30px. Les audits qui le classent P0/bloquant sur-évaluent le problème. |
+| Menu hamburger | ~~Nécessiterait du JS et un nouveau pattern dans `nav.js` (source unique partagée). Le flex-wrap actuel est fonctionnel — aucun lien inaccessible — on se contente d'agrandir les cibles tactiles à ~30px. Les audits qui le classent P0/bloquant sur-évaluent le problème.~~ **Révisé le 15 juillet (J138) — implémenté sur décision utilisateur** (cf. §6) : le rejet initial n'avait pas pesé le coût du wrap, ~195 px de barre sticky à 360 px, soit ~30 % de l'écran confisqué en permanence. |
 | Transformation des tableaux en cartes empilées (« stacked ») | Refonte lourde + pattern nouveau à maintenir sur plusieurs pages. Le `overflow-x: auto` dans `.tablewrap` est déjà présent et suffit ; on réduit juste police/padding sous 430px. |
 | Masquage conditionnel de colonnes de tableau sur mobile | Perte d'information et logique CSS/JS fragile, contraire au principe factuel/exhaustif du projet. |
 | Règle globale `svg { max-width: 100% }` | Risque de régression sur les overlays et markers SVG de Leaflet (2 cartes). On se limite à `img`. |
@@ -89,3 +89,14 @@ Les audits sources sur-diagnostiquent par ailleurs plusieurs points : menu hambu
 - **`flex-wrap: wrap` remonté dans la règle de base `.topbar`** : avec 9 liens + marque, la barre forçait 881 px de large entre 701 et ~880 px (le wrap n'existait que sous 700 px) → scroll horizontal sur les 9 pages à 768 px. Sans effet au-delà de ~900 px où rien ne replie.
 
 **Validation** (critères du §4) : sonde headless Chrome (iframe à largeur contrainte, mesure `scrollWidth`) sur les 7 pages hors cartes × 360/390/768 px = **aucun débordement** ; contrôles visuels à 360 px sur index (topbar repliée, cibles ~30 px), stocks (cards 1 colonne, barres alignées, valeurs en césure), chronologie (filtres sur 3 lignes, recherche intégrée), impacts agricoles (frise empilée verticalement, texte lisible), carte zone Ormuz (sidebar empilée, carte manipulable). `ASOF` de `nav.js` intact, aucune donnée chiffrée modifiée. Nota : la capture headless top-level à `--window-size=360` est trompeuse (largeur de fenêtre minimale macOS ~450 px) — utiliser la méthode iframe pour tout contrôle futur.
+
+## 6. Complément — menu hamburger (15 juillet 2026, J138)
+
+**Décision utilisateur** de sortir le hamburger du hors périmètre : le wrap conservé au §3 laissait ~195 px de barre sticky à 360 px (marque + 4 rangées de liens), soit ~30 % d'un écran de téléphone confisqué en permanence — coût que le rejet initial n'avait pas pesé.
+
+Implémentation (vanilla JS, 2 fichiers, contraintes du dépôt respectées) :
+- `nav.js` : bouton `☰` (`aria-expanded`, bascule `☰`/`✕`) + liens regroupés dans `.nav-links` ; panneau **en surimpression** (`position: absolute` sous la barre) → aucune variation de hauteur de barre, donc `--topbar-h` de la chronologie reste valide, menu ouvert ou fermé.
+- `styles_common.css` : sur desktop, `.nav-burger { display: none }` et `.nav-links { display: contents }` (les liens redeviennent enfants flex directs → **rendu strictement inchangé au-dessus de 700 px**) ; sous 700 px, liens masqués, panneau pleine largeur au tap, compteur J passé sous le titre pour que `☰` tienne sur la première rangée.
+- Résultat : barre sticky mobile ~55 px (vs ~195 px), ~140 px rendus au contenu.
+
+**Validation** : sonde `scrollWidth` re-passée sur les 7 pages × 360/390/768 px **menu ouvert** = aucun débordement ; contrôles visuels fermé/ouvert à 360 px et desktop 1200 px (identique à l'existant).

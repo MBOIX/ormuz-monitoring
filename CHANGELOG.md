@@ -2,6 +2,12 @@
 
 Ce projet est un **suivi de situation évolutif** : ce journal trace les consolidations datées et les évolutions structurelles du dépôt. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/). Les dates sont au format AAAA-MM-JJ (heure de Paris).
 
+## [J138] — 2026-07-15
+
+### Menu hamburger sur mobile
+- **Navigation mobile repliée dans un menu hamburger** (décision utilisateur, révise le « hors périmètre » de [`PLAN_MOBILE.md`](docs/process/PLAN_MOBILE.md) §6) : sous 700 px, bouton ☰ (`aria-expanded`, bascule ☰/✕) et panneau de liens en surimpression, compteur J passé sous le titre ; barre sticky réduite de ~195 px à ~55 px à 360 px (~30 % d'écran rendu au contenu). Vanilla JS dans `nav.js` (source unique des 10 pages) + styles `styles_common.css` ; sur desktop, `display: contents` restitue un rendu strictement inchangé.
+- **Validation** : sonde `scrollWidth` 7 pages × 360/390/768 px menu ouvert sans débordement + contrôles visuels fermé/ouvert (360 px) et desktop (1200 px, identique).
+
 ## [J137] — 2026-07-14
 
 ### Optimisation de l'affichage mobile (exécution de PLAN_MOBILE)

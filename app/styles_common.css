@@ -81,6 +81,10 @@ site-footer {
   background: rgba(88,166,255,0.08);
   border-color: rgba(88,166,255,0.25);
 }
+/* Menu hamburger : bouton masqué sur desktop ; display:contents rend les liens
+   enfants flex directs de .topbar (aucun changement de rendu au-dessus de 700 px). */
+.nav-burger { display: none; }
+.topbar .nav-links { display: contents; }
 
 /* === Layout principal === */
 .page {
@@ -321,8 +325,34 @@ table .pill {
 /* Mobile */
 @media (max-width: 700px) {
   .page { padding: 14px 14px 40px; }
-  .topbar { padding: 8px 14px; gap: 8px; flex-wrap: wrap; }
+  .topbar { padding: 8px 14px; gap: 8px; flex-wrap: wrap; position: relative; }
+  .topbar .brand .crisis { display: block; margin-left: 0; }
   .topbar a { font-size: 11.5px; padding: 6px 10px; }
+  /* Hamburger : liens repliés dans un panneau en surimpression sous la barre */
+  .nav-burger {
+    display: block;
+    background: none;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+  .topbar .nav-links { display: none; }
+  .topbar .nav-links.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    padding: 6px 14px 10px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+  }
+  .topbar .nav-links.open a { display: block; font-size: 13px; padding: 9px 10px; }
   .cards { grid-template-columns: 1fr; }
   .metric-row { grid-template-columns: 90px 1fr 40px; gap: 6px 8px; }
   .metric-row .v { overflow-wrap: anywhere; }

@@ -28,18 +28,30 @@
   };
 
   // <site-nav active="chronologie"></site-nav>
+  // Sous 700 px, les liens se replient dans un panneau ouvert par le bouton hamburger
+  // (panneau en surimpression : la hauteur de la barre — donc --topbar-h — ne bouge pas).
   class SiteNav extends HTMLElement {
     connectedCallback() {
       var active = this.getAttribute("active");
       var links = LINKS.map(function (link) {
         var cls = link.key === active ? ' class="active"' : "";
-        return '  <a href="' + link.href + '"' + cls + ">" + link.label + "</a>";
+        return '    <a href="' + link.href + '"' + cls + ">" + link.label + "</a>";
       }).join("\n");
       this.innerHTML =
         '<nav class="topbar">\n' +
         '  <div class="brand">Crise du détroit d\'Ormuz<span class="crisis"> — ' + ASOF + "</span></div>\n" +
+        '  <button class="nav-burger" type="button" aria-label="Menu de navigation" aria-expanded="false">☰</button>\n' +
+        '  <div class="nav-links">\n' +
         links + "\n" +
+        "  </div>\n" +
         "</nav>";
+      var burger = this.querySelector(".nav-burger");
+      var panel = this.querySelector(".nav-links");
+      burger.addEventListener("click", function () {
+        var open = panel.classList.toggle("open");
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+        burger.textContent = open ? "✕" : "☰";
+      });
     }
   }
 
