@@ -4,6 +4,11 @@ Ce projet est un **suivi de situation évolutif** : ce journal trace les consoli
 
 ## [J138] — 2026-07-15
 
+### Cartes plein écran et filtres chronologie repliés sur mobile
+- **Cartes zone Ormuz & Europe** : sous 700 px, la carte occupe tout l'écran et la sidebar devient un **panneau coulissant depuis la gauche** (bouton flottant « ☰ Filtres », `prefers-reduced-motion` respecté), remplaçant l'empilement 45vh/55vh. Correction au passage : hauteur de barre de nav mesurée (`--nav-h`) au lieu du 42 px codé en dur (faux depuis le hamburger — le bas de carte était rogné en mobile), avec `invalidateSize()` Leaflet.
+- **Chronologie** : la barre de filtres (~150 px sticky) est **repliée par défaut sous 700 px** derrière un bouton « ☰ Filtres & recherche » (compteur d'événements toujours visible) ; la bascule recale `--filters-h` pour les en-têtes de phase sticky. Desktop inchangé.
+- Détail et validation : [`PLAN_MOBILE.md`](docs/process/PLAN_MOBILE.md) §7.
+
 ### Menu hamburger sur mobile
 - **Navigation mobile repliée dans un menu hamburger** (décision utilisateur, révise le « hors périmètre » de [`PLAN_MOBILE.md`](docs/process/PLAN_MOBILE.md) §6) : sous 700 px, bouton ☰ (`aria-expanded`, bascule ☰/✕) et panneau de liens en surimpression, compteur J passé sous le titre ; barre sticky réduite de ~195 px à ~55 px à 360 px (~30 % d'écran rendu au contenu). Vanilla JS dans `nav.js` (source unique des 10 pages) + styles `styles_common.css` ; sur desktop, `display: contents` restitue un rendu strictement inchangé.
 - **Validation** : sonde `scrollWidth` 7 pages × 360/390/768 px menu ouvert sans débordement + contrôles visuels fermé/ouvert (360 px) et desktop (1200 px, identique).

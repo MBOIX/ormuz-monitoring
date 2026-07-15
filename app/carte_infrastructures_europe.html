@@ -30,9 +30,9 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
 
-  /* Override pour topbar : ajustement hauteurs */
-  #app { display: grid; grid-template-columns: 360px 1fr; height: calc(100vh - 42px); }
-  #map { height: calc(100vh - 42px) !important; }
+  /* Override pour topbar : ajustement hauteurs (--nav-h mesurée par JS au chargement, 42px en secours) */
+  #app { display: grid; grid-template-columns: 360px 1fr; height: calc(100vh - var(--nav-h, 42px)); }
+  #map { height: calc(100vh - var(--nav-h, 42px)) !important; }
 
   #sidebar {
     background: var(--panel);
@@ -230,6 +230,26 @@
     color: var(--text-dim); font-size: 14px; z-index: 9999;
   }
 
+  /* Bouton d'ouverture du panneau latéral — mobile uniquement */
+  #sidebar-toggle {
+    display: none;
+    position: fixed;
+    bottom: 14px;
+    left: 14px;
+    z-index: 1200;
+    align-items: center;
+    gap: 7px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+
   .map-legend {
     background: rgba(15, 20, 25, 0.92);
     color: var(--text);
@@ -246,11 +266,27 @@
   .map-legend .legend-row { display: flex; align-items: center; gap: 7px; margin-bottom: 2px; }
   .map-legend .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.4); }
 
+  /* Mobile : carte plein écran, sidebar en panneau coulissant depuis la gauche */
   @media (max-width: 700px) {
-    #app { grid-template-columns: 1fr; grid-template-rows: 45vh 55vh; }
-    #sidebar { border-right: none; border-bottom: 1px solid var(--border); }
-    #map { height: 55vh; }
+    #app { grid-template-columns: 1fr; }
+    #sidebar {
+      position: fixed;
+      top: var(--nav-h, 42px);
+      left: 0;
+      bottom: 0;
+      width: min(85vw, 360px);
+      z-index: 1100;
+      transform: translateX(-105%);
+      transition: transform 0.22s ease;
+      box-shadow: 8px 0 24px rgba(0,0,0,0.55);
+    }
+    #sidebar.open { transform: translateX(0); }
+    #map { height: 100% !important; }
     #loader { left: 50%; }
+    #sidebar-toggle { display: flex; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #sidebar { transition: none; }
   }
 </style>
 </head>
@@ -315,6 +351,7 @@
 
   <div id="map"></div>
   <div id="loader">Chargement de la carte…</div>
+  <button id="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="false">☰ Filtres</button>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -997,6 +1034,26 @@ map.fitBounds([[35, -15], [62, 30]], { padding: [20, 20], maxZoom: 6 });
 
 <site-footer></site-footer>
 
+<script>
+// Panneau latéral mobile + hauteur réelle de la barre de nav (--nav-h).
+(function () {
+  var toggle = document.getElementById("sidebar-toggle");
+  var sidebar = document.getElementById("sidebar");
+  function syncNavHeight() {
+    var nav = document.querySelector("site-nav");
+    if (!nav) return;
+    document.documentElement.style.setProperty("--nav-h", nav.offsetHeight + "px");
+    if (window.map && typeof map.invalidateSize === "function") map.invalidateSize();
+  }
+  window.addEventListener("load", syncNavHeight);
+  window.addEventListener("resize", syncNavHeight);
+  toggle.addEventListener("click", function () {
+    var open = sidebar.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.textContent = open ? "✕ Fermer" : "☰ Filtres";
+  });
+})();
+</script>
 <script src="nav.js"></script>
 </body>
 </html>

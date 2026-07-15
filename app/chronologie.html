@@ -99,6 +99,8 @@
 }
 .filter-reset:hover { text-decoration: underline; }
 .filter-count { font-size: 11px; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+/* Bouton de repli des filtres — mobile uniquement */
+#filtersToggle { display: none; }
 
 /* === Outils : recherche, tri, navigation par phase === */
 .searchbox {
@@ -295,6 +297,16 @@
   .filters .fg-label { min-width: 0; }
   .searchbox { min-width: 0; flex: 1 1 140px; max-width: none; }
   .chip { padding: 3px 8px; font-size: 11px; }
+  /* Filtres repliés par défaut sur mobile : seuls le bouton et le compteur restent visibles */
+  #filtersToggle {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--panel); color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 12px; font-size: 12px; font-weight: 600; cursor: pointer;
+    margin: 2px 0 4px;
+  }
+  .filters:not(.open) .filter-group { display: none; }
+  .filters:not(.open) .filter-group:last-child { display: flex; }
 
   .entry { grid-template-columns: 1fr; padding: 8px 0; }
   .entry .when { text-align: left; padding: 0 0 6px 0; margin-left: calc(var(--spine-x) + 26px); }
@@ -329,6 +341,7 @@
   </details>
 
   <div class="filters" id="filters">
+    <button id="filtersToggle" type="button" aria-expanded="false" aria-controls="filters">☰ Filtres &amp; recherche</button>
     <div class="filter-group" id="toolRow" role="group" aria-label="Recherche, tri et navigation">
       <span class="fg-label">Vue</span>
       <input type="search" id="searchInput" class="searchbox" placeholder="Rechercher (Brent, OPEP, Liban…)" aria-label="Rechercher dans les événements">
@@ -677,6 +690,20 @@ function syncFiltersHeight() {
   if (bar) document.documentElement.style.setProperty("--filters-h", bar.offsetHeight + "px");
 }
 
+// Mobile : filtres repliés par défaut, dépliés à la demande (recale --filters-h à chaque bascule).
+function setupFiltersToggle() {
+  const btn = document.getElementById("filtersToggle");
+  const bar = document.getElementById("filters");
+  if (!btn || !bar) return;
+  btn.addEventListener("click", function () {
+    const open = bar.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "✕ Masquer les filtres" : "☰ Filtres & recherche";
+    syncFiltersHeight();
+  });
+}
+
+setupFiltersToggle();
 syncTopbarHeight();
 syncFiltersHeight();
 window.addEventListener("resize", function () { syncTopbarHeight(); syncFiltersHeight(); }, { passive: true });

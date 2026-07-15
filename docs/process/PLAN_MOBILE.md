@@ -100,3 +100,13 @@ Implémentation (vanilla JS, 2 fichiers, contraintes du dépôt respectées) :
 - Résultat : barre sticky mobile ~55 px (vs ~195 px), ~140 px rendus au contenu.
 
 **Validation** : sonde `scrollWidth` re-passée sur les 7 pages × 360/390/768 px **menu ouvert** = aucun débordement ; contrôles visuels fermé/ouvert à 360 px et desktop 1200 px (identique à l'existant).
+
+## 7. Complément — cartes plein écran et filtres chronologie repliés (15 juillet 2026, J138)
+
+Deux demandes utilisateur supplémentaires, dans la continuité du hamburger :
+
+**Cartes (zone Ormuz + Europe) — sidebar en panneau coulissant.** L'empilement 45vh/55vh du §2 laissait la moitié de l'écran à la sidebar. Sous 700 px, la carte occupe désormais tout le viewport et `#sidebar` devient un panneau `position: fixed` glissant depuis la gauche (`translateX(-105%)` → `0`, largeur `min(85vw, 340/360px)`, transition désactivée si `prefers-reduced-motion`), ouvert par un bouton flottant « ☰ Filtres » en bas à gauche (z-index au-dessus des contrôles Leaflet). Au passage, correction d'un défaut hérité : la hauteur `calc(100vh - 42px)` codée en dur est remplacée par `var(--nav-h, 42px)` mesurée en JS sur `<site-nav>` (le 42 px était faux depuis le hamburger, ~55 px en mobile — le bas de la carte était rogné), avec `map.invalidateSize()` au recalage.
+
+**Chronologie — filtres repliés par défaut en mobile.** Sous 700 px, les 5 rangées de `#filters` (~150 px sticky) sont masquées derrière un bouton « ☰ Filtres & recherche » ; seul le compteur d'événements reste visible. La bascule recale `--filters-h`, donc les en-têtes de phase sticky suivent l'état replié/déplié. Desktop inchangé (bouton masqué).
+
+**Validation** : captures fermé/ouvert à 360 px sur les 3 pages (carte plein écran + panneau avec stats/filtres ; chronologie compacte + barre complète au tap) ; desktop 1200 px identique à l'existant.
