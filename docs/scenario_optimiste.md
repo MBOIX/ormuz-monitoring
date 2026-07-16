@@ -1,6 +1,26 @@
 # Scénario A — Optimiste
 ## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
-### Probabilité estimée : 8-15 % (au 12 juillet 2026, J135) — EN MORT CLINIQUE : CHAQUE ACQUIS DE JUIN EST MORT OU MORIBOND (LICENCE EXPIRANT LE 17 JUILLET, SANCTIONS ÉLARGIES, CONDITIONS US DURCIES JUSQU'À LA REMISE DE L'URANIUM, DOHA REPORTÉ SINE DIE) — A NE SURVIT QUE PAR L'ABSENCE DE DÉNONCIATION FORMELLE DU MOU ET PAR LE DOUBLE CORRIDOR OMANAIS
+### Probabilité estimée : 5-12 % (au 15 juillet 2026, J138) — AU PLANCHER : LE MOU EST DÉNONCÉ DÉCLARATIVEMENT PAR TÉHÉRAN (14-15 JUILLET), « AUCUN PROJET DE NÉGOCIATION », WIND-DOWN EXPIRANT LE 17 JUILLET, BLOCUS NAVAL RÉIMPOSÉ — A NE SURVIT QUE PAR L'ABSENCE DE RETRAIT FORMEL NOTIFIÉ, LA MÉDIATION PAKISTAN-QATAR-OMAN ET LE DOUBLE CORRIDOR OMANAIS
+
+---
+
+## Mise à jour J138 (15 juillet 2026)
+
+**Probabilité abaissée à 5-12 % (vs 8-15 % à J135) — A au plancher.** [INTERPRÉTATION] Les indicateurs de réfutation listés à J135 se sont déclenchés : la « dénonciation formelle » est advenue à moitié (dénonciation **déclarative** iranienne, sans retrait notifié), le marin du *GFS Galaxy* est **confirmé mort**, et le wind-down arrive à expiration (17 juillet) dans un paysage de blocus réimposé.
+
+**Ce qui achève d'écraser A** :
+1. [FAIT, C2 — vérifié, 4 chaînes indépendantes] **Téhéran dénonce déclarativement le MOU** (Gharibabadi, 14-15 juillet : « plus aucune obligation valide — ni pour les États-Unis ni pour l'Iran ») et dépose une **plainte à l'ONU recensant 42 violations US** (art. 5) ; Baghaei annonce « aucun projet de négociation ».
+2. [FAIT, A1] **Le blocus naval est réimposé (14 juillet, 16h00 ET)** et l'OFAC élargit encore les sanctions (Licence Z, 20 navires SDN) — les acquis de juin sont tous morts.
+3. [FAIT, B2] **Le marché a coté la rupture** : Brent 83,30 $ (+9,6 %) puis >85 $ en séance — l'hypothèse d'un retour rapide à la normale n'est plus soutenue par les prix.
+4. [FAIT, A2] **L'épisode du péage** (Trump 20 %, retiré en ~25 h) et la réplique d'Araghchi (« Nous serons justes » — droit iranien de taxer) montrent que les deux camps envisagent désormais la **monétisation** du détroit, pas sa normalisation.
+
+**Ce qui maintient A en vie (à 5-12 %, pas moins)** : **aucun retrait formel du MOU n'est notifié** (la dénonciation iranienne est verbale et conditionnelle ; Washington sanctionne mais ne dénonce pas) ; Baghaei maintient que « la diplomatie ne s'arrête jamais » ; la médiation Pakistan-Qatar-Oman reste active ; le **double corridor omanais n'est ni accepté ni enterré** (Tasnim le renvoie à un tête-à-tête Iran-Oman).
+
+**Indicateur de falsification (ce qui ferait remonter A)** : acceptation iranienne du double corridor ; session de Doha effectivement tenue ; nouvelle licence pétrolière au 17 juillet (au lieu d'une expiration sèche) ; 1er transfert d'avoirs ou 1er accès AIEA.
+
+**Ce qui achèverait de réfuter A** : retrait formel notifié du MOU par l'une des parties ; mort militaire américaine sous le feu iranien ; frappe sur un terminal pétrolier majeur (Kharg).
+
+Source : [`synthese_J135-J138.md`](synthese_J135-J138.md).
 
 ---
 

@@ -1,6 +1,30 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 40-50 % (au 12 juillet 2026, J135) — C DEVIENT LE SCÉNARIO MODAL, pour la première fois depuis le pic de la crise : les trois indicateurs de bascule de J131 se sont tous déclenchés (seuil létal franchi, salves récurrentes, effondrement mesuré des flux + fermeture proclamée) — plafonné par un prix qui n'a pas encore coté la fermeture, l'absence de victime américaine et un canal diplomatique vivant
+### Probabilité estimée : 45-55 % (au 15 juillet 2026, J138) — C MODAL RENFORCÉ : le principal plafond de J135 a sauté (le marché a coté — Brent 83,30 $ +9,6 %, puis >85 $, backwardation 8,92 $) ; blocus naval réimposé, 3 pétroliers frappés en un jour (JMIC « SEVERE »), marin du *GFS Galaxy* confirmé mort, MOU dénoncé déclarativement par Téhéran — plafonné par le flux escorté résiduel (8-8,5 Mb le 12/7, DOE), l'absence de mort américaine sous le feu et un prix à 85 $ (pas 100+)
+
+---
+
+## Mise à jour J138 (15 juillet 2026)
+
+**Probabilité relevée à 45-55 % (vs 40-50 % à J135) — C modal renforcé.** [INTERPRÉTATION] Les indicateurs « vers C confirmé » définis à J135 se sont déclenchés en majorité : **Brent >85 $ à la réouverture** (borne basse de la zone 85-90 annoncée), **mort confirmée du marin du *GFS Galaxy***, **dénonciation (déclarative) du MOU**. Deux indicateurs seulement n'ont PAS parlé : pas de frappe sur un terminal pétrolier (Kharg épargné), pas de fermeture hermétique (flux escorté).
+
+**Ce qui renforce C** :
+1. [FAIT, B2 — vérifié, 4 sources] **Le marché a coté** : Brent 83,30 $ le 13 juillet (+9,59 %, plus forte séance depuis mai 2020), 84,73 $ le 14 (pic intraday ~87 $), >85 $ en séance le 15 ; **backwardation front/6 mois 8,92 $** (la plus large depuis le 10 juin) — la tension physique de court terme est désormais pricée.
+2. [FAIT, A1 — vérifié, 3 chaînes] **Le blocus naval est réimposé (14 juillet, 16h00 ET)** — 2ᵉ blocus, 20+ navires dont 2 porte-avions, 2 navires déroutés en 17 h ; **5 jours consécutifs de frappes CENTCOM** dont les premières de jour (15 juillet) et les premiers drones maritimes kamikazes.
+3. [FAIT, A2/B2 — vérifié, 5 chaînes] **3 pétroliers frappés en une journée (14 juillet)** — *Stolt Magnesium* + VLCC Adnoc *Al Bahyah*/*Mombasa B* (missiles de croisière iraniens, 1-2 morts, bilan non stabilisé) ; **JMIC « SEVERE »** (1ʳᵉ fois depuis le 15 juin) ; **marin du *GFS Galaxy* confirmé mort** (Heramb Karmarkar) — les attaques de navires sont désormais récurrentes ET létales.
+4. [FAIT, C2/B2] **Téhéran dénonce déclarativement le MOU** et le CGRI menace d'étendre la fermeture « à d'autres corridors énergétiques » ; au Yémen, la **trêve Houthis-Riyad de 2022 vacille** (Abha frappé le 13 juillet, « phase de désescalade terminée ») — le risque bi-océanique (Ormuz + Bab-el-Mandeb) se réarme.
+
+**Ce qui plafonne encore C (pas plus de 45-55 %)** :
+- **Le flux escorté est réel** : 8-8,5 Mb le 12 juillet (DOE) — pas de fermeture hermétique ; exports du Golfe encore ~70 % de la normale.
+- **Aucune mort américaine sous le feu iranien** (le cumul Pentagone de 14 morts relève d'accidents) ; ripostes iraniennes toujours massivement interceptées et calibrées.
+- **Le prix dit 85 $, pas 100+** : aucune prime Dated Brent physique documentée, pas de panique d'approvisionnement — la **Chine réduit ses achats** (556 kb/j, plus bas depuis janvier 2023) et **>20 Mb iraniens flottent invendus** : l'Iran perd son financement, ce qui borne sa capacité d'escalade longue.
+- **Kharg et les terminaux pétroliers restent épargnés des deux côtés** — l'objet du chantage est préservé.
+
+**Falsifié (vers C confirmé / haut de fourchette) si** : Brent >90-100 $ durable ou prime Dated Brent physique documentée ; mort militaire américaine sous le feu iranien ; frappe sur Kharg ou un terminal majeur ; extinction du flux escorté (transits ~0 durable) ; attaque effective à Bab-el-Mandeb ; retrait formel notifié du MOU.
+
+**Falsifié (vers B, recul) si** : acceptation iranienne du double corridor omanais ; session de Doha tenue ; nouvelle licence pétrolière au 17 juillet ; reflux du Brent sous ~80 $ avec transits en remontée.
+
+Source : [`synthese_J135-J138.md`](synthese_J135-J138.md).
 
 ---
 

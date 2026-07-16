@@ -1,6 +1,24 @@
 # Scénario B — Réaliste
 ## « L'enlisement organisé sous cessez-le-feu indéfini, ponctué d'incidents non létaux »
-### Probabilité estimée : 30-40 % (au 12 juillet 2026, J135) — B PERD LA PLACE MODALE AU PROFIT DE C : le re-capage attendu à J131 ne s'est pas produit (2 salves supplémentaires, premières morts, fermeture déclarée d'Ormuz) — B devient le scénario de la désescalade *ratée mais rattrapable*, porté par la médiation Qatar-Pakistan, les conditions US écrites et le double corridor omanais
+### Probabilité estimée : 28-38 % (au 15 juillet 2026, J138) — B SE TASSE ET CHANGE DE NATURE : le rattrapage attendu à J135 n'a pas eu lieu (pas de Doha, corridor non tranché, MOU dénoncé déclarativement par Téhéran) — B devient le scénario du *corridor militarisé stabilisé* (flux escorté 8-8,5 Mb le 12/7 selon le DOE), porté par la médiation Pakistan-Qatar-Oman et la désescalade Liban-Israël
+
+---
+
+## Mise à jour J138 (15 juillet 2026)
+
+**Probabilité légèrement abaissée à 28-38 % (vs 30-40 % à J135) — B change de contenu plus que de niveau.** [INTERPRÉTATION] Le « chemin de rattrapage » de J135 ne s'est pas matérialisé (aucun des indicateurs ⬆️ : pas d'acceptation du corridor, pas de session de Doha, pas de nouvelle licence en vue). Mais la fenêtre a révélé la forme concrète que prendrait un enlisement durable : **un corridor militarisé à flux réduit et escorté** — ni accord, ni choc systémique.
+
+**Ce qui maintient B (28-38 %)** :
+1. [FAIT, B2 — vérifié] **Le flux escorté est réel** : 8 à 8,5 Mb transités le 12 juillet « avec assistance militaire » (DOE) malgré 6-14 navires visibles — le pétrole passe, sous protection, en quantité réduite : c'est la physionomie même d'un enlisement stabilisé.
+2. [FAIT, B2] **La médiation survit à tout** : Pakistan-Qatar-Oman actifs, « la diplomatie ne s'arrête jamais » (Baghaei), **double corridor omanais non tranché mais non enterré**.
+3. [FAIT, B2 — vérifié, 4 chaînes] **La désescalade Liban-Israël progresse réellement** (accord de Rome sur la structure des « zones pilotes », sommet Trump-Aoun le 21 juillet) — preuve que la région peut produire des désescalades négociées même en pleine escalade du détroit.
+4. [FAIT, A1] **La déclaration UE-CCG (13 juillet)** structure un consensus international contre toute fermeture ET tout péage — un cadre disponible pour une stabilisation de fait.
+
+**Ce qui tasse B** : le marché a coté la fermeture (Brent >85 $) et la guerre de position s'institutionnalise (blocus réimposé, JMIC « SEVERE », attaques létales de pétroliers) — chaque semaine de ce régime rapproche C par accumulation (assurances, marins, engrais, hélium) ; le MOU dénoncé déclarativement retire à B son cadre juridique de référence.
+
+**Falsifié** : ⬆️ retour vers 35-40 % si acceptation du double corridor, session de Doha tenue, ou nouvelle licence au 17 juillet ; ⬇️ vers C si mort militaire US sous le feu iranien, Brent >90-100 $, prime Dated Brent physique documentée, ou extinction du flux escorté (transits ~0 durable).
+
+Source : [`synthese_J135-J138.md`](synthese_J135-J138.md).
 
 ---
 
