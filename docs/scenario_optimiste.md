@@ -1,6 +1,24 @@
 # Scénario A — Optimiste
 ## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
-### Probabilité estimée : 4-10 % (au 18 juillet 2026, J141) — VERS LE PLANCHER : GL X1 EXPIRÉE LE 17 JUILLET SANS PROROGATION, 7-8 NUITS DE FRAPPES ÉLARGIES, ULTIMATUM REZAEI (FENÊTRE ~19-21/7) — A NE SURVIT QUE PAR L'ABSENCE DE RETRAIT FORMEL DU MOU ET LA MÉDIATION CHINE-PAKISTAN CONJOINTE (WANG YI + ISHAQ DAR, 16-17 JUILLET : CESSATION IMMÉDIATE + RETOUR AU DIALOGUE/MOU), ACTIVE MAIS SANS RÉSULTAT CONCRET
+### Probabilité estimée : 3-8 % (au 19 juillet 2026, J142) — QUASI PLANCHER : MOU D'ISLAMABAD FORMELLEMENT SUSPENDU PAR TÉHÉRAN (18/7, GHARIBABADI) ET MORT DE MILITAIRES US SOUS LE FEU IRANIEN (JORDANIE, 17/7) — A NE SURVIT QUE PARCE QUE LA SUSPENSION EST RÉVERSIBLE (PAS DE RETRAIT FORMEL NOTIFIÉ) ET QUE LA MÉDIATION CHINE-PAKISTAN VISE EXPLICITEMENT LE RETOUR AU MOU
+
+---
+
+## Mise à jour J142 (19 juillet 2026)
+
+**Probabilité abaissée à 3-8 % (vs 4-10 % à J141) — A frôle le plancher.** [INTERPRÉTATION] La fenêtre 18-19 juillet a fait franchir un seuil défavorable à A : Téhéran a **formellement suspendu** ses engagements au titre du MOU d'Islamabad (Gharibabadi, 18/7) — un cran au-dessus de la dénonciation déclarative de J141 — et des **militaires américains sont morts sous le feu iranien** (Jordanie, 17/7), déclencheur d'escalade qui éloigne d'autant la sortie de crise.
+
+**Ce qui achève de comprimer A** :
+1. [FAIT, B1] **Suspension formelle du MOU** (18/7) : l'un des rares acquis résiduels d'A est mis en sommeil.
+2. [FAIT, A2] **Mort de militaires US sous le feu iranien** + 8ᵉ nuit de représailles CENTCOM : la dynamique est à l'escalade réciproque, pas à l'apaisement.
+
+**Ce qui maintient A en vie (à 3-8 %, pas zéro)** : la **suspension n'est pas un retrait** — elle est réversible, aucune notification de retrait formel n'a été signalée ; et la **médiation Chine-Pakistan reste active**, réaffirmant explicitement le MOU (Wang Yi + Ishaq Dar, 17/7). A ne survit plus que par ce double fil.
+
+**Indicateur de falsification (ce qui ferait remonter A)** : levée de la suspension du MOU / trêve issue de la médiation ; désescalade après les morts US plutôt que représailles élargies.
+
+**Ce qui achèverait de réfuter A** : retrait formel notifié du MOU ; exécution de l'offensive annoncée par Rezaei ; frappe sur un terminal pétrolier majeur (Kharg).
+
+Source : [`synthese_J141-J142.md`](synthese_J141-J142.md).
 
 ---
 

@@ -212,6 +212,27 @@ Sources officielles pour le suivi de l'**AdBlue (DEF, solution AUS 32 = 32,5 % u
 
 ---
 
+## Sources clés ajoutées pour la fenêtre J141→J142 (18-19 juillet 2026)
+
+Convention de référence robuste : « Titre — Éditeur, date, URL · consulté 19 juillet 2026 · Cote: X# ».
+
+| Source | Type | Référence | URL · consultation · cote |
+|---|---|---|---|
+| CENTCOM (communiqué, via NBC, PBS, Bloomberg, Axios, NPR, CBS, The National, Air Force Times) | M | 2 militaires US tués, 1 porté disparu, 4 blessés — attaque combinée missiles balistiques/drones du CGRI (« Opération Nasr 2 ») sur la base aérienne Muwaffaq Salti (Jordanie), 17 juillet (annoncée le 18/7) ; pages primaires CENTCOM/CNN non lisibles directement (blocages 451/403), fait retenu sur le recoupement de ≥8 médias Tier 1/2 convergents | centcom.mil/MEDIA/PRESS-RELEASES/ · nbcnews.com/ · pbs.org/newshour/ · bloomberg.com/ · axios.com/ · npr.org/ · cbsnews.com/ · thenationalnews.com/ · airforcetimes.com/ · consulté 19 juillet 2026 · Cote: A2 |
+| Tasnim / Tehran Times | P | Suspension formelle par l'Iran de tous ses engagements au titre du MOU d'Islamabad — annonce du vice-ministre des Affaires étrangères Kazem Gharibabadi, 18/7 (« We have suspended all of our commitments... ») ; sources primaires iraniennes (média d'État/semi-officiel), à recouper impérativement | tasnimnews.com/ · tehrantimes.com/ · consulté 19 juillet 2026 · Cote: B2 |
+| Middle East Eye / Iran International / The New Arab / WANA | P | Relais indépendants confirmant la suspension du MOU d'Islamabad par Téhéran (18/7) | middleeasteye.net/ · iranintl.com/ · newarab.com/ · wanaen.com/ · consulté 19 juillet 2026 · Cote: B2/C2 |
+| Ministère koweïtien de la Défense | M | 4 militaires koweïtiens blessés lors d'une attaque iranienne contre un navire de la marine koweïtienne (18/7) — 1er bilan militaire d'un État du Golfe blessé en mer ; source gouvernementale tierce, indépendante du CGRI | mod.gov.kw/ · consulté 19 juillet 2026 · Cote: B2 |
+| Goldman Sachs (note semaine du 13-17/7, via TheStreet/Investing.com/Yahoo Finance) | E | Scénario central maintenu Brent 80 $/b T4 2026 puis 75 $ 2027, mais risque court terme désormais « skewed to the upside » : overshoot >110 $ envisagé en cas d'aggravation — 1ʳᵉ révision bancaire datée post-11/7 (MS 75/Citi 70/JPM 86 restent périmées) | thestreet.com/ · investing.com/ · finance.yahoo.com/ · consulté 19 juillet 2026 · Cote: B2 |
+| prix-carburant.eu / carbu.com | E, S, D | Gazole France 2,101 €/L (prix-carburant.eu, ~11 000 stations) et 2,105 €/L (carbu.com) le 19/7 ; SP95-E10 ~2,00 €/L, SP98 ~2,086-2,090 €/L — agrégateurs privés, ne se substituent pas à la moyenne officielle DGEC (attendue le 20/7) | prix-carburant.eu/ · carbu.com/ · consulté 19 juillet 2026 · Cote: B2/C3 |
+| MICA Center (Marine nationale) | M | 18 incidents de piraterie recensés dans le golfe d'Aden depuis avril 2026, dont ≥3 navires toujours retenus contre rançon | mica-center.org/ · consulté 19 juillet 2026 · Cote: B2 |
+| Garde-côtes yéménites | M | Attribution du détournement du chimiquier *Asana* (17/7, golfe d'Aden, ~26 nm au large du Hadramaout, pavillon Tanzanie) à des pirates somaliens — « Pirates, not Houthis » | (communiqué relayé Reuters/gCaptain) · consulté 19 juillet 2026 · Cote: B1 |
+| gCaptain / Seatrade Maritime / Skuld | M, T | Coalition navale UK-France (RFA *Lyme Bay* + HMS *Dragon*, >270 personnels, systèmes autonomes de déminage, hub logistique à Duqm/Oman) : arrivée documentée, mais les frappes sur Ormuz menacent l'avancement de la mission de déminage européenne — toujours aucun chenal certifié | gcaptain.com/ · seatrade-maritime.com/ · skuld.com/ · consulté 19 juillet 2026 · Cote: B3 |
+| Kpler (via CNBC) / Windward | T, D | Transits Ormuz : 15 navires/j (15/7) → 8 navires/j (16/7, plus bas en 3 semaines) ; voie sud escortée (côté omanais) effondrée le week-end du 11-12/7 (1 seul des 12 sortants) ; route iranienne nord majoritaire ; AIS massivement coupé = comptage en borne inférieure | cnbc.com/ · windward.ai/ · consulté 19 juillet 2026 · Cote: B2 |
+| AGBI / Edison | T, E | Force majeure GNL QatarEnergy prolongée jusqu'à mi-septembre 2026 (21 cargaisons concernées, Edison/Adriatic LNG) — non stabilisé face à l'échéance « octobre » (gasworld, source unique antérieure) | agbi.com/oil-and-gas/2026/07/force-majeure-on-qatarenergy-lng-extends-to-fourth-month/ · consulté 19 juillet 2026 · Cote: B2 |
+| Reuters (dépêche du 16/7) | P, M | L'Iran aurait instruit les Houthis de fermer Bab-el-Mandeb SI les États-Unis frappent le réseau électrique iranien (menace formulée par Trump le 14/7) ; dépêche à 3 sources — 1ʳᵉ double-menace Ormuz + Bab-el-Mandeb qualifiée d'opérationnelle, mais non exécutée : à coter [SPÉCULATION] | reuters.com/ · consulté 19 juillet 2026 · Cote: C3 |
+
+---
+
 ## Sources clés ajoutées pour la fenêtre J96→J98 (4 → 6 juin 2026)
 
 Convention de référence robuste : « Titre — Éditeur, date, URL · consulté 6 juin 2026 · Cote: X# ».

@@ -1,6 +1,23 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 52-60 % (au 18 juillet 2026, J141) — C MODAL RENFORCÉ (médiane ~56) : échec du corridor escorté (transits 8 navires/j les 16-17/7, majorité sur la route iranienne — le plafond « flux escorté » de J138 a sauté), prime Dated Brent physique réapparue (+1,30 $ le 16/7, source unique), GL X1 expirée le 17/7, 2ᵉ marin civil tué (VLCC *Mombasa B*), 7-8 nuits de frappes élargies jusqu'à Yazd, ultimatum Rezaei (fenêtre ~19-21/7) — plafonné par les 2 déclencheurs de C franc NON franchis : aucune mort militaire US sous le feu iranien (blessés seulement, Jordanie 17/7) et Brent à 88,10 $ (pas 90-100)
+### Probabilité estimée : 62-70 % (au 19 juillet 2026, J142) — C MODAL NETTEMENT RENFORCÉ (médiane ~66) : le premier des deux déclencheurs de « C franc » est FRANCHI — 2 militaires US tués + 1 disparu sous le feu iranien (base Muwaffaq Salti, Jordanie, 17/7) ; 8ᵉ nuit de frappes CENTCOM en représailles (ponts/rail du Hormozgan) ; MOU d'Islamabad formellement suspendu — plafonné par le second déclencheur non encore coté (Brent figé à 88 $, marchés fermés jusqu'au 20/7) et la non-matérialisation de l'offensive Rezaei au 19/7
+
+---
+
+## Mise à jour J142 (19 juillet 2026)
+
+**Probabilité relevée à 62-70 % (vs 52-60 % à J141) — C modal nettement renforcé, médiane ~66.** [INTERPRÉTATION] La fenêtre 18-19 juillet fait franchir à la crise **le premier de ses deux seuils décisifs** : des militaires américains sont morts sous le feu iranien direct — le déclencheur que J141 désignait comme le plus discriminant vers « C franc ».
+
+**Ce qui renforce C** :
+1. [FAIT, A2] **Mort de militaires US sous le feu iranien** (2 tués + 1 disparu + 4 blessés, base Muwaffaq Salti, Jordanie, 17/7, attaque balistique/drones CGRI « Nasr 2 ») — déclencheur de C franc **franchi**.
+2. [FAIT, A2] **8ᵉ nuit de frappes CENTCOM en représailles**, élargie (6 ponts + voie ferrée du Hormozgan, explosions Bandar Abbas/Qeshm).
+3. [FAIT, B1] **MOU d'Islamabad formellement suspendu** par Téhéran (18/7) ; **4 militaires koweïtiens blessés** en mer (18/7).
+
+**Ce qui plafonne encore C (empêche sa forme extrême immédiate)** : le **second déclencheur n'a pas coté** — Brent **figé à 88 $ parce que les marchés sont fermés** (week-end), réaction attendue le 20/7 ; l'**offensive à grande échelle de Rezaei n'est pas matérialisée** au 19/7 (lacune, pas démenti) ; la **médiation Chine-Pakistan** reste active (MOU suspendu, non retiré).
+
+**Ce qui ferait basculer vers C franc / extrême** : Brent durablement >90-100 $ à l'ouverture du 20/7 ; exécution de l'offensive Rezaei ; frappe américaine sur le réseau électrique iranien (→ déclencheur Bab-el-Mandeb) ; frappe sur Kharg.
+
+Source : [`synthese_J141-J142.md`](synthese_J141-J142.md).
 
 ---
 

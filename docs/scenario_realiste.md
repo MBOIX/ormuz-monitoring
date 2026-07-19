@@ -1,6 +1,22 @@
 # Scénario B — Réaliste
 ## « L'enlisement organisé sous cessez-le-feu indéfini, ponctué d'incidents non létaux »
-### Probabilité estimée : 27-36 % (au 18 juillet 2026, J141) — B S'ÉRODE : le corridor escorté du DOE ne se matérialise pas dans la tendance (8 navires/j les 16-17/7, majorité des franchissements sur la route iranienne nord, AIS-dark) — la masse du « corridor qui tient » migre vers C ; B ne vit plus que par le Brent capé à 88 $ (pas 90-100), l'absence de nouvelle attaque de navire du 16 au 18/7, l'adaptation du marché chinois (16-20,5 Mb de brut du Golfe non sanctionné) et le calme social français (~4 % de stations en difficulté, en amélioration)
+### Probabilité estimée : 22-30 % (au 19 juillet 2026, J142) — B SE FRAGILISE : la mort de militaires US sous le feu iranien (Jordanie, 17/7) fragilise la lecture « tit-for-tat non létal gérable » ; B ne vit plus que par l'absence de confirmation-marché (Brent figé à 88 $ le temps du week-end, réaction attendue le 20/7) et la non-matérialisation de l'« offensive à grande échelle » de l'ultimatum Rezaei
+
+---
+
+## Mise à jour J142 (19 juillet 2026)
+
+**Probabilité abaissée à 22-30 % (vs 27-36 % à J141) — B s'érode encore au profit de C.** [INTERPRÉTATION] Le pari central de B — un enlisement d'incidents **non létaux** « gérable » — est directement fragilisé par la **mort de deux militaires américains sous le feu iranien** (Jordanie, 17/7) : ce n'est plus du tit-for-tat non létal côté US.
+
+**Ce qui érode B** :
+1. [FAIT, A2] **Seuil létal militaire US franchi** + 8ᵉ nuit de représailles élargie (ponts, rail) : l'escalade réciproque sort du registre « non létal » qui définissait B.
+2. [FAIT, B1] **MOU suspendu formellement** : la voie de l'accord creux se referme d'un cran.
+
+**Ce qui maintient B (à 22-30 %)** : le **marché n'a pas confirmé** — Brent figé à 88 $ faute de cotation (week-end), pas de franchissement des 90-100 $ observé ; l'**« offensive à grande échelle » de Rezaei n'est pas matérialisée** au 19/7 ; la **médiation Chine-Pakistan** offre encore un chemin de stabilisation ; **calme social** maintenu en France.
+
+**Indicateur de bascule** : Brent >90-100 $ à l'ouverture du 20/7 ou exécution de l'offensive Rezaei → glissement vers C ; désescalade négociée après les morts US → remontée de B.
+
+Source : [`synthese_J141-J142.md`](synthese_J141-J142.md).
 
 ---
 

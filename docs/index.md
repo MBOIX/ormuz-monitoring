@@ -1,14 +1,20 @@
 # Index — Crise du Détroit d'Ormuz / Impact France
 ### Projet d'analyse OSINT, économique et sociale
-#### État au 18 juillet 2026 — Jour 141 du conflit
+#### État au 19 juillet 2026 — Jour 142 du conflit
 
 ---
 
 > **Comment lire ce dossier — instantané daté, situation évolutive.**
-> Dernière consolidation : **18 juillet 2026 (J141)** · arrêt des données : 18 juillet 2026, heure de Paris.
-> Suivi d'une crise **réelle et en cours** : chaque chiffre (prix, stocks, flux) périme vite ; au-delà de ~48-72 h, données à revérifier. La synthèse périodique la plus récente — **[`synthese_J138-J141.md`](synthese_J138-J141.md)** — fait foi sur l'état courant. Analyse **OSINT sur sources ouvertes**, à vocation informative — ni conseil financier, ni source de sécurité opérationnelle. Voir [`README.md`](../README.md) et [`sources.md`](sources.md).
+> Dernière consolidation : **19 juillet 2026 (J142)** · arrêt des données : 19 juillet 2026, heure de Paris.
+> Suivi d'une crise **réelle et en cours** : chaque chiffre (prix, stocks, flux) périme vite ; au-delà de ~48-72 h, données à revérifier. La synthèse périodique la plus récente — **[`synthese_J141-J142.md`](synthese_J141-J142.md)** — fait foi sur l'état courant. Analyse **OSINT sur sources ouvertes**, à vocation informative — ni conseil financier, ni source de sécurité opérationnelle. Voir [`README.md`](../README.md) et [`sources.md`](sources.md).
 
 ---
+
+> **⏩ Actualisation J142 (19 juillet) — LE SEUIL MILITAIRE FRANCHI : 2 militaires américains tués + 1 porté disparu sous le feu iranien** (attaque balistique/drones du CGRI, « Opération Nasr 2 », sur la base Muwaffaq Salti, Jordanie, 17/7) — **le PREMIER des deux déclencheurs de « C franc »** que J141 attendait. En représailles, **8ᵉ nuit de frappes CENTCOM** élargie (ponts/rail du Hormozgan) ; l'Iran **SUSPEND FORMELLEMENT le MOU d'Islamabad** (Gharibabadi, 18/7) ; **4 militaires koweïtiens blessés** en mer. **MAIS le second déclencheur (Brent >90-100 $) n'a pas encore coté** — marchés fermés (week-end), Brent figé à **88,09 $**, réaction attendue à l'ouverture du **20/7** — et l'« offensive à grande échelle » de l'ultimatum Rezaei **n'est pas matérialisée au 19/7**. En France : **gazole 2,10-2,105 €/L** (plein 40 L ~84 €), sans pénurie ni mobilisation sociale. Détail et sources dans [`synthese_J141-J142.md`](synthese_J141-J142.md).
+> - **Recalibrage J142 (C modal nettement renforcé, médiane ~66)** : 🔴 **C 62-70 %** (⬆️ +10 : 1er déclencheur de C franc franchi, 8ᵉ nuit de représailles, MOU suspendu ; borné par le 2ᵉ déclencheur non coté et l'offensive Rezaei non matérialisée) · 🟡 **B 22-30 %** (⬇️ : la lecture « tit-for-tat non létal » est fragilisée par la mort de militaires US) · 🟢 **A 3-8 %** (⬇️ vers le plancher : MOU suspendu ; survit par la réversibilité de la suspension + médiation Chine-Pakistan).
+> - **Correctifs vs le bloc J141 ci-dessous** : le déclencheur « 1ʳᵉ mort US sous le feu iranien » n'est plus OUVERT mais **FRANCHI** (17/7) → décompte US **16 morts (dont 2 sous le feu iranien) + 1 disparu** (vs « 14, aucune ») ; **bilan iranien 50 morts / 500+ blessés** (Santé, 18/7) ; **gazole 2,10-2,105 €/L** (vs 2,05-2,07) ; « fermeture d'Ormuz du 19/7 » = **recyclage du 12/7 (écartée)**.
+>
+> *Le bloc J141 ci-dessous est conservé comme historique daté ; en cas d'écart, l'actualisation J142 et [`synthese_J141-J142.md`](synthese_J141-J142.md) font foi.*
 
 > **⏩ Actualisation J141 (18 juillet) — le corridor fantôme : le corridor escorté ne se matérialise pas (8 navires/jour les 16-17/7, majoritairement sur la route iranienne), la prime du Dated Brent physique réapparaît, la licence GL X1 expire le 17/7 sans prorogation, un 2ᵉ marin civil est confirmé mort, Brent 88,10 $ (+13-16 % hebdo) — le choc de prix glisse vers un début de choc d'approvisionnement, sans franchir les deux déclencheurs de C franc (mort militaire US sous le feu iranien, Brent >90-100 $).** Détail et sources dans [`synthese_J138-J141.md`](synthese_J138-J141.md).
 > - **Militaire — la campagne s'élargit, le blocus devient nominatif [FAIT]** : **7-8 nuits de frappes CENTCOM consécutives** (11-18 juillet), élargies très au-delà du détroit — **chasseurs jusqu'à ~600-650 km à l'intérieur du territoire (Yazd)**, ponts de Bandar Khamir, aéroport d'Iranshahr, gare de Bandar Abbas, tour de contrôle du port de Chabahar ; **appui logistique israélien rendu public** (Axios). Blocus appliqué nominativement : **M/T *Belma* désactivé au Hellfire (15/7**, route Kharg**)**, **M/T *Wen Yao* arraisonné par le 11ᵉ MEU (16/7)**. **2ᵉ marin civil confirmé mort** (marin indien du VLCC *Mombasa B*, attaque du 14/7 ; 8-10 blessés dont 4 grièvement — bilan VLCC toujours contradictoire : OMI 2 morts/14 blessés vs Oman 1 mort/3 disparus). **Premiers blessés US non mortels sous le feu iranien** (2 bases en Jordanie, 17/7, « no fatalities ») — cumul Pentagone **inchangé (14 morts / 414 blessés)**, le déclencheur « 1ʳᵉ mort US sous le feu iranien » reste **OUVERT**. Bilan iranien : **38 morts / 400+ blessés** (Santé, 17/7) à **43** (lettre ONU Iravani) — borne basse. **Ultimatum du gén. Rezaei (17/7)** : « offensive à grande échelle » si les frappes durent encore 2-3 jours — **fenêtre critique ~19-21/7** ([SPÉCULATION] tant que non exécutée). Revendications CGRI du 18/7 (Al-Tanf, Salamah Rocks, US « tués/capturés ») **DÉMENTIES par CENTCOM** ; « 3 US tués au Koweït » = photo Abqaiq **2019** recyclée. **Aucune nouvelle attaque iranienne de navire recensée du 16 au 18/7.**
@@ -66,11 +72,13 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 
 ---
 
-## Chiffres clés (18 juillet 2026)
+## Chiffres clés (19 juillet 2026)
+
+> *Note : plusieurs lignes ci-dessous reflètent l'état J141 (18/7). Les correctifs J142 (morts US, gazole 2,10 €/L, bilan iranien 50/500, scénarios) sont portés par l'actualisation J142 en tête et par [`synthese_J141-J142.md`](synthese_J141-J142.md), qui fait foi.*
 
 | Indicateur | Valeur | Contexte |
 |---|---|---|
-| **Escalade militaire** | **7-8 nuits de frappes CENTCOM consécutives (11-18/7), élargies jusqu'à Yazd (~600-650 km) — blocus appliqué nominativement** | Chasseurs en profondeur (Yazd), ponts de Bandar Khamir, aéroport d'Iranshahr, gare de Bandar Abbas, tour de contrôle de Chabahar ; **appui logistique israélien rendu public** (Axios) ; **M/T *Belma* désactivé au Hellfire (15/7)**, **M/T *Wen Yao* arraisonné par le 11ᵉ MEU (16/7)** ; **premiers blessés US non mortels sous le feu iranien** (2 bases en Jordanie, 17/7, « no fatalities ») ; Pentagone : cumul **14 morts US / 414 blessés (inchangé)** ; bilan iranien **38 morts/400+ blessés (Santé 17/7) à 43 (lettre ONU)** — borne basse ; revendications CGRI du 18/7 **démenties par CENTCOM** [B1/B2/C3] |
+| **Escalade militaire** | **7-8 nuits de frappes CENTCOM consécutives (11-18/7), élargies jusqu'à Yazd (~600-650 km) — blocus appliqué nominativement** | Chasseurs en profondeur (Yazd), ponts de Bandar Khamir, aéroport d'Iranshahr, gare de Bandar Abbas, tour de contrôle de Chabahar ; **appui logistique israélien rendu public** (Axios) ; **M/T *Belma* désactivé au Hellfire (15/7)**, **M/T *Wen Yao* arraisonné par le 11ᵉ MEU (16/7)** ; **⚠️ 2 militaires US TUÉS + 1 disparu sous le feu iranien** (base Muwaffaq Salti, Jordanie, 17/7 — 1ʳᵉ mort US sous le feu iranien, **déclencheur de bascule FRANCHI**) ; cumul US porté à **16 morts (dont 2 au combat) + 1 disparu** ; **8ᵉ nuit de frappes CENTCOM en représailles** (ponts/rail Hormozgan) ; **4 militaires koweïtiens blessés** (18/7) ; bilan iranien **50 morts / 500+ blessés (Santé 18/7)** — borne basse [A2/B2/C3] |
 | **Ultimatum iranien** | **Gén. Rezaei (17/7) : « offensive à grande échelle » si les frappes durent encore 2-3 jours** | **Fenêtre critique ~19-21 juillet** ; avertissement explicite aux États du Golfe hébergeant des forces US ; la déclaration est établie [FAIT], l'exécution ne l'est pas [SPÉCULATION] [B2] |
 | **Détroit d'Ormuz (statut)** | **« Corridor fantôme » — transits au plancher de 3 semaines, JMIC « SEVERE » maintenu (Update 072, 16/7)** | **8 navires/jour les 16-17/7, dont 7/8 sur la route iranienne nord** (Kpler, source unique sur la répartition) ; transits AIS éteint ; **corridor escorté sud NON matérialisé** ; **2ᵉ marin civil confirmé mort** (marin indien du VLCC *Mombasa B*, attaque du 14/7 ; 8-10 blessés dont 4 grièvement — bilan VLCC contradictoire : OMI 2 morts/14 blessés vs Oman 1 mort/3 disparus) ; **Inde (DG Shipping, 16/7) : avis d'éviter le déploiement de ses ~300 000 marins** (avis, pas interdiction) ; **aucune nouvelle attaque iranienne de navire du 16 au 18/7** [A1/B1/C3] |
 | **Accord US-Iran** | **INCHANGÉ — dénoncé déclarativement par Téhéran, aucun retrait formel notifié** | MAE pakistanais (16/7) : **aucune partie n'a notifié de retrait** ; presse contradictoire sur Qalibaf (« nul » vs défense des pourparlers) ; **aucune réaction du CSNU** aux 42 violations ; **aucune déclaration AIEA/Grossi** (fenêtre nucléaire ~mi-août = gap complet) ; réponse iranienne au double corridor omanais non actualisée [C3] |
@@ -93,7 +101,7 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 | **Hélium** | **L'interdiction chinoise (10/7) se chiffre : +60 à +120 % pour les acheteurs BtoB** | Risque de « quench » des IRM en cas de non-réapprovisionnement (arrêt ~1 an) ; anticipation **+15-25 % sur l'électronique grand public d'ici la rentrée** [INTERPRÉTATION] [C3] |
 | **Aluminium (LME)** | **3 163,40 $/t (17 juillet)** | Stocks LME **non actualisés** (gap ; dernier point < 300 000 t, plus bas depuis 2022) ; Qatalum réduit (contrainte gazière) [B2] |
 | **Soufre / engrais** | **Soufre Chine −17,7 % sur 30 j — mais ~4× son niveau d'il y a un an** | **Urée 424 $/t (16/7, quasi stable** — mais +9-13 % sur un an, loin du pic d'avril ~920 $) ; méthanol iranien reprend à 60-70 % de capacité ; transmission soufre→phosphates toujours enclenchée (acide phosphorique +340 $/t au T3) [B2/A2] |
-| **Gazole France (pompe)** | **2,015 €/L (16/7) → 2,05-2,07 €/L (17/7, agrégateurs divergents) — moyenne DGEC officielle attendue lundi 20/7** | **Plein de 40 L ~81-83 € (+5 à +7 € en 10 jours)** ; SP95-E10 ~1,95-2,01 €/L, SP98 ~2,03-2,06 €/L ; GNR **1 583 €/1000 L**, fioul **1,561-1,580 €/L** ; **~4 % des stations en difficulté** (16/7, **légère amélioration** vs 5 % à J138) — tension logistique, **pas de pénurie** [C3] |
+| **Gazole France (pompe)** | **2,05 €/L (17/7) → 2,10-2,105 €/L (19/7, agrégateurs) — moyenne DGEC officielle attendue lundi 20/7** | **Plein de 40 L ~84 € (+~8 € vs DGEC du 6/7)** ; SP95-E10 ~2,00 €/L, SP98 ~2,086-2,090 €/L ; GNR **1 583 €/1000 L**, fioul **1,561-1,580 €/L** ; **~4 % des stations en difficulté** (dernier chiffre officiel 16/7 ; « 794 en rupture » d'un agrégateur le 19/7, non converti) — **pas de pénurie** [C3] |
 | **Plafonnement TotalEnergies** | **1,99 €/L maintenu — mais CONTESTÉ : saisine de l'Autorité de la concurrence (17-18/7)** | **Premier contentieux concurrentiel de la crise** (stations indépendantes) — risque sur le principal amortisseur pompe ; **aides NON prolongées : grands rouleurs jusqu'au 31 juillet, remise GNR agricole jusqu'au 31 août** [B2/A1] |
 | **Croissance / budget France** | **INCHANGÉ — Banque de France : 2026 à 0,5 % (13/7), inflation révisée +0,8 pt** | Chômage ~8,1 % ; **aucune réactualisation macro ni déclaration officielle française trouvée du 16 au 18/7** (absence constatée) ; **calme social maintenu** (aucune mobilisation) ; budget des Armées : 64 Md€ avancé à 2027 [A2/B2] |
 | **Morts France** | **4 militaires — bilan FINUL de combat reste 3** | Aucune nouvelle perte dans la fenêtre (Frion, Montorio, Girardin ; Gilet accidentel hors FINUL) [A1/B2] |
@@ -107,9 +115,9 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 |---|---|
 | `CLAUDE.md` | Instructions pour Claude Code — rôle, contexte, workflow de mise à jour |
 | `index.md` | Ce fichier — vue d'ensemble et synthèse des 3 scénarios |
-| `scenario_optimiste.md` | Scénario A (4-10 %) — Accord US-Iran dénoncé déclarativement — sortie durable très improbable |
-| `scenario_realiste.md` | Scénario B (27-36 %) — Enlisement / « accord creux » : le corridor militarisé stabilisé |
-| `scenario_pessimiste.md` | Scénario C (52-60 %) — Choc physique + guerre d'usure US-Iran — **scénario modal depuis J135, renforcé à J141** |
+| `scenario_optimiste.md` | Scénario A (3-8 %) — Accord US-Iran, MOU formellement suspendu — sortie durable quasi exclue |
+| `scenario_realiste.md` | Scénario B (22-30 %) — Enlisement / « accord creux » : le corridor militarisé stabilisé |
+| `scenario_pessimiste.md` | Scénario C (62-70 %) — Choc physique + guerre d'usure US-Iran — **scénario modal depuis J135, nettement renforcé à J142** |
 | `calendrier_penuries.md` | Calendrier prévisionnel des pénuries S29→S40 (13 juillet → 4 octobre 2026) — Édition 3.0, 42 produits, trajectoire centrale C modal + bornes B/A |
 | `impacts_agricoles.md` | Impacts agricoles du blocage d'Ormuz — du champ à l'assiette (intrants, fret, sécurité alimentaire, prix conso) + prospective 2026-2029 + focus France |
 | `infrastructures_europe.md` | Tables raffineries, dépôts, ports, UGS, GNL, pipelines + days of cover par pays |
@@ -177,7 +185,7 @@ Le 28 février 2026, les États-Unis et Israël ont lancé des frappes conjointe
 
 ## Tableau récapitulatif
 
-| Indicateur | 🟢 A (4-10 %) | 🟡 B (27-36 %) | 🔴 C (52-60 %) |
+| Indicateur | 🟢 A (3-8 %) | 🟡 B (22-30 %) | 🔴 C (62-70 %) |
 |---|---|---|---|
 | **Brent futures** | 90-100 $ → 75-85 $ T4 | 95-115 $ → 85-100 $ T4 | 130-180+ $ |
 | **Dated Brent (physique)** | 100-110 $ → 80-90 $ T4 | 110-130 $ (falaise Exxon 150-160 $ possible) | 150-220+ $ |
