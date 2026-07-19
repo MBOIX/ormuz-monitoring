@@ -1,6 +1,24 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 45-55 % (au 15 juillet 2026, J138) — C MODAL RENFORCÉ : le principal plafond de J135 a sauté (le marché a coté — Brent 83,30 $ +9,6 %, puis >85 $, backwardation 8,92 $) ; blocus naval réimposé, 3 pétroliers frappés en un jour (JMIC « SEVERE »), marin du *GFS Galaxy* confirmé mort, MOU dénoncé déclarativement par Téhéran — plafonné par le flux escorté résiduel (8-8,5 Mb le 12/7, DOE), l'absence de mort américaine sous le feu et un prix à 85 $ (pas 100+)
+### Probabilité estimée : 52-60 % (au 18 juillet 2026, J141) — C MODAL RENFORCÉ (médiane ~56) : échec du corridor escorté (transits 8 navires/j les 16-17/7, majorité sur la route iranienne — le plafond « flux escorté » de J138 a sauté), prime Dated Brent physique réapparue (+1,30 $ le 16/7, source unique), GL X1 expirée le 17/7, 2ᵉ marin civil tué (VLCC *Mombasa B*), 7-8 nuits de frappes élargies jusqu'à Yazd, ultimatum Rezaei (fenêtre ~19-21/7) — plafonné par les 2 déclencheurs de C franc NON franchis : aucune mort militaire US sous le feu iranien (blessés seulement, Jordanie 17/7) et Brent à 88,10 $ (pas 90-100)
+
+---
+
+## Mise à jour J141 (18 juillet 2026)
+
+**Probabilité relevée à 52-60 % (vs 45-55 % à J138) — C modal renforcé, médiane ~56.** [INTERPRÉTATION] La fenêtre 16-18 juillet fait glisser la crise d'un choc de prix vers un **début de choc d'approvisionnement**, sans franchir les deux déclencheurs de « C franc ».
+
+**Ce qui renforce C** :
+1. [FAIT, B1/C3] **Échec du corridor escorté** (8 navires/j, route iranienne majoritaire) — le plafond « flux escorté » de J138 saute.
+2. [NON STABILISÉ, B2] **Prime Dated Brent physique réapparue** (+1,30 $, 16/7) — premier signal de tension physique réelle depuis début juillet.
+3. [FAIT, B2] **GL X1 expirée**, **2ᵉ marin civil tué** (VLCC *Mombasa B*), **7-8 nuits de frappes élargies** (Yazd), **ultimatum daté** de Rezaei (~19-21/7).
+4. [FAIT, A1] **Brent 88,10 $** (+13-16 % hebdo) sans reflux vers 80 $ : le marché ne croit plus au corridor.
+
+**Ce qui plafonne C (empêche sa forme extrême)** : les **deux déclencheurs décisifs n'ont pas parlé** — **pas de mort militaire US sous le feu iranien** (blessés seulement, Jordanie 17/7) et **Brent à 88 $, pas 90-100** ; **aucune nouvelle attaque de navire** du 16 au 18/7 ; **médiation Chine-Pakistan** conjointe active ; **marché chinois** qui contourne l'Iran sans paniquer.
+
+**Ce qui ferait basculer vers C franc / extrême** : première mort militaire américaine sous le feu iranien ; Brent durablement >90-100 $ (Dated Brent >100) ; frappe sur Kharg ou une raffinerie de procédé complet ; exécution de l'offensive annoncée par Rezaei.
+
+Source : [`synthese_J138-J141.md`](synthese_J138-J141.md).
 
 ---
 

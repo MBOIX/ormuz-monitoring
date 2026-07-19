@@ -1,6 +1,6 @@
 # Pertes humaines et matérielles — recensement documenté en sources ouvertes
-### Crise du détroit d'Ormuz — J1 → J138 (28 février → 15 juillet 2026)
-**Version 1.1 — 15 juillet 2026 (J138)** *(v1.0 : 13 juillet 2026)*
+### Crise du détroit d'Ormuz — J1 → J141 (28 février → 18 juillet 2026)
+**Version 1.2 — 18 juillet 2026 (J141)** *(v1.1 : 15 juillet 2026 ; v1.0 : 13 juillet 2026)*
 
 > **À lire d'abord — ce que ce document est, et n'est pas.** Ce recensement compile **ce qui est documenté en sources ouvertes**, pas le bilan réel du conflit : une grande partie des pertes (iraniennes en particulier, matérielles surtout) est invérifiable, et les chiffres des parties au conflit sont des bornes basses par principe. Chaque entrée porte un **statut** — `[CONFIRMÉ]` (≥ 2 sources indépendantes), `[RAPPORTÉ]` (source unique crédible), `[REVENDIQUÉ/CONTESTÉ]` (partie au conflit, non corroboré ou démenti) — et une **cote Admiralty** (fiabilité A→F × crédibilité 1→6). Les cumuls sont des **fourchettes** précisant *qui compte* et *depuis quand* ; les périmètres incompatibles ne sont **jamais additionnés**. Les vides sont assumés en fin de document.
 >
@@ -8,7 +8,7 @@
 
 ---
 
-## 1. Synthèse chiffrée — les grands cumuls (fourchettes, au 15 juillet 2026)
+## 1. Synthèse chiffrée — les grands cumuls (fourchettes, au 18 juillet 2026)
 
 | Périmètre | Fourchette documentée | Qui compte (biais) | Cote |
 |---|---|---|---|
@@ -23,7 +23,7 @@
 | **États-Unis — militaires morts (guerre Iran, tous théâtres)** | **14 (Pentagone, 14/7 — 14ᵉ : marin du MH-60S abîmé en mer le 1/7, hors combat) – 17-18 (décomptes indépendants)** ; blessés **414 (Pentagone, 14/7) – 553** ; quasi tout du 1-12 mars (Koweït, Arabie saoudite, Irak) ; **~7 au combat / ~10 accidentels** | Pentagone (chiffre plusieurs fois révisé à la hausse) vs presse d'enquête (The Intercept : allégation de sous-déclaration, non vérifiée) | B2 / C3 |
 | **États-Unis/UK — morts par action ennemie, zone Ormuz/Liban/mer Rouge stricte (depuis le blocus du 13/4)** | **0 confirmé** — le constat historique du dépôt reste exact *sur ce périmètre précis* ; CENTCOM a démenti les 12-13/7 les revendications iraniennes (dont « 3 militaires tués au Koweït » le 13/7 : « aucun blessé ») | CENTCOM — l'indicateur de bascule n°1 reste non déclenché côté américain | A2 |
 | **Golfe & Jordanie — civils tués (frappes/débris iraniens)** | Koweït ≥ 2 documentés (agrégat 11 non recoupé) · Bahreïn 3 (au 11/6) · Qatar 1 · Arabie saoudite 2 (Al-Kharj) · EAU 13 dont 2 militaires-accident (avril, obsolète) · Jordanie 0 (29 blessés) | Ministères nationaux au cas par cas (confirmés) vs agrégats tertiaires (écarts non réconciliés — voir §7) | B2/B3 (points) · C3-D4 (agrégats) |
-| **Marins civils tués (navires commerciaux)** | **≥ 20-21** : **15 côté Ormuz/golfe d'Oman** (dont **3 tués par une frappe américaine** — *Settebello*, 9/6 — et **Heramb Karmarkar, *GFS Galaxy* — confirmé mort les 14-15/7**, 1ʳᵉ victime confirmée d'une attaque iranienne sur navire commercial) + **1-2 morts sur les VLCC *Al Bahyah*/*Mombasa B*** (14/7 — bilan NON stabilisé, jusqu'à 3 disparus) + ≥ 4 mer Rouge (*Eternity C*) ; 11 otages Houthis (libération rapportée par les Houthis, jamais confirmée — sort au 15/7 inconnu) ; + 1 travailleur portuaire (Bahreïn, 2/3) ; + 1 capitaine disparu (*Parimal*, 18/3) | Reconstruction nommée (agrégation Reuters/AJ/Bloomberg/presse indienne via Wikipédia) — **aucun décompte officiel n'existe**, sous-comptage probable (biais de couverture anglophone) | B2 |
+| **Marins civils tués (navires commerciaux)** | **≥ 20-21** : **15 côté Ormuz/golfe d'Oman** (dont **3 tués par une frappe américaine** — *Settebello*, 9/6 — et **Heramb Karmarkar, *GFS Galaxy* — confirmé mort les 14-15/7**, 1ʳᵉ victime confirmée d'une attaque iranienne sur navire commercial) + **1-2 morts sur les VLCC *Al Bahyah*/*Mombasa B*** (14/7 — dont **1 marin indien du *Mombasa B* confirmé mort les 16-17/7** (min. Défense émirati + presse indienne), **2ᵉ mort confirmée d'une attaque iranienne** ; 8-10 blessés dont 4 grièvement ; bilan global toujours contradictoire : OMI 2 morts/14 blessés vs Oman 1 mort/3 disparus — cumul OMI « 56 attaques / 17 marins tués depuis février » = relais Xinhua unique, non stabilisé) + ≥ 4 mer Rouge (*Eternity C*) ; **item « 11 otages Houthis » clos — attaque de juillet 2025, otages libérés en décembre 2025 (obsolète, retiré du suivi)** ; + 1 travailleur portuaire (Bahreïn, 2/3) ; + 1 capitaine disparu (*Parimal*, 18/3) | Reconstruction nommée (agrégation Reuters/AJ/Bloomberg/presse indienne via Wikipédia) — **aucun décompte officiel n'existe**, sous-comptage probable (biais de couverture anglophone) | B2 |
 | **Marins bloqués dans le Golfe** | **~6 000** au 12/7 (Guterres ; 2 900 évacués avant la suspension OMI du 25-26/6, toujours en vigueur) | OMI (Secrétaire général) / ONU — institutions compétentes non parties | A1 |
 | **Marine iranienne — événement le plus meurtrier du théâtre naval** | Frégate **IRIS Dena torpillée (4/4, USS Charlotte)** : **104 morts, 32 rescapés** — militaires, à ne pas fusionner avec les cumuls civils | BBC — source unique, non recoupée (passe adversariale à venir) | C2 |
 | **Accidents industriels liés à la crise (catégorie À PART)** | **Ras Laffan/Barzan (21-22/6) : 13 morts, 66 blessés**, 18 disparus initiaux non réconciliés (sabotage exclu par Doha) · **Hélico Aramco, Ras Tanura (28/6) : 14 morts** (panne invoquée, enquête en cours) | Autorités qataries/saoudiennes + presse multi-source | B2 |
@@ -99,7 +99,7 @@ Série du ministère de la Santé (borne basse, non désagrégée) : ~3 433-3 50
 
 ---
 
-## 3. Navires — recensement nommé (J1 → J138)
+## 3. Navires — recensement nommé (J1 → J141)
 
 > ~50 incidents nommés côté Ormuz/golfe d'Oman + 2 mer Rouge + blocus US. **~35 événements de mars-avril étaient absents du dépôt** (période sous-documentée, comblée ici). Couverture anglophone/indienne : les petits caboteurs régionaux sont probablement sous-représentés.
 

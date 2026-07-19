@@ -1,6 +1,25 @@
 # Scénario A — Optimiste
 ## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
-### Probabilité estimée : 5-12 % (au 15 juillet 2026, J138) — AU PLANCHER : LE MOU EST DÉNONCÉ DÉCLARATIVEMENT PAR TÉHÉRAN (14-15 JUILLET), « AUCUN PROJET DE NÉGOCIATION », WIND-DOWN EXPIRANT LE 17 JUILLET, BLOCUS NAVAL RÉIMPOSÉ — A NE SURVIT QUE PAR L'ABSENCE DE RETRAIT FORMEL NOTIFIÉ, LA MÉDIATION PAKISTAN-QATAR-OMAN ET LE DOUBLE CORRIDOR OMANAIS
+### Probabilité estimée : 4-10 % (au 18 juillet 2026, J141) — VERS LE PLANCHER : GL X1 EXPIRÉE LE 17 JUILLET SANS PROROGATION, 7-8 NUITS DE FRAPPES ÉLARGIES, ULTIMATUM REZAEI (FENÊTRE ~19-21/7) — A NE SURVIT QUE PAR L'ABSENCE DE RETRAIT FORMEL DU MOU ET LA MÉDIATION CHINE-PAKISTAN CONJOINTE (WANG YI + ISHAQ DAR, 16-17 JUILLET : CESSATION IMMÉDIATE + RETOUR AU DIALOGUE/MOU), ACTIVE MAIS SANS RÉSULTAT CONCRET
+
+---
+
+## Mise à jour J141 (18 juillet 2026)
+
+**Probabilité abaissée à 4-10 % (vs 5-12 % à J138) — A glisse vers son plancher.** [INTERPRÉTATION] La fenêtre 16-18 juillet n'a déclenché aucun indicateur de confirmation d'A et a acté deux réfutations partielles : la **General License X1 a expiré le 17 juillet sans prorogation** (expiration sèche — l'inverse du signal de détente attendu), et la campagne de frappes s'est **élargie** (7-8 nuits, jusqu'à Yazd) avec un **ultimatum daté** du général Rezaei (fenêtre ~19-21/7).
+
+**Ce qui achève de comprimer A** :
+1. [FAIT, B2] **Expiration sèche de la GL X1** (17/7, 00h01 ET) : pas de nouvelle licence, ré-exposition de la Chine et de l'Inde aux sanctions secondaires.
+2. [FAIT, B1] **Campagne CENTCOM élargie** (chasseurs jusqu'à ~600-650 km, infrastructures civiles) + **ultimatum Rezaei** : l'escalade s'approfondit au lieu de s'apaiser.
+3. [FAIT, C3] **MOU toujours sans retrait formel notifié**, mais aussi **sans aucun geste de re-capage** (pas de Doha, pas d'accès AIEA, pas de réponse au double corridor omanais).
+
+**Ce qui maintient A en vie (à 4-10 %, pas zéro)** : **aucun retrait formel du MOU** n'est notifié ; et surtout la **médiation monte d'un cran** — la Chine, conjointement avec le Pakistan (Wang Yi + Ishaq Dar, 16-17/7), appelle explicitement au **retour au dialogue et au MOU**. A ne survit plus que par ce fil diplomatique, actif mais **sans résultat concret**.
+
+**Indicateur de falsification (ce qui ferait remonter A)** : résultat concret de la médiation Chine-Pakistan (trêve, session de Doha) ; acceptation iranienne du double corridor omanais ; 1er accès AIEA.
+
+**Ce qui achèverait de réfuter A** : retrait formel notifié du MOU ; mort militaire américaine sous le feu iranien ; frappe sur un terminal pétrolier majeur (Kharg) ; exécution de l'offensive annoncée par Rezaei.
+
+Source : [`synthese_J138-J141.md`](synthese_J138-J141.md).
 
 ---
 

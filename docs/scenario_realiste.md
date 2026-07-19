@@ -1,6 +1,22 @@
 # Scénario B — Réaliste
 ## « L'enlisement organisé sous cessez-le-feu indéfini, ponctué d'incidents non létaux »
-### Probabilité estimée : 28-38 % (au 15 juillet 2026, J138) — B SE TASSE ET CHANGE DE NATURE : le rattrapage attendu à J135 n'a pas eu lieu (pas de Doha, corridor non tranché, MOU dénoncé déclarativement par Téhéran) — B devient le scénario du *corridor militarisé stabilisé* (flux escorté 8-8,5 Mb le 12/7 selon le DOE), porté par la médiation Pakistan-Qatar-Oman et la désescalade Liban-Israël
+### Probabilité estimée : 27-36 % (au 18 juillet 2026, J141) — B S'ÉRODE : le corridor escorté du DOE ne se matérialise pas dans la tendance (8 navires/j les 16-17/7, majorité des franchissements sur la route iranienne nord, AIS-dark) — la masse du « corridor qui tient » migre vers C ; B ne vit plus que par le Brent capé à 88 $ (pas 90-100), l'absence de nouvelle attaque de navire du 16 au 18/7, l'adaptation du marché chinois (16-20,5 Mb de brut du Golfe non sanctionné) et le calme social français (~4 % de stations en difficulté, en amélioration)
+
+---
+
+## Mise à jour J141 (18 juillet 2026)
+
+**Probabilité abaissée à 27-36 % (vs 28-38 % à J138) — B s'érode au profit de C.** [INTERPRÉTATION] Le pari central de B — un « corridor militarisé stabilisé » où le flux escorté se substitue durablement à une réouverture — **ne se confirme pas dans la tendance** : les transits tombent à 8 navires/jour (16-17/7) et empruntent majoritairement la **route iranienne nord**, pas le couloir sud escorté vanté par le DOE. La masse du « corridor qui tient » migre donc vers C.
+
+**Ce qui érode B** :
+1. [FAIT, B1/C3] **Le corridor escorté ne se matérialise pas** (8 navires/j, 7/8 côté iranien, brut/condensats −62 %) — le socle factuel de B se dérobe.
+2. [FAIT, B2] **GL X1 expirée**, prime Dated Brent physique réapparue, 2ᵉ marin tué : la dynamique est à l'aggravation, pas à la stabilisation.
+
+**Ce qui maintient B (à 27-36 %)** : le **Brent reste capé à 88 $** (pas 90-100) ; **aucune nouvelle attaque de navire** recensée du 16 au 18/7 ; le **marché chinois s'adapte** (16-20,5 Mb de brut du Golfe non sanctionné) sans panique ; le **calme social** tient en France (~4 % de stations en difficulté, en amélioration) ; la **médiation Chine-Pakistan** offre un chemin de stabilisation.
+
+**Indicateur de bascule** : reprise d'attaques de navires ou Brent >90 $ → glissement vers C ; trêve issue de la médiation ou re-matérialisation d'un corridor de masse → remontée de B.
+
+Source : [`synthese_J138-J141.md`](synthese_J138-J141.md).
 
 ---
 

@@ -4,7 +4,7 @@
 >
 > **Référence de calcul** — J1 = 28 février 2026 (frappes US-Israël, Opération Epic Fury, mort d'Ali Khamenei, fermeture d'Ormuz par l'Iran).
 >
-> **Dernière mise à jour** — 15 juillet 2026 (J138). Dernière consolidation de l'état de situation : 15 juillet 2026 (J138).
+> **Dernière mise à jour** — 18 juillet 2026 (J141). Dernière consolidation de l'état de situation : 18 juillet 2026 (J141).
 >
 > **Note de fraîcheur (CRITIQUE)** — Ce fichier n'est pas la source de vérité sur les chiffres courants (prix, stocks, % UGS, probabilités de scénarios). **La synthèse périodique la plus récente (`synthese_J*-J*.md`) fait foi sur l'état courant** ; ici, les valeurs chiffrées sont conservées telles qu'elles ont été datées à leur observation, pour mémoire historique. Avant toute analyse, vérifier l'ancienneté du dernier point (8 juillet 2026) et rafraîchir si une recherche apporte du neuf.
 
@@ -423,6 +423,23 @@
 
 ---
 
+## Phase 16 — Le corridor fantôme : corridor escorté non matérialisé, licence pétrolière morte, campagne élargie (15 → 18 juillet 2026, J138 → J141)
+
+> *Note de granularité : en trois jours, le choc de prix glisse vers un début de choc d'approvisionnement — le corridor escorté vanté par le DOE ne se matérialise pas (8 navires/jour, majorité route iranienne), la prime Dated Brent physique réapparaît, la GL X1 expire le 17/7, un 2ᵉ marin civil est tué et la campagne CENTCOM s'élargit jusqu'à Yazd, avec un ultimatum daté (Rezaei, ~19-21/7) — mais sans franchir les deux déclencheurs de C franc (mort militaire US sous le feu, Brent >90-100 $). Détail chiffré et sources : `synthese_J138-J141.md`, qui fait foi.*
+
+| Date | J-day | Catégorie | Importance | Événement | Sources |
+|---|---|---|---|---|---|
+| 16 juillet 2026 | J139 | Militaire | structurant | **[FAIT] Transits Ormuz au plancher de 3 semaines : 8 navires/jour les 16-17/7**, dont **7/8 sur la route iranienne nord** (Kpler) — le corridor escorté sud ne se matérialise pas ; brut/condensats **4,1 Mb/j (−62 %)**, chargements −47 %, transits AIS éteint ; **blocus US appliqué nominativement** : M/T *Belma* désactivé au missile Hellfire (route Kharg), M/T *Wen Yao* arraisonné par le 11ᵉ MEU ; **JMIC « SEVERE » maintenu** (Update 072) | synthèse |
+| 16 juillet 2026 | J139 | Économique-Marchés | structurant | **[FAIT] Réapparition de la prime du Dated Brent physique (+1,30 $/b, ING)** — premier signal de tension physique réelle depuis début juillet ; source unique, léger reflux dès le 17 (à corroborer) ; backwardation front/6 mois **8,92 $** (dernier point ferme) | synthèse |
+| 16-17 juillet 2026 | J139-J140 | Politique-Diplomatique | structurant | **[FAIT] Déclaration conjointe Chine-Pakistan** (Wang Yi + vice-PM Ishaq Dar, Shanghai) : cessation immédiate des hostilités + retour au dialogue/MOU — la Chine passe de la préoccupation unilatérale à une médiation active ; **[FAIT] Expiration de la General License X1** (17/7, 00h01 ET) **sans prorogation** → ré-exposition de la Chine et de l'Inde aux sanctions secondaires ; MOU toujours sans retrait formel notifié | synthèse |
+| 17 juillet 2026 | J140 | Économique-Marchés | structurant | **[FAIT] Brent clôture 88,10 $** (+4,59 %, +13-16 % sur la semaine, 3ᵉ semaine consécutive de hausse) ; WTI 82,44 $ — **ni reflux vers 80 $, ni franchissement 90-100 $** ; **crack diesel européen record ~66 $/b** ; teapots chinois : 16-20,5 Mb de brut du Golfe non sanctionné, aucun achat iranien ; **FedWatch FOMC 29/7 à 36,9 %** | synthèse |
+| 17 juillet 2026 | J140 | Militaire | structurant | **[FAIT] 2ᵉ marin civil confirmé mort** (marin indien du VLCC *Mombasa B*, attaque du 14/7 ; 8-10 blessés) ; l'Inde (DG Shipping) recommande d'**éviter de déployer** ses ~300 000 marins sur Ormuz (avis, pas interdiction) ; **premiers blessés militaires US sous le feu iranien** (2 bases en Jordanie — **aucun mort**, « no fatalities ») ; **1er ultimatum daté** : le gén. Rezaei menace d'une « offensive à grande échelle » si les frappes durent encore 2-3 jours (**fenêtre ~19-21/7**) | synthèse |
+| 18 juillet 2026 | J141 | Militaire | majeur | **[FAIT] Campagne CENTCOM à 7-8 nuits consécutives, élargie** : chasseurs jusqu'à ~600-650 km (**Yazd**), ponts de Bandar Khamir, aéroport d'Iranshahr, gare de Bandar Abbas, tour de contrôle de Chabahar ; **appui logistique israélien rendu public** (Axios) ; revendications CGRI du 18/7 (Al-Tanf, Salamah Rocks, US « tués/capturés ») **démenties par CENTCOM** ; « 3 US tués au Koweït » = **photo d'Abqaiq 2019 recyclée** | synthèse |
+| 18 juillet 2026 | J141 | Politique-Diplomatique | mineur | **[FAIT] Liban** : réunion technique du 18/7 sur les « zones pilotes » **reportée** (désaccord) ; **sommet Trump-Aoun confirmé le 21 juillet** ; aucune perte FINUL/française nouvelle. **Mer Rouge** : chimiquier *Asana* détourné par des pirates somaliens (17/7, distinct de la menace houthie) ; item « otages *Eternity C* » **obsolète** (attaque 2025, otages libérés déc. 2025) | synthèse |
+| 18 juillet 2026 | J141 | Analytique | structurant | **[INTERPRÉTATION] Recalibrage J141 : C 52-60 % (⬆️ vs 45-55 % — MODAL RENFORCÉ, médiane ~56 : corridor escorté non matérialisé, prime physique réapparue, GL X1 morte, 2ᵉ marin tué, campagne élargie, ultimatum daté ; plafonné faute de mort US sous le feu et d'un Brent >90-100 $), B 27-36 % (⬇️ — la masse du « corridor qui tient » migre vers C), A 4-10 % (⬇️ vers le plancher — médiation Chine-Pakistan sans résultat concret)** ; faits réfutés : revendications CGRI du 18/7, « 3 US tués au Koweït » (Abqaiq 2019), Brent 82,47 $ (agrégateur périmé) | synthèse |
+
+---
+
 ## Données mensuelles agrégées (mois de référence, jour non précisé)
 
 | Période | J-day | Catégorie | Importance | Événement | Sources |
@@ -435,13 +452,12 @@
 
 ---
 
-## Échéances prospectives (postérieures au 15 juillet 2026 — non survenues)
+## Échéances prospectives (postérieures au 18 juillet 2026 — non survenues)
 
-> *Ces items sont des dates butoirs, conditions de scénario ou recommandations, et non des événements avérés. Rafraîchis au 15 juillet 2026 (J138) : les échéances désormais échues ont été retirées (elles figurent, le cas échéant, comme faits datés dans les Phases 9 à 15).*
+> *Ces items sont des dates butoirs, conditions de scénario ou recommandations, et non des événements avérés. Rafraîchis au 18 juillet 2026 (J141) : les échéances désormais échues ont été retirées (elles figurent, le cas échéant, comme faits datés dans les Phases 9 à 16).*
 
 | Date | J-day | Catégorie | Importance | Événement | Sources |
 |---|---|---|---|---|---|
-| 17 juillet 2026 | J140 | Politique-Diplomatique | structurant | **Fin de la fenêtre de 30 j du MOU (§4 blocus / §5 déminage) + expiration du wind-down des ventes de brut iranien (GL X1, 00h01 ET)** — le jalon arrive **déjà mort** (blocus réimposé le 14, MOU dénoncé déclarativement par Téhéran) ; à surveiller : nouvelle licence vs expiration sèche, et la réaction iranienne | index, synthèse |
 | 20 juillet 2026 | J143 | Économique-Marchés | majeur | **Moyenne hebdomadaire officielle DGEC** (formalisation attendue du gazole >2 €/L) + **transits AIS de la semaine du 13** (le corridor escorté tient-il ?) | synthèse |
 | 21 juillet 2026 | J144 | Politique-Diplomatique | majeur | **Sommet Trump-Aoun à Washington** — 1ʳᵉ visite présidentielle libanaise depuis 2009 ; test de la désescalade Liban-Israël (zones pilotes de l'accord de Rome) | synthèse |
 | 29 juillet 2026 | J152 | Économique-Marchés | majeur | **FOMC** — probabilité de hausse montée à 46,5 % (13/7) puis refroidie par CPI/PPI cléments (valeur post-PPI non chiffrée, gap) | synthèse |
@@ -518,7 +534,7 @@ Ces périodes sont **sous-couvertes par construction** (reconstitution a posteri
 
 - **5 mai → 7 mai 2026 (J67 → J69)** — Dense côté maritime (San Antonio, Persian Gulf Strait Authority, pause Project Freedom, frappes réciproques) mais **aucun élément économique daté** (Brent, SPR) sur cette micro-fenêtre, alors que les marchés sont volatils. Les prix journaliers Brent ne sont documentés en continu qu'à partir du 18 mai (`sources`).
 
-- **Après le 15 juillet 2026 (J138)** — La couverture datée s'étend désormais jusqu'au 15 juillet (Phases 9 à 15, via les synthèses J103-J106 → J135-J138). La fenêtre 12-15 juillet a vu **le marché coter la guerre** (Phase 15 : Brent 83,30 $ +9,6 % puis >85 $ avec backwardation, blocus naval réimposé le 14, 3 pétroliers frappés en un jour avec JMIC « SEVERE », marin du *GFS Galaxy* confirmé mort, MOU dénoncé déclarativement par Téhéran, gazole France >2 €/L). Au-delà du 15 juillet, il ne reste que des **échéances prospectives** (wind-down + §4/§5 le 17 juillet ; moyenne DGEC et transits le 20 ; sommet Trump-Aoun le 21 ; FOMC le 29 ; fin de l'aide grands rouleurs et de l'embargo diesel russe le 31 ; OPEP+ le 2 août ; fin de la fenêtre nucléaire ~mi-août ; UGS 1er nov ; FINUL 31 déc). **Aucun événement réel postérieur au 15 juillet n'est disponible** — limite de fraîcheur du dossier (instantané daté du 15 juillet, marchés non clos au moment de la collecte). Ne pas extrapoler ; en particulier, **la clôture des 15-16 juillet, le bilan humain consolidé des VLCC *Al Bahyah*/*Mombasa B*, le bilan humain iranien recoupé, la réponse de Téhéran au double corridor omanais, la tenue d'une session de Doha, la prime Dated Brent physique, la réaction du Conseil de sécurité à la plainte iranienne (42 violations) et le sort des 11 otages de l'*Eternity C* sont des « gaps » à venir**, non à combler par un nombre.
+- **Après le 18 juillet 2026 (J141)** — La couverture datée s'étend désormais jusqu'au 18 juillet (Phases 9 à 16, via les synthèses J103-J106 → J138-J141). La fenêtre 12-15 juillet a vu **le marché coter la guerre** (Phase 15 : Brent 83,30 $ +9,6 % puis >85 $ avec backwardation, blocus naval réimposé le 14, 3 pétroliers frappés en un jour avec JMIC « SEVERE », marin du *GFS Galaxy* confirmé mort, MOU dénoncé déclarativement par Téhéran, gazole France >2 €/L). Au-delà du 18 juillet, il ne reste que des **échéances prospectives** (fenêtre de l'ultimatum Rezaei ~19-21 juillet ; moyenne DGEC et transits le 20 ; sommet Trump-Aoun le 21 ; FOMC le 29 ; fin de l'aide grands rouleurs et de l'embargo diesel russe le 31 ; OPEP+ le 2 août ; fin de la fenêtre nucléaire ~mi-août ; UGS 1er nov ; FINUL 31 déc). **Aucun événement réel postérieur au 18 juillet n'est disponible** — limite de fraîcheur du dossier (instantané daté du 18 juillet). Ne pas extrapoler ; en particulier, **la clôture du Brent des 18-20 juillet, l'exécution ou non de l'ultimatum Rezaei, le bilan humain consolidé des VLCC *Al Bahyah*/*Mombasa B*, le bilan humain iranien recoupé, la réponse de Téhéran au double corridor omanais, la tenue d'une session de Doha, la corroboration de la prime Dated Brent physique et la réaction du Conseil de sécurité à la plainte iranienne (42 violations) sont des « gaps » à venir**, non à combler par un nombre.
 
 ---
 
