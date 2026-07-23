@@ -1,6 +1,32 @@
 # Scénario C — Pessimiste
 ## « L'escalade maritime cumulative, régionale (Liban) ou la bascule fiscale-sociale »
-### Probabilité estimée : 62-70 % (au 19 juillet 2026, J142) — C MODAL NETTEMENT RENFORCÉ (médiane ~66) : le premier des deux déclencheurs de « C franc » est FRANCHI — 2 militaires US tués + 1 disparu sous le feu iranien (base Muwaffaq Salti, Jordanie, 17/7) ; 8ᵉ nuit de frappes CENTCOM en représailles (ponts/rail du Hormozgan) ; MOU d'Islamabad formellement suspendu — plafonné par le second déclencheur non encore coté (Brent figé à 88 $, marchés fermés jusqu'au 20/7) et la non-matérialisation de l'offensive Rezaei au 19/7
+### Probabilité estimée : 64-72 % (au 21 juillet 2026, J144) — C MODAL, médiane ~68 (⬆️ +2) : le corridor se VIDE (7 transits/jour puis AUCUN navire observé le 21/7, −66 % hebdo), le JMIC passe de « SEVERE » à « CRITICAL », un 10ᵉ navire est frappé, le Brent FRANCHIT 90 $ (haut 91,49 $) et un TROISIÈME point de passage entre sous menace (blocus houthi déclaré contre l'Arabie saoudite) — mais la hausse reste INCRÉMENTALE : le déclencheur-prix n'est pas validé EN DURÉE (aucune clôture >90 $, 100 $ jamais approché), l'offensive Rezaei n'a PAS eu lieu, et une trêve de 10 jours à quatre médiateurs est sur la table
+
+---
+
+## Mise à jour J144 (21 juillet 2026)
+
+**Probabilité relevée à 64-72 % (vs 62-70 % à J142) — C modal, médiane ~68.** [INTERPRÉTATION] La fenêtre 20-21 juillet est une **fenêtre de vérité** : elle tranche les deux inconnues laissées ouvertes par J142 — et les deux réponses divergent. Le **prix a parlé** (90 $ franchi), l'**offensive annoncée n'est pas venue**. Entre les deux, **le physique se dégrade sans ambiguïté**. D'où une hausse **réelle mais incrémentale** : +2 points, pas +10.
+
+**Ce qui renforce C** :
+1. [FAIT, B2/C3 — le fait physique majeur] **Effondrement des transits d'Ormuz** : **7 navires/jour** en moyenne sur la semaine close le 19/7 (contre 16/j la semaine précédente), puis **aucun navire observé en transit le 21/7** (Kpler via Bloomberg) ; **Lloyd's List : 53 transits/semaine au 20/7 contre 157, soit −66 %**. [Réserve] AIS massivement coupé → **tout comptage est une borne inférieure** ; « aucun transit observé » n'est pas « aucun transit ».
+2. [FAIT, A1] **Le JMIC relève son niveau de menace de « SEVERE » à « CRITICAL »** (attaque jugée quasi inévitable) — **Warning 094/26 du 20/7**. [Réserve] Correspondance exacte des échelles non clarifiée.
+3. [FAIT, B1] **Le Brent franchit 90 $ à quatre reprises**, jusqu'à **91,49 $ le 21/7 (+2,5 %, plus haut depuis le 10 juin)**, 3ᵉ séance de hausse.
+4. [FAIT, B2] **10ᵉ navire frappé** : tanker koweïtien ***Kaifan***, 20/7 à 20h10 UTC près de Limah (Oman), incendie machine, équipage évacué, aucun blessé. **9ᵉ et 10ᵉ nuits de frappes CENTCOM** (20-21/7) + 2ᵉ vague annoncée le 21/7.
+5. [FAIT, B1/B2 — nouveau front] **Les Houthis déclarent un blocus naval de l'Arabie saoudite** (20/7, Saree, effet immédiat) : **Ormuz, Bab-el-Mandeb et les terminaux saoudiens de mer Rouge sont menacés simultanément**, soit **2,5 (Rystad) à 4,5 Mb/j** supplémentaires exposés.
+6. [FAIT, A1/B2] **Bilan américain à 17 morts confirmés + 1 disparu / ~447 blessés** (vs 16/414). [Nuance décisive] La 3ᵉ mort (**Sgt Swinton, Erbil, 19/7**) relève d'une **neutralisation de drone abattu, PAS du feu iranien** — le **sous-compte « sous feu iranien » reste à 2** : ce décès **n'aggrave pas** le seuil franchi à J142.
+7. [FAIT, B2] **TTF à 59,39 €/MWh (21/7)**, +15 % hebdo et **+29 % sur juillet** ; **incident diplomatique France-Iran** (2 diplomates intimidés à Téhéran) élargissant le cercle des parties exposées.
+
+**Ce qui plafonne encore C (et explique une hausse de +2, pas davantage)** :
+- [INTERPRÉTATION — jugement central] **Le 2ᵉ déclencheur de « C franc » n'est ni validé ni écarté : il est NON TRANCHÉ.** La formulation retenue est « Brent **durablement** >90-100 $ ». Or **aucune clôture au-dessus de 90 $ n'est documentée** (settle du 20/7 : 89,22 $ ; séance du 21/7 non close), **100 $ n'a jamais été approché**, et le marché **recule dès qu'une trêve est évoquée** — il price l'escalade **et** la sortie.
+- [FAIT, B2 — reclassé] **L'ultimatum Rezaei a expiré sans être exécuté**, et ce n'est **plus une lacune de collecte** : la fenêtre est densément couverte, on relève **≥31 attaques iraniennes du 17 au 20/7 (65 munitions, JINSA)** puis une vague le 21/7 sur le Koweït, Bahreïn et la Jordanie, **largement interceptée et sans rupture d'échelle**, qu'**aucune source de premier rang ne désigne comme « l'offensive »**. **La capacité ou la volonté iranienne de franchir un cran d'échelle n'est pas démontrée** — c'est le principal argument contre une bascule plus haute.
+- [FAIT, B2] **Trêve de 10 jours proposée par le Qatar, l'Égypte, Oman et le Pakistan** pour rouvrir Ormuz et sauver le MOU (non acceptée au 21/7).
+- [FAIT — absence documentée] **Aucune frappe américaine sur le réseau électrique iranien** — le déclencheur de la fermeture de Bab-el-Mandeb **n'est pas actionné**. Le **blocus houthi reste déclaratif** (0 attaque en 48 h selon le JMIC).
+- [FAIT — LACUNE] **Ni la prime du Dated Brent ni la backwardation ne sont chiffrées depuis les 15-16/7** : impossible de dire si la hausse du papier reflète une **pénurie physique** ou une **prime de risque**. C'est l'angle mort qui borne le plus la confiance de ce recalibrage.
+
+**Ce qui ferait basculer vers C franc / extrême** : **clôtures répétées du Brent au-dessus de 90 $** (validation du 2ᵉ déclencheur en durée) ; **réapparition forte de la prime Dated Brent** (bascule prime de risque → pénurie réelle) ; **exécution effective du blocus houthi** contre l'Arabie saoudite (3ᵉ chokepoint réellement actif) ; **rejet explicite de la trêve** par les deux parties ; frappe américaine sur le réseau électrique iranien ; frappe sur Kharg.
+
+Source : [`synthese_J142-J144.md`](synthese_J142-J144.md).
 
 ---
 

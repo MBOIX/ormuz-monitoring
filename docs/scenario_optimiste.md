@@ -1,6 +1,26 @@
 # Scénario A — Optimiste
 ## « L'accord US-Iran (signé le 17 juin, texte des 14 points publié, réouverture d'Ormuz à concrétiser) »
-### Probabilité estimée : 3-8 % (au 19 juillet 2026, J142) — QUASI PLANCHER : MOU D'ISLAMABAD FORMELLEMENT SUSPENDU PAR TÉHÉRAN (18/7, GHARIBABADI) ET MORT DE MILITAIRES US SOUS LE FEU IRANIEN (JORDANIE, 17/7) — A NE SURVIT QUE PARCE QUE LA SUSPENSION EST RÉVERSIBLE (PAS DE RETRAIT FORMEL NOTIFIÉ) ET QUE LA MÉDIATION CHINE-PAKISTAN VISE EXPLICITEMENT LE RETOUR AU MOU
+### Probabilité estimée : 3-8 % (au 21 juillet 2026, J144) — STABLE AU PLANCHER, MAIS MIEUX ÉTAYÉ : une TRÊVE DE 10 JOURS est proposée par QUATRE MÉDIATEURS (Qatar, Égypte, Oman, Pakistan) pour rouvrir Ormuz et sauver le MOU — A dispose enfin d'un objet concret, mais l'offre N'EST ACCEPTÉE NI PAR WASHINGTON NI PAR TÉHÉRAN au 21/7, et le MOU reste formellement suspendu
+
+---
+
+## Mise à jour J144 (21 juillet 2026)
+
+**Probabilité maintenue à 3-8 % (inchangée vs J142) — mais sa base factuelle s'améliore.** [INTERPRÉTATION] À J142, A ne survivait que par un argument négatif : la suspension du MOU était *réversible*. La fenêtre 20-21 juillet lui donne un **objet positif** : une **proposition de trêve de 10 jours portée par quatre médiateurs — Qatar, Égypte, Oman et Pakistan — explicitement destinée à rouvrir le détroit d'Ormuz et à sauver le MOU d'Islamabad**. La probabilité ne monte pas, parce que **personne ne l'a acceptée** ; mais A n'est plus un résidu purement logique.
+
+**Ce qui étaye A (nouveau)** :
+1. [FAIT, B2 — ≥3 sources] **Trêve de 10 jours proposée par 4 médiateurs** (Reuters, Axios, Bloomberg, JPost). Le format s'élargit d'une médiation sino-pakistanaise à un **format arabe incluant des riverains directs du détroit** (Qatar, Oman) — acteurs dont l'exposition économique est maximale.
+2. [FAIT, B2 — effet de marché mesurable] L'annonce a **fait reculer le Brent en séance le 21/7** (88,44 $ à 04h15 GMT après un pic à 91,11 $) : le marché **price la voie de sortie**, pas seulement l'escalade. C'est une validation externe de la crédibilité prêtée à l'offre.
+3. [FAIT, B2] **L'« offensive à grande échelle » de Rezaei n'a pas eu lieu** — l'ultimatum a expiré sans rupture d'échelle. La dynamique d'escalade n'est **pas** auto-entretenue à cadence croissante.
+4. [FAIT, A2] Le **MOU est suspendu, ni levé ni converti en retrait formel** : le texte reste juridiquement disponible.
+
+**Ce qui empêche A de remonter** : l'offre de trêve **n'est acceptée par personne** au 21/7 ; le **corridor se vide** (7 puis 0 transit observé — un état de fait qu'une trêve de 10 jours ne suffirait pas à inverser rapidement) ; le **JMIC passe à « CRITICAL »** ; un **nouveau front s'ouvre** (blocus houthi déclaré contre l'Arabie saoudite) ; et le **canal bilatéral France-Iran se dégrade** (2 diplomates français intimidés à Téhéran, convocation du chargé d'affaires le 21/7, réduction de l'ambassade envisagée). **Aucune rencontre Chine-Pakistan** n'est par ailleurs datée après le 16-17/7.
+
+**Indicateur de falsification (ce qui ferait remonter A)** : **acceptation de la trêve de 10 jours par Washington et/ou Téhéran** — c'est désormais l'indicateur n°1, et le plus discriminant ; levée de la suspension du MOU ; reprise des transits au-dessus de 15-20 navires/jour.
+
+**Ce qui achèverait de réfuter A** : rejet explicite de la trêve par les deux parties ; retrait formel notifié du MOU ; exécution du blocus houthi contre l'Arabie saoudite ; frappe américaine sur le réseau électrique iranien ou frappe sur Kharg.
+
+Source : [`synthese_J142-J144.md`](synthese_J142-J144.md).
 
 ---
 

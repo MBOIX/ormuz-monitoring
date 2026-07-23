@@ -1,6 +1,28 @@
 # Scénario B — Réaliste
 ## « L'enlisement organisé sous cessez-le-feu indéfini, ponctué d'incidents non létaux »
-### Probabilité estimée : 22-30 % (au 19 juillet 2026, J142) — B SE FRAGILISE : la mort de militaires US sous le feu iranien (Jordanie, 17/7) fragilise la lecture « tit-for-tat non létal gérable » ; B ne vit plus que par l'absence de confirmation-marché (Brent figé à 88 $ le temps du week-end, réaction attendue le 20/7) et la non-matérialisation de l'« offensive à grande échelle » de l'ultimatum Rezaei
+### Probabilité estimée : 20-28 % (au 21 juillet 2026, J144) — B S'ÉRODE ENCORE, MALGRÉ DEUX BONNES NOUVELLES : l'ultimatum Rezaei a expiré SANS offensive et une trêve de 10 jours à quatre médiateurs est sur la table — mais B perd davantage à l'EFFONDREMENT DU FLUX PHYSIQUE (7 transits/jour puis aucun navire observé le 21/7, −66 % hebdo) : un corridor qui se vide n'est plus un « enlisement gérable »
+
+---
+
+## Mise à jour J144 (21 juillet 2026)
+
+**Probabilité abaissée à 20-28 % (vs 22-30 % à J142) — B s'érode par le physique, pas par le militaire.** [INTERPRÉTATION] C'est une fenêtre paradoxale pour B : elle lui apporte **deux arguments favorables inédits**, et pourtant B recule. La raison est que ce qui définit B — un **enlisement organisé et gérable** — est démenti non par une escalade spectaculaire, mais par la **disparition silencieuse du trafic**.
+
+**Ce qui soutient B (nouveau, et réel)** :
+1. [FAIT, B2 — reclassé de lacune en fait] **L'ultimatum Rezaei a expiré sans offensive de grande échelle.** ≥31 attaques iraniennes du 17 au 20/7 (65 munitions, JINSA) puis une vague le 21/7 sur le Koweït, Bahreïn et la Jordanie, **largement interceptée**, **dans la continuité et sans rupture d'échelle**. C'est exactement le registre « incidents répétés sans bascule » que postule B.
+2. [FAIT, B2] **Trêve de 10 jours proposée par le Qatar, l'Égypte, Oman et le Pakistan** : un chemin de stabilisation formalisé, plus large que la médiation sino-pakistanaise.
+3. [FAIT, B1] **Le déclencheur-prix n'est pas validé en durée** : aucune clôture du Brent au-dessus de 90 $, 100 $ jamais approché, et **repli en séance dès l'évocation de la trêve**. Le marché lui-même ne price pas la rupture.
+4. [FAIT, A1/B2 — nuance importante] La 3ᵉ mort américaine (**Sgt Swinton, Erbil, 19/7**) relève d'une **neutralisation de drone abattu, pas du feu iranien** : elle **n'aggrave pas** le seuil létal franchi à J142. **Calme social maintenu** en France, aucune pénurie physique.
+
+**Ce qui érode B — et l'emporte** :
+1. [FAIT, B2/C3 — décisif] **Le corridor se vide** : **7 transits/jour** (semaine close le 19/7, contre 16/j) puis **aucun navire observé le 21/7** ; **Lloyd's List : −66 % en une semaine**. B suppose un **corridor militarisé mais fonctionnel** ; un corridor à zéro transit observé n'est plus un enlisement, c'est une fermeture de fait. [Réserve] AIS coupé → borne inférieure.
+2. [FAIT, A1] **JMIC relevé de « SEVERE » à « CRITICAL »** ; **10ᵉ navire frappé** (*Kaifan*, 20/7) ; **9ᵉ-10ᵉ nuits CENTCOM**.
+3. [FAIT, B1] **Ouverture d'un troisième front de chokepoint** : blocus naval houthi déclaré contre l'Arabie saoudite (20/7). Même non exécuté, il **élargit le périmètre** au-delà de ce que B modélise.
+4. [FAIT, B2] **Dégradation du canal bilatéral France-Iran** (2 diplomates intimidés à Téhéran, convocation du chargé d'affaires, réduction de l'ambassade envisagée) : les canaux se ferment au lieu de se stabiliser.
+
+**Indicateur de bascule** : **acceptation de la trêve de 10 jours** ou **reprise des transits au-dessus de 15-20/jour** → remontée de B ; **clôtures répétées du Brent >90 $**, **exécution du blocus houthi** ou **maintien des transits à ~0** → glissement vers C.
+
+Source : [`synthese_J142-J144.md`](synthese_J142-J144.md).
 
 ---
 
